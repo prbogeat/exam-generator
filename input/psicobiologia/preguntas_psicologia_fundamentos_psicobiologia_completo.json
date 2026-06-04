@@ -1,0 +1,3002 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 1)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 2,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 2)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 3,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 3)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 4)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 5,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 5)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 6)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 7,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 7)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 8,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 8)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 9)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 10,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 10)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 11)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 12,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 12)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 13,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 13)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 14)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 15,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 15)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 16)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 17,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 17)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 18,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 18)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 19)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 20,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 20)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 21)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 22,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 22)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 23,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 23)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 24,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 24)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 25,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 25)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 26,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 26)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 27,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 27)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 28,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 28)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 29)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 30,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 30)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 31,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 31)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 32,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 32)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 33,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 33)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 34)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 35,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 35)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 36,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 36)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 37,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 37)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 38,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 38)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 39)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 40,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 40)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 41,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 41)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 42,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 42)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 43,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 43)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 44,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 44)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 45,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 45)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 46,
+    "pregunta": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 46)",
+    "opciones": {
+      "a": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo.",
+      "b": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente.",
+      "c": "La evaluación de constructos puramente mentalistas desligados de la base biológica.",
+      "d": "La descripción meramente cultural y sociológica de las conductas humanas."
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+  },
+  {
+    "id": 47,
+    "pregunta": "En la metodología de la Psicobiología, cuando un investigador no puede controlar la variable independiente y busca verificar hipótesis observando covariaciones entre medidas biológicas y conductuales, está utilizando: (Ítem ref 47)",
+    "opciones": {
+      "a": "La contrastación experimental clásica con manipulación directa.",
+      "b": "La contrastación observacional o correlacional.",
+      "c": "Un diseño puramente teórico sin recogida de datos.",
+      "d": "La introspección analítica de corte asociacionista."
+    },
+    "correcta": "b",
+    "explicacion": "La contrastación observacional se emplea en psicobiología cuando las variables biológicas no son manipulables directamente por razones éticas o técnicas, registrándose correlaciones analíticas libres de manipulación directa."
+  },
+  {
+    "id": 48,
+    "pregunta": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 48)",
+    "opciones": {
+      "a": "La causa próxima o causación inmediata.",
+      "b": "La ontogenia o desarrollo.",
+      "c": "La función o valor adaptativo.",
+      "d": "La filogenia o historia evolutiva."
+    },
+    "correcta": "b",
+    "explicacion": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+  },
+  {
+    "id": 49,
+    "pregunta": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 49)",
+    "opciones": {
+      "a": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural.",
+      "b": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato.",
+      "c": "Un patrón de conducta aprendido por condicionamiento operante complejo.",
+      "d": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+    },
+    "correcta": "a",
+    "explicacion": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+  },
+  {
+    "id": 50,
+    "pregunta": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 50)",
+    "opciones": {
+      "a": "Aptitud inclusiva.",
+      "b": "Aptitud biológica directa exclusiva.",
+      "c": "Deriva genética adaptativa.",
+      "d": "Evolución convergente estricta."
+    },
+    "correcta": "a",
+    "explicacion": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+  },
+  {
+    "id": 51,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 51)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 52,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 52)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 53,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 53)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 54,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 54)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 55,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 55)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 56,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 56)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 57,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 57)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 58,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 58)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 59,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 59)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 60,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 60)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 61,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 61)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 62,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 62)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 63,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 63)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 64,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 64)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 65,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 65)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 66,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 66)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 67,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 67)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 68,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 68)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 69,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 69)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 70,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 70)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 71,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 71)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 72,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 72)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 73,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 73)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 74,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 74)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 75,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 75)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 76,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 76)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 77,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 77)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 78,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 78)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 79,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 79)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 80,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 80)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 81,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 81)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 82,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 82)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 83,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 83)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 84,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 84)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 85,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 85)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 86,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 86)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 87,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 87)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 88,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 88)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 89,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 89)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 90,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 90)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 91,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 91)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 92,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 92)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 93,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 93)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 94,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 94)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 95,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 95)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 96,
+    "pregunta": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 96)",
+    "opciones": {
+      "a": "0.09",
+      "b": "0.42",
+      "c": "0.49",
+      "d": "0.21"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+  },
+  {
+    "id": 97,
+    "pregunta": "El fenómeno por el cual la expresión de un alelo depende exclusivamente de si ha sido heredado del padre o de la madre se conoce en genética como: (Ítem ref 97)",
+    "opciones": {
+      "a": "Impresión genómica (imprinting).",
+      "b": "Epistasia recesiva dominante.",
+      "c": "Pleiotropía cuantitativa.",
+      "d": "Inactivación del cromosoma Y."
+    },
+    "correcta": "a",
+    "explicacion": "La impresión genómica implica el marcado epigenético diferencial de ciertos genes durante la gametogénesis, silenciando la expresión del alelo paterno o materno."
+  },
+  {
+    "id": 98,
+    "pregunta": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 98)",
+    "opciones": {
+      "a": "Un único gen con un único alelo dominante estable.",
+      "b": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales.",
+      "c": "Exclusivamente factores culturales sin ningún sustrato hereditario.",
+      "d": "Genes ortólogos que carecen de intrones reguladores."
+    },
+    "correcta": "b",
+    "explicacion": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+  },
+  {
+    "id": 99,
+    "pregunta": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 99)",
+    "opciones": {
+      "a": "0.4",
+      "b": "0.8",
+      "c": "1.0",
+      "d": "0.6"
+    },
+    "correcta": "b",
+    "explicacion": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+  },
+  {
+    "id": 100,
+    "pregunta": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 100)",
+    "opciones": {
+      "a": "Al gen regulador proximal.",
+      "b": "A la secuencia operadora intermedia.",
+      "c": "Al promotor.",
+      "d": "Al represor alostérico."
+    },
+    "correcta": "c",
+    "explicacion": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+  },
+  {
+    "id": 101,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 101)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 102,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 102)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 103,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 103)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 104,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 104)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 105,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 105)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 106,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 106)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 107,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 107)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 108,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 108)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 109,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 109)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 110,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 110)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 111,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 111)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 112,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 112)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 113,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 113)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 114,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 114)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 115,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 115)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 116,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 116)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 117,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 117)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 118,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 118)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 119,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 119)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 120,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 120)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 121,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 121)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 122,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 122)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 123,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 123)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 124,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 124)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 125,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 125)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 126,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 126)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 127,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 127)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 128,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 128)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 129,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 129)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 130,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 130)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 131,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 131)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 132,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 132)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 133,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 133)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 134,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 134)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 135,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 135)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 136,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 136)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 137,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 137)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 138,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 138)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 139,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 139)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 140,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 140)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 141,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 141)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 142,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 142)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 143,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 143)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 144,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 144)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 145,
+    "pregunta": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 145)",
+    "opciones": {
+      "a": "Serotonina, melatonina y glutamato.",
+      "b": "Dopamina, noradrenalina y adrenalina.",
+      "c": "Acetilcolina, GABA y glicina.",
+      "d": "Endorfina, sustancia P y óxido nítrico."
+    },
+    "correcta": "b",
+    "explicacion": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+  },
+  {
+    "id": 146,
+    "pregunta": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 146)",
+    "opciones": {
+      "a": "Una salida masiva de iones potasio por canales pasivos.",
+      "b": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion.",
+      "c": "El bloqueo definitivo de la bomba sodio-potasio por ATP.",
+      "d": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+    },
+    "correcta": "b",
+    "explicacion": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+  },
+  {
+    "id": 147,
+    "pregunta": "¿De qué depende fundamentalmente que la acción del neurotransmisor acetilcolina produzca un efecto excitador (PEPS) o inhibidor (PIPS) en la membrana postsináptica? (Ítem ref 147)",
+    "opciones": {
+      "a": "De la cantidad total de neurotransmisor almacenado en las vesículas preasociadas.",
+      "b": "Del tipo de receptor postsináptico específico al que se une el neurotransmisor.",
+      "c": "Del grosor de la mielina del axón aferente.",
+      "d": "De la velocidad de recaptación celular por parte de los astrocitos de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto de un neurotransmisor está enteramente determinado por las propiedades de sus receptores en la membrana postsináptica (por ejemplo, nicotínicos ionotrópicos para excitación o muscarínicos metabotrópicos para inhibición según la vía)."
+  },
+  {
+    "id": 148,
+    "pregunta": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 148)",
+    "opciones": {
+      "a": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico.",
+      "b": "Iones potasio (K⁺) por transportadores de intercambio secundario.",
+      "c": "Moléculas de glucosa acopladas a la bomba de protones.",
+      "d": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+    },
+    "correcta": "a",
+    "explicacion": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+  },
+  {
+    "id": 149,
+    "pregunta": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 149)",
+    "opciones": {
+      "a": "La fase de despolarización inicial no ocurrirá en absoluto.",
+      "b": "Se impedirá o retrasará gravemente la fase de repolarización celular.",
+      "c": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV.",
+      "d": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+    },
+    "correcta": "b",
+    "explicacion": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+  },
+  {
+    "id": 150,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 150)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 151,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 151)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 152,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 152)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 153,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 153)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 154,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 154)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 155,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 155)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 156,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 156)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 157,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 157)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 158,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 158)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 159,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 159)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 160,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 160)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 161,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 161)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 162,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 162)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 163,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 163)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 164,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 164)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 165,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 165)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 166,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 166)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 167,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 167)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 168,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 168)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 169,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 169)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 170,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 170)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 171,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 171)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 172,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 172)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 173,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 173)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 174,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 174)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 175,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 175)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 176,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 176)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 177,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 177)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 178,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 178)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 179,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 179)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 180,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 180)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 181,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 181)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 182,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 182)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 183,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 183)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 184,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 184)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 185,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 185)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 186,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 186)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 187,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 187)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 188,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 188)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 189,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 189)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 190,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 190)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 191,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 191)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 192,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 192)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 193,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 193)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 194,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 194)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 195,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 195)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 196,
+    "pregunta": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 196)",
+    "opciones": {
+      "a": "Ventral y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Medial y lateral.",
+      "d": "Caudal y dorsal."
+    },
+    "correcta": "b",
+    "explicacion": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+  },
+  {
+    "id": 197,
+    "pregunta": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 197)",
+    "opciones": {
+      "a": "Segmentación blástica.",
+      "b": "Inducción neural durante la gastrulación.",
+      "c": "Fijación axonal retrógrada.",
+      "d": "Apoptosis programada del mesodermo."
+    },
+    "correcta": "b",
+    "explicacion": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+  },
+  {
+    "id": 198,
+    "pregunta": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 198)",
+    "opciones": {
+      "a": "La zona ventricular local del neuroepitelio cortical dorsal.",
+      "b": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial).",
+      "c": "La cresta neural periférica derivada del ectodermo general.",
+      "d": "El epitelio del plexo coroideo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+  },
+  {
+    "id": 199,
+    "pregunta": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 199)",
+    "opciones": {
+      "a": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales.",
+      "b": "La corteza visual primaria con los colículos inferiores del tronco.",
+      "c": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral.",
+      "d": "El bulbo olfatorio medial con el cerebelo profundo."
+    },
+    "correcta": "a",
+    "explicacion": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+  },
+  {
+    "id": 200,
+    "pregunta": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 200)",
+    "opciones": {
+      "a": "Las células de Schwann.",
+      "b": "Los astrocitos.",
+      "c": "Las células de la microglía.",
+      "d": "Los oligodendrocitos de la sustancia blanca."
+    },
+    "correcta": "b",
+    "explicacion": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+  },
+  {
+    "id": 201,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 201)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 202,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 202)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 203,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 203)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 204,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 204)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 205,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 205)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 206,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 206)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 207,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 207)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 208,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 208)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 209,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 209)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 210,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 210)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 211,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 211)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 212,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 212)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 213,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 213)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 214,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 214)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 215,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 215)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 216,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 216)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 217,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 217)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 218,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 218)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 219,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 219)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 220,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 220)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 221,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 221)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 222,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 222)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 223,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 223)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 224,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 224)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 225,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 225)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 226,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 226)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 227,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 227)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 228,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 228)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 229,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 229)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 230,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 230)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 231,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 231)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 232,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 232)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 233,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 233)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 234,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 234)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 235,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 235)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 236,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 236)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 237,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 237)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 238,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 238)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 239,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 239)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 240,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 240)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 241,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 241)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 242,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 242)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 243,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 243)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 244,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 244)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 245,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 245)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  },
+  {
+    "id": 246,
+    "pregunta": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 246)",
+    "opciones": {
+      "a": "Habituación sensorial periférica.",
+      "b": "Transducción sensorial.",
+      "c": "Acomodación refractiva focal.",
+      "d": "Codificación por líneas marcadas exclusivamente."
+    },
+    "correcta": "b",
+    "explicacion": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+  },
+  {
+    "id": 247,
+    "pregunta": "En el sistema visual de los mamíferos, las neuronas magnocelulares del núcleo geniculado lateral se diferencian de las parvocelulares por poseer: (Ítem ref 247)",
+    "opciones": {
+      "a": "Campos receptivos más pequeños y alta sensibilidad al color fino.",
+      "b": "Campos receptivos más grandes, alta sensibilidad al contraste de luminancia y procesamiento del movimiento transitorio.",
+      "c": "Proyecciones directas y exclusivas hacia las capas superficiales de la corteza auditiva.",
+      "d": "Una dependencia absoluta de la estimulación lumínica tónica y prolongada sin adaptación."
+    },
+    "correcta": "b",
+    "explicacion": "La vía magnocelular procesa información espacial y de movimiento (baja resolución espacial pero alta resolución temporal) y no transporta información sobre el color."
+  },
+  {
+    "id": 248,
+    "pregunta": "¿Cuál de las siguientes hormonas liposolubles ejerce su mecanismo de acción principal uniéndose a receptores intracelulares que actúan directamente como factores de transcripción en el núcleo celular? (Ítem ref 248)",
+    "opciones": {
+      "a": "La hormona de crecimiento (GH).",
+      "b": "La aldosterona (mineralocorticoide).",
+      "c": "La prolactina hipofisaria.",
+      "d": "La hormona liberadora de corticotropina (CRH)."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas esteroideas (como la aldosterona y el cortisol) y las tiroideas son liposolubles y atraviesas las membranas celulares para unirse a receptores intracelulares citoplasmáticos o nucleares."
+  },
+  {
+    "id": 249,
+    "pregunta": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 249)",
+    "opciones": {
+      "a": "Polisináptico bilateral cruzado.",
+      "b": "Monosináptico.",
+      "c": "Independiente por completo de los husos musculares intrínsecos.",
+      "d": "Autónomo simpático postganglionar."
+    },
+    "correcta": "b",
+    "explicacion": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+  },
+  {
+    "id": 250,
+    "pregunta": "¿Qué estructura neuroendocrina hipotalámica se encarga de sintetizar directamente las hormonas oxitocina y vasopresina para su liberación posterior por la neurohipófisis? (Ítem ref 250)",
+    "opciones": {
+      "a": "Las neuronas parvocelulares de la zona periventricular anterior.",
+      "b": "Las neuronas magnocelulares de los núcleos supraóptico y paraventricular.",
+      "c": "Las células cromafines del núcleo infundibular ventral.",
+      "d": "Los astrocitos tancitos del suelo del tercer ventrículo."
+    },
+    "correcta": "b",
+    "explicacion": "Las hormonas neurohipofisarias (oxitocina y vasopresina) son sintetizadas por las neuronas magnocelulares de los núcleos supraóptico y paraventricular y viajan por transporte axonal al lóbulo posterior hipofisario."
+  }
+]

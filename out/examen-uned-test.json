@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas elegidas por copilot",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 158,
+      "used": true,
+      "text": "¿Cuál es el origen principal documentado de la gran mayoría de las interneuronas inhibitorias GABAérgicas que pueblan la corteza cerebral de los mamíferos? (Ítem ref 158)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La zona ventricular local del neuroepitelio cortical dorsal."
+        },
+        {
+          "key": "B",
+          "text": "Las eminencias ganglionares del telencéfalo subcortical (migración tangencial)."
+        },
+        {
+          "key": "C",
+          "text": "La cresta neural periférica derivada del ectodermo general."
+        },
+        {
+          "key": "D",
+          "text": "El epitelio del plexo coroideo del tercer ventrículo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las interneuronas inhibitorias corticales se originan predominantemente en las eminencias ganglionares mediales y laterales del subcórtex y migran de forma tangencial hacia la placa cortical."
+    },
+    {
+      "id": 2,
+      "sourceId": 169,
+      "used": true,
+      "text": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 169)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales."
+        },
+        {
+          "key": "B",
+          "text": "La corteza visual primaria con los colículos inferiores del tronco."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo olfatorio medial con el cerebelo profundo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+    },
+    {
+      "id": 3,
+      "sourceId": 109,
+      "used": true,
+      "text": "Si bloqueamos farmacológicamente de forma selectiva todos los canales de potasio (K⁺) dependientes de voltaje de una neurona, ¿qué alteración se observará en el potencial de acción? (Ítem ref 109)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La fase de despolarización inicial no ocurrirá en absoluto."
+        },
+        {
+          "key": "B",
+          "text": "Se impedirá o retrasará gravemente la fase de repolarización celular."
+        },
+        {
+          "key": "C",
+          "text": "El potencial de reposo se volverá inmediatamente hiperpolarizado a -90mV."
+        },
+        {
+          "key": "D",
+          "text": "Aumentará exponencialmente la velocidad de conducción saltatoria del axón."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los canales de K⁺ dependientes de voltaje se abren para permitir la salida del K⁺ y restaurar el potencial de reposo negativo. Su bloqueo impide la repolarización normal rápida de la neurona."
+    },
+    {
+      "id": 4,
+      "sourceId": 152,
+      "used": true,
+      "text": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 152)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación blástica."
+        },
+        {
+          "key": "B",
+          "text": "Inducción neural durante la gastrulación."
+        },
+        {
+          "key": "C",
+          "text": "Fijación axonal retrógrada."
+        },
+        {
+          "key": "D",
+          "text": "Apoptosis programada del mesodermo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+    },
+    {
+      "id": 5,
+      "sourceId": 99,
+      "used": true,
+      "text": "Respecto a los gemelos monocigóticos y dicigóticos criados juntos, si la correlación para un rasgo es de 0.8 en monocigóticos y 0.4 en dicigóticos, la heredabilidad en sentido amplio (H²) estimada mediante la fórmula simplificada es: (Ítem ref 99)",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.4"
+        },
+        {
+          "key": "B",
+          "text": "0.8"
+        },
+        {
+          "key": "C",
+          "text": "1.0"
+        },
+        {
+          "key": "D",
+          "text": "0.6"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Utilizando la estimación de Falconer, H² = 2 * (rMZ - rDZ) = 2 * (0.8 - 0.4) = 0.8."
+    },
+    {
+      "id": 6,
+      "sourceId": 200,
+      "used": true,
+      "text": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 200)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las células de Schwann."
+        },
+        {
+          "key": "B",
+          "text": "Los astrocitos."
+        },
+        {
+          "key": "C",
+          "text": "Las células de la microglía."
+        },
+        {
+          "key": "D",
+          "text": "Los oligodendrocitos de la sustancia blanca."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+    },
+    {
+      "id": 7,
+      "sourceId": 141,
+      "used": true,
+      "text": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 141)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una salida masiva de iones potasio por canales pasivos."
+        },
+        {
+          "key": "B",
+          "text": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion."
+        },
+        {
+          "key": "C",
+          "text": "El bloqueo definitivo de la bomba sodio-potasio por ATP."
+        },
+        {
+          "key": "D",
+          "text": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+    },
+    {
+      "id": 8,
+      "sourceId": 192,
+      "used": true,
+      "text": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 192)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación blástica."
+        },
+        {
+          "key": "B",
+          "text": "Inducción neural durante la gastrulación."
+        },
+        {
+          "key": "C",
+          "text": "Fijación axonal retrógrada."
+        },
+        {
+          "key": "D",
+          "text": "Apoptosis programada del mesodermo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+    },
+    {
+      "id": 9,
+      "sourceId": 46,
+      "used": true,
+      "text": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 46)",
+      "options": [
+        {
+          "key": "A",
+          "text": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo."
+        },
+        {
+          "key": "B",
+          "text": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente."
+        },
+        {
+          "key": "C",
+          "text": "La evaluación de constructos puramente mentalistas desligados de la base biológica."
+        },
+        {
+          "key": "D",
+          "text": "La descripción meramente cultural y sociológica de las conductas humanas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+    },
+    {
+      "id": 10,
+      "sourceId": 194,
+      "used": true,
+      "text": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 194)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales."
+        },
+        {
+          "key": "B",
+          "text": "La corteza visual primaria con los colículos inferiores del tronco."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo olfatorio medial con el cerebelo profundo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+    },
+    {
+      "id": 11,
+      "sourceId": 211,
+      "used": true,
+      "text": "El proceso psicofisiológico mediante el cual los receptores sensoriales convierten la energía física o química ambiental en señales eléctricas (potenciales de receptor) se denomina: (Ítem ref 211)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Habituación sensorial periférica."
+        },
+        {
+          "key": "B",
+          "text": "Transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "Acomodación refractiva focal."
+        },
+        {
+          "key": "D",
+          "text": "Codificación por líneas marcadas exclusivamente."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La transducción es el mecanismo universal de conversión energética mediante el cual los estímulos abren o cierran canales iónicos alterando el potencial de membrana del receptor."
+    },
+    {
+      "id": 12,
+      "sourceId": 63,
+      "used": true,
+      "text": "Un rasgo de variación continua o fenotipo cuantitativo está determinado típicamente por: (Ítem ref 63)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un único gen con un único alelo dominante estable."
+        },
+        {
+          "key": "B",
+          "text": "La acción aditiva de múltiples genes (poligenia) en interacción con factores ambientales."
+        },
+        {
+          "key": "C",
+          "text": "Exclusivamente factores culturales sin ningún sustrato hereditario."
+        },
+        {
+          "key": "D",
+          "text": "Genes ortólogos que carecen de intrones reguladores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La variación cuantitativa continua resulta de la contribución aditiva de pequeños efectos de varios loci (rasgos poligénicos) modulados por la varianza ambiental."
+    },
+    {
+      "id": 13,
+      "sourceId": 28,
+      "used": true,
+      "text": "De acuerdo con las explicaciones biológicas de la conducta propuestas por Nikolaas Tinbergen, el estudio de cómo una conducta concreta se desarrolla a lo largo de la vida de un individuo corresponde a: (Ítem ref 28)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La causa próxima o causación inmediata."
+        },
+        {
+          "key": "B",
+          "text": "La ontogenia o desarrollo."
+        },
+        {
+          "key": "C",
+          "text": "La función o valor adaptativo."
+        },
+        {
+          "key": "D",
+          "text": "La filogenia o historia evolutiva."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La ontogenia analiza los factores genéticos, epigenéticos y ambientales que modelan la expresión de la conducta desde el nacimiento hasta la etapa madura del individuo."
+    },
+    {
+      "id": 14,
+      "sourceId": 172,
+      "used": true,
+      "text": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 172)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación blástica."
+        },
+        {
+          "key": "B",
+          "text": "Inducción neural durante la gastrulación."
+        },
+        {
+          "key": "C",
+          "text": "Fijación axonal retrógrada."
+        },
+        {
+          "key": "D",
+          "text": "Apoptosis programada del mesodermo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+    },
+    {
+      "id": 15,
+      "sourceId": 249,
+      "used": true,
+      "text": "El reflejo miotático o de extensión (como el reflejo rotuliano) constituye un excelente ejemplo de circuito medular de tipo: (Ítem ref 249)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Polisináptico bilateral cruzado."
+        },
+        {
+          "key": "B",
+          "text": "Monosináptico."
+        },
+        {
+          "key": "C",
+          "text": "Independiente por completo de los husos musculares intrínsecos."
+        },
+        {
+          "key": "D",
+          "text": "Autónomo simpático postganglionar."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El reflejo miotático básico es monosináptico porque las fibras aferentes primarias del huso muscular hacen sinapsis directa con las motoneuronas alfa en el asta anterior medular."
+    },
+    {
+      "id": 16,
+      "sourceId": 71,
+      "used": true,
+      "text": "En una población en equilibrio de Hardy-Weinberg, la frecuencia de un alelo recesivo mutado 'a' es q = 0.3. ¿Cuál será la frecuencia esperada de individuos heterocigotos en dicha población? (Ítem ref 71)",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.09"
+        },
+        {
+          "key": "B",
+          "text": "0.42"
+        },
+        {
+          "key": "C",
+          "text": "0.49"
+        },
+        {
+          "key": "D",
+          "text": "0.21"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Dado que p + q = 1, si q = 0.3, entonces p = 0.7. La frecuencia de heterocigotos es 2pq = 2 * 0.7 * 0.3 = 0.42."
+    },
+    {
+      "id": 17,
+      "sourceId": 140,
+      "used": true,
+      "text": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 140)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Serotonina, melatonina y glutamato."
+        },
+        {
+          "key": "B",
+          "text": "Dopamina, noradrenalina y adrenalina."
+        },
+        {
+          "key": "C",
+          "text": "Acetilcolina, GABA y glicina."
+        },
+        {
+          "key": "D",
+          "text": "Endorfina, sustancia P y óxido nítrico."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+    },
+    {
+      "id": 18,
+      "sourceId": 170,
+      "used": true,
+      "text": "¿Qué tipo de células gliales del sistema nervioso central están íntimamente implicadas en la formación de los pies terminales que constituyen la barrera hematoencefálica? (Ítem ref 170)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las células de Schwann."
+        },
+        {
+          "key": "B",
+          "text": "Los astrocitos."
+        },
+        {
+          "key": "C",
+          "text": "Las células de la microglía."
+        },
+        {
+          "key": "D",
+          "text": "Los oligodendrocitos de la sustancia blanca."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los astrocitos emiten prolongaciones (pies perivasculares) que envuelven los capilares endoteliales del cerebro, induciendo y manteniendo las uniones estrechas de la barrera hematoencefálica."
+    },
+    {
+      "id": 19,
+      "sourceId": 161,
+      "used": true,
+      "text": "Según la terminología neuroanatómica estándar, una lesión localizada 'superior y anterior' con respecto al quiasma óptico se describe correctamente como: (Ítem ref 161)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ventral y caudal."
+        },
+        {
+          "key": "B",
+          "text": "Dorsal y rostral."
+        },
+        {
+          "key": "C",
+          "text": "Medial y lateral."
+        },
+        {
+          "key": "D",
+          "text": "Caudal y dorsal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En el encéfalo anterior, el eje rostral apunta hacia la parte anterior (frente) y el eje dorsal apunta hacia la parte superior (dorso superior cerebral)."
+    },
+    {
+      "id": 20,
+      "sourceId": 35,
+      "used": true,
+      "text": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 35)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aptitud inclusiva."
+        },
+        {
+          "key": "B",
+          "text": "Aptitud biológica directa exclusiva."
+        },
+        {
+          "key": "C",
+          "text": "Deriva genética adaptativa."
+        },
+        {
+          "key": "D",
+          "text": "Evolución convergente estricta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+    },
+    {
+      "id": 21,
+      "sourceId": 167,
+      "used": true,
+      "text": "Durante la ontogenia del sistema nervioso central, el neuroectodermo queda determinado y aislado gracias al proceso morfogenético denominado: (Ítem ref 167)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación blástica."
+        },
+        {
+          "key": "B",
+          "text": "Inducción neural durante la gastrulación."
+        },
+        {
+          "key": "C",
+          "text": "Fijación axonal retrógrada."
+        },
+        {
+          "key": "D",
+          "text": "Apoptosis programada del mesodermo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La inducción neural es el proceso mediante el cual el mesodermo subyacente envía señales químicas organizadoras al ectodermo para transformarlo en neuroectodermo."
+    },
+    {
+      "id": 22,
+      "sourceId": 6,
+      "used": true,
+      "text": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 6)",
+      "options": [
+        {
+          "key": "A",
+          "text": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo."
+        },
+        {
+          "key": "B",
+          "text": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente."
+        },
+        {
+          "key": "C",
+          "text": "La evaluación de constructos puramente mentalistas desligados de la base biológica."
+        },
+        {
+          "key": "D",
+          "text": "La descripción meramente cultural y sociológica de las conductas humanas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+    },
+    {
+      "id": 23,
+      "sourceId": 121,
+      "used": true,
+      "text": "Durante la fase ascendente o de despolarización rápida del potencial de acción neuronal, se produce: (Ítem ref 121)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una salida masiva de iones potasio por canales pasivos."
+        },
+        {
+          "key": "B",
+          "text": "La apertura de canales de sodio dependientes de voltaje con una entrada masiva de dicho ion."
+        },
+        {
+          "key": "C",
+          "text": "El bloqueo definitivo de la bomba sodio-potasio por ATP."
+        },
+        {
+          "key": "D",
+          "text": "Una entrada masiva de iones cloro regulada por ligandos metabotrópicos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Al alcanzarse el potencial umbral, se abren rápidamente los canales de sodio dependientes de voltaje, permitiendo que el gradiente químico y eléctrico empuje el Na+ al interior celular."
+    },
+    {
+      "id": 24,
+      "sourceId": 184,
+      "used": true,
+      "text": "El haz de fibras mielinizadas que constituye el fórnix (o trígono cerebral) interconecta principalmente las siguientes estructuras encefálicas: (Ítem ref 184)",
+      "options": [
+        {
+          "key": "A",
+          "text": "La formación hipocampal con los cuerpos mamilares del hipotálamo y otras regiones septales."
+        },
+        {
+          "key": "B",
+          "text": "La corteza visual primaria con los colículos inferiores del tronco."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo estriado anterior con la corteza prefrontal dorsolateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo olfatorio medial con el cerebelo profundo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fórnix es una de las principales vías eferentes del hipocampo que se proyecta arqueadamente hacia los cuerpos mamilares del hipotálamo posterior, integrando circuitos del sistema límbico."
+    },
+    {
+      "id": 25,
+      "sourceId": 41,
+      "used": true,
+      "text": "¿Cuál es el objeto de estudio principal de la Psicobiología en el marco del esquema E-O-R? (Ítem ref 41)",
+      "options": [
+        {
+          "key": "A",
+          "text": "El estudio exclusivo de los estímulos ambientales sin considerar el organismo."
+        },
+        {
+          "key": "B",
+          "text": "El análisis del comportamiento y los procesos mentales como resultado de la actividad del sistema nervioso en interacción con el ambiente."
+        },
+        {
+          "key": "C",
+          "text": "La evaluación de constructos puramente mentalistas desligados de la base biológica."
+        },
+        {
+          "key": "D",
+          "text": "La descripción meramente cultural y sociológica de las conductas humanas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Psicobiología estudia la conducta humana y los procesos cognitivos como un hecho biológico, enfocándose en el organismo (O) y su sistema nervioso como modulador de las respuestas (R) ante los estímulos (E)."
+    },
+    {
+      "id": 26,
+      "sourceId": 65,
+      "used": true,
+      "text": "En el modelo del operón bacteriano y los mecanismos de regulación de la expresión génica, ¿a qué región específica se une la enzima ARN polimerasa para iniciar la transcripción? (Ítem ref 65)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Al gen regulador proximal."
+        },
+        {
+          "key": "B",
+          "text": "A la secuencia operadora intermedia."
+        },
+        {
+          "key": "C",
+          "text": "Al promotor."
+        },
+        {
+          "key": "D",
+          "text": "Al represor alostérico."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El promotor es la secuencia nucleotídica del ADN donde la enzima ARN polimerasa se une de forma específica para dar comienzo a la síntesis del ARN mensajero."
+    },
+    {
+      "id": 27,
+      "sourceId": 103,
+      "used": true,
+      "text": "La liberación exocítica de los neurotransmisores contenidos en las vesículas sinácticas hacia la hendidura sináptica es un proceso directamente dependiente de la entrada de: (Ítem ref 103)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Iones calcio (Ca²⁺) a través de canales dependientes de voltaje en el terminal presináptico."
+        },
+        {
+          "key": "B",
+          "text": "Iones potasio (K⁺) por transportadores de intercambio secundario."
+        },
+        {
+          "key": "C",
+          "text": "Moléculas de glucosa acopladas a la bomba de protones."
+        },
+        {
+          "key": "D",
+          "text": "Iones cloro (Cl⁻) a favor de su gradiente electroquímico pasivo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La llegada del potencial de acción despolariza el terminal axónico, abriendo canales de calcio dependientes de voltaje; la entrada de Ca²⁺ activa la cascada proteica de fusión de vesículas."
+    },
+    {
+      "id": 28,
+      "sourceId": 40,
+      "used": true,
+      "text": "El concepto que explica la capacidad de un individuo para transmitir sus genes a las siguientes generaciones a través de su propio éxito reproductivo y del de sus parientes genéticos se denomina: (Ítem ref 40)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aptitud inclusiva."
+        },
+        {
+          "key": "B",
+          "text": "Aptitud biológica directa exclusiva."
+        },
+        {
+          "key": "C",
+          "text": "Deriva genética adaptativa."
+        },
+        {
+          "key": "D",
+          "text": "Evolución convergente estricta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La aptitud inclusiva suma la aptitud directa (producción de descendientes propios) y la aptitud indirecta (favorecer la supervivencia de familiares que comparten copias de los mismos genes)."
+    },
+    {
+      "id": 29,
+      "sourceId": 135,
+      "used": true,
+      "text": "¿Cuáles son las tres principales catecolaminas presentes como neurotransmisores o neuromoduladores en el sistema nervioso humano? (Ítem ref 135)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Serotonina, melatonina y glutamato."
+        },
+        {
+          "key": "B",
+          "text": "Dopamina, noradrenalina y adrenalina."
+        },
+        {
+          "key": "C",
+          "text": "Acetilcolina, GABA y glicina."
+        },
+        {
+          "key": "D",
+          "text": "Endorfina, sustancia P y óxido nítrico."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las catecolaminas se sintetizan a partir de la tirosina y comprenden estructuralmente a la dopamina, la noradrenalina y la adrenalina."
+    },
+    {
+      "id": 30,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones define correctamente el concepto de 'estímulo supernormal' en etología? (Ítem ref 9)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un estímulo artificialmente exagerado que desencadena una respuesta más intensa que el estímulo natural."
+        },
+        {
+          "key": "B",
+          "text": "Un estímulo subumbral que no llega a activar el mecanismo desencadenador innato."
+        },
+        {
+          "key": "C",
+          "text": "Un patrón de conducta aprendido por condicionamiento operante complejo."
+        },
+        {
+          "key": "D",
+          "text": "Un estímulo neutro que inhibe de forma absoluta las pautas de acción fija."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los estímulos supernormales poseen características físicas exageradas que resultan más atractivas o eficaces para evocar un mecanismo desencadenador innato que los propios estímulos evolutivos naturales."
+    }
+  ]
+}
