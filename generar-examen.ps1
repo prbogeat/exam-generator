@@ -16,11 +16,19 @@ param(
     [double]$MaxScore = 10,
     [double]$WrongAnswersPerDiscountedCorrect = 0,
     [int]$TimeLimitMinutes = 90,
-    [string]$FormulaTip = ""
+    [string]$FormulaTip = "",
+    [int]$NumberOfQuestions = 0,
+    [object]$RandomSelection = $false,
+    [int]$RandomSeed = -1
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+
+# Convertir RandomSelection a boolean si es necesario
+if ($RandomSelection -is [string]) {
+    $RandomSelection = @{ '0' = $false; 'false' = $false; '1' = $true; 'true' = $true }[$RandomSelection.ToLower()]
+}
 
 function Get-SourceQuestions {
     param(
@@ -142,7 +150,8 @@ $inputObj = $inputRaw | ConvertFrom-Json
 
 $sourceQuestions = Get-SourceQuestions -SourceRoot $inputObj
 
-$convertedQuestions = @()
+# Convertir todas las preguntas inicialmente
+$allConvertedQuestions = @()
 $position = 1
 
 foreach ($q in $sourceQuestions) {
@@ -165,8 +174,8 @@ foreach ($q in $sourceQuestions) {
         throw "La pregunta con id '$idValue' tiene una opción correcta '$correctValue' que no existe en sus opciones."
     }
 
-    $convertedQuestions += [ordered]@{
-        id            = $idValue
+    $allConvertedQuestions += [ordered]@{
+        sourceId      = $idValue
         text          = $textValue
         options       = $optionsValue
         correctOption = $correctValue
@@ -174,6 +183,36 @@ foreach ($q in $sourceQuestions) {
     }
 
     $position++
+}
+
+# Aplicar selección de preguntas según configuración
+$selectedQuestions = $allConvertedQuestions
+if ($NumberOfQuestions -gt 0 -and $allConvertedQuestions.Count -gt $NumberOfQuestions) {
+    if ($RandomSelection) {
+        # Selección aleatoria
+        if ($RandomSeed -ge 0) {
+            Get-Random -SetSeed $RandomSeed | Out-Null
+        }
+        $selectedQuestions = @($allConvertedQuestions | Get-Random -Count $NumberOfQuestions)
+    } else {
+        # Selección secuencial
+        $selectedQuestions = $allConvertedQuestions[0..($NumberOfQuestions - 1)]
+    }
+} elseif ($RANDOM_SELECTION) {
+    # Si no hay límite de preguntas pero RandomSelection está activo
+    if ($RandomSeed -ge 0) {
+        Get-Random -SetSeed $RandomSeed | Out-Null
+    }
+    $selectedQuestions = @($allConvertedQuestions | Get-Random -InputObject $allConvertedQuestions)
+}
+
+# Regenerar IDs secuencialmente después de la selección
+$convertedQuestions = @()
+for ($i = 0; $i -lt $selectedQuestions.Count; $i++) {
+    $q = $selectedQuestions[$i]
+    $q | Add-Member -NotePropertyName "id" -NotePropertyValue ($i + 1) -Force
+    $q | Add-Member -NotePropertyName "used" -NotePropertyValue $true -Force
+    $convertedQuestions += $q
 }
 
 $questionCount = $convertedQuestions.Count

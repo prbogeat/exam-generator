@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "sourceId": 52,
+      "text": "La participación del gen FOXP2 en el aumento del cociente de encefalización (CE) humano parece estar relacionada con su implicación en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la interacción social entre congéneres, ya que compartimos con los demás primates la secuencia de aminoácidos de la proteína reguladora."
+        },
+        {
+          "key": "B",
+          "text": "el desarrollo de estrategias alimenticias capaces de mantener un cerebro que exige un gasto energético muy grande."
+        },
+        {
+          "key": "C",
+          "text": "la evolución del lenguaje."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los estudios señalan que el gen FOXP2 humano ha sufrido una fuerte selección positiva y mutaciones recientes relacionadas directamente con la diferenciación de redes neuronales críticas para el habla y la evolución del lenguaje.",
+      "id": 1,
+      "used": true
+    },
+    {
+      "sourceId": 101,
+      "text": "¿Cuál de las siguientes NO es una hormona secretada por la adenohipófisis?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ACTH."
+        },
+        {
+          "key": "B",
+          "text": "LH."
+        },
+        {
+          "key": "C",
+          "text": "Progesterona."
+        },
+        {
+          "key": "D",
+          "text": "Hormona del crecimiento."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La progesterona es una hormona gonadal (esteroide) producida por el ovario (concretamente en el cuerpo lúteo) y la placenta, no por la glándula pituitaria (adenohipófisis).",
+      "id": 2,
+      "used": true
+    },
+    {
+      "sourceId": 43,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana.",
+      "id": 3,
+      "used": true
+    },
+    {
+      "sourceId": 27,
+      "text": "¿Qué receptor cutáneo detecta tacto fino?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corpúsculo de Meissner"
+        },
+        {
+          "key": "B",
+          "text": "Huso muscular"
+        },
+        {
+          "key": "C",
+          "text": "Órgano tendinoso"
+        },
+        {
+          "key": "D",
+          "text": "Bastón"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los corpúsculos de Meissner participan en tacto discriminativo.",
+      "id": 4,
+      "used": true
+    },
+    {
+      "sourceId": 53,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana.",
+      "id": 5,
+      "used": true
+    },
+    {
+      "sourceId": 62,
+      "text": "El haz de axones de sustancia blanca que constituye el fórnix conecta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El tálamo con el tronco del encéfalo."
+        },
+        {
+          "key": "B",
+          "text": "La formación hipocampal con el tálamo."
+        },
+        {
+          "key": "C",
+          "text": "La formación hipocampal con los núcleos mamilares y el encéfalo anterior."
+        },
+        {
+          "key": "D",
+          "text": "La formación hipocampal y el tronco del encéfalo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El fórnix es la principal vía de proyección de la formación hipocampal; sale del hipocampo, forma un gran arco bajo el cuerpo calloso y proyecta sus axones hacia el encéfalo anterior (núcleos septales) y los núcleos mamilares del hipotálamo.",
+      "id": 6,
+      "used": true
+    },
+    {
+      "sourceId": 19,
+      "text": "¿Qué neurotransmisor liberan las neuronas preganglionares simpáticas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina"
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina"
+        },
+        {
+          "key": "C",
+          "text": "Dopamina"
+        },
+        {
+          "key": "D",
+          "text": "GABA"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las neuronas preganglionares del SNA son colinérgicas.",
+      "id": 7,
+      "used": true
+    },
+    {
+      "sourceId": 68,
+      "text": "Los campos receptivos de determinadas neuronas sensoriales visuales (como las bipolares y ganglionares) están organizados de una manera antagónica centro-periferia (on/off). Esto se consigue gracias a la acción conjunta de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neuronas excitatorias e interneuronas excitatorias."
+        },
+        {
+          "key": "B",
+          "text": "Neuronas excitatorias e interneuronas inhibitorias."
+        },
+        {
+          "key": "C",
+          "text": "Neuronas excitatorias exclusivamente."
+        },
+        {
+          "key": "D",
+          "text": "Interneuronas inhibitorias en ausencia de neuronas excitatorias."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Esta modulación se logra combinando la señal directa de los fotorreceptores centrales (vía excitatoria) con la señal de los fotorreceptores periféricos canalizada a través de células horizontales, las cuales actúan como interneuronas inhibitorias.",
+      "id": 8,
+      "used": true
+    },
+    {
+      "sourceId": 8,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En los reptiles surge la división filogenéticamente más reciente, el neocerebelo, formado por los hemisferios cerebelares y el vermis medio.",
+      "id": 9,
+      "used": true
+    },
+    {
+      "sourceId": 76,
+      "text": "¿Qué estructura coordina la ejecución precisa del movimiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hipotálamo"
+        },
+        {
+          "key": "B",
+          "text": "Amígdala"
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Tálamo"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo compara el movimiento esperado con el realizado.",
+      "id": 10,
+      "used": true
+    },
+    {
+      "sourceId": 6,
+      "text": "En la 4ª/5ª semana de gestación, sabemos que las células de la cresta neural agrupadas junto a los somitas formarán:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los ganglios espinales."
+        },
+        {
+          "key": "B",
+          "text": "los rombómeros."
+        },
+        {
+          "key": "C",
+          "text": "los neurómeros."
+        },
+        {
+          "key": "D",
+          "text": "la zona subventricular."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las células de la cresta neural que migran por la vía ventromedial forman agrupaciones junto a los somitas a lo largo del tubo neural, que posteriormente originarán los ganglios espinales.",
+      "id": 11,
+      "used": true
+    },
+    {
+      "sourceId": 37,
+      "text": "En el caso de la inmunidad celular, NO son células presentadoras de antígenos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "los linfocitos B."
+        },
+        {
+          "key": "D",
+          "text": "las células dendríticas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Aunque los neutrófilos fagocitan agentes patógenos, carecen de las especializaciones para actuar como células presentadoras de antígenos a los linfocitos T, rol que sí cumplen los macrófagos, las células dendríticas y los linfocitos B.",
+      "id": 12,
+      "used": true
+    },
+    {
+      "sourceId": 25,
+      "text": "¿Cuál de las siguientes afirmaciones describe correctamente un aspecto clave de la neurogénesis en el neuroepitelio cortical durante el desarrollo embrionario?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las células madre del neuroepitelio cortical se dividen y diferencian en glía radial."
+        },
+        {
+          "key": "B",
+          "text": "La neurogénesis en el neuroepitelio cortical ocurre principalmente en dos zonas proliferativas, la zona ventricular y la zona subventricular."
+        },
+        {
+          "key": "C",
+          "text": "La zona subventricular proliferativa se genera antes que la zona ventricular."
+        },
+        {
+          "key": "D",
+          "text": "A y B son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las células neuroepiteliales se transforman en glía radial. El proceso ocurre en la zona ventricular y en la zona subventricular, creándose la ventricular en primer lugar.",
+      "id": 13,
+      "used": true
+    },
+    {
+      "sourceId": 57,
+      "text": "¿Qué receptor cutáneo detecta tacto fino?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corpúsculo de Meissner"
+        },
+        {
+          "key": "B",
+          "text": "Huso muscular"
+        },
+        {
+          "key": "C",
+          "text": "Órgano tendinoso"
+        },
+        {
+          "key": "D",
+          "text": "Bastón"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los corpúsculos de Meissner participan en tacto discriminativo.",
+      "id": 14,
+      "used": true
+    },
+    {
+      "sourceId": 65,
+      "text": "El coeficiente de encefalización (CE) es una medida que compara:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El peso del encéfalo con la longitud del cuerpo del animal."
+        },
+        {
+          "key": "B",
+          "text": "El peso real del encéfalo con el peso esperado para su tamaño corporal."
+        },
+        {
+          "key": "C",
+          "text": "El número de neuronas con el volumen de la corteza cerebral."
+        },
+        {
+          "key": "D",
+          "text": "La superficie cortical con la masa muscular del organismo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El cociente de encefalización desarrollado por Harry Jerison es una métrica que compara el peso medio real del encéfalo de una especie con el peso encefálico teórico que le correspondería tener en función de su peso corporal total.",
+      "id": 15,
+      "used": true
+    },
+    {
+      "sourceId": 58,
+      "text": "¿Qué hormona se produce principalmente en la zona glomerular de la corteza suprarrenal y está involucrada en la regulación de la concentración de iones en sangre?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cortisol."
+        },
+        {
+          "key": "B",
+          "text": "la corticosterona."
+        },
+        {
+          "key": "C",
+          "text": "la aldosterona."
+        },
+        {
+          "key": "D",
+          "text": "la testosterona."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La zona externa de la corteza suprarrenal (glomerular) secreta mineralocorticoides, de los cuales el más importante es la aldosterona, la cual retiene iones de sodio y favorece la excreción del potasio en los riñones.",
+      "id": 16,
+      "used": true
+    },
+    {
+      "sourceId": 49,
+      "text": "Cuando fotones de luz atraviesan las distintas capas de la retina hasta llegar a los bastones y conos, las respuestas de esas células fotorreceptoras se llevan a cabo con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "potenciales graduados (potenciales de receptor) inhibitorios."
+        },
+        {
+          "key": "B",
+          "text": "potenciales de acción."
+        },
+        {
+          "key": "C",
+          "text": "potenciales graduados (potenciales de receptor) excitatorios."
+        },
+        {
+          "key": "D",
+          "text": "la participación del epitelio pigmentado, que es rico en melanina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A diferencia de muchos otros receptores, los conos y bastones en presencia de luz no producen potenciales de acción ni se despolarizan; responden emitiendo potenciales graduados inhibitorios (se hiperpolarizan), disminuyendo la liberación del neurotransmisor.",
+      "id": 17,
+      "used": true
+    },
+    {
+      "sourceId": 30,
+      "text": "¿Qué tipo de célula inmunitaria reconoce antígenos específicos, pero solo con la ayuda de células presentadoras de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Los linfocitos B."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La inmunidad mediada por células está a cargo de los linfocitos T, los cuales solo se activan y reconocen a los antígenos invasores si éstos son exhibidos previamente en la superficie de células presentadoras de antígenos.",
+      "id": 18,
+      "used": true
+    },
+    {
+      "sourceId": 26,
+      "text": "¿Qué estructura coordina la ejecución precisa del movimiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hipotálamo"
+        },
+        {
+          "key": "B",
+          "text": "Amígdala"
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Tálamo"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo compara el movimiento esperado con el realizado.",
+      "id": 19,
+      "used": true
+    },
+    {
+      "sourceId": 25,
+      "text": "¿Qué células producen anticuerpos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Macrófagos"
+        },
+        {
+          "key": "B",
+          "text": "Linfocitos B"
+        },
+        {
+          "key": "C",
+          "text": "Neutrófilos"
+        },
+        {
+          "key": "D",
+          "text": "NK"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los linfocitos B y sus células plasmáticas producen anticuerpos.",
+      "id": 20,
+      "used": true
+    },
+    {
+      "sourceId": 69,
+      "text": "¿Cuáles son los principales centros de emisión de señales o salida (centros efectores) de los ganglios basales?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo subtalámico y el neoestriado."
+        },
+        {
+          "key": "B",
+          "text": "El putamen y el globo pálido."
+        },
+        {
+          "key": "C",
+          "text": "El globo pálido y la sustancia negra reticulada."
+        },
+        {
+          "key": "D",
+          "text": "El núcleo caudado y el globo pálido."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neoestriado (caudado y putamen) es el centro receptor, mientras que las vías de salida del circuito de los ganglios basales se originan en el globo pálido interno y en la porción reticulada de la sustancia negra.",
+      "id": 21,
+      "used": true
+    },
+    {
+      "sourceId": 9,
+      "text": "Uno de los retos que tiene el estudio psicobiológico es el de conocer cómo realizamos la percepción de las características de las modalidades estimulares. En lo que se refiere a la percepción visual, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ya al nivel de las células ganglionares de la retina hay una especialización de funciones."
+        },
+        {
+          "key": "B",
+          "text": "el proceso de análisis de la imagen visual se inicia en la corteza visual primaria (V1)."
+        },
+        {
+          "key": "C",
+          "text": "la vía de proyección que se dirige desde V1 a la corteza parietal posterior es fundamental para la localización de objetos."
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las tres opciones anteriores es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las células ganglionares se especializan en detalles finos o movimiento, la V1 inicia el análisis cortical y la vía dorsal hacia la corteza parietal posterior se encarga de ubicar 'dónde' están los objetos.",
+      "id": 22,
+      "used": true
+    },
+    {
+      "sourceId": 38,
+      "text": "El tono de un sonido se relaciona con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la frecuencia de onda que lo forma."
+        },
+        {
+          "key": "B",
+          "text": "la amplitud de la onda que lo genera."
+        },
+        {
+          "key": "C",
+          "text": "el conjunto de ondas que se superponen a la onda fundamental."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El tono de un sonido (más grave o más agudo) está físicamente determinado por la frecuencia de la onda sonora en Hercios (Hz). La amplitud determina la intensidad, y la superposición de ondas marca el timbre.",
+      "id": 23,
+      "used": true
+    },
+    {
+      "sourceId": 44,
+      "text": "De las áreas corticales implicadas en el control motor, la que tiene como función principal seleccionar la estrategia más adecuada para ejecutar el movimiento en función de la experiencia y tomar la decisión de iniciar el movimiento es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la corteza parietal posterior."
+        },
+        {
+          "key": "B",
+          "text": "la corteza prefrontal dorsolateral."
+        },
+        {
+          "key": "C",
+          "text": "la corteza premotora."
+        },
+        {
+          "key": "D",
+          "text": "el área motora suplementaria."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La corteza prefrontal dorsolateral representa el nivel de mayor jerarquía cognitiva motora; evalúa y planifica utilizando experiencias pasadas para decidir cuándo, cómo y si es apropiado iniciar un movimiento voluntario.",
+      "id": 24,
+      "used": true
+    },
+    {
+      "sourceId": 11,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann.",
+      "id": 25,
+      "used": true
+    },
+    {
+      "sourceId": 13,
+      "text": "La hipófisis posterior libera _____ y _____ en los núcleos _____ y paraventricular del hipotálamo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "oxitocina; vasopresina; supraóptico."
+        },
+        {
+          "key": "B",
+          "text": "oxitocina; MSH; circunventricular."
+        },
+        {
+          "key": "C",
+          "text": "CRH; MSH; supraóptico."
+        },
+        {
+          "key": "D",
+          "text": "oxitocina; prolactina; supraóptico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La neurohipófisis secreta vasopresina y oxitocina, que son hormonas que han sido sintetizadas previamente por las células magnocelulares de los núcleos supraóptico y paraventricular del hipotálamo.",
+      "id": 26,
+      "used": true
+    },
+    {
+      "sourceId": 68,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales.",
+      "id": 27,
+      "used": true
+    },
+    {
+      "sourceId": 53,
+      "text": "¿Cómo se denomina al proceso que realizan los receptores sensoriales para transformar las diferentes modalidades energéticas en actividad eléctrica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sensibilización sensorial."
+        },
+        {
+          "key": "B",
+          "text": "transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "potencial transformador."
+        },
+        {
+          "key": "D",
+          "text": "líneas marcadas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Se llama transducción sensorial a la capacidad que tienen los receptores para captar energía ambiental (física o química) y convertirla de forma comprensible para el SNC en un lenguaje de código eléctrico.",
+      "id": 28,
+      "used": true
+    },
+    {
+      "sourceId": 76,
+      "text": "¿Qué tipo de células presentes en el sistema nervioso central tiene capacidad fagocítica y, además, actúa como célula presentadora de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las neuronas."
+        },
+        {
+          "key": "B",
+          "text": "Las células de Schwann."
+        },
+        {
+          "key": "C",
+          "text": "Los oligodendrocitos."
+        },
+        {
+          "key": "D",
+          "text": "Las células de la microglía."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La microglía actúa como un sistema inmunitario residente del SNC. Deriva de monocitos (células inmunes) y ejerce funciones fagocíticas y de presentación de antígenos al interaccionar con linfocitos infiltrados.",
+      "id": 29,
+      "used": true
+    },
+    {
+      "sourceId": 5,
+      "text": "En relación con la ontogenia del SNC, sabemos que el neuroectodermo queda determinado durante el proceso de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "gastrulación."
+        },
+        {
+          "key": "B",
+          "text": "regionalización de la placa neural."
+        },
+        {
+          "key": "C",
+          "text": "inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "segmentación del tubo neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La neurulación comienza con la inducción neural del ectodermo, un proceso que marca el territorio neural y determina el tejido del que se originará el SN.",
+      "id": 30,
+      "used": true
+    }
+  ]
+}
