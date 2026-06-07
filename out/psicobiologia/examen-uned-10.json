@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 10",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 108,
+      "used": true,
+      "text": "¿Cuál es el centro encefálico esencial en la comunicación que se establece entre el sistema inmune, el SN y el sistema endocrino, integrando las respuestas emitidas por todos estos sistemas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La amígdala."
+        },
+        {
+          "key": "B",
+          "text": "El hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo geniculado lateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo raquídeo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El hipotálamo es la estructura integradora maestra del eje neuroendocrino y el principal punto de conexión para orquestar respuestas globales entre el sistema nervioso autónomo, el sistema endocrino y la modulación del sistema inmunitario."
+    },
+    {
+      "id": 2,
+      "sourceId": 323,
+      "used": true,
+      "text": "El cuerpo estriado agrupa tres grandes núcleos subcorticales, ¿cuáles son?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caudado, amígdala y núcleo de la estría terminal."
+        },
+        {
+          "key": "B",
+          "text": "Putamen, globo pálido y núcleo subtalámico."
+        },
+        {
+          "key": "C",
+          "text": "Sustancia negra, núcleo rojo y globo pálido."
+        },
+        {
+          "key": "D",
+          "text": "Putamen, globo pálido y núcleo caudado."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El cuerpo estriado dorsal está formado por núcleo caudado, putamen y globo pálido; caudado y putamen constituyen el neoestriado."
+    },
+    {
+      "id": 3,
+      "sourceId": 405,
+      "used": true,
+      "text": "Las denominadas células asesinas del sistema inmunitario:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Son monocitos que se transforman en granulocitos."
+        },
+        {
+          "key": "B",
+          "text": "Pertenecen a la tercera línea de defensa de la respuesta inespecífica."
+        },
+        {
+          "key": "C",
+          "text": "Son granulocitos que se transforman en macrófagos."
+        },
+        {
+          "key": "D",
+          "text": "Pertenecen a la segunda línea de defensa de la respuesta inespecífica."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las células NK forman parte de la inmunidad innata y actúan como segunda línea defensiva frente a células infectadas o tumorales."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿De cuál de las tres capas del disco embrionario deriva directamente el SN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mesodermo."
+        },
+        {
+          "key": "B",
+          "text": "Ectodermo."
+        },
+        {
+          "key": "C",
+          "text": "Endodermo."
+        },
+        {
+          "key": "D",
+          "text": "De las tres capas anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El sistema nervioso y la epidermis (con sus estructuras anejas) derivan directamente de la capa externa del embrión, el ectodermo."
+    },
+    {
+      "id": 5,
+      "sourceId": 390,
+      "used": true,
+      "text": "Señale la asociación INCORRECTA en relación con las hormonas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Glándula pineal - melatonina."
+        },
+        {
+          "key": "B",
+          "text": "Hígado - somatomedinas."
+        },
+        {
+          "key": "C",
+          "text": "Páncreas - somatostatina."
+        },
+        {
+          "key": "D",
+          "text": "Adrenalina - corteza adrenal."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La adrenalina se libera en la médula adrenal, no en la corteza adrenal."
+    },
+    {
+      "id": 6,
+      "sourceId": 227,
+      "used": true,
+      "text": "La determinación del neuroectodermo se produce durante:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La inducción neural."
+        },
+        {
+          "key": "B",
+          "text": "La sinaptogénesis adulta."
+        },
+        {
+          "key": "C",
+          "text": "La mielinización posnatal."
+        },
+        {
+          "key": "D",
+          "text": "La apoptosis neurotrófica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inducción neural diferencia una parte del ectodermo como neuroectodermo, marcando el territorio del futuro sistema nervioso."
+    },
+    {
+      "id": 7,
+      "sourceId": 119,
+      "used": true,
+      "text": "En relación con el fenómeno de la adaptación sensorial sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se explica por la fisiología de los receptores sensoriales."
+        },
+        {
+          "key": "B",
+          "text": "es lo mismo que la habituación."
+        },
+        {
+          "key": "C",
+          "text": "se produce de la misma manera en todos los receptores sensoriales."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La adaptación sensorial refleja una reducción fisiológica en la respuesta de la membrana del propio receptor periférico ante un estímulo constante, diferenciándose de la habituación, que es un proceso central de supresión de la atención en el encéfalo."
+    },
+    {
+      "id": 8,
+      "sourceId": 185,
+      "used": true,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo evoluciona sumando partes: el arquicerebelo es el más antiguo (presente ya en lampreas), le siguió el paleocerebelo en peces nadadores, y finalmente el neocerebelo (hemisferios cerebelosos) surge a partir de los reptiles."
+    },
+    {
+      "id": 9,
+      "sourceId": 96,
+      "used": true,
+      "text": "Los receptores olfativos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se encuentran en la glándula pituitaria."
+        },
+        {
+          "key": "B",
+          "text": "Son neuronas."
+        },
+        {
+          "key": "C",
+          "text": "Están desprovistos de cilios al contrario que los receptores auditivos."
+        },
+        {
+          "key": "D",
+          "text": "Utilizan un código no combinatorio para reconocer todos los olores posibles del planeta."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A diferencia de la mayoría de los receptores de otros sentidos (que son células especializadas no neuronales), los receptores olfatorios son verdaderas neuronas bipolares que, de forma excepcional, son capaces de regenerarse."
+    },
+    {
+      "id": 10,
+      "sourceId": 357,
+      "used": true,
+      "text": "Los campos receptivos de determinadas neuronas sensoriales del SNC están organizados de una manera antagónica (on/off). Esto se consigue, a menudo, gracias a la acción conjunta de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neuronas excitatorias e interneuronas excitatorias."
+        },
+        {
+          "key": "B",
+          "text": "Neuronas excitatorias e interneuronas inhibitorias."
+        },
+        {
+          "key": "C",
+          "text": "Neuronas excitatorias exclusivamente."
+        },
+        {
+          "key": "D",
+          "text": "Interneuronas inhibitorias en ausencia de neuronas excitatorias."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La organización centro-periferia antagónica depende de circuitos con excitación e inhibición lateral mediada por interneuronas inhibitorias."
+    },
+    {
+      "id": 11,
+      "sourceId": 204,
+      "used": true,
+      "text": "¿De cuál de las tres capas del disco embrionario deriva directamente el sistema nervioso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mesodermo."
+        },
+        {
+          "key": "B",
+          "text": "ectodermo."
+        },
+        {
+          "key": "C",
+          "text": "endodermo."
+        },
+        {
+          "key": "D",
+          "text": "de las tres capas anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Durante la etapa de gastrulación, el epiblasto forma 3 capas. Todo el sistema nervioso, así como la piel (epidermis), se formará única y exclusivamente a partir de la capa más superficial, conocida como ectodermo."
+    },
+    {
+      "id": 12,
+      "sourceId": 234,
+      "used": true,
+      "text": "El neuroepitelio cortical embrionario se caracteriza porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Está formado por células madre primarias en la zona ventricular."
+        },
+        {
+          "key": "B",
+          "text": "Carece de actividad proliferativa."
+        },
+        {
+          "key": "C",
+          "text": "Solo produce oligodendrocitos maduros."
+        },
+        {
+          "key": "D",
+          "text": "Es una estructura periférica del SNP."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las células neuroepiteliales de la zona ventricular actúan como precursores primarios de muchas células nerviosas del tubo neural."
+    },
+    {
+      "id": 13,
+      "sourceId": 409,
+      "used": true,
+      "text": "¿Cuál es el centro encefálico esencial en la comunicación entre sistema inmune, sistema nervioso y sistema endocrino, integrando las respuestas emitidas por todos ellos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La amígdala."
+        },
+        {
+          "key": "B",
+          "text": "El hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo geniculado lateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo raquídeo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El hipotálamo coordina respuestas neuroendocrinas y autónomas y es un nodo esencial en la comunicación entre sistema nervioso, endocrino e inmune."
+    },
+    {
+      "id": 14,
+      "sourceId": 254,
+      "used": true,
+      "text": "La obtención de fruta en primates frugívoros se ha relacionado con mayor encefalización porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Implica demandas cognitivas espaciales, temporales y sociales más complejas."
+        },
+        {
+          "key": "B",
+          "text": "Elimina la necesidad de memoria."
+        },
+        {
+          "key": "C",
+          "text": "Reduce el metabolismo cerebral a cero."
+        },
+        {
+          "key": "D",
+          "text": "Impide el aprendizaje por experiencia."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La dieta frugívora requiere localizar recursos variables y recordar cuándo están disponibles, lo que puede incrementar demandas cognitivas."
+    },
+    {
+      "id": 15,
+      "sourceId": 391,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con los efectos de la adrenalina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aumenta la glucólisis."
+        },
+        {
+          "key": "B",
+          "text": "Aumenta la frecuencia cardiaca."
+        },
+        {
+          "key": "C",
+          "text": "Disminuye la secreción de insulina."
+        },
+        {
+          "key": "D",
+          "text": "Todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La adrenalina prepara al organismo para la respuesta de lucha o huida: moviliza glucosa, aumenta frecuencia cardiaca y tiende a inhibir la insulina."
+    },
+    {
+      "id": 16,
+      "sourceId": 296,
+      "used": true,
+      "text": "Las hormonas tiroideas requieren para su síntesis:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yodo procedente de la dieta."
+        },
+        {
+          "key": "B",
+          "text": "Antígenos de histocompatibilidad."
+        },
+        {
+          "key": "C",
+          "text": "Acetilcolina ganglionar."
+        },
+        {
+          "key": "D",
+          "text": "Células de Purkinje."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El yodo es un componente esencial de T3 y T4, por eso el bloqueo con yoduro estable puede proteger frente al yodo radiactivo."
+    },
+    {
+      "id": 17,
+      "sourceId": 225,
+      "used": true,
+      "text": "La formación reticular del tronco del encéfalo es relevante porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solo aparece en humanos."
+        },
+        {
+          "key": "B",
+          "text": "Integra múltiples señales y participa en sistemas de activación ascendente."
+        },
+        {
+          "key": "C",
+          "text": "Es una glándula endocrina."
+        },
+        {
+          "key": "D",
+          "text": "Sustituye al cerebelo en el control fino del movimiento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Por su posición y conexiones, la formación reticular integra señales variadas y modula el nivel de activación cortical y la vigilia."
+    },
+    {
+      "id": 18,
+      "sourceId": 71,
+      "used": true,
+      "text": "El reflejo de extensión o miotático (como el reflejo rotuliano):",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es un reflejo polisináptico."
+        },
+        {
+          "key": "B",
+          "text": "Es un reflejo monosináptico."
+        },
+        {
+          "key": "C",
+          "text": "Es independiente de la actividad de los husos musculares."
+        },
+        {
+          "key": "D",
+          "text": "Rechaza el principio de inhibición recíproca."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Es calificado como monosináptico porque los axones de la neurona sensorial aferente (procedentes del huso muscular) hacen sinapsis directa sobre la motoneurona alfa responsable de contraer el mismo músculo."
+    },
+    {
+      "id": 19,
+      "sourceId": 276,
+      "used": true,
+      "text": "En general, las fibras postganglionares simpáticas liberan principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina."
+        },
+        {
+          "key": "B",
+          "text": "Oxitocina."
+        },
+        {
+          "key": "C",
+          "text": "Melatonina."
+        },
+        {
+          "key": "D",
+          "text": "Glutamato en la placa motora."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La mayoría de neuronas postganglionares simpáticas son noradrenérgicas, aunque existen excepciones como las glándulas sudoríparas."
+    },
+    {
+      "id": 20,
+      "sourceId": 123,
+      "used": true,
+      "text": "¿Cuál de los siguientes ejes neuroendocrinos está principalmente implicado en la respuesta al estrés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eje hipotálamo-hipófisis-tiroides (HHT)."
+        },
+        {
+          "key": "B",
+          "text": "Eje hipotálamo-hipófisis-adrenal (HHA)."
+        },
+        {
+          "key": "C",
+          "text": "Eje hipotálamo-hipófisis-gonadal (HHG)."
+        },
+        {
+          "key": "D",
+          "text": "Eje pineal-retina-hipotálamo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El eje HHA (hipotálamo-hipófisis-adrenal) es el sistema neuroendocrino central de respuesta fisiológica ante el estrés, culminando en la liberación de glucocorticoides (como el cortisol) por parte de la corteza suprarrenal."
+    },
+    {
+      "id": 21,
+      "sourceId": 271,
+      "used": true,
+      "text": "Tras la llegada de un potencial de acción a la terminal de una motoneurona alfa, la secuencia correcta en la unión neuromuscular es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liberación de ACh, apertura de canales de Na+ y K+, potencial de placa y potencial de acción muscular."
+        },
+        {
+          "key": "B",
+          "text": "Potencial de placa, liberación de cortisol y contracción cardíaca."
+        },
+        {
+          "key": "C",
+          "text": "Liberación de dopamina, activación de linfocitos y relajación."
+        },
+        {
+          "key": "D",
+          "text": "Apertura de canales, cierre del tubo neural y secreción de FSH."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La acetilcolina se une a receptores nicotínicos, abre canales catiónicos, genera potencial de placa y puede disparar la contracción muscular."
+    },
+    {
+      "id": 22,
+      "sourceId": 109,
+      "used": true,
+      "text": "El haz de axones de sustancia blanca que constituye el fórnix conecta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El tálamo con el tronco del encéfalo."
+        },
+        {
+          "key": "B",
+          "text": "La formación hipocampal con el tálamo."
+        },
+        {
+          "key": "C",
+          "text": "La formación hipocampal con los núcleos mamilares y el encéfalo anterior."
+        },
+        {
+          "key": "D",
+          "text": "La formación hipocampal y el tronco del encéfalo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El fórnix es la gran comisura e importante vía de salida de la formación hipocampal, conectándola anatómicamente de forma directa con los núcleos mamilares del hipotálamo y la región septal del encéfalo anterior."
+    },
+    {
+      "id": 23,
+      "sourceId": 344,
+      "used": true,
+      "text": "¿Qué cambio experimentó el cerebelo con el paso del medio acuático al terrestre en los primeros anfibios?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La aparición del neocerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Un aumento del paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Una reducción del cerebelo, quedando limitado al arquicerebelo."
+        },
+        {
+          "key": "D",
+          "text": "La aparición de las células de Purkinje."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El paso al medio terrestre incrementó las demandas posturales y locomotoras, por lo que se produjo un mayor desarrollo del paleocerebelo."
+    },
+    {
+      "id": 24,
+      "sourceId": 64,
+      "used": true,
+      "text": "Durante el desarrollo del sistema nervioso, el neuroepitelio cortical:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lo constituyen células neuroepiteliales que forman la zona ventricular."
+        },
+        {
+          "key": "B",
+          "text": "Presenta una apariencia pseudoestratificada."
+        },
+        {
+          "key": "C",
+          "text": "Está formado por células madre primarias de las que derivarán las células nerviosas del tubo neural."
+        },
+        {
+          "key": "D",
+          "text": "Todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El neuroepitelio es la primera estructura celular del tubo neural. Está formado por células madre, constituye la capa más interna (zona ventricular) y al microscopio presenta una engañosa apariencia pseudoestratificada."
+    },
+    {
+      "id": 25,
+      "sourceId": 127,
+      "used": true,
+      "text": "El cuerpo estriado agrupa tres grandes núcleos subcorticales, ¿cuáles son?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caudado, amígdala y núcleo de la estría terminal."
+        },
+        {
+          "key": "B",
+          "text": "Putamen, globo pálido y núcleo subtalámico."
+        },
+        {
+          "key": "C",
+          "text": "Sustancia negra, núcleo rojo y globo pálido."
+        },
+        {
+          "key": "D",
+          "text": "Putamen, globo pálido y núcleo caudado."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Anatómicamente, el cuerpo estriado es el componente principal de los ganglios basales y está constituido exclusivamente por el núcleo caudado, el putamen y el globo pálido."
+    },
+    {
+      "id": 26,
+      "sourceId": 129,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe mejor la relación entre el sistema endocrino, el sistema inmune y el sistema nervioso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El sistema nervioso central regula el sistema inmune, pero no recibe señales procedentes de él."
+        },
+        {
+          "key": "B",
+          "text": "El sistema endocrino puede modular al sistema inmune, pero esta influencia no es recíproca."
+        },
+        {
+          "key": "C",
+          "text": "Existen mecanismos bidireccionales por los cuales el sistema inmune puede influir sobre la actividad nerviosa y endocrina, y viceversa."
+        },
+        {
+          "key": "D",
+          "text": "El sistema inmune actúa de manera completamente independiente del sistema nervioso y endocrino."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La psiconeuroinmunología ha evidenciado una comunicación bidireccional continua: las vías neurales y hormonales alteran la función inmunitaria, y las citocinas inmunes modulan a su vez la actividad cerebral y neuroendocrina."
+    },
+    {
+      "id": 27,
+      "sourceId": 267,
+      "used": true,
+      "text": "En visión, las células ganglionares de la retina muestran:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Especialización funcional temprana para propiedades como contraste, movimiento o detalles."
+        },
+        {
+          "key": "B",
+          "text": "Ausencia total de campos receptivos."
+        },
+        {
+          "key": "C",
+          "text": "Secreción de hormona luteinizante."
+        },
+        {
+          "key": "D",
+          "text": "Función exclusiva de células inmunitarias."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Ya en retina hay canales funcionales especializados que serán mantenidos y procesados en niveles visuales posteriores."
+    },
+    {
+      "id": 28,
+      "sourceId": 98,
+      "used": true,
+      "text": "¿Qué neurotransmisor utilizan las fibras postganglionares simpáticas, fundamentalmente?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina."
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina."
+        },
+        {
+          "key": "C",
+          "text": "Dopamina."
+        },
+        {
+          "key": "D",
+          "text": "Serotonina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las neuronas postganglionares del sistema nervioso simpático segregan noradrenalina sobre sus órganos diana para desencadenar respuestas de excitación, con la única excepción de las glándulas sudoríparas, donde usan acetilcolina."
+    },
+    {
+      "id": 29,
+      "sourceId": 265,
+      "used": true,
+      "text": "Las células ciliadas auditivas se encuentran en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El órgano de Corti de la cóclea."
+        },
+        {
+          "key": "B",
+          "text": "La membrana timpánica."
+        },
+        {
+          "key": "C",
+          "text": "El núcleo supraóptico."
+        },
+        {
+          "key": "D",
+          "text": "El globo pálido."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las células ciliadas se ubican en el órgano de Corti y transducen movimientos de la membrana basilar y tectorial en señales nerviosas."
+    },
+    {
+      "id": 30,
+      "sourceId": 326,
+      "used": true,
+      "text": "En una figura de sistemas de modulación difusa, si el núcleo de origen es el locus coeruleus y las proyecciones se distribuyen ampliamente por el encéfalo, ¿qué sistema está representado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El noradrenérgico."
+        },
+        {
+          "key": "B",
+          "text": "El colinérgico."
+        },
+        {
+          "key": "C",
+          "text": "El dopaminérgico."
+        },
+        {
+          "key": "D",
+          "text": "El histaminérgico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El locus coeruleus es el principal origen de proyecciones noradrenérgicas difusas hacia el encéfalo anterior y la corteza."
+    }
+  ]
+}

@@ -18,20 +18,20 @@ from typing import Any, Dict, List
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/psicobiologia/preguntas_psicologia_fundamentos_psicobiologia_completo.json"
-OUTPUT_JSON = "out/examen-uned-test.json"
+INPUT_JSON = "input/psicobiologia/Examen-Junio-E-2025.json"
+OUTPUT_JSON = "out/psicobiologia/examen-junio-E-2025.json"
 
 SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - 30 Tipo Test"
+EXAM_TITLE = "UNED - Junio 2025 - E"
 SUBTITLE = "30 Tipo Test"
-NOTICE = "Preguntas elegidas por copilot"
+NOTICE = "Preguntas del examen de Junio 2025 - E de Fundamentos de Psicobiología de la UNED"
 
 MAX_SCORE = 10.0
 WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0
 TIME_LIMIT_MINUTES = 90
 FORMULA_TIP = ""  # Si se deja vacio, se autogenera.
 NUMBER_OF_QUESTIONS = 30  # 0 = usar todas las preguntas del JSON de entrada.
-RANDOM_SELECTION = True  # True = elegir preguntas al azar.
+RANDOM_SELECTION = False  # True = elegir preguntas al azar.
 RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecucion.
 
 

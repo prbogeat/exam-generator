@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 1",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 157,
+      "used": true,
+      "text": "¿Cuál es la causa de que puedan aparecer, aunque parezca contradictorio, graves trastornos motores asociados a los circuitos que recibe el neoestriado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hiperactividad de los circuitos facilitadores por encima de los inhibidores exclusivamente."
+        },
+        {
+          "key": "B",
+          "text": "La hiperactividad exclusiva de los circuitos inhibidores en el neoestriado."
+        },
+        {
+          "key": "C",
+          "text": "La pérdida del fino equilibrio entre las señales facilitadoras e inhibidoras del movimiento."
+        },
+        {
+          "key": "D",
+          "text": "Ninguna de las opciones anteriores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los ganglios basales operan manteniendo un balance muy estricto entre sus vías directas (que facilitan el movimiento) y sus vías indirectas (que lo inhiben). La alteración de este equilibrio genera patologías como el Parkinson (hipocinesia) o la corea de Huntington (hipercinesia)."
+    },
+    {
+      "id": 2,
+      "sourceId": 207,
+      "used": true,
+      "text": "En seres humanos se da un proceso por el que se prolongan hasta la edad adulta patrones de expresión génica que en otros primates solo se dan en etapas tempranas. Este fenómeno se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "neotenia transcripcional."
+        },
+        {
+          "key": "B",
+          "text": "hipótesis monofilética transcripcional."
+        },
+        {
+          "key": "C",
+          "text": "estrategia r."
+        },
+        {
+          "key": "D",
+          "text": "encefalización transcripcional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La neotenia es la retención de rasgos juveniles. El retraso biológico en nuestro desarrollo cerebral que nos permite mantener la plasticidad y la creación de sinapsis durante la niñez y la edad adulta se denomina neotenia transcripcional."
+    },
+    {
+      "id": 3,
+      "sourceId": 28,
+      "used": true,
+      "text": "En relación con el control motor, ¿qué área cortical aporta las claves sensoriales y motivacionales en los movimientos dirigidos a un blanco?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El área motora suplementaria."
+        },
+        {
+          "key": "B",
+          "text": "La corteza premotora."
+        },
+        {
+          "key": "C",
+          "text": "La corteza parietal posterior."
+        },
+        {
+          "key": "D",
+          "text": "La corteza prefrontal dorsolateral."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La corteza de asociación parietal posterior evalúa e integra la posición del cuerpo con las claves sensoriales del entorno y suministra esa información a la corteza premotora para dirigir los movimientos hacia un blanco."
+    },
+    {
+      "id": 4,
+      "sourceId": 60,
+      "used": true,
+      "text": "Según su proximidad al III ventrículo, en cada región del hipotálamo se distinguen tres zonas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Periventricular, medial y lateral."
+        },
+        {
+          "key": "B",
+          "text": "Posterior, medial y lateral."
+        },
+        {
+          "key": "C",
+          "text": "Anterior, dorsal y ventral."
+        },
+        {
+          "key": "D",
+          "text": "Interna, externa y tuberal."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Anatómicamente, al extenderse desde la parte que bordea las paredes del tercer ventrículo hacia el exterior, la sustancia gris hipotalámica se estratifica transversalmente en tres zonas consecutivas: periventricular, medial y lateral."
+    },
+    {
+      "id": 5,
+      "sourceId": 74,
+      "used": true,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos."
+    },
+    {
+      "id": 6,
+      "sourceId": 91,
+      "used": true,
+      "text": "El lenguaje humano se diferencia del de otros primates por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Su carácter simbólico y gramatical."
+        },
+        {
+          "key": "B",
+          "text": "Usar solo gestos."
+        },
+        {
+          "key": "C",
+          "text": "Carecer de lateralización hemisférica."
+        },
+        {
+          "key": "D",
+          "text": "No requerir aprendizaje."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Aunque otros animales se comunican y pueden usar gestos, el lenguaje humano es el único que posee una naturaleza marcadamente simbólica y está estructurado mediante complejas reglas gramaticales y sintácticas."
+    },
+    {
+      "id": 7,
+      "sourceId": 93,
+      "used": true,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana."
+    },
+    {
+      "id": 8,
+      "sourceId": 93,
+      "used": true,
+      "text": "Los cnidarios y los organismos bilaterales comparten características neuronales que sugieren una continuidad filogenética. Según estudios de filogenia molecular, esto se debe principalmente a que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los cnidarios carecen completamente de genes relacionados con la neurogénesis."
+        },
+        {
+          "key": "B",
+          "text": "Los factores de transcripción implicados en la neurogénesis en cnidarios se conservan en el clado Bilateria."
+        },
+        {
+          "key": "C",
+          "text": "Los sistemas nerviosos de cnidarios son más complejos que los de, por ejemplo, los insectos."
+        },
+        {
+          "key": "D",
+          "text": "Los dos tipos de organismos evolucionaron en un medio acuoso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Se ha comprobado que varios factores de transcripción genética presentes en los cnidarios y que están implicados en eventos tempranos de la neurogénesis, se conservan de forma estructural y funcional en los animales del clado Bilateria."
+    },
+    {
+      "id": 9,
+      "sourceId": 58,
+      "used": true,
+      "text": "¿Qué hormona se produce principalmente en la zona glomerular de la corteza suprarrenal y está involucrada en la regulación de la concentración de iones en sangre?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cortisol."
+        },
+        {
+          "key": "B",
+          "text": "la corticosterona."
+        },
+        {
+          "key": "C",
+          "text": "la aldosterona."
+        },
+        {
+          "key": "D",
+          "text": "la testosterona."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La zona externa de la corteza suprarrenal (glomerular) secreta mineralocorticoides, de los cuales el más importante es la aldosterona, la cual retiene iones de sodio y favorece la excreción del potasio en los riñones."
+    },
+    {
+      "id": 10,
+      "sourceId": 90,
+      "used": true,
+      "text": "¿Qué hito de diferenciación celular evolutivo es el más reciente en relación con el desarrollo anatómico del SNC en los vertebrados?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La aparición de las células piramidales."
+        },
+        {
+          "key": "B",
+          "text": "La aparición de ganglios."
+        },
+        {
+          "key": "C",
+          "text": "El desarrollo de axones gigantes sin mielina."
+        },
+        {
+          "key": "D",
+          "text": "La existencia de interneuronas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los ganglios y las interneuronas son antiquísimos en la filogenia y existen ya en grupos inferiores de invertebrados. Las células piramidales (excitatorias corticales), en cambio, aparecen exclusivamente ligadas al desarrollo de la corteza cerebral a partir de los reptiles y mamíferos."
+    },
+    {
+      "id": 11,
+      "sourceId": 162,
+      "used": true,
+      "text": "¿Cuál de las siguientes estructuras nerviosas está presente en algunos de los invertebrados avanzados, pero NO es un término aplicable a la anatomía de los vertebrados?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ganglios encefálicos."
+        },
+        {
+          "key": "B",
+          "text": "Corteza cerebral."
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Bulbo raquídeo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El encéfalo de los vertebrados (con cerebelo, corteza o bulbo) es un órgano fusionado y macizo. Sin embargo, los invertebrados, al no poseer un encéfalo dorsal cerrado, concentran su control central en los denominados 'ganglios encefálicos' o cerebroides."
+    },
+    {
+      "id": 12,
+      "sourceId": 120,
+      "used": true,
+      "text": "¿Cuál o cuáles de los siguientes núcleos del tálamo han sido propuestos como responsables de inhibir la actividad de los núcleos talámicos de relevo, actuando como una compuerta que impide la transmisión de señales hacia la corteza cerebral?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los de relevo del grupo anterior."
+        },
+        {
+          "key": "B",
+          "text": "los del grupo de la línea media."
+        },
+        {
+          "key": "C",
+          "text": "el núcleo reticular."
+        },
+        {
+          "key": "D",
+          "text": "los núcleos intralaminares."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo reticular talámico forma un escudo alrededor de los demás núcleos del tálamo y su función, mediante interneuronas inhibitorias (GABAérgicas), es actuar como una 'compuerta' frenando o bloqueando las señales hacia la corteza."
+    },
+    {
+      "id": 13,
+      "sourceId": 81,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    },
+    {
+      "id": 14,
+      "sourceId": 49,
+      "used": true,
+      "text": "Cuando fotones de luz atraviesan las distintas capas de la retina hasta llegar a los bastones y conos, las respuestas de esas células fotorreceptoras se llevan a cabo con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "potenciales graduados (potenciales de receptor) inhibitorios."
+        },
+        {
+          "key": "B",
+          "text": "potenciales de acción."
+        },
+        {
+          "key": "C",
+          "text": "potenciales graduados (potenciales de receptor) excitatorios."
+        },
+        {
+          "key": "D",
+          "text": "la participación del epitelio pigmentado, que es rico en melanina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A diferencia de muchos otros receptores, los conos y bastones en presencia de luz no producen potenciales de acción ni se despolarizan; responden emitiendo potenciales graduados inhibitorios (se hiperpolarizan), disminuyendo la liberación del neurotransmisor."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Señale el concepto que corresponde a la siguiente definición: 'Es en general una respuesta rápida que desempeña un papel fundamental en la fase inicial de la defensa y que se desencadena ante la mayor parte de microorganismos invasores':",
+      "options": [
+        {
+          "key": "A",
+          "text": "inmunidad innata o natural."
+        },
+        {
+          "key": "B",
+          "text": "respuesta inmune específica."
+        },
+        {
+          "key": "C",
+          "text": "homeostasis."
+        },
+        {
+          "key": "D",
+          "text": "inmunidad adquirida."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inmunidad innata, o inespecífica, se caracteriza precisamente por ser la primera línea de acción de respuesta rápida y general ante patógenos."
+    },
+    {
+      "id": 16,
+      "sourceId": 172,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe de manera correcta la organización funcional inicial de las proyecciones auditivas corticales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El paracinturón recibe la primera onda sonora pura."
+        },
+        {
+          "key": "B",
+          "text": "El cinturón auditivo es la principal entrada desde el nervio auditivo sin paso por el tálamo."
+        },
+        {
+          "key": "C",
+          "text": "La corteza auditiva primaria se ubica en la circunvolución de Heschl y recibe aferencias directas del núcleo geniculado medial."
+        },
+        {
+          "key": "D",
+          "text": "El área A1 proyecta al oído para el control del equilibrio interno."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo geniculado medial del tálamo es la última parada subcortical de la vía auditiva, y sus fibras talámicas se proyectan estrictamente a la corteza primaria auditiva, la cual está escondida en las circunvoluciones transversas de Heschl."
+    },
+    {
+      "id": 17,
+      "sourceId": 8,
+      "used": true,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales."
+    },
+    {
+      "id": 18,
+      "sourceId": 206,
+      "used": true,
+      "text": "En lo que se refiere a los linfocitos B, su diferenciación a células plasmáticas y de memoria está mediada, entre otros factores, por la activación de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ciertos tipos de linfocitos T."
+        },
+        {
+          "key": "B",
+          "text": "células presentadoras de antígenos."
+        },
+        {
+          "key": "C",
+          "text": "células de memoria de los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "el complejo mayor de histocompatibilidad."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Para que un Linfocito B madure en masa y se convierta en una 'fábrica' productora de anticuerpos (célula plasmática), necesita obligatoriamente el apoyo y las señales de los Linfocitos T colaboradores."
+    },
+    {
+      "id": 19,
+      "sourceId": 5,
+      "used": true,
+      "text": "En relación con la ontogenia del SNC, sabemos que el neuroectodermo queda determinado durante el proceso de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "gastrulación."
+        },
+        {
+          "key": "B",
+          "text": "regionalización de la placa neural."
+        },
+        {
+          "key": "C",
+          "text": "inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "segmentación del tubo neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La neurulación comienza con la inducción neural del ectodermo, un proceso que marca el territorio neural y determina el tejido del que se originará el SN."
+    },
+    {
+      "id": 20,
+      "sourceId": 174,
+      "used": true,
+      "text": "Robert Ader y Nicholas Cohen demostraron con ratas que el sistema inmunológico no es un ente autónomo. ¿Qué observación empírica fue la clave de este trascendental hallazgo en 1975?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El hallazgo de receptores de glucocorticoides en linfocitos B."
+        },
+        {
+          "key": "B",
+          "text": "La comprobación experimental de que asociando un sabor a un fármaco inmunosupresor, el simple sabor lograba desencadenar inmunosupresión posterior (condicionamiento clásico)."
+        },
+        {
+          "key": "C",
+          "text": "La evidencia de que el VIH ataca la barrera hematoencefálica."
+        },
+        {
+          "key": "D",
+          "text": "El descubrimiento del reflejo motor del vago sobre el bazo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Demostraron empíricamente que la inmunidad podía comportarse como una respuesta aprendida regida por el cerebro mediante la aplicación de las leyes psicológicas del condicionamiento pavloviano."
+    },
+    {
+      "id": 21,
+      "sourceId": 29,
+      "used": true,
+      "text": "¿Qué neurotransmisor liberan las neuronas preganglionares simpáticas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina"
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina"
+        },
+        {
+          "key": "C",
+          "text": "Dopamina"
+        },
+        {
+          "key": "D",
+          "text": "GABA"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las neuronas preganglionares del SNA son colinérgicas."
+    },
+    {
+      "id": 22,
+      "sourceId": 160,
+      "used": true,
+      "text": "En el bulbo raquídeo, el tracto de gran dimensión que se ve en el tegmento y que cruza la línea media transmitiendo información ascendente al diencéfalo-tálamo se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fascículo cuneado."
+        },
+        {
+          "key": "B",
+          "text": "Lemnisco medial."
+        },
+        {
+          "key": "C",
+          "text": "Pirámide."
+        },
+        {
+          "key": "D",
+          "text": "Lemnisco lateral."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las fibras procedentes de los núcleos de las columnas blancas dorsales (grácil y cuneado) decusan en el bulbo y forman la gruesa vía de sustancia blanca denominada lemnisco medial, la cual asciende llevando el tacto fino hacia el tálamo."
+    },
+    {
+      "id": 23,
+      "sourceId": 21,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    },
+    {
+      "id": 24,
+      "sourceId": 1,
+      "used": true,
+      "text": "En el sistema nervioso central, un tracto se define como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una agrupación de axones que se originan en una sola estructura y se dirigen todos al mismo destino."
+        },
+        {
+          "key": "B",
+          "text": "Una agrupación de axones que se originan en varias estructuras y se dirigen a varios destinos."
+        },
+        {
+          "key": "C",
+          "text": "Un grupo de somas neuronales con límites definidos."
+        },
+        {
+          "key": "D",
+          "text": "Un conjunto de fibras que cruzan la línea media."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En la organización de la sustancia blanca del SNC, el término tracto indica una vía nerviosa formada por axones con un único origen y un mismo destino."
+    },
+    {
+      "id": 25,
+      "sourceId": 186,
+      "used": true,
+      "text": "Alguno de los siguientes núcleos del tronco del encéfalo presenta neuronas que sintetizan serotonina, ¿a qué núcleo/s nos referimos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "núcleos del rafe."
+        },
+        {
+          "key": "B",
+          "text": "núcleo rojo."
+        },
+        {
+          "key": "C",
+          "text": "núcleos mamilares."
+        },
+        {
+          "key": "D",
+          "text": "ninguno de los anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los núcleos del rafe, que se distribuyen longitudinalmente por la línea media del tronco del encéfalo y quedan embebidos en la formación reticular, son la principal fuente de proyecciones serotoninérgicas (5-HT) del SNC."
+    },
+    {
+      "id": 26,
+      "sourceId": 198,
+      "used": true,
+      "text": "Durante la ontogenia del SN ¿qué tipo de moléculas realizan el reconocimiento de la glía radial y proporcionan la adhesividad para que se desplacen las neuronas migratorias del tubo neural?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las moléculas de la matriz extracelular."
+        },
+        {
+          "key": "B",
+          "text": "Las sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "Las moléculas de adhesión celular neurona-glía (MAC-Ng)."
+        },
+        {
+          "key": "D",
+          "text": "Las sustancias neurotrópicas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Para poder trepar y migrar a través del entramado de andamios que forma la glía radial, las neuronas recién nacidas utilizan proteínas especializadas ancladas a su membrana conocidas como MAC-Ng (Moléculas de Adhesión Celular Neurona-Glía)."
+    },
+    {
+      "id": 27,
+      "sourceId": 70,
+      "used": true,
+      "text": "¿Qué grupo presenta una red nerviosa difusa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cnidarios"
+        },
+        {
+          "key": "B",
+          "text": "Mamíferos"
+        },
+        {
+          "key": "C",
+          "text": "Aves"
+        },
+        {
+          "key": "D",
+          "text": "Anélidos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los cnidarios poseen una organización nerviosa simple y difusa."
+    },
+    {
+      "id": 28,
+      "sourceId": 136,
+      "used": true,
+      "text": "¿Cuál es el origen principal de la mayoría de las interneuronas inhibitorias de la corteza cerebral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La placa cortical del telencéfalo dorsal."
+        },
+        {
+          "key": "B",
+          "text": "La zona ventricular del neuroepitelio cortical."
+        },
+        {
+          "key": "C",
+          "text": "El hem cortical del telencéfalo medial."
+        },
+        {
+          "key": "D",
+          "text": "Las eminencias ganglionares del telencéfalo subcortical."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A diferencia de las neuronas de proyección excitatorias que nacen localmente en la zona ventricular, la mayoría de las interneuronas inhibitorias gabaérgicas se originan ventralmente en las eminencias ganglionares y migran de forma tangencial hasta la corteza."
+    },
+    {
+      "id": 29,
+      "sourceId": 106,
+      "used": true,
+      "text": "¿Qué tipo de células presentes en el sistema nervioso central tiene capacidad fagocítica y, además, actúa como célula presentadora de antígenos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las neuronas."
+        },
+        {
+          "key": "B",
+          "text": "Las células de Schwann."
+        },
+        {
+          "key": "C",
+          "text": "Los oligodendrocitos."
+        },
+        {
+          "key": "D",
+          "text": "Las células de la microglía."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La microglía, derivada de monocitos infiltrados durante el desarrollo, constituye el sistema inmunitario residente del SNC, teniendo capacidad para fagocitar desechos y actuar como célula presentadora de antígenos."
+    },
+    {
+      "id": 30,
+      "sourceId": 2,
+      "used": true,
+      "text": "¿Dónde se localizan principalmente los cuerpos neuronales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustancia gris"
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca"
+        },
+        {
+          "key": "C",
+          "text": "Meninges"
+        },
+        {
+          "key": "D",
+          "text": "Ventrículos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sustancia gris contiene somas neuronales y sinapsis."
+    }
+  ]
+}

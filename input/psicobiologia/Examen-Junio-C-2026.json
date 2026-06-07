@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Robert Ader acuñó el término 'Psiconeuroinmunología' en 1980. ¿Qué observación empírica fue clave para desechar el modelo clásico del sistema inmune como autónomo?",
+    "opciones": {
+      "a": "El hallazgo de que sujetos expuestos a situaciones estresantes presentaban mayor susceptibilidad a infecciones.",
+      "b": "El descubrimiento de fibras simpáticas noradrenérgicas en los órganos linfoides.",
+      "c": "La comprobación de que los linfocitos producen péptidos opioides endógenos.",
+      "d": "La identificación de receptores para citocinas en neuronas y células gliales."
+    },
+    "correcta": "b",
+    "explicacion": "Tras descubrir experimentalmente el condicionamiento inmune, la confirmación anatómica decisiva vino por el hallazgo de terminales simpáticas infiltradas dictando órdenes dentro de las entrañas del bazo y del timo [47]."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre el origen de las neuronas de la neocorteza es correcta?",
+    "opciones": {
+      "a": "Las zonas proliferativas del neuroepitelio cortical generan la mayoría de las interneuronas excitatorias de la neocorteza.",
+      "b": "Las zonas proliferativas del neuroepitelio cortical generan la mayoría de las interneuronas inhibitorias de la neocorteza.",
+      "c": "Todas las neuronas de la neocorteza se originan en regiones extracorticales.",
+      "d": "El resto de las afirmaciones son incorrectas."
+    },
+    "correcta": "d",
+    "explicacion": "Las aseveraciones son falsas. El neuroepitelio cortical sí engendra de forma originaria células piramidales (que son proyeccionales y excitatorias), y no fabrica interneuronas de manera mayoritaria (que provienen del telencéfalo subcortical) [33, 34]."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Las principales células productoras de hormonas gonadales son las de:",
+    "opciones": {
+      "a": "La zona periventricular del hipotálamo.",
+      "b": "Sertoly.",
+      "c": "Leydig.",
+      "d": "El área preóptica medial."
+    },
+    "correcta": "c",
+    "explicacion": "Estas células de sostén (intersticiales de Leydig) actúan de central hormonal bombeando andrógenos testiculares tras su excitación bioquímica por la hipófisis [1]."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Qué cambio experimentó el cerebelo con el paso del medio acuático al terrestre en los primeros anfibios?",
+    "opciones": {
+      "a": "La aparición del neocerebelo.",
+      "b": "Una reducción del cerebelo, quedando limitado al arquicerebelo.",
+      "c": "Un aumento del paleocerebelo.",
+      "d": "La aparición de las células de Purkinje."
+    },
+    "correcta": "b",
+    "explicacion": "La conquista reptante sobre el barro obligó a desechar gran parte de los centros acuáticos vestibulares de la línea lateral, menguando el cerebelo a mínimos componentes biológicos [24, 25]."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "El 'reflejo inflamatorio' mediado por el nervio vago implica una secuencia específica. ¿Cuál es el orden correcto?",
+    "opciones": {
+      "a": "SNC detecta el patógeno → activa fibras aferentes vagales → libera noradrenalina en órganos linfoides.",
+      "b": "Células inmunitarias liberan ACh → estimulan el nervio vago → SNC suprime el eje HHA.",
+      "c": "Fibras aferentes vagales informan al SNC de cambios internos → SNC activa la vía colinérgica antiinflamatoria (fibras eferentes vagales) → liberación de ACh → efectos antiinflamatorios.",
+      "d": "Inflamación periférica → fibras eferentes vagales → SNC → fibras aferentes vagales → inhibición inmune."
+    },
+    "correcta": "c",
+    "explicacion": "La ruta fisiológica de amortiguación autoinmune sigue esta lógica secuencial donde el vago (nervio craneal mixto) es a la vez sensor por vía ascendente, y supresor liberando acetilcolina por vía descendente [40, 41]."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Durante el desarrollo embrionario temprano, una fase crítica consiste en la correcta fusión del tubo neural. ¿Qué consecuencias puede tener un fallo en este proceso?",
+    "opciones": {
+      "a": "Falta de formación de la placenta y alteraciones en el intercambio de nutrientes entre madre y embrión.",
+      "b": "Desarrollo incompleto del sistema nervioso periférico debido a una alteración en la migración de la cresta neural.",
+      "c": "Alteraciones en la diferenciación del mesodermo que dan lugar a defectos musculares generalizados.",
+      "d": "Malformaciones del sistema nervioso central y de estructuras asociadas, como espina bífida o anencefalia."
+    },
+    "correcta": "d",
+    "explicacion": "No fusionar herméticamente el conducto es la causa genética de la espina bífida caudal o en peor instancia de las agenesias severas del encéfalo, lo que compromete a nivel global el sistema nervioso [35, 36]."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe correctamente la organización jerárquica y funcional de la corteza auditiva?:",
+    "opciones": {
+      "a": "El paracinturón auditivo proyecta directamente a la corteza auditiva primaria y no recibe información talámica.",
+      "b": "El cinturón auditivo constituye la principal entrada directa desde el núcleo geniculado medial, sin participación de la corteza auditiva primaria.",
+      "c": "La corteza auditiva primaria en la circunvolución de Heschl recibe aferencias del núcleo geniculado medial.",
+      "d": "La corteza auditiva primaria se localiza en el paracinturón y recibe aferencias principalmente de áreas corticales asociativas."
+    },
+    "correcta": "c",
+    "explicacion": "El Núcleo Geniculado Medial talámico releva toda la información que procesa con inervaciones que vierten exclusiva y densamente en la corteza auditiva primaria, resguardada en el lóbulo temporal [20, 21]."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "De los ganglios basales podemos decir que:",
+    "opciones": {
+      "a": "No se ha demostrado su participación en la expresión motora de las emociones.",
+      "b": "La sustancia negra no forma parte de ellos.",
+      "c": "Sus dos componentes son el núcleo caudado y la sustancia gris periacueductal.",
+      "d": "Intervienen fundamentalmente en la planificación y la fase de inicio de los movimientos en ausencia de estímulos externos."
+    },
+    "correcta": "d",
+    "explicacion": "Son centros moduladores capitales, puesto que procesan los deseos voluntarios autoiniciados para dar luz verde a que se destraben secuencias musculoesqueléticas complejas desde la médula [22]."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la producción de AMP cíclico?:",
+    "opciones": {
+      "a": "El cortisol.",
+      "b": "La hormona liberadora de la tirotropina.",
+      "c": "La aldosterona",
+      "d": "La testosterona."
+    },
+    "correcta": "b",
+    "explicacion": "Puesto que es insoluble a los fosfolípidos, no tiene más remedio que atracar el receptor en la pared exterior y accionar el segundo mensajero que esparcirá la señal en el citoplasma [39]."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Según la hipótesis de la compuerta del núcleo reticular del tálamo, cuando disminuye la actividad inhibitoria del núcleo reticular sobre los núcleos talámicos de relevo, ¿qué ocurre con la transmisión de información hacia la corteza cerebral?",
+    "opciones": {
+      "a": "Se interrumpe la comunicación entre tálamo y tronco del encéfalo.",
+      "b": "Aumenta la transmisión de información desde el tálamo hacia la corteza.",
+      "c": "Se bloquea la transmisión de señales talamocorticales.",
+      "d": "Disminuye la excitabilidad cortical."
+    },
+    "correcta": "b",
+    "explicacion": "Dejando su actividad fisiológica relajada, los relevos talámicos experimentan un rebote y atiborran al córtex de oleadas continuas y desincronizadas de activación e información [10, 11]."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "Señale la asociación INCORRECTA entre la vía mencionada y su función principal:",
+    "opciones": {
+      "a": "Tracto corticoespinal lateral: movimiento fraccionado e independiente de los dedos, manipulación de objetos.",
+      "b": "Vías mediales del tronco del encéfalo: control de la postura y la locomoción.",
+      "c": "Fibras corticorrubrales y rubroespinales: movimientos independientes de los hombros y sobre todo del codo y de la mano, pero no de los dedos.",
+      "d": "Tracto corticoespinal ventral: movimiento independiente de los dedos y control antigravitatorio."
+    },
+    "correcta": "d",
+    "explicacion": "Esa denominación referida a destreza y dedos pertenece en exclusividad a la porción lateral de la vía piramidal. La porción ventral jamás regula los dedos u otras partes distales, sino partes axiales y del cuello [45]."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "En el contexto de la filogenia del sistema nervioso, especialmente en peces y otros vertebrados con sistemas visuales más primitivos, ¿qué estructura actúa como un importante centro de iniciación del comportamiento?",
+    "opciones": {
+      "a": "El núcleo geniculado lateral del tálamo.",
+      "b": "La epífisis.",
+      "c": "La corteza visual primaria.",
+      "d": "El colículo superior."
+    },
+    "correcta": "d",
+    "explicacion": "Carentes aún de estructuras de alta especialización (como áreas occipitales amplias), es el primitivo techo óptico el que comanda la evaluación de bultos y orienta el escape y la embestida en estos individuos [4, 5]."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Qué hito evolutivo es más reciente en relación con el SN?",
+    "opciones": {
+      "a": "Las células piramidales.",
+      "b": "Los ganglios.",
+      "c": "Las interneuronas.",
+      "d": "Los axones gigantes."
+    },
+    "correcta": "a",
+    "explicacion": "La morfología de células piramidales de gran tallo apical apareció tardíamente para integrar múltiples ramales en los mamíferos. Lo demás es parte troncal evolutiva básica [37, 38]."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "En relación con el SNA, señale la respuesta INCORRECTA:",
+    "opciones": {
+      "a": "Las fibras postganglionares simpáticas liberan principalmente noradrenalina.",
+      "b": "Las neuronas preganglionares simpáticas liberan acetilcolina.",
+      "c": "La acetilcolina que se libera por parte de las neuronas preganglionares simpáticas se une a receptores nicotínicos de las neuronas postganglionares.",
+      "d": "Las neuronas preganglionares parasimpáticas liberan noradrenalina."
+    },
+    "correcta": "d",
+    "explicacion": "Totalmente falso; el neurotransmisor indiscutible segregado a nivel de ganglio autonómico entre la conexión del SNC y la segunda neurona (tenga naturaleza simpática o parasimpática) es la acetilcolina [2, 54]."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "En comparación con los primates folívoros, los primates frugívoros suelen presentar un mayor cociente de encefalización. ¿Cuál de las siguientes explicaciones es más coherente con este hecho?",
+    "opciones": {
+      "a": "La dieta frugívora proporciona mayor aporte energético.",
+      "b": "Los primates frugívoros presentan un mayor tamaño corporal medio.",
+      "c": "La obtención de fruta implica mayores demandas cognitivas.",
+      "d": "El cociente de encefalización depende exclusivamente del metabolismo."
+    },
+    "correcta": "c",
+    "explicacion": "Los frugívoros, a fin de detectar color o memorizar dónde y cómo retornar a un brote estacional oculto, se adaptaron aumentando su tamaño de encefalización notablemente [42, 43]."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En la imagen, las letras A, B, C y D se corresponden, respectivamente, con:",
+    "opciones": {
+      "a": "Membrana tectorial, células ciliadas internas, membrana basilar y células ciliadas externas.",
+      "b": "Células ciliadas internas, membrana tectorial, células ciliadas externas y membrana basilar.",
+      "c": "Células de soporte, membrana basilar, células ciliadas externas y membrana tectorial.",
+      "d": "Células ciliadas externas, membrana basilar, células ciliadas internas y membrana tectorial."
+    },
+    "correcta": "b",
+    "explicacion": "Analizando la composición histológica que figura en la imagen transversal típica del caracol auditivo (Órgano de Corti), identificamos el orden anatómico de las principales células sensoriales apoyadas por abajo e inervadas por arriba [31, 55]."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Cuál es una característica de las neuronas magnocelulares en comparación con las parvocelulares?:",
+    "opciones": {
+      "a": "Mantienen sus respuestas a la luz durante más tiempo y participan en el procesamiento del color.",
+      "b": "Responden únicamente a estímulos de color.",
+      "c": "Tienen un origen filogenético más reciente que las parvocelulares.",
+      "d": "Proyectan a zonas de la corteza cerebral ligeramente distintas de las zonas a las que proyectan las parvocelulares y koniocelulares."
+    },
+    "correcta": "d",
+    "explicacion": "Su circuito finaliza desembocando en una topografía cortical que difiere meticulosamente del estrato escogido por el canal parvocelular, manteniéndose procesados en paralelo [43, 46]."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Las neuronas hipotalámicas que liberan sus hormonas en el sistema porta hipotalámico hipofisario se encuentran en los núcleos del hipotálamo de la:",
+    "opciones": {
+      "a": "Neurohipófisis.",
+      "b": "Zona lateral.",
+      "c": "Zona periventricular.",
+      "d": "Zona medial."
+    },
+    "correcta": "c",
+    "explicacion": "Son los núcleos hipotalámicos periventriculares donde habitan los somas de los capilares que verterán sin pausa los factores hormonales que rigen la hipófisis secretora [26, 27]."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En casos de agnosia olfativa, los pacientes:",
+    "opciones": {
+      "a": "Sufren únicamente cambios en la intensidad de los estímulos, sin afectar al reconocimiento.",
+      "b": "No pueden percibir olores porque sus umbrales de detección están alterados.",
+      "c": "Solo muestran alteraciones en la memoria de olores, no en la percepción inmediata.",
+      "d": "Perciben los olores normalmente, pero no pueden identificarlos correctamente."
+    },
+    "correcta": "d",
+    "explicacion": "Presentan plena vigencia periférica olfatoria pero fracasan al asociar una cognición comprensible, al ser víctimas de una agnosia generada por lesión temporal cortical posterior [12, 13]."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "La liberación de las secreciones glandulares está mediada entre otros por el siguiente mecanismo:",
+    "opciones": {
+      "a": "Aumento de cloro intracelular.",
+      "b": "Fusión de la membrana mitocondrial con la membrana plasmática.",
+      "c": "Disminución del contenido intracelular de sodio.",
+      "d": "Elevación de calcio intracelular."
+    },
+    "correcta": "d",
+    "explicacion": "La señal bioeléctrica provoca inevitablemente la entrada de ión Ca²⁺, posibilitando a las membranas vesiculares de las glándulas empalmarse y descargar hacia los conductos circulatorios [48, 49]."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Qué estructura dirige el crecimiento de los axones durante el desarrollo del sistema nervioso?",
+    "opciones": {
+      "a": "Vesículas sinápticas.",
+      "b": "Cono de crecimiento.",
+      "c": "Núcleo neuronal.",
+      "d": "Axones mielinizados."
+    },
+    "correcta": "b",
+    "explicacion": "La morfología de exploración química corre a cargo del cono y sus micro-velos contráctiles de filopodios en crecimiento expansivo [26, 28]."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción la unión a receptores intracelulares?:",
+    "opciones": {
+      "a": "La hormona de crecimiento.",
+      "b": "La prolactina.",
+      "c": "La hormona liberadora de corticotropina.",
+      "d": "La aldosterona."
+    },
+    "correcta": "d",
+    "explicacion": "Para atar sus dominios proteicos dentro del mismísimo citoplasma de la célula u organelo, dicha hormona debe forzosamente ser derivada de colesterol esteroideo, siendo su representante principal la aldosterona [6, 7]."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la diferenciación neuronal es correcta?",
+    "opciones": {
+      "a": "La diferenciación morfológica básica de una neurona está programada antes de que alcance su destino, mientras que su arborización depende del entorno.",
+      "b": "La diferenciación morfológica básica de una neurona está programada antes de que alcance su destino, mientras que su arborización depende del entorno.",
+      "c": "Tanto la diferenciación morfológica básica como la arborización dependen del entorno y de las interacciones entre neuronas.",
+      "d": "Tanto la diferenciación morfológica básica como la arborización están completamente programadas antes de que la neurona alcance su destino."
+    },
+    "correcta": "a",
+    "explicacion": "Pese a que el esqueleto basal lo determina la ontogenia y el destino pre-trazado, la frondosidad o atrofia que sus ramificaciones tendrán siempre estará bajo el arbitrio y estímulo del entorno colindante en que aterrice [14, 15]."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "La somatostatina es:",
+    "opciones": {
+      "a": "Una hormona pancreática.",
+      "b": "La hormona inhibidora de la liberación de prolactina.",
+      "c": "Sintetizada en las células intestinales.",
+      "d": "Lo indicado en las opciones A y C es correcto."
+    },
+    "correcta": "d",
+    "explicacion": "Tal como describe la fisiología glandular, las células delta del islote pancreático comparten la secreción de somatostatina con algunos dominios intestinales que también la sintetizan fisiológicamente de modo local [16, 17]."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿De qué depende principalmente la modalidad sensorial?:",
+    "opciones": {
+      "a": "De las características físicas del estímulo como la frecuencia, amplitud o intensidad.",
+      "b": "Del tipo de energía estimular que activa al receptor.",
+      "c": "Del número de receptores activados simultáneamente.",
+      "d": "De la zona del sistema nervioso central a la que llegan los impulsos nerviosos."
+    },
+    "correcta": "d",
+    "explicacion": "Teniendo en cuenta el postulado de líneas marcadas, sin la vía preestablecida no existiría la categorización. Es el mapa cortical genéticamente determinado de quien las acoge lo que calibra de qué cualidad sensorial se trata [12, 23]."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Un paciente presenta una lesión selectiva en el timo desde el nacimiento. ¿Qué consecuencia DIRECTA cabría esperar sobre la respuesta inmune?",
+    "opciones": {
+      "a": "Déficit en la diferenciación y maduración de los linfocitos T, con afectación de la respuesta mediada por células.",
+      "b": "Incapacidad para producir células NK al ser estas un derivado del timo.",
+      "c": "Ausencia de neutrófilos circulantes por fallo en la hematopoyesis del timo.",
+      "d": "Disminución severa de la respuesta mediada por anticuerpos por déficit de linfocitos B."
+    },
+    "correcta": "a",
+    "explicacion": "Todo el repertorio de Linfocitos T pasaría a ser erradicado funcionalmente puesto que su base exclusiva e irremplazable de entrenamiento (timo) resulta ausente [8, 9]."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Un microorganismo consigue refugiarse dentro de las células del huésped evadiendo los anticuerpos circulantes. ¿Qué componente del sistema inmune específico es ESENCIAL para detectarlo y destruirlo?",
+    "opciones": {
+      "a": "Los linfocitos T, que reconocen fragmentos del antígeno exhibidos en la superficie de las células infectadas mediante proteínas CMH.",
+      "b": "Los macrófagos, que fagocitan las células infectadas sin necesidad de reconocimiento específico.",
+      "c": "El sistema del complemento, que produce orificios en la pared celular del microorganismo.",
+      "d": "Los linfocitos B y los anticuerpos IgM de alta afinidad."
+    },
+    "correcta": "a",
+    "explicacion": "Ninguna inmunidad libre atacaría una célula cerrada si el virus no deja rastro extracelular. A su auxilio acudirán las células T identificando pequeños péptidos secuestrados y anclados por antígenos CMH sobre el muro celular [3, 52]."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Las interneuronas propioespinales:",
+    "opciones": {
+      "a": "Proyectan directamente al tálamo.",
+      "b": "Solo conectan neuronas dentro del mismo segmento medular.",
+      "c": "Se localizan exclusivamente en el asta dorsal.",
+      "d": "Tienen axones largos que intercomunican segmentos medulares."
+    },
+    "correcta": "d",
+    "explicacion": "Su red garantiza una coherencia de toda la columna muscular en locomoción por lo que, obligatoriamente, se ramifican a través de varios segmentos intercalados en las médula [29, 30]."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "En el sistema nervioso central, un tracto se define como:",
+    "opciones": {
+      "a": "Una agrupación de axones que se originan en una sola estructura y se dirigen todos al mismo destino.",
+      "b": "Un conjunto de fibras que cruzan la línea media.",
+      "c": "Una agrupación de axones que se originan en varias estructuras y se dirigen a varios destinos.",
+      "d": "Un grupo de somas neuronales con límites definidos."
+    },
+    "correcta": "a",
+    "explicacion": "Se emplea anatómicamente esta categorización para referirse de forma selectiva a una cohorte nerviosa mielinizada con idéntica procedencia y que no varía su punto de inervación distal [18, 19]."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "Un investigador analiza la organización funcional del cerebelo y observa que la zona lateral de la corteza cerebelosa mantiene una estrecha interrelación con la corteza cerebral a través de los núcleos pontinos y del tálamo... ¿A qué unidad funcional del cerebelo corresponde esta región?",
+    "opciones": {
+      "a": "Cerebrocerebelo.",
+      "b": "Vestibulocerebelo.",
+      "c": "Espinocerebelo.",
+      "d": "Arquicerebelo."
+    },
+    "correcta": "a",
+    "explicacion": "Esta porción lateral no trata reflejos somáticos medulares (como lo hace el espinocerebelo) sino que forma un bucle maestro con la masa cortical superior para predecir finamente los planes motores a ejecutar [44]."
+  },
+  {
+    "id": 31,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Según su proximidad al III ventrículo, en cada región del hipotálamo se distinguen tres zonas:",
+    "opciones": {
+      "a": "Periventricular, medial y lateral.",
+      "b": "Posterior, medial y lateral.",
+      "c": "Anterior, dorsal y ventral.",
+      "d": "Interna, externa y tuberal."
+    },
+    "correcta": "a",
+    "explicacion": "En cualquier nivel y sección coronal del diencéfalo analizado, el volumen hipotalámico queda delimitado a las tres formaciones básicas concéntricas desde el eje del hueco interior ventricular [26]."
+  },
+  {
+    "id": 32,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Cuál es el origen principal de la mayoría de las interneuronas inhibitorias de la corteza cerebral?",
+    "opciones": {
+      "a": "La placa cortical del telencéfalo dorsal.",
+      "b": "La zona ventricular del neuroepitelio cortical.",
+      "c": "Las eminencias ganglionares del telencéfalo subcortical.",
+      "d": "El hem cortical del telencéfalo medial."
+    },
+    "correcta": "c",
+    "explicacion": "Frente al paradigma excitatorio que se estratifica radial y ascendentemente allí mismo, el tejido inhibitorio se gesta apartadamente en el subcórtex y migra en sentido transverso buscando su colocación final [33]."
+  },
+  {
+    "id": 33,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "La hipótesis más plausible para explicar el elevado cociente de encefalización de ballenas y delfines se halla en:",
+    "opciones": {
+      "a": "La organización social.",
+      "b": "El lenguaje.",
+      "c": "Un ecosistema tridimensional.",
+      "d": "La ecolocalización."
+    },
+    "correcta": "d",
+    "explicacion": "Este colosal avance cognitivo anatómico devino por los requisitos de crear mapeos espaciales internos precisos en la caza y desplazamiento interpretando ondas de alta frecuencia en el agua (ecolocalización) [50, 51]."
+  }
+]

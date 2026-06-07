@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "Las células moduladoras de la disparidad:",
+    "opciones": {
+      "a": "están implicadas en la percepción de la profundidad.",
+      "b": "se localizan en el núcleo geniculado medial del tálamo.",
+      "c": "abundan especialmente en V1.",
+      "d": "son cruciales en la localización del estímulo auditivo."
+    },
+    "correcta": "a",
+    "explicacion": "Estas células de la corteza visual se encargan de comparar e inferir las minúsculas diferencias retinianas de las proyecciones visuales de cada ojo; resultando indispensable para dotarnos de relieve o visión 3D del entorno."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de los siguientes ejes neuroendocrinos está principalmente implicado en la respuesta al estrés?",
+    "opciones": {
+      "a": "Eje hipotálamo-hipófisis-tiroides (HHT).",
+      "b": "Eje hipotálamo-hipófisis-adrenal (HHA).",
+      "c": "Eje hipotálamo-hipófisis-gonadal (HHG).",
+      "d": "Eje pineal-retina-hipotálamo."
+    },
+    "correcta": "b",
+    "explicacion": "La movilización del cortisol sistémico mediante la cadena hipotalámica-hipofisaria sobre el córtex suprarrenal constituye la autopista endocrina esencial (eje HHA) para combatir la presión del estrés agudo."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "En la 4/5ª semana de gestación, en el desarrollo del sistema nervioso, sabemos que las células de la cresta neural agrupadas junto a los somitas formarán:",
+    "opciones": {
+      "a": "los ganglios espinales.",
+      "b": "los rombómeros.",
+      "c": "los neurómeros.",
+      "d": "la zona subventricular."
+    },
+    "correcta": "a",
+    "explicacion": "Fruto de la neurulación tardía, esas células migratorias de la cresta neural abandonan el tubo medular condensándose a los márgenes en forma de ganglios sensoriales o raquídeos para el SNP."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "¿Qué tipo de células del sistema inmunitario son las principales mediadoras de las respuestas humorales?",
+    "opciones": {
+      "a": "los linfocitos T.",
+      "b": "los linfocitos B.",
+      "c": "los granulocitos.",
+      "d": "los monocitos."
+    },
+    "correcta": "b",
+    "explicacion": "La inmunidad por anticuerpos (libre en el plasma o humores del organismo) fluye gracias a las secreciones proteicas que los Linfocitos B eyectan tras su activación patogénica."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "¿Qué división funcional del cerebelo se encarga de enviar señales correctoras al tronco del encéfalo para modificar la postura y reestablecer el equilibrio y cuya lesión produce inestabilidad tanto al mantenerse quieto de pie como durante la ejecución de movimientos?",
+    "opciones": {
+      "a": "el vestibulocerebelo.",
+      "b": "el espinocerebelo.",
+      "c": "el cerebrocerebelo.",
+      "d": "el vermis cerebelar."
+    },
+    "correcta": "a",
+    "explicacion": "A través de su fuerte integración anatómica con los conductos semicirculares de la oreja, el lóbulo más primitivo del cerebelo (el vestibulocerebelo) enhebra la estabilización inconsciente que evita la caída gravitatoria y el nistagmo incontrolable."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la somatostatina es correcta?",
+    "opciones": {
+      "a": "Es una hormona producida tanto por el hipotálamo como por el páncreas.",
+      "b": "Es una hormona producida por el hígado además del hipotálamo.",
+      "c": "Estimula la liberación de la hormona del crecimiento (GH).",
+      "d": "Regula la secreción de insulina, pero no afecta al glucagón."
+    },
+    "correcta": "a",
+    "explicacion": "Esta peculiar molécula de inhibición global (que frena la GH en el cerebro) se produce asombrosamente tanto en las divisiones periventriculares del hipotálamo como en las células delta del islote pancreático."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "Las neuronas magnocelulares y parvocelulares del núcleo geniculado lateral del tálamo:",
+    "opciones": {
+      "a": "presentan campos receptivos del mismo tamaño.",
+      "b": "tienen funciones segregadas en el procesamiento visual.",
+      "c": "muestran una organización en sus campos receptivos totalmente diferente al de las células bipolares.",
+      "d": "se organizan en columnas de procesamiento."
+    },
+    "correcta": "b",
+    "explicacion": "La anatomía laminar del núcleo visual del tálamo preserva las tareas en vías segregadas: las magnocelulares son ciegas al color pero hábiles y rápidas detectando movimientos, mientras las parvocelulares se abocan a un lentísimo y detallado descifrado en color del entorno."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Las vías colinérgicas del sistema de activación ascendente de la formación reticular:",
+    "opciones": {
+      "a": "nunca proyectan directamente a la corteza cerebral, pasan siempre por el tálamo.",
+      "b": "proyectan al hipotálamo, pero no al tálamo.",
+      "c": "mantienen tono de consciencia, pero sin modular la actividad cortical.",
+      "d": "tienen una vía, que es más masiva, que proyecta a los núcleos de proyección difusa del tálamo."
+    },
+    "correcta": "d",
+    "explicacion": "Los enjambres colinérgicos pontomesencefálicos estimulan el estado de consciencia volcando fuertemente gran cantidad de conexiones sobre las agrupaciones intralaminares inespecíficas del tálamo (las cuales irradian después desincronización por toda la corteza)."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre el sistema neuroendocrino es correcta?",
+    "opciones": {
+      "a": "La hipófisis posterior (neurohipófisis) sintetiza y libera hormonas como la oxitocina y la vasopresina.",
+      "b": "El hipotálamo regula la actividad de la hipófisis anterior (adenohipófisis) mediante señales eléctricas directas.",
+      "c": "La glándula pineal secreta melatonina, una hormona que influye en los ritmos circadianos.",
+      "d": "Las hormonas esteroideas se almacenan en vesículas y se liberan por exocitosis en respuesta a estímulos específicos."
+    },
+    "correcta": "c",
+    "explicacion": "La secreción de melatonina bajo los comandos del ritmo biológico de la oscuridad externa corre a cargo, estructuralmente, del pequeño apéndice conocido como la glándula pineal o epífisis."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "En la figura se representa uno de los sistemas de modulación difusa con origen en el tronco del encéfalo (flechas extendiéndose desde allí hacia toda la corteza y médula). En función de la localización de la vía (locus coeruleus apuntado en azul), ¿qué sistema es el representado?",
+    "opciones": {
+      "a": "el noradrenérgico.",
+      "b": "el colinérgico.",
+      "c": "el dopaminérgico.",
+      "d": "el histaminérgico."
+    },
+    "correcta": "a",
+    "explicacion": "El Locus Coeruleus, asentado en el techo protuberancial del tegmento encefálico, ostenta el privilegio y la exclusividad fisiológica de monopolizar e irradiar la totalidad de las proyecciones noradrenérgicas del SNC."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "El cuerpo estriado agrupa tres grandes núcleos subcorticales, ¿cuáles son?",
+    "opciones": {
+      "a": "caudado, amígdala y núcleo de la estría terminal.",
+      "b": "putamen, globo pálido y núcleo subtalámico.",
+      "c": "sustancia negra, núcleo rojo y globo pálido.",
+      "d": "putamen, globo pálido y núcleo caudado."
+    },
+    "correcta": "d",
+    "explicacion": "Como principal motor centralizado extrapiramidal de aprendizaje automatizado del individuo, la nomenclatura del estriado anatómico integra sin excepción las agrupaciones formadas por el caudado, el putamen y el pálido."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Señale la relación INCORRECTA considerando las hormonas de la hipófisis anterior:",
+    "opciones": {
+      "a": "Somatotropina-la somatostatina inhibe su liberación.",
+      "b": "Hormona luteinizante-la dopamina inhibe su liberación.",
+      "c": "Hormona folículo-estimulante (FSH)- la hormona liberadora de gonadotropinas (GnRH) aumenta su liberación.",
+      "d": "Hormona estimulante de tiroides- se denomina tirotropina (TSH)."
+    },
+    "correcta": "b",
+    "explicacion": "Es flagrantemente incorrecta ya que la dopamina solo tiene injerencia bloqueadora biológica sobre la hormona prolactina de las glándulas mamarias; la LH (luteinizante) no es suprimida por dopaminas sino accionada por las gonadoliberinas (GnRH)."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "Uno de los motivos por los que la hipótesis monofilética se podría considerar incompleta para explicar el origen del sistema nervioso es que:",
+    "opciones": {
+      "a": "Los ctenóforos carecen completamente de células nerviosas.",
+      "b": "Todos los animales comparten idénticos neurotransmisores como la serotonina y dopamina.",
+      "c": "No explica las diferencias notables entre las neuronas de ctenóforos y las del resto de animales.",
+      "d": "La hipótesis monofilética es la más completa para la explicación del origen del sistema nervioso."
+    },
+    "correcta": "c",
+    "explicacion": "El descubrimiento de genómica comparada que destapó cómo los ctenóforos operan sin neurotransmisores ni genes clásicos neurales debilitó enormemente la asunción teórica de una neurona universal heredada en cadena (monofilética)."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "¿Cuál de las siguientes afirmaciones describe mejor la relación entre el sistema endocrino, el sistema inmune y el sistema nervioso?",
+    "opciones": {
+      "a": "El sistema nervioso central regula el sistema inmune, pero no recibe señales procedentes de él.",
+      "b": "El sistema endocrino puede modular al sistema inmune, pero esta influencia no es recíproca.",
+      "c": "Existen mecanismos bidireccionales por los cuales el sistema inmune puede influir sobre la actividad nerviosa y endocrina, y viceversa.",
+      "d": "El sistema inmune actúa de manera completamente independiente del sistema nervioso y endocrino."
+    },
+    "correcta": "c",
+    "explicacion": "El corazón fundacional de la disciplina Psiconeuroinmunológica demostró experimentalmente las sinergias mutuas; las endorfinas encefálicas alteran la respuesta del bazo, pero simultáneamente las citocinas de éste transitan hacia el eje HHA regulando emociones de abatimiento o fiebre."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "La selección r es una estrategia evolutiva típica de especies que:",
+    "opciones": {
+      "a": "Producen numerosos descendientes con bajo cuidado parental.",
+      "b": "Invierten mucho tiempo en la crianza de pocas crías.",
+      "c": "son roedores, como ratones y ratas.",
+      "d": "Tienen un coeficiente de encefalización alto."
+    },
+    "correcta": "a",
+    "explicacion": "Frente al extremo biológico humano o 'estrategia K', la 'estrategia r' fía la supervivencia filogenética de la manada a los abrumadores números brutos (miles de crías) desechando cualquier tipo de inversión o protección familiar y afectiva postnatal."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Dónde se produce la integración de la información del olor y el gusto, para generar la percepción del sabor de un alimento?",
+    "opciones": {
+      "a": "en la ínsula.",
+      "b": "en el opérculo frontal.",
+      "c": "en la corteza orbitofrontal.",
+      "d": "en la corteza piriforme."
+    },
+    "correcta": "c",
+    "explicacion": "El encéfalo aglutina los estímulos primitivos de las mucosas linguales y nasales superponiéndolos de forma armónica exclusivamente dentro de los dominios polimodales asociativos de la corteza orbitofrontal."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "Señale la opción CORRECTA. La vida empezó en el mar, por tanto:",
+    "opciones": {
+      "a": "los organismos acuáticos presentan la máxima homología adaptativa.",
+      "b": "los animales que lo habitan siguen siendo los más primitivos.",
+      "c": "Los anfibios son los organismos filogenéticamente más recientes.",
+      "d": "todas las opciones anteriores son incorrectas."
+    },
+    "correcta": "d",
+    "explicacion": "Es un error falaz calificar a los organismos marinos que nos rodean hoy día de 'atrasados' o 'inferiores'. La biología es rotunda afirmando que todas las ramas supervivientes son intrínsecamente complejas y están perfeccionadas sin que existan especies estancadas tras eones de adaptación evolutiva en su nicho marino."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "¿Qué es una célula presentadora de antígenos y cuál es su función principal en la respuesta inmunitaria?",
+    "opciones": {
+      "a": "Una célula del sistema endocrino que activa linfocitos mediante moléculas específicas.",
+      "b": "Una célula inmunitaria que digiere antígenos y los expone en su superficie para activar linfocitos T.",
+      "c": "Una célula infecciosa que porta antígenos reconocibles por los linfocitos.",
+      "d": "Una célula que destruye directamente a los patógenos mediante fagocitosis."
+    },
+    "correcta": "b",
+    "explicacion": "Esta labor mediadora (llevada a cabo por fagocitos) ingiere las membranas de las bacterias nocivas exteriorizando, tras su digestión molecular, las secuencias peptídicas extrañas sobre su cápsula celular con el fin de señalizarles a los escuadrones Linfocitarios T qué deben exterminar."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "¿A través de qué tracto controla la corteza motora los músculos de la cara que intervienen en movimientos voluntarios como los que se hacen al comer, tragar, hablar o sonreír?",
+    "opciones": {
+      "a": "tracto corticobulbar.",
+      "b": "tracto corticoespinal lateral.",
+      "c": "tracto rubroespinal.",
+      "d": "tracto corticoespinal ventral."
+    },
+    "correcta": "a",
+    "explicacion": "A diferencia del control motor que fluye hacia el tronco y piernas (médula espinal), la intrincada gestión voluntaria fisonómica del cuello y mandíbula se delega por parte del córtex al tronco y los bulbos del encéfalo, configurando los denominados tractos corticobulbares o haces geniculados."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "Los receptores cutáneos que actúan como nociceptores son:",
+    "opciones": {
+      "a": "los corpúsculos de Ruffini.",
+      "b": "los corpúsculos de Meissner.",
+      "c": "las terminaciones nerviosas libres.",
+      "d": "los discos de Merkel."
+    },
+    "correcta": "c",
+    "explicacion": "Frente a las complejas y acodadas estructuras corpusculares de la piel (diseñadas para percibir tacto fino o vibraciones), la transmisión eléctrica dolorosa (nocicepción) discurre a la brava mediante receptores pelados consistentes simplemente en arborizaciones nerviosas libres desnudas."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Señale la respuesta correcta en relación con la sinaptogénesis:",
+    "opciones": {
+      "a": "Es un proceso de proliferación celular guiado por sustancias neurotrópicas en la zona ventricular.",
+      "b": "Produce la destrucción de conexiones sinápticas no funcionales con el fin de reducir la actividad cerebral.",
+      "c": "Se produce la formación de conexiones sinápticas funcionales entre neuronas, influida por actividad neural y neurotrofinas.",
+      "d": "Induce la formación de contactos entre las células progenitoras de la zona subventricular hacia la notocorda para establecer redes sinápticas."
+    },
+    "correcta": "c",
+    "explicacion": "La sinaptogénesis es el hito biológico más prodigioso de la consolidación nerviosa; se forja activamente al establecerse la conexión eléctrica e impone su mantenimiento a largo plazo captando y sintetizando factores vitales neurotróficos retrogrados."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "En la figura se representan diversas áreas que se activan en seres humanos cuando se realizan ciertas tareas motoras. ¿Qué números identifican a la estructura que se activa en el desarrollo de programas motores, como secuencias de movimientos con los dedos repetitivas y ensayadas, incluso cuando la secuencia se ensaya mentalmente y no se realiza el movimiento en sí?",
+    "opciones": {
+      "a": "1 y 2.",
+      "b": "6 y 8.",
+      "c": "4 y 8.",
+      "d": "6 y 9."
+    },
+    "correcta": "c",
+    "explicacion": "En estudios clásicos con flujo sanguíneo o RMf, al plantear que un paciente proyecte en su propia mente secuencias motoras sin llegar a desencadenarlas ni accionar el tendón (ensayo mental puramente cognitivo), resplandece luminosamente en aislamiento el Área Motora Suplementaria (representada anatómicamente en lo más alto del lóbulo frontal antes de la cisura central)."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Los anticuerpos están compuestos por cuatro subunidades o cadenas idénticas dos a dos que adoptan la característica forma de Y. ¿En qué grupo de biomoléculas se clasifican estas cadenas?",
+    "opciones": {
+      "a": "Proteínas.",
+      "b": "Lípidos.",
+      "c": "Hidratos de carbono.",
+      "d": "Ácidos nucleicos."
+    },
+    "correcta": "a",
+    "explicacion": "Los pesados armazones extracelulares defensivos del organismo (las famosas inmunoglobulinas o anticuerpos) no son sino enormes complejos de cadenas químicas proteicas segregadas abundantemente por la línea celular B y Plasmática."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "¿Cuál de los siguientes trastornos parece producirse por una disminución de la actividad del núcleo subtalámico?",
+    "opciones": {
+      "a": "la enfermedad de Parkinson.",
+      "b": "la corea de Huntington.",
+      "c": "el balismo.",
+      "d": "todas las opciones anteriores son ciertas."
+    },
+    "correcta": "c",
+    "explicacion": "El bloqueo lesivo que silencia o apaga los núcleos subtalámicos paraliza sus vías de salida sobre las bases pálidas mediales provocando instantáneamente bruscos, rítmicos y masivos trallazos motores incontrolables en el hemicuerpo denominados hemibalismo o balismos puros."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes consecuencias se asocia con la deficiencia de yodo durante el embarazo?",
+    "opciones": {
+      "a": "Un crecimiento excesivo de la glándula tiroides en el feto.",
+      "b": "Inhibición del desarrollo de la glándula tiroides fetal.",
+      "c": "Disminución en la transferencia de hormonas tiroideas maternas, especialmente crítica durante la primera mitad del embarazo.",
+      "d": "Aumento en la producción de hormonas tiroideas."
+    },
+    "correcta": "c",
+    "explicacion": "Es bien conocido clínicamente que una penuria y carencia yodada gestacional paraliza el torrente fisiológico compensador de la hormona tiroidea materno-fetal, provocando graves disfunciones en los ventrículos corticales que conllevan profundo retraso neurocognitivo."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "En la figura de una sección transversal del mesencéfalo, ¿qué números representan a la sustancia gris periacueductal, al área tegmental ventral y a la sustancia negra compacta, respectivamente?",
+    "opciones": {
+      "a": "4, 6, 7.",
+      "b": "1, 3, 4.",
+      "c": "1, 2, 3.",
+      "d": "4, 5, 6."
+    },
+    "correcta": "a",
+    "explicacion": "Ubicándonos anatómicamente desde el centro al frente en los cortes mesencefálicos: la zona 4 engloba al acueducto rodeado por la SGPA; la zona 7 abarca densamente el piso negro mesencefálico de neuronas dopaminérgicas (sustancia negra compacta); y mediales a ésta emergen las franjas 6 (área tegmental ventral de Tsai)."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "El cierre de los neuroporos es una fase crucial del neurodesarrollo y sabemos que:",
+    "opciones": {
+      "a": "si hay fallos en el cierre del neuroporo caudal se pueden ocasionar malformaciones de la médula espinal.",
+      "b": "los fallos en el cierre del neuroporo rostral producen espina bífida y anencefalia.",
+      "c": "los fallos en el cierre del neuroporo caudal son siempre debidos a malformaciones genéticas.",
+      "d": "todas las anteriores son correctas."
+    },
+    "correcta": "a",
+    "explicacion": "Una alteración que impida la confluencia epitelial en la porción trasera embrionaria deja la lámina dorsal médular sin ensamblaje (abierta al líquido amniótico), acarreando la severa y clásica espina bífida en todos sus grados."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "En relación con la neurogénesis en el neuroepitelio cortical, se sabe lo siguiente:",
+    "opciones": {
+      "a": "Ocurre exclusivamente en la zona ventricular (ZV).",
+      "b": "Existen dos zonas proliferativas, la ventricular (ZV) y la subventricular (ZSV), en las que se originan tanto células de proyección como interneuronas excitatorias de la neocorteza.",
+      "c": "La mayoría de las interneuronas inhibitorias de la neocorteza se generan en estas zonas proliferativas.",
+      "d": "Todas las anteriores son correctas."
+    },
+    "correcta": "b",
+    "explicacion": "La base germinal piramidal de las arquitecturas corticales no frena en la porción Ventral (ZV), sino que evolutivamente se proyecta dotando al epitelio de una segunda y prolífica llanura secundaria de reproducción y escisión celular in-situ denominada Subventricular (ZSV) donde las células de proyección completan su ontogenia."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En la figura se representa un esquema del órgano de Corti y elementos asociados. Identifique lo indicado por los números:",
+    "opciones": {
+      "a": "1: membrana tectorial; 2: célula ciliada externa; 3: membrana basilar; 4: células ciliadas internas.",
+      "b": "1: membrana basilar; 2: célula ciliada interna; 3: membrana tectorial; 4: células ciliadas externas.",
+      "c": "1: membrana basilar; 2: célula ciliada externa; 3: membrana tectorial; 4: células ciliadas internas.",
+      "d": "1: membrana tectorial; 2: célula ciliada interna; 3: membrana basilar; 4: células ciliadas externas."
+    },
+    "correcta": "b",
+    "explicacion": "La morfología auditiva revela firmemente las densas bases de la placa oscilante que sostienen todo (1: mb. Basilar); la solitaria y principal neurona que detecta el crujido central (2: Célula ciliada interna); el pesado velo elástico inerte que corona y aprisiona el tubo superior (3: mb. Tectorial); y por último las bandas alineadas amplificadoras mecánicas periféricas de tres por tres (4: Células ciliadas externas)."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Cuál es la hipótesis más aceptada acerca del origen evolutivo de las neuronas?",
+    "opciones": {
+      "a": "proceden de células madre pluripotentes.",
+      "b": "tiene su origen directo en células de organismos unicelulares.",
+      "c": "proceden de células epiteliales.",
+      "d": "vienen de cnidarios y ctenóforos."
+    },
+    "correcta": "c",
+    "explicacion": "Los tratados paleobiológicos postulan férreamente que el embrión inicial originó y polarizó a sus neuronas basándose pura y biológicamente en la prolongación de aquellas mismas células fronterizas primitivas que le revestían el contorno perimetral externo: las células epiteliales tempranas."
+  }
+]

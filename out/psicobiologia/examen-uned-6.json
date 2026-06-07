@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 6",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 400,
+      "used": true,
+      "text": "¿Qué órgano se considera linfoide primario?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El timo."
+        },
+        {
+          "key": "B",
+          "text": "El bazo."
+        },
+        {
+          "key": "C",
+          "text": "La médula espinal."
+        },
+        {
+          "key": "D",
+          "text": "Todos los anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El timo es un órgano linfoide primario porque en él maduran los linfocitos T; el bazo es secundario."
+    },
+    {
+      "id": 2,
+      "sourceId": 134,
+      "used": true,
+      "text": "Los anticuerpos están compuestos por cuatro subunidades o cadenas idénticas dos a dos que adoptan la característica forma de Y. ¿En qué grupo de biomoléculas se clasifican estas cadenas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Proteínas."
+        },
+        {
+          "key": "B",
+          "text": "Lípidos."
+        },
+        {
+          "key": "C",
+          "text": "Hidratos de carbono."
+        },
+        {
+          "key": "D",
+          "text": "Ácidos nucleicos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los anticuerpos (también denominados inmunoglobulinas) son macromoléculas de naturaleza proteica que son sintetizadas y segregadas a gran escala por los linfocitos B activados (células plasmáticas)."
+    },
+    {
+      "id": 3,
+      "sourceId": 343,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones sobre la diferenciación neuronal es correcta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La diferenciación morfológica básica de una neurona está programada antes de que alcance su destino, mientras que su arborización depende del entorno."
+        },
+        {
+          "key": "B",
+          "text": "Tanto la diferenciación morfológica básica como la arborización dependen por completo del entorno."
+        },
+        {
+          "key": "C",
+          "text": "Tanto la diferenciación morfológica básica como la arborización están completamente programadas antes de que la neurona alcance su destino."
+        },
+        {
+          "key": "D",
+          "text": "La diferenciación básica depende del entorno y la arborización está programada antes de alcanzar el destino."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La forma básica neuronal está en gran parte predeterminada, pero el desarrollo pleno de la arborización depende de señales del entorno y de la interacción con otras células."
+    },
+    {
+      "id": 4,
+      "sourceId": 201,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas, cuyos niveles aumentan gradualmente en las mujeres durante la pubertad, promueve la aparición de los caracteres sexuales secundarios?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hormona luteinizante."
+        },
+        {
+          "key": "B",
+          "text": "la progesterona."
+        },
+        {
+          "key": "C",
+          "text": "la hormona foliculoestimulante."
+        },
+        {
+          "key": "D",
+          "text": "los estrógenos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La secreción abundante de estrógenos (como el estradiol) desde los ovarios es el interruptor hormonal biológico que desencadena todos los cambios morfológicos que conocemos como fenotipo femenino secundario en la pubertad."
+    },
+    {
+      "id": 5,
+      "sourceId": 171,
+      "used": true,
+      "text": "En la psicobiología del sistema olfatorio humano, cuando se presentan casos de agnosia olfativa grave, los pacientes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sufren alteraciones de umbral por daño en la mucosa y no perciben nada."
+        },
+        {
+          "key": "B",
+          "text": "Muestran daño en las vías simpáticas nasales."
+        },
+        {
+          "key": "C",
+          "text": "Perciben los olores a nivel de sensación periférica, pero debido a un daño cortical superior no pueden identificarlos o designar qué huelen."
+        },
+        {
+          "key": "D",
+          "text": "Pierden solo el recuerdo a largo plazo pero conservan la capacidad de clasificar el olor de inmediato."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La agnosia es un defecto del procesamiento de asociación, no primario. El receptor huele perfectamente y la señal llega al cerebro, pero el paciente es incapaz de integrar cognitivamente esa información para dotarla de significado."
+    },
+    {
+      "id": 6,
+      "sourceId": 146,
+      "used": true,
+      "text": "Si elimináramos las poblaciones diana a las que llegan los axones en desarrollo, afectaríamos directamente a la:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Supervivencia neuronal."
+        },
+        {
+          "key": "B",
+          "text": "Proliferación neuronal."
+        },
+        {
+          "key": "C",
+          "text": "Migración neuronal."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La supervivencia a largo plazo de una neurona requiere forzosamente el acceso a los factores de crecimiento (neurotrofinas) producidos y secretados en dosis limitadas por la célula diana que han inervado."
+    },
+    {
+      "id": 7,
+      "sourceId": 99,
+      "used": true,
+      "text": "El reflejo de extensión o miotático:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es polisináptico."
+        },
+        {
+          "key": "B",
+          "text": "Es monosináptico."
+        },
+        {
+          "key": "C",
+          "text": "Es independiente de la actividad de los husos musculares."
+        },
+        {
+          "key": "D",
+          "text": "Rechaza el principio de inhibición recíproca."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El reflejo de extensión se clasifica como un reflejo monosináptico porque los axones de las neuronas sensoriales (procedentes del huso) hacen una única sinapsis directa con las motoneuronas alfa del músculo efector."
+    },
+    {
+      "id": 8,
+      "sourceId": 324,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es correcta en relación con el diencéfalo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El subtálamo se encuentra anterior al hipotálamo."
+        },
+        {
+          "key": "B",
+          "text": "El núcleo supraóptico se localiza en la región anterior preóptica del hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "Los núcleos mamilares se encuentran en la región tuberal del hipotálamo."
+        },
+        {
+          "key": "D",
+          "text": "El núcleo caudado es una estructura del diencéfalo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El núcleo supraóptico se localiza en la región anterior/preóptica del hipotálamo. El subtálamo es posterior al hipotálamo y el núcleo caudado pertenece a los hemisferios cerebrales."
+    },
+    {
+      "id": 9,
+      "sourceId": 404,
+      "used": true,
+      "text": "En el caso de la inmunidad celular, NO son células presentadoras de antígenos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos B."
+        },
+        {
+          "key": "D",
+          "text": "Las células dendríticas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las células presentadoras profesionales son macrófagos, dendríticas y linfocitos B; los neutrófilos son fagocitos rápidos, pero no APC típicas."
+    },
+    {
+      "id": 10,
+      "sourceId": 117,
+      "used": true,
+      "text": "El proceso de encefalización:",
+      "options": [
+        {
+          "key": "A",
+          "text": "parece obedecer a un patrón general de regionalización del sistema nervioso, común a todos los animales con simetría bilateral."
+        },
+        {
+          "key": "B",
+          "text": "está presente desde los patrones de organización de tejido nervioso más primitivos, como en las hidras."
+        },
+        {
+          "key": "C",
+          "text": "no está asociado a la organización ganglionar del tejido nervioso."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fenómeno evolutivo por el que surge el cerebro obedece a un esquema genético común (orquestado por genes homeogénicos u ortólogos) de regionalización presente a lo largo de todos los filos de animales con simetría bilateral."
+    },
+    {
+      "id": 11,
+      "sourceId": 377,
+      "used": true,
+      "text": "De los ganglios basales podemos decir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No se ha demostrado su participación en la expresión motora de las emociones."
+        },
+        {
+          "key": "B",
+          "text": "La sustancia negra no forma parte de ellos."
+        },
+        {
+          "key": "C",
+          "text": "Sus dos componentes son el núcleo caudado y la sustancia gris periacueductal."
+        },
+        {
+          "key": "D",
+          "text": "Intervienen fundamentalmente en la planificación y la fase de inicio de movimientos en ausencia de estímulos externos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los ganglios basales participan en la selección, planificación e inicio de programas motores, especialmente los generados internamente."
+    },
+    {
+      "id": 12,
+      "sourceId": 31,
+      "used": true,
+      "text": "Los cultivos de tejido neuronal, concretamente de las células piramidales de la corteza cerebral y de las células de Purkinje del cerebelo, permiten conocer los siguientes aspectos sobre la maduración neuronal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "que estas células adquieren sus formas características cuando son cultivadas en un medio artificial aunque su diferenciación dendrítica es menos elaborada."
+        },
+        {
+          "key": "B",
+          "text": "que la diferenciación morfológica básica de una neurona está predeterminada genéticamente antes de que alcance su destino."
+        },
+        {
+          "key": "C",
+          "text": "que el pleno desarrollo de la arborización dendrítica depende del entorno de las neuronas y de las interacciones que se establecen entre ellas."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La diferenciación morfológica básica está preprogramada genéticamente antes de llegar a su destino, pero su completa maduración y complejidad de arborización dependen fuertemente del entorno y de las interacciones celulares, como han demostrado los estudios en cultivos in vitro."
+    },
+    {
+      "id": 13,
+      "sourceId": 68,
+      "used": true,
+      "text": "Los campos receptivos de determinadas neuronas sensoriales visuales (como las bipolares y ganglionares) están organizados de una manera antagónica centro-periferia (on/off). Esto se consigue gracias a la acción conjunta de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neuronas excitatorias e interneuronas excitatorias."
+        },
+        {
+          "key": "B",
+          "text": "Neuronas excitatorias e interneuronas inhibitorias."
+        },
+        {
+          "key": "C",
+          "text": "Neuronas excitatorias exclusivamente."
+        },
+        {
+          "key": "D",
+          "text": "Interneuronas inhibitorias en ausencia de neuronas excitatorias."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Esta modulación se logra combinando la señal directa de los fotorreceptores centrales (vía excitatoria) con la señal de los fotorreceptores periféricos canalizada a través de células horizontales, las cuales actúan como interneuronas inhibitorias."
+    },
+    {
+      "id": 14,
+      "sourceId": 285,
+      "used": true,
+      "text": "El área motora suplementaria se asocia especialmente con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Planificación de secuencias motoras internas y coordinación bimanual."
+        },
+        {
+          "key": "B",
+          "text": "Detección primaria de olores."
+        },
+        {
+          "key": "C",
+          "text": "Producción de melatonina."
+        },
+        {
+          "key": "D",
+          "text": "Maduración de linfocitos B."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El área motora suplementaria interviene en preparación de movimientos autoiniciados, secuenciales y coordinación entre ambas manos."
+    },
+    {
+      "id": 15,
+      "sourceId": 409,
+      "used": true,
+      "text": "¿Cuál es el centro encefálico esencial en la comunicación entre sistema inmune, sistema nervioso y sistema endocrino, integrando las respuestas emitidas por todos ellos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La amígdala."
+        },
+        {
+          "key": "B",
+          "text": "El hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "El cuerpo geniculado lateral."
+        },
+        {
+          "key": "D",
+          "text": "El bulbo raquídeo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El hipotálamo coordina respuestas neuroendocrinas y autónomas y es un nodo esencial en la comunicación entre sistema nervioso, endocrino e inmune."
+    },
+    {
+      "id": 16,
+      "sourceId": 116,
+      "used": true,
+      "text": "Cuando se da una situación estresante se libera una hormona que, entre otros efectos, produce una inhibición de las respuestas del sistema inmunitario. ¿Cuál es esta hormona?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "testosterona."
+        },
+        {
+          "key": "B",
+          "text": "tiroxina."
+        },
+        {
+          "key": "C",
+          "text": "cortisol."
+        },
+        {
+          "key": "D",
+          "text": "inhibina."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cortisol (un potente glucocorticoide) liberado ante el estrés agudo produce, además de movilización de energía, efectos antiinflamatorios profundos y ejerce una supresión transitoria de la actividad del sistema inmunitario."
+    },
+    {
+      "id": 17,
+      "sourceId": 39,
+      "used": true,
+      "text": "Diversas investigaciones de los últimos años apuntan a que, por su desarrollo embrionario, la microglía procede de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los granulocitos."
+        },
+        {
+          "key": "B",
+          "text": "las células dendríticas."
+        },
+        {
+          "key": "C",
+          "text": "los monocitos."
+        },
+        {
+          "key": "D",
+          "text": "los linfocitos T colaboradores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las células de la microglía no derivan del ectodermo ni de las zonas proliferativas del neuroepitelio cortical como el resto de la glía, sino que proceden del sistema inmune (mesodermo), concretamente de los monocitos que invaden el SN durante el desarrollo."
+    },
+    {
+      "id": 18,
+      "sourceId": 346,
+      "used": true,
+      "text": "En el contexto de la filogenia del sistema nervioso, especialmente en peces y otros vertebrados con sistemas visuales más primitivos, ¿qué estructura actúa como un importante centro de iniciación del comportamiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo geniculado lateral del tálamo."
+        },
+        {
+          "key": "B",
+          "text": "El colículo superior."
+        },
+        {
+          "key": "C",
+          "text": "La corteza visual primaria."
+        },
+        {
+          "key": "D",
+          "text": "La epífisis."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El colículo superior, o tectum óptico en vertebrados no mamíferos, es un centro visual clave para orientar e iniciar respuestas conductuales."
+    },
+    {
+      "id": 19,
+      "sourceId": 238,
+      "used": true,
+      "text": "Según la teoría neurotrófica, sobreviven preferentemente las neuronas que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acceden a cantidades suficientes de factores tróficos liberados por sus células diana."
+        },
+        {
+          "key": "B",
+          "text": "Nunca establecen sinapsis."
+        },
+        {
+          "key": "C",
+          "text": "No compiten con otras neuronas."
+        },
+        {
+          "key": "D",
+          "text": "Se originan exclusivamente en la cresta neural."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las poblaciones diana liberan factores en cantidad limitada; las neuronas que contactan con ellas y reciben suficiente soporte sobreviven."
+    },
+    {
+      "id": 20,
+      "sourceId": 55,
+      "used": true,
+      "text": "Los núcleos talámicos de relevo motores:",
+      "options": [
+        {
+          "key": "A",
+          "text": "conectan diversas estructuras del sistema límbico."
+        },
+        {
+          "key": "B",
+          "text": "procesan señales procedentes del cerebelo y de los ganglios basales."
+        },
+        {
+          "key": "C",
+          "text": "transmiten señales del cerebelo a áreas sensoriales de la corteza."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En el sistema motor subcortical, el tálamo motor interviene como un puente o 'estación de relevo' fundamental canalizando la información originada y procesada en el cerebelo y en los ganglios basales antes de enviarla a la corteza motora cerebral."
+    },
+    {
+      "id": 21,
+      "sourceId": 140,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe correctamente la organización jerárquica y funcional de la corteza auditiva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El paracinturón auditivo proyecta directamente a la corteza auditiva primaria y no recibe información talámica."
+        },
+        {
+          "key": "B",
+          "text": "El cinturón auditivo constituye la principal entrada directa desde el núcleo geniculado medial."
+        },
+        {
+          "key": "C",
+          "text": "La corteza auditiva primaria en la circunvolución de Heschl recibe aferencias del núcleo geniculado medial."
+        },
+        {
+          "key": "D",
+          "text": "La corteza auditiva primaria se localiza en el paracinturón."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El procesamiento cortical auditivo inicial comienza cuando las proyecciones del núcleo geniculado medial del tálamo alcanzan y hacen sinapsis directa sobre la corteza auditiva primaria, ubicada en las circunvoluciones transversas de Heschl."
+    },
+    {
+      "id": 22,
+      "sourceId": 322,
+      "used": true,
+      "text": "¿Cuáles son los principales centros efectores de los ganglios basales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo subtalámico y el neoestriado."
+        },
+        {
+          "key": "B",
+          "text": "El putamen y el globo pálido."
+        },
+        {
+          "key": "C",
+          "text": "El globo pálido y la sustancia negra reticulada."
+        },
+        {
+          "key": "D",
+          "text": "El núcleo caudado y el globo pálido."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las principales salidas o centros efectores de los ganglios basales son el globo pálido interno y la sustancia negra reticulada."
+    },
+    {
+      "id": 23,
+      "sourceId": 225,
+      "used": true,
+      "text": "La formación reticular del tronco del encéfalo es relevante porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solo aparece en humanos."
+        },
+        {
+          "key": "B",
+          "text": "Integra múltiples señales y participa en sistemas de activación ascendente."
+        },
+        {
+          "key": "C",
+          "text": "Es una glándula endocrina."
+        },
+        {
+          "key": "D",
+          "text": "Sustituye al cerebelo en el control fino del movimiento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Por su posición y conexiones, la formación reticular integra señales variadas y modula el nivel de activación cortical y la vigilia."
+    },
+    {
+      "id": 24,
+      "sourceId": 363,
+      "used": true,
+      "text": "Las neuronas magnocelulares y parvocelulares del núcleo geniculado lateral del tálamo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Presentan campos receptivos del mismo tamaño."
+        },
+        {
+          "key": "B",
+          "text": "Tienen funciones segregadas en el procesamiento visual."
+        },
+        {
+          "key": "C",
+          "text": "Muestran una organización de campos receptivos totalmente diferente a la de las células bipolares."
+        },
+        {
+          "key": "D",
+          "text": "Se organizan en columnas de procesamiento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las vías magnocelular y parvocelular procesan aspectos diferentes de la visión, como movimiento/contraste frente a color/detalle fino."
+    },
+    {
+      "id": 25,
+      "sourceId": 403,
+      "used": true,
+      "text": "¿Qué tipo de células del sistema inmunitario son las principales mediadoras de las respuestas humorales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "B",
+          "text": "Los linfocitos B."
+        },
+        {
+          "key": "C",
+          "text": "Los granulocitos."
+        },
+        {
+          "key": "D",
+          "text": "Los monocitos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La respuesta humoral depende de linfocitos B, que pueden diferenciarse en células plasmáticas productoras de anticuerpos."
+    },
+    {
+      "id": 26,
+      "sourceId": 122,
+      "used": true,
+      "text": "Las células moduladoras de la disparidad:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Están implicadas en la percepción de la profundidad."
+        },
+        {
+          "key": "B",
+          "text": "Se localizan en el núcleo geniculado medial del tálamo."
+        },
+        {
+          "key": "C",
+          "text": "Abundan especialmente en V1."
+        },
+        {
+          "key": "D",
+          "text": "Son cruciales en la localización del estímulo auditivo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las neuronas moduladoras de disparidad binocular se encuentran en la corteza visual y evalúan las ligeras diferencias de las imágenes retinianas de ambos ojos, siendo fundamentales para la visión estereoscópica o percepción de la profundidad."
+    },
+    {
+      "id": 27,
+      "sourceId": 205,
+      "used": true,
+      "text": "El origen evolutivo de las neuronas sigue estando envuelto en dudas, sin embargo, parece haber consenso en que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "procederían de células neuroepiteliales sensibles a estímulos."
+        },
+        {
+          "key": "B",
+          "text": "aparecen por primera vez en artrópodos."
+        },
+        {
+          "key": "C",
+          "text": "aparecen por primera vez en poríferos."
+        },
+        {
+          "key": "D",
+          "text": "ningunas de las opciones anteriores es correcta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La teoría evolutiva general apunta a que células epiteliales muy simples (que hacían frontera con el exterior) adquirieron especialización para ser sensibles al ambiente, alargándose después y constituyéndose finalmente en las primeras protoneuronas."
+    },
+    {
+      "id": 28,
+      "sourceId": 50,
+      "used": true,
+      "text": "¿Cuál es el término correcto para referirse a las vías que interconectan estructuras de ambos lados de los hemisferios cerebrales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "comisuras."
+        },
+        {
+          "key": "B",
+          "text": "tractos."
+        },
+        {
+          "key": "C",
+          "text": "fascículos."
+        },
+        {
+          "key": "D",
+          "text": "cualquiera de las opciones anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En la anatomía de la sustancia blanca, el conjunto masivo de fibras que cruza la línea media uniendo zonas equivalentes de ambos hemisferios se denomina de forma técnica comisura (como el cuerpo calloso o la comisura anterior)."
+    },
+    {
+      "id": 29,
+      "sourceId": 63,
+      "used": true,
+      "text": "La determinación del neuroectodermo ocurre específicamente durante el proceso embrionario conocido como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación del tubo neural."
+        },
+        {
+          "key": "B",
+          "text": "Formación y diferenciación de los somitas."
+        },
+        {
+          "key": "C",
+          "text": "Inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "Migración de las células de la cresta neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neuroectodermo (tejido precursor del sistema nervioso) queda determinado durante la inducción neural, cuando señales procedentes de la notocorda inducen la diferenciación de una parte del ectodermo que está encima."
+    },
+    {
+      "id": 30,
+      "sourceId": 426,
+      "used": true,
+      "text": "¿Cuál es el neurotransmisor que liberan las células preganglionares del SNA?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acetilcolina en ganglios simpáticos y noradrenalina en parasimpáticos."
+        },
+        {
+          "key": "B",
+          "text": "Noradrenalina en simpáticos y acetilcolina en parasimpáticos."
+        },
+        {
+          "key": "C",
+          "text": "Acetilcolina tanto en ganglios simpáticos como parasimpáticos."
+        },
+        {
+          "key": "D",
+          "text": "Noradrenalina tanto en ganglios simpáticos como parasimpáticos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Todas las neuronas preganglionares del SNA, simpáticas y parasimpáticas, liberan acetilcolina sobre receptores nicotínicos."
+    }
+  ]
+}

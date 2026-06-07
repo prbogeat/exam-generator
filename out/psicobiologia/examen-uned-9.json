@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 9",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 133,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con la sinaptogénesis:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es un proceso de proliferación celular guiado por sustancias neurotrópicas en la zona ventricular."
+        },
+        {
+          "key": "B",
+          "text": "Produce la destrucción de conexiones sinápticas no funcionales con el fin de reducir la actividad cerebral."
+        },
+        {
+          "key": "C",
+          "text": "Se produce la formación de conexiones sinápticas funcionales entre neuronas, influida por actividad neural y neurotrofinas."
+        },
+        {
+          "key": "D",
+          "text": "Induce la formación de contactos entre las células progenitoras de la zona subventricular hacia la notocorda."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La sinaptogénesis o formación de nuevas sinapsis es una fase crucial que está fuertemente regulada por la actividad eléctrica de las propias neuronas y promovida por el contacto y la recepción de factores neurotróficos."
+    },
+    {
+      "id": 2,
+      "sourceId": 67,
+      "used": true,
+      "text": "En casos de agnosia visual, los pacientes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solo muestran alteraciones en la memoria de los estímulos, no en la percepción inmediata."
+        },
+        {
+          "key": "B",
+          "text": "No pueden percibir los objetos porque sus receptores visuales están alterados."
+        },
+        {
+          "key": "C",
+          "text": "Tienen alteraciones en el procesamiento de la corriente dorsal de la corteza."
+        },
+        {
+          "key": "D",
+          "text": "Perciben los objetos normalmente mediante la vista, pero no pueden identificarlos o reconocerlos visualmente."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La agnosia visual (por daños en la corteza visual de asociación) impide el reconocimiento del objeto a pesar de que el sistema de percepción sensorial primario está intacto y el paciente es capaz de ver los detalles del mismo."
+    },
+    {
+      "id": 3,
+      "sourceId": 400,
+      "used": true,
+      "text": "¿Qué órgano se considera linfoide primario?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El timo."
+        },
+        {
+          "key": "B",
+          "text": "El bazo."
+        },
+        {
+          "key": "C",
+          "text": "La médula espinal."
+        },
+        {
+          "key": "D",
+          "text": "Todos los anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El timo es un órgano linfoide primario porque en él maduran los linfocitos T; el bazo es secundario."
+    },
+    {
+      "id": 4,
+      "sourceId": 294,
+      "used": true,
+      "text": "La zona glomerular de la corteza suprarrenal produce principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aldosterona."
+        },
+        {
+          "key": "B",
+          "text": "Cortisol."
+        },
+        {
+          "key": "C",
+          "text": "Adrenalina."
+        },
+        {
+          "key": "D",
+          "text": "Oxitocina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La aldosterona es un mineralocorticoide que regula equilibrio hidroelectrolítico, especialmente sodio y potasio."
+    },
+    {
+      "id": 5,
+      "sourceId": 152,
+      "used": true,
+      "text": "¿Cómo se denomina al proceso que realizan los receptores sensoriales para transformar las diferentes modalidades energéticas en actividad eléctrica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sensibilización sensorial."
+        },
+        {
+          "key": "B",
+          "text": "Transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "Potencial transformador."
+        },
+        {
+          "key": "D",
+          "text": "Líneas marcadas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La transducción sensorial es el proceso biológico fundamental mediante el cual los receptores captan la energía física o química ambiental y la convierten en potenciales eléctricos (lenguaje comprensible para el sistema nervioso)."
+    },
+    {
+      "id": 6,
+      "sourceId": 326,
+      "used": true,
+      "text": "En una figura de sistemas de modulación difusa, si el núcleo de origen es el locus coeruleus y las proyecciones se distribuyen ampliamente por el encéfalo, ¿qué sistema está representado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El noradrenérgico."
+        },
+        {
+          "key": "B",
+          "text": "El colinérgico."
+        },
+        {
+          "key": "C",
+          "text": "El dopaminérgico."
+        },
+        {
+          "key": "D",
+          "text": "El histaminérgico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El locus coeruleus es el principal origen de proyecciones noradrenérgicas difusas hacia el encéfalo anterior y la corteza."
+    },
+    {
+      "id": 7,
+      "sourceId": 317,
+      "used": true,
+      "text": "¿Cuál es el origen principal de las vías dopaminérgicas que se extienden por el encéfalo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo rojo."
+        },
+        {
+          "key": "B",
+          "text": "La sustancia negra."
+        },
+        {
+          "key": "C",
+          "text": "El área tegmental ventral."
+        },
+        {
+          "key": "D",
+          "text": "La sustancia negra y el área tegmental ventral."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las vías dopaminérgicas principales se originan en la sustancia negra y en el área tegmental ventral; desde ellas se distribuyen hacia neoestriado, sistema límbico y corteza."
+    },
+    {
+      "id": 8,
+      "sourceId": 182,
+      "used": true,
+      "text": "Uno de los aspectos más notorios de la corteza somatosensorial es su organización columnar. Esta organización se caracteriza por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "procesar en una misma columna estímulos captados en una misma zona de la piel y un mismo tipo de receptor."
+        },
+        {
+          "key": "B",
+          "text": "integrar aspectos de la estimulación táctil captados en lugares diferentes de la piel."
+        },
+        {
+          "key": "C",
+          "text": "implicar a varios tipos de receptores sensoriales en una misma columna."
+        },
+        {
+          "key": "D",
+          "text": "no existir, curiosamente, en los gatos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En la corteza somatosensorial (S-I), cada columna vertical es altamente específica y agrupa neuronas que responden exclusivamente al mismo tipo de modalidad táctil (por ejemplo, presión) y a la misma zona topográfica exacta de la piel."
+    },
+    {
+      "id": 9,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿De cuál de las tres capas del disco embrionario deriva directamente el SN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mesodermo."
+        },
+        {
+          "key": "B",
+          "text": "Ectodermo."
+        },
+        {
+          "key": "C",
+          "text": "Endodermo."
+        },
+        {
+          "key": "D",
+          "text": "De las tres capas anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El sistema nervioso y la epidermis (con sus estructuras anejas) derivan directamente de la capa externa del embrión, el ectodermo."
+    },
+    {
+      "id": 10,
+      "sourceId": 79,
+      "used": true,
+      "text": "En lo referente al origen y la evolución, el proceso de encefalización:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Parece obedecer a un patrón general de regionalización del sistema nervioso común a todos los animales con simetría bilateral."
+        },
+        {
+          "key": "B",
+          "text": "Está presente desde los patrones de organización de tejido nervioso más primitivos, como las redes difusas."
+        },
+        {
+          "key": "C",
+          "text": "No está asociado en absoluto a la organización ganglionar del tejido nervioso."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La encefalización tiene sus raíces homólogas y genéticas (mediadas por genes Hox) en un plan arquitectónico compartido por casi todos los filos animales que presentan una simetría bilateral."
+    },
+    {
+      "id": 11,
+      "sourceId": 47,
+      "used": true,
+      "text": "De los núcleos de las columnas blancas dorsales sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se localizan en el puente."
+        },
+        {
+          "key": "B",
+          "text": "reciben señales aferentes somáticas procedentes del tronco y de las extremidades."
+        },
+        {
+          "key": "C",
+          "text": "constituyen las pirámides."
+        },
+        {
+          "key": "D",
+          "text": "sus axones envían información somatosensorial directamente a la corteza cerebral sin experimentar decusación."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los núcleos grácil y cuneado (asociados a las columnas dorsales) están localizados en el bulbo raquídeo y son la estación de relevo de las fibras aferentes somáticas de tacto y propiocepción que ascienden desde el tronco y extremidades."
+    },
+    {
+      "id": 12,
+      "sourceId": 321,
+      "used": true,
+      "text": "En el sistema nervioso central, un tracto se define como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una agrupación de axones que se originan en una sola estructura y se dirigen todos al mismo destino."
+        },
+        {
+          "key": "B",
+          "text": "Un conjunto de fibras que cruzan la línea media."
+        },
+        {
+          "key": "C",
+          "text": "Una agrupación de axones que se originan en varias estructuras y se dirigen a varios destinos."
+        },
+        {
+          "key": "D",
+          "text": "Un grupo de somas neuronales con límites definidos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El término tracto se reserva para una vía de sustancia blanca con un origen y un destino relativamente definidos."
+    },
+    {
+      "id": 13,
+      "sourceId": 96,
+      "used": true,
+      "text": "Los receptores olfativos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se encuentran en la glándula pituitaria."
+        },
+        {
+          "key": "B",
+          "text": "Son neuronas."
+        },
+        {
+          "key": "C",
+          "text": "Están desprovistos de cilios al contrario que los receptores auditivos."
+        },
+        {
+          "key": "D",
+          "text": "Utilizan un código no combinatorio para reconocer todos los olores posibles del planeta."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A diferencia de la mayoría de los receptores de otros sentidos (que son células especializadas no neuronales), los receptores olfatorios son verdaderas neuronas bipolares que, de forma excepcional, son capaces de regenerarse."
+    },
+    {
+      "id": 14,
+      "sourceId": 238,
+      "used": true,
+      "text": "Según la teoría neurotrófica, sobreviven preferentemente las neuronas que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acceden a cantidades suficientes de factores tróficos liberados por sus células diana."
+        },
+        {
+          "key": "B",
+          "text": "Nunca establecen sinapsis."
+        },
+        {
+          "key": "C",
+          "text": "No compiten con otras neuronas."
+        },
+        {
+          "key": "D",
+          "text": "Se originan exclusivamente en la cresta neural."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las poblaciones diana liberan factores en cantidad limitada; las neuronas que contactan con ellas y reciben suficiente soporte sobreviven."
+    },
+    {
+      "id": 15,
+      "sourceId": 183,
+      "used": true,
+      "text": "Las sustancias que favorecen el crecimiento de las prolongaciones celulares durante el desarrollo embrionario y guían a los axones a su destino se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "proteínas morfogenéticas óseas."
+        },
+        {
+          "key": "B",
+          "text": "sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "sustancias neurotrópicas."
+        },
+        {
+          "key": "D",
+          "text": "moléculas de adhesión celular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "No hay que confundirlas: las sustancias neurotróPicas (con 'p') son las que tienen capacidad directriz (afinidad química) para guiar la ruta del crecimiento del axón, mientras que las neurotróFicas (con 'f', como el FCN) se encargan de promover la supervivencia celular."
+    },
+    {
+      "id": 16,
+      "sourceId": 124,
+      "used": true,
+      "text": "¿Qué tipo de células del sistema inmunitario son las principales mediadoras de las respuestas humorales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "B",
+          "text": "Los linfocitos B."
+        },
+        {
+          "key": "C",
+          "text": "Los granulocitos."
+        },
+        {
+          "key": "D",
+          "text": "Los monocitos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La inmunidad específica de tipo humoral está mediada fundamentalmente por los linfocitos B, los cuales se diferencian en células plasmáticas encargadas de segregar anticuerpos a los fluidos del organismo."
+    },
+    {
+      "id": 17,
+      "sourceId": 264,
+      "used": true,
+      "text": "El tono de un sonido se relaciona con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La frecuencia de la onda sonora."
+        },
+        {
+          "key": "B",
+          "text": "La amplitud de la onda."
+        },
+        {
+          "key": "C",
+          "text": "La localización de los botones gustativos."
+        },
+        {
+          "key": "D",
+          "text": "La concentración de cortisol."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La frecuencia determina si un sonido se percibe como más agudo o grave; la amplitud se relaciona con intensidad y los armónicos con timbre."
+    },
+    {
+      "id": 18,
+      "sourceId": 246,
+      "used": true,
+      "text": "La selección r se caracteriza por favorecer:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Muchos descendientes y escasos cuidados parentales."
+        },
+        {
+          "key": "B",
+          "text": "Pocos descendientes y alta inversión parental."
+        },
+        {
+          "key": "C",
+          "text": "Ausencia total de reproducción."
+        },
+        {
+          "key": "D",
+          "text": "Solo aprendizaje social complejo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La estrategia r maximiza el número de descendientes con baja inversión individual, frente a la estrategia K."
+    },
+    {
+      "id": 19,
+      "sourceId": 210,
+      "used": true,
+      "text": "¿Cuál es la causa de que puedan aparecer, aunque parezca contradictorio, graves trastornos motores asociados a los circuitos que recibe el neoestriado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hiperactividad de los circuitos facilitadores por encima de los inhibidores."
+        },
+        {
+          "key": "B",
+          "text": "la hiperactividad de los circuitos inhibidores en el neoestriado."
+        },
+        {
+          "key": "C",
+          "text": "la pérdida del fino equilibrio entre las señales facilitadoras e inhibidoras del movimiento."
+        },
+        {
+          "key": "D",
+          "text": "ninguno de los anteriores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los ganglios basales operan como una balanza: tienen una vía directa que pisa el 'acelerador' del movimiento y una vía indirecta que actúa de 'freno'. Patologías como el Parkinson ocurren cuando ese delicado balance se rompe o se corrompe."
+    },
+    {
+      "id": 20,
+      "sourceId": 172,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe de manera correcta la organización funcional inicial de las proyecciones auditivas corticales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El paracinturón recibe la primera onda sonora pura."
+        },
+        {
+          "key": "B",
+          "text": "El cinturón auditivo es la principal entrada desde el nervio auditivo sin paso por el tálamo."
+        },
+        {
+          "key": "C",
+          "text": "La corteza auditiva primaria se ubica en la circunvolución de Heschl y recibe aferencias directas del núcleo geniculado medial."
+        },
+        {
+          "key": "D",
+          "text": "El área A1 proyecta al oído para el control del equilibrio interno."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo geniculado medial del tálamo es la última parada subcortical de la vía auditiva, y sus fibras talámicas se proyectan estrictamente a la corteza primaria auditiva, la cual está escondida en las circunvoluciones transversas de Heschl."
+    },
+    {
+      "id": 21,
+      "sourceId": 177,
+      "used": true,
+      "text": "De las siguientes vías motoras extrapiramidales descendentes, ¿cuál interviene facilitando especialmente el movimiento fraccionado e independiente de las articulaciones del codo y la mano, aunque en humanos no de los dedos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El tracto corticoespinal lateral."
+        },
+        {
+          "key": "B",
+          "text": "El tracto vestibuloespinal medial."
+        },
+        {
+          "key": "C",
+          "text": "El tracto rubroespinal (desde el núcleo rojo)."
+        },
+        {
+          "key": "D",
+          "text": "El tracto reticuloespinal."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las vías rubroespinales, cruzando la línea media, se encargan de modular de forma gruesa la agilidad y flexión independiente de los brazos (hombro, codo, mano), pero el control milimétrico de las yemas de los dedos está monopolizado en primates por la vía corticoespinal piramidal."
+    },
+    {
+      "id": 22,
+      "sourceId": 393,
+      "used": true,
+      "text": "¿Qué hormona provoca la rotura del folículo y la ovulación en el ciclo menstrual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona luteinizante."
+        },
+        {
+          "key": "B",
+          "text": "La progesterona."
+        },
+        {
+          "key": "C",
+          "text": "La hormona foliculoestimulante."
+        },
+        {
+          "key": "D",
+          "text": "Los estrógenos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El pico preovulatorio de LH desencadena la rotura del folículo y la ovulación."
+    },
+    {
+      "id": 23,
+      "sourceId": 78,
+      "used": true,
+      "text": "¿Qué hormona es la responsable directa de provocar la rotura del folículo y desencadenar la ovulación en el ciclo menstrual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona luteinizante (LH)."
+        },
+        {
+          "key": "B",
+          "text": "La progesterona."
+        },
+        {
+          "key": "C",
+          "text": "La hormona foliculoestimulante (FSH)."
+        },
+        {
+          "key": "D",
+          "text": "Los estrógenos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La elevada secreción repentina (pico) de la hormona luteinizante (LH) mediada por la adenohipófisis es el evento fisiológico que dispara la rotura folicular y la liberación del óvulo maduro."
+    },
+    {
+      "id": 24,
+      "sourceId": 156,
+      "used": true,
+      "text": "Los órganos en los que se originan y se diferencian todas las células inmunitarias del cuerpo se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los ganglios linfáticos."
+        },
+        {
+          "key": "B",
+          "text": "Los órganos linfoides primarios."
+        },
+        {
+          "key": "C",
+          "text": "Las amígdalas."
+        },
+        {
+          "key": "D",
+          "text": "Ciertos tejidos del sistema digestivo y los pulmones."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las células del sistema inmunitario se generan a partir de células madre y alcanzan su madurez basal en los denominados órganos linfoides primarios (esencialmente la médula ósea y el timo)."
+    },
+    {
+      "id": 25,
+      "sourceId": 292,
+      "used": true,
+      "text": "La secuencia del eje hipotalámico-hipofisario-adrenal es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "CRH → ACTH → cortisol."
+        },
+        {
+          "key": "B",
+          "text": "Cortisol → CRH → ACTH."
+        },
+        {
+          "key": "C",
+          "text": "LH → TSH → melatonina."
+        },
+        {
+          "key": "D",
+          "text": "Oxitocina → FSH → aldosterona."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El hipotálamo libera CRH, la adenohipófisis ACTH y la corteza adrenal cortisol."
+    },
+    {
+      "id": 26,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Qué tipo de célula inmunitaria reconoce antígenos específicos, pero solo con la ayuda de células presentadoras de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Los linfocitos B."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La inmunidad mediada por células está a cargo de los linfocitos T, los cuales solo se activan y reconocen a los antígenos invasores si éstos son exhibidos previamente en la superficie de células presentadoras de antígenos."
+    },
+    {
+      "id": 27,
+      "sourceId": 408,
+      "used": true,
+      "text": "¿Cuál de las siguientes asociaciones entre tipo de citocina y célula de origen es correcta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Linfocinas / neuronas."
+        },
+        {
+          "key": "B",
+          "text": "Interleucinas / astrocitos."
+        },
+        {
+          "key": "C",
+          "text": "Monocinas / macrófagos."
+        },
+        {
+          "key": "D",
+          "text": "Interferón-gamma / células gamma-pancreáticas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las monocinas son citocinas producidas por monocitos y macrófagos."
+    },
+    {
+      "id": 28,
+      "sourceId": 115,
+      "used": true,
+      "text": "¿Qué dos tipos de corteza cerebral de seis capas se encuentran en mamíferos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "isocorteza y neocorteza."
+        },
+        {
+          "key": "B",
+          "text": "arquicorteza y paleocorteza."
+        },
+        {
+          "key": "C",
+          "text": "paleocorteza y neocorteza."
+        },
+        {
+          "key": "D",
+          "text": "mesocorteza y arquicorteza."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La isocorteza y la neocorteza son términos esencialmente sinónimos empleados para referirse al córtex más evolucionado de los mamíferos, el cual se caracteriza universalmente por su estratificación en seis capas celulares."
+    },
+    {
+      "id": 29,
+      "sourceId": 76,
+      "used": true,
+      "text": "¿Qué tipo de células presentes en el sistema nervioso central tiene capacidad fagocítica y, además, actúa como célula presentadora de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las neuronas."
+        },
+        {
+          "key": "B",
+          "text": "Las células de Schwann."
+        },
+        {
+          "key": "C",
+          "text": "Los oligodendrocitos."
+        },
+        {
+          "key": "D",
+          "text": "Las células de la microglía."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La microglía actúa como un sistema inmunitario residente del SNC. Deriva de monocitos (células inmunes) y ejerce funciones fagocíticas y de presentación de antígenos al interaccionar con linfocitos infiltrados."
+    },
+    {
+      "id": 30,
+      "sourceId": 16,
+      "used": true,
+      "text": "Una característica de la psiconeuroinmunología es la de considerar que las interacciones entre los tres sistemas (endocrino, inmune y nervioso) y la conducta se hacen:",
+      "options": [
+        {
+          "key": "A",
+          "text": "bidireccionalmente."
+        },
+        {
+          "key": "B",
+          "text": "siguiendo siempre una 'cadena de mando': sistema nervioso -> sistema endocrino -> sistema inmune -> conducta."
+        },
+        {
+          "key": "C",
+          "text": "siguiendo siempre una 'cadena de mando': sistema endocrino -> sistema nervioso -> sistema inmune -> conducta."
+        },
+        {
+          "key": "D",
+          "text": "unidireccionalmente, de acuerdo con el orden de importancia."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La psiconeuroinmunología tiene como premisa fundamental que las interacciones entre el sistema nervioso, endocrino, inmune y el comportamiento son bidireccionales y se modulan mutuamente."
+    }
+  ]
+}
