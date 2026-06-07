@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "¿Cuál de las siguientes afirmaciones es correcta sobre la formación reticular?",
+    "opciones": {
+      "a": "se encuentra únicamente en el cerebro humano.",
+      "b": "no tiene relación con el ciclo sueño-vigilia.",
+      "c": "se encuentra en el hipocampo.",
+      "d": "es fundamental para mantener la atención y el estado de alerta."
+    },
+    "correcta": "d",
+    "explicacion": "La formación reticular es el origen del Sistema Activador Reticular Ascendente (SARA), el cual envía proyecciones difusas a la corteza cerebral y resulta absolutamente fundamental para generar el estado de consciencia, la atención y el estado de alerta."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas son sintetizadas por las células magnocelulares de los núcleos supraóptico y paraventricular del hipotálamo?",
+    "opciones": {
+      "a": "la vasopresina.",
+      "b": "la tirotropina.",
+      "c": "la oxitocina.",
+      "d": "las respuestas A y C son correctas."
+    },
+    "correcta": "d",
+    "explicacion": "La neurohipófisis secreta vasopresina y oxitocina, pero estas neurohormonas no se fabrican allí, sino que son sintetizadas más arriba por las neuronas magnocelulares localizadas específicamente en los núcleos supraóptico y paraventricular del hipotálamo."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "¿Cuál es el origen principal de las vías dopaminérgicas que se extienden por todo el encéfalo?",
+    "opciones": {
+      "a": "núcleo rojo.",
+      "b": "la sustancia negra.",
+      "c": "área tegmental ventral.",
+      "d": "B y C son correctas."
+    },
+    "correcta": "d",
+    "explicacion": "El piso del mesencéfalo alberga las principales agrupaciones de somas de neuronas dopaminérgicas, concretamente en la sustancia negra compacta y en la región colindante conocida como área tegmental ventral de Tsai."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "¿Qué dos tipos de corteza cerebral de seis capas se encuentran en mamíferos?",
+    "opciones": {
+      "a": "isocorteza y neocorteza.",
+      "b": "arquicorteza y paleocorteza.",
+      "c": "paleocorteza y neocorteza.",
+      "d": "mesocorteza y arquicorteza."
+    },
+    "correcta": "a",
+    "explicacion": "La isocorteza y la neocorteza son términos sinónimos que se utilizan para referirse a la corteza evolutivamente más reciente de los mamíferos, la cual se caracteriza estructuralmente por poseer seis capas celulares."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "A continuación, describimos varias diferencias generales que existen entre los músculos de la pierna (músculos grandes) y los músculos del ojo (músculos pequeños). Señale la opción INCORRECTA:",
+    "opciones": {
+      "a": "los músculos grandes de la pierna están implicados en movimientos menos precisos.",
+      "b": "los músculos más grandes suelen presentar más husos musculares que los músculos más pequeños.",
+      "c": "los músculos grandes de la pierna suelen tener una menor densidad de inervación.",
+      "d": "en los músculos grandes suelen predominar fibras de contracción lenta."
+    },
+    "correcta": "b",
+    "explicacion": "Esta afirmación es incorrecta porque la proporción se invierte: son los músculos pequeños diseñados para movimientos extremadamente finos y precisos (como los del ojo o los dedos) los que presentan una altísima cantidad de husos musculares, a diferencia de los músculos grandes."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Cuando se da una situación estresante se libera una hormona que, entre otros efectos, produce una inhibición de las respuestas del sistema inmunitario. ¿Cuál es esta hormona?",
+    "opciones": {
+      "a": "testosterona.",
+      "b": "tiroxina.",
+      "c": "cortisol.",
+      "d": "inhibina."
+    },
+    "correcta": "c",
+    "explicacion": "Los glucocorticoides, como el cortisol, son liberados masivamente durante el estrés y poseen importantes propiedades antiinflamatorias e inmunosupresoras, suprimiendo las respuestas del sistema inmunitario."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Durante el desarrollo embrionario, el rombencéfalo presenta un patrón de segmentación típico de todos los vertebrados que:",
+    "opciones": {
+      "a": "está dirigido por genes Hox que se expresan en el rombencéfalo en el mismo orden lineal que ocupan en los cromosomas.",
+      "b": "está formado por unidades repetidas, denominadas rombómeros, que tienen identidad propia y límites marcados con los adyacentes.",
+      "c": "está provocado por señales inductoras procedentes del ectodermo y de la placa del techo.",
+      "d": "A y B son ciertas."
+    },
+    "correcta": "d",
+    "explicacion": "En el rombencéfalo el patrón de segmentación es muy acusado formándose unidades repetidas llamadas rombómeros (identidad propia), lo cual está genéticamente orquestado por la expresión secuencial de los genes homeobox o Hox a lo largo del eje rostro-caudal."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "El proceso de encefalización:",
+    "opciones": {
+      "a": "parece obedecer a un patrón general de regionalización del sistema nervioso, común a todos los animales con simetría bilateral.",
+      "b": "está presente desde los patrones de organización de tejido nervioso más primitivos.",
+      "c": "no está asociado a la organización ganglionar del tejido nervioso.",
+      "d": "todas las opciones anteriores son correctas."
+    },
+    "correcta": "a",
+    "explicacion": "El proceso de encefalización obedece a un patrón general de regionalización del sistema nervioso central en el eje anteroposterior que es común y homólogo genéticamente a prácticamente todos los animales del clado Bilateria."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "En casos de emergencia por radiación se recomienda el consumo de yoduro de potasio para evitar que el yodo radioactivo se utilice para sintetizar ciertas hormonas que se pueden almacenar por largos periodos de tiempo. ¿Qué tipo de hormonas son?",
+    "opciones": {
+      "a": "las hormonas tiroideas.",
+      "b": "las hormonas adrenales.",
+      "c": "las gonadotropinas.",
+      "d": "las neurohormonas."
+    },
+    "correcta": "a",
+    "explicacion": "La síntesis de las hormonas de la glándula tiroides (T3 y T4) requiere obligatoriamente captar yodo de la circulación; saturar la glándula con yodo sano impide la absorción del isótopo radiactivo."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En relación con el fenómeno de la adaptación sensorial sabemos que:",
+    "opciones": {
+      "a": "se explica por la fisiología de los receptores sensoriales.",
+      "b": "es lo mismo que la habituación.",
+      "c": "se produce de la misma manera en todos los receptores sensoriales.",
+      "d": "todas las opciones anteriores son ciertas."
+    },
+    "correcta": "a",
+    "explicacion": "La adaptación sensorial es un fenómeno fisiológico inherente a las membranas de ciertos receptores sensoriales periféricos que reducen su disparo a pesar de que el estímulo se mantenga constante."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "En relación con la ontogenia del SNC, sabemos que el neuroectodermo queda determinado durante el proceso de:",
+    "opciones": {
+      "a": "gastrulación.",
+      "b": "regionalización de la placa neural.",
+      "c": "inducción neural.",
+      "d": "segmentación del tubo neural."
+    },
+    "correcta": "c",
+    "explicacion": "El tejido embrionario ectodérmico queda diferenciado específicamente como neuroectodermo o placa neural a través de las señales morfogenéticas del proceso de inducción neural."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "La unidad responsable de evitar que la contracción muscular sea demasiado fuerte es/son:",
+    "opciones": {
+      "a": "los husos musculares.",
+      "b": "los órganos tendinosos de Golgi.",
+      "c": "las fibras musculares extrafusales.",
+      "d": "la unidad motora."
+    },
+    "correcta": "b",
+    "explicacion": "Los órganos tendinosos de Golgi miden la tensión real de la contracción y activan el reflejo miotático inverso para relajar el músculo si dicha tensión es excesiva y amenaza con lesionar los tendones."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Los cultivos de tejido neuronal, concretamente de las células piramidales de la corteza cerebral y de las células de Purkinje del cerebelo, permiten conocer los siguientes aspectos sobre la maduración neuronal:",
+    "opciones": {
+      "a": "que estas células adquieren sus formas características cuando son cultivadas en un medio artificial aunque su diferenciación dendrítica es menos elaborada.",
+      "b": "que la diferenciación morfológica básica de una neurona está predeterminada genéticamente antes de que alcance su destino.",
+      "c": "que el pleno desarrollo de la arborización dendrítica depende del entorno de las neuronas y de las interacciones que se establecen entre ellas.",
+      "d": "todas las opciones anteriores son ciertas."
+    },
+    "correcta": "d",
+    "explicacion": "Las investigaciones confirman que la morfología básica piramidal o de Purkinje viene preprogramada genéticamente, pero la maduración y ramificación total de su árbol dendrítico exige ineludiblemente la interacción funcional con el entorno y las dianas."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Señale la respuesta correcta en relación con la sustancia gris periacueductal:",
+    "opciones": {
+      "a": "sus axones forman una vía descendente que forma parte del sistema de modulación endógeno del dolor.",
+      "b": "está en la zona ventral del tegmento.",
+      "c": "integra señales neuroendocrinas, pero no sensoriales.",
+      "d": "integra señales sensoriales y motoras."
+    },
+    "correcta": "a",
+    "explicacion": "Situada alrededor del acueducto en el mesencéfalo, la sustancia gris periacueductal despliega vías descendentes clave encargadas de liberar analgésicos naturales (sistema de modulación endógeno del dolor)."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "Señale la secuencia correcta de eventos que ocurren en la fibra muscular tras la llegada de un potencial de acción a los botones terminales de una motoneurona alfa:",
+    "opciones": {
+      "a": "se libera acetilcolina -> se abren los canales de Na+ y K+ -> se produce un potencial de placa en la fibra muscular -> se dispara un potencial de acción y produce la contracción de la fibra muscular.",
+      "b": "se abren los canales de Na+ y K+ -> se libera acetilcolina -> se produce un potencial de placa en la fibra muscular -> se dispara un potencial de acción.",
+      "c": "se libera acetilcolina -> se produce un potencial de placa en la fibra muscular -> se dispara un potencial de acción y produce la contracción de la fibra muscular -> se abren los canales de Na+ y K+.",
+      "d": "se produce un potencial de placa en la fibra muscular -> se abren los canales de Na+ y K+ -> se libera acetilcolina -> se dispara un potencial de acción."
+    },
+    "correcta": "a",
+    "explicacion": "La unión neuromuscular funciona en este orden: la neurona libera el neurotransmisor acetilcolina, este se une a los receptores abriendo canales iónicos en el músculo, generando el potencial de placa motora que culmina en un potencial de acción que contrae las fibras."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "Señale la respuesta correcta en relación con la organización jerárquica de los sistemas motores:",
+    "opciones": {
+      "a": "las órdenes motoras fluyen de los niveles inferiores a los superiores.",
+      "b": "existe una autonomía total en todos los niveles del sistema motor.",
+      "c": "las órdenes motoras fluyen desde los niveles superiores a los inferiores.",
+      "d": "no hay una gradación de funciones entre los distintos componentes del sistema motor."
+    },
+    "correcta": "c",
+    "explicacion": "A diferencia de las vías aferentes sensoriales, los sistemas motores presentan una organización descendente en la que las instrucciones fluyen estrictamente desde las cortezas (niveles superiores) hacia los niveles efectores del tronco y la médula (niveles inferiores)."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Las denominadas células asesinas del sistema inmunitario:",
+    "opciones": {
+      "a": "son monocitos que se transforman en granulocitos.",
+      "b": "pertenecen a la tercera línea de defensa de la respuesta inespecífica.",
+      "c": "son granulocitos que se transforman en macrófagos.",
+      "d": "pertenecen a la segunda línea de defensa de la respuesta inespecífica del organismo."
+    },
+    "correcta": "d",
+    "explicacion": "Las células Natural Killer (NK) o células asesinas son un componente innato y muy rápido de la respuesta inespecífica, operando como una segunda línea general de defensa del cuerpo contra células infectadas o tumorales."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En relación con los receptores olfatorios, sabemos que en nuestra especie:",
+    "opciones": {
+      "a": "se localizan en la mucosa olfatoria.",
+      "b": "proyectan cilios, que son ramificaciones de la única dendrita que poseen, hacia el interior de la capa mucosa.",
+      "c": "a diferencia de otras neuronas, se regeneran cada 60 días.",
+      "d": "todas las opciones anteriores son ciertas."
+    },
+    "correcta": "d",
+    "explicacion": "Los receptores del olfato son verdaderas neuronas ubicadas en la mucosa, portan cilios apicales receptivos y exhiben la rareza biológica de regenerarse constantemente desde células basales a lo largo de ciclos de varias semanas."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "En relación con la codificación de la modalidad sensorial sabemos que depende de:",
+    "opciones": {
+      "a": "el tipo de energía estimular.",
+      "b": "el tamaño del campo receptivo.",
+      "c": "la zona del SNC a la que llegan los impulsos nerviosos.",
+      "d": "los diferentes tipos de impulsos nerviosos producidos por diferentes estímulos."
+    },
+    "correcta": "c",
+    "explicacion": "Bajo la ley de líneas marcadas, todo impulso eléctrico neuronal es idéntico; la modalidad cualitativa del sentido (si es luz, tacto u olor) depende exclusivamente de la zona neuroanatómica concreta del cerebro donde dicho impulso termina conectando."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Una característica de la psiconeuroinmunología es la de considerar que las interacciones entre los tres sistemas (endocrino, inmune y nervioso) y la conducta se hacen:",
+    "opciones": {
+      "a": "bidireccionalmente.",
+      "b": "siguiendo siempre una 'cadena de mando' desde el sistema nervioso.",
+      "c": "siguiendo siempre una 'cadena de mando' desde el sistema endocrino.",
+      "d": "unidireccionalmente, de acuerdo con el orden de importancia."
+    },
+    "correcta": "a",
+    "explicacion": "La premisa fundamental de esta disciplina postula que no hay jerarquías cerradas; el sistema nervioso puede deprimir al inmunitario por estrés, y recíprocamente el sistema inmunitario usa citocinas para alterar al cerebro y al comportamiento (interacción bidireccional mutua)."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "En el caso de la inmunidad celular, NO son células presentadoras de antígenos:",
+    "opciones": {
+      "a": "los macrófagos.",
+      "b": "los neutrófilos.",
+      "c": "los linfocitos B.",
+      "d": "las células dendríticas."
+    },
+    "correcta": "b",
+    "explicacion": "Mientras que los macrófagos, los linfocitos B y las células dendríticas son células presentadoras de antígenos (CPA) profesionales capaces de mostrar péptidos al sistema inmune, los neutrófilos son células fagocíticas simples que no poseen capacidad presentadora a las células T."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "El tono de un sonido se relaciona con:",
+    "opciones": {
+      "a": "la frecuencia de onda que lo forma.",
+      "b": "la amplitud de la onda que lo genera.",
+      "c": "el conjunto de ondas que se superponen a la onda fundamental.",
+      "d": "todas las opciones son correctas."
+    },
+    "correcta": "a",
+    "explicacion": "A nivel perceptivo, el tono o altura acústica está directamente derivado de la frecuencia vibratoria de la onda sonora en hercios (las frecuencias altas son agudas y las bajas son graves)."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Durante la ontogenia del SN ¿qué tipo de moléculas realizan el reconocimiento de la glía radial y proporcionan la adhesividad para que se desplacen por sus prolongaciones las neuronas migratorias del tubo neural?",
+    "opciones": {
+      "a": "las moléculas de la matriz extracelular.",
+      "b": "las sustancias neurotróficas.",
+      "c": "las moléculas de adhesión celular neurona-glía (MAC-Ng).",
+      "d": "las sustancias neurotrópicas."
+    },
+    "correcta": "c",
+    "explicacion": "El desplazamiento a lo largo del andamio estructural exige que la membrana del soma neuronal interactúe químicamente con las prolongaciones de la glía mediante las Moléculas de Adhesión Celular Neurona-Glía o MAC-Ng."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Diversas investigaciones de los últimos años apuntan a que, por su desarrollo embrionario, la microglía procede de:",
+    "opciones": {
+      "a": "los granulocitos.",
+      "b": "las células dendríticas.",
+      "c": "los monocitos.",
+      "d": "los linfocitos T colaboradores."
+    },
+    "correcta": "c",
+    "explicacion": "A diferencia del resto de las células de la glía que derivan del neuroectodermo, la microglía (defensores residentes del cerebro) invade el SNC desde la sangre en la vida fetal proviniendo del linaje de los monocitos macrófagos del mesodermo."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "A la selección que favorece la inversión en muchos descendientes y pocos cuidados se le llama:",
+    "opciones": {
+      "a": "selección r.",
+      "b": "selección k.",
+      "c": "selección estabilizadora.",
+      "d": "selección direccional."
+    },
+    "correcta": "a",
+    "explicacion": "La estrategia reproductiva enfocada puramente a la cantidad, engendrando una descendencia numerosa a costa de proveer nulo cuidado parental posterior, se denomina etológicamente selección 'r'."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Qué ventaja proporciona la red nerviosa difusa en la supervivencia de los cnidarios?",
+    "opciones": {
+      "a": "mayor capacidad de movimiento.",
+      "b": "respuestas rápidas a estímulos ambientales.",
+      "c": "mejor capacidad para almacenar energía.",
+      "d": "menor necesidad de alimentos para sobrevivir."
+    },
+    "correcta": "b",
+    "explicacion": "Tener una matriz no polarizada permite a las anémonas o medusas transmitir impulsos velozmente en todas direcciones desde el punto estimulado para disparar sus tentáculos y dar respuestas muy rápidas y autónomas a estímulos."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿En cuál de las siguientes parejas de términos no hay concordancia?",
+    "opciones": {
+      "a": "piel / corpúsculos de Meissner.",
+      "b": "lengua / botones gustativos.",
+      "c": "membrana timpánica / células ciliadas.",
+      "d": "retina / células ganglionares."
+    },
+    "correcta": "c",
+    "explicacion": "Las células ciliadas auditivas no están localizadas en el tímpano de forma directa, sino que asientan profunda e internamente sobre la membrana basilar conformando el Órgano de Corti en la cóclea."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas, cuyos niveles aumentan gradualmente durante la adolescencia en mujeres durante la pubertad, promueve el desarrollo y mantenimiento de los órganos reproductores femeninos, así como la aparición de los caracteres sexuales secundarios?",
+    "opciones": {
+      "a": "la hormona luteinizante.",
+      "b": "la progesterona.",
+      "c": "la hormona foliculoestimulante.",
+      "d": "los estrógenos."
+    },
+    "correcta": "d",
+    "explicacion": "Los estrógenos son las potentes hormonas sexuales femeninas producidas en los ovarios que orquestan el fenotipo anatómico femenino y el brote de los caracteres secundarios en la edad puberal."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas se sintetizan en la glándula pineal?",
+    "opciones": {
+      "a": "la hormona antidiurética.",
+      "b": "las somatomedinas.",
+      "c": "la melatonina.",
+      "d": "la noradrenalina."
+    },
+    "correcta": "c",
+    "explicacion": "Bajo la influencia del núcleo supraquiasmático y la ausencia de luz exterior, la glándula pineal o epífisis es la encargada exclusiva de producir y liberar melatonina para favorecer el ritmo circadiano de sueño."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "¿Cuál de las siguientes afirmaciones es correcta en relación con el diencéfalo?",
+    "opciones": {
+      "a": "el subtálamo se encuentra anterior al hipotálamo.",
+      "b": "el núcleo supraóptico se localiza en la región anterior preóptica del hipotálamo.",
+      "c": "los núcleos mamilares se encuentran en la región tuberal del hipotálamo.",
+      "d": "el núcleo caudado es una estructura del diencéfalo."
+    },
+    "correcta": "b",
+    "explicacion": "En la ordenación espacial de la zona hipotalámica, el núcleo magnocelular supraóptico se posiciona en el bloque anterior o región preóptica por encima del quiasma."
+  }
+]
