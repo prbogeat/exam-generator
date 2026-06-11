@@ -1,0 +1,581 @@
+const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
+
+const state = {
+  exam: null,
+  answers: {},
+  submitted: false,
+  onlyErrors: false,
+  elapsedMs: 0,
+  timerStart: null,
+  timerInterval: null,
+  timerRunning: false,
+};
+
+const dom = {
+  pageTitle: document.getElementById("pageTitle"),
+  pageSubtitle: document.getElementById("pageSubtitle"),
+  noticeBox: document.getElementById("noticeBox"),
+  dataStatus: document.getElementById("dataStatus"),
+  questions: document.getElementById("questions"),
+  resultBox: document.getElementById("resultBox"),
+  progressBar: document.getElementById("progressBar"),
+  progressText: document.getElementById("progressText"),
+  timeBox: document.getElementById("timeBox"),
+  correctBox: document.getElementById("correctBox"),
+  gradeBox: document.getElementById("gradeBox"),
+  timerTop: document.getElementById("timerTop"),
+  startTimer: document.getElementById("startTimer"),
+  gradeTop: document.getElementById("gradeTop"),
+  gradeBottom: document.getElementById("gradeBottom"),
+  toggleErrors: document.getElementById("toggleErrors"),
+  resetTop: document.getElementById("resetTop"),
+  resetBottom: document.getElementById("resetBottom"),
+  loadDefaultData: document.getElementById("loadDefaultData"),
+  jsonFileInput: document.getElementById("jsonFileInput"),
+};
+
+function formatTime(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+  const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+  const seconds = String(totalSeconds % 60).padStart(2, "0");
+
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+function createTextNode(tag, text, className = "") {
+  const node = document.createElement(tag);
+  if (className) {
+    node.className = className;
+  }
+  node.textContent = text;
+  return node;
+}
+
+function getTotalQuestions() {
+  return state.exam ? state.exam.questions.length : 0;
+}
+
+function getPenaltyDivisor() {
+  const raw = Number(state.exam && state.exam.scoring && state.exam.scoring.wrongAnswersPerDiscountedCorrect);
+  return raw > 0 ? raw : 0;
+}
+
+function getMaxScore() {
+  const raw = Number(state.exam && state.exam.scoring && state.exam.scoring.maxScore);
+  return raw > 0 ? raw : 10;
+}
+
+function getTimeLimitMinutes() {
+  const raw = Number(state.exam && state.exam.scoring && state.exam.scoring.timeLimitMinutes);
+  return raw > 0 ? raw : 90;
+}
+
+function updateTimer() {
+  const text = formatTime(state.elapsedMs);
+  dom.timerTop.textContent = text;
+  dom.timeBox.textContent = text;
+}
+
+function stopTimer() {
+  if (state.timerInterval) {
+    clearInterval(state.timerInterval);
+  }
+  state.timerInterval = null;
+  state.timerRunning = false;
+  updateTimer();
+}
+
+function startTimer() {
+  if (!state.exam || state.submitted || state.timerRunning) {
+    return;
+  }
+
+  state.timerRunning = true;
+  state.timerStart = Date.now() - state.elapsedMs;
+  dom.startTimer.textContent = "Contador en marcha";
+
+  state.timerInterval = setInterval(() => {
+    state.elapsedMs = Date.now() - state.timerStart;
+    updateTimer();
+  }, 250);
+}
+
+function setDataStatus(text, tone = "neutral") {
+  dom.dataStatus.textContent = text;
+  dom.dataStatus.dataset.tone = tone;
+}
+
+function setControlsState() {
+  const hasExam = Boolean(state.exam && state.exam.questions.length);
+
+  dom.startTimer.disabled = !hasExam || state.submitted;
+  dom.gradeTop.disabled = !hasExam || state.submitted;
+  dom.gradeBottom.disabled = !hasExam || state.submitted;
+  dom.resetTop.disabled = !hasExam;
+  dom.resetBottom.disabled = !hasExam;
+}
+
+function updateStaticTexts() {
+  if (!state.exam) {
+    document.title = "Examen dinámico";
+    dom.pageTitle.textContent = "Examen dinámico";
+    dom.pageSubtitle.textContent =
+      "Carga un JSON local o sirve esta carpeta por HTTP para cargar el JSON por defecto.";
+    dom.noticeBox.textContent =
+      "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON.";
+    return;
+  }
+
+  document.title = `${state.exam.subjectTitle} · ${state.exam.examTitle}`;
+  dom.pageTitle.textContent = `${state.exam.subjectTitle} · ${state.exam.examTitle}`;
+  dom.pageSubtitle.textContent =
+    state.exam.subtitle || `${getTotalQuestions()} preguntas · explicación tras corregir`;
+
+  const formulaTip = state.exam.scoring.formulaTip
+    ? ` Cálculo: ${state.exam.scoring.formulaTip}.`
+    : "";
+
+  dom.noticeBox.textContent = `${
+    state.exam.notice || "Examen generado dinámicamente desde JSON."
+  }${formulaTip}`;
+}
+
+function computeGrade(correct, wrong) {
+  const total = getTotalQuestions();
+  if (!total) {
+    return 0;
+  }
+
+  const penaltyDivisor = getPenaltyDivisor();
+  const penaltyPerWrong = penaltyDivisor > 0 ? 1 / penaltyDivisor : 0;
+
+  return ((correct - wrong * penaltyPerWrong) / total) * getMaxScore();
+}
+
+function getStats() {
+  const answered = Object.keys(state.answers).length;
+  const correct = (state.exam ? state.exam.questions : []).filter((question) => {
+    return question.correctOption && state.answers[String(question.id)] === question.correctOption;
+  }).length;
+  const wrong = answered - correct;
+  const blank = Math.max(0, getTotalQuestions() - answered);
+  const rawGrade = computeGrade(correct, wrong);
+
+  return { answered, correct, wrong, blank, rawGrade };
+}
+
+function updateProgress() {
+  const total = getTotalQuestions();
+  const stats = getStats();
+  const width = total ? `${Math.round((stats.answered / total) * 100)}%` : "0%";
+
+  dom.progressBar.style.width = width;
+  dom.progressText.textContent = `Respondidas: ${stats.answered}/${total} · En blanco: ${stats.blank}`;
+  dom.correctBox.textContent = state.submitted ? String(stats.correct) : "—";
+  dom.gradeBox.textContent = state.submitted ? Math.max(0, stats.rawGrade).toFixed(2) : "—";
+
+  updateTimer();
+  setControlsState();
+}
+
+function createOption(question, option) {
+  const questionId = String(question.id);
+  const selected = state.answers[questionId] === option.key;
+  const correct = state.submitted && question.correctOption === option.key;
+  const wrong = state.submitted && selected && question.correctOption !== option.key;
+
+  const label = document.createElement("label");
+  label.className = "option";
+  label.dataset.questionId = questionId;
+  label.dataset.optionKey = option.key;
+
+  if (selected) {
+    label.classList.add("selected");
+  }
+  if (correct) {
+    label.classList.add("correct");
+  }
+  if (wrong) {
+    label.classList.add("wrong");
+  }
+
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  input.checked = selected;
+  input.disabled = state.submitted;
+
+  const textWrapper = document.createElement("span");
+  const strong = document.createElement("strong");
+  strong.textContent = `${option.key}) `;
+  textWrapper.appendChild(strong);
+  textWrapper.append(document.createTextNode(option.text));
+
+  label.appendChild(input);
+  label.appendChild(textWrapper);
+
+  return label;
+}
+
+function createFeedback(question) {
+  const selectedKey = state.answers[String(question.id)] || "";
+  const isCorrect = selectedKey !== "" && selectedKey === question.correctOption;
+
+  const feedback = document.createElement("div");
+  feedback.className = "feedback";
+  feedback.style.display = state.submitted ? "block" : "none";
+
+  const firstLine = document.createElement("div");
+  let statusText = "Sin responder.";
+  if (selectedKey !== "" && isCorrect) {
+    statusText = "Correcta.";
+  }
+  if (selectedKey !== "" && !isCorrect) {
+    statusText = "Incorrecta.";
+  }
+
+  firstLine.append(document.createTextNode(`${statusText} `));
+  if (question.correctOption) {
+    firstLine.append(document.createTextNode("Respuesta válida: "));
+    firstLine.appendChild(createTextNode("strong", question.correctOption));
+    firstLine.append(document.createTextNode("."));
+  } else {
+    firstLine.append(
+      document.createTextNode("No hay respuesta correcta configurada en el JSON.")
+    );
+  }
+
+  const secondLine = document.createElement("div");
+  secondLine.style.marginTop = "6px";
+  secondLine.appendChild(createTextNode("strong", "Explicación: "));
+  secondLine.append(
+    document.createTextNode(question.explanation || "Sin explicación disponible.")
+  );
+
+  feedback.appendChild(firstLine);
+  feedback.appendChild(secondLine);
+
+  return feedback;
+}
+
+function renderQuestions() {
+  dom.questions.replaceChildren();
+
+  if (!state.exam) {
+    const article = document.createElement("article");
+    article.className = "question empty-state";
+    article.textContent =
+      "No hay examen cargado. Usa el botón de JSON por defecto o carga un archivo JSON manualmente.";
+    dom.questions.appendChild(article);
+    updateProgress();
+    return;
+  }
+
+  const visibleQuestions =
+    state.submitted && state.onlyErrors
+      ? state.exam.questions.filter((question) => {
+          return state.answers[String(question.id)] !== question.correctOption;
+        })
+      : state.exam.questions;
+
+  if (!visibleQuestions.length) {
+    const article = document.createElement("article");
+    article.className = "question empty-state";
+    article.textContent = "No hay preguntas pendientes en la vista actual.";
+    dom.questions.appendChild(article);
+    updateProgress();
+    return;
+  }
+
+  visibleQuestions.forEach((question) => {
+    const selectedKey = state.answers[String(question.id)] || "";
+    const isCorrect = selectedKey !== "" && selectedKey === question.correctOption;
+
+    const article = document.createElement("article");
+    article.className = "question";
+
+    const heading = document.createElement("h2");
+    const number = document.createElement("span");
+    number.className = "qnum";
+    number.textContent = `${question.id}.`;
+
+    heading.appendChild(number);
+    heading.append(document.createTextNode(question.text));
+
+    if (state.submitted) {
+      const status = document.createElement("span");
+      status.className = `status ${isCorrect ? "ok" : "bad"}`;
+      status.textContent = isCorrect ? "OK" : "X";
+      heading.append(document.createTextNode(" "));
+      heading.appendChild(status);
+    }
+
+    article.appendChild(heading);
+    question.options.forEach((option) => article.appendChild(createOption(question, option)));
+    article.appendChild(createFeedback(question));
+
+    dom.questions.appendChild(article);
+  });
+
+  updateProgress();
+}
+
+function resetExam(scrollToTop) {
+  state.answers = {};
+  state.submitted = false;
+  state.onlyErrors = false;
+  state.elapsedMs = 0;
+  state.timerStart = null;
+
+  stopTimer();
+
+  dom.resultBox.style.display = "none";
+  dom.resultBox.replaceChildren();
+  dom.toggleErrors.classList.add("hidden");
+  dom.toggleErrors.textContent = "Ver solo fallos/en blanco";
+  dom.gradeTop.classList.remove("hidden");
+  dom.gradeBottom.classList.remove("hidden");
+  dom.startTimer.textContent = "Iniciar contador";
+
+  updateStaticTexts();
+  renderQuestions();
+
+  if (scrollToTop) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
+function renderResult() {
+  const stats = getStats();
+  const withinTime = state.elapsedMs / 60000 <= getTimeLimitMinutes();
+
+  dom.resultBox.replaceChildren();
+  dom.resultBox.style.display = "block";
+  dom.resultBox.appendChild(
+    createTextNode("h2", `${stats.rawGrade >= 5 ? "OK" : "Atención"} · Resultado`)
+  );
+
+  const line1 = document.createElement("p");
+  line1.append(document.createTextNode("Aciertos: "));
+  line1.appendChild(createTextNode("strong", String(stats.correct)));
+  line1.append(document.createTextNode(" · Errores: "));
+  line1.appendChild(createTextNode("strong", String(stats.wrong)));
+  line1.append(document.createTextNode(" · En blanco: "));
+  line1.appendChild(createTextNode("strong", String(stats.blank)));
+  line1.append(document.createTextNode("."));
+
+  const line2 = document.createElement("p");
+  line2.append(document.createTextNode("Tiempo empleado: "));
+  line2.appendChild(createTextNode("strong", formatTime(state.elapsedMs)));
+  line2.append(
+    document.createTextNode(
+      withinTime
+        ? `. Dentro del tiempo oficial de ${getTimeLimitMinutes()} minutos.`
+        : `. Has superado los ${getTimeLimitMinutes()} minutos oficiales.`
+    )
+  );
+
+  const line3 = document.createElement("p");
+  line3.append(document.createTextNode("Fórmula aplicada: "));
+  line3.appendChild(createTextNode("strong", state.exam.scoring.formulaTip || "No definida"));
+  line3.append(document.createTextNode(". Nota: "));
+  line3.appendChild(createTextNode("strong", Math.max(0, stats.rawGrade).toFixed(2)));
+  line3.append(document.createTextNode("."));
+
+  dom.resultBox.appendChild(line1);
+  dom.resultBox.appendChild(line2);
+  dom.resultBox.appendChild(line3);
+}
+
+function gradeExam() {
+  if (!state.exam || state.submitted) {
+    return;
+  }
+
+  state.submitted = true;
+  stopTimer();
+  renderResult();
+
+  dom.toggleErrors.classList.remove("hidden");
+  dom.gradeTop.classList.add("hidden");
+  dom.gradeBottom.classList.add("hidden");
+  dom.startTimer.disabled = true;
+
+  renderQuestions();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function normalizeExamData(data) {
+  if (!data || typeof data !== "object") {
+    throw new Error("El JSON no contiene un objeto válido.");
+  }
+
+  if (!Array.isArray(data.questions)) {
+    throw new Error("El JSON debe incluir un array questions.");
+  }
+
+  const questions = data.questions.map((question, index) => {
+    if (!question || typeof question !== "object") {
+      throw new Error(`La pregunta ${index + 1} no es válida.`);
+    }
+
+    const options = Array.isArray(question.options)
+      ? question.options.map((option, optionIndex) => {
+          if (!option || typeof option !== "object") {
+            throw new Error(
+              `La opción ${optionIndex + 1} de la pregunta ${index + 1} no es válida.`
+            );
+          }
+
+          const fallbackKey = String.fromCharCode(65 + optionIndex);
+          const key = String(option.key || fallbackKey).trim() || fallbackKey;
+
+          return {
+            key,
+            text: String(option.text || "").trim(),
+          };
+        })
+      : [];
+
+    if (!options.length) {
+      throw new Error(`La pregunta ${index + 1} no tiene opciones.`);
+    }
+
+    const validKeys = options.map((option) => option.key);
+    const correctOption = String(question.correctOption || "").trim();
+
+    return {
+      id: question.id || index + 1,
+      text: String(question.text || `Pregunta ${index + 1}`),
+      options,
+      correctOption: validKeys.includes(correctOption) ? correctOption : "",
+      explanation: String(question.explanation || "").trim(),
+    };
+  });
+
+  return {
+    subjectTitle: String(data.subjectTitle || "Asignatura"),
+    examTitle: String(data.examTitle || "Examen"),
+    subtitle: String(data.subtitle || ""),
+    notice: String(data.notice || ""),
+    scoring: {
+      maxScore:
+        Number(data.scoring && data.scoring.maxScore) > 0
+          ? Number(data.scoring.maxScore)
+          : 10,
+      wrongAnswersPerDiscountedCorrect:
+        Number(data.scoring && data.scoring.wrongAnswersPerDiscountedCorrect) > 0
+          ? Number(data.scoring.wrongAnswersPerDiscountedCorrect)
+          : 0,
+      formulaTip: String((data.scoring && data.scoring.formulaTip) || ""),
+      timeLimitMinutes:
+        Number(data.scoring && data.scoring.timeLimitMinutes) > 0
+          ? Number(data.scoring.timeLimitMinutes)
+          : 90,
+    },
+    questions,
+  };
+}
+
+function applyExamData(exam, sourceLabel) {
+  state.exam = exam;
+  updateStaticTexts();
+  setDataStatus(`Fuente de datos: ${sourceLabel}`, "neutral");
+  resetExam(false);
+}
+
+async function loadExamFromUrl(url, label) {
+  setDataStatus(`Cargando ${label}...`, "neutral");
+
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const data = await response.json();
+    applyExamData(normalizeExamData(data), label);
+  } catch (error) {
+    if (!state.exam) {
+      updateStaticTexts();
+      renderQuestions();
+    }
+
+    const message =
+      location.protocol === "file:"
+        ? `No se puede cargar ${label} automáticamente en file://. Usa “Cargar otro JSON” o abre la carpeta con un servidor HTTP.`
+        : `No se pudo cargar ${label}: ${error.message}`;
+
+    setDataStatus(message, "error");
+  }
+}
+
+async function loadExamFromFile(file) {
+  setDataStatus(`Leyendo ${file.name}...`, "neutral");
+
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+    applyExamData(normalizeExamData(data), file.name);
+  } catch (error) {
+    setDataStatus(`No se pudo leer ${file.name}: ${error.message}`, "error");
+  } finally {
+    dom.jsonFileInput.value = "";
+  }
+}
+
+function bindEvents() {
+  dom.questions.addEventListener("click", (event) => {
+    const option = event.target.closest(".option");
+    if (!option || !state.exam || state.submitted) {
+      return;
+    }
+
+    startTimer();
+
+    const questionId = option.dataset.questionId;
+    const optionKey = option.dataset.optionKey;
+
+    if (state.answers[questionId] === optionKey) {
+      delete state.answers[questionId];
+    } else {
+      state.answers[questionId] = optionKey;
+    }
+
+    renderQuestions();
+  });
+
+  dom.startTimer.addEventListener("click", startTimer);
+  dom.gradeTop.addEventListener("click", gradeExam);
+  dom.gradeBottom.addEventListener("click", gradeExam);
+  dom.resetTop.addEventListener("click", () => resetExam(true));
+  dom.resetBottom.addEventListener("click", () => resetExam(true));
+
+  dom.toggleErrors.addEventListener("click", () => {
+    state.onlyErrors = !state.onlyErrors;
+    dom.toggleErrors.textContent = state.onlyErrors
+      ? "Ver todas"
+      : "Ver solo fallos/en blanco";
+    renderQuestions();
+  });
+
+  dom.loadDefaultData.addEventListener("click", () => {
+    loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
+  });
+
+  dom.jsonFileInput.addEventListener("change", (event) => {
+    const file = event.target.files && event.target.files[0];
+    if (file) {
+      loadExamFromFile(file);
+    }
+  });
+}
+
+function initializeApp() {
+  bindEvents();
+  updateStaticTexts();
+  renderQuestions();
+  loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
+}
+
+initializeApp();

@@ -4,9 +4,9 @@ Proyecto para generar y corregir examenes tipo test en JSON.
 
 ## Que incluye
 
-- `generar_examen.py`: genera un examen en formato compatible con `Examen.html`.
+- `generar_examen.py`: genera un examen en formato compatible con la app web de `docs/`.
 - `corregir_examen.py`: corrige un examen realizado contra un examen base y genera informes.
-- `Examen.html`: visor/corrector en navegador para examenes JSON.
+- `docs/index.html`: visor/corrector en navegador para examenes JSON.
 - `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
 
 ## Estructura recomendada
@@ -147,19 +147,23 @@ python corregir_examen.py \
 
 El `.json` sirve para procesado posterior y el `.md` para lectura rapida del informe.
 
-## 3) Uso web (`Examen.html`)
+## 3) Uso web (`docs/index.html`)
 
-- Boton `Cargar JSON por defecto`: intenta cargar `examen-plantilla.json`.
+- Boton `Cargar JSON por defecto`: intenta cargar `data/examen-plantilla.json`.
 - Boton `Cargar otro JSON`: carga un archivo local manualmente.
 
-Si abres `Examen.html` con `file://`, los navegadores pueden bloquear `fetch` del JSON por defecto.
+Si abres `docs/index.html` con `file://`, los navegadores pueden bloquear `fetch` del JSON por defecto.
 Solucion: abrir con servidor HTTP local.
 
 ```bash
 python -m http.server 8000
 ```
 
-Luego abrir: `http://localhost:8000/Examen.html`
+Luego abrir: `http://localhost:8000/`
+
+Con la task de VS Code `Levantar servidor HTTP`, la raiz ya es `docs`, por lo que basta abrir:
+
+`http://localhost:8000/`
 
 ## 4) Tareas de VS Code
 
