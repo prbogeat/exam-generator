@@ -1,0 +1,735 @@
+{
+  "subjectTitle": "Psicologia de la Emocion",
+  "examTitle": "UNED - 40 al azar",
+  "subtitle": "40 al azar",
+  "totalQuestions": 40,
+  "notice": "Preguntas elegidas por copilot",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 2.0,
+    "formulaTip": "[(A - E / 2) / 40] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 15,
+      "used": true,
+      "text": "Las emociones son procesos que se activan cada vez que nuestro aparato psíquico detecta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Algún cambio significativo para los intereses y bienestar del individuo."
+        },
+        {
+          "key": "B",
+          "text": "Algún cambio físico puramente mecánico e irrelevante en el entorno externo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El proceso emocional se gatilla ante la detección de estímulos evaluados como relevantes para las metas, adaptación o bienestar del sujeto."
+    },
+    {
+      "id": 2,
+      "sourceId": 55,
+      "used": true,
+      "text": "Un efecto subjetivo y cognitivo nuclear de la hostilidad mantenida en el tiempo es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La rumiación centrada en agravios reales o percibidos."
+        },
+        {
+          "key": "B",
+          "text": "Un aumento inmediato de los niveles basales de empatía disposicional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La hostilidad cronifica el malestar mediante pensamientos repetitivos de resentimiento, sospecha y evaluación negativa del prójimo."
+    },
+    {
+      "id": 3,
+      "sourceId": 133,
+      "used": true,
+      "text": "En las personas represoras (estilo de afrontamiento opuesto al sensibilizador), el patrón ante la ansiedad implica:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Baja vigilancia atencional y alta evitación cognitiva de la información de peligro."
+        },
+        {
+          "key": "B",
+          "text": "Hipervigilancia crónica unida a una alta asimilación de los síntomas corporales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los represores intentan alejar conscientemente su atención de los indicios estresantes, negando o minimizando su vulnerabilidad emocional."
+    },
+    {
+      "id": 4,
+      "sourceId": 189,
+      "used": true,
+      "text": "El afecto no es accesible conscientemente de forma directa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Falso. El afecto tiene como característica intrínseca su accesibilidad consciente elemental en términos de valencia (agrado/desagrado)."
+    },
+    {
+      "id": 5,
+      "sourceId": 35,
+      "used": true,
+      "text": "La sensibilidad o susceptibilidad individual al asco está fuertemente correlacionada en la clínica con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Síntomas depresivos mayores melancólicos."
+        },
+        {
+          "key": "B",
+          "text": "Síntomas obsesivo-compulsivos de contaminación y limpieza."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las personas con TOC centrado en el contagio y la limpieza puntúan significativamente alto en las escalas de propensión al asco."
+    },
+    {
+      "id": 6,
+      "sourceId": 134,
+      "used": true,
+      "text": "La diferencia funcional básica entre el miedo y la ansiedad radica en que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El miedo responde a un peligro real, presente e identificable; la ansiedad responde a amenazas difusas, ambiguas o futuras."
+        },
+        {
+          "key": "B",
+          "text": "El miedo es un rasgo de la personalidad crónico y la ansiedad es una reacción corta de segundos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El miedo es una respuesta defensiva aguda ante un peligro inminente y concreto, mientras que la ansiedad es un estado proactivo de anticipación y alerta difusa."
+    },
+    {
+      "id": 7,
+      "sourceId": 186,
+      "used": true,
+      "text": "Un objetivo de los estudios transculturales sobre expresión y reconocimiento facial de emociones es recoger datos en individuos pertenecientes a diversas etnias y culturas aisladas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Verdadero. Ekman y Friesen estudiaron culturas prealfabetizadas y aisladas (como en Papúa Nueva Guinea) para testar la hipótesis de la universalidad filogenética."
+    },
+    {
+      "id": 8,
+      "sourceId": 64,
+      "used": true,
+      "text": "En el plano psicofisiológico, el estado de tristeza suele asociarse a un patrón generalizado de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hiporreactividad corporal y disminución general del tono muscular y conductancia somática."
+        },
+        {
+          "key": "B",
+          "text": "Hiperactivación neuromuscular tónica constante e irreversible."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Salvo en estados de agitación por llanto, la tristeza cursa ordinariamente con un enlentecimiento psicomotor y una desactivación metabólica adaptativa."
+    },
+    {
+      "id": 9,
+      "sourceId": 231,
+      "used": true,
+      "text": "Según la formulación de Power (1999), un rasgo definitorio y esencial del proceso emocional de la tristeza es que la pérdida:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Debe ser estrictamente valorada como irreparable por el sujeto."
+        },
+        {
+          "key": "B",
+          "text": "Puede ser fácilmente sustituida mediante recompensas materiales inmediatas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La tristeza genuina surge ante la valoración de una pérdida significativa de un objeto, meta o estatus que se percibe como definitiva o de difícil reparación."
+    },
+    {
+      "id": 10,
+      "sourceId": 88,
+      "used": true,
+      "text": "En el modelo de investigación en emociones de Arne Öhman es destacable que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Diferencia entre mecanismos automáticos y controlados vinculados a la emoción."
+        },
+        {
+          "key": "B",
+          "text": "Trabaja con el paradigma del condicionamiento instrumental skinneriano."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Öhman defiende un modelo donde coexisten un procesamiento inconsciente/automático rápido (vía subcortical) y un procesamiento controlado/consciente."
+    },
+    {
+      "id": 11,
+      "sourceId": 120,
+      "used": true,
+      "text": "La sensibilidad o susceptibilidad individual al asco está fuertemente correlacionada en la clínica con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Síntomas depresivos mayores melancólicos."
+        },
+        {
+          "key": "B",
+          "text": "Síntomas obsesivo-compulsivos de contaminación y limpieza."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las personas con TOC centrado en el contagio y la limpieza puntúan significativamente alto en las escalas de propensión al asco."
+    },
+    {
+      "id": 12,
+      "sourceId": 146,
+      "used": true,
+      "text": "Según la formulación de Power (1999), un rasgo definitorio y esencial del proceso emocional de la tristeza es que la pérdida:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Debe ser estrictamente valorada como irreparable por el sujeto."
+        },
+        {
+          "key": "B",
+          "text": "Puede ser fácilmente sustituida mediante recompensas materiales inmediatas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La tristeza genuina surge ante la valoración de una pérdida significativa de un objeto, meta o estatus que se percibe como definitiva o de difícil reparación."
+    },
+    {
+      "id": 13,
+      "sourceId": 123,
+      "used": true,
+      "text": "El asco es una de las reacciones emocionales en las que las sensaciones fisiológicas periféricas son menos patentes de forma consciente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Falso. El asco es una de las emociones con mayor conciencia de reactividad visceral y gastrointestinal (náuseas, malestar estomacal)."
+    },
+    {
+      "id": 14,
+      "sourceId": 40,
+      "used": true,
+      "text": "A nivel evolutivo, la función adaptativa primordial de la emoción de asco es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Potenciar el apareamiento selectivo."
+        },
+        {
+          "key": "B",
+          "text": "El rechazo de sustancias dañinas o alimentos potencialmente contaminados que pongan en peligro la salud."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Funciona como un escudo protector corporal e inmunológico conductual frente a patógenos, toxinas e infecciones alimentarias."
+    },
+    {
+      "id": 15,
+      "sourceId": 31,
+      "used": true,
+      "text": "La sorpresa ha sido definida esencialmente como una reacción a un evento o suceso:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Altamente predecible dentro de los planes diarios."
+        },
+        {
+          "key": "B",
+          "text": "Discrepante con el plan o esquema previo del sujeto."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La sorpresa se dispara cuando un estímulo rompe las expectativas cognitivas o esquemas predictivos que el sujeto sostiene de forma activa."
+    },
+    {
+      "id": 16,
+      "sourceId": 60,
+      "used": true,
+      "text": "A nivel autonómico, la expresión intensa de la ira se caracteriza por un patrón de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Elevada activación de los sistemas simpático y cardiovascular (hipertensión y taquicardia)."
+        },
+        {
+          "key": "B",
+          "text": "Dominancia parasimpática extrema con bradicardia marcada."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La ira moviliza una ingente cantidad de energía hemodinámica (ataque/defensa), elevando de forma concomitante la presión arterial y la tasa cardíaca."
+    },
+    {
+      "id": 17,
+      "sourceId": 50,
+      "used": true,
+      "text": "La preocupación en la ansiedad tiene una función de impronta o alerta atencional involuntaria porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alerta al sistema emocional sobre la aparición de estímulos potencialmente amenazantes."
+        },
+        {
+          "key": "B",
+          "text": "Bloquea por completo el sistema tálamo-cortical."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La preocupación actúa como una alarma interna que mantiene activos los esquemas de amenaza en la memoria de trabajo para monitorizar peligros."
+    },
+    {
+      "id": 18,
+      "sourceId": 49,
+      "used": true,
+      "text": "La diferencia funcional básica entre el miedo y la ansiedad radica en que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El miedo responde a un peligro real, presente e identificable; la ansiedad responde a amenazas difusas, ambiguas o futuras."
+        },
+        {
+          "key": "B",
+          "text": "El miedo es un rasgo de la personalidad crónico y la ansiedad es una reacción corta de segundos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El miedo es una respuesta defensiva aguda ante un peligro inminente y concreto, mientras que la ansiedad es un estado proactivo de anticipación y alerta difusa."
+    },
+    {
+      "id": 19,
+      "sourceId": 16,
+      "used": true,
+      "text": "Un objetivo de los estudios transculturales sobre expresión y reconocimiento facial de emociones es recoger datos en individuos pertenecientes a diversas etnias y culturas aisladas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Verdadero. Ekman y Friesen estudiaron culturas prealfabetizadas y aisladas (como en Papúa Nueva Guinea) para testar la hipótesis de la universalidad filogenética."
+    },
+    {
+      "id": 20,
+      "sourceId": 102,
+      "used": true,
+      "text": "La hipótesis de la vía rápida del procesamiento emocional (LeDoux) defiende:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La estricta dependencia de los procesos emocionales respecto a los corticales complejos."
+        },
+        {
+          "key": "B",
+          "text": "La independencia adaptativa del procesamiento emocional subcortical respecto al análisis cognitivo cortical."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La ruta tálamo-amígdala (vía rápida) permite respuestas defensivas inmediatas ante amenazas antes de que la corteza analice conscientemente el estímulo."
+    },
+    {
+      "id": 21,
+      "sourceId": 7,
+      "used": true,
+      "text": "La activación fisiológica determina la cualidad emocional. Este postulado es compartido por la teoría bifactorial de la emoción y la teoría de la evaluación-discrepancia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Falso. Ambas teorías sostienen que la activación fisiológica es general e indiferenciada; es la cognición o la evaluación la que determina la cualidad."
+    },
+    {
+      "id": 22,
+      "sourceId": 44,
+      "used": true,
+      "text": "La ansiedad cumple una función adaptativa crucial en humanos porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Impide por completo la activación del cortisol."
+        },
+        {
+          "key": "B",
+          "text": "Facilita y agiliza el procesamiento de información significativa y futura para el bienestar de la persona."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La ansiedad modula un estado preparatorio de alerta y escaneo del entorno ante riesgos potenciales o ambiguos a medio-largo plazo."
+    },
+    {
+      "id": 23,
+      "sourceId": 192,
+      "used": true,
+      "text": "La significación relevante de un estímulo concreto evoca en los individuos un estado de activación que les permite adaptarse a las necesidades de su entorno:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Verdadero. La relevancia activa recursos atencionales y somáticos esenciales para preparar respuestas conductuales adaptativas efectivas."
+    },
+    {
+      "id": 24,
+      "sourceId": 78,
+      "used": true,
+      "text": "La emoción de culpa se distingue de la de vergüenza en que en la culpa el foco evaluativo está puesto en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La acción o conducta concreta realizada, percibida como transgresión moral reparable."
+        },
+        {
+          "key": "B",
+          "text": "La fealdad estética intrínseca de los rasgos anatómicos faciales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La culpa evalúa el acto específico ('hice algo malo'), preservando la integridad del yo global y motivando la reparación del daño."
+    },
+    {
+      "id": 25,
+      "sourceId": 62,
+      "used": true,
+      "text": "Una variable o recurso de índole cognitivo que correlaciona de forma inversa con el control patológico de la tristeza es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El autocontrol y la autoeficacia percibida."
+        },
+        {
+          "key": "B",
+          "text": "La indefensión aprendida estricta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Un sólido sentido de autocontrol emocional y recursos cognitivos de afrontamiento amortiguan el curso de la tristeza, impidiendo su deriva hacia la depresión."
+    },
+    {
+      "id": 26,
+      "sourceId": 51,
+      "used": true,
+      "text": "Inhibir las conductas indeseables o agresivas de otras personas mediante señales de advertencia es una función social e interpersonal propia de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La ira y la hostilidad."
+        },
+        {
+          "key": "B",
+          "text": "Exclusivamente del desprecio pasivo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La ira expresa de forma abierta una transgresión de límites y opera regulando coercitivamente las interacciones sociales."
+    },
+    {
+      "id": 27,
+      "sourceId": 90,
+      "used": true,
+      "text": "Un aspecto que comparten las teorías que abordan la interpretación cognitiva y el arousal fisiológico es que la cualidad emocional depende de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La valoración del estado de activación y del contexto en que tiene lugar la activación."
+        },
+        {
+          "key": "B",
+          "text": "La valoración de los elementos biológicos fijos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En la tradición cognitiva y bifactorial (como Schachter-Singer), la cualidad de la emoción emerge de etiquetar cognitivamente una activación inespecífica considerando el contexto."
+    },
+    {
+      "id": 28,
+      "sourceId": 244,
+      "used": true,
+      "text": "El procesamiento cognitivo de la felicidad se caracteriza típicamente por una valoración de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorpresividad baja, familiaridad alta y predictibilidad media-alta de los eventos placenteros."
+        },
+        {
+          "key": "B",
+          "text": "Un estado constante de shock y trauma epistémico severo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los estados estables de felicidad asientan sus bases en entornos evaluados como seguros, congruentes, predecibles y familiares para el individuo."
+    },
+    {
+      "id": 29,
+      "sourceId": 70,
+      "used": true,
+      "text": "En cuanto a la relación de la emoción de felicidad con las metas, el seguimiento crónico de metas de evitación (vía preventiva) implica de ordinario:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un progreso lento hacia la meta y un menor sentimiento general de satisfacción vital."
+        },
+        {
+          "key": "B",
+          "text": "Un progreso fulgurante y una complacencia subjetiva desbordante."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las metas centradas en evitar resultados negativos cronifican la alerta y limitan la experiencia de logro positivo y florecimiento afectivo."
+    },
+    {
+      "id": 30,
+      "sourceId": 147,
+      "used": true,
+      "text": "Una variable o recurso de índole cognitivo que correlaciona de forma inversa con el control patológico de la tristeza es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El autocontrol y la autoeficacia percibida."
+        },
+        {
+          "key": "B",
+          "text": "La indefensión aprendida estricta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Un sólido sentido de autocontrol emocional y recursos cognitivos de afrontamiento amortiguan el curso de la tristeza, impidiendo su deriva hacia la depresión."
+    },
+    {
+      "id": 31,
+      "sourceId": 117,
+      "used": true,
+      "text": "Según Angyal (1941), el principal estímulo elicitador del asco puro o primario es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los desechos o basuras del cuerpo humano, especialmente las heces."
+        },
+        {
+          "key": "B",
+          "text": "El contacto social con personas pertenecientes a otros estratos económicos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Angyal determinó que los productos de desecho corporal constituyen el núcleo del asco físico primario por suponer una amenaza de contaminación."
+    },
+    {
+      "id": 32,
+      "sourceId": 188,
+      "used": true,
+      "text": "El sentimiento se define rigurosamente en psicología de la emoción como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La experiencia subjetiva y consciente de la emoción."
+        },
+        {
+          "key": "B",
+          "text": "Un conjunto de cambios viscerales medibles objetivamente mediante polígrafo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El sentimiento constituye el componente subjetivo, cognitivo y fenoménico que da acceso consciente al estado emocional."
+    },
+    {
+      "id": 33,
+      "sourceId": 149,
+      "used": true,
+      "text": "En el plano psicofisiológico, el estado de tristeza suele asociarse a un patrón generalizado de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hiporreactividad corporal y disminución general del tono muscular y conductancia somática."
+        },
+        {
+          "key": "B",
+          "text": "Hiperactivación neuromuscular tónica constante e irreversible."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Salvo en estados de agitación por llanto, la tristeza cursa ordinariamente con un enlentecimiento psicomotor y una desactivación metabólica adaptativa."
+    },
+    {
+      "id": 34,
+      "sourceId": 39,
+      "used": true,
+      "text": "El procesamiento cognitivo del asco se caracteriza por una valoración de agrado intrínseco de nivel:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Muy alto."
+        },
+        {
+          "key": "B",
+          "text": "Muy bajo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El asco arroja de forma universal y automática una de las valoraciones de desagrado o agrado intrínseco más bajas de todo el espectro afectivo."
+    },
+    {
+      "id": 35,
+      "sourceId": 238,
+      "used": true,
+      "text": "Cuando el bienestar subjetivo se asocia de forma robusta a la consecución de metas, uno de los elementos clave es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La convergencia intrínseca de las metas con los intereses y necesidades básicas de la persona."
+        },
+        {
+          "key": "B",
+          "text": "Que las metas hayan sido impuestas exclusivamente de forma coercitiva por agentes externos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La autodeterminación y la congruencia de las metas con la identidad personal maximizan de forma óptima el impacto positivo sobre la felicidad permanente."
+    },
+    {
+      "id": 36,
+      "sourceId": 195,
+      "used": true,
+      "text": "En el modelo de inteligencia emocional de Mayer y Salovey, las habilidades vinculadas con la regulación de la emoción facilitan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La interpretación de silogismos lógicos complejos."
+        },
+        {
+          "key": "B",
+          "text": "La apertura controlada a los sentimientos tanto placenteros como desagradables."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La regulación emocional en este modelo implica modular las emociones propias y ajenas, promoviendo el crecimiento a través de la aceptación adaptativa del afecto."
+    },
+    {
+      "id": 37,
+      "sourceId": 65,
+      "used": true,
+      "text": "El procesamiento cognitivo de la tristeza destaca en los modelos de appraisal por una valoración del potencial de afrontamiento de tipo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Muy bajo o nulo frente a la pérdida consolidada."
+        },
+        {
+          "key": "B",
+          "text": "Absolutamente elevado y combativo en el plano motórico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Dado que el suceso (pérdida) ya ha acaecido y es irreversible, el sujeto evalúa que su capacidad de intervención directa para modificar el hecho es baja."
+    },
+    {
+      "id": 38,
+      "sourceId": 103,
+      "used": true,
+      "text": "El sentimiento se define rigurosamente en psicología de la emoción como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La experiencia subjetiva y consciente de la emoción."
+        },
+        {
+          "key": "B",
+          "text": "Un conjunto de cambios viscerales medibles objetivamente mediante polígrafo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El sentimiento constituye el componente subjetivo, cognitivo y fenoménico que da acceso consciente al estado emocional."
+    },
+    {
+      "id": 39,
+      "sourceId": 91,
+      "used": true,
+      "text": "El eje de control permite diferenciar las emociones:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Por la intensidad de los cambios fisiológicos."
+        },
+        {
+          "key": "B",
+          "text": "En función de quién ejerce el dominio, la persona o la situación desencadenante."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El control evalúa el grado en que el individuo siente que puede dominar o verse dominado por las consecuencias del evento desencadenante."
+    },
+    {
+      "id": 40,
+      "sourceId": 79,
+      "used": true,
+      "text": "Tanto la emoción de culpa como la de vergüenza surgen siempre y de manera exclusiva en presencia física directa de otros individuos desaprobadores:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Falso. Al estar las normas ya interiorizadas, ambas emociones pueden experimentarse en la más absoluta intimidad física y mental del sujeto."
+    }
+  ]
+}

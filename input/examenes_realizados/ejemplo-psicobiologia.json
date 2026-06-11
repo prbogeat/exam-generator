@@ -1,0 +1,23 @@
+{
+  "subject": "Fundamentos de Psicobiología",
+  "type": "Junio 2026 - Realizado",
+  "date": "2026-06-10",
+  "description": "Intento de prueba para corrección automática",
+  "questions": [
+    {
+      "id": 1,
+      "text": "¿De cuál de las siguientes capas embrionarias derivan el sistema nervioso y la epidermis con sus estructuras anejas (pelo, glándulas sudoríparas, etc.)?",
+      "marked_option": "D"
+    },
+    {
+      "id": 2,
+      "text": "¿Cuál es la principal diferencia entre conos y bastones en la transducción visual?",
+      "marked_option": "B"
+    },
+    {
+      "id": 3,
+      "text": "¿Qué característica diferencial tienen las células NK respecto a los linfocitos T citotóxicos en cuanto a su mecanismo de reconocimiento?",
+      "marked_option": ""
+    }
+  ]
+}

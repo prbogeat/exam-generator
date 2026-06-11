@@ -1,0 +1,158 @@
+﻿{
+    "subject":  "Fundamentos de Psicobiología",
+    "type":  "Junio 2026 - Realizado",
+    "date":  "2026-06-08",
+    "description":  "Examen realizado el 8 de Junio del segundo parcial",
+    "questions":  [
+                      {
+                          "id":  1,
+                          "text":  "¿De cuál de las siguientes capas embrionarias derivan el sistema nervioso y la epidermis con sus estructuras anejas (pelo, glándulas sudoríparas, etc.)?",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  2,
+                          "text":  "¿Cuál es la principal diferencia entre conos y bastones en la transducción visual?",
+                          "marked_option":  "A"
+                      },
+                      {
+                          "id":  3,
+                          "text":  "¿Qué característica diferencial tienen las células NK respecto a los linfocitos T citotóxicos en cuanto a su mecanismo de reconocimiento?",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  4,
+                          "text":  "¿Cómo se denomina la fase del desarrollo en la que se generan nuevas neuronas?",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  5,
+                          "text":  "En relación con los músculos lisos, sabemos que:",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  6,
+                          "text":  "¿Cómo se denomina el fenómeno por el cual en los seres humanos se prolonga hasta la edad adulta la expresión de patrones génicos que en otras especies de primates se restringen a etapas tempranas del desarrollo?",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  7,
+                          "text":  "En lo que se refiere a las dos regiones de la hipófisis, podemos decir que:",
+                          "marked_option":  "A"
+                      },
+                      {
+                          "id":  8,
+                          "text":  "Dentro del sistema de activación ascendente de la formación reticular, algunas vías se originan en la zona rostral del puente y el mesencéfalo y proyectan ampliamente hacia la corteza cerebral, el hipotálamo y núcleos talámicos implicados en la activación cortical. ¿Qué tipo de vías son estas?",
+                          "marked_option":  ""
+                      },
+                      {
+                          "id":  9,
+                          "text":  "Respecto a las divisiones del SNA, simpático y parasimpático, podemos afirmar que:",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  10,
+                          "text":  "¿Cómo se codifica la intensidad del estímulo en el mecanismo denominado código poblacional?",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  11,
+                          "text":  "En la imagen, las letras A, B, C y D se corresponden, respectivamente, con:",
+                          "marked_option":  "A"
+                      },
+                      {
+                          "id":  12,
+                          "text":  "¿Cuál es una consecuencia del establecimiento del patrón dorso-ventral durante el desarrollo del tubo neural?",
+                          "marked_option":  "A"
+                      },
+                      {
+                          "id":  13,
+                          "text":  "Un investigador observa que una región cortical presenta capas granulares (I y IV) muy desarrolladas y recibe principalmente información procedente de núcleos específicos del tálamo. ¿Qué tipo de área cortical es más probable que esté analizando?",
+                          "marked_option":  ""
+                      },
+                      {
+                          "id":  14,
+                          "text":  "Una reacción inmunitaria moderada en el SNC puede ser neuroprotectora, pero una respuesta exacerbada y prolongada puede ser dañina. ¿Qué mecanismo explica este efecto perjudicial?",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  15,
+                          "text":  "Las células parafoliculares son las que producen la hormona:",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  16,
+                          "text":  "¿A través de qué tracto la corteza motora controla los músculos de la cabeza que intervienen en movimientos voluntarios como comer, tragar y sonreír?",
+                          "marked_option":  ""
+                      },
+                      {
+                          "id":  17,
+                          "text":  "Si nos encontramos con un paciente que tiene dificultades para alcanzar objetos en el espacio, una enfermedad conocida como ataxia óptica sin que tenga ningún problema motor aparente, podemos suponer que tiene una lesión en:",
+                          "marked_option":  ""
+                      },
+                      {
+                          "id":  18,
+                          "text":  "Un haz o fascículo se caracteriza por:",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  19,
+                          "text":  "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la producción de AMP cíclico?",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  20,
+                          "text":  "Los glucocorticoides:",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  21,
+                          "text":  "Las tres zonas principales en que se divide la sustancia gris de cada lado de la médula espinal son:",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  22,
+                          "text":  "Se ha propuesto que el condicionamiento de las respuestas inmunes, junto con las expectativas del paciente, está implicado en el efecto placebo. ¿Qué mecanismo neural-endocrino-inmune podría subyacer?",
+                          "marked_option":  ""
+                      },
+                      {
+                          "id":  23,
+                          "text":  "Un investigador lesiona selectivamente el hipotálamo ventromedial de una rata. Según los datos estudiados en el manual de la asignatura, ¿qué alteraciones cabría esperar?",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  24,
+                          "text":  "La capacidad para localizar un estímulo sensorial depende principalmente de",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  25,
+                          "text":  "¿Qué función comparten la circunvolución frontal inferior, humana y la corteza prefrontal ventrolateral del macaco Rhesus?",
+                          "marked_option":  "B"
+                      },
+                      {
+                          "id":  26,
+                          "text":  "El tono de un sonido se relaciona con la frecuencia de la onda que lo forma. En la cóclea, las frecuencias intermedias y altas se codifican mediante:",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  27,
+                          "text":  "Durante la migración de las células de la cresta neural, ¿qué factor resulta fundamental para que las células finalicen su desplazamiento y se agreguen formando estructuras como los ganglios?",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  28,
+                          "text":  "¿Por qué la aparición de la termorregulación supuso un hito en la evolución del SN de los vertebrados?",
+                          "marked_option":  "C"
+                      },
+                      {
+                          "id":  29,
+                          "text":  "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la unión a receptores intracelulares?",
+                          "marked_option":  "D"
+                      },
+                      {
+                          "id":  30,
+                          "text":  "¿Cuál de las siguientes estructuras del SNC es, junto con los hemisferios cerebrales, la que más cambios ha experimentado a lo largo de la filogenia de los vertebrados?",
+                          "marked_option":  "B"
+                      }
+                  ]
+}

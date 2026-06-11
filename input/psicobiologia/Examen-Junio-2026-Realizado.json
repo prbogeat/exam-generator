@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿De cuál de las siguientes capas embrionarias derivan el sistema nervioso y la epidermis con sus estructuras anejas (pelo, glándulas sudoríparas, etc.)?",
+    "opciones": {
+      "a": "Saco Vitelino.",
+      "b": "Endodermo.",
+      "c": "Mesodermo.",
+      "d": "Ectodermo."
+    },
+    "correcta": "d",
+    "explicacion": "Durante la gastrulación se forman tres capas embrionarias. La placa neural y el tejido nervioso, así como la epidermis, se originan directamente de la capa más superficial y dorsal del embrión, denominada ectodermo."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Cuál es la principal diferencia entre conos y bastones en la transducción visual?",
+    "opciones": {
+      "a": "Los bastones reaccionan a un único fotón, mientras que los conos requieren mayor cantidad de energía para responder.",
+      "b": "Los conos poseen segmentos externos más grandes que los bastones, facilitando la fototransducción.",
+      "c": "Los bastones continúan respondiendo aun con luz prolongada.",
+      "d": "Los conos se saturan y dejan de responder en condiciones de buena iluminación."
+    },
+    "correcta": "a",
+    "explicacion": "Los bastones son fotorreceptores extremadamente sensibles diseñados para la visión escotópica (nocturna) y pueden activarse con un solo fotón de luz. Los conos, especializados en la visión diurna y el color, tienen un umbral de excitación mucho más alto y requieren mayor energía luminosa."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "¿Qué característica diferencial tienen las células NK respecto a los linfocitos T citotóxicos en cuanto a su mecanismo de reconocimiento?",
+    "opciones": {
+      "a": "Las NK liberan anticuerpos para marcar las células diana, mientras los T citotóxicos actúan por contacto directo.",
+      "b": "Las NK requieren presentación de antígeno mediante proteínas CMH, mientras que los T citotóxicos no.",
+      "c": "Las NK solo actúan contra células tumorales, mientras los T citotóxicos actúan exclusivamente contra células infectadas por virus.",
+      "d": "Las NK se engloban en la respuesta inespecífica por destruir células infectadas sin reconocimiento específico del antígeno, mientras los T citotóxicos necesitan reconocimiento específico."
+    },
+    "correcta": "d",
+    "explicacion": "Las células Natural Killer (NK) son parte de la inmunidad innata o inespecífica y destruyen células tumorales o infectadas de forma directa sin necesidad de reconocer un antígeno concreto. Por el contrario, los linfocitos T citotóxicos pertenecen a la inmunidad específica y requieren ineludiblemente que el antígeno les sea presentado en el CMH celular."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Cómo se denomina la fase del desarrollo en la que se generan nuevas neuronas?",
+    "opciones": {
+      "a": "Diferenciación.",
+      "b": "Migración.",
+      "c": "Neurogénesis.",
+      "d": "Sinaptogénesis."
+    },
+    "correcta": "c",
+    "explicacion": "El proceso biológico de proliferación celular mediante el cual las células madre del neuroepitelio se dividen y dan lugar a nuevas neuronas se conoce como neurogénesis."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "En relación con los músculos lisos, sabemos que:",
+    "opciones": {
+      "a": "Forman la fracción contráctil del estómago, intestino y útero, pero no del esfínter urinario.",
+      "b": "No están compuestos de miofibrillas.",
+      "c": "Las células musculares lisas son de mayor tamaño que las células musculares estriadas.",
+      "d": "Sus miofibrillas son de menor longitud y diámetro que las miofibrillas del músculo estriado."
+    },
+    "correcta": "b",
+    "explicacion": "A diferencia de la musculatura esquelética o estriada, cuyas proteínas contráctiles se organizan milimétricamente en miofibrillas y sarcómeros regulares (dándole su aspecto estriado), las células del músculo liso carecen de esta estructuración en miofibrillas ordenadas."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Cómo se denomina el fenómeno por el cual en los seres humanos se prolonga hasta la edad adulta la expresión de patrones génicos que en otras especies de primates se restringen a etapas tempranas del desarrollo?",
+    "opciones": {
+      "a": "Heterocronía ontogenética.",
+      "b": "Neotenia transcripcional.",
+      "c": "Prolongación ontogénica.",
+      "d": "Expresión génica diferencial."
+    },
+    "correcta": "b",
+    "explicacion": "El mantenimiento de la plasticidad y la alta expresión génica (propia del desarrollo infantil) durante nuestra etapa adulta se define neurogenéticamente como neotenia transcripcional, siendo un rasgo evolutivo clave en el linaje humano."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "En lo que se refiere a las dos regiones de la hipófisis, podemos decir que:",
+    "opciones": {
+      "a": "La adenohipófisis es la que verdaderamente actúa como una glándula real.",
+      "b": "Ambas tienen conexiones nerviosas con el hipotálamo.",
+      "c": "Funcionan en coordinación una con la otra.",
+      "d": "Tienen el mismo origen embriológico."
+    },
+    "correcta": "a",
+    "explicacion": "La adenohipófisis (hipófisis anterior) funciona como una auténtica glándula endocrina porque sintetiza y segrega sus propias hormonas trópicas. Por el contrario, la neurohipófisis es solo un reservorio que libera neurohormonas fabricadas previamente en el hipotálamo."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Dentro del sistema de activación ascendente de la formación reticular, algunas vías se originan en la zona rostral del puente y el mesencéfalo y proyectan ampliamente hacia la corteza cerebral, el hipotálamo y núcleos talámicos implicados en la activación cortical. ¿Qué tipo de vías son estas?",
+    "opciones": {
+      "a": "Vías serotoninérgicas.",
+      "b": "Vías colinérgicas.",
+      "c": "Vías noradrenérgicas.",
+      "d": "Vías dopaminérgicas."
+    },
+    "correcta": "b",
+    "explicacion": "Los núcleos pontomesencefálicos que forman parte del sistema activador ascendente y que proyectan difusamente hacia los núcleos de relevo del tálamo y la corteza para mantener la consciencia son las vías colinérgicas."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "Respecto a las divisiones del SNA, simpático y parasimpático, podemos afirmar que:",
+    "opciones": {
+      "a": "El parasimpático se activa generalmente ante situaciones de estrés.",
+      "b": "En el caso del sistema gastrointestinal, la estimulación simpática favorece la motilidad intestinal y la digestión.",
+      "c": "Ambos sistemas están presentes en todos los órganos y se activan de forma concomitante para controlar el funcionamiento de los mismos.",
+      "d": "En condiciones generales, el simpático prepara al organismo para la acción rápida y situaciones de emergencia."
+    },
+    "correcta": "d",
+    "explicacion": "La división simpática del Sistema Nervioso Autónomo es la responsable de la clásica reacción de 'lucha o huida', activando los recursos fisiológicos necesarios (como el aumento del flujo sanguíneo) para preparar al organismo ante situaciones de emergencia o estrés agudo."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Cómo se codifica la intensidad del estímulo en el mecanismo denominado código poblacional?",
+    "opciones": {
+      "a": "Únicamente por el tipo de receptor sensorial activado.",
+      "b": "Por la frecuencia de impulsos nerviosos y por el número de neuronas que disparan potenciales de acción y su umbral de disparo.",
+      "c": "Solo por la frecuencia de los impulsos nerviosos en una neurona.",
+      "d": "Exclusivamente por la zona del sistema nervioso central que recibe la información."
+    },
+    "correcta": "b",
+    "explicacion": "La magnitud o intensidad de un estímulo se codifica en el sistema nervioso combinando dos mecanismos: el aumento en la frecuencia de disparo de cada neurona individual y el código poblacional, que consiste en el reclutamiento de un mayor número de neuronas activas en función de sus diferentes umbrales."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "En la imagen, las letras A, B, C y D se corresponden, respectivamente, con:",
+    "opciones": {
+      "a": "Núcleo geniculado medial, colículo inferior, núcleos olivares superiores y núcleo coclear.",
+      "b": "Núcleos olivares superiores, Colículo inferior, núcleo coclear y núcleo geniculado medial.",
+      "c": "Núcleo coclear, núcleos olivares superiores, Colículo inferior y núcleo geniculado medial.",
+      "d": "Colículo inferior, núcleo coclear, núcleos olivares superiores y núcleo geniculado medial."
+    },
+    "correcta": "a",
+    "explicacion": "El diagrama representa la vía auditiva ascendente. De abajo arriba: las aferencias llegan primero al núcleo coclear en el bulbo (D), cruzan hacia los núcleos olivares superiores (C), ascienden por el lemnisco lateral hasta el colículo inferior en el mesencéfalo (B) y relevan finalmente en el núcleo geniculado medial del tálamo (A) antes de ir a la corteza."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "¿Cuál es una consecuencia del establecimiento del patrón dorso-ventral durante el desarrollo del tubo neural?",
+    "opciones": {
+      "a": "La diferenciación de poblaciones celulares dorsales relacionadas con funciones sensoriales y de poblaciones celulares ventrales relacionadas con funciones motoras.",
+      "b": "La diferenciación de segmentos sucesivos del rombencéfalo que originarán estructuras repetidas del tronco del encéfalo.",
+      "c": "La diferenciación de regiones encefálicas anteriores y posteriores que darán lugar a las principales divisiones del encéfalo.",
+      "d": "La diferenciación de territorios del neuroectodermo que darán lugar al sistema nervioso central y al sistema nervioso periférico."
+    },
+    "correcta": "a",
+    "explicacion": "La regionalización transversal (patrón dorso-ventral) divide funcionalmente el tubo neural: las células que se establecen en la porción dorsal (placa alar) asumen el procesamiento de la información sensorial, mientras que las de la porción ventral (placa basal) se encargan de la coordinación motora."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Un investigador observa que una región cortical presenta capas granulares (I y IV) muy desarrolladas y recibe principalmente información procedente de núcleos específicos del tálamo. ¿Qué tipo de área cortical es más probable que esté analizando?",
+    "opciones": {
+      "a": "Área sensorial primaria.",
+      "b": "Área premotora.",
+      "c": "Área motora primaria.",
+      "d": "Área de asociación."
+    },
+    "correcta": "a",
+    "explicacion": "Las áreas sensoriales primarias de la neocorteza se caracterizan por una citoarquitectura fuertemente granular (koniocorteza), donde la capa IV es muy gruesa y densa debido a la masiva recepción de aferencias sensoriales que proceden de los núcleos de relevo específicos del tálamo."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Una reacción inmunitaria moderada en el SNC puede ser neuroprotectora, pero una respuesta exacerbada y prolongada puede ser dañina. ¿Qué mecanismo explica este efecto perjudicial?",
+    "opciones": {
+      "a": "La activación excesiva de los astrocitos que inhibe la cicatrización y bloquea la transmisión sináptica.",
+      "b": "La liberación continua de compuestos inflamatorios que contribuye a la cronificación de la lesión, la progresión de la patología y la muerte de neuronas y células gliales sanas.",
+      "c": "El reclutamiento excesivo de linfocitos B que produce desmielinización por autoanticuerpos.",
+      "d": "La liberación continuada de compuestos antiinflamatorios que bloquean la sinapsis neuronal."
+    },
+    "correcta": "b",
+    "explicacion": "La sobreactivación crónica de la microglía y otras defensas del parénquima neural genera un entorno hostil (tormenta de citocinas proinflamatorias) que exacerba el daño tisular local, mata neuronas sanas y propicia la cronificación de enfermedades neurodegenerativas."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Las células parafoliculares son las que producen la hormona:",
+    "opciones": {
+      "a": "Tiroxina.",
+      "b": "Prolactina.",
+      "c": "Calcitonina.",
+      "d": "Somatostatina."
+    },
+    "correcta": "c",
+    "explicacion": "Las células parafoliculares o células C de la glándula tiroides son las encargadas específicas de sintetizar y segregar calcitonina, hormona vital en la homeostasis del calcio."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "¿A través de qué tracto la corteza motora controla los músculos de la cabeza que intervienen en movimientos voluntarios como comer, tragar y sonreír?",
+    "opciones": {
+      "a": "Corticoespinal ventral.",
+      "b": "Corticobulbar.",
+      "c": "Rubroespinal.",
+      "d": "Corticoespinal lateral."
+    },
+    "correcta": "b",
+    "explicacion": "El control voluntario de la musculatura fisonómica del rostro, cuello y boca no fluye por la médula espinal, sino que se vehiculiza mediante el tracto corticobulbar hacia los núcleos motores de los nervios craneales en el tronco del encéfalo."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "Si nos encontramos con un paciente que tiene dificultades para alcanzar objetos en el espacio, una enfermedad conocida como ataxia óptica sin que tenga ningún problema motor aparente, podemos suponer que tiene una lesión en:",
+    "opciones": {
+      "a": "Área sensorial primaria.",
+      "b": "Área motora primaria.",
+      "c": "Corteza prefrontal dorsolateral.",
+      "d": "Corteza parietal posterior."
+    },
+    "correcta": "d",
+    "explicacion": "La corteza parietal posterior es el epicentro de la vía visual dorsal (corriente del 'dónde' y 'cómo'). Su daño produce ataxia óptica: el paciente visualiza el objeto correctamente pero es incapaz de guiar su mano espacialmente para interactuar con él."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Un haz o fascículo se caracteriza por:",
+    "opciones": {
+      "a": "Estar formado exclusivamente por fibras comisurales.",
+      "b": "Agrupar axones que pueden proceder de varias estructuras y finalizar en varios destinos.",
+      "c": "Agrupar axones que se originan en una sola estructura y finalizan en un solo destino.",
+      "d": "Agrupar axones que pueden cruzar la línea media."
+    },
+    "correcta": "b",
+    "explicacion": "A nivel neuroanatómico, el término 'haz' o 'fascículo' denomina a una agrupación de axones que pueden compartir recorrido pero que provienen de orígenes dispares y conectan con variados destinos (a diferencia del término 'tracto', que une un solo origen con un solo final)."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la producción de AMP cíclico?",
+    "opciones": {
+      "a": "El cortisol.",
+      "b": "El estradiol.",
+      "c": "La testosterona.",
+      "d": "La hormona liberadora de la corticotropina."
+    },
+    "correcta": "d",
+    "explicacion": "La hormona liberadora de corticotropina (CRH) es un péptido y, como tal, no atraviesa la membrana; se une a receptores de superficie acoplados a proteínas G que activan segundos mensajeros como el AMP cíclico. Cortisol, estradiol y testosterona son hormonas esteroideas lipofílicas con receptores intracelulares."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "Los glucocorticoides:",
+    "opciones": {
+      "a": "Reducen el catabolismo de lípidos en las células del cuerpo.",
+      "b": "Disminuyen la degradación de proteínas en aminoácidos.",
+      "c": "Incrementan la ruptura del glucógeno almacenado en los tejidos para obtener glucosa.",
+      "d": "Bajan los niveles de glucosa en la circulación sanguínea."
+    },
+    "correcta": "c",
+    "explicacion": "Los glucocorticoides (como el cortisol) son hormonas catabólicas movilizadoras de energía frente al estrés. Aumentan activamente el nivel de azúcar en sangre (no lo bajan), promueven la degradación de proteínas y grasas (no la reducen), e incrementan la obtención de glucosa movilizando reservas sistémicas."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 8: Organización del SNC",
+    "pregunta": "Las tres zonas principales en que se divide la sustancia gris de cada lado de la médula espinal son:",
+    "opciones": {
+      "a": "Zona anterior, zona posterior y zona central.",
+      "b": "Zona dorsal, zona ventral y zona medial.",
+      "c": "Asta lateral, asta intermedia y asta central.",
+      "d": "Asta dorsal, asta ventral y asta lateral."
+    },
+    "correcta": "d",
+    "explicacion": "En cualquier sección transversal, la sustancia gris medular adopta forma de mariposa y se parcela anatómica y funcionalmente en el asta dorsal (posterior), el asta ventral (anterior) y, fusionándolas, la zona intermedia de la cual sobresale en algunos niveles el asta lateral."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Se ha propuesto que el condicionamiento de las respuestas inmunes, junto con las expectativas del paciente, está implicado en el efecto placebo. ¿Qué mecanismo neural-endocrino-inmune podría subyacer?",
+    "opciones": {
+      "a": "La reducción del eje HHA mediada por las expectativas, que disminuye el cortisol y favorece la inmunoactivación.",
+      "b": "La inervación simpática de los tejidos linfoides, la capacidad de las células inmunitarias para recibir señales neuroendocrinas y la capacidad del SN para liberar citocinas.",
+      "c": "La liberación de serotonina hipocámpica que activa directamente las células NK.",
+      "d": "La activación directa de los linfocitos B por las expectativas positivas del paciente."
+    },
+    "correcta": "b",
+    "explicacion": "El efecto placebo y el condicionamiento clásico sobre la función inmunológica solo son posibles porque existe un canal anatómico bidireccional tangible: los órganos linfoides están inervados por el simpático y los leucocitos poseen receptores funcionales para acatar señales directas de los neurotransmisores y hormonas que vierte el cerebro."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 14: Psiconeuroinmunología",
+    "pregunta": "Un investigador lesiona selectivamente el hipotálamo ventromedial de una rata. Según los datos estudiados en el manual de la asignatura, ¿qué alteraciones cabría esperar?",
+    "opciones": {
+      "a": "Aumento de la actividad de las células asesinas sin afectar a otras células inmunitarias.",
+      "b": "Disminución del número de células inmunitarias en el bazo y el timo, y reducción de la respuesta de proliferación de linfocitos.",
+      "c": "Incremento de la tasa de crecimiento tumoral sin cambios en la actividad linfoide.",
+      "d": "Aumento del número de células inmunitarias en el bazo y el timo."
+    },
+    "correcta": "b",
+    "explicacion": "En el campo de la Psiconeuroinmunología se ha comprobado repetidamente que la extirpación o lesión de porciones específicas del hipotálamo (como la región ventromedial o anterior) suprime severamente el sistema de defensa, reduciendo el recuento celular en el timo y mermando la proliferación linfocitaria sistémica."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "La capacidad para localizar un estímulo sensorial depende principalmente de",
+    "opciones": {
+      "a": "La intensidad del estímulo aplicado sobre los receptores.",
+      "b": "La velocidad de conducción de las fibras nerviosas que transmiten la señal.",
+      "c": "El tipo de neurotransmisor liberado en las sinapsis sensoriales.",
+      "d": "La distribución estructural y densidad de los receptores sensoriales y su relación con las zonas centrales de procesamiento."
+    },
+    "correcta": "d",
+    "explicacion": "La agudeza y capacidad espacial para discriminar dónde incide un estímulo (localización) está sujeta directamente a la topografía de la piel, al tamaño de los campos receptivos de los sensores y a su densidad de inervación interconectada con los mapas cerebrales."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Qué función comparten la circunvolución frontal inferior, humana y la corteza prefrontal ventrolateral del macaco Rhesus?",
+    "opciones": {
+      "a": "La percepción de la constancia del color.",
+      "b": "El procesamiento e integración de vocalizaciones y rostros.",
+      "c": "La integración visuomotora.",
+      "d": "La coordinación bimanual."
+    },
+    "correcta": "b",
+    "explicacion": "Las homologías funcionales entre el área prefrontal ventrolateral del macaco y el homólogo humano (área de Broca en el giro frontal inferior) revelan que ambas redes son sustratos primitivos evolutivos implicados en integrar la comunicación gestual y las vocalizaciones sociales con el reconocimiento de caras."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "El tono de un sonido se relaciona con la frecuencia de la onda que lo forma. En la cóclea, las frecuencias intermedias y altas se codifican mediante:",
+    "opciones": {
+      "a": "La vibración del pabellón auditivo sin participación de la membrana basilar.",
+      "b": "El número de axones que están disparando a la vez.",
+      "c": "Un código de tasas de disparo, sincronizando los potenciales de acción con los movimientos del extremo apical de la membrana basilar.",
+      "d": "Un código de lugar, según el cual los sonidos con frecuencias más altas producen deformaciones máximas de la membrana basilar en regiones cercanas al estribo."
+    },
+    "correcta": "d",
+    "explicacion": "Para discriminar frecuencias medias y altas, el sistema auditivo emplea el principio topográfico o código de lugar (tonotopía): cada frecuencia aguda reverbera y distorsiona un segmento muy concreto de la membrana basilar situado preferentemente en la base rígida, cerca del estribo y la ventana oval."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 9: Desarrollo del Sistema Nervioso",
+    "pregunta": "Durante la migración de las células de la cresta neural, ¿qué factor resulta fundamental para que las células finalicen su desplazamiento y se agreguen formando estructuras como los ganglios?",
+    "opciones": {
+      "a": "Las propiedades de adhesividad de las células y su interacción con la matriz extracelular.",
+      "b": "El aumento del tamaño del núcleo celular durante la diferenciación.",
+      "c": "La activación de neurotransmisores que regulan el movimiento celular.",
+      "d": "La contracción de las fibras musculares embrionarias que rodean al tubo neural."
+    },
+    "correcta": "a",
+    "explicacion": "El éxodo de las células errantes de la cresta neural se detiene y sedimenta en zonas precisas obedeciendo fuertemente a los semáforos químicos del entorno: es la alta o baja adhesividad de su membrana a moléculas de la matriz extracelular (como la fibronectina) lo que aglutina y fija el ganglio espinal."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Por qué la aparición de la termorregulación supuso un hito en la evolución del SN de los vertebrados?",
+    "opciones": {
+      "a": "Porque implicó la participación coordinada de múltiples sistemas para regular el metabolismo, la ingesta y la conducta.",
+      "b": "Porque eliminó la necesidad de recordar fuentes de alimento energéticamente adecuadas.",
+      "c": "Porque permitió mantener la temperatura corporal constante sin recurrir a fuentes caloríficas externas.",
+      "d": "Porque redujo la dependencia de estructuras como el sistema nervioso autónomo."
+    },
+    "correcta": "a",
+    "explicacion": "La independencia térmica (homeotermia) conllevó una explosión en la complejidad del sistema nervioso. Mantenerse a 37ºC exigió un encéfalo gigantesco capaz de orquestar el metabolismo, modular al milímetro los biorritmos del hipotálamo, gestionar memorias topográficas y desarrollar novedosas estrategias de caza para ingerir dietas altamente calóricas."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la unión a receptores intracelulares?",
+    "opciones": {
+      "a": "La hormona folículo estimulante.",
+      "b": "El glucagón.",
+      "c": "La hormona liberadora de la corticotropina.",
+      "d": "La progesterona."
+    },
+    "correcta": "d",
+    "explicacion": "La progesterona es un lípido esteroideo originado a partir del colesterol. Debido a su liposolubilidad, atraviesa la capa de la membrana de la célula diana sin problemas y localiza sus receptores biológicos en el propio citoplasma celular o en el núcleo."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 10: Filogenia del Sistema Nervioso",
+    "pregunta": "¿Cuál de las siguientes estructuras del SNC es, junto con los hemisferios cerebrales, la que más cambios ha experimentado a lo largo de la filogenia de los vertebrados?",
+    "opciones": {
+      "a": "El diencéfalo.",
+      "b": "El cerebelo.",
+      "c": "La médula espinal.",
+      "d": "El mesencéfalo."
+    },
+    "correcta": "b",
+    "explicacion": "Las presiones evolutivas sobre la motricidad y la bipedestación obligaron al lóbulo posterior del encéfalo a mutar drásticamente. De hecho, junto a los masivos hemisferios cerebrales frontales, el cerebelo es la segunda estructura anatómica que mayor expansión, surcos y modificaciones ha sufrido a lo largo de la filogenia de los vertebrados."
+  },
+  {
+    "id": 31,
+    "tema": "Tema 11: Sistemas Sensoriales",
+    "pregunta": "¿Qué característica del sonido permite distinguir la misma nota musical emitida por distintos instrumentos, como un violín y una flauta?",
+    "opciones": {
+      "a": "El timbre, determinado por los armónicos y el patrón de vibraciones que generan en la membrana basilar.",
+      "b": "La frecuencia fundamental del sonido.",
+      "c": "La duración del sonido en el tiempo.",
+      "d": "La intensidad o volumen del sonido."
+    },
+    "correcta": "a",
+    "explicacion": "La frecuencia pura dicta la nota (tono). Sin embargo, la cualidad perceptual subjetiva que nos permite distinguir un violín de un piano ejecutando la misma nota es el timbre. Éste se compone de ondas complejas o armónicos suplementarios superpuestos que colorean el sonido fundamental."
+  },
+  {
+    "id": 32,
+    "tema": "Tema 12: Sistemas Efectores",
+    "pregunta": "El mecanismo de inhibición recíproca en el sistema motor consiste en:",
+    "opciones": {
+      "a": "La activación de motoneuronas alfa que contraen los músculos agonistas.",
+      "b": "La activación de motoneuronas gamma que estimulan los músculos antagonistas.",
+      "c": "La acción de interneuronas que inhiben motoneuronas de los músculos antagonistas.",
+      "d": "Un proceso que coordina músculos opuestos mediante la corteza cerebral."
+    },
+    "correcta": "c",
+    "explicacion": "Para asegurar que un movimiento articular se ejecute con fluidez, cuando la vía sensorial del huso activa a la motoneurona del músculo principal (agonista), envía colaterales a una interneurona espinal inhibitoria que apaga instantáneamente a la motoneurona que rige el músculo opuesto (antagonista), lo que se denomina inhibición recíproca."
+  },
+  {
+    "id": 33,
+    "tema": "Tema 13: Sistema Neuroendocrino",
+    "pregunta": "La estimulación táctil que produce un lactante en el pezón de la madre induce una estimulación nerviosa que sigue el siguiente orden:",
+    "opciones": {
+      "a": "Pezón>médula espinal>tálamo>corteza cerebral>hipotálamo.",
+      "b": "Pezón> hipotálamo> tálamo>corteza cerebral>médula espinal.",
+      "c": "Pezón>médula espinal>hipotálamo>tálamo>corteza cerebral.",
+      "d": "Pezón> tálamo>corteza cerebral>hipotálamo>médula espinal."
+    },
+    "correcta": "a",
+    "explicacion": "La succión del lactante envía información mecanorreceptora aferente ascendente (Pezón -> Médula espinal) que sigue las vías somatosensoriales clásicas decusando hacia el tálamo y proyectando luego a la corteza cerebral somatosensorial (para su percepción). Es este procesamiento cortical consciente o integrado el que, finalmente, emite las proyecciones descendentes hacia los núcleos paraventriculares del hipotálamo para ejecutar la orden de eyectar oxitocina sistémica."
+  }
+]

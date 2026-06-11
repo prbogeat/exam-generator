@@ -18,13 +18,13 @@ from typing import Any, Dict, List
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/psicobiologia/Examen Septiembre-2024.json"
-OUTPUT_JSON = "out/psicobiologia/examen-septiembre-2024.json"
+INPUT_JSON = "input/psicobiologia/Examen-Junio-2026-Realizado.json"
+OUTPUT_JSON = "out/psicobiologia/examen-junio-2026-realizado.json"
 
 SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - Septiembre 2024"
+EXAM_TITLE = "UNED - Junio 2026 - Realizado"
 SUBTITLE = "30 Tipo Test"
-NOTICE = "Preguntas del examen de Septiembre 2024 - Fundamentos de Psicobiología de la UNED"
+NOTICE = "Preguntas del examen de Junio 2026 Realizado - Fundamentos de Psicobiología de la UNED"
 
 MAX_SCORE = 10.0
 WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0

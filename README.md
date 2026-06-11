@@ -1,159 +1,124 @@
-# Generador de Exámenes
+# Exam Generator
 
-Un script para generar exámenes en formato JSON a partir de bancos de preguntas.
+Proyecto para generar y corregir examenes tipo test en JSON.
 
-## Descripción
+## Que incluye
 
-Este proyecto contiene herramientas para:
-- Procesar preguntas de archivos JSON
-- Generar exámenes con selección aleatoria o secuencial
-- Formatear la salida en un JSON compatible con `examen-plantilla.json`
-- Crear archivos HTML para visualizar los exámenes
+- `generar_examen.py`: genera un examen en formato compatible con `Examen.html`.
+- `corregir_examen.py`: corrige un examen realizado contra un examen base y genera informes.
+- `Examen.html`: visor/corrector en navegador para examenes JSON.
+- `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
 
-## Características
+## Estructura recomendada
 
-- 📋 Soporte para múltiples formatos de entrada JSON
-- 🎲 Selección aleatoria o secuencial de preguntas
-- ⚙️ Configuración personalizable (número de preguntas, límite de tiempo, puntuación, etc.)
-- 📊 Cálculo automático de fórmulas de puntuación
-- 🌐 Generación de HTML para visualización en navegador
-- 🔄 Conversión de opciones entre diferentes formatos
-
-## Archivos
-
-- **generar_examen.py** - Script principal en Python
-- **generar-examen.ps1** - Script alternativo en PowerShell
-- **examen-plantilla.json** - Plantilla de estructura del examen
-- **Examen.html** - Plantilla HTML para visualizar exámenes
-- **input/** - Directorio con bancos de preguntas y exámenes de referencia
-
-### Estructura de input/
-
-```
+```text
 input/
-├── psicobiologia/
-│   ├── preguntas_psicologia_fundamentos_psicobiologia_completo.json (70 preguntas únicas)
-│   ├── preguntas_psicologia_emocion_limpio.json
-│   ├── preguntas_psicologia_emocion_uned.json
-│   ├── Examen-Junio-A-2025.json (30 preguntas)
-│   ├── Examen-Junio-C-2025.json (30 preguntas)
-│   ├── Examen-Junio-E-2025.json (30 preguntas)
-│   ├── Examen-Junio-A-2026.json (30 preguntas)
-│   ├── Examen-Junio-B-2026.json (30 preguntas)
-│   ├── Examen-Junio-C-2026.json (30 preguntas)
-│   └── examenes 2025.json (archivo fuente con múltiples exámenes)
-└── emocion/
-    └── (archivos de preguntas sobre emoción)
+  psicobiologia/               # bancos o examenes base
+  emocion/                     # bancos o examenes base
+  examenes_realizados/         # respuestas del alumno
+out/
+  psicobiologia/               # examenes generados
+  emocion/                     # examenes generados
+  informes/                    # informes de correccion
 ```
 
-### Bancos de preguntas
-- `psicobiologia/` - 70 preguntas únicas de Psicobiología (limpiadas y deduplicadas)
-- `emocion/` - Preguntas de Emoción
+## 1) Generar examen (`generar_examen.py`)
 
-### Exámenes de referencia
-- **Exámenes 2025**: Tipos A, C, E (extraídos de `examenes 2025.json`)
-- **Exámenes 2026**: Tipos A, B, C (plantillas de referencia)
+Edita la seccion `CONFIG` del script y ejecuta.
 
-## Parámetros
+### Opciones de CONFIG
 
-### Python (`generar_examen.py`)
+- `INPUT_JSON`: origen de preguntas.
+- `OUTPUT_JSON`: destino del examen generado.
+- `SUBJECT_TITLE`, `EXAM_TITLE`, `SUBTITLE`, `NOTICE`: metadatos visibles.
+- `MAX_SCORE`: nota maxima.
+- `WRONG_ANSWERS_PER_DISCOUNTED_CORRECT`: penalizacion.
+- `TIME_LIMIT_MINUTES`: tiempo oficial.
+- `FORMULA_TIP`: formula mostrada (vacio = autogenerada).
+- `NUMBER_OF_QUESTIONS`: `0` usa todas.
+- `RANDOM_SELECTION`: seleccion aleatoria si/no.
+- `RANDOM_SEED`: semilla para reproducibilidad (`None` = variable).
 
-Edita estos valores en la sección `CONFIG`:
+### Ejecucion
 
-| Parámetro | Tipo | Valor por defecto | Descripción |
-|-----------|------|-------------------|-------------|
-| `INPUT_JSON` | str | - | Ruta del archivo JSON de entrada con preguntas |
-| `OUTPUT_JSON` | str | - | Ruta donde guardar el examen generado |
-| `SUBJECT_TITLE` | str | - | Nombre de la asignatura |
-| `EXAM_TITLE` | str | - | Título del examen |
-| `SUBTITLE` | str | "" | Subtítulo del examen |
-| `NOTICE` | str | "" | Texto de aviso para el examen |
-| `MAX_SCORE` | float | 10.0 | Puntuación máxima del examen |
-| `WRONG_ANSWERS_PER_DISCOUNTED_CORRECT` | float | 3.0 | Penalización por respuesta incorrecta |
-| `TIME_LIMIT_MINUTES` | int | 90 | Límite de tiempo en minutos |
-| `FORMULA_TIP` | str | "" | Pista de fórmula (autogenera si está vacío) |
-| `NUMBER_OF_QUESTIONS` | int | 0 | Cantidad de preguntas (0 = todas del archivo) |
-| `RANDOM_SELECTION` | bool | False | True para selección aleatoria, False para secuencial |
-| `RANDOM_SEED` | int/None | None | Semilla para reproducibilidad (None = diferente cada vez) |
-
-### PowerShell (`generar-examen.ps1`)
-
-Parámetros de línea de comandos:
-
-| Parámetro | Tipo | Obligatorio | Valor por defecto | Descripción |
-|-----------|------|-------------|-------------------|-------------|
-| `InputJson` | string | Sí | - | Ruta del archivo JSON de entrada |
-| `OutputJson` | string | Sí | - | Ruta del archivo JSON de salida |
-| `SubjectTitle` | string | Sí | - | Nombre de la asignatura |
-| `ExamTitle` | string | Sí | - | Título del examen |
-| `Subtitle` | string | No | "" | Subtítulo del examen |
-| `Notice` | string | No | "" | Texto de aviso |
-| `MaxScore` | double | No | 10 | Puntuación máxima |
-| `WrongAnswersPerDiscountedCorrect` | double | No | 0 | Penalización por incorrecta |
-| `TimeLimitMinutes` | int | No | 90 | Límite de tiempo (minutos) |
-| `FormulaTip` | string | No | "" | Pista de fórmula |
-| `NumberOfQuestions` | int | No | 0 | Cantidad de preguntas (0 = todas) |
-| `RandomSelection` | object | No | false | 1/true para aleatorio, 0/false para secuencial |
-| `RandomSeed` | int | No | -1 | Semilla (-1 = diferente cada ejecución) |
-
-## Uso
-
-### Con Python
-
-1. Edita la sección `CONFIG` en `generar_examen.py` con los parámetros
-
-2. Ejecuta el script:
-   ```bash
-   python generar_examen.py
-   ```
-
-### Con PowerShell
-
-```powershell
-./generar-examen.ps1 `
-    -InputJson "input/psicobiologia/preguntas_psicologia_fundamentos_psicobiologia_completo.json" `
-    -OutputJson "out/examen.json" `
-    -SubjectTitle "Fundamentos de Psicobiología" `
-    -ExamTitle "UNED - 30 Tipo Test" `
-    -Subtitle "30 Tipo Test" `
-    -Notice "Examen de ejemplo" `
-    -MaxScore 10 `
-    -WrongAnswersPerDiscountedCorrect 3 `
-    -TimeLimitMinutes 90 `
-    -NumberOfQuestions 30 `
-    -RandomSelection 1 `
-    -RandomSeed -1
+```bash
+python generar_examen.py
 ```
 
-## Formato de Entrada
+## 2) Corregir examen (`corregir_examen.py`)
 
-El script soporta dos formatos de entrada:
+Acepta un examen realizado y un examen base (normalmente de `out/`) para comparar respuestas.
 
-### Formato 1: Array directo
-```json
-[
-  {
-    "pregunta": "¿Pregunta?",
-    "opciones": {"A": "Opción A", "B": "Opción B"},
-    "correcta": "A",
-    "explicacion": "Explicación..."
-  }
-]
-```
+### Formato esperado del examen realizado
 
-### Formato 2: Objeto con propiedad questions
 ```json
 {
+  "subject": "Asignatura",
+  "type": "Convocatoria o tipo",
+  "date": "2026-06-10",
+  "description": "Descripcion libre",
   "questions": [
-    { ... }
+    { "id": 1, "text": "...", "marked_option": "A" }
   ]
 }
 ```
 
-## Salida
+Claves aceptadas para la respuesta marcada: `marked_option`, `markedOption`, `selected_option`, `selectedOption`, `answer`, `respuesta`.
 
-El script genera un archivo JSON con la estructura del examen en `out/` que contiene:
-- Metadatos del examen
-- Lista de preguntas formateadas
-- Opciones de respuesta ordenadas
-- Información de puntuación y tiempo
+### CONFIG por defecto en `corregir_examen.py`
+
+- `DEFAULT_EXAM_INPUT`
+- `DEFAULT_CORRECTION_FILE`
+- `DEFAULT_OUTPUT_DIR`
+- `DEFAULT_OUTPUT_PREFIX`
+
+### Ejecucion con parametros
+
+```bash
+python corregir_examen.py \
+  --exam-input "input/examenes_realizados/mi-examen.json" \
+  --correction-file "out/psicobiologia/examen-junio-2026-realizado.json" \
+  --output-dir "out/informes" \
+  --output-prefix "correccion"
+```
+
+### Ejecucion sin parametros
+
+```bash
+python corregir_examen.py
+```
+
+Usa los defaults de `CONFIG`.
+
+### Salida de correccion
+
+Por cada ejecucion genera:
+
+- `out/informes/<prefijo>-<nombre_examen>.json`
+- `out/informes/<prefijo>-<nombre_examen>.md`
+
+Incluye: aciertos, fallos, en blanco, invalidas, no encontradas, nota y detalle por pregunta con explicacion.
+
+## 3) Uso web (`Examen.html`)
+
+- Boton `Cargar JSON por defecto`: intenta cargar `examen-plantilla.json`.
+- Boton `Cargar otro JSON`: carga un archivo local manualmente.
+
+Si abres `Examen.html` con `file://`, los navegadores pueden bloquear `fetch` del JSON por defecto.
+Solucion: abrir con servidor HTTP local.
+
+```bash
+python -m http.server 8000
+```
+
+Luego abrir: `http://localhost:8000/Examen.html`
+
+## 4) Tareas de VS Code
+
+En `Terminal > Run Task` tienes:
+
+- `Levantar servidor HTTP`
+- `Generar examen (Python)`
+- `Corregir examen (Python)`
+
+Las dos tareas de Python usan `C:/Program Files/Python39-33/python.exe` en modo `process` para evitar problemas de comillas/rutas con espacios en Windows.
