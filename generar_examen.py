@@ -18,11 +18,11 @@ from typing import Any, Dict, List
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/banco_de_preguntas/psicobiologia/Parcial 1/Enero 2026 - Tipo A.json"
-OUTPUT_JSON = "out/examenes/psicobiologia/Parcial 1/Enero 2026 - Tipo A.json"
+INPUT_JSON = "input/banco_de_preguntas/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"
+OUTPUT_JSON = "out/examenes/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"
 
 SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - Enero 2026 - Tipo A (Parcial 1)"
+EXAM_TITLE = "UNED - Enero 2026 - Tipo C (Parcial 1)"
 SUBTITLE = "30 Tipo Test"
 NOTICE = "Preguntas del examen de Enero 2026 - Fundamentos de Psicobiología de la UNED (Parcial 1)"
 
@@ -38,7 +38,7 @@ RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecuc
 # True = generar tambien una plantilla vacia en input/examenes_realizados/<subject>/ para rellenar y corregir.
 GENERATE_TEMPLATE = True
 # Ruta de salida de la plantilla. Si se deja vacio, se deriva automaticamente del OUTPUT_JSON.
-TEMPLATE_OUTPUT_PATH = ""  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
+TEMPLATE_OUTPUT_PATH = "input/examenes_realizados/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
 
 
 def load_json(path: Path) -> Any:

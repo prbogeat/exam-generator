@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "Según las revisiones más modernas, ¿cuál de las siguientes afirmaciones sobre la relación entre la edad y la heredabilidad de la inteligencia es la correcta?:",
+    "opciones": {
+      "a": "La heredabilidad de la inteligencia se mantiene constante durante toda la vida.",
+      "b": "La heredabilidad de la inteligencia disminuye con la edad porque el ambiente tiene un efecto cada vez mayor.",
+      "c": "La genética solo influye en la inteligencia durante la infancia, perdiendo importancia en la adolescencia y adultez.",
+      "d": "La heredabilidad de la inteligencia aumenta con la edad."
+    },
+    "correcta": "d",
+    "explicacion": "Numerosas revisiones científicas sobre gemelos demuestran sorprendentemente que, contrariamente a lo que se pensaba sobre la progresiva influencia de las experiencias y el ambiente, la estimación del valor de heredabilidad de la inteligencia o factor 'g' va aumentando a medida que aumenta la edad."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Las personas con el cariotipo 47XYY se caracterizan porque tienen:",
+    "opciones": {
+      "a": "sus dos cromosomas Y inactivos",
+      "b": "los dos cromosomas Y activos",
+      "c": "el cromosoma X inactivo",
+      "d": "un cromosoma Y inactivado"
+    },
+    "correcta": "b",
+    "explicacion": "A diferencia de lo que ocurre con el cromosoma X en las hembras de mamíferos, que inactiva su copia extra para compensar la dosis génica mediante la cromatina de Barr, no existe un mecanismo equivalente de inactivación para el cromosoma Y extra en los cariotipos 47XYY, por lo que ambos cromosomas Y permanecen activos."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Las catecolaminas son un grupo de neurotransmisores con funciones muy importantes en el sistema nervioso central y periférico. ¿Cuáles son las tres catecolaminas principales presentes en el organismo humano?:",
+    "opciones": {
+      "a": "Noradrenalina, serotonina y glutamato",
+      "b": "Dopamina, serotonina y GABA",
+      "c": "Dopamina, noradrenalina y adrenalina",
+      "d": "Adrenalina, serotonina y acetilcolina"
+    },
+    "correcta": "c",
+    "explicacion": "Dentro del grupo de las aminas biógenas, la subclase de las catecolaminas está formada por la dopamina, la noradrenalina (o norepinefrina) y la adrenalina (o epinefrina)."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "La pauta evolutiva que suele darse como consecuencia de las presiones selectivas recíprocas que se establecen entre dos o más especies se denomina.",
+    "opciones": {
+      "a": "Radiación adaptativa.",
+      "b": "Evolución paralela.",
+      "c": "Evolución convergente.",
+      "d": "Coevolución."
+    },
+    "correcta": "d",
+    "explicacion": "La coevolución alude a las influencias evolutivas y presiones selectivas mutuas y dependientes entre dos o más especies de linajes distintos, como en el caso frecuente de interacciones continuas del tipo huésped-parásito o depredador-presa."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "En la literatura científica hay datos que indican la existencia de una relación entre la presencia del fenotipo del grupo sanguíneo Cero (cuyo genotipo es 00, recesivo y con herencia mendeliana) y la aparición de trastorno bipolar. En comparación con otros países europeos, la incidencia del fenotipo Cero es muy alta en España, especialmente en las regiones centrales de nuestro país. Suponga que una mujer de esas regiones es del genotipo B0 (siendo el alelo B dominante sobre 0) y se casa con varón de su misma región cuyo genotipo de grupo sanguíneo es A0 (siendo A sobre 0). La abuela materna de la mujer tuvo trastorno bipolar y el padre del varón también estuvo afectado por ese mismo trastorno. Por otro lado, recientes estudios han demostrado que hay hasta 36 genes relacionados con la aparición y el desarrollo de ese trastorno, estando alguno de esos genes relacionados con la neurotransmisión gabaérgica. Supongamos que a efectos del planteamiento de esta pregunta, ese gen gabaérgico también tiene herencia mendeliana y que sus dos alelos son “G” y “g”, siendo “G” dominante sobre “g”. Dados estos datos, supongamos que el genotipo completo de la mujer es B0Gg y el del varón es A0Gg y que, en la posible descendencia que ambos desean tener, la presencia conjunta de 2 alelos 0 y, al menos, 1 “g” conllevaría un alto factor de riesgo para la aparición del trastorno bipolar. En estas condiciones, ¿qué probabilidad tendrían estos progenitores de tener descendientes con ese riesgo elevado para padecer la psicopatología?",
+    "opciones": {
+      "a": "0,0625",
+      "b": "0,25",
+      "c": "0,19",
+      "d": "0,5625"
+    },
+    "correcta": "c",
+    "explicacion": "En el cruce B0 x A0, la probabilidad de heredar el fenotipo 00 es de 1/4 (0,25). En el cruce Gg x Gg, la probabilidad de heredar al menos un alelo 'g' recesivo (genotipos Gg o gg) es de 3/4 (0,75). Ambas son características independientes, por lo que la probabilidad conjunta es de 1/4 x 3/4 = 3/16, equivalente a 0,1875 que, redondeado según las opciones, es 0,19."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "¿Qué sucede con los neurotransmisores después de ejercer su efecto postsináptico?",
+    "opciones": {
+      "a": "Se convierten en iones K+.",
+      "b": "Permanecen indefinidamente en la hendidura",
+      "c": "Se activa la bomba de Ca2+",
+      "d": "Son recaptados por transportadores o degradados por enzimas específicas"
+    },
+    "correcta": "d",
+    "explicacion": "Para asegurar la fiabilidad de las señales, es indispensable la inactivación del neurotransmisor liberado; este es inactivado rápidamente bien mediante degradación enzimática específica en la hendidura o mediante recaptación a través de proteínas transportadoras hacia el interior celular."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "La bomba de sodio-potasio (Na+/K+-ATPasa) es esencial para mantener el potencial de reposo. ¿Cuál es su principal función?",
+    "opciones": {
+      "a": "Transportar iones en contra de gradiente usando energía del ATP",
+      "b": "Permitir la difusión pasiva de K+;",
+      "c": "Facilitar la entrada de Na+ por difusión",
+      "d": "Despolarizar la membrana"
+    },
+    "correcta": "a",
+    "explicacion": "La bomba de sodio-potasio es un mecanismo de transporte activo que consume ATP para bombear y trasladar 3 iones Na+ hacia el exterior y 2 iones K+ hacia el interior, ambos procesos en contra de sus respectivos gradientes de concentración."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "Algunas personas estornudan cuando pasan bruscamente de un ambiente oscuro a uno muy iluminado, algo que se conoce como estornudo fótico. Se ha comprobado que este rasgo es autosómico dominante. En un estudio experimental, se reclutó una muestra de 200 individuos y se aplicó un procedimiento de inducción lumínica para provocar el reflejo, y 150 sujetos estornudaron consistentemente cuando se les presentó el estímulo. Entre estos 150, se comprobó mediante genotipado que 90 eran homocigotos dominantes. Calcula la frecuencia del alelo recesivo en la población de la muestra.",
+    "opciones": {
+      "a": "0,3",
+      "b": "0,4",
+      "c": "0,6",
+      "d": "0,7"
+    },
+    "correcta": "b",
+    "explicacion": "De los 200 individuos (400 alelos en total), 150 muestran el rasgo y 50 no lo muestran (homocigotos recesivos, 100 alelos 'a'). De los 150, 90 son homocigotos dominantes (AA) y los 60 restantes heterocigotos (Aa, que aportan 60 alelos 'a' extra). El total de alelos 'a' recesivos es 100 + 60 = 160. La frecuencia es 160 / 400 = 0,4."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "En muchas sociedades industrializadas se observa una tendencia a retrasar la maternidad. Sin embargo, existe un límite biológico: a partir de cierta edad, la probabilidad de lograr una gestación viable se reduce drásticamente, y llega un momento en que la mujer ya no puede dejar descendencia. Si una variante genética prolongase la ventana fértil unos años más, las mujeres portadoras de esa variante tendrían más oportunidades de dejar descendencia a lo largo de su vida reproductiva, aumentando así su eficacia biológica comparada con quienes no portan esa variante. ¿Qué tipo de selección natural describiría este escenario?",
+    "opciones": {
+      "a": "Selección direccional.",
+      "b": "Selección estabilizadora.",
+      "c": "Deriva genética.",
+      "d": "Selección disruptiva."
+    },
+    "correcta": "a",
+    "explicacion": "La selección natural direccional es aquella que actúa disminuyendo la frecuencia de individuos que presentan una característica en uno de los extremos de la distribución y desplazando la media del rasgo hacia el extremo opuesto; en este caso particular favoreciendo un desplazamiento continuo hacia una ventana fértil más prolongada."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "Las pautas de acción fija:",
+    "opciones": {
+      "a": "Forman parte del repertorio conductual de algunos de los miembros de la especie.",
+      "b": "Sólo se manifiestan en experimentos de laboratorio.",
+      "c": "Son patrones aprendidos de conducta.",
+      "d": "Son estereotipadas."
+    },
+    "correcta": "d",
+    "explicacion": "Una pauta de acción fija es una conducta estereotipada, compleja, innata (no dependiente de aprendizaje) y propia o compartida por la totalidad de los miembros de una especie que se exhibe ante un estímulo desencadenador innato."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "La función eléctrica de la neurona depende de la capacidad de su membrana para regular el intercambio de iones. En este contexto, ¿qué papel desempeñan principalmente las proteínas integradas en la membrana neuronal?",
+    "opciones": {
+      "a": "Actúan exclusivamente como receptores de neurotransmisores sin participar en el intercambio iónico.",
+      "b": "Degradan la bicapa lipídica que aísla a la neurona del medio externo.",
+      "c": "Algunas de ellas permiten el paso selectivo de ciertas sustancias o transportan activamente iones entre el medio intracelular y el extracelular.",
+      "d": "Se encargan de sintetizar neurotransmisores en el soma y liberarlos en la sinapsis."
+    },
+    "correcta": "c",
+    "explicacion": "La membrana neuronal posee proteínas insertadas en su bicapa lipídica con diferentes funciones clave, entre las que destacan los canales iónicos y las bombas iónicas, que regulan el paso selectivo y el transporte activo de iones determinando el potencial de membrana."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "La distinción entre genética mendeliana y genética cuantitativa implica:",
+    "opciones": {
+      "a": "Que las leyes de Mendel solo explican la herencia de rasgos cuantitativos.",
+      "b": "Que los rasgos cualitativos suelen ser monogénicos mientras que los rasgos cuantitativos suelen ser poligénicos.",
+      "c": "Que las leyes de Mendel solo se aplican a rasgos cualitativos.",
+      "d": "Que los rasgos cuantitativos no obedecen las leyes básicas de la herencia mendeliana."
+    },
+    "correcta": "b",
+    "explicacion": "Los rasgos cualitativos, habitualmente de fenotipos discretos, corresponden generalmente a características de herencia monogénica descritas por Mendel. Por otro lado, los rasgos cuantitativos presentan una distribución continua y su base biológica suele ser poligénica (influenciada por alelos aditivos de múltiples loci) aunque sigan las mismas leyes mendelianas en su herencia."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Suponga que Lara y Manuel, una pareja treintañera, quieren tener descendientes. También suponga que el abuelo materno padeció una enfermedad psiquiátrica asociada al cromosoma X, la cual se manifestó a partir de los 45 años. Desafortunadamente, esa misma enfermedad fue padecida por una hermana y un hermano de Lara a partir de los 60 años. Teniendo en cuenta esta situación, Manuel, que no es portador, se pregunta por la probabilidad de tener una hija con el mismo genotipo de su madre. Ésta, por un estudio genético que se ha hecho previamente, sabe que no va a padecer la enfermedad de su padre y sus hermanos. Esa probabilidad es de un:",
+    "opciones": {
+      "a": "0,50",
+      "b": "0,00",
+      "c": "0,75",
+      "d": "0,25"
+    },
+    "correcta": "d",
+    "explicacion": "Si es una enfermedad ligada al cromosoma X y Lara no la va a padecer, pero su hermano y hermana la padecieron, Lara heredó el alelo sano de sus padres (es portadora o sana). Dado que las probabilidades genéticas se reparten y que Lara debe ser heterocigota sana portadora (X^A X^a), al cruzarse con Manuel sano (X^A Y), tienen un 50% de probabilidad de tener una hija (1/2) y un 50% de que ésta herede el alelo de la madre de Lara (1/2), lo que resulta en un 25% conjunto (0,25) de que una hija tenga el mismo genotipo portador de su madre."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "El ARN de interferencia se caracteriza por:",
+    "opciones": {
+      "a": "Implicar la participación de un ácido ribonucleico con estructura bicatenaria",
+      "b": "Tener unidos aminoácidos reconocidos por un mismo codón",
+      "c": "No interferir con la expresión génica",
+      "d": "Ser monocatenario"
+    },
+    "correcta": "a",
+    "explicacion": "El efecto inhibidor del ARN de interferencia (ARNi) se ejerce a través de la formación de un ARN de doble hebra (bicatenario) transcrito a partir de microARN, formando un complejo proteico que bloquea la traducción del ARNm al que se acopla."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Al triplete de ADN formado por las bases AGT le corresponde el anticodón:",
+    "opciones": {
+      "a": "TCA",
+      "b": "UGA",
+      "c": "AGU",
+      "d": "UCA"
+    },
+    "correcta": "c",
+    "explicacion": "Mediante las reglas de complementariedad de bases en la transcripción, al triplete de ADN AGT le corresponde el codón de ARNm UCA. Por tanto, el anticodón del ARNt que se acoplará será el complementario a UCA, es decir, AGU."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "¿Cuál de las siguientes afirmaciones NO se refiere a la plasticidad neural en el sistema nervioso?",
+    "opciones": {
+      "a": "Que los cambios observados en el comportamiento tienen probablemente un sustrato anatómico.",
+      "b": "Modifica la estructura y la eficacia funcional de las conexiones sinápticas en respuesta a la experiencia o el aprendizaje.",
+      "c": "Es la capacidad de nuestro sistema nervioso para cambiar continuamente en función de las situaciones vitales.",
+      "d": "Solo ocurre en las etapas iniciales del desarrollo."
+    },
+    "correcta": "d",
+    "explicacion": "La plasticidad neural no se restringe a las etapas iniciales del desarrollo; las neuronas mantienen su capacidad de adaptar y modificar su organización estructural y funcional en repuesta a la experiencia, e incluso producir neurogénesis en algunas regiones del adulto a lo largo de toda su vida."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "Que el infanticidio se dé en proporciones mayores en bebés de corta edad se explica desde la Ecología del Comportamiento en términos de valor reproductivo. Este concepto se explica como:",
+    "opciones": {
+      "a": "La probabilidad de que una cría tenga descendientes.",
+      "b": "El número de hijos que proporciona un descendiente.",
+      "c": "La probabilidad de que un progenitor tenga descendencia.",
+      "d": "La selección por parentesco que se produce en algunas especies."
+    },
+    "correcta": "a",
+    "explicacion": "El valor reproductivo de una cría se define desde un punto de vista evolutivo y ecológico como la probabilidad estimada que tiene dicho individuo de alcanzar la madurez reproductiva y conseguir tener descendientes."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "El potencial de membrana en reposo depende de la distribución desigual de iones entre el interior y el exterior celular. ¿Cuál de las siguientes afirmaciones describe mejor este fenómeno?",
+    "opciones": {
+      "a": "La membrana en reposo es más permeable al Na+ que al K+",
+      "b": "El equilibrio se mantiene sin gasto energético",
+      "c": "La concentración de Na+ es mayor en el interior que en el exterior",
+      "d": "La concentración de K+ es mayor dentro y la de Na+ fuera, lo que genera un potencial negativo interno debido a la permeabilidad selectiva de la membrana y la bomba Na+/K+"
+    },
+    "correcta": "d",
+    "explicacion": "En estado de reposo, existe una mayor concentración de iones K+ en el interior celular y una mayor concentración de Na+ en el exterior. El potencial negativo interno se mantiene gracias a una mayor permeabilidad selectiva para el K+ y a la acción incesante de la bomba de sodio-potasio que consume ATP."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "El proceso por el cual un miembro de una especie tiene preferencia por interactuar sexualmente con determinados individuos como consecuencia de la experiencia se denomina:",
+    "opciones": {
+      "a": "Impronta sexual.",
+      "b": "Pauta de acción fija.",
+      "c": "Mecanismo desencadenador innato.",
+      "d": "Impronta filial."
+    },
+    "correcta": "a",
+    "explicacion": "Por troquelado o impronta (sexual o social) se entiende el proceso por el cual un miembro de una especie adquiere preferencia por interactuar social o sexualmente con determinado tipo de individuos como resultado de una experiencia temprana."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 1: La Psicobiología",
+    "pregunta": "La disciplina que se encarga más directamente de la interacción entre los factores epigenéticos y los genéticos y sus consecuencias en la conducta es:",
+    "opciones": {
+      "a": "La Ecología del Comportamiento",
+      "b": "La Psicobiología del Desarrollo",
+      "c": "La Genética de la Conducta",
+      "d": "La Sociobiología"
+    },
+    "correcta": "b",
+    "explicacion": "La Psicobiología del desarrollo se centra particularmente en dilucidar las interacciones que surgen entre los factores hereditarios genéticos y los ambientales (epigenéticos) desde la etapa prenatal y sus determinantes repercusiones ontogénicas sobre la conducta."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Durante la fase ascendente del potencial de acción:",
+    "opciones": {
+      "a": "Se activa la bomba de Ca2+",
+      "b": "Entran masivamente iones Na+ debido a la apertura de sus canales dependientes de voltaje",
+      "c": "Se produce una salida masiva de K+",
+      "d": "Se cierran los canales de Na+"
+    },
+    "correcta": "b",
+    "explicacion": "Durante la fase ascendente o de despolarización del potencial de acción, el potencial de membrana alcanza el umbral de excitación provocando la apertura de los canales de Na+ dependientes de voltaje, lo que produce una entrada masiva de iones sodio (Na+) al interior celular."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "En una especie de primates, el nivel basal de cortisol está determinado por un gen con dos alelos: C1 y C2. Cada copia del alelo C1 contribuye con +3 unidades de cortisol, mientras que el alelo C2 aporta 0 unidades. El nivel fenotípico de cortisol según el total de unidades es el siguiente: - 0 unidades: bajo nivel de cortisol. 3 unidades: nivel moderado de cortisol. 6 unidades: nivel alto de cortisol. Si cruzas dos individuos con genotipo C1C2, ¿cuál será la proporción esperada de niveles basales de cortisol en la descendencia?:",
+    "opciones": {
+      "a": "1 individuo con 0 unidades : 2 individuos con 3 unidades : 1 individuo con 6 unidades.",
+      "b": "3 individuos con 3 unidades : 1 individuo con 6 unidades.",
+      "c": "Todos los individuos tendrán 3 unidades.",
+      "d": "1 individuo con 0 unidades : 3 individuos con 6 unidades."
+    },
+    "correcta": "a",
+    "explicacion": "En un modelo genético aditivo con un solo gen y dos alelos heterocigotos (C1C2 x C1C2), las proporciones fenotípicas y genotípicas resultantes siguen el cruce mendeliano clásico 1:2:1. Por tanto, se espera 1/4 C2C2 (0 unidades), 2/4 C1C2 (3 unidades) y 1/4 C1C1 (6 unidades)."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "El método de tinción que hizo posible analizar con extraordinaria precisión el tejido nervioso permitiendo la observación del axón y las dendritas fue inicialmente desarrollado por:",
+    "opciones": {
+      "a": "Rudolf Virchow.",
+      "b": "Santiago Ramón y Cajal.",
+      "c": "Camilo Golgi.",
+      "d": "Pío del Río Hortega."
+    },
+    "correcta": "c",
+    "explicacion": "Camilo Golgi desarrolló una técnica de tinción a base de dicromato ósmico y nitrato de plata que precipitaba revelando la estructura completa de algunas células nerviosas por separado, un logro esencial para la histología de dendritas y axones."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 1: La Psicobiología",
+    "pregunta": "Un investigador administra una dosis de un antagonista de los receptores D1 dopaminérgicos mediante cirugía estereotáxica en el núcleo accumbens de un grupo de ratas de laboratorio y a otro grupo les inyecta en el mismo núcleo una solución vehículo. Tras esperar media hora, examina la conducta de autoadministración de cocaína en ambos grupos de animales. En este ejemplo:",
+    "opciones": {
+      "a": "La VI es la administración del antagonista (o el vehículo) y la VD es la conducta de autoadministración",
+      "b": "Se realiza una intervención conductual",
+      "c": "La variable independiente (VI) es la conducta de autoadministración y la variable dependiente (VD) es la administración del antagonista (o el vehículo)",
+      "d": "Se realiza una aproximación correlacional."
+    },
+    "correcta": "a",
+    "explicacion": "Esta estrategia responde a una intervención somática, un tipo de investigación experimental en la que se manipula directamente el organismo (SNC mediante la infusión del fármaco antagonista, es decir, la Variable Independiente) para medir los cambios comportamentales subsecuentes (autoadministración de drogas, siendo esta la Variable Dependiente)."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "Señale la respuesta correcta en relación con el altruismo reproductivo en Ecología del Comportamiento:",
+    "opciones": {
+      "a": "Se refiere a cualquier conducta que favorece la reproducción de cualquier miembro de la especie.",
+      "b": "Se refiere a cualquier conducta que favorece la reproducción de un congénere en detrimento de la propia reproducción.",
+      "c": "Es la medida del éxito reproductivo de los congéneres.",
+      "d": "Es la medida del éxito reproductivo de un individuo que incluye tanto su propia descendencia (aptitud directa) como la descendencia de sus parientes (aptitud indirecta)."
+    },
+    "correcta": "b",
+    "explicacion": "El altruismo reproductivo es cualquier comportamiento o rasgo biológico que fomenta la aptitud (éxito reproductivo directo) de un congénere mientras reduce, al menos potencialmente, la aptitud reproductiva de quien la ejecuta."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "¿Cuál de los siguientes casos se considera un ejemplo de polimorfismo equilibrado?",
+    "opciones": {
+      "a": "Uno bajo selección natural dependiente de frecuencia.",
+      "b": "Uno en una población en equilibrio de Hardy-Weinberg.",
+      "c": "Uno bajo selección natural estabilizadora.",
+      "d": "Todos los anteriores."
+    },
+    "correcta": "a",
+    "explicacion": "La selección natural dependiente de frecuencia y la superioridad del heterocigoto son los dos ejemplos representativos en los que la selección natural mantiene activamente la variabilidad en la población, generando polimorfismos equilibrados."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "La teoría de la reparación genética y la teoría de la reina roja:",
+    "opciones": {
+      "a": "Se contradicen entre sí explicando las ventajas de la reproducción asexual frente a la sexual en términos de aptitud.",
+      "b": "Son dos formas de explicar las razones por las que la reproducción sexual predomina sobre la asexual en los seres pluricelulares.",
+      "c": "Se han propuesto para explicar las ventajas de la reproducción sexual frente a la asexual en los seres pluricelulares.",
+      "d": "Se limitan a explicar no aportan ninguna explicación a las razones por las que existe la reproducción asexual en los seres pluricelulares."
+    },
+    "correcta": "c",
+    "explicacion": "Estas son dos de las principales hipótesis teóricas evolucionistas formuladas de cara a explicar biológicamente qué ventajas selectivas compensan y justifican los grandes gastos y dilemas de mantener activa la reproducción de forma sexual frente a la alternativa de multiplicación asexual."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "Durante el estudio de una resonancia magnética cerebral, se observa que una lesión se encuentra en una posición “superior y anterior” respecto al quiasma óptico. Según la terminología neuroanatómica, esta localización se describe como:",
+    "opciones": {
+      "a": "Dorsal y caudal.",
+      "b": "Dorsal y rostral.",
+      "c": "Ventral y caudal.",
+      "d": "Ventral y rostral."
+    },
+    "correcta": "b",
+    "explicacion": "En la neuroanatomía del encéfalo anterior, debido a la curvatura del neuroeje humano, el término superior es equivalente a dorsal, y el término anterior es equivalente a rostral."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "El valor cuantitativo del fenotipo de un individuo se define como:",
+    "opciones": {
+      "a": "La parte heredable del rasgo atribuible únicamente a los alelos aditivos.",
+      "b": "El promedio del valor fenotípico observado en la población.",
+      "c": "La suma de todas las influencias ambientales sobre un rasgo.",
+      "d": "La combinación del valor genético (incluyendo el aditivo) y el efecto del ambiente sobre el rasgo."
+    },
+    "correcta": "d",
+    "explicacion": "El valor del fenotipo de un individuo para un rasgo cuantitativo poligénico se explica clásicamente en la genética como el resultado aditivo directo de la suma de su respectivo valor genotípico individual y los componentes de variación inducidos por el ambiente en el que se desarrolló."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "Las fibras aferentes del sistema nervioso somático tienen como función principal:",
+    "opciones": {
+      "a": "Transportar información sensorial desde los receptores hacia el sistema nervioso central.",
+      "b": "Enviar información del encéfalo al sistema nervioso autónomo.",
+      "c": "Transmitir órdenes motoras desde el sistema nervioso central hacia los músculos esqueléticos.",
+      "d": "Regular la actividad de glándulas endocrinas."
+    },
+    "correcta": "a",
+    "explicacion": "En el SN somático, las vías aferentes consisten en aquellos axones neuronales que conducen la información recogida por receptores sensoriales en la periferia corporal (ej. piel, músculos y órganos de los sentidos) directamente hacia la integración en el Sistema Nervioso Central."
+  },
+  {
+    "id": 31,
+    "tema": "Tema 1: La Psicobiología",
+    "pregunta": "El efecto menos reversible de los factores epigenéticos se da:",
+    "opciones": {
+      "a": "A lo largo de todo el ciclo vital",
+      "b": "En cualquier periodo menos en el perinatal",
+      "c": "En periodos sin relación con la plasticidad neuronal",
+      "d": "En los periodos críticos"
+    },
+    "correcta": "d",
+    "explicacion": "Aunque la capacidad de reversibilidad plástica permanece a lo largo de toda la vida, los efectos ambientales menos reversibles generados por los factores epigenéticos son los que tienen lugar durante etapas concretas de alta vulnerabilidad ontogénica en el tejido nervioso, conocidas comúnmente como períodos críticos (ej. etapa perinatal)."
+  },
+  {
+    "id": 32,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Se sabe que la cleptomanía es una conducta socialmente anómala, la cual está relacionada con una falta del control de impulsos. Un gen que se ha relacionado con la ausencia de ese control es el que sintetiza el receptor D4 de la dopamina. Suponga que Felipe manifiesta esa conducta y que es albino, de modo que su genotipo es “ddaa”, considerando que “d” es el alelo recesivo del gen D4 que influye en la aparición de la cleptomanía y que el alelo “a” influye en la del albinismo. Recientemente, Felipe se ha casado y quisiera ser padre, pero está preocupado por el hecho de que pudiera tener descendencia cleptómana como él. Su pareja, Julia, es heterocigota para los alelos del gen D4 y del albinismo, pero su padre también era albino. En consecuencia, teniendo en cuenta que el genotipo de Julia es DdAa, ¿cuál es la probabilidad de que tenga con Felipe algún descendiente con la anomalía comportamental que él tiene y que no sea albino como su padre y su marido?:",
+    "opciones": {
+      "a": "0.75",
+      "b": "1",
+      "c": "0.25",
+      "d": "0.5"
+    },
+    "correcta": "c",
+    "explicacion": "El genotipo del padre Felipe es 'ddaa', aportando en todos sus cruces el gameto mendeliano 'da'. La madre Julia (DdAa) aportará 4 tipos de gametos equiprobables: DA, Da, dA y da (25% cada uno). Para que nazca un descendiente enfermo de cleptomanía (recesivo, dd) pero NO albino (necesariamente heterocigoto Aa en la cruz porque heredará la a de su padre), el óvulo fecundado deberá proporcionar el alelo 'd' junto con el alelo 'A'. La probabilidad de que Julia produzca el gameto 'dA' es del 25% o de 0,25."
+  },
+  {
+    "id": 33,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Si se bloquean farmacológicamente todos los canales de K+ dependientes de voltaje de una neurona, ¿cuál de los siguientes fenómenos ocurrirá durante un potencial de acción?:",
+    "opciones": {
+      "a": "El potencial de acción se prolonga notablemente y puede impedir el disparo subsecuente por falta de repolarización",
+      "b": "La despolarización inicial no podrá alcanzarse",
+      "c": "La fase de repolarización se acelera y se acorta la duración total",
+      "d": "El potencial de acción conservará su forma, pero con menor amplitud"
+    },
+    "correcta": "a",
+    "explicacion": "Durante el ciclo del impulso nervioso, la salida de iones K+ a favor de gradiente hacia el espacio extracelular por los canales dependientes de voltaje es el mecanismo neurofisiológico esencial encargado de la fase descendente o de repolarización. Si se bloquean y este ión no puede abandonar el citoplasma, el potencial de acción se ensanchará notablemente obstaculizando recuperar su valor en reposo."
+  }
+]
