@@ -18,13 +18,13 @@ from typing import Any, Dict, List
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/psicobiologia/Examen-Junio-2026-Realizado.json"
-OUTPUT_JSON = "out/psicobiologia/examen-junio-2026-realizado.json"
+INPUT_JSON = "input/banco_de_preguntas/psicobiologia/Parcial 1/Enero 2026 - Tipo A.json"
+OUTPUT_JSON = "out/examenes/psicobiologia/Parcial 1/Enero 2026 - Tipo A.json"
 
 SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - Junio 2026 - Realizado"
+EXAM_TITLE = "UNED - Enero 2026 - Tipo A (Parcial 1)"
 SUBTITLE = "30 Tipo Test"
-NOTICE = "Preguntas del examen de Junio 2026 Realizado - Fundamentos de Psicobiología de la UNED"
+NOTICE = "Preguntas del examen de Enero 2026 - Fundamentos de Psicobiología de la UNED (Parcial 1)"
 
 MAX_SCORE = 10.0
 WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0
@@ -33,6 +33,12 @@ FORMULA_TIP = ""  # Si se deja vacio, se autogenera.
 NUMBER_OF_QUESTIONS = 30  # 0 = usar todas las preguntas del JSON de entrada.
 RANDOM_SELECTION = False  # True = elegir preguntas al azar.
 RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecucion.
+
+# Plantilla de examen realizado
+# True = generar tambien una plantilla vacia en input/examenes_realizados/<subject>/ para rellenar y corregir.
+GENERATE_TEMPLATE = True
+# Ruta de salida de la plantilla. Si se deja vacio, se deriva automaticamente del OUTPUT_JSON.
+TEMPLATE_OUTPUT_PATH = ""  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
 
 
 def load_json(path: Path) -> Any:
@@ -100,6 +106,34 @@ def convert_options(question: Dict[str, Any]) -> List[Dict[str, str]]:
         return result
 
     return []
+
+
+def derive_template_path(output_path: Path, script_dir: Path) -> Path:
+    """Deriva la ruta de la plantilla a partir del path de salida del examen generado.
+
+    Ejemplo: out/examenes/psicobiologia/examen.json
+             → input/examenes_realizados/psicobiologia/examen.json
+    """
+    subject = output_path.parent.name
+    return script_dir / "input" / "examenes_realizados" / subject / output_path.name
+
+
+def build_realized_template(converted_exam: Dict[str, Any]) -> Dict[str, Any]:
+    """Construye una plantilla de examen realizado lista para rellenar y corregir."""
+    return {
+        "subject": converted_exam["subjectTitle"],
+        "type": converted_exam["examTitle"],
+        "date": "",
+        "description": "",
+        "questions": [
+            {
+                "id": q["id"],
+                "text": q["text"],
+                "marked_option": "",
+            }
+            for q in converted_exam["questions"]
+        ],
+    }
 
 
 def default_formula_tip(penalty: float, question_count: int, max_score: float) -> str:
@@ -201,6 +235,15 @@ def main() -> None:
 
     print(f"Examen generado correctamente en: {output_path}")
     print(f"Preguntas convertidas: {len(converted_exam['questions'])}")
+
+    if GENERATE_TEMPLATE:
+        if TEMPLATE_OUTPUT_PATH.strip():
+            template_path = (script_dir / TEMPLATE_OUTPUT_PATH).resolve()
+        else:
+            template_path = derive_template_path(output_path, script_dir)
+        template = build_realized_template(converted_exam)
+        save_json(template_path, template)
+        print(f"Plantilla de examen realizado generada en: {template_path}")
 
 
 if __name__ == "__main__":

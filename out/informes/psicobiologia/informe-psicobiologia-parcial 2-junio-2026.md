@@ -1,11 +1,11 @@
-# Informe de correccion: C:\Users\e024100\Documents\Development\DevOps\Otras cosas\exam-generator\input\examenes_realizados\psicobiologia-parcial 2-junio-2026.json
+# Informe de correccion: C:\Users\e024100\Documents\Development\DevOps\Otras cosas\exam-generator-git\exam-generator\input\examenes_realizados\psicobiologia\psicobiologia-parcial 2-junio-2026.json
 
 ## Resumen
 - Asignatura: Fundamentos de Psicobiología
 - Tipo: Junio 2026 - Realizado
 - Fecha: 2026-06-08
 - Descripcion: Examen realizado el 8 de Junio del segundo parcial
-- Fichero de correccion: C:\Users\e024100\Documents\Development\DevOps\Otras cosas\exam-generator\out\psicobiologia\examen-junio-2026-realizado.json
+- Fichero de correccion: C:\Users\e024100\Documents\Development\DevOps\Otras cosas\exam-generator-git\exam-generator\out\examenes\psicobiologia\examen-junio-2026-realizado.json
 
 ## Resultados
 - Preguntas en examen realizado: 30

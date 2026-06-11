@@ -4,9 +4,9 @@
     "type": "Junio 2026 - Realizado",
     "date": "2026-06-08",
     "description": "Examen realizado el 8 de Junio del segundo parcial",
-    "generatedAt": "2026-06-10T09:20:15",
-    "exam_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator\\input\\examenes_realizados\\psicobiologia-parcial 2-junio-2026.json",
-    "correction_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator\\out\\psicobiologia\\examen-junio-2026-realizado.json"
+    "generatedAt": "2026-06-11T13:05:06",
+    "exam_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator-git\\exam-generator\\input\\examenes_realizados\\psicobiologia\\psicobiologia-parcial 2-junio-2026.json",
+    "correction_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator-git\\exam-generator\\out\\examenes\\psicobiologia\\examen-junio-2026-realizado.json"
   },
   "stats": {
     "total_exam_questions": 30,

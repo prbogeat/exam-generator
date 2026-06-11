@@ -26,9 +26,9 @@ from typing import Any, Dict, List, Optional, cast
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-DEFAULT_EXAM_INPUT = "input/examenes_realizados/psicobiologia-parcial 2-junio-2026.json"
-DEFAULT_CORRECTION_FILE = "out/psicobiologia/examen-junio-2026-realizado.json"
-DEFAULT_OUTPUT_DIR = "out/informes"
+DEFAULT_EXAM_INPUT = "input/examenes_realizados/psicobiologia/psicobiologia-parcial 2-junio-2026.json"
+DEFAULT_CORRECTION_FILE = "out/examenes/psicobiologia/examen-junio-2026-realizado.json"
+DEFAULT_OUTPUT_DIR = "out/informes/psicobiologia"
 DEFAULT_OUTPUT_PREFIX = "informe"
 
 
