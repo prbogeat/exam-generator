@@ -18,19 +18,19 @@ from typing import Any, Dict, List
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/banco_de_preguntas/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"
-OUTPUT_JSON = "out/examenes/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"
+INPUT_JSON = "input/banco_de_preguntas/emocion/Examen 2026 - Junio - Semana 1.json"
+OUTPUT_JSON = "out/examenes/emocion/Examen 2026 - Junio - Semana 1.json"
 
-SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - Enero 2026 - Tipo C (Parcial 1)"
+SUBJECT_TITLE = "Psicología de la Emoción"
+EXAM_TITLE = "UNED - Junio 2026 - Semana 1"
 SUBTITLE = "30 Tipo Test"
-NOTICE = "Preguntas del examen de Enero 2026 - Fundamentos de Psicobiología de la UNED (Parcial 1)"
+NOTICE = "Preguntas del examen de Junio 2026 - Psicología de la Emoción de la UNED (Semana 1)"
 
 MAX_SCORE = 10.0
-WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0
+WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 1.0
 TIME_LIMIT_MINUTES = 90
 FORMULA_TIP = ""  # Si se deja vacio, se autogenera.
-NUMBER_OF_QUESTIONS = 30  # 0 = usar todas las preguntas del JSON de entrada.
+NUMBER_OF_QUESTIONS = 40  # 0 = usar todas las preguntas del JSON de entrada.
 RANDOM_SELECTION = False  # True = elegir preguntas al azar.
 RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecucion.
 
@@ -38,7 +38,7 @@ RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecuc
 # True = generar tambien una plantilla vacia en input/examenes_realizados/<subject>/ para rellenar y corregir.
 GENERATE_TEMPLATE = True
 # Ruta de salida de la plantilla. Si se deja vacio, se deriva automaticamente del OUTPUT_JSON.
-TEMPLATE_OUTPUT_PATH = "input/examenes_realizados/psicobiologia/Parcial 1/Enero 2026 - Tipo C.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
+TEMPLATE_OUTPUT_PATH = "input/examenes_realizados/emocion/Examen 2026 - Junio - Semana 1.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
 
 
 def load_json(path: Path) -> Any:

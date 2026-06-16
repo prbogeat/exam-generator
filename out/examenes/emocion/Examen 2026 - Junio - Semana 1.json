@@ -1,0 +1,735 @@
+{
+  "subjectTitle": "Psicología de la Emoción",
+  "examTitle": "UNED - Junio 2026 - Semana 1",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 40,
+  "notice": "Preguntas del examen de Junio 2026 - Psicología de la Emoción de la UNED (Semana 1)",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 1.0,
+    "formulaTip": "[(A - E / 2) / 40] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En la respuesta emocional, ¿qué función se atribuye al córtex orbitofrontal?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos."
+        },
+        {
+          "key": "B",
+          "text": "Controla la activación del sistema nervioso autónomo para adaptarla a los acontecimientos emocionales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "La sorpresa ha sido definida como una reacción causada por algo imprevisto, novedoso o extraño:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "Según Angyal, el principal estímulo elicitador del asco es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El contacto con restos de alimentos."
+        },
+        {
+          "key": "B",
+          "text": "Los desechos (basuras) del cuerpo como las heces."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Los desechos (basuras) del cuerpo como las heces."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "En la ansiedad, ¿cómo actúa el sistema cognitivo para llevar a cabo el fenómeno de priorización de la información?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acentúa la accesibilidad a las representaciones relevantes en la memoria."
+        },
+        {
+          "key": "B",
+          "text": "Moviliza recursos conductuales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Acentúa la accesibilidad a las representaciones relevantes en la memoria."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Experiencias subjetivas caracterizadas por sentimientos de fuerte relación, aceptación del otro y capacidad de sacrificio, son características de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La intimidad."
+        },
+        {
+          "key": "B",
+          "text": "El compromiso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: El compromiso."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "En relación con las implicaciones en el ámbito interpersonal, la culpa y la vergüenza:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Conllevan diferentes tendencias de acción."
+        },
+        {
+          "key": "B",
+          "text": "Ambas emociones se refieren a las acciones de los otros."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Conllevan diferentes tendencias de acción."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "La expresión de alegría se manifiesta de forma desinhibida cuando existe intimidad:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Atendiendo al modelo de chequeos secuenciales para la diferenciación de emociones, ¿de qué subsistema depende la preparación del organismo para inducir tendencias de aproximación o evitación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Subsistema ejecutivo."
+        },
+        {
+          "key": "B",
+          "text": "Subsistema de soporte."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Subsistema de soporte."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "La ley de la menor carga y el mayor beneficio, propuesta por Frijda (1998, 2001), formula que cuando una situación puede ser vista desde distintas alternativas, existe una tendencia a verla desde aquella postura que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Minimice la carga emocional negativa y/o maximice una ganancia emocional."
+        },
+        {
+          "key": "B",
+          "text": "Maximice la carga emocional negativa y/o minimice una ganancia emocional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Minimice la carga emocional negativa y/o maximice una ganancia emocional."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Desde una perspectiva metodológica, la estrategia de inhibición/exageración de la apariencia facial es una de las utilizadas para comprobar la hipótesis de feedback facial:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "Desde el estudio dimensional de las emociones, el eje que permite diferenciar las emociones en función de la intensidad de los cambios fisiológicos es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eje de valencia afectiva."
+        },
+        {
+          "key": "B",
+          "text": "Eje de activación."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Eje de activación."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Una de las críticas al modelo de Bower acerca de la relación entre emoción y cognición es que propone un único código de representación para elementos dispares como las respuestas fisiológicas, características del evento elicitante de la emoción o la experiencia emocional subjetiva:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "Un efecto subjetivo de la emoción de miedo es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Repulsión y ofensa."
+        },
+        {
+          "key": "B",
+          "text": "Sensación de desasosiego y malestar."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Sensación de desasosiego y malestar."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "¿Qué función cumple la preocupación en el proceso de la ansiedad?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neutraliza las reacciones fisiológicas."
+        },
+        {
+          "key": "B",
+          "text": "Interviene en el afrontamiento como elemento motivador de las acciones a tomar."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Interviene en el afrontamiento como elemento motivador de las acciones a tomar."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "La alegría es una emoción que actúa como atenuadora de las emociones negativas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "El síndrome AHI propuesto por Spielberger y colaboradores (1985), se refiere:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Al solapamiento en las definiciones de ira, hostilidad y agresión."
+        },
+        {
+          "key": "B",
+          "text": "A un modelo que explica la agresión como resultado de un desequilibrio entre impulsividad y control inhibitorio."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Al solapamiento en las definiciones de ira, hostilidad y agresión."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Considerando el tipo de atribuciones que el sujeto hace de su conducta, la vergüenza surge por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una atribución interna de carácter global."
+        },
+        {
+          "key": "B",
+          "text": "Una atribución interna focalizada en la acción."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Una atribución interna de carácter global."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "La fisiología del miedo en el contexto de precipitar la huida es diferente de la fisiología del miedo en el contexto de quedarse parado, particularmente en el sistema cardiovascular y somático:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Arne Öhman, mediante el paradigma del condicionamiento aversivo pavloviano, estudia en la emoción los procesos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Automáticos."
+        },
+        {
+          "key": "B",
+          "text": "De valoración secundaria."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Automáticos."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Atendiendo al modelo de chequeos secuenciales para la diferenciación de emociones (Actividad práctica: La valoración emocional), identifique qué chequeos o comprobación secuencial del estímulo se consideran cuando el objetivo de valoración es el grado de implicación personal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Agrado intrínseco y Relevancia de la meta."
+        },
+        {
+          "key": "B",
+          "text": "Causalidad y Probabilidad de resultado."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Causalidad y Probabilidad de resultado."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "La consistencia metodológica de los estudios transculturales sobre expresión y reconocimiento facial de emociones, requiere que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los rostros presentados hayan sido fotografiados en situaciones artificiales."
+        },
+        {
+          "key": "B",
+          "text": "Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "Según los datos que aporta la investigación en ratas sobre el condicionamiento del miedo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las lesiones en el córtex auditivo impiden que se produzca el condicionamiento del miedo."
+        },
+        {
+          "key": "B",
+          "text": "La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI)."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI)."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "Se entiende por procesamiento automático (bottom-up) un tipo de procesamiento guiado por los datos sensoriales, no mediado por los recursos cognitivos, y de carácter involuntario:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "La tristeza puede desencadenarse por experiencia vicaria:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "A diferencia del rasgo o tendencia emocional, el proceso emocional:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo."
+        },
+        {
+          "key": "B",
+          "text": "Se refiere a las formas habituales de responder emocionalmente de una determinada manera."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "En cuanto a la relación entre felicidad y logro de metas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los desafíos más difíciles producen mayor satisfacción."
+        },
+        {
+          "key": "B",
+          "text": "Los desafíos intermedios producen mayor satisfacción."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Los desafíos intermedios producen mayor satisfacción."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Qué emoción autoconsciente mantiene a la persona ligada a la situación interpersonal?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La vergüenza."
+        },
+        {
+          "key": "B",
+          "text": "La culpa."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: La culpa."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Qué propone la teoría de Cannon-Bard sobre las emociones?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional."
+        },
+        {
+          "key": "B",
+          "text": "La existencia de patrones específicos de respuesta asociadas a cada emoción."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "La utilización de bases de estímulos estandarizadas como el International Affective Picture System (IAPS) en el laboratorio (Actividad práctica: Emociones en el laboratorio), nos permite mantener un mejor control en la selección de estímulos emocionales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pero nos dificulta la comparación y replicación de resultados de otros estudios."
+        },
+        {
+          "key": "B",
+          "text": "Y nos facilita la comparación y replicación de resultados de otros estudios."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Y nos facilita la comparación y replicación de resultados de otros estudios."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "En la respuesta de ansiedad, la persistencia tanto de la activación fisiológica como de las ideaciones irracionales, pueden explicarse por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo."
+        },
+        {
+          "key": "B",
+          "text": "Proyecciones de la amígdala a los centros hipotalámicos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo."
+    },
+    {
+      "id": 31,
+      "sourceId": 31,
+      "used": true,
+      "text": "Respecto al efecto de las emociones en los procesos de categorización, hay evidencias científicas de que el afecto positivo favorece el agrupamiento de elementos de parecido familiar marginal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 32,
+      "sourceId": 32,
+      "used": true,
+      "text": "Atendiendo a los estilos de afrontamiento de la ansiedad, las personas sensibilizadoras se caracterizan porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Inhiben procesar información relacionada con la amenaza."
+        },
+        {
+          "key": "B",
+          "text": "Dirigen su atención para obtener más información sobre la información amenazante."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Dirigen su atención para obtener más información sobre la información amenazante."
+    },
+    {
+      "id": 33,
+      "sourceId": 33,
+      "used": true,
+      "text": "Los rasgos específicos de cada emoción autoconsciente vienen determinados por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los estímulos que las elicitan y las formas de expresión."
+        },
+        {
+          "key": "B",
+          "text": "Los procesos de evaluación y atribución interna de la conducta."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Los procesos de evaluación y atribución interna de la conducta."
+    },
+    {
+      "id": 34,
+      "sourceId": 34,
+      "used": true,
+      "text": "El proceso de valoración de la situación según Scherer (1998, 1990) se compone a su vez de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Significación, afrontamiento y normas."
+        },
+        {
+          "key": "B",
+          "text": "Novedad y agrado intrínseco."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Novedad y agrado intrínseco."
+    },
+    {
+      "id": 35,
+      "sourceId": 35,
+      "used": true,
+      "text": "En el experimento de Eastwood et al., (2001) sobre la relación entre atención y emoción, las latencias de respuesta eran menores para las caras con expresiones positivas que para las caras con expresiones negativas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Falso."
+    },
+    {
+      "id": 36,
+      "sourceId": 36,
+      "used": true,
+      "text": "En el estudio de la emoción, el objetivo de los teóricos del appraisal es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos."
+        },
+        {
+          "key": "B",
+          "text": "Encontrar distintas configuraciones de cambios corporales periféricos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos."
+    },
+    {
+      "id": 37,
+      "sourceId": 37,
+      "used": true,
+      "text": "La ira contribuye positivamente a la adaptación del individuo a su entorno:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    },
+    {
+      "id": 38,
+      "sourceId": 38,
+      "used": true,
+      "text": "El perfil bioconductual de las personas hostiles se caracteriza fundamentalmente por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una disminución en la función serotoninérgica."
+        },
+        {
+          "key": "B",
+          "text": "Una disminución en la función colinérgica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Una disminución en la función serotoninérgica."
+    },
+    {
+      "id": 39,
+      "sourceId": 39,
+      "used": true,
+      "text": "Indique una de las estrategias de investigación utilizada por Gordon H. Bower para el estudio de la relación entre el estado afectivo y los procesos cognitivos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Procedimiento del enmascaramiento hacia atrás."
+        },
+        {
+          "key": "B",
+          "text": "Inducción hipnótica de estados emocionales."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Inducción hipnótica de estados emocionales."
+    },
+    {
+      "id": 40,
+      "sourceId": 40,
+      "used": true,
+      "text": "La tristeza favorece la introspección, el análisis constructivo y la búsqueda y facilitación de apoyo social:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+    }
+  ]
+}

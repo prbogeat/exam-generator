@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En la respuesta emocional, ¿qué función se atribuye al córtex orbitofrontal?:",
+    "opciones": {
+      "a": "Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos.",
+      "b": "Controla la activación del sistema nervioso autónomo para adaptarla a los acontecimientos emocionales."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos."
+  },
+  {
+    "id": 2,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La sorpresa ha sido definida como una reacción causada por algo imprevisto, novedoso o extraño:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 3,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Según Angyal, el principal estímulo elicitador del asco es:",
+    "opciones": {
+      "a": "El contacto con restos de alimentos.",
+      "b": "Los desechos (basuras) del cuerpo como las heces."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Los desechos (basuras) del cuerpo como las heces."
+  },
+  {
+    "id": 4,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En la ansiedad, ¿cómo actúa el sistema cognitivo para llevar a cabo el fenómeno de priorización de la información?:",
+    "opciones": {
+      "a": "Acentúa la accesibilidad a las representaciones relevantes en la memoria.",
+      "b": "Moviliza recursos conductuales."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Acentúa la accesibilidad a las representaciones relevantes en la memoria."
+  },
+  {
+    "id": 5,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Experiencias subjetivas caracterizadas por sentimientos de fuerte relación, aceptación del otro y capacidad de sacrificio, son características de:",
+    "opciones": {
+      "a": "La intimidad.",
+      "b": "El compromiso."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: El compromiso."
+  },
+  {
+    "id": 6,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En relación con las implicaciones en el ámbito interpersonal, la culpa y la vergüenza:",
+    "opciones": {
+      "a": "Conllevan diferentes tendencias de acción.",
+      "b": "Ambas emociones se refieren a las acciones de los otros."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Conllevan diferentes tendencias de acción."
+  },
+  {
+    "id": 7,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La expresión de alegría se manifiesta de forma desinhibida cuando existe intimidad:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 8,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Atendiendo al modelo de chequeos secuenciales para la diferenciación de emociones, ¿de qué subsistema depende la preparación del organismo para inducir tendencias de aproximación o evitación?:",
+    "opciones": {
+      "a": "Subsistema ejecutivo.",
+      "b": "Subsistema de soporte."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Subsistema de soporte."
+  },
+  {
+    "id": 9,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La ley de la menor carga y el mayor beneficio, propuesta por Frijda (1998, 2001), formula que cuando una situación puede ser vista desde distintas alternativas, existe una tendencia a verla desde aquella postura que:",
+    "opciones": {
+      "a": "Minimice la carga emocional negativa y/o maximice una ganancia emocional.",
+      "b": "Maximice la carga emocional negativa y/o minimice una ganancia emocional."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Minimice la carga emocional negativa y/o maximice una ganancia emocional."
+  },
+  {
+    "id": 10,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Desde una perspectiva metodológica, la estrategia de inhibición/exageración de la apariencia facial es una de las utilizadas para comprobar la hipótesis de feedback facial:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 11,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Desde el estudio dimensional de las emociones, el eje que permite diferenciar las emociones en función de la intensidad de los cambios fisiológicos es:",
+    "opciones": {
+      "a": "Eje de valencia afectiva.",
+      "b": "Eje de activación."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Eje de activación."
+  },
+  {
+    "id": 12,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Una de las críticas al modelo de Bower acerca de la relación entre emoción y cognición es que propone un único código de representación para elementos dispares como las respuestas fisiológicas, características del evento elicitante de la emoción o la experiencia emocional subjetiva:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 13,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Un efecto subjetivo de la emoción de miedo es:",
+    "opciones": {
+      "a": "Repulsión y ofensa.",
+      "b": "Sensación de desasosiego y malestar."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Sensación de desasosiego y malestar."
+  },
+  {
+    "id": 14,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "¿Qué función cumple la preocupación en el proceso de la ansiedad?:",
+    "opciones": {
+      "a": "Neutraliza las reacciones fisiológicas.",
+      "b": "Interviene en el afrontamiento como elemento motivador de las acciones a tomar."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Interviene en el afrontamiento como elemento motivador de las acciones a tomar."
+  },
+  {
+    "id": 15,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La alegría es una emoción que actúa como atenuadora de las emociones negativas:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 16,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "El síndrome AHI propuesto por Spielberger y colaboradores (1985), se refiere:",
+    "opciones": {
+      "a": "Al solapamiento en las definiciones de ira, hostilidad y agresión.",
+      "b": "A un modelo que explica la agresión como resultado de un desequilibrio entre impulsividad y control inhibitorio."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Al solapamiento en las definiciones de ira, hostilidad y agresión."
+  },
+  {
+    "id": 17,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Considerando el tipo de atribuciones que el sujeto hace de su conducta, la vergüenza surge por:",
+    "opciones": {
+      "a": "Una atribución interna de carácter global.",
+      "b": "Una atribución interna focalizada en la acción."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Una atribución interna de carácter global."
+  },
+  {
+    "id": 18,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La fisiología del miedo en el contexto de precipitar la huida es diferente de la fisiología del miedo en el contexto de quedarse parado, particularmente en el sistema cardiovascular y somático:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 19,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Arne Öhman, mediante el paradigma del condicionamiento aversivo pavloviano, estudia en la emoción los procesos:",
+    "opciones": {
+      "a": "Automáticos.",
+      "b": "De valoración secundaria."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Automáticos."
+  },
+  {
+    "id": 20,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Atendiendo al modelo de chequeos secuenciales para la diferenciación de emociones (Actividad práctica: La valoración emocional), identifique qué chequeos o comprobación secuencial del estímulo se consideran cuando el objetivo de valoración es el grado de implicación personal:",
+    "opciones": {
+      "a": "Agrado intrínseco y Relevancia de la meta.",
+      "b": "Causalidad y Probabilidad de resultado."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Causalidad y Probabilidad de resultado."
+  },
+  {
+    "id": 21,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La consistencia metodológica de los estudios transculturales sobre expresión y reconocimiento facial de emociones, requiere que:",
+    "opciones": {
+      "a": "Los rostros presentados hayan sido fotografiados en situaciones artificiales.",
+      "b": "Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea."
+  },
+  {
+    "id": 22,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Según los datos que aporta la investigación en ratas sobre el condicionamiento del miedo:",
+    "opciones": {
+      "a": "Las lesiones en el córtex auditivo impiden que se produzca el condicionamiento del miedo.",
+      "b": "La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI)."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI)."
+  },
+  {
+    "id": 23,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Se entiende por procesamiento automático (bottom-up) un tipo de procesamiento guiado por los datos sensoriales, no mediado por los recursos cognitivos, y de carácter involuntario:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 24,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La tristeza puede desencadenarse por experiencia vicaria:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 25,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "A diferencia del rasgo o tendencia emocional, el proceso emocional:",
+    "opciones": {
+      "a": "Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo.",
+      "b": "Se refiere a las formas habituales de responder emocionalmente de una determinada manera."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo."
+  },
+  {
+    "id": 26,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En cuanto a la relación entre felicidad y logro de metas:",
+    "opciones": {
+      "a": "Los desafíos más difíciles producen mayor satisfacción.",
+      "b": "Los desafíos intermedios producen mayor satisfacción."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Los desafíos intermedios producen mayor satisfacción."
+  },
+  {
+    "id": 27,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "¿Qué emoción autoconsciente mantiene a la persona ligada a la situación interpersonal?:",
+    "opciones": {
+      "a": "La vergüenza.",
+      "b": "La culpa."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: La culpa."
+  },
+  {
+    "id": 28,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "¿Qué propone la teoría de Cannon-Bard sobre las emociones?:",
+    "opciones": {
+      "a": "La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional.",
+      "b": "La existencia de patrones específicos de respuesta asociadas a cada emoción."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional."
+  },
+  {
+    "id": 29,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La utilización de bases de estímulos estandarizadas como el International Affective Picture System (IAPS) en el laboratorio (Actividad práctica: Emociones en el laboratorio), nos permite mantener un mejor control en la selección de estímulos emocionales:",
+    "opciones": {
+      "a": "Pero nos dificulta la comparación y replicación de resultados de otros estudios.",
+      "b": "Y nos facilita la comparación y replicación de resultados de otros estudios."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Y nos facilita la comparación y replicación de resultados de otros estudios."
+  },
+  {
+    "id": 30,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En la respuesta de ansiedad, la persistencia tanto de la activación fisiológica como de las ideaciones irracionales, pueden explicarse por:",
+    "opciones": {
+      "a": "Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo.",
+      "b": "Proyecciones de la amígdala a los centros hipotalámicos."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo."
+  },
+  {
+    "id": 31,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Respecto al efecto de las emociones en los procesos de categorización, hay evidencias científicas de que el afecto positivo favorece el agrupamiento de elementos de parecido familiar marginal:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 32,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Atendiendo a los estilos de afrontamiento de la ansiedad, las personas sensibilizadoras se caracterizan porque:",
+    "opciones": {
+      "a": "Inhiben procesar información relacionada con la amenaza.",
+      "b": "Dirigen su atención para obtener más información sobre la información amenazante."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Dirigen su atención para obtener más información sobre la información amenazante."
+  },
+  {
+    "id": 33,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Los rasgos específicos de cada emoción autoconsciente vienen determinados por:",
+    "opciones": {
+      "a": "Los estímulos que las elicitan y las formas de expresión.",
+      "b": "Los procesos de evaluación y atribución interna de la conducta."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Los procesos de evaluación y atribución interna de la conducta."
+  },
+  {
+    "id": 34,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "El proceso de valoración de la situación según Scherer (1998, 1990) se compone a su vez de:",
+    "opciones": {
+      "a": "Significación, afrontamiento y normas.",
+      "b": "Novedad y agrado intrínseco."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Novedad y agrado intrínseco."
+  },
+  {
+    "id": 35,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En el experimento de Eastwood et al., (2001) sobre la relación entre atención y emoción, las latencias de respuesta eran menores para las caras con expresiones positivas que para las caras con expresiones negativas:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Falso."
+  },
+  {
+    "id": 36,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "En el estudio de la emoción, el objetivo de los teóricos del appraisal es:",
+    "opciones": {
+      "a": "Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos.",
+      "b": "Encontrar distintas configuraciones de cambios corporales periféricos."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos."
+  },
+  {
+    "id": 37,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La ira contribuye positivamente a la adaptación del individuo a su entorno:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  },
+  {
+    "id": 38,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "El perfil bioconductual de las personas hostiles se caracteriza fundamentalmente por:",
+    "opciones": {
+      "a": "Una disminución en la función serotoninérgica.",
+      "b": "Una disminución en la función colinérgica."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Una disminución en la función serotoninérgica."
+  },
+  {
+    "id": 39,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "Indique una de las estrategias de investigación utilizada por Gordon H. Bower para el estudio de la relación entre el estado afectivo y los procesos cognitivos:",
+    "opciones": {
+      "a": "Procedimiento del enmascaramiento hacia atrás.",
+      "b": "Inducción hipnótica de estados emocionales."
+    },
+    "correcta": "b",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Inducción hipnótica de estados emocionales."
+  },
+  {
+    "id": 40,
+    "tema": "Psicología de la Emoción",
+    "pregunta": "La tristeza favorece la introspección, el análisis constructivo y la búsqueda y facilitación de apoyo social:",
+    "opciones": {
+      "a": "Verdadero.",
+      "b": "Falso."
+    },
+    "correcta": "a",
+    "explicacion": "Según la plantilla oficial, la opción correcta es: Verdadero."
+  }
+]
