@@ -23,7 +23,7 @@ OUTPUT_JSON = "out/examenes/emocion/Examen 2026 - Junio - Semana 1.json"
 
 SUBJECT_TITLE = "Psicología de la Emoción"
 EXAM_TITLE = "UNED - Junio 2026 - Semana 1"
-SUBTITLE = "30 Tipo Test"
+SUBTITLE = "40 Tipo Test"
 NOTICE = "Preguntas del examen de Junio 2026 - Psicología de la Emoción de la UNED (Semana 1)"
 
 MAX_SCORE = 10.0

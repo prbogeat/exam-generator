@@ -4,7 +4,7 @@
     "type": "UNED - Junio 2026 - Semana 1",
     "date": "",
     "description": "",
-    "generatedAt": "2026-06-15T11:23:49",
+    "generatedAt": "2026-06-16T18:20:39",
     "exam_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator\\input\\examenes_realizados\\emocion\\Examen 2026 - Junio - Semana 1.json",
     "correction_file": "C:\\Users\\e024100\\Documents\\Development\\DevOps\\Otras cosas\\exam-generator\\out\\examenes\\emocion\\Examen 2026 - Junio - Semana 1.json"
   },
@@ -21,7 +21,7 @@
   "scoring": {
     "estimated_score": 7.0,
     "max_score": 10.0,
-    "formula_used": "[(A - E / 2) / 40] x 10"
+    "formula_used": "[(A - E / 1) / 40] x 10"
   },
   "details": [
     {
@@ -33,7 +33,7 @@
       "marked_option_text": "Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos.",
       "correct_option": "A",
       "correct_option_text": "Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Ejerce un control emocional inhibitorio sobre la amígdala que permite el cambio de conducta en función del significado emocional de los estímulos."
+      "explanation": "El córtex orbitofrontal establece múltiples conexiones con la amígdala y es responsable de enviar señales que ejercen un control inhibitorio sobre esta. Esto resulta crucial para regular la urgencia del estímulo, suprimir respuestas emocionales desadaptativas y permitir el cambio de conducta cuando el significado emocional de los estímulos varía."
     },
     {
       "exam_question_id": "2",
@@ -44,7 +44,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "El manual establece que la sorpresa es la emoción primaria desencadenada por eventos que son imprevistos, novedosos o extraños, es decir, situaciones que discrepan o interrumpen de manera abrupta los planes, intenciones o esquemas cognitivos previos del individuo."
     },
     {
       "exam_question_id": "3",
@@ -55,7 +55,7 @@
       "marked_option_text": "Los desechos (basuras) del cuerpo como las heces.",
       "correct_option": "B",
       "correct_option_text": "Los desechos (basuras) del cuerpo como las heces.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Los desechos (basuras) del cuerpo como las heces."
+      "explanation": "Desde la clasificación pionera de Angyal, se ha establecido sistemáticamente en el manual que la principal fuente de estímulos elicitadores del asco o repugnancia a nivel físico proviene de las sustancias de desecho corporal, deyecciones y falta de higiene que puedan comprometer la salud biológica."
     },
     {
       "exam_question_id": "4",
@@ -66,7 +66,7 @@
       "marked_option_text": "Acentúa la accesibilidad a las representaciones relevantes en la memoria.",
       "correct_option": "A",
       "correct_option_text": "Acentúa la accesibilidad a las representaciones relevantes en la memoria.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Acentúa la accesibilidad a las representaciones relevantes en la memoria."
+      "explanation": "El fenómeno de priorización en la ansiedad se manifiesta sesgando los recursos atencionales y de memoria hacia la amenaza. A nivel cognitivo, esto significa que las redes asociativas acentúan y facilitan la accesibilidad a representaciones mentales, recuerdos o indicios que sean relevantes frente al posible peligro."
     },
     {
       "exam_question_id": "5",
@@ -77,7 +77,7 @@
       "marked_option_text": "",
       "correct_option": "B",
       "correct_option_text": "El compromiso.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: El compromiso."
+      "explanation": "En el marco de la teoría triangular del amor de Sternberg y modelos afines, las variables que implican mantener la relación a largo plazo, demostrar lealtad, sostener la aceptación y mostrar una manifiesta capacidad de sacrificio voluntario por el otro corresponden específicamente a la dimensión de compromiso."
     },
     {
       "exam_question_id": "6",
@@ -88,7 +88,7 @@
       "marked_option_text": "Conllevan diferentes tendencias de acción.",
       "correct_option": "A",
       "correct_option_text": "Conllevan diferentes tendencias de acción.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Conllevan diferentes tendencias de acción."
+      "explanation": "La culpa genera tendencias de acción orientadas al acercamiento, la disculpa y la reparación del daño infligido. Por el contrario, la vergüenza genera tendencias de evitación, interrupción de la acción y deseo de ocultarse del escrutinio y desaprobación ajena."
     },
     {
       "exam_question_id": "7",
@@ -99,7 +99,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "Las expresiones emocionales están fuertemente reguladas por normas socioculturales (reglas de despliegue). El manual expone que en el caso de la alegría, su expresión verbal y no verbal (sonrisas plenas, risas) se produce de manera mucho más libre y desinhibida cuando interactuamos en contextos de alta intimidad social o familiar."
     },
     {
       "exam_question_id": "8",
@@ -110,7 +110,7 @@
       "marked_option_text": "Subsistema de soporte.",
       "correct_option": "B",
       "correct_option_text": "Subsistema de soporte.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Subsistema de soporte."
+      "explanation": "En el modelo de Scherer, el 'subsistema de soporte' cumple la función de la regulación fisiológica; es el encargado de movilizar la energía metabólica y generar las activaciones periféricas necesarias para preparar físicamente al organismo frente a acciones de aproximación o evitación (tendencias de acción)."
     },
     {
       "exam_question_id": "9",
@@ -121,7 +121,7 @@
       "marked_option_text": "Minimice la carga emocional negativa y/o maximice una ganancia emocional.",
       "correct_option": "A",
       "correct_option_text": "Minimice la carga emocional negativa y/o maximice una ganancia emocional.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Minimice la carga emocional negativa y/o maximice una ganancia emocional."
+      "explanation": "Esta ley indica que el procesamiento evaluativo no es imparcial. Ante la ambigüedad, sesgamos nuestra interpretación cognitiva hacia alternativas que consigan reducir el sufrimiento (menor carga emocional) o que eleven nuestra autoestima y placer (mayor beneficio)."
     },
     {
       "exam_question_id": "10",
@@ -132,7 +132,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "Una de las técnicas metodológicas más sólidas para testar empíricamente la hipótesis del feedback facial exige a los participantes tratar de inhibir o, por el contrario, exagerar intencionalmente su musculatura facial ante un estímulo, comprobando luego si este acto altera la intensidad de sus vivencias subjetivas."
     },
     {
       "exam_question_id": "11",
@@ -143,7 +143,7 @@
       "marked_option_text": "Eje de activación.",
       "correct_option": "B",
       "correct_option_text": "Eje de activación.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Eje de activación."
+      "explanation": "Los modelos dimensionales estructuran el espacio afectivo en dos ejes principales. Mientras la valencia determina el nivel de agrado/desagrado, el eje de activación (o arousal) hace referencia a si la emoción cursa con una elevada o baja intensidad de movilización fisiológica y tensión."
     },
     {
       "exam_question_id": "12",
@@ -154,7 +154,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "El paradigma de redes asociativas de Bower (1981) enfrentó severas críticas debido a su estructura excesivamente uniforme. Asumir un único código o nodo abstracto para integrar elementos de naturaleza tan diversa (cambios viscerales físicos frente a recuerdos abstractos o valoraciones subjetivas) se consideró un modelo reduccionista."
     },
     {
       "exam_question_id": "13",
@@ -165,7 +165,7 @@
       "marked_option_text": "Sensación de desasosiego y malestar.",
       "correct_option": "B",
       "correct_option_text": "Sensación de desasosiego y malestar.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Sensación de desasosiego y malestar."
+      "explanation": "Fenomenológicamente, el miedo provoca una fuerte experiencia emocional de cariz aversivo. Su efecto subjetivo prototípico se describe como una aguda sensación de tensión, desasosiego, malestar, preocupación por la propia seguridad y sensación de pérdida de control."
     },
     {
       "exam_question_id": "14",
@@ -176,7 +176,7 @@
       "marked_option_text": "Interviene en el afrontamiento como elemento motivador de las acciones a tomar.",
       "correct_option": "B",
       "correct_option_text": "Interviene en el afrontamiento como elemento motivador de las acciones a tomar.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Interviene en el afrontamiento como elemento motivador de las acciones a tomar."
+      "explanation": "En el contexto del procesamiento ansioso, la preocupación no es puramente inútil o neutralizadora. Funciona como un componente proactivo y anticipatorio (sesgo de expectativa) que motiva al sujeto a prepararse, recabar recursos y diseñar un plan de afrontamiento ante futuros eventos amenazantes."
     },
     {
       "exam_question_id": "15",
@@ -187,7 +187,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "Existe amplia evidencia que sostiene la 'hipótesis de deshacer' (undoing effect) propuesta en el manual. El afecto positivo, como la alegría o el humor, contrarresta rápidamente la hiperactivación autonómica generada por emociones negativas como el estrés o el miedo, facilitando el restablecimiento homeostático."
     },
     {
       "exam_question_id": "16",
@@ -198,7 +198,7 @@
       "marked_option_text": "A un modelo que explica la agresión como resultado de un desequilibrio entre impulsividad y control inhibitorio.",
       "correct_option": "A",
       "correct_option_text": "Al solapamiento en las definiciones de ira, hostilidad y agresión.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Al solapamiento en las definiciones de ira, hostilidad y agresión."
+      "explanation": "Spielberger definió el 'Síndrome AHI' para evidenciar y agrupar la estrecha interconexión empírica, clínica y teórica que existe en la literatura entre las actitudes hostiles, el afecto de la ira y el comportamiento abierto de agresión."
     },
     {
       "exam_question_id": "17",
@@ -209,7 +209,7 @@
       "marked_option_text": "Una atribución interna de carácter global.",
       "correct_option": "A",
       "correct_option_text": "Una atribución interna de carácter global.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Una atribución interna de carácter global."
+      "explanation": "Dentro de los modelos atribucionales, cuando una persona realiza una acción transgresora y realiza una evaluación o atribución interna y global referida a todo su ego ('soy una mala persona'), emerge la vergüenza. Si la evaluación es focalizada sobre la acción puntual, surge la culpa."
     },
     {
       "exam_question_id": "18",
@@ -220,7 +220,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "La activación fisiológica del miedo es flexible y depende de la demanda de la tarea. Ante una amenaza que exige huida, se dispara una hiperactivación cardiovascular brusca (aumento cardíaco). Si la mejor estrategia es la inmovilidad (freezing), se evidencia desaceleración cardíaca (bradicardia) para pasar desapercibido."
     },
     {
       "exam_question_id": "19",
@@ -231,7 +231,7 @@
       "marked_option_text": "Automáticos.",
       "correct_option": "A",
       "correct_option_text": "Automáticos.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Automáticos."
+      "explanation": "Arne Öhman utilizó estímulos preparados evolutivamente y técnicas de enmascaramiento visual ('masking') para demostrar la primacía afectiva; es decir, evidenció que los procesos afectivos frente a amenazas pueden desencadenarse de manera inconsciente, primaria y totalmente automática."
     },
     {
       "exam_question_id": "20",
@@ -242,7 +242,7 @@
       "marked_option_text": "Agrado intrínseco y Relevancia de la meta.",
       "correct_option": "B",
       "correct_option_text": "Causalidad y Probabilidad de resultado.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Causalidad y Probabilidad de resultado."
+      "explanation": "En el modelo secuencial de Scherer, una vez superado el primer chequeo de relevancia, entra en juego el filtro de 'implicación o significado', donde la persona evalúa factores complejos como la causalidad/agencia detrás del suceso y la probabilidad de resultado que este acarrea sobre sus metas."
     },
     {
       "exam_question_id": "21",
@@ -253,7 +253,7 @@
       "marked_option_text": "Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea.",
       "correct_option": "B",
       "correct_option_text": "Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Los juicios de reconocimiento sean realizados por individuos sin experiencia previa en la tarea."
+      "explanation": "Para asegurar que el reconocimiento universal de emociones se deba a mecanismos innatos y no a un aprendizaje intercultural influenciado por los medios, los experimentos requieren usar como jueces a miembros de culturas remotas o sin experiencia ni exposición previa a dichas expresiones."
     },
     {
       "exam_question_id": "22",
@@ -264,7 +264,7 @@
       "marked_option_text": "La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI).",
       "correct_option": "B",
       "correct_option_text": "La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI).",
-      "explanation": "Según la plantilla oficial, la opción correcta es: La información que llega a la amígdala directamente desde el tálamo es suficiente para que se forme la asociación entre el tono (EC) y el shock (EI)."
+      "explanation": "Los estudios de Joseph LeDoux confirmaron la existencia de una 'vía rápida'. Al lesionar el córtex el condicionamiento auditivo se mantenía intacto, demostrando que la ruta directa que viaja desde el tálamo sensorial a la amígdala basta para establecer emparejamientos asociativos básicos y rápidos ante el peligro."
     },
     {
       "exam_question_id": "23",
@@ -275,7 +275,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "El procesamiento automático o 'bottom-up' se define precisamente por ser rápido, impulsado de abajo hacia arriba directamente por los datos perceptivos crudos, resistente al control volitivo y exento del requerimiento consciente de procesamiento superior."
     },
     {
       "exam_question_id": "24",
@@ -286,7 +286,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "La tristeza cuenta entre sus elicitadores no sólo con las pérdidas personales materiales o afectivas, sino también con el fracaso o adversidad ajena observada. A través de la empatía, el sufrimiento de otra persona induce vicariamente un proceso emocional de tristeza."
     },
     {
       "exam_question_id": "25",
@@ -297,7 +297,7 @@
       "marked_option_text": "Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo.",
       "correct_option": "A",
       "correct_option_text": "Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Es un cambio puntual que se produce en un determinado momento y con una duración delimitada en el tiempo."
+      "explanation": "La emoción como 'proceso' denota un estado fásico, un suceso episódico, transitorio y agudo que posee un inicio y un declive claro en el tiempo. Por el contrario, la emoción entendida como 'rasgo' subyace a variables estables y crónicas propias de la personalidad."
     },
     {
       "exam_question_id": "26",
@@ -308,7 +308,7 @@
       "marked_option_text": "Los desafíos intermedios producen mayor satisfacción.",
       "correct_option": "B",
       "correct_option_text": "Los desafíos intermedios producen mayor satisfacción.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Los desafíos intermedios producen mayor satisfacción."
+      "explanation": "La relación óptima entre motivación y felicidad se da cuando las metas a alcanzar suponen un desafío equilibrado. Según los modelos del flujo y bienestar (ej. Csikszentmihalyi), los retos intermedios o moderadamente desafiantes maximizan el bienestar porque permiten igualar el desafío con el nivel de habilidad personal."
     },
     {
       "exam_question_id": "27",
@@ -319,7 +319,7 @@
       "marked_option_text": "La culpa.",
       "correct_option": "B",
       "correct_option_text": "La culpa.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: La culpa."
+      "explanation": "Como emoción sociomoral, la culpa resulta constructiva para la cohesión grupal. Mantiene a la persona focalizada y ligada activa al evento para tratar de pedir disculpas, reparar los daños provocados y restaurar su vínculo afectivo con los demás."
     },
     {
       "exam_question_id": "28",
@@ -330,7 +330,7 @@
       "marked_option_text": "La existencia de patrones específicos de respuesta asociadas a cada emoción.",
       "correct_option": "A",
       "correct_option_text": "La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: La existencia de centros específicos en el sistema nervioso central responsables de la experiencia emocional."
+      "explanation": "En oposición a las tesis periféricas previas, el modelo neurofisiológico centralista de Cannon y Bard postuló que la experiencia emocional no deviene del feedback visceral, sino de la excitación de centros específicos en el sistema nervioso central (como el diencéfalo o tálamo) que dirigen simultáneamente la emoción y la activación periférica."
     },
     {
       "exam_question_id": "29",
@@ -341,7 +341,7 @@
       "marked_option_text": "",
       "correct_option": "B",
       "correct_option_text": "Y nos facilita la comparación y replicación de resultados de otros estudios.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Y nos facilita la comparación y replicación de resultados de otros estudios."
+      "explanation": "El valor fundamental de utilizar repositorios estandarizados a nivel mundial como el IAPS radica en que eliminan la varianza no controlada del material, facilitando que diferentes laboratorios comparen sus datos, repliquen hallazgos y operen bajo idénticos parámetros de valencia y activación."
     },
     {
       "exam_question_id": "30",
@@ -352,7 +352,7 @@
       "marked_option_text": "Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo.",
       "correct_option": "A",
       "correct_option_text": "Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Influencias recíprocas de la amígdala y las estructuras corticales superiores responsables del procesamiento cognitivo."
+      "explanation": "En los trastornos de ansiedad, se establece un círculo vicioso de patología debido a las extensas influencias recíprocas (loops) entre la amígdala (reactividad autónoma) y la corteza prefrontal/estructuras corticales (evaluación cognitiva y rumiación), retroalimentando constantemente la señal de peligro."
     },
     {
       "exam_question_id": "31",
@@ -363,7 +363,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "Diversos trabajos evidencian que el estado de ánimo positivo relaja los límites de las categorías cognitivas e incrementa la flexibilidad, permitiendo a la persona incluir elementos atípicos o de parecido marginal dentro de un mismo grupo semántico o toma de decisión."
     },
     {
       "exam_question_id": "32",
@@ -374,7 +374,7 @@
       "marked_option_text": "Dirigen su atención para obtener más información sobre la información amenazante.",
       "correct_option": "B",
       "correct_option_text": "Dirigen su atención para obtener más información sobre la información amenazante.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Dirigen su atención para obtener más información sobre la información amenazante."
+      "explanation": "En contraste directo con los individuos represores (que emplean la evitación cognitiva), el estilo de afrontamiento sensibilizador basa su mecanismo en una vigilancia atencional y de monitorización continua, enfocándose incansablemente en extraer toda la información posible del estímulo fóbico."
     },
     {
       "exam_question_id": "33",
@@ -385,7 +385,7 @@
       "marked_option_text": "Los procesos de evaluación y atribución interna de la conducta.",
       "correct_option": "B",
       "correct_option_text": "Los procesos de evaluación y atribución interna de la conducta.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Los procesos de evaluación y atribución interna de la conducta."
+      "explanation": "El manual subraya que emociones como la culpa o la vergüenza no dependen de instigadores físicos invariables como las emociones primarias, sino de la introspección compleja y del proceso reflexivo a través del cual la persona juzga su propia conducta a nivel interno según normativas morales."
     },
     {
       "exam_question_id": "34",
@@ -396,7 +396,7 @@
       "marked_option_text": "Novedad y agrado intrínseco.",
       "correct_option": "A",
       "correct_option_text": "Significación, afrontamiento y normas.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Novedad y agrado intrínseco."
+      "explanation": "Dentro de los chequeos secuenciales de valoración (SECs) aportados por Klaus Scherer, las primeras dimensiones básicas y automáticas que procesan la relevancia inmediata del acontecimiento son precisamente la significación y el afrontamiento."
     },
     {
       "exam_question_id": "35",
@@ -407,7 +407,7 @@
       "marked_option_text": "Falso.",
       "correct_option": "B",
       "correct_option_text": "Falso.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Falso."
+      "explanation": "Los resultados empíricos mostraron justamente lo contrario: nuestro cerebro posee un sesgo para localizar amenazas ('efecto cara en la multitud'). Por ende, los tiempos o latencias de reacción son consistentemente menores al detectar rostros negativos o de enfado frente a caras alegres."
     },
     {
       "exam_question_id": "36",
@@ -418,7 +418,7 @@
       "marked_option_text": "Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos.",
       "correct_option": "A",
       "correct_option_text": "Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos."
+      "explanation": "La perspectiva cognitiva de la valoración asume que cada cualidad emocional distintiva (ira, miedo, alegría) no nace de un simple cambio periférico, sino de una arquitectura o configuración específica de evaluaciones subjetivas respecto al modo en que la situación afecta nuestras metas."
     },
     {
       "exam_question_id": "37",
@@ -429,7 +429,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "Aunque a menudo se etiquete como negativa, la función evolutiva de la ira ostenta un inmenso valor de adaptación y de supervivencia. Promueve la autoprotección, defiende los intereses individuales y suministra una vigorosa inyección de energía útil ante adversidades u obstáculos físicos y sociales."
     },
     {
       "exam_question_id": "38",
@@ -440,7 +440,7 @@
       "marked_option_text": "Una disminución en la función serotoninérgica.",
       "correct_option": "A",
       "correct_option_text": "Una disminución en la función serotoninérgica.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Una disminución en la función serotoninérgica."
+      "explanation": "A nivel fisiológico, el manual señala que la hostilidad persistente se caracteriza por una reactividad autonómica elevada del sistema nervioso y por un claro déficit metabólico en la función serotoninérgica, lo que merma la regulación e inhibición de los impulsos."
     },
     {
       "exam_question_id": "39",
@@ -451,7 +451,7 @@
       "marked_option_text": "Procedimiento del enmascaramiento hacia atrás.",
       "correct_option": "B",
       "correct_option_text": "Inducción hipnótica de estados emocionales.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Inducción hipnótica de estados emocionales."
+      "explanation": "Bower, artífice del modelo de redes asociativas, solía diseñar sus investigaciones de laboratorio induciendo transitoriamente estados de ánimo como la tristeza o la alegría a sus sujetos a través de sugestión hipnótica, estudiando posteriormente sus efectos sobre la memoria humana."
     },
     {
       "exam_question_id": "40",
@@ -462,7 +462,7 @@
       "marked_option_text": "Verdadero.",
       "correct_option": "A",
       "correct_option_text": "Verdadero.",
-      "explanation": "Según la plantilla oficial, la opción correcta es: Verdadero."
+      "explanation": "A nivel funcional, la reducción del tono vital general de la tristeza brinda el escenario óptimo para la reflexión pausada, el análisis autocrítico del evento perdido e induce una conducta prosocial manifestada en forma de demandas o peticiones de amparo en el entorno grupal afectivo."
     }
   ]
 }
