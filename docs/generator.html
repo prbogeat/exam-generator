@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Exámenes</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/generator.css">
+</head>
+<body>
+  <nav style="padding: 1rem; background: #f5f5f5; border-bottom: 1px solid #ddd; margin-bottom: 2rem;">
+    <a href="index.html" style="text-decoration: none; color: #333;">← Volver a Exámenes</a>
+  </nav>
+
+  <main style="max-width: 900px; margin: 0 auto; padding: 2rem;">
+    <h1>Generador de Exámenes</h1>
+    <p style="color: #666; margin-bottom: 2rem;">Crea nuevos exámenes seleccionando presets o configurando valores manualmente.</p>
+
+    <div id="generatorContainer" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <!-- Panel de configuración -->
+      <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
+        <h2 style="margin-top: 0;">Configuración</h2>
+
+        <!-- Selector de presets -->
+        <div style="margin-bottom: 1.5rem;">
+          <label for="presetSelector">Preset:</label>
+          <select id="presetSelector" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+            <option value="">-- Seleccionar preset --</option>
+          </select>
+        </div>
+
+        <!-- Archivo de entrada -->
+        <div style="margin-bottom: 1.5rem;">
+          <label for="inputFile">Archivo de entrada JSON:</label>
+          <input type="file" id="inputFile" accept=".json" style="width: 100%; margin-top: 0.5rem;">
+          <small style="display: block; color: #666; margin-top: 0.5rem;" id="inputPathHint">Ruta esperada: -</small>
+        </div>
+
+        <!-- Información del examen -->
+        <div style="margin-bottom: 1.5rem;">
+          <label for="subjectTitle">Título de Asignatura:</label>
+          <input type="text" id="subjectTitle" placeholder="Ej: Fundamentos de Psicobiología" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="examTitle">Título del Examen:</label>
+          <input type="text" id="examTitle" placeholder="Ej: UNED - Junio 2026" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="subtitle">Subtítulo:</label>
+          <input type="text" id="subtitle" placeholder="Ej: 30 Tipo Test - Examen Tipo" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="notice">Aviso:</label>
+          <textarea id="notice" placeholder="Instrucciones o notas especiales..." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box; min-height: 80px;"></textarea>
+        </div>
+      </div>
+
+      <!-- Panel de parámetros -->
+      <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
+        <h2 style="margin-top: 0;">Parámetros</h2>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="numberOfQuestions">Número de preguntas:</label>
+          <input type="number" id="numberOfQuestions" min="1" max="500" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="maxScore">Puntuación máxima:</label>
+          <input type="number" id="maxScore" min="0" step="0.5" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="wrongAnswersPerDiscountedCorrect">Errores por acierto descontado:</label>
+          <input type="number" id="wrongAnswersPerDiscountedCorrect" min="0" step="0.5" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="timeLimitMinutes">Tiempo límite (minutos):</label>
+          <input type="number" id="timeLimitMinutes" min="1" max="480" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem;">
+            <input type="checkbox" id="randomSelection">
+            Selección aleatoria de preguntas
+          </label>
+        </div>
+
+        <!-- Ruta de salida -->
+        <div style="margin-bottom: 1.5rem;">
+          <label for="outputPath">Ruta de salida:</label>
+          <input type="text" id="outputPath" placeholder="out/examenes/asignatura/examen.json" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+          <small style="display: block; color: #666; margin-top: 0.5rem;">Ruta relativa desde el directorio raíz</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel de acciones -->
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
+      <button id="generateBtn" style="padding: 0.75rem 1.5rem; font-size: 1rem; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 1rem;">
+        Generar Examen
+      </button>
+      <button id="resetBtn" style="padding: 0.75rem 1.5rem; font-size: 1rem; background: #ccc; color: #333; border: none; border-radius: 4px; cursor: pointer;">
+        Limpiar
+      </button>
+    </div>
+
+    <!-- Estado -->
+    <div id="statusBox" style="margin-top: 2rem; padding: 1rem; border-radius: 4px; display: none;" data-tone="neutral">
+      <p id="statusText"></p>
+    </div>
+  </main>
+
+  <script src="data/presets.json"></script>
+  <script src="assets/js/generator.js"></script>
+</body>
+</html>

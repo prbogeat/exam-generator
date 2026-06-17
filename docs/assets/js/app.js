@@ -33,6 +33,7 @@ const dom = {
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
   loadDefaultData: document.getElementById("loadDefaultData"),
+  saveAnswers: document.getElementById("saveAnswers"),
   examFileInput: document.getElementById("examFileInput"),
   answersFileInput: document.getElementById("answersFileInput"),
 };
@@ -117,6 +118,57 @@ function setControlsState() {
   dom.gradeBottom.disabled = !hasExam || state.submitted;
   dom.resetTop.disabled = !hasExam;
   dom.resetBottom.disabled = !hasExam;
+  dom.saveAnswers.disabled = !hasExam;
+}
+
+function slugifyFilename(text) {
+  return String(text || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase();
+}
+
+function buildRealizedExamPayload() {
+  if (!state.exam) {
+    throw new Error("No hay examen cargado.");
+  }
+
+  return {
+    subject: state.exam.subjectTitle || "Asignatura",
+    type: state.exam.examTitle || "Examen",
+    date: new Date().toISOString().slice(0, 10),
+    description: state.exam.subtitle || "",
+    questions: state.exam.questions.map((question) => ({
+      id: question.id,
+      text: question.text,
+      marked_option: state.answers[String(question.id)] || "",
+    })),
+  };
+}
+
+function saveAnswersToJson() {
+  try {
+    const payload = buildRealizedExamPayload();
+    const jsonText = JSON.stringify(payload, null, 2);
+    const blob = new Blob([jsonText], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    const subject = slugifyFilename(payload.subject) || "asignatura";
+    const exam = slugifyFilename(payload.type) || "examen";
+    a.href = url;
+    a.download = `${subject}-${exam}-realizado.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+
+    setDataStatus(`Respuestas guardadas en JSON (${a.download}).`, "neutral");
+  } catch (error) {
+    setDataStatus(`No se pudieron guardar respuestas: ${error.message}`, "error");
+  }
 }
 
 function updateStaticTexts() {
@@ -676,6 +728,8 @@ function bindEvents() {
   dom.loadDefaultData.addEventListener("click", () => {
     loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
   });
+
+  dom.saveAnswers.addEventListener("click", saveAnswersToJson);
 
   dom.examFileInput.addEventListener("change", (event) => {
     const file = event.target.files && event.target.files[0];

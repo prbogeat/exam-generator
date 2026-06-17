@@ -1,0 +1,84 @@
+/* Estilos para el generador de exámenes */
+
+#generatorContainer input[type="text"],
+#generatorContainer input[type="number"],
+#generatorContainer select,
+#generatorContainer textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+#generatorContainer input[type="text"]:focus,
+#generatorContainer input[type="number"]:focus,
+#generatorContainer select:focus,
+#generatorContainer textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+#generatorContainer label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+#statusBox {
+  border-left: 4px solid #ccc;
+  background: #f9f9f9;
+}
+
+#statusBox[data-tone="neutral"] {
+  border-left-color: #999;
+  background: #f9f9f9;
+}
+
+#statusBox[data-tone="success"] {
+  border-left-color: #4CAF50;
+  background: #f1f8f4;
+  color: #2d5a39;
+}
+
+#statusBox[data-tone="error"] {
+  border-left-color: #f44336;
+  background: #fdf1f0;
+  color: #7a2220;
+}
+
+#statusText {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+button {
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#resetBtn:hover {
+  background: #aaa !important;
+}
+
+@media (max-width: 768px) {
+  #generatorContainer {
+    grid-template-columns: 1fr;
+  }
+}

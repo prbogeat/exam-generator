@@ -1,0 +1,41 @@
+{
+  "psicobiologia-parcial-2": {
+    "subjectTitle": "Fundamentos de Psicobiología",
+    "examTitle": "UNED - Parcial 2",
+    "subtitle": "30 Tipo Test - Examen Tipo",
+    "notice": "Preguntas del examen de Junio - Fundamentos de Psicobiología de la UNED - Parcial 2",
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "timeLimitMinutes": 90,
+    "numberOfQuestions": 30,
+    "randomSelection": false,
+    "input_path_parts": ["psicobiologia", "Parcial 2", "Examen preset.json"],
+    "output_path_parts": ["psicobiologia", "Parcial 2", "Examen preset.json"]
+  },
+  "psicobiologia-parcial-1": {
+    "subjectTitle": "Fundamentos de Psicobiología",
+    "examTitle": "UNED - Parcial 1",
+    "subtitle": "30 Tipo Test - Examen Tipo",
+    "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "timeLimitMinutes": 90,
+    "numberOfQuestions": 30,
+    "randomSelection": false,
+    "input_path_parts": ["psicobiologia", "Parcial 1", "Examen preset.json"],
+    "output_path_parts": ["psicobiologia", "Parcial 1", "Examen preset.json"]
+  },
+  "emocion": {
+    "subjectTitle": "Psicología de la Emoción",
+    "examTitle": "UNED - Junio",
+    "subtitle": "40 Tipo Test",
+    "notice": "Examen de Psicología de laEmoción",
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 1.0,
+    "timeLimitMinutes": 90,
+    "numberOfQuestions": 40,
+    "randomSelection": false,
+    "input_path_parts": ["emocion", "preguntas_psicologia_emocion_uned.json"],
+    "output_path_parts": ["emocion", "examen-emocion.json"]
+  }
+}
