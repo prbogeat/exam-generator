@@ -8,6 +8,7 @@ Proyecto para generar y corregir examenes tipo test en JSON.
 - `corregir_examen.py`: corrige un examen realizado contra un examen base y genera informes.
 - `docs/index.html`: visor/corrector en navegador para examenes JSON.
 - `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
+- `exam_presets.py`: presets compartidos de ruta y configuracion por asignatura.
 
 ## Estructura recomendada
 
@@ -25,6 +26,17 @@ out/
 ## 1) Generar examen (`generar_examen.py`)
 
 Edita la seccion `CONFIG` del script y ejecuta.
+
+### Modo preset
+
+Si `PRESET` tiene valor, el script toma de `exam_presets.py` la configuracion de la asignatura, la penalizacion, la nota maxima, el numero de preguntas y las rutas base.
+
+La ruta se compone de dos partes:
+
+- raiz general: `input/banco_de_preguntas`
+- parte especifica del preset: por ejemplo `psicobiologia/Parcial 2/Examen Junio-2024.json`
+
+Lo mismo aplica para `out/examenes` e `input/examenes_realizados`.
 
 ### Opciones de CONFIG
 
@@ -75,6 +87,7 @@ Claves aceptadas para la respuesta marcada: `marked_option`, `markedOption`, `se
 
 ### CONFIG por defecto en `corregir_examen.py`
 
+- `PRESET`
 - `DEFAULT_EXAM_INPUT`
 - `DEFAULT_CORRECTION_FILE`
 - `DEFAULT_OUTPUT_DIR`
@@ -150,7 +163,8 @@ El `.json` sirve para procesado posterior y el `.md` para lectura rapida del inf
 ## 3) Uso web (`docs/index.html`)
 
 - Boton `Cargar JSON por defecto`: intenta cargar `data/examen-plantilla.json`.
-- Boton `Cargar otro JSON`: carga un archivo local manualmente.
+- Boton `Cargar examen JSON`: carga un examen generado localmente.
+- Boton `Cargar respuestas / realizado`: carga un JSON con `marked_option` y preselecciona respuestas sobre el examen cargado.
 
 Si abres `docs/index.html` con `file://`, los navegadores pueden bloquear `fetch` del JSON por defecto.
 Solucion: abrir con servidor HTTP local.

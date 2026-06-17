@@ -14,31 +14,68 @@ import random
 from pathlib import Path
 from typing import Any, Dict, List
 
+from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, build_path, get_preset
 
+# PRESETS
+# Configuraciones predefinidas según la asignatura o tipo de examen. Si se define una PRESET, se ignoran los valores individuales de CONFIG.
+PRESET = "psicobiologia-parcial-1"  # None = usar CONFIG manual.
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-INPUT_JSON = "input/banco_de_preguntas/psicobiologia/Examen-Junio-2026-Realizado.json"
-OUTPUT_JSON = "out/examenes/psicobiologia/Examen-Junio-2026-E-Realizado.json"
+DEFAULT_INPUT_JSON = "input/banco_de_preguntas/default/Preguntas-default.json"
+DEFAULT_OUTPUT_JSON = "out/examenes/default/Examen-default.json"
 
-SUBJECT_TITLE = "Fundamentos de Psicobiología"
-EXAM_TITLE = "UNED - Junio 2026 - Semana 1"
-SUBTITLE = "40 Tipo Test - Examen Tipo E"
-NOTICE = "Preguntas del examen de Junio 2026 - Fundamentos de Psicobiología de la UNED (Tipo E - Semana 2)"
+DEFAULT_SUBJECT_TITLE = "Asignatura sin definir"
+DEFAULT_EXAM_TITLE = "Examen UNED"
+DEFAULT_SUBTITLE = "Tipo Test - Examen"
+DEFAULT_NOTICE = "Preguntas del examen - UNED"
 
-MAX_SCORE = 10.0
-WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0
-TIME_LIMIT_MINUTES = 90
-FORMULA_TIP = ""  # Si se deja vacio, se autogenera.
-NUMBER_OF_QUESTIONS = 30  # 0 = usar todas las preguntas del JSON de entrada.
-RANDOM_SELECTION = False  # True = elegir preguntas al azar.
+DEFAULT_MAX_SCORE = 10.0
+DEFAULT_WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = 3.0
+DEFAULT_TIME_LIMIT_MINUTES = 90
+DEFAULT_FORMULA_TIP = ""  # Si se deja vacio, se autogenera.
+DEFAULT_NUMBER_OF_QUESTIONS = 30  # 0 = usar todas las preguntas del JSON de entrada.
+DEFAULT_RANDOM_SELECTION = False  # True = elegir preguntas al azar.
 RANDOM_SEED = None  # Ejemplo: 1234. En None, el resultado cambia en cada ejecucion.
 
 # Plantilla de examen realizado
 # True = generar tambien una plantilla vacia en input/examenes_realizados/<subject>/ para rellenar y corregir.
 GENERATE_TEMPLATE = True
 # Ruta de salida de la plantilla. Si se deja vacio, se deriva automaticamente del OUTPUT_JSON.
-TEMPLATE_OUTPUT_PATH = "input/examenes_realizados/psicobiologia/Examen-Junio-2026-E-Realizado.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi-plantilla.json"
+DEFAULT_TEMPLATE_OUTPUT_PATH = "input/examenes_realizados/default/Examen-default.json"  # Ejemplo: "input/examenes_realizados/default/mi-plantilla.json"
+
+PRESET_CONFIG = get_preset(PRESET)
+
+if PRESET_CONFIG:
+    INPUT_JSON = str(build_path(GENERAL_INPUT_ROOT, PRESET_CONFIG.get("input_path_parts")))
+    OUTPUT_JSON = str(build_path(GENERAL_OUTPUT_ROOT, PRESET_CONFIG.get("output_path_parts")))
+    SUBJECT_TITLE = str(PRESET_CONFIG.get("subjectTitle", DEFAULT_SUBJECT_TITLE))
+    EXAM_TITLE = str(PRESET_CONFIG.get("examTitle", DEFAULT_EXAM_TITLE))
+    SUBTITLE = str(PRESET_CONFIG.get("subtitle", DEFAULT_SUBTITLE))
+    NOTICE = str(PRESET_CONFIG.get("notice", DEFAULT_NOTICE))
+    MAX_SCORE = float(PRESET_CONFIG.get("maxScore", DEFAULT_MAX_SCORE))
+    WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = float(
+        PRESET_CONFIG.get("wrongAnswersPerDiscountedCorrect", DEFAULT_WRONG_ANSWERS_PER_DISCOUNTED_CORRECT)
+    )
+    TIME_LIMIT_MINUTES = int(PRESET_CONFIG.get("timeLimitMinutes", DEFAULT_TIME_LIMIT_MINUTES))
+    FORMULA_TIP = str(PRESET_CONFIG.get("formulaTip", DEFAULT_FORMULA_TIP))
+    NUMBER_OF_QUESTIONS = int(PRESET_CONFIG.get("numberOfQuestions", DEFAULT_NUMBER_OF_QUESTIONS))
+    RANDOM_SELECTION = bool(PRESET_CONFIG.get("randomSelection", DEFAULT_RANDOM_SELECTION))
+    TEMPLATE_OUTPUT_PATH = str(build_path(GENERAL_REALIZED_ROOT, PRESET_CONFIG.get("template_path_parts")))
+else:
+    INPUT_JSON = DEFAULT_INPUT_JSON
+    OUTPUT_JSON = DEFAULT_OUTPUT_JSON
+    SUBJECT_TITLE = DEFAULT_SUBJECT_TITLE
+    EXAM_TITLE = DEFAULT_EXAM_TITLE
+    SUBTITLE = DEFAULT_SUBTITLE
+    NOTICE = DEFAULT_NOTICE
+    MAX_SCORE = DEFAULT_MAX_SCORE
+    WRONG_ANSWERS_PER_DISCOUNTED_CORRECT = DEFAULT_WRONG_ANSWERS_PER_DISCOUNTED_CORRECT
+    TIME_LIMIT_MINUTES = DEFAULT_TIME_LIMIT_MINUTES
+    FORMULA_TIP = DEFAULT_FORMULA_TIP
+    NUMBER_OF_QUESTIONS = DEFAULT_NUMBER_OF_QUESTIONS
+    RANDOM_SELECTION = DEFAULT_RANDOM_SELECTION
+    TEMPLATE_OUTPUT_PATH = DEFAULT_TEMPLATE_OUTPUT_PATH
 
 
 def load_json(path: Path) -> Any:

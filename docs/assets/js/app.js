@@ -3,6 +3,8 @@ const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
 const state = {
   exam: null,
   answers: {},
+  importedAnswers: null,
+  importedAnswersSource: "",
   submitted: false,
   onlyErrors: false,
   elapsedMs: 0,
@@ -31,7 +33,8 @@ const dom = {
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
   loadDefaultData: document.getElementById("loadDefaultData"),
-  jsonFileInput: document.getElementById("jsonFileInput"),
+  examFileInput: document.getElementById("examFileInput"),
+  answersFileInput: document.getElementById("answersFileInput"),
 };
 
 function formatTime(ms) {
@@ -123,7 +126,7 @@ function updateStaticTexts() {
     dom.pageSubtitle.textContent =
       "Carga un JSON local o sirve esta carpeta por HTTP para cargar el JSON por defecto.";
     dom.noticeBox.textContent =
-      "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON.";
+      "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
   }
 
@@ -153,6 +156,25 @@ function computeGrade(correct, wrong) {
   return ((correct - wrong * penaltyPerWrong) / total) * getMaxScore();
 }
 
+function getMarkedOption(question) {
+  const possibleKeys = [
+    "marked_option",
+    "markedOption",
+    "selected_option",
+    "selectedOption",
+    "answer",
+    "respuesta",
+  ];
+
+  for (const key of possibleKeys) {
+    if (Object.prototype.hasOwnProperty.call(question, key)) {
+      return String(question[key] || "").trim().toUpperCase();
+    }
+  }
+
+  return "";
+}
+
 function getStats() {
   const answered = Object.keys(state.answers).length;
   const correct = (state.exam ? state.exam.questions : []).filter((question) => {
@@ -177,6 +199,28 @@ function updateProgress() {
 
   updateTimer();
   setControlsState();
+}
+
+function updateDataStatus() {
+  if (!state.exam) {
+    if (state.importedAnswers) {
+      setDataStatus(
+        `Respuestas cargadas: ${state.importedAnswersSource}. Falta cargar examen.`,
+        "neutral"
+      );
+      return;
+    }
+
+    setDataStatus("Fuente de datos: pendiente.", "neutral");
+    return;
+  }
+
+  const parts = [`Examen: ${state.exam.examTitle || "cargado"}`];
+  if (state.importedAnswers) {
+    parts.push(`Respuestas: ${state.importedAnswersSource}`);
+  }
+
+  setDataStatus(parts.join(" · "), "neutral");
 }
 
 function createOption(question, option) {
@@ -320,8 +364,14 @@ function renderQuestions() {
   updateProgress();
 }
 
-function resetExam(scrollToTop) {
-  state.answers = {};
+function resetExam(scrollToTop, keepImportedAnswers = true, hardReset = false) {
+  if (hardReset) {
+    state.answers = {};
+    state.importedAnswers = null;
+    state.importedAnswersSource = "";
+  } else {
+    state.answers = keepImportedAnswers && state.importedAnswers ? { ...state.importedAnswers } : {};
+  }
   state.submitted = false;
   state.onlyErrors = false;
   state.elapsedMs = 0;
@@ -338,6 +388,7 @@ function resetExam(scrollToTop) {
   dom.startTimer.textContent = "Iniciar contador";
 
   updateStaticTexts();
+  updateDataStatus();
   renderQuestions();
 
   if (scrollToTop) {
@@ -477,11 +528,59 @@ function normalizeExamData(data) {
   };
 }
 
+function normalizeRealizedExamData(data) {
+  if (!data || typeof data !== "object") {
+    throw new Error("El JSON de respuestas no contiene un objeto válido.");
+  }
+
+  if (!Array.isArray(data.questions)) {
+    throw new Error("El JSON de respuestas debe incluir un array questions.");
+  }
+
+  const answers = {};
+
+  data.questions.forEach((question, index) => {
+    if (!question || typeof question !== "object") {
+      throw new Error(`La respuesta ${index + 1} no es válida.`);
+    }
+
+    const questionId = String(question.id || index + 1).trim();
+    const markedOption = getMarkedOption(question);
+
+    if (questionId && markedOption) {
+      answers[questionId] = markedOption;
+    }
+  });
+
+  return {
+    label: String(data.type || data.examTitle || data.title || "examen realizado"),
+    answers,
+  };
+}
+
 function applyExamData(exam, sourceLabel) {
   state.exam = exam;
+  resetExam(false, true);
   updateStaticTexts();
-  setDataStatus(`Fuente de datos: ${sourceLabel}`, "neutral");
-  resetExam(false);
+  if (sourceLabel) {
+    setDataStatus(
+      `Examen cargado: ${sourceLabel}${state.importedAnswers ? ` · Respuestas: ${state.importedAnswersSource}` : ""}`,
+      "neutral"
+    );
+  } else {
+    updateDataStatus();
+  }
+}
+
+function applyRealizedAnswers(realized, sourceLabel) {
+  state.importedAnswers = realized.answers;
+  state.importedAnswersSource = sourceLabel;
+
+  if (state.exam) {
+    resetExam(false, true);
+  } else {
+    updateDataStatus();
+  }
 }
 
 async function loadExamFromUrl(url, label) {
@@ -498,6 +597,7 @@ async function loadExamFromUrl(url, label) {
   } catch (error) {
     if (!state.exam) {
       updateStaticTexts();
+      updateDataStatus();
       renderQuestions();
     }
 
@@ -520,7 +620,21 @@ async function loadExamFromFile(file) {
   } catch (error) {
     setDataStatus(`No se pudo leer ${file.name}: ${error.message}`, "error");
   } finally {
-    dom.jsonFileInput.value = "";
+    dom.examFileInput.value = "";
+  }
+}
+
+async function loadRealizedAnswersFromFile(file) {
+  setDataStatus(`Leyendo respuestas ${file.name}...`, "neutral");
+
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+    applyRealizedAnswers(normalizeRealizedExamData(data), file.name);
+  } catch (error) {
+    setDataStatus(`No se pudieron cargar respuestas desde ${file.name}: ${error.message}`, "error");
+  } finally {
+    dom.answersFileInput.value = "";
   }
 }
 
@@ -548,8 +662,8 @@ function bindEvents() {
   dom.startTimer.addEventListener("click", startTimer);
   dom.gradeTop.addEventListener("click", gradeExam);
   dom.gradeBottom.addEventListener("click", gradeExam);
-  dom.resetTop.addEventListener("click", () => resetExam(true));
-  dom.resetBottom.addEventListener("click", () => resetExam(true));
+  dom.resetTop.addEventListener("click", () => resetExam(true, true, true));
+  dom.resetBottom.addEventListener("click", () => resetExam(true, true, true));
 
   dom.toggleErrors.addEventListener("click", () => {
     state.onlyErrors = !state.onlyErrors;
@@ -563,10 +677,17 @@ function bindEvents() {
     loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
   });
 
-  dom.jsonFileInput.addEventListener("change", (event) => {
+  dom.examFileInput.addEventListener("change", (event) => {
     const file = event.target.files && event.target.files[0];
     if (file) {
       loadExamFromFile(file);
+    }
+  });
+
+  dom.answersFileInput.addEventListener("change", (event) => {
+    const file = event.target.files && event.target.files[0];
+    if (file) {
+      loadRealizedAnswersFromFile(file);
     }
   });
 }
@@ -574,6 +695,7 @@ function bindEvents() {
 function initializeApp() {
   bindEvents();
   updateStaticTexts();
+  updateDataStatus();
   renderQuestions();
   loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
 }

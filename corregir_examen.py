@@ -22,14 +22,29 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, cast
 
+from exam_presets import GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, GENERAL_REPORT_ROOT, build_path, get_preset
+
 
 # ============================
 # CONFIG (edita estos valores)
 # ============================
-DEFAULT_EXAM_INPUT = "input/examenes_realizados/psicobiologia/Parcial 2/Examen-Junio-2026-E-Realizado.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi_examen_realizado.json"
-DEFAULT_CORRECTION_FILE = "out/examenes/psicobiologia/Parcial 2/examen-hecho-correcion/Examen-Junio-2026-E-Realizado.json"
-DEFAULT_OUTPUT_DIR = "out/informes/psicobiologia"
+PRESET = "psicobiologia"  # None = usar defaults manuales.
+
+DEFAULT_EXAM_INPUT_MANUAL = "input/examenes_realizados/psicobiologia/Parcial 2/Examen-Junio-2026-E-Realizado.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi_examen_realizado.json"
+DEFAULT_CORRECTION_FILE_MANUAL = "out/examenes/psicobiologia/Parcial 2/examen-hecho-correcion/Examen-Junio-2026-E-Realizado.json"
+DEFAULT_OUTPUT_DIR_MANUAL = "out/informes/psicobiologia"
 DEFAULT_OUTPUT_PREFIX = "informe"
+
+PRESET_CONFIG = get_preset(PRESET)
+
+if PRESET_CONFIG:
+    DEFAULT_EXAM_INPUT = str(build_path(GENERAL_REALIZED_ROOT, PRESET_CONFIG.get("template_path_parts")))
+    DEFAULT_CORRECTION_FILE = str(build_path(GENERAL_OUTPUT_ROOT, PRESET_CONFIG.get("output_path_parts")))
+    DEFAULT_OUTPUT_DIR = str(build_path(GENERAL_REPORT_ROOT, PRESET_CONFIG.get("report_dir_parts")))
+else:
+    DEFAULT_EXAM_INPUT = DEFAULT_EXAM_INPUT_MANUAL
+    DEFAULT_CORRECTION_FILE = DEFAULT_CORRECTION_FILE_MANUAL
+    DEFAULT_OUTPUT_DIR = DEFAULT_OUTPUT_DIR_MANUAL
 
 
 def load_json(path: Path) -> Any:
