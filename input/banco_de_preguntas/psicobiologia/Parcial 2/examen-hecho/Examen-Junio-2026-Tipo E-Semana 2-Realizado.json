@@ -156,19 +156,6 @@
     "explicacion": "La regionalización transversal (patrón dorso-ventral) divide funcionalmente el tubo neural: las células que se establecen en la porción dorsal (placa alar) asumen el procesamiento de la información sensorial, mientras que las de la porción ventral (placa basal) se encargan de la coordinación motora."
   },
   {
-    "id": 13,
-    "tema": "Tema 8: Organización del SNC",
-    "pregunta": "Un investigador observa que una región cortical presenta capas granulares (I y IV) muy desarrolladas y recibe principalmente información procedente de núcleos específicos del tálamo. ¿Qué tipo de área cortical es más probable que esté analizando?",
-    "opciones": {
-      "a": "Área sensorial primaria.",
-      "b": "Área premotora.",
-      "c": "Área motora primaria.",
-      "d": "Área de asociación."
-    },
-    "correcta": "a",
-    "explicacion": "Las áreas sensoriales primarias de la neocorteza se caracterizan por una citoarquitectura fuertemente granular (koniocorteza), donde la capa IV es muy gruesa y densa debido a la masiva recepción de aferencias sensoriales que proceden de los núcleos de relevo específicos del tálamo."
-  },
-  {
     "id": 14,
     "tema": "Tema 14: Psiconeuroinmunología",
     "pregunta": "Una reacción inmunitaria moderada en el SNC puede ser neuroprotectora, pero una respuesta exacerbada y prolongada puede ser dañina. ¿Qué mecanismo explica este efecto perjudicial?",
