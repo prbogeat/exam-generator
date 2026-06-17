@@ -375,7 +375,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    script_dir = Path(__file__).resolve().parent
+    script_dir = Path(__file__).resolve().parent.parent  # raíz del proyecto (un nivel arriba de src/)
     exam_input_path = (script_dir / args.exam_input).resolve()
     correction_file_path = (script_dir / args.correction_file).resolve()
     output_dir = (script_dir / args.output_dir).resolve()
