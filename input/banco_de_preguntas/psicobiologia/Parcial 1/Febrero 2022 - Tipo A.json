@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "Los efectos inmediatos que se observan en las personas que han sufrido un ictus son debidos principalmente a que:",
+    "opciones": {
+      "a": "hay una ausencia brusca de oxígeno;",
+      "b": "se produce en un segundo un agotamiento de toda la glucosa almacenada en el encéfalo;",
+      "c": "se gastan las reservas de glucógeno del organismo inmediatamente;",
+      "d": "el glucógeno almacenado en el encéfalo no está disponible."
+    },
+    "correcta": "a",
+    "explicacion": "El encéfalo tiene una tasa metabólica muy alta pero carece prácticamente de reservas de oxígeno y glucosa (el glucógeno en astrocitos es mínimo). Por tanto, la interrupción del flujo sanguíneo en un ictus provoca una ausencia brusca e inmediata de oxígeno y glucosa, lo que desencadena rápidamente el daño neurológico."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "La especiación alopátrica:",
+    "opciones": {
+      "a": "es una de las formas de especiación por cladogénesis;",
+      "b": "se produce habitualmente sin aislamiento geográfico entre las poblaciones;",
+      "c": "suele ser consecuencia de la duplicación cromosómica en las células que forman los gametos",
+      "d": "todas las opciones anteriores son ciertas."
+    },
+    "correcta": "a",
+    "explicacion": "La especiación alopátrica (o geográfica) requiere la separación física de las poblaciones originando ramas evolutivas divergentes, lo que constituye un ejemplo clásico de cladogénesis. La opción B es falsa (requiere aislamiento geográfico) y la opción C describe la especiación simpátrica por poliploidía."
+  },
+  {
+    "id": 3,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "En una población existen dos tipos de individuos en función de la estrategia de interacción social que despliegan: los halcones y las palomas. Si V=1 (el beneficio de ganar una contienda) y C=4 (el coste que sufre un halcón cuando pierde una contienda), ¿qué porcentaje de palomas habrá en esa población en el contexto del Juego del Conflicto con Halcones y Palomas?:",
+    "opciones": {
+      "a": "25%;",
+      "b": "75%;",
+      "c": "50%;",
+      "d": "100%."
+    },
+    "correcta": "b",
+    "explicacion": "En una Estrategia Evolutivamente Estable (EEE) para el juego Halcón-Paloma, la proporción de halcones (p) es p = V/C. Aquí, p = 1/4 = 0,25 (25% de halcones). Como el resto de la población son palomas, el porcentaje será 100% - 25% = 75%."
+  },
+  {
+    "id": 4,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "¿Qué tipo de heredabilidad se podría calcular con los siguientes datos obtenidos en un estudio realizado en una población de ganado porcino respecto al peso de sus crías al nacer y cuál sería su valor para este rasgo?: Varianza genética aditiva (VGa)= 6; Varianza ambiental (VA)= 14 y una Varianza fenotípica (VT)= 20:",
+    "opciones": {
+      "a": "en sentido estricto (h2): 0,176;",
+      "b": "en sentido amplio (H2): 1;",
+      "c": "en sentido estricto (h2): 0,30;",
+      "d": "en sentido amplio (H2): 0,43."
+    },
+    "correcta": "c",
+    "explicacion": "La heredabilidad en sentido estricto (h2) es la proporción de la varianza fenotípica (VT) que se debe exclusivamente a la varianza genética aditiva (VGa). Se calcula dividiendo h2 = VGa / VT. En este caso: 6 / 20 = 0,30."
+  },
+  {
+    "id": 5,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "En el proceso del potencial de acción neuronal, el período refractario absoluto es una consecuencia de:",
+    "opciones": {
+      "a": "la apertura de los canales de cloro dependientes de voltaje;",
+      "b": "el cierre de los canales de sodio dependientes de voltaje;",
+      "c": "la inactivación de los canales de sodio dependiente de voltaje;",
+      "d": "la activación de los canales de sodio dependientes de voltaje."
+    },
+    "correcta": "c",
+    "explicacion": "El período refractario absoluto, durante el cual es imposible generar un nuevo potencial de acción sin importar la intensidad del estímulo, se debe a que los canales de Na+ dependientes de voltaje se encuentran en estado inactivado tras la despolarización, y requieren que la membrana se repolarice antes de volver a estar listos para abrirse."
+  },
+  {
+    "id": 6,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Se han identificado síndromes de origen genético en la especie humana relacionados con el fenómeno de impresión genómica. Dicho fenómeno:",
+    "opciones": {
+      "a": "explica la inactivación de uno de los dos cromosomas X de las hembras;",
+      "b": "explica la baja estatura de las personas con síndrome de Turner;",
+      "c": "sólo se da en hembras;",
+      "d": "constituye un ejemplo de herencia epigenética."
+    },
+    "correcta": "d",
+    "explicacion": "La impresión o impronta genómica consiste en la expresión diferencial de un gen dependiendo de si se ha heredado del padre o de la madre, causado habitualmente por metilaciones del ADN en las células germinales parentales. Es, por tanto, un claro ejemplo de herencia epigenética (factores que alteran la expresión génica sin cambiar la secuencia de ADN)."
+  },
+  {
+    "id": 7,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "En su Teoría de la evolución Darwin consideró que los individuos más aptos son aquellos cuya descendencia directa representa el mayor porcentaje de la población en la siguiente generación, lo que significa que presentan:",
+    "opciones": {
+      "a": "mayor aptitud inclusiva;",
+      "b": "menor coeficiente de selección;",
+      "c": "mayor valor selectivo o éxito reproductivo;",
+      "d": "B y C son ciertas."
+    },
+    "correcta": "d",
+    "explicacion": "El éxito reproductivo de un individuo, su capacidad de dejar descendientes (valor selectivo o eficacia biológica, w), está inversamente relacionado con el coeficiente de selección (s = 1 - w). Por lo tanto, los individuos que aportan un mayor porcentaje a la siguiente generación tienen mayor éxito reproductivo (C) y, en consecuencia, un menor coeficiente de selección en su contra (B)."
+  },
+  {
+    "id": 8,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "En el SN central:",
+    "opciones": {
+      "a": "las espinas dendríticas no son estructuras sinápticas;",
+      "b": "las neuronas son más abundantes que las células gliales en todas sus estructuras;",
+      "c": "el citoesqueleto no participa en el transporte de sustancias de un lugar a otro de la neurona;",
+      "d": "la plasticidad neural se relaciona con el aprendizaje y la memoria."
+    },
+    "correcta": "d",
+    "explicacion": "La neuroplasticidad, que implica cambios morfológicos y funcionales de las conexiones (como la creación o remodelación de espinas dendríticas), es el sustrato biológico subyacente que permite asentar el aprendizaje y almacenar los recuerdos en el sistema nervioso. (Las demás opciones son falsas: la glía es más numerosa, las espinas sí son sinápticas y el citoesqueleto sí transporta sustancias)."
+  },
+  {
+    "id": 9,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "Las pautas de acción fija son autoinhibidas porque:",
+    "opciones": {
+      "a": "se inducen por un estímulo desencadenador innato;",
+      "b": "independientemente de las circunstancias, la secuencia de reflejos finaliza;",
+      "c": "el hecho de que se despliegue una vez hace que sea más difícil provocarla una segunda vez;",
+      "d": "son exhibidas por todos los miembros de la especie."
+    },
+    "correcta": "c",
+    "explicacion": "Entre las propiedades definitorias de una Pauta de Acción Fija (PAF), se encuentra que la probabilidad de que se desencadene disminuye o se inhibe temporalmente inmediatamente después de haberse manifestado. Es decir, una vez exhibida la conducta, hace falta un tiempo de reposo para poder provocarla de nuevo con igual facilidad."
+  },
+  {
+    "id": 10,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Al final del potencial de acción ocurre una hiperpolarización que es consecuencia de:",
+    "opciones": {
+      "a": "el cierre de los canales de sodio;",
+      "b": "la salida de iones sodio;",
+      "c": "la inactivación de los canales de sodio dependientes de voltaje;",
+      "d": "la acumulación de iones potasio en el exterior de la membrana celular."
+    },
+    "correcta": "d",
+    "explicacion": "La hiperpolarización transitoria que ocurre al finalizar el potencial de acción se produce porque los canales de potasio dependientes de voltaje se cierran lentamente, permitiendo que continúe un exceso de salida de K+ que se acumula fuera, provocando que el interior de la membrana alcance valores temporales más negativos que el potencial de reposo normal."
+  },
+  {
+    "id": 11,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "En función de su lugar de origen y teniendo en cuenta las áreas que inerva, indique qué número de la Figura 1 se corresponde con el nervio trigémino (V):",
+    "opciones": {
+      "a": "2;",
+      "b": "3;",
+      "c": "5;",
+      "d": "7."
+    },
+    "correcta": "a",
+    "explicacion": "Basándose en los atlas anatómicos, el nervio trigémino (V par craneal) es un grueso nervio mixto que nace a nivel del puente (protuberancia) y se ramifica hacia el rostro para recoger la sensibilidad facial y proporcionar la inervación motora de los músculos de la masticación (representado clásicamente apuntando hacia las zonas faciales con el nº 2)."
+  },
+  {
+    "id": 12,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "En relación con la heredabilidad sabemos que:",
+    "opciones": {
+      "a": "es la proporción de la variabilidad de un determinado rasgo que se puede atribuir a diferencias genéticas;",
+      "b": "corresponde a los efectos del ambiente sobre un determinado rasgo que se heredan a través de los genes;",
+      "c": "es la proporción de la puntuación directa en un determinado rasgo que se explica por la genética;",
+      "d": "es la proporción de la media de un determinado rasgo que puede atribuirse a factores genéticos."
+    },
+    "correcta": "a",
+    "explicacion": "La heredabilidad se define estadísticamente como la proporción (o porcentaje) de la varianza fenotípica (variabilidad de un rasgo medible en una población) que queda explicada debida a la varianza genotípica (las diferencias genéticas entre los individuos que componen esa población)."
+  },
+  {
+    "id": 13,
+    "tema": "Tema 1: La Psicobiología",
+    "pregunta": "En relación con la contrastación observacional de hipótesis en Psicobiología, podemos decir que:",
+    "opciones": {
+      "a": "considera al organismo como la variable dependiente (VD) y a la conducta como la variable independiente (VI);",
+      "b": "es una forma de contrastación empírica;",
+      "c": "nunca utiliza covariaciones entre medidas biológicas y conductuales;",
+      "d": "es una forma de contrastación experimental."
+    },
+    "correcta": "b",
+    "explicacion": "El método científico en Psicobiología utiliza la contrastación empírica a través de dos aproximaciones: la experimental (manipulando variables) y la observacional. Por lo tanto, la aproximación correlacional/observacional sigue siendo una modalidad de contrastación empírica para verificar hipótesis cuando no es posible manipular éticamente las variables."
+  },
+  {
+    "id": 14,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Entre los numerosos estudios realizados sobre genética de la conducta humana, algunos de ellos han demostrado que:",
+    "opciones": {
+      "a": "existe variabilidad en el ciclo vigilia/sueño asociada a variantes alélicas de genes involucrados en la regulación del ritmo circadiano;",
+      "b": "la expresión del gen SRY es responsable del fenotipo femenino;",
+      "c": "todos los casos de obesidad obedecen a factores ambientales;",
+      "d": "lo que se indica en las otras tres opciones es cierto."
+    },
+    "correcta": "a",
+    "explicacion": "Se han hallado asociaciones claras entre variaciones alélicas (polimorfismos) de determinados genes, como el gen *period* y otros relojes moleculares en nuestro ADN, que modulan y regulan el cronotipo personal en el ciclo diario humano de vigilia/sueño. (La B es falsa porque SRY masculiniza, y la C es falsa porque hay obesidad genética)."
+  },
+  {
+    "id": 15,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Los movimientos de los iones a través de la membrana neuronal durante el potencial de reposo dependen de:",
+    "opciones": {
+      "a": "la permeabilidad de la membrana neuronal;",
+      "b": "los aniones proteicos;",
+      "c": "la apertura de canales de sodio dependientes de voltaje;",
+      "d": "la apertura de canales de calcio dependientes de voltaje."
+    },
+    "correcta": "a",
+    "explicacion": "Durante el estado de reposo de la neurona, no operan canales dependientes de voltaje masivos. El tránsito y distribución desigual de iones se rige, junto a sus gradientes electroquímicos y la bomba Na+/K+, por la alta permeabilidad selectiva (canales de fuga) pasiva intrínseca de la membrana."
+  },
+  {
+    "id": 16,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Hay datos en la literatura científica en la que se han empleado como sujetos experimentales animales deficientes en el gen FMR-1 (implicado en la aparición del síndrome del X frágil), que apuntan a que dicho gen participa en:",
+    "opciones": {
+      "a": "la articulación del lenguaje;",
+      "b": "la determinación de la masculinidad;",
+      "c": "defectos en la mirada;",
+      "d": "el aprendizaje."
+    },
+    "correcta": "d",
+    "explicacion": "Experimentos en roedores 'knockout' a los que se les inactiva la acción del gen ortólogo FMR-1 han evidenciado que carecer de su producto funcional genera serias alteraciones y déficit en procesos cognitivos de aprendizaje y memoria (simulando los fallos que subyacen a la discapacidad intelectual del Síndrome del X frágil en humanos)."
+  },
+  {
+    "id": 17,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "Suponga que investigando sobre un determinado gen con dos alelos (dominante y recesivo), en una población de 6000 personas se encuentra que 3000 muestran el genotipo homocigoto dominante y 600 presentan el genotipo homocigoto recesivo. ¿Cuál es la frecuencia del alelo recesivo en esta población?:",
+    "opciones": {
+      "a": "0,2;",
+      "b": "0,3;",
+      "c": "0,6;",
+      "d": "0,1."
+    },
+    "correcta": "b",
+    "explicacion": "Una población de 6000 individuos porta un total de 12.000 alelos. Se sabe que hay 3000 AA y 600 aa; por descarte, los restantes 2400 individuos son Aa. Los alelos recesivos 'a' provienen de los sujetos 'aa' (600 x 2 = 1200) y de los heterocigotos 'Aa' (2400 x 1 = 2400). Total de alelos 'a' = 3600. Frecuencia de q = 3600 / 12000 = 0,3."
+  },
+  {
+    "id": 18,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "¿Cuál de las siguientes células gliales participa en el mantenimiento de la barrera hematoencefálica?:",
+    "opciones": {
+      "a": "la microglía;",
+      "b": "las células de Schwann;",
+      "c": "los astrocitos;",
+      "d": "ninguna de ellas."
+    },
+    "correcta": "c",
+    "explicacion": "Los astrocitos, a través de sus prolongaciones denominadas pies astrocitarios, recubren la pared externa de los capilares sanguíneos en el cerebro, siendo esenciales para formar la infraestructura y preservar activamente las uniones estrechas que constituyen la restrictiva barrera hematoencefálica (BHE)."
+  },
+  {
+    "id": 19,
+    "tema": "Tema 1: La Psicobiología",
+    "pregunta": "Actualmente se sabe que el consumo continuado de drogas de abuso induce modificaciones en diversos tejidos del organismo, incluido el tejido nervioso al afectar, entre otros, a los procesos de acetilación y metilación de las histonas, y a la metilación del ADN. En este caso y en relación con las causas del comportamiento, estas sustancias:",
+    "opciones": {
+      "a": "actuarían como una causa próxima;",
+      "b": "formarían parte del factor ontogénico;",
+      "c": "actuarían como un factor epigenético;",
+      "d": "todas las opciones son ciertas."
+    },
+    "correcta": "d",
+    "explicacion": "Las drogas inducen efectos modificadores a través de cambios químicos sin alterar la secuencia (epigenética), que actúan modificando la experiencia vital (factor ambiental/ontogénico) y actúan sobre el organismo alterando su fisiología en la inmediatez (causas próximas fisiológicas). Así, todas las opciones representan la misma realidad desde su respectivo marco psicobiológico."
+  },
+  {
+    "id": 20,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "Respecto a la impronta sexual se puede afirmar que:",
+    "opciones": {
+      "a": "se produce al alcanzarse la madurez sexual;",
+      "b": "el individuo que se considera el estímulo para la impronta no es normalmente el objeto de la respuesta sexual;",
+      "c": "se establece en la misma época en la que se va a ejercer su efecto;",
+      "d": "se produce siempre como respuesta a estímulos en movimiento."
+    },
+    "correcta": "b",
+    "explicacion": "A diferencia de la impronta filial, la impronta sexual es un proceso que asienta sus bases de aprendizaje sobre las figuras parentales mucho antes del destete (y de la madurez sexual), por lo que el objeto inicial (estímulo: padre/madre) sirve meramente de 'molde' fenotípico referencial para orientar futuras preferencias de apareamiento hacia individuos que se le parezcan sin ser el progenitor mismo."
+  },
+  {
+    "id": 21,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "A consecuencia de muchos estudios realizados para conocer con mayor profundidad los procesos que regulan la expresión génica, hoy sabemos que:",
+    "opciones": {
+      "a": "la regulación a corto plazo se relaciona principalmente con el desarrollo del organismo;",
+      "b": "la regulación a largo plazo está relacionada con el metabolismo celular;",
+      "c": "la expresión génica es continua y simultánea para todos los genes;",
+      "d": "los genes homeobox están implicados en la regulación a largo plazo."
+    },
+    "correcta": "d",
+    "explicacion": "La regulación génica a largo plazo dicta y orquesta el destino y la forma corporal a lo largo del desarrollo ontogénico; en ella intervienen de forma ineludible un grupo conservado de genes directores del patrón de desarrollo embrionario conocidos mundialmente como complejos de genes Hox o 'homeobox'."
+  },
+  {
+    "id": 22,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "La heredabilidad en sentido amplio de un determinado rasgo se calcula a partir de la correlación entre:",
+    "opciones": {
+      "a": "hermanos por parte de un solo progenitor;",
+      "b": "gemelos monocigóticos;",
+      "c": "padre e hijo;",
+      "d": "ninguna de las opciones anteriores es cierta."
+    },
+    "correcta": "b",
+    "explicacion": "La varianza genética total o heredabilidad en sentido amplio puede estimarse de manera pura y teórica evaluando el grado de similitud (correlación) entre parejas de individuos que comparten el 100% de su genoma, como son los gemelos idénticos o monocigóticos (preferiblemente cuando crecen en ambientes separados)."
+  },
+  {
+    "id": 23,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "Los mecanismos que aseguran el mantenimiento del potencial de reposo de las neuronas se basan en:",
+    "opciones": {
+      "a": "el funcionamiento de la bomba de sodio/potasio;",
+      "b": "la impermeabilidad de la membrana neuronal;",
+      "c": "el cierre de los canales de cloro;",
+      "d": "la inactivación de los canales de sodio dependientes de voltaje."
+    },
+    "correcta": "a",
+    "explicacion": "Para asegurar que las diferencias de concentración entre el interior (rico en K+) y el exterior (rico en Na+) no se disipen por los flujos continuos a través de canales de fuga, el mantenimiento incesante a largo plazo recae como base sobre el trabajo activo de la bomba iónica de Sodio/Potasio que expulsa Na+ e introduce K+ consumiendo energía."
+  },
+  {
+    "id": 24,
+    "tema": "Tema 7: Bases de la Comunicación Neuronal",
+    "pregunta": "En lo que se refiere a la conducción del potencial de acción a lo largo del axón en las neuronas mielinizadas y las no mielinizadas, existe una diferencia importante que consiste en que:",
+    "opciones": {
+      "a": "la conducción del impulso nervioso es pasiva en los nódulos de Ranvier en las neuronas mielinizadas;",
+      "b": "en las no mielinizadas hay puntos en los que la trasmisión del impulso eléctrico es pasiva;",
+      "c": "la conducción es saltadora en las mielinizadas;",
+      "d": "en las mielinizadas se gasta más energía."
+    },
+    "correcta": "c",
+    "explicacion": "Debido a la protección y al aislamiento eléctrico que ofrece la gruesa vaina de mielina, en esos tramos cubiertos no hace falta y no se puede intercambiar iones; el potencial de acción sólo se autopropaga obligatoriamente en los segmentos intermedios expuestos (Nódulos de Ranvier) produciendo una veloz conducción 'a saltos'."
+  },
+  {
+    "id": 25,
+    "tema": "Tema 8: Organización Anatomofuncional del SNC",
+    "pregunta": "Sobre el diencéfalo sabemos que:",
+    "opciones": {
+      "a": "el mesencéfalo es su división más pequeña y en su cara ventral se localizan los pedúnculos cerebrales;",
+      "b": "forma parte del tronco del encéfalo;",
+      "c": "el tálamo constituye la zona más dorsal;",
+      "d": "se organiza alrededor del cuarto ventrículo."
+    },
+    "correcta": "c",
+    "explicacion": "El tálamo y el epitálamo se posicionan en la mitad superior del diencéfalo, mientras que el hipotálamo asume la conformación ventral del mismo rodeando las inmediaciones del III ventrículo (no del IV). De manera que las masas ovoides talámicas son la estructura que compone la región mayormente dorsal del diencéfalo."
+  },
+  {
+    "id": 26,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "La selección natural dependiente de frecuencia:",
+    "opciones": {
+      "a": "a diferencia de otros tipos de selección natural, no afecta a la eficacia biológica de un determinado fenotipo de la población;",
+      "b": "es un mecanismo que puede explicar la aparición de polimorfismos en determinados loci, como los del complejo mayor de histocompatibilidad;",
+      "c": "es consecuencia de la superioridad del heterocigoto;",
+      "d": "provoca los mismos efectos que la selección natural estabilizadora."
+    },
+    "correcta": "b",
+    "explicacion": "La selección dependiente de la frecuencia (ej. preferir presas comunes sobre las raras) protege la diversidad en la naturaleza. Este tipo de selección natural fluctuante otorga ventajas selectivas a genotipos según su abundancia, logrando explicar que en loci concretos como el MHC del sistema inmunitario pervivan activamente un abanico de numerosos polimorfismos genéticos equilibrados."
+  },
+  {
+    "id": 27,
+    "tema": "Tema 5: Ecología del Comportamiento",
+    "pregunta": "En relación con las estrategias conductuales cuyo fin es adoptar la decisión óptima, los principios de la teoría de la optimización:",
+    "opciones": {
+      "a": "se aplican a aquellas estrategias cuyo resultado depende de la decisión individual;",
+      "b": "miden el beneficio perseguido en términos de rendimiento;",
+      "c": "consideran que la estrategia óptima es la que maximiza la utilidad biológica;",
+      "d": "todas las anteriores son verdaderas."
+    },
+    "correcta": "d",
+    "explicacion": "Los modelos de Optimización se emplean habitualmente en Ecología del Comportamiento para estudiar decisiones independientes donde la resolución (ej. foraging o aprovisionamiento) arroja una métrica de rentabilidad neta; estipulando que los organismos evolucionaron para operar bajo la estrategia que reporta la máxima utilidad biológica frente a la inversión requerida. Por tanto, todas son correctas."
+  },
+  {
+    "id": 28,
+    "tema": "Tema 4: La Evolución",
+    "pregunta": "Señale la respuesta correcta en relación con la selección sexual:",
+    "opciones": {
+      "a": "es el resultado de la competencia única y exclusivamente por los recursos reproductivos;",
+      "b": "favorece el apareamiento entre los fenotipos más frecuentes;",
+      "c": "es un caso especial de la selección disruptiva en relación con el tamaño corporal;",
+      "d": "pone de manifiesto que la reproducción asexual es menos productiva en términos de aptitud que la sexual."
+    },
+    "correcta": "a",
+    "explicacion": "Darwin diferenció la selección natural general de la 'Selección Sexual', entendiéndose esta última como una vertiente de presión selectiva originada originada estricta y únicamente por la competencia entre miembros del mismo sexo biológico por el acceso a la pareja o a los escasos recursos reproductivos."
+  },
+  {
+    "id": 29,
+    "tema": "Tema 3: Genética Cuantitativa de la Conducta",
+    "pregunta": "Si el valor de la correlación (r) entre gemelos monocigóticos criados juntos para el rasgo impulsividad en una población es de 0,50 y entre gemelos dicigóticos de 0,30. ¿Cuál será la heredabilidad de ese rasgo de acuerdo con la fórmula de Falconer?:",
+    "opciones": {
+      "a": "0,80:",
+      "b": "0,40;",
+      "c": "0,25;",
+      "d": "0,60."
+    },
+    "correcta": "b",
+    "explicacion": "La clásica fórmula matemática desarrollada por Falconer (H2 = 2 * [rMZ - rDZ]) para obtener la heredabilidad en base a gemelos criados juntos indica que hay que restar ambas correlaciones y multiplicarlas por 2. Por tanto: 2 * (0,50 - 0,30) = 2 * 0,20 = 0,40."
+  },
+  {
+    "id": 30,
+    "tema": "Tema 2: Genética Mendeliana de la Conducta",
+    "pregunta": "Algunas personas deben llevar desde su nacimiento un régimen alimenticio caracterizado por dietas carentes de fenilalanina. Si una mujer, que ha de llevar dicho régimen, tiene una hija con un hombre sin este trastorno, pero cuya madre también llevó esa dieta por el mismo motivo, ¿qué probabilidad tiene la niña de esa pareja de tener que llevar una dieta carente de fenilalanina toda su vida?:",
+    "opciones": {
+      "a": "50%;",
+      "b": "100%;",
+      "c": "25%;",
+      "d": "75%."
+    },
+    "correcta": "a",
+    "explicacion": "La fenilcetonuria (PKU) sigue un patrón mendeliano autosómico recesivo (aa). La mujer padece la enfermedad (genotipo 'aa'). El hombre es fenotípicamente sano, pero como su madre estaba afectada (aa), él heredó forzosamente un alelo recesivo siendo portador heterocigoto (Aa). Al cruzar (aa) con (Aa), las proporciones genotípicas predecibles arrojan un 50% de probabilidad (1/2) de que cualquier descendiente sufra este déficit metabólico (sea aa)."
+  }
+]

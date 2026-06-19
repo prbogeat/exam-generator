@@ -1,0 +1,158 @@
+{
+  "subject": "Fundamentos de Psicobiología",
+  "type": "UNED - Parcial 1 - Enero 2025 Tipo A",
+  "date": "",
+  "description": "",
+  "questions": [
+    {
+      "id": 1,
+      "text": "¿Cuál es el uso de la contrastación observacional en Psicobiología?:",
+      "marked_option": ""
+    },
+    {
+      "id": 2,
+      "text": "¿Cuál es el principal objetivo de estudio de la Psicobiología?:",
+      "marked_option": ""
+    },
+    {
+      "id": 3,
+      "text": "Considerando en conjunto todos los cromosomas que tenemos las personas, el mayor número de cromosomas diferentes (sin tener en cuenta los casos de anomalías cromosómicas numéricas ni de las estructurales), lo tienen:",
+      "marked_option": ""
+    },
+    {
+      "id": 4,
+      "text": "La enzima que, durante la replicación del ADN, separa las bases nitrogenadas es la:",
+      "marked_option": ""
+    },
+    {
+      "id": 5,
+      "text": "Como sabemos, la impronta genómica consiste en la inactivación de genes en función del sexo del/la productor/a de los gametos. Teniendo en cuenta ese fenómeno, en el caso del síndrome de Angelman, además de producirse una deleción:",
+      "marked_option": ""
+    },
+    {
+      "id": 6,
+      "text": "Suponga que dos personas de distinto sexo y que son heterocigóticas (esto es, EeFf) tienen hijos sin saber que son portadores de genes que predisponen a la aparición de depresión, a partir de los 65 años, por la acción sinérgica de los alelos e y F. Teniendo en cuenta estos datos, indique la probabilidad que tiene la descendencia de esa pareja de ser portadores de esa enfermedad:",
+      "marked_option": ""
+    },
+    {
+      "id": 7,
+      "text": "En una familia dada, la abuela materna era daltónica, mientras que su marido no lo era. Este matrimonio tuvo tres hijos, dos varones y una mujer. Los dos chicos eran daltónicos, pero su hermana no lo era. Esta chica, en un momento de su vida, decide tener hijos con un varón que tenía el mismo genotipo, respecto al daltonismo, que su padre. El primer hijo de la chica y su pareja fue daltónico. Ella quiere tener más descendientes, pero se pregunta por la probabilidad de que, si fuera varón, estuviera sano. Esa probabilidad es de:",
+      "marked_option": ""
+    },
+    {
+      "id": 8,
+      "text": "En una especie de planta, el color de las flores está determinado por un gen con dos alelos: A1 y A2. Cada copia del alelo A1 tiene un valor aditivo de 2 unidades, mientras que el alelo A2 tiene un valor aditivo de 0 unidades. El color fenotípico de las flores depende exclusivamente del valor genotípico, según la siguiente escala: 0 unidades: blancas, 2 unidades: rosadas claras, 4 unidades: rosadas intensas. Si cruzas dos plantas con genotipo A1A2, ¿cuál será la proporción fenotípica esperada en la descendencia?:",
+      "marked_option": ""
+    },
+    {
+      "id": 9,
+      "text": "¿Cómo se puede calcular la heredabilidad a partir de la evaluación del efecto de la cría selectiva sobre un rasgo fenotípico?:",
+      "marked_option": ""
+    },
+    {
+      "id": 10,
+      "text": "¿Cuál de los siguientes es un ejemplo de interacción intralocus?:",
+      "marked_option": ""
+    },
+    {
+      "id": 11,
+      "text": "En un estudio con gemelos, las correlaciones para un rasgo en gemelos monocigóticos criados juntos y gemelos dicigóticos criados juntos fueron de 0,8 y 0,5, respectivamente. ¿Cuál es la heredabilidad en sentido amplio para este rasgo?:",
+      "marked_option": ""
+    },
+    {
+      "id": 12,
+      "text": "¿Cuál de las siguientes afirmaciones es verdadera acerca de la especiación simpátrica?:",
+      "marked_option": ""
+    },
+    {
+      "id": 13,
+      "text": "¿Cuál es la diferencia principal entre los genes parálogos y los ortólogos?",
+      "marked_option": ""
+    },
+    {
+      "id": 14,
+      "text": "Suponga que investigando sobre un determinado gen con dos alelos (dominante y recesivo), en una población de 12.000 personas se encuentra que 6.000 muestran el genotipo homocigoto dominante y 1.200 presentan el genotipo homocigoto recesivo. ¿Cuál es la frecuencia del alelo recesivo en esta población?:",
+      "marked_option": ""
+    },
+    {
+      "id": 15,
+      "text": "Las alas de las aves, como las de una golondrina y las de la mosca de la fruta son un ejemplo de:",
+      "marked_option": ""
+    },
+    {
+      "id": 16,
+      "text": "Según Darwin, ¿qué fundamento debe tener la Psicología?:",
+      "marked_option": ""
+    },
+    {
+      "id": 17,
+      "text": "¿Qué caracteriza al canto de las aves, según la Etología?:",
+      "marked_option": ""
+    },
+    {
+      "id": 18,
+      "text": "Según Trivers, el conflicto entre padres e hijos se origina por:",
+      "marked_option": ""
+    },
+    {
+      "id": 19,
+      "text": "¿Cuál es la característica principal de los estímulos supernormales?:",
+      "marked_option": ""
+    },
+    {
+      "id": 20,
+      "text": "¿Qué concepto explica la capacidad de un individuo para transmitir sus genes directa e indirectamente?:",
+      "marked_option": ""
+    },
+    {
+      "id": 21,
+      "text": "La membrana neuronal presenta una de las siguientes características:",
+      "marked_option": ""
+    },
+    {
+      "id": 22,
+      "text": "¿Cómo se denominan las estructuras presinápticas de la neurona que contienen las vesículas sinápticas y a través de las cuales el axón establece el contacto con la neurona postsináptica?:",
+      "marked_option": ""
+    },
+    {
+      "id": 23,
+      "text": "¿Cuál de las siguientes células forma la capa de mielina?:",
+      "marked_option": ""
+    },
+    {
+      "id": 24,
+      "text": "El _________ se organiza bajo los ventrículos laterales y alrededor del III ventrículo y tiene una posición central en el encéfalo anterior.",
+      "marked_option": ""
+    },
+    {
+      "id": 25,
+      "text": "¿Cuál de los siguientes nervios cumple las siguientes características: 1) es un nervio mixto, 2) inerva la musculatura que controla la expresión facial, 3) es un nervio craneal?:",
+      "marked_option": ""
+    },
+    {
+      "id": 26,
+      "text": "Las diferencias de potencial eléctrico a través de las membranas celulares que dan lugar al potencial de reposo se pueden generar fácilmente gracias a:",
+      "marked_option": ""
+    },
+    {
+      "id": 27,
+      "text": "¿En qué orden suceden los siguientes eventos durante un potencial de acción?:",
+      "marked_option": ""
+    },
+    {
+      "id": 28,
+      "text": "¿Cuál de los siguientes iones es el principal responsable de facilitar la unión de las vesículas sinápticas a las zonas densas de la membrana presináptica, conduciendo a la fusión de las vesículas con la membrana del terminal y la liberación de su contenido a la hendidura sináptica?:",
+      "marked_option": ""
+    },
+    {
+      "id": 29,
+      "text": "¿Cómo se integra la información que recibe la neurona a través de sus dendritas?:",
+      "marked_option": ""
+    },
+    {
+      "id": 30,
+      "text": "La conducción saltatoria del potencial de acción se produce gracias a la vaina de mielina que recubre algunos axones. En estos axones el potencial de acción, en vez de regenerarse punto por punto, solo se produce en:",
+      "marked_option": ""
+    }
+  ]
+}

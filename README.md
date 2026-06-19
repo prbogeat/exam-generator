@@ -236,10 +236,10 @@ Si abres `docs/index.html` con `file://`, los navegadores pueden bloquear `fetch
 Solucion: abrir con servidor HTTP local.
 
 ```bash
-python -m http.server 8000 --directory docs
+python -m http.server 8001 --directory docs
 ```
 
-Luego abrir: `http://localhost:8000/`
+Luego abrir: `http://localhost:8001/`
 
 ## 5) Tareas de VS Code
 
@@ -252,7 +252,7 @@ En `Terminal > Run Task` tienes:
 
 Resumen de cada task:
 
-- `Levantar servidor HTTP`: sirve `docs/` en `http://localhost:8000/`.
+- `Levantar servidor HTTP`: sirve `docs/` en `http://localhost:8001/`.
 - `Generar examen (Python)`: ejecuta `python src/generar_examen.py`.
 - `Corregir examen (Python)`: ejecuta `python src/corregir_examen.py`.
 - `Servidor de Generación (Python)`: ejecuta `python src/server.py` para habilitar `generator.html` y `POST /api/generate-exam`.

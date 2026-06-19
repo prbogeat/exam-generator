@@ -1,0 +1,794 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Enero 2025 Tipo A",
+  "subtitle": "30 Tipo Test - Examen Tipo A",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Cuál es el uso de la contrastación observacional en Psicobiología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se utiliza para realizar experimentos controlados sin variables independientes;"
+        },
+        {
+          "key": "B",
+          "text": "se recurre a ella cuando no es posible controlar las variables independientes, buscando verificar o falsar una hipótesis a través de la observación de covariaciones entre medidas biológicas y conductuales;"
+        },
+        {
+          "key": "C",
+          "text": "es la única manera de investigar la conducta sin involucrar ningún tipo de medición;"
+        },
+        {
+          "key": "D",
+          "text": "se limita a la fase inicial de la investigación antes de realizar experimentos controlados."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En Psicobiología, dado que en ocasiones no es posible el control de las variables independientes, se recurre a la contrastación observacional para llevar a cabo la verificación o falsación de una hipótesis, siendo la aproximación correlacional (la observación de covariaciones entre medidas biológicas y conductuales) la forma de dar explicación a la hipótesis."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "¿Cuál es el principal objetivo de estudio de la Psicobiología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "estudiar los procesos mentales sin considerar el comportamiento;"
+        },
+        {
+          "key": "B",
+          "text": "analizar el comportamiento humano y los procesos mentales que lo sustentan;"
+        },
+        {
+          "key": "C",
+          "text": "investigar las influencias culturales en el comportamiento humano;"
+        },
+        {
+          "key": "D",
+          "text": "evaluar las teorías filosóficas relacionadas con la Psicología."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Para la Psicobiología, la conducta y los procesos mentales son una propiedad biológica que han sido modelados por la selección natural, y su objetivo es estudiar el comportamiento humano y los procesos mentales subyacentes como hechos objetivos y biológicos."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "Considerando en conjunto todos los cromosomas que tenemos las personas, el mayor número de cromosomas diferentes (sin tener en cuenta los casos de anomalías cromosómicas numéricas ni de las estructurales), lo tienen:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las mujeres;"
+        },
+        {
+          "key": "B",
+          "text": "los hombres;"
+        },
+        {
+          "key": "C",
+          "text": "ninguno de los dos sexos, puesto que son 46 los cromosomas;"
+        },
+        {
+          "key": "D",
+          "text": "las mujeres, aunque su cromosoma X extra esté inactivado."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La especie humana es diploide y posee 46 cromosomas en sus células somáticas. Sin embargo, en el caso de los varones (XY) existen 24 cromosomas diferentes (22 autosomas más el cromosoma X y el cromosoma Y), mientras que las mujeres (XX) sólo tienen 23 cromosomas diferentes."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "La enzima que, durante la replicación del ADN, separa las bases nitrogenadas es la:",
+      "options": [
+        {
+          "key": "A",
+          "text": "helicasa;"
+        },
+        {
+          "key": "B",
+          "text": "ADN polimerasa;"
+        },
+        {
+          "key": "C",
+          "text": "ARN polimerasa;"
+        },
+        {
+          "key": "D",
+          "text": "primasa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Durante el proceso de replicación del ADN, la enzima helicasa interviene separando las bases nitrogenadas, desenrollando la doble hélice y formando la horquilla de replicación."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Como sabemos, la impronta genómica consiste en la inactivación de genes en función del sexo del/la productor/a de los gametos. Teniendo en cuenta ese fenómeno, en el caso del síndrome de Angelman, además de producirse una deleción:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se han inactivado los genes correspondientes del cromosoma 15 del gameto masculino;"
+        },
+        {
+          "key": "B",
+          "text": "se han inactivado los genes correspondientes del cromosoma 15 del gameto femenino;"
+        },
+        {
+          "key": "C",
+          "text": "se han heredado de la madre las dos copias del cromosoma 15;"
+        },
+        {
+          "key": "D",
+          "text": "el óvulo de la progenitora que fue fecundado carecía completamente de núcleo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El síndrome de Angelman se produce por una deleción en el cromosoma 15 heredado de la madre (gameto femenino), a lo que se suma que los genes correspondientes en el cromosoma 15 heredado del padre (gameto masculino) se encuentran inactivados de forma natural por el fenómeno de impronta genómica."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Suponga que dos personas de distinto sexo y que son heterocigóticas (esto es, EeFf) tienen hijos sin saber que son portadores de genes que predisponen a la aparición de depresión, a partir de los 65 años, por la acción sinérgica de los alelos e y F. Teniendo en cuenta estos datos, indique la probabilidad que tiene la descendencia de esa pareja de ser portadores de esa enfermedad:",
+      "options": [
+        {
+          "key": "A",
+          "text": "4/16 (4 casos de 16 posibles);"
+        },
+        {
+          "key": "B",
+          "text": "9/16;"
+        },
+        {
+          "key": "C",
+          "text": "7/16;"
+        },
+        {
+          "key": "D",
+          "text": "5/16."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Si ambos progenitores son EeFf, el cruce de heterocigotos (EeFf x EeFf) producirá descendencia donde la probabilidad de portar al menos un alelo 'e' (EE, Ee, ee -> portar 'e' implica Ee o ee, lo cual es 3/4) y al menos un alelo 'F' (FF, Ff, ff -> portar 'F' implica FF o Ff, lo cual es 3/4). La probabilidad conjunta e independiente de tener ambos alelos en su genotipo es 3/4 x 3/4 = 9/16."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "En una familia dada, la abuela materna era daltónica, mientras que su marido no lo era. Este matrimonio tuvo tres hijos, dos varones y una mujer. Los dos chicos eran daltónicos, pero su hermana no lo era. Esta chica, en un momento de su vida, decide tener hijos con un varón que tenía el mismo genotipo, respecto al daltonismo, que su padre. El primer hijo de la chica y su pareja fue daltónico. Ella quiere tener más descendientes, pero se pregunta por la probabilidad de que, si fuera varón, estuviera sano. Esa probabilidad es de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "50%;"
+        },
+        {
+          "key": "B",
+          "text": "25%;"
+        },
+        {
+          "key": "C",
+          "text": "0%;"
+        },
+        {
+          "key": "D",
+          "text": "75%."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El daltonismo es recesivo ligado al X (Xd). La abuela daltónica (XdXd) pasa un Xd a su hija. Como el abuelo era sano (XDY), la hija es portadora (XDXd). El marido de la hija tiene el mismo genotipo que el abuelo, es decir, sano (XDY). Si el futuro descendiente es varón, hereda seguro la Y del padre. La probabilidad de heredar el cromosoma X sano (XD) de la madre heterocigota (XDXd) y, por tanto, ser un varón sano (XDY), es del 50%."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En una especie de planta, el color de las flores está determinado por un gen con dos alelos: A1 y A2. Cada copia del alelo A1 tiene un valor aditivo de 2 unidades, mientras que el alelo A2 tiene un valor aditivo de 0 unidades. El color fenotípico de las flores depende exclusivamente del valor genotípico, según la siguiente escala: 0 unidades: blancas, 2 unidades: rosadas claras, 4 unidades: rosadas intensas. Si cruzas dos plantas con genotipo A1A2, ¿cuál será la proporción fenotípica esperada en la descendencia?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 blanca: 2 rosadas claras: 1 rosadas intensas;"
+        },
+        {
+          "key": "B",
+          "text": "1 blanca: 3 rosadas intensas;"
+        },
+        {
+          "key": "C",
+          "text": "3 rosadas claras: 1 rosadas intensas;"
+        },
+        {
+          "key": "D",
+          "text": "todas serán rosadas claras."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El cruce de dos heterocigotos (A1A2 x A1A2) produce una proporción genotípica mendeliana de 1 A2A2 : 2 A1A2 : 1 A1A1. Al aplicar los valores aditivos, obtenemos 1 planta de 0 unidades (blanca), 2 plantas de 2 unidades (rosadas claras) y 1 planta de 4 unidades (rosadas intensas)."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cómo se puede calcular la heredabilidad a partir de la evaluación del efecto de la cría selectiva sobre un rasgo fenotípico?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dividiendo la respuesta de selección (R) entre la varianza genética (Vg);"
+        },
+        {
+          "key": "B",
+          "text": "dividiendo el diferencial de selección (S) entre la respuesta de selección (R);"
+        },
+        {
+          "key": "C",
+          "text": "dividiendo la respuesta de selección (R) entre el diferencial de selección (S);"
+        },
+        {
+          "key": "D",
+          "text": "dividiendo la varianza fenotípica (Vt) entre el diferencial de selección (S)."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Una manera directa de calcular la heredabilidad en sentido estricto mediante cría selectiva o selección artificial es dividiendo la respuesta de selección (R, diferencia entre la media de los descendientes y la población original) entre el diferencial de selección (S, diferencia entre la media de los reproductores seleccionados y la población original), H2 = R / S."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "¿Cuál de los siguientes es un ejemplo de interacción intralocus?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los fenómenos de dominancia;"
+        },
+        {
+          "key": "B",
+          "text": "los fenómenos de epistasia;"
+        },
+        {
+          "key": "C",
+          "text": "los rasgos cuantitativos poligénicos;"
+        },
+        {
+          "key": "D",
+          "text": "todas las respuestas anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La interacción intralocus se refiere a la interacción entre alelos del mismo gen (mismo locus), como es el caso clásico del fenómeno de dominancia (donde un alelo enmascara al otro). En contraste, la epistasia es un ejemplo de interacción interlocus (entre genes que ocupan diferentes loci)."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "En un estudio con gemelos, las correlaciones para un rasgo en gemelos monocigóticos criados juntos y gemelos dicigóticos criados juntos fueron de 0,8 y 0,5, respectivamente. ¿Cuál es la heredabilidad en sentido amplio para este rasgo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,5;"
+        },
+        {
+          "key": "B",
+          "text": "0,6;"
+        },
+        {
+          "key": "C",
+          "text": "0,75;"
+        },
+        {
+          "key": "D",
+          "text": "0,8."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Utilizando la fórmula de Falconer, la heredabilidad en sentido amplio se obtiene multiplicando por dos la diferencia entre la correlación de los gemelos monocigóticos (0,8) y los dicigóticos (0,5). H2 = 2 * (0,8 - 0,5) = 2 * 0,3 = 0,6."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es verdadera acerca de la especiación simpátrica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ocurre únicamente a través de barreras geográficas;"
+        },
+        {
+          "key": "B",
+          "text": "es más común en animales que en plantas;"
+        },
+        {
+          "key": "C",
+          "text": "puede verse favorecida por la poliploidía;"
+        },
+        {
+          "key": "D",
+          "text": "requiere aislamiento gamético."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La especiación simpátrica ocurre sin separación física o geográfica. Es mucho más frecuente en el reino vegetal que en el animal y está a menudo mediada por procesos de poliploidía, que causan alteraciones genómicas rápidas que aíslan reproductivamente a los individuos poliploideos de sus parentales."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "¿Cuál es la diferencia principal entre los genes parálogos y los ortólogos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "los genes parálogos son siempre responsables de funciones idénticas, mientras que los ortólogos no;"
+        },
+        {
+          "key": "B",
+          "text": "los genes parálogos descienden de un gen ancestral común y han adquirido nuevas funciones; los ortólogos conservan la misma función que el gen ancestral;"
+        },
+        {
+          "key": "C",
+          "text": "los genes ortólogos solo se encuentran en plantas, mientras que los parálogos solo en animales;"
+        },
+        {
+          "key": "D",
+          "text": "los genes parálogos se producen únicamente a través de mutaciones, mientras que los ortólogos únicamente a través de duplicaciones."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los genes homólogos se denominan ortólogos si provienen de un gen ancestral común y conservan su misma función en distintas especies, mientras que se denominan parálogos si han surgido por eventos de duplicación y han divergido genéticamente adquiriendo nuevas funciones diferentes a las originales."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Suponga que investigando sobre un determinado gen con dos alelos (dominante y recesivo), en una población de 12.000 personas se encuentra que 6.000 muestran el genotipo homocigoto dominante y 1.200 presentan el genotipo homocigoto recesivo. ¿Cuál es la frecuencia del alelo recesivo en esta población?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,2;"
+        },
+        {
+          "key": "B",
+          "text": "0,3;"
+        },
+        {
+          "key": "C",
+          "text": "0,6;"
+        },
+        {
+          "key": "D",
+          "text": "0,1."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La población total es de 12.000 personas (24.000 alelos). Los 1.200 homocigotos recesivos aportan 2.400 alelos recesivos. Si 6.000 son AA y 1.200 son aa, los heterocigotos (Aa) restantes son 12.000 - 6.000 - 1.200 = 4.800, que aportan 4.800 alelos recesivos adicionales. El total de alelos recesivos es 2.400 + 4.800 = 7.200. La frecuencia es 7.200 / 24.000 = 0,3."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Las alas de las aves, como las de una golondrina y las de la mosca de la fruta son un ejemplo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "evolución convergente con modificaciones homólogas;"
+        },
+        {
+          "key": "B",
+          "text": "coevolución;"
+        },
+        {
+          "key": "C",
+          "text": "evolución paralela pero no convergente;"
+        },
+        {
+          "key": "D",
+          "text": "evolución convergente con adaptación análogo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El conjunto de procesos que conducen a cambios adaptativos que solucionan de una forma similar e independiente problemas ecológicos semejantes (desarrollando estructuras análogas pero no homólogas, como las alas en aves e insectos para volar) constituyen la evolución convergente."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Según Darwin, ¿qué fundamento debe tener la Psicología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la fisiología del comportamiento;"
+        },
+        {
+          "key": "B",
+          "text": "la evolución por selección natural;"
+        },
+        {
+          "key": "C",
+          "text": "los patrones de aprendizaje;"
+        },
+        {
+          "key": "D",
+          "text": "las capacidades emocionales."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Darwin vaticinó que la Psicología se basaría en un nuevo fundamento evolutivo: el de que cada capacidad mental se alcanza de manera gradual mediante los mismos mecanismos que rigen la evolución de las especies (selección natural)."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Qué caracteriza al canto de las aves, según la Etología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es un comportamiento completamente innato;"
+        },
+        {
+          "key": "B",
+          "text": "es aprendido durante un período crítico;"
+        },
+        {
+          "key": "C",
+          "text": "depende exclusivamente de la experiencia social;"
+        },
+        {
+          "key": "D",
+          "text": "es igual en todas las especies cantoras."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Etología ha demostrado que el canto de las aves cantoras no es ni completamente innato ni enteramente dependiente de ensayo y error en la adultez, sino que se aprende de congéneres durante una ventana vital específica e irreversible conocida como período crítico."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Según Trivers, el conflicto entre padres e hijos se origina por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "disparidades genéticas entre generaciones;"
+        },
+        {
+          "key": "B",
+          "text": "diferencias en los intereses reproductivos de ambos familiares;"
+        },
+        {
+          "key": "C",
+          "text": "el fracaso de los procesos de impronta;"
+        },
+        {
+          "key": "D",
+          "text": "la competencia directa entre hermanos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El conflicto padres/hijos, fundamentado por Trivers mediante la aptitud inclusiva, se debe a un conflicto de intereses reproductivos: aunque comparten genes, un hijo está el doble de interesado en sí mismo (r=1) que en sus padres o hermanos (r=0,5), por lo que intentará demandar mucha más inversión parental (recursos reproductivos) que la que los padres están dispuestos a proveer buscando el éxito de futuros descendientes."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "¿Cuál es la característica principal de los estímulos supernormales?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "generan respuestas más intensas que los estímulos naturales;"
+        },
+        {
+          "key": "B",
+          "text": "son menos efectivos que los estímulos normales;"
+        },
+        {
+          "key": "C",
+          "text": "inhiben patrones innatos de conducta;"
+        },
+        {
+          "key": "D",
+          "text": "están asociados únicamente a estímulos visuales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Un estímulo supernormal es un estímulo artificial que exagera las características clave del estímulo desencadenador innato (EDI) habitual de una especie, consiguiendo provocar en el animal respuestas reflejas (pautas de acción fija) mucho más frecuentes, vigorosas e intensas que las provocadas por estímulos biológicos realistas."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "¿Qué concepto explica la capacidad de un individuo para transmitir sus genes directa e indirectamente?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "aptitud biológica;"
+        },
+        {
+          "key": "B",
+          "text": "selección natural;"
+        },
+        {
+          "key": "C",
+          "text": "aptitud inclusiva;"
+        },
+        {
+          "key": "D",
+          "text": "adaptación evolutiva."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La aptitud inclusiva o eficacia biológica inclusiva engloba tanto la capacidad de transmitir copias de los propios alelos a la siguiente generación mediante la descendencia personal (aptitud directa), como a través del apoyo y éxito reproductivo de familiares con los que se comparten genes (aptitud indirecta)."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "La membrana neuronal presenta una de las siguientes características:",
+      "options": [
+        {
+          "key": "A",
+          "text": "está formada por una doble capa de fosfolípidos;"
+        },
+        {
+          "key": "B",
+          "text": "regula no selectivamente el intercambio de sustancias entre el interior y el exterior celular;"
+        },
+        {
+          "key": "C",
+          "text": "presenta proteínas de membrana que en todo caso son receptores para neurotransmisores;"
+        },
+        {
+          "key": "D",
+          "text": "presenta una capa hidrofílica que se sitúa en el medio de ambas capas de lípidos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La membrana neuronal, como cualquier otra membrana celular, consiste en una doble capa lipídica (bicapa de fosfolípidos) con regiones hidrofóbicas hacia el interior y regiones hidrofílicas hacia el exterior, donde se insertan proteínas que permiten un intercambio selectivo de iones y sustancias."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "¿Cómo se denominan las estructuras presinápticas de la neurona que contienen las vesículas sinápticas y a través de las cuales el axón establece el contacto con la neurona postsináptica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "neurofilamentos;"
+        },
+        {
+          "key": "B",
+          "text": "espinas dendríticas;"
+        },
+        {
+          "key": "C",
+          "text": "botones terminales;"
+        },
+        {
+          "key": "D",
+          "text": "hendiduras postsinápticas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los ensanchamientos finales o ramificaciones de los axones se conocen como botones terminales. Constituyen el elemento presináptico que contiene las vesículas cargadas de neurotransmisores encargados de verter su contenido para la comunicación interneuronal."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "¿Cuál de las siguientes células forma la capa de mielina?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "microglía;"
+        },
+        {
+          "key": "B",
+          "text": "células de Schwann;"
+        },
+        {
+          "key": "C",
+          "text": "oligodendrocitos;"
+        },
+        {
+          "key": "D",
+          "text": "B y C son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Tanto los oligodendrocitos (en el Sistema Nervioso Central) como las células de Schwann (en el Sistema Nervioso Periférico) son células gliales especializadas en la formación de la vaina aislante de mielina que recubre los axones neuronales."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "El _________ se organiza bajo los ventrículos laterales y alrededor del III ventrículo y tiene una posición central en el encéfalo anterior.",
+      "options": [
+        {
+          "key": "A",
+          "text": "diencéfalo;"
+        },
+        {
+          "key": "B",
+          "text": "mesencéfalo;"
+        },
+        {
+          "key": "C",
+          "text": "giro dentado;"
+        },
+        {
+          "key": "D",
+          "text": "lóbulo de la ínsula."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El diencéfalo es la división estructural de ubicación más medial e interna del encéfalo anterior (prosencéfalo), organizándose directamente rodeando al tercer ventrículo, y sirviendo de nexo entre los hemisferios cerebrales (telencéfalo) y el tronco del encéfalo."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "¿Cuál de los siguientes nervios cumple las siguientes características: 1) es un nervio mixto, 2) inerva la musculatura que controla la expresión facial, 3) es un nervio craneal?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "óculo-motor;"
+        },
+        {
+          "key": "B",
+          "text": "trigémino;"
+        },
+        {
+          "key": "C",
+          "text": "facial;"
+        },
+        {
+          "key": "D",
+          "text": "troclear."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El nervio craneal VII (nervio facial) es un nervio mixto (aferente y eferente) que se encarga fundamentalmente, a nivel motor, de inervar y controlar de forma eferente a los músculos responsables de la expresión o mímica facial."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Las diferencias de potencial eléctrico a través de las membranas celulares que dan lugar al potencial de reposo se pueden generar fácilmente gracias a:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las diferencias de concentraciones de iones a ambos lados de la membrana;"
+        },
+        {
+          "key": "B",
+          "text": "la permeabilidad selectiva que permite el paso de unos iones determinados;"
+        },
+        {
+          "key": "C",
+          "text": "el potencial de reposo lo genera la bomba de Na+/K*"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y B son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El potencial de reposo está originado (generado) pasivamente tanto por la diferente distribución o gradiente de concentración de cargas iónicas entre interior y exterior, como por la diferente permeabilidad selectiva de la membrana a los iones (especialmente el flujo de K+). El papel de la bomba de sodio-potasio es mantener activamente estas diferencias, no generarlas en su origen físico."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿En qué orden suceden los siguientes eventos durante un potencial de acción?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "apertura canales Na+ > apertura canales K+ > inactivación canales Na+;"
+        },
+        {
+          "key": "B",
+          "text": "apertura canales K+ > apertura canales Na+ > inactivación canales Na+;"
+        },
+        {
+          "key": "C",
+          "text": "apertura canales Na+ > inactivación canales Na+ > apertura canales K+;"
+        },
+        {
+          "key": "D",
+          "text": "inactivación canales Na+ > apertura canales Na+ > apertura canales K+."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Al superarse el umbral se inicia la fase ascendente con una veloz y masiva apertura de canales de Na+ dependientes de voltaje. Casi inmediatamente después (fase muy tardía ascendente/pico), responden abriéndose los canales de K+ dependientes de voltaje. A continuación, e iniciando la fase descendente, los canales de Na+ se cierran adoptando rápidamente un estado de inactivación."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Cuál de los siguientes iones es el principal responsable de facilitar la unión de las vesículas sinápticas a las zonas densas de la membrana presináptica, conduciendo a la fusión de las vesículas con la membrana del terminal y la liberación de su contenido a la hendidura sináptica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Na+;"
+        },
+        {
+          "key": "B",
+          "text": "K+;"
+        },
+        {
+          "key": "C",
+          "text": "Cl-;"
+        },
+        {
+          "key": "D",
+          "text": "Ca2+."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La despolarización de la membrana presináptica por el potencial de acción abre canales de Calcio (Ca2+) dependientes de voltaje. La entrada masiva de este catión desencadena la cascada enzimática que permite la fusión de la vesícula sináptica con la membrana y la exocitosis del neurotransmisor."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "¿Cómo se integra la información que recibe la neurona a través de sus dendritas?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "por la sumación de potenciales de acción;"
+        },
+        {
+          "key": "B",
+          "text": "por la sumación de potenciales locales;"
+        },
+        {
+          "key": "C",
+          "text": "por la sumación de neurotransmisores;"
+        },
+        {
+          "key": "D",
+          "text": "por la sumación de potenciales de acción, potenciales locales y neurotransmisores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La neurona realiza el proceso de integración de información en el cono axónico basándose en la sumación espacial y temporal conjunta de todos los pequeños potenciales sinápticos graduales o locales (PEPs excitadores y PIPs inhibidores) que viajan decrecientemente desde las dendritas o soma."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "La conducción saltatoria del potencial de acción se produce gracias a la vaina de mielina que recubre algunos axones. En estos axones el potencial de acción, en vez de regenerarse punto por punto, solo se produce en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las dendritas de las neuronas;"
+        },
+        {
+          "key": "B",
+          "text": "las partes del axón cubiertas por las dendritas;"
+        },
+        {
+          "key": "C",
+          "text": "los nódulos de Ranvier;"
+        },
+        {
+          "key": "D",
+          "text": "la hendidura sináptica."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La vaina de mielina aísla eléctricamente el axón e impide el flujo pasivo de iones. Por tanto, el potencial de acción solo necesita y puede originarse y regenerarse a nivel de los segmentos intermedios del axón que quedan expuestos y sin aislar, denominados nódulos de Ranvier, saltando la señal de uno a otro."
+    }
+  ]
+}
