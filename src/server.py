@@ -21,7 +21,7 @@ from generar_examen_lib import generate_exam_from_config
 PORT = 8001
 PROJECT_ROOT = Path(__file__).resolve().parent.parent  # raíz del proyecto (un nivel arriba de src/)
 DOCS_DIR = PROJECT_ROOT / "docs"
-
+OUTPUT_ROOT = PROJECT_ROOT / "out" / "examenes"
 
 class ExamGeneratorHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -50,11 +50,12 @@ class ExamGeneratorHandler(http.server.SimpleHTTPRequestHandler):
             request_data = json.loads(body)
 
             # Generar examen
+            request_config = dict(request_data.get("config", {}))
+            request_config["saveFiles"] = False
             result = generate_exam_from_config(
                 input_json_content=request_data.get("inputJson", ""),
-                config=request_data.get("config", {}),
+                config=request_config,
             )
-
             # Responder con resultado
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")

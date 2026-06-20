@@ -14,8 +14,9 @@
   </div>
 </nav>
 <script>
-  const h = window.location.hostname;
-  if (h === "localhost" || h === "127.0.0.1" || h === "") {
+  const h = window.location.hostname.toLowerCase();
+  const isGitHubPages = h === "github.io" || h.endsWith(".github.io");
+  if (!isGitHubPages) {
     document.getElementById("generatorLink").style.display = "";
   }
 </script>

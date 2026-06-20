@@ -261,9 +261,8 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
         random_selection = bool(config.get("randomSelection", False))
         formula_tip = str(config.get("formulaTip", "")).strip()
         output_path_str = str(config.get("outputPath", "")).strip()
-
-        if not output_path_str:
-            raise ValueError("outputPath no puede estar vacío")
+        output_file_name = str(config.get("outputFileName", "examen.json")).strip() or "examen.json"
+        save_files = bool(config.get("saveFiles", True))
 
         # Convertir examen
         converted_exam = convert_exam(
@@ -280,14 +279,20 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             formula_tip=formula_tip,
         )
 
-        # Guardar examen
-        output_path = Path(output_path_str)
-        save_json(output_path, converted_exam)
-
-        # Generar plantilla
-        template_path = derive_template_path(output_path)
         template = build_realized_template(converted_exam)
-        save_json(template_path, template)
+
+        # Solo guardar en disco si hay outputPath y saveFiles es True
+        if save_files and output_path_str:
+            output_path = Path(output_path_str)
+            save_json(output_path, converted_exam)
+
+            template_path = derive_template_path(output_path)
+            save_json(template_path, template)
+        else:
+            # Si no se guarda en disco, usar solo el nombre del fichero
+            output_path = Path(output_file_name)
+            template_stem = Path(output_file_name).stem or "examen"
+            template_path = Path(f"{template_stem}-realizado.json")
 
         return {
             "success": True,
@@ -295,6 +300,8 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             "templatePath": str(template_path),
             "questionCount": len(converted_exam["questions"]),
             "message": f"Examen generado correctamente. {len(converted_exam['questions'])} preguntas.",
+            "examJson": converted_exam,
+            "templateJson": template,
         }
 
     except Exception as e:

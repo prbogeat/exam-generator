@@ -1,7 +1,6 @@
 // Cargar presets desde el JSON
-const PRESETS_DATA = {}; // Se llenará desde el archivo presets.json
+const PRESETS_DATA = {};
 
-// Elementos DOM
 const dom = {
   presetSelector: document.getElementById("presetSelector"),
   inputFile: document.getElementById("inputFile"),
@@ -15,7 +14,10 @@ const dom = {
   wrongAnswersPerDiscountedCorrect: document.getElementById("wrongAnswersPerDiscountedCorrect"),
   timeLimitMinutes: document.getElementById("timeLimitMinutes"),
   randomSelection: document.getElementById("randomSelection"),
-  outputPath: document.getElementById("outputPath"),
+  outputFileName: document.getElementById("outputFileName"),
+  pickOutputFolderBtn: document.getElementById("pickOutputFolderBtn"),
+  clearOutputFolderBtn: document.getElementById("clearOutputFolderBtn"),
+  localOutputHint: document.getElementById("localOutputHint"),
   generateBtn: document.getElementById("generateBtn"),
   resetBtn: document.getElementById("resetBtn"),
   statusBox: document.getElementById("statusBox"),
@@ -26,22 +28,43 @@ const state = {
   selectedPreset: null,
   selectedFile: null,
   selectedFileName: "",
+  outputFileName: "examen.json",
+  localOutputFolderHandle: null,
 };
 
-// Realizar fetch del archivo presets.json y procesarlo
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("data/presets.json");
-    if (!response.ok) throw new Error("No se pudo cargar presets.json");
-    
+    if (!response.ok) {
+      throw new Error("No se pudo cargar presets.json");
+    }
+
     const presets = await response.json();
     Object.assign(PRESETS_DATA, presets);
     populatePresetSelector();
     bindEvents();
+    syncLocalOutputHint();
   } catch (error) {
     setStatus(`Error cargando presets: ${error.message}`, "error");
   }
 });
+
+function normalizeFolderPath(value) {
+  return String(value || "")
+    .trim()
+    .replace(/\\/g, "/")
+    .replace(/^\/+/, "")
+    .replace(/\/+$/g, "");
+}
+
+function normalizeFileName(value) {
+  return String(value || "").trim();
+}
+
+function getPresetOutputName(preset) {
+  const outputParts = preset?.output_path_parts || [];
+  return normalizeFileName(outputParts[outputParts.length - 1] || "examen.json") || "examen.json";
+}
 
 function populatePresetSelector() {
   Object.keys(PRESETS_DATA).forEach((key) => {
@@ -50,6 +73,64 @@ function populatePresetSelector() {
     option.textContent = PRESETS_DATA[key].subjectTitle + " - " + PRESETS_DATA[key].examTitle;
     dom.presetSelector.appendChild(option);
   });
+}
+
+function syncLocalOutputHint() {
+  if (state.localOutputFolderHandle) {
+    dom.localOutputHint.textContent = `Carpeta local seleccionada: ${state.localOutputFolderHandle.name}`;
+    return;
+  }
+
+  dom.localOutputHint.textContent = "Sin carpeta local elegida; el archivo se descargará al finalizar.";
+}
+
+function supportsDirectoryPicker() {
+  return typeof window.showDirectoryPicker === "function";
+}
+
+async function pickLocalOutputFolder() {
+  if (!supportsDirectoryPicker()) {
+    setStatus("Este navegador no permite elegir carpetas locales. Se usará la descarga automática.", "neutral");
+    return;
+  }
+
+  try {
+    const handle = await window.showDirectoryPicker({ mode: "readwrite" });
+    state.localOutputFolderHandle = handle;
+    syncLocalOutputHint();
+    setStatus(`Carpeta local seleccionada: ${handle.name}`, "success");
+  } catch (error) {
+    if (error && error.name !== "AbortError") {
+      setStatus(`No se pudo elegir la carpeta local: ${error.message}`, "error");
+    }
+  }
+}
+
+function clearLocalOutputFolder() {
+  state.localOutputFolderHandle = null;
+  syncLocalOutputHint();
+  setStatus("Se quitó la carpeta local. La salida se descargará automáticamente.", "neutral");
+}
+
+async function writeTextFileToDirectory(directoryHandle, fileName, content) {
+  const fileHandle = await directoryHandle.getFileHandle(fileName, { create: true });
+  const writable = await fileHandle.createWritable();
+  await writable.write(content);
+  await writable.close();
+}
+
+function triggerJsonDownload(fileName, data) {
+  const jsonText = typeof data === "string" ? data : JSON.stringify(data, null, 2);
+  const blob = new Blob([jsonText], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
 }
 
 function loadPreset(presetKey) {
@@ -63,7 +144,6 @@ function loadPreset(presetKey) {
 
   state.selectedPreset = preset;
 
-  // Rellenar campos con valores del preset
   dom.subjectTitle.value = preset.subjectTitle || "";
   dom.examTitle.value = preset.examTitle || "";
   dom.subtitle.value = preset.subtitle || "";
@@ -74,12 +154,9 @@ function loadPreset(presetKey) {
   dom.timeLimitMinutes.value = preset.timeLimitMinutes || 90;
   dom.randomSelection.checked = preset.randomSelection || false;
 
-  // Construir ruta de salida
-  const outputParts = preset.output_path_parts || [];
-  const outputPath = ["out", "examenes", ...outputParts].join("/");
-  dom.outputPath.value = outputPath;
+  state.outputFileName = getPresetOutputName(preset);
+  dom.outputFileName.value = state.outputFileName;
 
-  // Mostrar ruta de entrada esperada
   const inputParts = preset.input_path_parts || [];
   const inputPath = ["input", "banco_de_preguntas", ...inputParts].join("/");
   dom.inputPathHint.textContent = `Ruta esperada: ${inputPath}`;
@@ -106,7 +183,7 @@ function getCurrentConfig() {
     wrongAnswersPerDiscountedCorrect: parseFloat(dom.wrongAnswersPerDiscountedCorrect.value),
     timeLimitMinutes: parseInt(dom.timeLimitMinutes.value, 10),
     randomSelection: dom.randomSelection.checked,
-    outputPath: dom.outputPath.value.trim(),
+    outputFileName: normalizeFileName(state.outputFileName),
   };
 }
 
@@ -129,8 +206,8 @@ function validateConfig(config) {
     errors.push("El número de preguntas debe ser mayor a 0");
   }
 
-  if (!config.outputPath) {
-    errors.push("La ruta de salida es requerida");
+  if (!normalizeFileName(state.outputFileName)) {
+    errors.push("El nombre del fichero de salida es requerido");
   }
 
   return errors;
@@ -140,6 +217,13 @@ function bindEvents() {
   dom.presetSelector.addEventListener("change", (e) => {
     loadPreset(e.target.value);
   });
+
+  dom.outputFileName.addEventListener("input", (e) => {
+    state.outputFileName = normalizeFileName(e.target.value);
+  });
+
+  dom.pickOutputFolderBtn.addEventListener("click", pickLocalOutputFolder);
+  dom.clearOutputFolderBtn.addEventListener("click", clearLocalOutputFolder);
 
   dom.inputFile.addEventListener("change", (e) => {
     const file = e.target.files?.[0];
@@ -167,7 +251,10 @@ function resetForm() {
   dom.wrongAnswersPerDiscountedCorrect.value = "0";
   dom.timeLimitMinutes.value = "90";
   dom.randomSelection.checked = false;
-  dom.outputPath.value = "";
+  state.outputFileName = "examen.json";
+  state.localOutputFolderHandle = null;
+  dom.outputFileName.value = state.outputFileName;
+  syncLocalOutputHint();
   dom.inputPathHint.textContent = "Ruta esperada: -";
   state.selectedPreset = null;
   state.selectedFile = null;
@@ -184,22 +271,18 @@ async function generateExam() {
     return;
   }
 
-  // Leer contenido del archivo JSON
   const reader = new FileReader();
-  
+
   reader.onload = async (e) => {
     try {
       const inputJson = e.target.result;
-      
-      // Validar que sea JSON válido
+
       JSON.parse(inputJson);
 
       setStatus("Generando examen en servidor...", "neutral");
 
-      // Construir URL del servidor (usar el mismo host y puerto)
       const apiUrl = `${window.location.protocol}//${window.location.host}/api/generate-exam`;
 
-      // Enviar al servidor
       const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
@@ -217,7 +300,8 @@ async function generateExam() {
             wrongAnswersPerDiscountedCorrect: config.wrongAnswersPerDiscountedCorrect,
             timeLimitMinutes: config.timeLimitMinutes,
             randomSelection: config.randomSelection,
-            outputPath: config.outputPath,
+            outputFileName: config.outputFileName,
+            saveFiles: false,
           },
         }),
       });
@@ -225,7 +309,7 @@ async function generateExam() {
       const result = await response.json();
 
       if (result.success) {
-        showGenerationResult(result);
+        await handleGeneratedExam(result, config);
       } else {
         setStatus(`Error generando examen: ${result.error}`, "error");
       }
@@ -243,6 +327,57 @@ async function generateExam() {
   };
 
   reader.readAsText(config.inputFile);
+}
+
+async function handleGeneratedExam(result, config) {
+  const examFileName = normalizeFileName(config.outputFileName) || "examen.json";
+  const templateFileName = result.templatePath ? normalizeFileName(result.templatePath.split("/").pop()) : `${examFileName.replace(/\.json$/i, "")}-realizado.json`;
+  const examJson = result.examJson || null;
+  const templateJson = result.templateJson || null;
+
+  if (state.localOutputFolderHandle) {
+    try {
+      if (!examJson) {
+        throw new Error("El servidor no devolvió el JSON del examen para guardarlo localmente.");
+      }
+
+      await writeTextFileToDirectory(
+        state.localOutputFolderHandle,
+        examFileName,
+        JSON.stringify(examJson, null, 2),
+      );
+
+      if (templateJson) {
+        await writeTextFileToDirectory(
+          state.localOutputFolderHandle,
+          templateFileName,
+          JSON.stringify(templateJson, null, 2),
+        );
+      }
+
+      setStatus(
+        `✅ Examen generado correctamente\n\nGuardado localmente en: ${state.localOutputFolderHandle.name}/${examFileName}${templateJson ? `\nPlantilla guardada como: ${templateFileName}` : ""}\n\n${result.message}`,
+        "success",
+      );
+      return;
+    } catch (error) {
+      setStatus(`No se pudo guardar en la carpeta local: ${error.message}. Se descargará el archivo.`, "error");
+    }
+  }
+
+  if (examJson) {
+    triggerJsonDownload(examFileName, examJson);
+    if (templateJson) {
+      triggerJsonDownload(templateFileName, templateJson);
+    }
+    setStatus(
+      `✅ Examen generado correctamente\n\nDescargado como: ${examFileName}${templateJson ? ` y ${templateFileName}` : ""}\n\n${result.message}`,
+      "success",
+    );
+    return;
+  }
+
+  showGenerationResult(result);
 }
 
 function showGenerationResult(result) {

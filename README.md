@@ -10,7 +10,7 @@ Proyecto para generar y corregir examenes tipo test en JSON, con una interfaz we
 - `src/exam_presets.py`: presets compartidos de ruta y configuracion por asignatura.
 - `src/server.py`: servidor HTTP local que sirve `docs/` y expone la API de generación.
 - `docs/index.html`: visor/corrector en navegador para examenes JSON (apto para GitHub Pages).
-- `docs/generator.html`: interfaz web de generación de exámenes (solo funcional en local con `server.py`).
+- `docs/generator.html`: interfaz web de generación de exámenes, con guardado local opcional incluso si se sirve desde un servidor remoto.
 - `docs/data/presets.json`: definición de presets disponibles en la UI del generador.
 - `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
 
@@ -25,7 +25,7 @@ src/
   server.py                # Servidor HTTP local
 docs/
   index.html               # Visor de exámenes (GitHub Pages)
-  generator.html           # UI de generación (solo local)
+  generator.html           # UI de generación (con guardado local opcional)
   assets/
     css/
     js/
@@ -62,7 +62,7 @@ python src/server.py
 
 ### Opción C: GitHub Pages
 
-Solo el visor de exámenes (`index.html`) es compatible con GitHub Pages. El generador requiere Python local.
+Solo el visor de exámenes (`index.html`) es compatible con GitHub Pages. El generador depende de Python para calcular el examen, pero puede guardar la salida en una carpeta local del navegador cuando se usa desde un servidor remoto.
 
 ## 1) Generar examen (`src/generar_examen.py`)
 
@@ -229,8 +229,9 @@ Acciones disponibles en el visor:
 
 Notas:
 
-- El enlace a `generator.html` solo se muestra en local (`localhost`, `127.0.0.1` o `file://`).
+- El enlace a `generator.html` solo se muestra en entornos no estáticos; en GitHub Pages se oculta.
 - En GitHub Pages se oculta automáticamente porque el generador requiere backend Python.
+- En el generador puedes elegir una carpeta local del navegador para guardar la salida cuando la UI se ejecute en remoto.
 
 Si abres `docs/index.html` con `file://`, los navegadores pueden bloquear `fetch` del JSON por defecto.
 Solucion: abrir con servidor HTTP local.

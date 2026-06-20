@@ -73,12 +73,74 @@ button:disabled {
   transform: none;
 }
 
+.generator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.generator-panel {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.output-path-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.output-path-row select {
+  flex: 1 1 auto;
+}
+
+.generator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
 #resetBtn:hover {
   background: #aaa !important;
 }
 
+.status-box {
+  max-width: 100%;
+}
+
 @media (max-width: 768px) {
-  #generatorContainer {
-    grid-template-columns: 1fr;
+  .generator-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .generator-panel {
+    padding: 1rem !important;
+  }
+
+  .output-path-row {
+    flex-direction: column;
+  }
+
+  .output-path-row button,
+  .generator-actions button {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .generator-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  main {
+    padding: 1rem !important;
+  }
+
+  nav {
+    padding: 0.75rem 1rem !important;
   }
 }

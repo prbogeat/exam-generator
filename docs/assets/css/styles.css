@@ -316,4 +316,18 @@ input[type="checkbox"] {
   .data-tools {
     align-items: flex-start;
   }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions button,
+  .actions .file-trigger {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-actions button {
+    width: 100%;
+  }
 }

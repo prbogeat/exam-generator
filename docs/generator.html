@@ -16,9 +16,9 @@
     <h1>Generador de Exámenes</h1>
     <p style="color: #666; margin-bottom: 2rem;">Crea nuevos exámenes seleccionando presets o configurando valores manualmente.</p>
 
-    <div id="generatorContainer" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+    <div id="generatorContainer" class="generator-grid">
       <!-- Panel de configuración -->
-      <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
+      <div class="generator-panel">
         <h2 style="margin-top: 0;">Configuración</h2>
 
         <!-- Selector de presets -->
@@ -59,7 +59,7 @@
       </div>
 
       <!-- Panel de parámetros -->
-      <div style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px;">
+      <div class="generator-panel">
         <h2 style="margin-top: 0;">Parámetros</h2>
 
         <div style="margin-bottom: 1.5rem;">
@@ -89,17 +89,25 @@
           </label>
         </div>
 
-        <!-- Ruta de salida -->
         <div style="margin-bottom: 1.5rem;">
-          <label for="outputPath">Ruta de salida:</label>
-          <input type="text" id="outputPath" placeholder="out/examenes/asignatura/examen.json" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
-          <small style="display: block; color: #666; margin-top: 0.5rem;">Ruta relativa desde el directorio raíz</small>
+          <label for="outputFileName">Nombre del fichero:</label>
+          <input type="text" id="outputFileName" placeholder="examen.json" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; box-sizing: border-box;">
+          <small style="display: block; color: #666; margin-top: 0.5rem;">Se guardará dentro de la carpeta local elegida.</small>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label>Guardado local:</label>
+          <div class="output-path-row">
+            <button type="button" id="pickOutputFolderBtn" style="padding: 0.75rem 1rem; font-size: 0.95rem; background: #eee; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; margin-top: 0.5rem;">Elegir carpeta local</button>
+            <button type="button" id="clearOutputFolderBtn" style="padding: 0.75rem 1rem; font-size: 0.95rem; background: #eee; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; margin-top: 0.5rem;">Quitar carpeta</button>
+          </div>
+          <small id="localOutputHint" style="display: block; color: #666; margin-top: 0.5rem;">Sin carpeta local elegida; el archivo se descargará al finalizar.</small>
         </div>
       </div>
     </div>
 
     <!-- Panel de acciones -->
-    <div style="margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
+    <div class="generator-actions" style="margin-top: 2rem; padding: 1.5rem; background: #f9f9f9; border-radius: 8px;">
       <button id="generateBtn" style="padding: 0.75rem 1.5rem; font-size: 1rem; background: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 1rem;">
         Generar Examen
       </button>
@@ -109,7 +117,7 @@
     </div>
 
     <!-- Estado -->
-    <div id="statusBox" style="margin-top: 2rem; padding: 1rem; border-radius: 4px; display: none;" data-tone="neutral">
+    <div id="statusBox" class="status-box" style="margin-top: 2rem; padding: 1rem; border-radius: 4px; display: none;" data-tone="neutral">
       <p id="statusText"></p>
     </div>
   </main>
