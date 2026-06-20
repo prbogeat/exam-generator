@@ -11,6 +11,7 @@ Proyecto para generar y corregir examenes tipo test en JSON, con una interfaz we
 - `src/server.py`: servidor HTTP local que sirve `docs/` y expone la API de generación.
 - `docs/index.html`: visor/corrector en navegador para examenes JSON (apto para GitHub Pages).
 - `docs/generator.html`: interfaz web de generación de exámenes, con guardado local opcional incluso si se sirve desde un servidor remoto.
+- `docs/notebooklm.html`: flujo local para convertir la salida estructurada de NotebookLM en bancos JSON.
 - `docs/data/presets.json`: definición de presets disponibles en la UI del generador.
 - `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
 
@@ -26,6 +27,7 @@ src/
 docs/
   index.html               # Visor de exámenes (GitHub Pages)
   generator.html           # UI de generación (con guardado local opcional)
+  notebooklm.html          # UI para convertir la salida de NotebookLM en JSON
   assets/
     css/
     js/
@@ -63,6 +65,26 @@ python src/server.py
 ### Opción C: GitHub Pages
 
 Solo el visor de exámenes (`index.html`) es compatible con GitHub Pages. El generador depende de Python para calcular el examen, pero puede guardar la salida en una carpeta local del navegador cuando se usa desde un servidor remoto.
+
+### Opción D: NotebookLM local
+
+Esta rama añade un flujo nuevo para pegar la salida estructurada de NotebookLM y convertirla en un banco JSON sin usar APIs externas.
+
+Ejecución local:
+
+```bash
+python src/server.py
+```
+
+Luego abre:
+
+- `http://localhost:8001/notebooklm.html`
+
+Notas importantes:
+
+- No hay integración directa con NotebookLM.
+- El flujo soportado es: pedir a NotebookLM que responda en un formato estructurado y pegar esa salida en la página.
+- El conversor funciona sin claves API ni billing.
 
 ## 1) Generar examen (`src/generar_examen.py`)
 
@@ -257,5 +279,6 @@ Resumen de cada task:
 - `Generar examen (Python)`: ejecuta `python src/generar_examen.py`.
 - `Corregir examen (Python)`: ejecuta `python src/corregir_examen.py`.
 - `Servidor de Generación (Python)`: ejecuta `python src/server.py` para habilitar `generator.html` y `POST /api/generate-exam`.
+- `NotebookLM local`: abre `notebooklm.html` y pega la salida estructurada de NotebookLM.
 
 Todas usan `C:/Program Files/Python39-33/python.exe` para evitar problemas de rutas con espacios en Windows.
