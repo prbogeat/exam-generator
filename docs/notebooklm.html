@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotebookLM local → Generador JSON</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/notebooklm.css" />
+</head>
+<body>
+<nav class="top-nav">
+  <div class="wrap top-nav-inner">
+    <div>
+      <div class="eyebrow">Conversor local</div>
+      <a href="index.html" class="nav-link">← Volver a Exámenes</a>
+      <a href="generator.html" class="nav-link">Generador clásico</a>
+    </div>
+    <div class="nav-pill">Flujo local directo</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Nueva feature</p>
+      <h1>Pega la salida estructurada de NotebookLM y conviértela en JSON de examen</h1>
+      <p class="hero-copy">
+        Elige un formato simple para que NotebookLM responda con bloques de preguntas. Después pegas esa salida aquí y la herramienta la convierte en un examen compatible.
+      </p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap notebook-grid">
+  <section class="panel panel-wide">
+    <div class="panel-head">
+      <h2>1. Preset del examen</h2>
+    </div>
+    <small class="hint">El preset rellena automáticamente asignatura, convocatoria, número de preguntas, penalización y tiempo.</small>
+    <label class="field-label" for="presetSelector">Preset</label>
+    <select id="presetSelector" class="field-select">
+      <option value="">-- Seleccionar preset --</option>
+    </select>
+  </section>
+
+  <section class="panel panel-wide">
+    <div class="panel-head">
+      <h2>2. Salida de NotebookLM</h2>
+      <label class="file-trigger file-trigger-dark" for="sourceFileInput">Cargar TXT / MD / JSON<input id="sourceFileInput" type="file" accept=".txt,.md,.json,.html,.htm,text/plain,application/json,text/markdown,text/html" /></label>
+    </div>
+    <small class="hint">Pega directamente el JSON o el bloque envuelto por fences que devuelve NotebookLM. El resultado final será un examen compatible con el visor.</small>
+    <textarea id="sourceText" class="source-text" placeholder="Pega aquí el JSON de NotebookLM, por ejemplo un array de preguntas con tema, pregunta, opciones, correcta y explicacion..."></textarea>
+  </section>
+
+  <section class="panel panel-wide">
+    <h2>3. Parámetros del examen</h2>
+    <div class="config-grid">
+      <div class="config-span-2">
+        <label class="field-label" for="subjectTitle">Título de asignatura</label>
+        <input id="subjectTitle" type="text" placeholder="Ej: Fundamentos de Psicobiología" />
+      </div>
+
+      <div class="config-span-2">
+        <label class="field-label" for="examTitle">Título del examen</label>
+        <input id="examTitle" type="text" placeholder="Ej: Examen generado desde NotebookLM" />
+      </div>
+
+      <div class="config-span-2">
+        <label class="field-label" for="subtitle">Subtítulo</label>
+        <input id="subtitle" type="text" placeholder="Ej: 30 Tipo Test" />
+      </div>
+
+      <div class="config-span-2">
+        <label class="field-label" for="notice">Aviso</label>
+        <textarea id="notice" rows="4" placeholder="Instrucciones o nota breve..."></textarea>
+      </div>
+
+      <div>
+        <label class="field-label" for="questionCount">Número de preguntas</label>
+        <input id="questionCount" type="number" min="1" max="200" value="30" />
+      </div>
+
+      <div>
+        <label class="field-label" for="timeLimitMinutes">Tiempo límite (minutos)</label>
+        <input id="timeLimitMinutes" type="number" min="1" max="480" value="90" />
+      </div>
+
+      <div>
+        <label class="field-label" for="maxScore">Puntuación máxima</label>
+        <input id="maxScore" type="number" min="0" step="0.5" value="10" />
+      </div>
+
+      <div>
+        <label class="field-label" for="wrongAnswersPerDiscountedCorrect">Errores que restan</label>
+        <input id="wrongAnswersPerDiscountedCorrect" type="number" min="0" step="0.5" value="3" />
+      </div>
+
+      <div class="config-span-2 config-toggle-row">
+        <label class="toggle-label" for="randomSelection">
+          <input type="checkbox" id="randomSelection" />
+          <span>Selección aleatoria de preguntas</span>
+        </label>
+      </div>
+
+      <div class="config-span-2 actions-row config-actions">
+        <button id="generateBtn" class="primary">Generar examen</button>
+        <button id="resetBtn">Limpiar</button>
+      </div>
+    </div>
+
+    <div id="statusBox" class="status-box" style="display:none;">
+      <p id="statusText"></p>
+    </div>
+  </section>
+
+  <section class="panel panel-wide">
+    <div class="panel-head">
+      <h2>4. Resultado</h2>
+      <div class="actions-row">
+        <button id="copyJsonBtn" disabled>Copiar JSON</button>
+        <button id="downloadJsonBtn" disabled>Descargar JSON</button>
+      </div>
+    </div>
+    <div class="result-layout">
+      <div>
+        <label class="field-label">Vista previa estructurada</label>
+        <pre id="jsonPreview" class="json-preview">Esperando generación...</pre>
+      </div>
+      <div>
+        <label class="field-label">Historial</label>
+        <div id="conversation" class="conversation"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/notebooklm.js"></script>
+</body>
+</html>
