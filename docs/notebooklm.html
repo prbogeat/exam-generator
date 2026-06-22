@@ -23,9 +23,9 @@
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">Nueva feature</p>
-      <h1>Pega la salida estructurada de NotebookLM y conviértela en JSON de examen</h1>
+      <h1>Transforma la salida estructurada de NotebookLM y la convierte en JSON de examen</h1>
       <p class="hero-copy">
-        Elige un formato simple para que NotebookLM responda con bloques de preguntas. Después pegas esa salida aquí y la herramienta la convierte en un examen compatible.
+        Elige un formato simple para que NotebookLM responda con bloques de preguntas. Después pega esa salida aquí y la herramienta la convierte en un examen compatible.
       </p>
     </div>
   </div>
@@ -49,6 +49,37 @@
       <label class="file-trigger file-trigger-dark" for="sourceFileInput">Cargar TXT / MD / JSON<input id="sourceFileInput" type="file" accept=".txt,.md,.json,.html,.htm,text/plain,application/json,text/markdown,text/html" /></label>
     </div>
     <small class="hint">Pega directamente el JSON o el bloque envuelto por fences que devuelve NotebookLM. El resultado final será un examen compatible con el visor.</small>
+    <details class="json-tip">
+      <summary>Tip: ver formato de JSON recomendado</summary>
+      <pre class="json-tip-code">[
+  {
+    "id": 1,
+    "tema": "Tema 6: Organización General del Sistema Nervioso",
+    "pregunta": "En relación a la plasticidad neural podemos decir que:",
+    "opciones": {
+      "a": "El aprendizaje constante en etapas tempranas potencia nuevas conexiones.",
+      "b": "Los astrocitos participan en la plasticidad sináptica.",
+      "c": "Pueden cambiar el número de espinas dendríticas.",
+      "d": "Todas las anteriores son correctas."
+    },
+    "correcta": "d",
+    "explicacion": "La plasticidad neural implica cambios estructurales y funcionales relacionados con aprendizaje y memoria."
+  },
+  {
+    "id": 2,
+    "tema": "Tema 1",
+    "pregunta": "Texto de la pregunta...",
+    "opciones": {
+      "a": "Opción A",
+      "b": "Opción B",
+      "c": "Opción C",
+      "d": "Opción D"
+    },
+    "correcta": "b",
+    "explicacion": "Justificación breve."
+  }
+]</pre>
+    </details>
     <textarea id="sourceText" class="source-text" placeholder="Pega aquí el JSON de NotebookLM, por ejemplo un array de preguntas con tema, pregunta, opciones, correcta y explicacion..."></textarea>
   </section>
 
@@ -95,11 +126,12 @@
         <input id="wrongAnswersPerDiscountedCorrect" type="number" min="0" step="0.5" value="3" />
       </div>
 
-      <div class="config-span-2 config-toggle-row">
-        <label class="toggle-label" for="randomSelection">
-          <input type="checkbox" id="randomSelection" />
-          <span>Selección aleatoria de preguntas</span>
-        </label>
+      <div>
+        <label class="field-label" for="randomSelection">¿Preguntas aleatorias?</label>
+        <select id="randomSelection">
+          <option value="no">No</option>
+          <option value="si">Sí</option>
+        </select>
       </div>
 
       <div class="config-span-2 actions-row config-actions">

@@ -81,7 +81,7 @@ function handlePresetChange(event) {
   dom.maxScore.value = preset.maxScore ?? 10;
   dom.wrongAnswersPerDiscountedCorrect.value = preset.wrongAnswersPerDiscountedCorrect ?? 3;
   dom.timeLimitMinutes.value = preset.timeLimitMinutes ?? 90;
-  dom.randomSelection.checked = Boolean(preset.randomSelection);
+  dom.randomSelection.value = preset.randomSelection ? "si" : "no";
 
   setStatus(`Preset cargado: ${preset.subjectTitle} - ${preset.examTitle}`, "success");
 }
@@ -95,7 +95,7 @@ function seedDefaults() {
   dom.maxScore.value = "10";
   dom.wrongAnswersPerDiscountedCorrect.value = "3";
   dom.timeLimitMinutes.value = "90";
-  dom.randomSelection.checked = false;
+  dom.randomSelection.value = "no";
   dom.presetSelector.value = "";
   updateSourcePlaceholder();
   renderConversation();
@@ -176,7 +176,7 @@ function buildConfig() {
     maxScore: normalizeFloat(dom.maxScore.value, 10),
     wrongAnswersPerDiscountedCorrect: normalizeFloat(dom.wrongAnswersPerDiscountedCorrect.value, 3),
     timeLimitMinutes: normalizeInt(dom.timeLimitMinutes.value, 90),
-    randomSelection: dom.randomSelection.checked,
+    randomSelection: dom.randomSelection.value === "si",
   };
 }
 

@@ -80,7 +80,6 @@ body {
 
 .hero-copy {
   color: #334155;
-  max-width: 62ch;
   font-size: 1.04rem;
 }
 
@@ -185,6 +184,48 @@ select {
   min-height: 320px;
   margin-top: 0.75rem;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.json-tip {
+  margin-top: 0.85rem;
+  border: 1px solid #cfe0ff;
+  border-radius: 14px;
+  background: #f5f9ff;
+  overflow: hidden;
+}
+
+.json-tip summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #1e40af;
+  padding: 0.75rem 0.9rem;
+  list-style: none;
+}
+
+.json-tip summary::-webkit-details-marker {
+  display: none;
+}
+
+.json-tip summary::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 0.55rem;
+  transition: transform 0.2s ease;
+}
+
+.json-tip[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.json-tip-code {
+  margin: 0;
+  border-top: 1px solid #dbe8ff;
+  background: #0b1020;
+  color: #dbeafe;
+  padding: 0.9rem;
+  font-size: 0.85rem;
+  max-height: 320px;
+  overflow: auto;
 }
 
 .hint {
@@ -326,6 +367,10 @@ select {
 @media (max-width: 640px) {
   .panel {
     border-radius: 18px;
+  }
+
+  .json-tip-code {
+    font-size: 0.8rem;
   }
 
   .nav-link {

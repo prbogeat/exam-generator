@@ -152,7 +152,7 @@ function loadPreset(presetKey) {
   dom.maxScore.value = preset.maxScore || 10;
   dom.wrongAnswersPerDiscountedCorrect.value = preset.wrongAnswersPerDiscountedCorrect || 0;
   dom.timeLimitMinutes.value = preset.timeLimitMinutes || 90;
-  dom.randomSelection.checked = preset.randomSelection || false;
+  dom.randomSelection.value = preset.randomSelection ? "si" : "no";
 
   state.outputFileName = getPresetOutputName(preset);
   dom.outputFileName.value = state.outputFileName;
@@ -182,7 +182,7 @@ function getCurrentConfig() {
     maxScore: parseFloat(dom.maxScore.value),
     wrongAnswersPerDiscountedCorrect: parseFloat(dom.wrongAnswersPerDiscountedCorrect.value),
     timeLimitMinutes: parseInt(dom.timeLimitMinutes.value, 10),
-    randomSelection: dom.randomSelection.checked,
+    randomSelection: dom.randomSelection.value === "si",
     outputFileName: normalizeFileName(state.outputFileName),
   };
 }
@@ -250,7 +250,7 @@ function resetForm() {
   dom.maxScore.value = "10";
   dom.wrongAnswersPerDiscountedCorrect.value = "0";
   dom.timeLimitMinutes.value = "90";
-  dom.randomSelection.checked = false;
+  dom.randomSelection.value = "no";
   state.outputFileName = "examen.json";
   state.localOutputFolderHandle = null;
   dom.outputFileName.value = state.outputFileName;
