@@ -219,6 +219,110 @@ button:disabled {
   color: var(--dark);
   text-decoration: underline;
   text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.floating-resource-viewer {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(860px, calc(100vw - 28px));
+  height: min(74vh, 700px);
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.28);
+  display: none;
+  overflow: hidden;
+}
+
+.floating-resource-viewer.visible {
+  display: block;
+}
+
+.floating-resource-viewer.dragging {
+  user-select: none;
+}
+
+.floating-resource-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #16352d;
+  color: #ffffff;
+  cursor: move;
+}
+
+.floating-resource-title {
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.floating-resource-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.floating-resource-open,
+.floating-resource-close {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.floating-resource-open:hover,
+.floating-resource-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.floating-resource-close {
+  cursor: pointer;
+}
+
+.floating-resource-body {
+  width: 100%;
+  height: calc(100% - 50px);
+  background: #f8fafc;
+}
+
+.floating-resource-frame,
+.floating-resource-image {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.floating-resource-image {
+  object-fit: contain;
+  background: #0b1020;
+}
+
+@media (max-width: 640px) {
+  .floating-resource-viewer {
+    width: calc(100vw - 16px);
+    height: min(72vh, 560px);
+    top: 68px;
+    left: 8px;
+    transform: none;
+  }
+
+  .floating-resource-header {
+    padding: 8px 10px;
+  }
+
+  .floating-resource-title {
+    font-size: 0.82rem;
+  }
 }
 
 .qnum {

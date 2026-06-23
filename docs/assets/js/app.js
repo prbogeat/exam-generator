@@ -13,6 +13,17 @@ const state = {
   timerRunning: false,
 };
 
+const floatingViewer = {
+  root: null,
+  title: null,
+  openExternal: null,
+  frame: null,
+  image: null,
+  initialized: false,
+  zIndex: 1300,
+  moved: false,
+};
+
 const dom = {
   pageTitle: document.getElementById("pageTitle"),
   pageSubtitle: document.getElementById("pageSubtitle"),
@@ -54,6 +65,194 @@ function createTextNode(tag, text, className = "") {
   }
   node.textContent = text;
   return node;
+}
+
+function isDirectImageUrl(url) {
+  return /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i.test(String(url || ""));
+}
+
+function toEmbeddableUrl(rawUrl) {
+  const url = String(rawUrl || "").trim();
+  const driveMatch = url.match(/^https?:\/\/drive\.google\.com\/file\/d\/([^/]+)\/view(?:\?.*)?$/i);
+  if (driveMatch) {
+    return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+  }
+  return url;
+}
+
+function closeFloatingViewer() {
+  if (!floatingViewer.root) {
+    return;
+  }
+
+  floatingViewer.root.classList.remove("visible");
+  floatingViewer.root.setAttribute("aria-hidden", "true");
+  floatingViewer.frame.src = "about:blank";
+  floatingViewer.image.src = "";
+}
+
+function initFloatingViewer() {
+  if (floatingViewer.initialized) {
+    return;
+  }
+
+  const root = document.createElement("section");
+  root.className = "floating-resource-viewer";
+  root.setAttribute("aria-hidden", "true");
+
+  const header = document.createElement("div");
+  header.className = "floating-resource-header";
+
+  const title = document.createElement("strong");
+  title.className = "floating-resource-title";
+  title.textContent = "Recurso adjunto";
+
+  const actions = document.createElement("div");
+  actions.className = "floating-resource-actions";
+
+  const openExternal = document.createElement("a");
+  openExternal.className = "floating-resource-open";
+  openExternal.target = "_blank";
+  openExternal.rel = "noopener noreferrer";
+  openExternal.textContent = "Abrir fuera";
+
+  const close = document.createElement("button");
+  close.type = "button";
+  close.className = "floating-resource-close";
+  close.textContent = "Cerrar";
+
+  actions.appendChild(openExternal);
+  actions.appendChild(close);
+  header.appendChild(title);
+  header.appendChild(actions);
+
+  const body = document.createElement("div");
+  body.className = "floating-resource-body";
+
+  const image = document.createElement("img");
+  image.className = "floating-resource-image";
+  image.alt = "Recurso adjunto";
+
+  const frame = document.createElement("iframe");
+  frame.className = "floating-resource-frame";
+  frame.title = "Recurso adjunto";
+  frame.loading = "lazy";
+  frame.referrerPolicy = "no-referrer";
+
+  body.appendChild(image);
+  body.appendChild(frame);
+  root.appendChild(header);
+  root.appendChild(body);
+  document.body.appendChild(root);
+
+  close.addEventListener("click", closeFloatingViewer);
+
+  const drag = {
+    pointerId: null,
+    startX: 0,
+    startY: 0,
+    baseLeft: 0,
+    baseTop: 0,
+  };
+
+  header.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) {
+      return;
+    }
+
+    // Keep action controls clickable; drag only when pointer starts outside actions.
+    if (event.target.closest(".floating-resource-actions")) {
+      return;
+    }
+
+    const rect = root.getBoundingClientRect();
+    drag.pointerId = event.pointerId;
+    drag.startX = event.clientX;
+    drag.startY = event.clientY;
+    drag.baseLeft = rect.left;
+    drag.baseTop = rect.top;
+    header.setPointerCapture(event.pointerId);
+    root.classList.add("dragging");
+  });
+
+  header.addEventListener("pointermove", (event) => {
+    if (drag.pointerId !== event.pointerId) {
+      return;
+    }
+
+    const nextLeft = drag.baseLeft + (event.clientX - drag.startX);
+    const nextTop = drag.baseTop + (event.clientY - drag.startY);
+    root.style.left = `${Math.max(8, nextLeft)}px`;
+    root.style.top = `${Math.max(8, nextTop)}px`;
+    root.style.transform = "none";
+    floatingViewer.moved = true;
+  });
+
+  const stopDragging = (event) => {
+    if (drag.pointerId !== event.pointerId) {
+      return;
+    }
+    header.releasePointerCapture(event.pointerId);
+    drag.pointerId = null;
+    root.classList.remove("dragging");
+  };
+
+  header.addEventListener("pointerup", stopDragging);
+  header.addEventListener("pointercancel", stopDragging);
+
+  root.addEventListener("pointerdown", () => {
+    floatingViewer.zIndex += 1;
+    root.style.zIndex = String(floatingViewer.zIndex);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeFloatingViewer();
+    }
+  });
+
+  floatingViewer.root = root;
+  floatingViewer.title = title;
+  floatingViewer.openExternal = openExternal;
+  floatingViewer.frame = frame;
+  floatingViewer.image = image;
+  floatingViewer.initialized = true;
+}
+
+function openFloatingViewer(url, label) {
+  initFloatingViewer();
+
+  const safeUrl = String(url || "").trim();
+  if (!safeUrl) {
+    return;
+  }
+
+  floatingViewer.title.textContent = label || "Recurso adjunto";
+  floatingViewer.openExternal.href = safeUrl;
+  floatingViewer.frame.src = "about:blank";
+  floatingViewer.image.src = "";
+
+  if (isDirectImageUrl(safeUrl)) {
+    floatingViewer.image.src = safeUrl;
+    floatingViewer.image.style.display = "block";
+    floatingViewer.frame.style.display = "none";
+  } else {
+    floatingViewer.frame.src = toEmbeddableUrl(safeUrl);
+    floatingViewer.frame.style.display = "block";
+    floatingViewer.image.style.display = "none";
+  }
+
+  floatingViewer.zIndex += 1;
+  floatingViewer.root.style.zIndex = String(floatingViewer.zIndex);
+
+  if (!floatingViewer.moved) {
+    floatingViewer.root.style.top = "80px";
+    floatingViewer.root.style.left = "50%";
+    floatingViewer.root.style.transform = "translateX(-50%)";
+  }
+
+  floatingViewer.root.classList.add("visible");
+  floatingViewer.root.setAttribute("aria-hidden", "false");
 }
 
 function getTotalQuestions() {
@@ -411,7 +610,7 @@ function renderQuestions() {
     if (question.image) {
       const imgWrap = document.createElement("div");
       imgWrap.className = "question-image";
-      const isImageUrl = /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i.test(question.image);
+      const isImageUrl = isDirectImageUrl(question.image);
       if (isImageUrl) {
         const img = document.createElement("img");
         img.src = question.image;
@@ -421,9 +620,11 @@ function renderQuestions() {
       } else {
         const link = document.createElement("a");
         link.href = question.image;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
         link.textContent = "\uD83D\uDCCE Ver recurso adjunto";
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          openFloatingViewer(question.image, `Pregunta ${question.id}: recurso adjunto`);
+        });
         imgWrap.appendChild(link);
       }
       article.appendChild(imgWrap);
@@ -770,6 +971,7 @@ function bindEvents() {
 }
 
 function initializeApp() {
+  initFloatingViewer();
   bindEvents();
   updateStaticTexts();
   updateDataStatus();
