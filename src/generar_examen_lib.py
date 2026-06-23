@@ -181,6 +181,7 @@ def convert_exam(
         options = convert_options(question)
         correct_option = question_correct_option(question)
         explanation = question_explanation(question)
+        image = str(question.get("imagen") or question.get("image") or "").strip()
 
         if not text:
             raise ValueError(f"La pregunta con id '{source_id}' no tiene texto (pregunta/text).")
@@ -194,17 +195,19 @@ def convert_exam(
                 f"La pregunta con id '{source_id}' tiene correctOption '{correct_option}' que no existe en opciones."
             )
 
-        converted_questions.append(
-            {
-                "id": index,
-                "sourceId": source_id,
-                "used": True,
-                "text": text,
-                "options": options,
-                "correctOption": correct_option,
-                "explanation": explanation,
-            }
-        )
+        converted_q: Dict[str, Any] = {
+            "id": index,
+            "sourceId": source_id,
+            "used": True,
+            "text": text,
+            "options": options,
+            "correctOption": correct_option,
+            "explanation": explanation,
+        }
+        if image:
+            converted_q["image"] = image
+
+        converted_questions.append(converted_q)
 
     question_count = len(converted_questions)
     final_formula_tip = formula_tip.strip() or default_formula_tip(

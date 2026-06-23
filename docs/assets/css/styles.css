@@ -1,17 +1,17 @@
 :root {
-  --bg: #f8fafc;
+  --bg: #f7fcfa;
   --card: #ffffff;
   --text: #0f172a;
   --muted: #64748b;
   --border: #e2e8f0;
-  --dark: #0f172a;
-  --ok: #047857;
+  --dark: #0f766e;
+  --ok: #1a7431;
   --okbg: #ecfdf5;
   --bad: #be123c;
   --badbg: #fff1f2;
   --warn: #fffbeb;
-  --info: #eff6ff;
-  --info-border: #bfdbfe;
+  --info: #ecfdf5;
+  --info-border: #a7f3d0;
 }
 
 * {
@@ -107,7 +107,7 @@ button:disabled {
   font-variant-numeric: tabular-nums;
   font-size: 24px;
   font-weight: 850;
-  background: #f1f5f9;
+  background: #eefaf3;
   border: 1px solid var(--border);
   padding: 8px 12px;
   border-radius: 16px;
@@ -153,7 +153,7 @@ button:disabled {
 .bar > div {
   height: 100%;
   width: 0;
-  background: var(--dark);
+  background: var(--ok);
   transition: width 0.2s;
 }
 
@@ -182,7 +182,7 @@ button:disabled {
 
 .data-status {
   font-size: 14px;
-  color: #1e3a8a;
+  color: #166534;
 }
 
 .data-status[data-tone="error"] {
@@ -197,6 +197,28 @@ button:disabled {
 .question h2 {
   font-size: 17px;
   margin: 0 0 14px;
+}
+
+.question-image {
+  margin: 0 0 14px;
+}
+
+.question-image img {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.question-image a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .qnum {
@@ -217,12 +239,12 @@ button:disabled {
 }
 
 .option:hover {
-  background: #f8fafc;
+  background: #f4fbf7;
 }
 
 .option.selected {
   border-color: var(--dark);
-  background: #f1f5f9;
+  background: #eefaf3;
 }
 
 .option.correct {
@@ -244,7 +266,7 @@ input[type="checkbox"] {
   display: none;
   margin-top: 12px;
   border-radius: 16px;
-  background: #f8fafc;
+  background: #f4fbf7;
   padding: 12px;
   font-size: 14px;
   color: #334155;
@@ -329,5 +351,87 @@ input[type="checkbox"] {
 
   .footer-actions button {
     width: 100%;
+  }
+}
+
+/* ── UNED nav (index.html) ────────────────────────────────── */
+.uned-nav {
+  background: #16352d;
+  border-bottom: 3px solid #1a7431;
+  padding: 0;
+}
+
+.uned-nav .wrap {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.uned-nav-brand {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.uned-nav-admin-link {
+  color: #bbf7d0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.uned-nav-admin-link:hover {
+  color: #ffffff;
+}
+
+/* ── Admin nav (generator.html + notebooklm.html) ─────────── */
+.admin-nav {
+  background: #16352d;
+  border-bottom: 3px solid #16a34a;
+  padding: 0;
+}
+
+.admin-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.admin-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.admin-nav-link {
+  color: #d1fae5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.admin-nav-link:hover {
+  color: #ffffff;
+}
+
+.admin-nav-page {
+  color: #86efac;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .admin-nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .admin-nav-page {
+    font-size: 0.8rem;
   }
 }

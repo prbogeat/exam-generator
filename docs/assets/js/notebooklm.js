@@ -225,6 +225,15 @@ function parseNotebookOutput(text) {
     if (json && Array.isArray(json.questions)) {
       return { questions: json.questions };
     }
+    if (json && typeof json === "object") {
+      const hasQuestionText = typeof json.pregunta === "string" || typeof json.text === "string";
+      const hasOptions =
+        (json.opciones && typeof json.opciones === "object") ||
+        (json.options && (typeof json.options === "object" || Array.isArray(json.options)));
+      if (hasQuestionText && hasOptions) {
+        return { questions: [json] };
+      }
+    }
   } catch {
     // continue with text parsing
   }
@@ -282,12 +291,33 @@ function parseQuestionBlock(block) {
     return null;
   }
 
-  const questionLine = findFirstLine(lines, [/^pregunta\s*[:\-]\s*(.+)$/i, /^question\s*[:\-]\s*(.+)$/i, /^(?:#+\s*)?(?:pregunta\s*\d+|\d+\.)\s*(.+)$/i]);
+  const questionLine = findFirstLine(lines, [
+    /^pregunta\s*[:\-]\s*(.+)$/i,
+    /^question\s*[:\-]\s*(.+)$/i,
+    /^"?pregunta"?\s*:\s*"?(.+?)"?\s*,?$/i,
+    /^"?question"?\s*:\s*"?(.+?)"?\s*,?$/i,
+    /^(?:#+\s*)?(?:pregunta\s*\d+|\d+\.)\s*(.+)$/i,
+  ]);
   const questionText = questionLine || lines[0].replace(/^#+\s*/, "").replace(/^\d+\.?\s*/, "").trim();
 
   const options = extractOptions(lines);
-  const correctLine = findFirstLine(lines, [/^correcta\s*[:\-]\s*([a-d])$/i, /^respuesta\s*correcta\s*[:\-]\s*([a-d])$/i, /^answer\s*[:\-]\s*([a-d])$/i]);
-  const explanation = findFirstLine(lines, [/^explicacion\s*[:\-]\s*(.+)$/i, /^explicación\s*[:\-]\s*(.+)$/i, /^justificacion\s*[:\-]\s*(.+)$/i, /^justificación\s*[:\-]\s*(.+)$/i]) || "";
+  const correctLine = findFirstLine(lines, [
+    /^correcta\s*[:\-]\s*([a-d])$/i,
+    /^respuesta\s*correcta\s*[:\-]\s*([a-d])$/i,
+    /^answer\s*[:\-]\s*([a-d])$/i,
+    /^"?correcta"?\s*:\s*"?([a-d])"?\s*,?$/i,
+    /^"?correctOption"?\s*:\s*"?([a-d])"?\s*,?$/i,
+  ]);
+  const explanation = findFirstLine(lines, [
+    /^explicacion\s*[:\-]\s*(.+)$/i,
+    /^explicación\s*[:\-]\s*(.+)$/i,
+    /^justificacion\s*[:\-]\s*(.+)$/i,
+    /^justificación\s*[:\-]\s*(.+)$/i,
+    /^"?explicacion"?\s*:\s*"?(.+?)"?\s*,?$/i,
+    /^"?explicación"?\s*:\s*"?(.+?)"?\s*,?$/i,
+    /^"?explanation"?\s*:\s*"?(.+?)"?\s*,?$/i,
+  ]) || "";
+  const image = extractImage(lines, block);
 
   if (!questionText || Object.keys(options).length < 2) {
     return null;
@@ -300,7 +330,54 @@ function parseQuestionBlock(block) {
     opciones: options,
     correcta: correctKey,
     explicacion: explanation,
+    imagen: image,
   };
+}
+
+function extractImage(lines, block) {
+  const explicit = findFirstLine(lines, [
+    /^\s*(?:[-*+]\s*)?(?:\*\*)?imagen(?:\*\*)?\s*[:\-]\s*(.+)$/i,
+    /^\s*(?:[-*+]\s*)?(?:\*\*)?image(?:\*\*)?\s*[:\-]\s*(.+)$/i,
+    /^\s*(?:[-*+]\s*)?(?:\*\*)?figura(?:\*\*)?\s*[:\-]\s*(.+)$/i,
+    /^\s*(?:[-*+]\s*)?(?:\*\*)?recurso(?:\*\*)?\s*[:\-]\s*(.+)$/i,
+    /^\s*"?(?:imagen|image|imagen_url|image_url|figura|recurso)"?\s*:\s*"?(.+?)"?\s*,?$/i,
+  ]);
+
+  if (explicit) {
+    return sanitizeImageValue(explicit);
+  }
+
+  const markdownImage = String(block || "").match(/!\[[^\]]*\]\(([^)]+)\)/);
+  if (markdownImage && markdownImage[1]) {
+    return sanitizeImageValue(markdownImage[1]);
+  }
+
+  const markdownLink = String(block || "").match(/\[(?:imagen|image|figura|recurso)[^\]]*\]\(([^)]+)\)/i);
+  if (markdownLink && markdownLink[1]) {
+    return sanitizeImageValue(markdownLink[1]);
+  }
+
+  const plainUrl = String(block || "").match(/https?:\/\/\S+/i);
+  if (plainUrl && plainUrl[0]) {
+    return sanitizeImageValue(plainUrl[0]);
+  }
+
+  return "";
+}
+
+function sanitizeImageValue(raw) {
+  if (raw === null || raw === undefined) {
+    return "";
+  }
+
+  let value = String(raw).trim();
+  value = value
+    .replace(/^['"`]+|['"`]+$/g, "")
+    .replace(/^\((.*)\)$/g, "$1")
+    .replace(/[),.;]+$/g, "")
+    .trim();
+
+  return value;
 }
 
 function findFirstLine(lines, patterns) {
@@ -320,6 +397,7 @@ function extractOptions(lines) {
   const patterns = [
     /^([a-d])\s*[\).:\-]\s*(.+)$/i,
     /^opci[oó]n\s*([a-d])\s*[\).:\-]\s*(.+)$/i,
+    /^"?([a-d])"?\s*:\s*"?(.+?)"?\s*,?$/i,
   ];
 
   for (const line of lines) {
@@ -373,15 +451,26 @@ function buildExamJson(questions, config) {
       timeLimitMinutes: config.timeLimitMinutes,
       formulaTip: buildFormulaTip(questionCount, config.wrongAnswersPerDiscountedCorrect, config.maxScore),
     },
-    questions: questions.map((question, index) => ({
-      id: index + 1,
-      sourceId: safeInt(question.id, index + 1),
-      used: true,
-      text: question.pregunta,
-      options: normalizeOptions(question.opciones),
-      correctOption: normalizeCorrectOption(question.correcta, question.opciones),
-      explanation: question.explicacion || "",
-    })),
+    questions: questions.map((question, index) => {
+      const sourceOptions = resolveQuestionOptions(question);
+      const normalizedOptions = normalizeOptions(sourceOptions);
+      const resolvedImage = resolveQuestionImage(question);
+      const converted = {
+        id: index + 1,
+        sourceId: safeInt(question.id, index + 1),
+        used: true,
+        text: resolveQuestionText(question, index),
+        options: normalizedOptions,
+        correctOption: normalizeCorrectOption(resolveQuestionCorrect(question), sourceOptions),
+        explanation: resolveQuestionExplanation(question),
+      };
+
+      if (resolvedImage) {
+        converted.image = resolvedImage;
+      }
+
+      return converted;
+    }),
   };
 }
 
@@ -393,7 +482,7 @@ function buildNotebookHint() {
     "- JSON puro",
     "- Bloque envuelto por ```json ... ```",
     "- Bloque envuelto por '''json ... '''",
-    "- Lote de preguntas con líneas tipo Pregunta / A / B / C / D / Correcta / Explicacion",
+    "- Lote de preguntas con líneas tipo Pregunta / A / B / C / D / Correcta / Explicacion / Imagen",
     "",
     "Después completa solo estos datos básicos del examen y pulsa Generar JSON.",
   ].join("\n");
@@ -472,4 +561,78 @@ function downloadGeneratedJson() {
   a.click();
   a.remove();
   URL.revokeObjectURL(url);
+}
+
+function resolveQuestionText(question, index) {
+  return String(question.pregunta || question.text || `Pregunta ${index + 1}`).trim();
+}
+
+function resolveQuestionExplanation(question) {
+  return String(question.explicacion || question.explanation || "").trim();
+}
+
+function resolveQuestionCorrect(question) {
+  return String(question.correcta || question.correctOption || "").trim();
+}
+
+function resolveQuestionImage(question) {
+  const candidate =
+    question?.imagen ||
+    question?.image ||
+    question?.imagen_url ||
+    question?.image_url ||
+    question?.figura ||
+    question?.resource ||
+    "";
+
+  if (typeof candidate === "string") {
+    const markdownImage = candidate.match(/!\[[^\]]*\]\(([^)]+)\)/);
+    if (markdownImage && markdownImage[1]) {
+      return sanitizeImageValue(markdownImage[1]);
+    }
+
+    const markdownLink = candidate.match(/\[[^\]]+\]\(([^)]+)\)/);
+    if (markdownLink && markdownLink[1]) {
+      return sanitizeImageValue(markdownLink[1]);
+    }
+
+    return sanitizeImageValue(candidate);
+  }
+
+  if (candidate && typeof candidate === "object") {
+    const nested =
+      candidate.url ||
+      candidate.src ||
+      candidate.href ||
+      candidate.path ||
+      candidate.link ||
+      "";
+    return sanitizeImageValue(nested);
+  }
+
+  return "";
+}
+
+function resolveQuestionOptions(question) {
+  if (question && typeof question.opciones === "object" && !Array.isArray(question.opciones)) {
+    return question.opciones;
+  }
+
+  if (Array.isArray(question?.options)) {
+    return question.options.reduce((acc, option, idx) => {
+      const fallbackKey = String.fromCharCode(65 + idx);
+      const key = String(option?.key || fallbackKey).trim().toUpperCase() || fallbackKey;
+      const text = String(option?.text || "").trim();
+      if (/^[A-D]$/.test(key) && text) {
+        acc[key] = text;
+      }
+      return acc;
+    }, {});
+  }
+
+  if (question && typeof question.options === "object" && !Array.isArray(question.options)) {
+    return question.options;
+  }
+
+  return {};
 }

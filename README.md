@@ -107,6 +107,34 @@ La ruta se compone de dos partes:
 
 Lo mismo aplica para `out/examenes` e `input/examenes_realizados`.
 
+### Formato del banco de preguntas
+
+El JSON de entrada puede ser un array directo de preguntas o un objeto con clave `questions`. Campos por pregunta:
+
+| Campo | Alias aceptado | Obligatorio | Descripción |
+|---|---|---|---|
+| `pregunta` | `text` | Sí | Enunciado |
+| `opciones` | `options` | Sí | Respuestas (`{"a": "..."}` o `[{"key": "A", "text": "..."}]`) |
+| `correcta` | `correctOption` | Sí | Letra de la opción correcta |
+| `explicacion` | `explanation` | No | Texto explicativo mostrado tras corregir |
+| `imagen` | `image` | No | URL o ruta de imagen/recurso asociado a la pregunta |
+
+**Campo `imagen`:** campo opcional para preguntas que necesitan un recurso visual (figura, gráfico, esquema…).
+
+```json
+{
+  "id": 5,
+  "tema": "Tema 3: Neuroanatomía",
+  "pregunta": "¿Qué estructura señala la flecha A?",
+  "imagen": "https://ejemplo.com/figura-3-2.png",
+  "opciones": { "a": "Amígdala", "b": "Hipocampo", "c": "Tálamo", "d": "Corteza" },
+  "correcta": "b",
+  "explicacion": "La flecha señala el hipocampo..."
+}
+```
+
+El campo se propaga automáticamente al JSON de examen generado (`out/`). Las preguntas sin imagen simplemente no incluyen el campo.
+
 ### Opciones de CONFIG
 
 - `INPUT_JSON`: origen de preguntas.
@@ -248,6 +276,23 @@ Acciones disponibles en el visor:
 - Boton `Cargar examen JSON`: carga un examen generado localmente.
 - Boton `Cargar respuestas / realizado`: carga un JSON con `marked_option` y preselecciona respuestas.
 - Boton `Guardar respuestas JSON`: descarga un examen realizado con el formato esperado por `src/corregir_examen.py`.
+
+### Imágenes en el visor
+
+Si una pregunta del JSON tiene el campo `image`, el visor lo muestra debajo del enunciado antes de las opciones:
+
+| Valor de `image` | Comportamiento |
+|---|---|
+| URL que termina en `.png`, `.jpg`, `.jpeg`, `.gif`, `.svg`, `.webp` | Se incrusta como imagen (máx. 420 px de alto) |
+| Cualquier otra URL (PDF, Drive, etc.) | Se muestra como enlace «📎 Ver recurso adjunto» que abre en nueva pestaña |
+
+Para recursos locales, coloca los archivos en `docs/assets/` y usa una ruta relativa en el JSON:
+
+```json
+"image": "assets/images/figura-3.png"
+```
+
+Esta ruta funciona cuando el examen se sirve con el servidor HTTP local (`python src/server.py` o la tarea `Levantar servidor HTTP`). En GitHub Pages solo funcionan URLs absolutas.
 
 Notas:
 

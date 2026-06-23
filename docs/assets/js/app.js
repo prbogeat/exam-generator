@@ -407,6 +407,28 @@ function renderQuestions() {
     }
 
     article.appendChild(heading);
+
+    if (question.image) {
+      const imgWrap = document.createElement("div");
+      imgWrap.className = "question-image";
+      const isImageUrl = /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i.test(question.image);
+      if (isImageUrl) {
+        const img = document.createElement("img");
+        img.src = question.image;
+        img.alt = "Imagen asociada a la pregunta";
+        img.loading = "lazy";
+        imgWrap.appendChild(img);
+      } else {
+        const link = document.createElement("a");
+        link.href = question.image;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "\uD83D\uDCCE Ver recurso adjunto";
+        imgWrap.appendChild(link);
+      }
+      article.appendChild(imgWrap);
+    }
+
     question.options.forEach((option) => article.appendChild(createOption(question, option)));
     article.appendChild(createFeedback(question));
 
@@ -550,6 +572,7 @@ function normalizeExamData(data) {
     return {
       id: question.id || index + 1,
       text: String(question.text || `Pregunta ${index + 1}`),
+      image: String(question.image || "").trim(),
       options,
       correctOption: validKeys.includes(correctOption) ? correctOption : "",
       explanation: String(question.explanation || "").trim(),

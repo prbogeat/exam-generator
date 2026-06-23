@@ -1,94 +1,7 @@
-:root {
-  --ink: #111827;
-  --muted: #6b7280;
-  --line: #d1d5db;
-  --surface: #ffffff;
-  --surface-soft: #f8fafc;
-  --accent: #0f766e;
-  --accent-2: #1d4ed8;
-  --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
-}
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: clip;
-}
-
-body {
-  background:
-    radial-gradient(circle at top left, rgba(29, 78, 216, 0.08), transparent 30%),
-    radial-gradient(circle at top right, rgba(15, 118, 110, 0.10), transparent 24%),
-    linear-gradient(180deg, #f8fbff 0%, #eef2ff 100%);
-  color: var(--ink);
-}
-
-.top-nav {
-  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-}
-
-.top-nav-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-}
-
-.nav-link {
-  color: var(--accent-2);
-  text-decoration: none;
-  margin-right: 1rem;
-  font-weight: 700;
-}
-
-.nav-pill {
-  background: #e0f2fe;
-  color: #075985;
-  border-radius: 999px;
-  padding: 0.55rem 0.9rem;
-  font-weight: 700;
-  font-size: 0.92rem;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.72rem;
-  color: var(--muted);
-  margin: 0 0 0.35rem;
-}
-
-.hero {
-  padding: 1.4rem 0 1rem;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0;
-  align-items: stretch;
-  min-width: 0;
-}
-
-.hero h1 {
-  font-size: clamp(2rem, 3vw, 3.4rem);
-  line-height: 1.02;
-  margin: 0 0 0.85rem;
-}
+/* Reglas especificas de NotebookLM. La base visual comun vive en exam-shared.css */
 
 .hero-copy {
-  color: #334155;
-  font-size: 1.04rem;
-}
-
-.panel {
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(8px);
+  max-width: none;
 }
 
 .notebook-grid {
@@ -99,18 +12,9 @@ body {
   min-width: 0;
 }
 
-.panel {
-  padding: 1.25rem;
-  min-width: 0;
-}
-
 .panel-wide {
   grid-column: 1 / -1;
   min-width: 0;
-}
-
-.panel h2 {
-  margin-top: 0;
 }
 
 .panel-head {
@@ -119,12 +23,6 @@ body {
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.field-label {
-  display: block;
-  margin: 1rem 0 0.4rem;
-  font-weight: 700;
 }
 
 .config-grid {
@@ -158,46 +56,29 @@ body {
   margin-top: 0.25rem;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 0.9rem 1rem;
-  font: inherit;
-  background: var(--surface);
-  color: var(--ink);
-}
-
 textarea {
   min-height: 160px;
   resize: vertical;
 }
 
-select {
-  background: var(--surface);
-  color: var(--ink);
-}
-
 .source-text {
   min-height: 320px;
   margin-top: 0.75rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbf7 100%);
 }
 
 .json-tip {
   margin-top: 0.85rem;
-  border: 1px solid #cfe0ff;
+  border: 1px solid #b7e4d7;
   border-radius: 14px;
-  background: #f5f9ff;
+  background: #f2fbf7;
   overflow: hidden;
 }
 
 .json-tip summary {
   cursor: pointer;
   font-weight: 700;
-  color: #1e40af;
+  color: #0f766e;
   padding: 0.75rem 0.9rem;
   list-style: none;
 }
@@ -219,17 +100,13 @@ select {
 
 .json-tip-code {
   margin: 0;
-  border-top: 1px solid #dbe8ff;
-  background: #0b1020;
-  color: #dbeafe;
+  border-top: 1px solid #d6f0e7;
+  background: #0f1f1b;
+  color: #d8f3e8;
   padding: 0.9rem;
   font-size: 0.85rem;
   max-height: 320px;
   overflow: auto;
-}
-
-.hint {
-  color: var(--muted);
 }
 
 .actions-row {
@@ -239,33 +116,8 @@ select {
   margin-top: 1rem;
 }
 
-.actions-row button,
 .file-trigger-dark {
-  border-radius: 14px;
-}
-
-.file-trigger-dark {
-  border: 1px solid var(--line);
-  background: var(--surface-soft);
-  padding: 0.8rem 1rem;
-}
-
-.status-box {
-  margin-top: 1rem;
-  border-radius: 16px;
-  padding: 0.95rem 1rem;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  background: #eff6ff;
-}
-
-.status-box[data-tone="success"] {
-  background: #ecfdf5;
-  color: #166534;
-}
-
-.status-box[data-tone="error"] {
-  background: #fef2f2;
-  color: #991b1b;
+  background: #f4fbf7;
 }
 
 .result-layout {
@@ -283,10 +135,10 @@ select {
 
 .json-preview,
 .conversation {
-  border: 1px solid var(--line);
+  border: 1px solid #d1d5db;
   border-radius: 18px;
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #10211c;
+  color: #ddf6ea;
   padding: 1rem;
   min-height: 320px;
   max-height: 620px;
@@ -300,11 +152,11 @@ select {
 
 .conversation {
   background: #ffffff;
-  color: var(--ink);
+  color: #111827;
 }
 
 .conversation-empty {
-  color: var(--muted);
+  color: #6b7280;
 }
 
 .message {
@@ -312,15 +164,15 @@ select {
   border-radius: 16px;
   padding: 0.85rem 0.95rem;
   margin-bottom: 0.85rem;
-  background: #f8fafc;
+  background: #f4fbf7;
 }
 
 .message.user {
-  border-left: 4px solid var(--accent-2);
+  border-left: 4px solid #0f766e;
 }
 
 .message.assistant {
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid #15803d;
 }
 
 .message-meta {
@@ -328,7 +180,7 @@ select {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--muted);
+  color: #6b7280;
   margin-bottom: 0.45rem;
 }
 
@@ -339,7 +191,6 @@ select {
 }
 
 @media (max-width: 960px) {
-  .hero-grid,
   .notebook-grid,
   .result-layout {
     grid-template-columns: 1fr;
@@ -353,11 +204,6 @@ select {
     grid-column: auto;
   }
 
-  .top-nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .json-preview,
   .conversation {
     max-height: 420px;
@@ -365,25 +211,12 @@ select {
 }
 
 @media (max-width: 640px) {
-  .panel {
-    border-radius: 18px;
-  }
-
   .json-tip-code {
     font-size: 0.8rem;
-  }
-
-  .nav-link {
-    display: inline-block;
-    margin-bottom: 0.35rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .wrap {
-    max-width: 1380px;
-  }
-
   .config-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
