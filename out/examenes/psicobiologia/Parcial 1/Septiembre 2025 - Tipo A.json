@@ -1,0 +1,796 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Septiembre de 2025 Tipo A",
+  "subtitle": "30 Tipo Test - Examen Septiembre de 2025 Tipo A",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "Según Santiago Ramón y Cajal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La información fluye de los nervios periféricos a los centros nerviosos, en los que se procesan y generan respuestas."
+        },
+        {
+          "key": "B",
+          "text": "El sistema nervioso está compuesto únicamente por fibras nerviosas sin orden alguno."
+        },
+        {
+          "key": "C",
+          "text": "Las células neuronales están conectadas entre sí por continuidad y no por contigüidad."
+        },
+        {
+          "key": "D",
+          "text": "El cilindroeje de la neurona sería la estructura receptora de las señales transmitidas por otras neuronas, que tras pasar por el cuerpo celular se enviarían por las arborizaciones periféricas hasta otras células nerviosas y órganos efectores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Nota: Esta pregunta contiene un error tipográfico en el examen original. La gran aportación de Cajal (Doctrina Neuronal) fue demostrar que las neuronas se comunican por 'contigüidad' (hay un espacio sináptico) y no por 'continuidad' (una red física unida). La opción C afirma exactamente lo contrario (la postura de Golgi), pero suele ser la opción que el tribunal da por válida asumiendo el error de redacción. La opción D también es falsa, ya que el principio de polarización dinámica de Cajal establece que las dendritas son las estructuras receptoras, no el axón (cilindroeje)."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Junto con la aproximación correlacional, ¿cuáles son las otras dos principales estrategias experimentales para explicar la conducta y los procesos mentales?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La observación pasiva y la recopilación de datos."
+        },
+        {
+          "key": "B",
+          "text": "La intervención conductual, en la que la conducta es la variable independiente y el organismo el variable dependiente, y la intervención somática, en la que la conducta es la variable dependiente mientras que el organismo el independiente."
+        },
+        {
+          "key": "C",
+          "text": "La investigación cualitativa y la revisión bibliográfica."
+        },
+        {
+          "key": "D",
+          "text": "La modificación genética y el análisis de comportamiento a través de encuestas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El método científico en Psicobiología emplea la contrastación empírica mediante la aproximación correlacional (observacional) y dos estrategias experimentales principales: la intervención somática (donde el organismo es la variable independiente manipulada y la conducta la dependiente) y la intervención conductual (donde se manipula el entorno/conducta como variable independiente para observar los cambios en el organismo como variable dependiente)."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "En lo que se refiere a la cromatina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La eucromatina está más densamente empaquetada que la heterocromatina."
+        },
+        {
+          "key": "B",
+          "text": "La heterocromatina está más densamente empaquetada que la eucromatina."
+        },
+        {
+          "key": "C",
+          "text": "Ambos tipos de cromatina están igualmente empaquetadas."
+        },
+        {
+          "key": "D",
+          "text": "El ADN no está unido a las histonas cuando se encuentra unido a la heterocromatina."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En el núcleo celular, el material genético se presenta en dos estados de compactación: la heterocromatina, que es una forma de cromatina muy condensada y densamente empaquetada (transcripcionalmente inactiva), y la eucromatina, que está más laxa y permite la expresión de los genes."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Teniendo en cuenta todos los tipos de organismos que hay en el planeta Tierra, la información genética:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No puede almacenarse en forma de ARN y luego transcribirse inversamente a ADN."
+        },
+        {
+          "key": "B",
+          "text": "Sí puede almacenarse en forma de ARN y luego transcribirse inversamente a ADN."
+        },
+        {
+          "key": "C",
+          "text": "Solamente puede almacenarse en forma de ARN y luego transcribirse inversamente a ADN."
+        },
+        {
+          "key": "D",
+          "text": "Solamente puede almacenarse en forma de ADN y luego transcribirse a ARN."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Aunque el dogma central de la biología propone el flujo de información de ADN a ARN a Proteína, en la naturaleza existen excepciones como los retrovirus (por ejemplo, el VIH). Estos organismos almacenan su información genética en forma de ARN y utilizan la enzima transcriptasa inversa para transcribirla inversamente a ADN dentro de la célula huésped."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Dos progenitores de distinto sexo y heterocigóticos para alelos relacionados con la narcolepsia y el síndrome de Fase Adelantada del Sueño, desean tener hijos desconociendo sus genotipos respecto a esos dos trastornos. Supongamos que el genotipo de ambos es N1N2P1P2, siendo N1 el alelo dominante y N2 el recesivo relacionados con la narcolepsia, mientras que P1 es el alelo dominante y el P2 es el alelo recesivo relacionados con el síndrome de Fase Adelantada del Sueño. Teniendo en cuenta esos genotipos y su posible descendencia ¿cuál sería la proporción de hijos con el trastorno de narcolepsia y sin el trastorno de síndrome de Fase Adelantada del Sueño?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "4/16 (4 casos de 16 posibles)."
+        },
+        {
+          "key": "B",
+          "text": "3/16."
+        },
+        {
+          "key": "C",
+          "text": "12/16."
+        },
+        {
+          "key": "D",
+          "text": "1/16."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Se trata de un cruce dihíbrido clásico (N1N2 P1P2 x N1N2 P1P2). La narcolepsia suele modelarse como un trastorno recesivo (se necesita N2N2, probabilidad de 1/4). El Síndrome de Fase Adelantada del Sueño (FASPS) se hereda de forma autosómica dominante (la mutación patológica es dominante). Por tanto, para NO padecer FASPS, el descendiente debe heredar ambos alelos sanos recesivos (P2P2, probabilidad de 1/4). La probabilidad conjunta de heredar N2N2 (1/4) y P2P2 (1/4) es 1/16."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Suponga que, en un grupo de hombres primitivos... la población se fue diezmando a consecuencia de diversas enfermedades, de modo que, en un momento dado, sólo quedó una pareja y una hija de ambos... padre e hija se aparearon numerosas veces y tuvieron 12 hijos. De ellos, 3 (2 chicas y 1 chico) mostraron una descoordinación motora acusada... Si también suponemos que esa descoordinación era consecuencia de un único alelo ¿qué porcentaje de los 12 hijos cabe esperar que sea portador de, al menos, una copia de ese alelo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "100%."
+        },
+        {
+          "key": "B",
+          "text": "25%."
+        },
+        {
+          "key": "C",
+          "text": "50%."
+        },
+        {
+          "key": "D",
+          "text": "75%."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Al aparecer el rasgo en 3 de los 12 hijos (un 25%), deducimos que la descoordinación sigue una herencia mendeliana recesiva simple, donde ambos progenitores (padre e hija) eran heterocigotos portadores (Aa x Aa). La descendencia se distribuye en 25% sanos no portadores (AA), 50% sanos portadores (Aa) y 25% enfermos (aa). Los que portan 'al menos una copia' del alelo mutado (a) son los heterocigotos (Aa) y los homocigotos recesivos (aa). Sumando sus probabilidades obtenemos un 75%."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Las personas con los genotipos 47, XXX y 47, XXY suelen tener una estatura superior a la media de la población. Ello parece ser debido a la presencia de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tres copias del gen SHOX en el genotipo 47, XXX y dos copias en el genotipo 47, XXY."
+        },
+        {
+          "key": "B",
+          "text": "Tres copias del gen SHOX en el genotipo 47,XXX y tres copias en el genotipo 47, XXY."
+        },
+        {
+          "key": "C",
+          "text": "Tres copias del gen XIST en el genotipo 47,XXX y dos copias en el genotipo 47, XXY."
+        },
+        {
+          "key": "D",
+          "text": "Tres copias del gen XITS en el genotipo 47,XXX y tres copias en el genotipo 47, XXY."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El gen SHOX, implicado en el desarrollo de la estatura, se encuentra en la región pseudoautosómica de los cromosomas sexuales (tanto en el X como en el Y) y escapa a la inactivación normal del cromosoma X. Un individuo 47,XXX tiene tres cromosomas X (tres copias del gen SHOX). Un individuo 47,XXY (síndrome de Klinefelter) tiene dos cromosomas X y un Y, sumando igualmente tres copias del gen SHOX en total."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En un experimento sobre impulsividad en ratones, se cruzaron dos líneas puras de ratones homocigotos... La línea A mostró un tiempo de espera promedio... de 5 segundos, con una varianza fenotípica de 4, mientras que la línea B mostró un tiempo de espera promedio de 15 segundos, también con una varianza fenotípica de 4. La generación F1... mostró un tiempo de espera promedio intermedio... y una varianza fenotípica de 4. Posteriormente, en la generación F2... se midió una varianza fenotípica total de 20. ¿Cuál es la varianza genética (Vg) y la heredabilidad (H2) en la generación F2?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Vg = 4; H2 = 0,2."
+        },
+        {
+          "key": "B",
+          "text": "Vg = 16; H2 = 0,8."
+        },
+        {
+          "key": "C",
+          "text": "Vg = 20; H2 = 1."
+        },
+        {
+          "key": "D",
+          "text": "Vg = 8; H2 = 0,4."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En genética cuantitativa, la varianza observada en líneas puras y en su primera generación F1 (que son genéticamente idénticos entre sí) se debe exclusivamente al ambiente (Va = 4). En la generación F2, los genes segregan y la varianza total (Vt) es la suma de la genética y la ambiental (Vt = Vg + Va). Sabiendo que Vt = 20 y Va = 4, despejamos la varianza genética: Vg = 20 - 4 = 16. La heredabilidad se calcula como Vg/Vt, es decir, 16 / 20 = 0,8."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "Supongamos un rasgo fenotípico mediado por tres genes, cada uno con dos alelos. Uno de los alelos de cada gen aporta una unidad de valor aditivo y el otro no aporta nada. ¿Cuántos posibles fenotipos diferentes podrían darse de este rasgo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "3."
+        },
+        {
+          "key": "B",
+          "text": "6."
+        },
+        {
+          "key": "C",
+          "text": "7."
+        },
+        {
+          "key": "D",
+          "text": "8."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En la herencia de los rasgos cuantitativos poligénicos donde los alelos actúan de forma estrictamente aditiva, el número de clases fenotípicas resultantes en una población que segrega para n genes es 2n + 1. En este caso, al estar implicados 3 loci (n=3), el cálculo es (2 * 3) + 1 = 7 fenotipos diferentes."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Un rasgo fenotípico tiene una heredabilidad de 0.7. ¿Qué significa esto?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El 70% de la variabilidad observada en la población se debe a diferencias genéticas."
+        },
+        {
+          "key": "B",
+          "text": "El 70% del rasgo está determinado genéticamente en cada individuo."
+        },
+        {
+          "key": "C",
+          "text": "El 30% de la variabilidad se debe exclusivamente al ambiente compartido."
+        },
+        {
+          "key": "D",
+          "text": "El rasgo no está influenciado por el ambiente."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La heredabilidad es un parámetro estadístico y poblacional. Que un rasgo tenga una heredabilidad de 0.7 indica que el 70% de la varianza fenotípica (las diferencias observadas en ese rasgo entre los individuos de una población concreta) puede explicarse por la varianza genotípica (las diferencias en sus genes)."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "Las fórmulas de Falconer permiten calcular:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las frecuencias genotípicas."
+        },
+        {
+          "key": "B",
+          "text": "El coeficiente de selección."
+        },
+        {
+          "key": "C",
+          "text": "Si una estrategia es evolutivamente estable."
+        },
+        {
+          "key": "D",
+          "text": "No permiten calcular ninguno de los conceptos mencionados en las opciones anteriores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La fórmula desarrollada por Falconer se emplea en genética de la conducta exclusivamente para estimar y calcular la heredabilidad (H2) de un rasgo a partir de las diferencias en los coeficientes de correlación entre parejas de gemelos monocigóticos y dicigóticos. Al no aparecer la heredabilidad en las opciones A, B y C, la D es la correcta."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Cuando la frecuencia alélica cambia por razones del azar, decimos que se trata de un proceso de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Deriva genética."
+        },
+        {
+          "key": "B",
+          "text": "Mutación aleatoria."
+        },
+        {
+          "key": "C",
+          "text": "Fluctuaciones poblacionales."
+        },
+        {
+          "key": "D",
+          "text": "Adaptación."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La deriva genética es la fuerza evolutiva que provoca fluctuaciones y cambios en las frecuencias génicas y alélicas de una población a lo largo de las generaciones debido, única y exclusivamente, a eventos o errores de muestreo debidos al azar (como ocurre en el efecto fundador o en el efecto de cuello de botella)."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En una población de gatos, el éxito reproductivo del genotipo X tiene un promedio de 5 descendientes por individuo, mientras que el éxito reproductivo del genotipo Y es de 3 descendientes por individuo. ¿Cuál es la eficacia biológica del genotipo X y cuál es el coeficiente de selección de Y?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eficacia biológica de X = 0.6 y coeficiente de selección de Y = 0.4."
+        },
+        {
+          "key": "B",
+          "text": "Eficacia biológica de X = 1 y coeficiente de selección de Y = 0.4."
+        },
+        {
+          "key": "C",
+          "text": "Eficacia biológica de X = 1 y coeficiente de selección de Y = 0.6."
+        },
+        {
+          "key": "D",
+          "text": "Eficacia biológica de X = 0.8 y coeficiente de selección de Y = 0.2."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El genotipo X aporta el máximo de descendientes (5), por lo que su eficacia biológica relativa (w) se toma como referencia máxima: w(X) = 5/5 = 1. La eficacia biológica de Y será w(Y) = 3/5 = 0.6. El coeficiente de selección (s) mide la presión evolutiva en contra de un genotipo y se calcula restando la eficacia biológica a 1 (s = 1 - w). Para el genotipo Y, s(Y) = 1 - 0.6 = 0.4."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Un nuevo alelo puede aumentar la capacidad reproductiva de un heterocigoto en comparación con los homocigotos, ¿cómo se llama este fenómeno?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Selección codominante."
+        },
+        {
+          "key": "B",
+          "text": "Sobredominancia o superioridad del heterocigoto."
+        },
+        {
+          "key": "C",
+          "text": "Subdominancia o selección contra el heterocigoto."
+        },
+        {
+          "key": "D",
+          "text": "Dominancia completa."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Cuando la selección natural favorece a los individuos heterocigotos (aumentando su éxito reproductivo y supervivencia frente a los homocigotos de ambos alelos), se produce un fenómeno de polimorfismo equilibrado conocido en genética de poblaciones como sobredominancia o superioridad del heterocigoto."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Una colonia de bacterias se reproduce en un entorno acuático, donde la temperatura del agua varía entre 15ºC y 30ºC. Las bacterias tienen tres variedades que se diferencian por su capacidad de crecimiento en función de la temperatura: Variedad A: Crece óptimamente a 15ºC... Variedad B: Crece óptimamente a 22.5ºC... Variedad C: Crece óptimamente a 30ºC... Durante varias generaciones, se observa que la temperatura media del entorno se mantiene constantemente en 22.5ºC. Debido a esto, la variedad B se vuelve cada vez más común en la colonia, mientras que el éxito reproductivo de las variedades A y C se ve perjudicado. Este escenario es un ejemplo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Selección natural direccional."
+        },
+        {
+          "key": "B",
+          "text": "Selección natural estabilizadora."
+        },
+        {
+          "key": "C",
+          "text": "Selección natural disruptiva."
+        },
+        {
+          "key": "D",
+          "text": "Ninguna de las respuestas anteriores es correcta."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Al mantenerse el entorno en un valor térmico constante e intermedio (22.5ºC), la presión selectiva actúa en contra de ambos extremos de la distribución fenotípica (las bacterias de 15ºC y 30ºC) y favorece la supervivencia exclusiva del rasgo o fenotipo central (la variedad B). Este es el mecanismo clásico de la selección natural estabilizadora."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "¿Qué aportaciones fundamentales hizo Konrad Lorenz a la Etología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La teoría de la impronta y el estudio del instinto."
+        },
+        {
+          "key": "B",
+          "text": "El concepto de pauta de acción fija."
+        },
+        {
+          "key": "C",
+          "text": "La teoría del aprendizaje en mamíferos."
+        },
+        {
+          "key": "D",
+          "text": "Las respuestas A y B son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Konrad Lorenz, considerado uno de los padres fundadores de la Etología clásica (junto a Niko Tinbergen), es mundialmente reconocido por haber descubierto y formulado biológicamente el fenómeno del troquelado o impronta filial en las aves (A), así como por definir de forma sistemática los instintos y acuñar el término fundamental de Pauta de Acción Fija (B)."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Qué método utiliza principalmente la Etología para estudiar la conducta?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Técnicas de neuroimagen."
+        },
+        {
+          "key": "B",
+          "text": "Observación de la conducta en el entorno natural."
+        },
+        {
+          "key": "C",
+          "text": "Pruebas de condicionamiento clásico."
+        },
+        {
+          "key": "D",
+          "text": "Análisis estadístico de respuestas reflejas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El enfoque metodológico clásico y distintivo de la Etología consiste en llevar a cabo estudios de campo mediante la observación meticulosa y el registro sistemático del comportamiento espontáneo de los animales mientras se desenvuelven interactuando libremente en su hábitat o entorno natural."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "¿Qué tipo de comportamiento se encuentra frecuentemente en las interacciones sociales de animales de la misma especie?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pautas de acción fija."
+        },
+        {
+          "key": "B",
+          "text": "Mecanismos desencadenadores innatos."
+        },
+        {
+          "key": "C",
+          "text": "Reacciones impredecibles."
+        },
+        {
+          "key": "D",
+          "text": "Estímulos supernormales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las pautas de acción fija (PAF) son secuencias conductuales innatas, estereotipadas y sumamente predecibles que conforman la base de gran parte del repertorio comportamental de la especie, utilizándose ampliamente como 'señales' o displays de comunicación durante el cortejo, las disputas territoriales y demás interacciones sociales entre congéneres."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "¿Qué es la motivación según la Psicobiología?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un cambio permanente en la estructura cerebral."
+        },
+        {
+          "key": "B",
+          "text": "Una respuesta instintiva a estímulos externos."
+        },
+        {
+          "key": "C",
+          "text": "El resultado del aprendizaje social."
+        },
+        {
+          "key": "D",
+          "text": "El estado interno del organismo que influye en las respuestas conductuales."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el marco ecológico y psicobiológico causal, la motivación se define como un estado interno temporal y reversible del organismo (como el hambre, la sed o el celo) que modula los umbrales sensoriales e influye probabilísticamente en su predisposición para emitir determinadas respuestas conductuales frente al entorno."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "¿Qué propósito tiene el concepto de \"aptitud inclusiva\" en la teoría evolutiva?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Medir el éxito reproductivo solamente en términos de supervivencia directa."
+        },
+        {
+          "key": "B",
+          "text": "Explicar la transmisión genética indirecta a través de la ayuda a familiares."
+        },
+        {
+          "key": "C",
+          "text": "Evaluar la capacidad de adaptación al entorno."
+        },
+        {
+          "key": "D",
+          "text": "Definir la competencia entre especies."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La noción de aptitud inclusiva (inclusive fitness), formulada por W.D. Hamilton, revolucionó la biología evolutiva al demostrar que el éxito de un individuo en transmitir sus genes no sólo depende de su descendencia propia (aptitud directa), sino que incluye el beneficio obtenido de fomentar y promover indirectamente la supervivencia y reproducción de sus familiares allegados que comparten sus mismos genes (selección por parentesco)."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Señale qué indican los números 2, 4 y 5 de la figura:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nervio espinal, asta dorsal y sustancia gris."
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca, ganglio de la raíz dorsal y asta ventral."
+        },
+        {
+          "key": "C",
+          "text": "Zona intermedia, ganglio de la raíz dorsal y sustancia gris."
+        },
+        {
+          "key": "D",
+          "text": "Surcos laterales, ganglio de la raíz dorsal y asta dorsal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El esquema representa un corte transversal de la médula espinal. El número 2 señala la protuberancia de la vía aferente, que es el ganglio de la raíz dorsal. El número 4 marca los haces de la región exterior, compuestos por los tractos de sustancia blanca. Por último, el número 5 apunta a las prolongaciones ensanchadas anteriores de la sustancia gris en forma de 'H', conocidas anatómica y funcionalmente como las astas ventrales (motoras).",
+      "image": "https://drive.google.com/file/d/1YRsGuz5hPrZRk7ekB0yBB4_teA4FafJ4/view?usp=drive_link"
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "Señale la respuesta correcta respecto a la barrera hematoencefálica:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Está formada por células endoteliales que presentan aberturas para el intercambio de sustancias."
+        },
+        {
+          "key": "B",
+          "text": "Es consecuencia de las especiales características de las células endoteliales de los capilares del sistema nervioso central."
+        },
+        {
+          "key": "C",
+          "text": "Está formada por células endoteliales y oligodendrocitos."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La restrictiva barrera hematoencefálica (BHE) es el resultado biológico y anatómico de las fuertes uniones estrechas que sellan el espacio entre las membranas celulares de las células endoteliales de los capilares del encéfalo, impidiendo así el libre tránsito de sustancias e iones desde la sangre al parénquima cerebral."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "Respecto al SNA, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Participa en la regulación del ambiente interno del organismo."
+        },
+        {
+          "key": "B",
+          "text": "Es completamente independiente del control voluntario."
+        },
+        {
+          "key": "C",
+          "text": "Cuenta con fibras aferentes, pero no eferentes."
+        },
+        {
+          "key": "D",
+          "text": "Sus fibras son los únicos componentes de los nervios craneales."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El Sistema Nervioso Autónomo (SNA), con sus divisiones simpática y parasimpática, es el pilar motor fundamental encargado de inervar la musculatura lisa, el miocardio y las glándulas; rigiendo y manteniendo dinámicamente la homeostasis o regulación automática del ambiente orgánico interno."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "La capa más profunda de las meninges se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Duramadre."
+        },
+        {
+          "key": "B",
+          "text": "Aracnoides."
+        },
+        {
+          "key": "C",
+          "text": "Piamadre."
+        },
+        {
+          "key": "D",
+          "text": "Espacio subaracnoideo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las tres capas de tejido conjuntivo que protegen el Sistema Nervioso Central se organizan de exterior a interior. La más externa y recia es la duramadre, seguida por la aracnoides, y la capa más íntima y profunda, que se adosa siguiendo todos los pliegues y contornos del encéfalo y la médula, es la piamadre."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Señale la respuesta INCORRECTA respecto a la sinapsis:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se establece cuando una señal eléctrica se transforma en una señal química."
+        },
+        {
+          "key": "B",
+          "text": "Tiene dos componentes: presináptico y postsináptico."
+        },
+        {
+          "key": "C",
+          "text": "La membrana presináptica no cuenta con receptores de neurotransmisores."
+        },
+        {
+          "key": "D",
+          "text": "Los receptores son moléculas especializadas sobre las que actúan los neurotransmisores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La afirmación falsa es la C, ya que el terminal y la membrana presináptica SÍ poseen de forma generalizada y abundante proteínas receptoras especializadas, llamadas autorreceptores, que detectan el propio neurotransmisor recién liberado para regular y ejercer retroalimentación negativa sobre futuras liberaciones."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "¿Cuál de los siguientes cationes se encuentra en mayor concentración dentro de la célula?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sodio."
+        },
+        {
+          "key": "B",
+          "text": "Potasio."
+        },
+        {
+          "key": "C",
+          "text": "Cloruro."
+        },
+        {
+          "key": "D",
+          "text": "Aniones proteicos orgánicos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Debido a la acción de los canales pasivos de fuga y a la bomba electrogénica, en estado de reposo fisiológico, el ion potasio (K+) es el catión (ion con carga positiva) que predomina inmensamente en el espacio intracelular en comparación con su bajísima concentración en el líquido extracelular (donde dominan el sodio y el cloro)."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "En las neuronas, tras producirse un potencial de acción, existe un periodo en el que es imposible que se produzca otro. Este periodo, conocido como periodo refractario absoluto, se debe a:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un aumento en la concentración extracelular de sodio."
+        },
+        {
+          "key": "B",
+          "text": "Un aumento en la concentración intracelular de potasio."
+        },
+        {
+          "key": "C",
+          "text": "La inactivación de los canales de sodio dependientes de voltaje."
+        },
+        {
+          "key": "D",
+          "text": "La inactivación de los canales de potasio dependientes de voltaje."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Inmediatamente después de alcanzar el pico de despolarización de un potencial de acción, las compuertas de los canales de Na+ dependientes de voltaje se bloquean y adoptan un estado temporal inactivo. Esta inactivación física imposibilita por completo que el canal vuelva a abrirse, creando el periodo refractario absoluto que impide un nuevo disparo."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Cuál de los siguientes fenómenos provocaría una hiperpolarización en la membrana postsináptica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apertura de canales Na+ o K+."
+        },
+        {
+          "key": "B",
+          "text": "Apertura de canales Cl- o Ca2+."
+        },
+        {
+          "key": "C",
+          "text": "Apertura de canales Ca2+ o Na+."
+        },
+        {
+          "key": "D",
+          "text": "Apertura de canales Cl- o K+."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Una hiperpolarización (un potencial inhibitorio o PIP) sucede cuando el interior celular se vuelve más negativo. Esto se consigue biofísicamente abriendo canales que permitan la entrada de cargas negativas al interior (como los aniones Cl-), o permitiendo la fuga de cargas positivas hacia el exterior celular a favor de su gradiente (como los cationes K+)."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "¿Cuál de los siguientes es un método de inactivación de neurotransmisores que hace que la transmisión sináptica finalice?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Recaptación."
+        },
+        {
+          "key": "B",
+          "text": "Sumación de potenciales locales inhibitorios."
+        },
+        {
+          "key": "C",
+          "text": "Apertura de canales de Ca2+ dependientes de voltaje."
+        },
+        {
+          "key": "D",
+          "text": "Inactivación de receptores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Para asegurar que las señales sean breves y precisas en el tiempo, los neurotransmisores liberados en la hendidura sináptica deben ser rápidamente eliminados. El sistema nervioso emplea dos mecanismos biológicos principales para esta inactivación química de la señal: la degradación enzimática destructiva y el reciclaje o recaptación del transmisor de vuelta al botón terminal a través de proteínas transportadoras."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "En la década de los 90 se demostró la existencia del sistema cannabinoide endógeno. ¿Cuál de las siguientes afirmaciones en relación con este sistema es FALSA?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sus receptores son metabotrópicos."
+        },
+        {
+          "key": "B",
+          "text": "Está involucrado en la regulación endocrina y la ingesta de comida, entre otros."
+        },
+        {
+          "key": "C",
+          "text": "El THC es uno de sus ligandos endógenos."
+        },
+        {
+          "key": "D",
+          "text": "Sus receptores se encuentran tanto en el SNC como en tejidos relacionados con el sistema inmunitario."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La afirmación falsa es que el tetrahidrocannabinol (THC) sea un ligando endógeno (opción C). El THC es en realidad el principal compuesto psicoactivo *exógeno* (ajeno al cuerpo) de la planta del cannabis. Los ligandos *endógenos* (producidos de forma natural por nuestro propio cerebro) para estos receptores son derivados lipídicos como la anandamida (AEA) y el 2-araquidonilglicerol (2-AG)."
+    }
+  ]
+}
