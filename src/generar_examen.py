@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, build_path, get_preset
+from exam_db import get_connection, upsert_exam
 
 # PRESETS
 # Configuraciones predefinidas según la asignatura o tipo de examen. Si se define una PRESET, se ignoran los valores individuales de CONFIG.
@@ -269,6 +270,9 @@ def main() -> None:
     converted_exam = convert_exam(source_root)
 
     save_json(output_path, converted_exam)
+
+    with get_connection() as conn:
+        upsert_exam(conn, converted_exam, source_path=str(output_path))
 
     print(f"Examen generado correctamente en: {output_path}")
     print(f"Preguntas convertidas: {len(converted_exam['questions'])}")

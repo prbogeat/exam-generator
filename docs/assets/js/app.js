@@ -11,6 +11,7 @@ const state = {
   timerStart: null,
   timerInterval: null,
   timerRunning: false,
+  dbSource: "none",
 };
 
 const floatingViewer = {
@@ -44,10 +45,179 @@ const dom = {
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
   loadDefaultData: document.getElementById("loadDefaultData"),
+  refreshDbExams: document.getElementById("refreshDbExams"),
+  dbExamSelect: document.getElementById("dbExamSelect"),
+  loadSelectedDbExam: document.getElementById("loadSelectedDbExam"),
+  loadLatestDbExam: document.getElementById("loadLatestDbExam"),
   saveAnswers: document.getElementById("saveAnswers"),
   examFileInput: document.getElementById("examFileInput"),
   answersFileInput: document.getElementById("answersFileInput"),
 };
+
+function getDbMetaValue(meta, ...keys) {
+  for (const key of keys) {
+    if (meta && Object.prototype.hasOwnProperty.call(meta, key) && meta[key] !== undefined && meta[key] !== null) {
+      return meta[key];
+    }
+  }
+  return "";
+}
+
+function normalizeDbExamMeta(meta, index) {
+  const examUid = String(getDbMetaValue(meta, "exam_uid", "examUid", "uid") || "").trim();
+  const examTitle = String(getDbMetaValue(meta, "exam_title", "examTitle") || "Examen").trim();
+  const subjectTitle = String(
+    getDbMetaValue(meta, "subject_folder", "subject", "subject_title", "subjectTitle") || "Asignatura"
+  ).trim();
+  const totalQuestions = Number(getDbMetaValue(meta, "total_questions", "totalQuestions") || 0);
+  const updatedAt = String(getDbMetaValue(meta, "updated_at", "updatedAt") || "").trim();
+
+  return {
+    examUid,
+    examTitle,
+    subjectTitle,
+    totalQuestions,
+    updatedAt,
+    index,
+  };
+}
+
+function buildDbOptionLabel(item) {
+  const total = item.totalQuestions > 0 ? `${item.totalQuestions} preguntas` : "preguntas sin definir";
+  const updated = item.updatedAt ? ` · ${item.updatedAt}` : "";
+  return `${item.subjectTitle} · ${item.examTitle} · ${total}${updated}`;
+}
+
+function populateDbExamSelect(list) {
+  dom.dbExamSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = list.length
+    ? "-- Selecciona un examen de la BD --"
+    : "-- No hay exámenes disponibles en la BD --";
+  dom.dbExamSelect.appendChild(placeholder);
+
+  list.forEach((meta, index) => {
+    const item = normalizeDbExamMeta(meta, index);
+    if (!item.examUid) {
+      return;
+    }
+
+    const option = document.createElement("option");
+    option.value = item.examUid;
+    option.textContent = buildDbOptionLabel(item);
+    dom.dbExamSelect.appendChild(option);
+  });
+}
+
+function isNativeApp() {
+  return Boolean(
+    window.Capacitor &&
+    typeof window.Capacitor.isNativePlatform === "function" &&
+    window.Capacitor.isNativePlatform()
+  );
+}
+
+async function listDbExams() {
+  const runningNative = isNativeApp();
+  const nativeAvailable =
+    window.ExamMobileDb &&
+    window.ExamMobileDb.isAvailable &&
+    window.ExamMobileDb.isAvailable() &&
+    typeof window.ExamMobileDb.listExams === "function";
+
+  if (nativeAvailable) {
+    const nativeExams = await window.ExamMobileDb.listExams();
+    state.dbSource = "native";
+    return Array.isArray(nativeExams) ? nativeExams : [];
+  }
+
+  if (runningNative) {
+    throw new Error("SQLite nativa no disponible en esta ejecución.");
+  }
+
+  const response = await fetch("/api/exams", { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  const payload = await response.json();
+  if (!payload || !payload.success || !Array.isArray(payload.exams)) {
+    throw new Error("Respuesta inválida de /api/exams");
+  }
+
+  state.dbSource = "api";
+  return payload.exams;
+}
+
+async function refreshDbExamList() {
+  setDataStatus("Actualizando listado de exámenes en BD...", "neutral");
+
+  try {
+    const exams = await listDbExams();
+    populateDbExamSelect(exams);
+
+    if (!exams.length) {
+      const sourceLabel = state.dbSource === "native" ? "BD nativa" : "BD API";
+      if (sourceLabel === "BD nativa") {
+        setDataStatus(
+          "No hay exámenes en la BD nativa todavía. Carga uno con 'Cargar último examen BD' o desde JSON para guardarlo en el dispositivo.",
+          "neutral"
+        );
+      } else {
+        setDataStatus(`No hay exámenes disponibles en ${sourceLabel} aún.`, "neutral");
+      }
+      return;
+    }
+
+    setDataStatus(`Listado de BD actualizado (${exams.length} examen(es)).`, "neutral");
+  } catch (error) {
+    populateDbExamSelect([]);
+    state.dbSource = "none";
+    if (isNativeApp()) {
+      setDataStatus(
+        `No se pudo listar la BD nativa: ${error.message}`,
+        "error"
+      );
+      return;
+    }
+    setDataStatus(`No se pudo listar la BD: ${error.message}`, "error");
+  }
+}
+
+async function loadExamByUidFromDb(examUid) {
+  const uid = String(examUid || "").trim();
+  if (!uid) {
+    throw new Error("Selecciona un examen de la BD.");
+  }
+
+  const nativeAvailable =
+    window.ExamMobileDb &&
+    window.ExamMobileDb.isAvailable &&
+    window.ExamMobileDb.isAvailable() &&
+    typeof window.ExamMobileDb.getExamByUid === "function";
+
+  if (nativeAvailable) {
+    const exam = await window.ExamMobileDb.getExamByUid(uid);
+    if (exam) {
+      applyExamData(normalizeExamData(exam), "BD nativa (selección)");
+      return;
+    }
+  }
+
+  const response = await fetch(`/api/exams/${encodeURIComponent(uid)}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  const payload = await response.json();
+  if (!payload || !payload.success || !payload.exam) {
+    throw new Error("Respuesta inválida de /api/exams/{uid}");
+  }
+
+  applyExamData(normalizeExamData(payload.exam), "BD local (selección)");
+}
 
 function formatTime(ms) {
   const totalSeconds = Math.floor(ms / 1000);
@@ -560,7 +730,7 @@ function renderQuestions() {
     const article = document.createElement("article");
     article.className = "question empty-state";
     article.textContent =
-      "No hay examen cargado. Usa el botón de JSON por defecto o carga un archivo JSON manualmente.";
+      "No hay examen cargado. Usa la sección de BD o la carga manual desde JSON.";
     dom.questions.appendChild(article);
     updateProgress();
     return;
@@ -838,6 +1008,31 @@ function applyExamData(exam, sourceLabel) {
   state.exam = exam;
   resetExam(false, true);
   updateStaticTexts();
+
+  if (window.ExamMobileDb && window.ExamMobileDb.isAvailable && window.ExamMobileDb.isAvailable()) {
+    window.ExamMobileDb.saveExam(exam).then((saved) => {
+      if (saved) {
+        refreshDbExamList();
+        return;
+      }
+
+      if (isNativeApp()) {
+        setDataStatus(
+          "No se pudo guardar el examen en la BD nativa del dispositivo.",
+          "error"
+        );
+      }
+    }).catch(() => {
+      // Si falla persistencia nativa, la app sigue operativa con estado en memoria.
+      if (isNativeApp()) {
+        setDataStatus(
+          "Error al guardar examen en BD nativa del dispositivo.",
+          "error"
+        );
+      }
+    });
+  }
+
   if (sourceLabel) {
     setDataStatus(
       `Examen cargado: ${sourceLabel}${state.importedAnswers ? ` · Respuestas: ${state.importedAnswersSource}` : ""}`,
@@ -884,6 +1079,41 @@ async function loadExamFromUrl(url, label) {
 
     setDataStatus(message, "error");
   }
+}
+
+async function loadDefaultExam() {
+  if (window.ExamMobileDb && window.ExamMobileDb.getLatestExam) {
+    try {
+      const nativeExam = await window.ExamMobileDb.getLatestExam();
+      if (nativeExam) {
+        applyExamData(normalizeExamData(nativeExam), "base local nativa");
+        return;
+      }
+    } catch (_error) {
+      // Si falla la lectura nativa, se intenta API/JSON.
+    }
+  }
+
+  const dbLabel = "base local (SQLite API)";
+
+  try {
+    const response = await fetch("/api/exams/latest", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const payload = await response.json();
+    if (!payload || !payload.success || !payload.exam) {
+      throw new Error("Respuesta inválida de /api/exams/latest");
+    }
+
+    applyExamData(normalizeExamData(payload.exam), dbLabel);
+    return;
+  } catch (_error) {
+    // Si no hay backend/API disponible (GitHub Pages, file://, etc), se mantiene el flujo clásico.
+  }
+
+  await loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
 }
 
 async function loadExamFromFile(file) {
@@ -953,6 +1183,20 @@ function bindEvents() {
     loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
   });
 
+  dom.refreshDbExams.addEventListener("click", () => {
+    refreshDbExamList();
+  });
+
+  dom.loadSelectedDbExam.addEventListener("click", () => {
+    loadExamByUidFromDb(dom.dbExamSelect.value).catch((error) => {
+      setDataStatus(`No se pudo cargar examen de BD: ${error.message}`, "error");
+    });
+  });
+
+  dom.loadLatestDbExam.addEventListener("click", () => {
+    loadDefaultExam();
+  });
+
   dom.saveAnswers.addEventListener("click", saveAnswersToJson);
 
   dom.examFileInput.addEventListener("change", (event) => {
@@ -976,7 +1220,24 @@ function initializeApp() {
   updateStaticTexts();
   updateDataStatus();
   renderQuestions();
-  loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
+  refreshDbExamList();
+  loadDefaultExam();
+}
+
+function registerServiceWorker() {
+  const hasSupport = "serviceWorker" in navigator;
+  const isAllowedProtocol = window.location.protocol === "https:" || window.location.hostname === "localhost";
+
+  if (!hasSupport || !isAllowedProtocol) {
+    return;
+  }
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {
+      // Registration can fail in restrictive environments; the app still works online.
+    });
+  });
 }
 
 initializeApp();
+registerServiceWorker();

@@ -7,12 +7,16 @@ Proyecto para generar y corregir examenes tipo test en JSON, con una interfaz we
 - `src/generar_examen.py`: genera un examen en formato compatible con la app web de `docs/`.
 - `src/corregir_examen.py`: corrige un examen realizado contra un examen base y genera informes.
 - `src/generar_examen_lib.py`: lógica reutilizable de generación (usada por `generar_examen.py` y por el servidor).
+- `src/exam_db.py`: persistencia local SQLite para exámenes generados.
+- `src/import_out_exams_to_db.py`: importador de exámenes JSON existentes (`out/examenes`) hacia SQLite.
 - `src/exam_presets.py`: presets compartidos de ruta y configuracion por asignatura.
 - `src/server.py`: servidor HTTP local que sirve `docs/` y expone la API de generación.
 - `docs/index.html`: visor/corrector en navegador para examenes JSON (apto para GitHub Pages).
 - `docs/generator.html`: interfaz web de generación de exámenes, con guardado local opcional incluso si se sirve desde un servidor remoto.
 - `docs/notebooklm.html`: flujo local para convertir la salida estructurada de NotebookLM en bancos JSON.
+- `docs/manifest.webmanifest` y `docs/sw.js`: configuración PWA para instalación móvil y caché offline básica.
 - `docs/data/presets.json`: definición de presets disponibles en la UI del generador.
+- `mobile/`: shell Capacitor para empaquetar la web app en iOS/Android con persistencia SQLite nativa.
 - `.vscode/tasks.json`: tareas listas para ejecutar en VS Code.
 
 ## Estructura del proyecto
@@ -28,12 +32,19 @@ docs/
   index.html               # Visor de exámenes (GitHub Pages)
   generator.html           # UI de generación (con guardado local opcional)
   notebooklm.html          # UI para convertir la salida de NotebookLM en JSON
+  manifest.webmanifest     # Metadatos de instalación (PWA)
+  sw.js                    # Service worker (caché básica offline)
   assets/
     css/
     js/
+    icons/
   data/
     examen-plantilla.json  # Plantilla por defecto
     presets.json           # Presets para la UI del generador
+mobile/
+  capacitor.config.json    # Config de Capacitor
+  package.json             # Scripts para sync/open iOS/Android
+  README.md                # Guía de empaquetado móvil
 input/
   banco_de_preguntas/      # JSONs origen de preguntas
   examenes_realizados/     # Respuestas del alumno para corregir
@@ -43,6 +54,27 @@ out/
 ```
 
 ## Modos de uso
+
+## Base de datos local (SQLite)
+
+Los exámenes generados se guardan ahora en paralelo en JSON y en SQLite:
+
+- Base local: `out/db/exams.db`
+- JSON de salida: `out/examenes/...`
+
+Para importar exámenes ya existentes en `out/examenes` a SQLite:
+
+```bash
+python src/import_out_exams_to_db.py
+```
+
+API de lectura desde base local (cuando ejecutas `python src/server.py`):
+
+- `GET /api/exams` → lista metadatos
+- `GET /api/exams/latest` → devuelve el último examen completo
+- `GET /api/exams/{exam_uid}` → devuelve un examen específico
+
+La app web (`docs/index.html`) intenta cargar primero `GET /api/exams/latest` y, si no hay backend, usa el JSON por defecto como fallback.
 
 ### Opción A: Scripts Python directamente
 
@@ -85,6 +117,27 @@ Notas importantes:
 - No hay integración directa con NotebookLM.
 - El flujo soportado es: pedir a NotebookLM que responda en un formato estructurado y pegar esa salida en la página.
 - El conversor funciona sin claves API ni billing.
+
+### Opción E: Instalable en iOS/Android (PWA + shell Capacitor)
+
+Esta rama incluye dos caminos complementarios:
+
+- **PWA**: instalable directamente desde navegador móvil (sin tienda).
+- **Capacitor**: empaquetado en app nativa para iOS/Android, manteniendo lógica web y con persistencia local en SQLite nativa.
+
+Para PWA, sirve `docs/` por HTTPS o localhost y abre `index.html`.
+
+Para shell móvil:
+
+```bash
+cd mobile
+npm install
+npm run cap:add:ios
+npm run cap:add:android
+npm run cap:sync
+npm run cap:open:ios
+npm run cap:open:android
+```
 
 ## 1) Generar examen (`src/generar_examen.py`)
 
@@ -327,3 +380,26 @@ Resumen de cada task:
 - `NotebookLM local`: abre `notebooklm.html` y pega la salida estructurada de NotebookLM.
 
 Todas usan `C:/Program Files/Python39-33/python.exe` para evitar problemas de rutas con espacios en Windows.
+
+## 6) Modo móvil en detalle
+
+### PWA (sin empaquetar)
+
+- `docs/index.html` declara `manifest.webmanifest` y soporte iOS (`apple-touch-icon`).
+- `docs/sw.js` cachea shell y recursos principales para funcionamiento básico sin conexión.
+- Instalación:
+  - Android (Chrome): menú > "Instalar app".
+  - iOS (Safari): compartir > "Añadir a pantalla de inicio".
+
+### Capacitor (empaquetado App Store / Play Store)
+
+Directorio: `mobile/`.
+
+- `webDir` apunta a `../docs`, así reutilizas exactamente la misma app web.
+- No se añade ningún plugin nativo por defecto.
+- Tras cambios en `docs/`, ejecuta de nuevo:
+
+```bash
+cd mobile
+npm run cap:sync
+```

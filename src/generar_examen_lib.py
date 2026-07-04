@@ -18,6 +18,7 @@ _PROJECT_ROOT = _Path(__file__).resolve().parent.parent
 os.chdir(_PROJECT_ROOT)
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT
+from exam_db import get_connection, upsert_exam
 
 
 def load_json(path: Path) -> Any:
@@ -289,6 +290,9 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             output_path = Path(output_path_str)
             save_json(output_path, converted_exam)
 
+            with get_connection() as conn:
+                upsert_exam(conn, converted_exam, source_path=str(output_path))
+
             template_path = derive_template_path(output_path)
             save_json(template_path, template)
         else:
@@ -296,6 +300,9 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             output_path = Path(output_file_name)
             template_stem = Path(output_file_name).stem or "examen"
             template_path = Path(f"{template_stem}-realizado.json")
+
+            with get_connection() as conn:
+                upsert_exam(conn, converted_exam, source_path=str(output_path))
 
         return {
             "success": True,

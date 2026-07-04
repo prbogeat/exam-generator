@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Generar Examen (PowerShell)",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-File",
+				"generar-examen.ps1",
+				"-InputJson",
+				"input/psicobiologia/preguntas_psicologia_fundamentos_psicobiologia_completo.json",
+				"-OutputJson",
+				"out/examen-uned.json",
+				"-SubjectTitle",
+				"Fundamentos de Psicobiología",
+				"-ExamTitle",
+				"UNED - 30 Tipo Test",
+				"-Subtitle",
+				"30 Tipo Test",
+				"-MaxScore",
+				"10",
+				"-WrongAnswersPerDiscountedCorrect",
+				"3",
+				"-TimeLimitMinutes",
+				"90",
+				"-NumberOfQuestions",
+				"30",
+				"-RandomSelection",
+				"1",
+				"-RandomSeed",
+				"-1"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Servidor Local (Python)",
+			"type": "shell",
+			"command": "/usr/local/bin/python3",
+			"args": [
+				"src/server.py"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

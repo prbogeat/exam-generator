@@ -335,6 +335,12 @@ async function handleGeneratedExam(result, config) {
   const examJson = result.examJson || null;
   const templateJson = result.templateJson || null;
 
+  if (examJson && window.ExamMobileDb && window.ExamMobileDb.isAvailable && window.ExamMobileDb.isAvailable()) {
+    window.ExamMobileDb.saveExam(examJson).catch(() => {
+      // La persistencia nativa es complementaria; no bloquea la descarga/guardado local.
+    });
+  }
+
   if (state.localOutputFolderHandle) {
     try {
       if (!examJson) {

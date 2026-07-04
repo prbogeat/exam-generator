@@ -1,0 +1,24 @@
+{
+  "name": "examenes-mobile-shell",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shell móvil iOS/Android para la web app de Exámenes (sin plugins nativos).",
+  "scripts": {
+    "cap:doctor": "npx cap doctor",
+    "cap:sync": "npx cap sync",
+    "cap:add:ios": "npx cap add ios",
+    "cap:add:android": "npx cap add android",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android",
+    "cap:run:android": "npx cap run android"
+  },
+  "dependencies": {
+    "@capacitor-community/sqlite": "^8.1.0",
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/ios": "^8.4.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.1"
+  }
+}
