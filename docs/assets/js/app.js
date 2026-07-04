@@ -12,6 +12,7 @@ const state = {
   timerInterval: null,
   timerRunning: false,
   dbSource: "none",
+  dbExamCatalog: [],
 };
 
 const floatingViewer = {
@@ -46,6 +47,8 @@ const dom = {
   resetBottom: document.getElementById("resetBottom"),
   loadDefaultData: document.getElementById("loadDefaultData"),
   refreshDbExams: document.getElementById("refreshDbExams"),
+  dbSubjectSelect: document.getElementById("dbSubjectSelect"),
+  dbPartialSelect: document.getElementById("dbPartialSelect"),
   dbExamSelect: document.getElementById("dbExamSelect"),
   loadSelectedDbExam: document.getElementById("loadSelectedDbExam"),
   loadLatestDbExam: document.getElementById("loadLatestDbExam"),
@@ -63,19 +66,48 @@ function getDbMetaValue(meta, ...keys) {
   return "";
 }
 
+function extractPartialFromPath(rawPath) {
+  const normalized = String(rawPath || "").replace(/\\/g, "/");
+  if (!normalized) {
+    return "";
+  }
+
+  const segments = normalized.split("/").filter(Boolean);
+  const parcial = segments.find((segment) => /^parcial\s+\d+$/i.test(segment.trim()));
+  return parcial ? parcial.trim() : "";
+}
+
+function normalizePartialName(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return "";
+  }
+
+  const match = text.match(/^parcial\s+(\d+)$/i);
+  if (match) {
+    return `Parcial ${match[1]}`;
+  }
+
+  return text;
+}
+
 function normalizeDbExamMeta(meta, index) {
   const examUid = String(getDbMetaValue(meta, "exam_uid", "examUid", "uid") || "").trim();
   const examTitle = String(getDbMetaValue(meta, "exam_title", "examTitle") || "Examen").trim();
   const subjectTitle = String(
     getDbMetaValue(meta, "subject_folder", "subject", "subject_title", "subjectTitle") || "Asignatura"
   ).trim();
+  const sourcePath = String(getDbMetaValue(meta, "source_path", "sourcePath") || "").trim();
+  const partialFromMeta = String(getDbMetaValue(meta, "partial", "parcial") || "").trim();
+  const partial = normalizePartialName(partialFromMeta || extractPartialFromPath(sourcePath));
   const totalQuestions = Number(getDbMetaValue(meta, "total_questions", "totalQuestions") || 0);
   const updatedAt = String(getDbMetaValue(meta, "updated_at", "updatedAt") || "").trim();
 
   return {
     examUid,
     examTitle,
-    subjectTitle,
+    subject: subjectTitle,
+    partial,
     totalQuestions,
     updatedAt,
     index,
@@ -84,11 +116,71 @@ function normalizeDbExamMeta(meta, index) {
 
 function buildDbOptionLabel(item) {
   const total = item.totalQuestions > 0 ? `${item.totalQuestions} preguntas` : "preguntas sin definir";
-  const updated = item.updatedAt ? ` · ${item.updatedAt}` : "";
-  return `${item.subjectTitle} · ${item.examTitle} · ${total}${updated}`;
+  return `${item.examTitle} · ${total}`;
 }
 
-function populateDbExamSelect(list) {
+function populateDbSubjectSelect(subjects, selectedSubject) {
+  dom.dbSubjectSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = subjects.length
+    ? "-- Selecciona una asignatura --"
+    : "-- No hay asignaturas en la BD --";
+  dom.dbSubjectSelect.appendChild(placeholder);
+
+  subjects.forEach((subject) => {
+    const option = document.createElement("option");
+    option.value = subject;
+    option.textContent = subject;
+    dom.dbSubjectSelect.appendChild(option);
+  });
+
+  if (selectedSubject && subjects.includes(selectedSubject)) {
+    dom.dbSubjectSelect.value = selectedSubject;
+  }
+}
+
+function hideDbPartialSelect() {
+  dom.dbPartialSelect.classList.add("hidden");
+  dom.dbPartialSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "-- Selecciona un parcial --";
+  dom.dbPartialSelect.appendChild(placeholder);
+}
+
+function populateDbPartialSelect(partials, selectedPartial) {
+  if (!partials.length) {
+    hideDbPartialSelect();
+    return;
+  }
+
+  dom.dbPartialSelect.classList.remove("hidden");
+  dom.dbPartialSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "-- Selecciona un parcial --";
+  dom.dbPartialSelect.appendChild(placeholder);
+
+  partials.forEach((partial) => {
+    const option = document.createElement("option");
+    option.value = partial;
+    option.textContent = partial;
+    dom.dbPartialSelect.appendChild(option);
+  });
+
+  if (selectedPartial && partials.includes(selectedPartial)) {
+    dom.dbPartialSelect.value = selectedPartial;
+    return;
+  }
+
+  dom.dbPartialSelect.value = partials[0];
+}
+
+function populateDbExamSelect(list, selectedExamUid = "") {
   dom.dbExamSelect.replaceChildren();
 
   const placeholder = document.createElement("option");
@@ -98,8 +190,7 @@ function populateDbExamSelect(list) {
     : "-- No hay exámenes disponibles en la BD --";
   dom.dbExamSelect.appendChild(placeholder);
 
-  list.forEach((meta, index) => {
-    const item = normalizeDbExamMeta(meta, index);
+  list.forEach((item) => {
     if (!item.examUid) {
       return;
     }
@@ -109,6 +200,86 @@ function populateDbExamSelect(list) {
     option.textContent = buildDbOptionLabel(item);
     dom.dbExamSelect.appendChild(option);
   });
+
+  if (selectedExamUid && list.some((item) => item.examUid === selectedExamUid)) {
+    dom.dbExamSelect.value = selectedExamUid;
+  }
+}
+
+function normalizeDbExamList(rawList) {
+  return rawList
+    .map((meta, index) => normalizeDbExamMeta(meta, index))
+    .filter((item) => item.examUid);
+}
+
+function getFilteredExamsForCurrentSelection(catalog) {
+  const selectedSubject = dom.dbSubjectSelect.value;
+  if (!selectedSubject) {
+    return [];
+  }
+
+  const examsForSubject = catalog.filter((item) => item.subject === selectedSubject);
+  if (dom.dbPartialSelect.classList.contains("hidden")) {
+    return examsForSubject;
+  }
+
+  const selectedPartial = dom.dbPartialSelect.value;
+  if (!selectedPartial) {
+    return examsForSubject;
+  }
+
+  return examsForSubject.filter((item) => item.partial === selectedPartial);
+}
+
+function populateDbSelectors(catalog) {
+  const previousSubject = dom.dbSubjectSelect.value;
+  const previousPartial = dom.dbPartialSelect.value;
+  const previousExam = dom.dbExamSelect.value;
+
+  const subjects = [...new Set(catalog.map((item) => item.subject).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+
+  const selectedSubject =
+    previousSubject && subjects.includes(previousSubject)
+      ? previousSubject
+      : subjects.length
+        ? subjects[0]
+        : "";
+
+  populateDbSubjectSelect(subjects, selectedSubject);
+
+  const examsForSubject = selectedSubject
+    ? catalog.filter((item) => item.subject === selectedSubject)
+    : [];
+
+  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+
+  populateDbPartialSelect(partials, previousPartial);
+
+  const filteredExams = getFilteredExamsForCurrentSelection(catalog);
+
+  populateDbExamSelect(filteredExams, previousExam);
+}
+
+function onDbSubjectChanged() {
+  const subject = dom.dbSubjectSelect.value;
+  const examsForSubject = subject
+    ? state.dbExamCatalog.filter((item) => item.subject === subject)
+    : [];
+
+  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+
+  populateDbPartialSelect(partials, "");
+  populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
+}
+
+function onDbPartialChanged() {
+  populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
 }
 
 function isNativeApp() {
@@ -156,9 +327,10 @@ async function refreshDbExamList() {
 
   try {
     const exams = await listDbExams();
-    populateDbExamSelect(exams);
+    state.dbExamCatalog = normalizeDbExamList(exams);
+    populateDbSelectors(state.dbExamCatalog);
 
-    if (!exams.length) {
+    if (!state.dbExamCatalog.length) {
       const sourceLabel = state.dbSource === "native" ? "BD nativa" : "BD API";
       if (sourceLabel === "BD nativa") {
         setDataStatus(
@@ -171,9 +343,10 @@ async function refreshDbExamList() {
       return;
     }
 
-    setDataStatus(`Listado de BD actualizado (${exams.length} examen(es)).`, "neutral");
+    setDataStatus(`Listado de BD actualizado (${state.dbExamCatalog.length} examen(es)).`, "neutral");
   } catch (error) {
-    populateDbExamSelect([]);
+    state.dbExamCatalog = [];
+    populateDbSelectors([]);
     state.dbSource = "none";
     if (isNativeApp()) {
       setDataStatus(
@@ -1186,6 +1359,9 @@ function bindEvents() {
   dom.refreshDbExams.addEventListener("click", () => {
     refreshDbExamList();
   });
+
+  dom.dbSubjectSelect.addEventListener("change", onDbSubjectChanged);
+  dom.dbPartialSelect.addEventListener("change", onDbPartialChanged);
 
   dom.loadSelectedDbExam.addEventListener("click", () => {
     loadExamByUidFromDb(dom.dbExamSelect.value).catch((error) => {

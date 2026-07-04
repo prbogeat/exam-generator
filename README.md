@@ -7,8 +7,9 @@ Proyecto para generar y corregir examenes tipo test en JSON, con una interfaz we
 - `src/generar_examen.py`: genera un examen en formato compatible con la app web de `docs/`.
 - `src/corregir_examen.py`: corrige un examen realizado contra un examen base y genera informes.
 - `src/generar_examen_lib.py`: lógica reutilizable de generación (usada por `generar_examen.py` y por el servidor).
-- `src/exam_db.py`: persistencia local SQLite para exámenes generados.
-- `src/import_out_exams_to_db.py`: importador de exámenes JSON existentes (`out/examenes`) hacia SQLite.
+- `src/exam_db.py`: persistencia de exámenes en SQLite o PostgreSQL (según configuración).
+- `src/import_out_exams_to_db.py`: importador de exámenes JSON existentes (`out/examenes`) hacia la BD activa.
+- `src/init_postgres_schema.py`: inicializador del esquema SQL en PostgreSQL.
 - `src/exam_presets.py`: presets compartidos de ruta y configuracion por asignatura.
 - `src/server.py`: servidor HTTP local que sirve `docs/` y expone la API de generación.
 - `docs/index.html`: visor/corrector en navegador para examenes JSON (apto para GitHub Pages).
@@ -55,17 +56,30 @@ out/
 
 ## Modos de uso
 
-## Base de datos local (SQLite)
+## Base de datos (SQLite o PostgreSQL)
 
-Los exámenes generados se guardan ahora en paralelo en JSON y en SQLite:
+Los exámenes generados se guardan ahora en paralelo en JSON y en la BD configurada:
 
-- Base local: `out/db/exams.db`
+- SQLite local por defecto: `out/db/exams.db`
+- PostgreSQL si defines `EXAM_DB_URL` o `DATABASE_URL`
 - JSON de salida: `out/examenes/...`
 
-Para importar exámenes ya existentes en `out/examenes` a SQLite:
+Campo de asignatura en BD:
+
+- Se guarda como `subject`.
+- Se deriva automáticamente desde la carpeta en `out/examenes/<asignatura>/...`.
+- Si no se puede derivar por ruta, usa `subjectTitle` como fallback.
+
+Para importar exámenes ya existentes en `out/examenes` a la BD activa:
 
 ```bash
 python src/import_out_exams_to_db.py
+```
+
+Para inicializar el esquema en PostgreSQL:
+
+```bash
+EXAM_DB_URL="postgresql://usuario@localhost:5432/examenes_local" python src/init_postgres_schema.py
 ```
 
 API de lectura desde base local (cuando ejecutas `python src/server.py`):

@@ -149,8 +149,8 @@ def convert_options(question: Dict[str, Any]) -> List[Dict[str, str]]:
 def derive_template_path(output_path: Path, script_dir: Path) -> Path:
     """Deriva la ruta de la plantilla a partir del path de salida del examen generado.
 
-    Ejemplo: out/examenes/psicobiologia/examen.json
-             → input/examenes_realizados/psicobiologia/examen.json
+    Ejemplo: out/examenes/Fundamentos de Psicobiología/examen.json
+             → input/examenes_realizados/Fundamentos de Psicobiología/examen.json
     """
     subject = output_path.parent.name
     return script_dir / "input" / "examenes_realizados" / subject / output_path.name

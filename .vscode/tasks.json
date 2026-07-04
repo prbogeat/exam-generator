@@ -4,32 +4,9 @@
 		{
 			"label": "Generar Examen (PowerShell)",
 			"type": "shell",
-			"command": "pwsh",
+			"command": "/usr/local/bin/python3",
 			"args": [
-				"-File",
-				"generar-examen.ps1",
-				"-InputJson",
-				"input/psicobiologia/preguntas_psicologia_fundamentos_psicobiologia_completo.json",
-				"-OutputJson",
-				"out/examen-uned.json",
-				"-SubjectTitle",
-				"Fundamentos de Psicobiología",
-				"-ExamTitle",
-				"UNED - 30 Tipo Test",
-				"-Subtitle",
-				"30 Tipo Test",
-				"-MaxScore",
-				"10",
-				"-WrongAnswersPerDiscountedCorrect",
-				"3",
-				"-TimeLimitMinutes",
-				"90",
-				"-NumberOfQuestions",
-				"30",
-				"-RandomSelection",
-				"1",
-				"-RandomSeed",
-				"-1"
+				"src/generar_examen.py"
 			],
 			"group": "build",
 			"problemMatcher": []
@@ -42,6 +19,52 @@
 				"src/server.py"
 			],
 			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Servidor Local (PostgreSQL)",
+			"type": "shell",
+			"command": "/bin/zsh",
+			"args": [
+				"-lc",
+				"source .venv-pg/bin/activate && EXAM_DB_URL='postgresql://pablorosasbogeat@localhost:5432/examenes_local' /usr/local/bin/python3 src/server.py"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Detener Servidor Local (8001)",
+			"type": "shell",
+			"command": "/bin/zsh",
+			"args": [
+				"-lc",
+				"lsof -ti tcp:8001 | xargs kill -9 2>/dev/null || true"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Cliente BD Web (pgweb)",
+			"type": "shell",
+			"command": "/bin/zsh",
+			"args": [
+				"-lc",
+				"pgweb --host localhost --port 5432 --db examenes_local --user pablorosasbogeat --bind 127.0.0.1 --listen 8081 --skip-open"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Detener Cliente BD Web (8081)",
+			"type": "shell",
+			"command": "/bin/zsh",
+			"args": [
+				"-lc",
+				"lsof -ti tcp:8081 | xargs kill -9 2>/dev/null || true"
+			],
 			"group": "build",
 			"problemMatcher": []
 		}
