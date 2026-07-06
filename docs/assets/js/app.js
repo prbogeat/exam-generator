@@ -53,7 +53,6 @@ const dom = {
   dbPartialSelect: document.getElementById("dbPartialSelect"),
   dbExamSelect: document.getElementById("dbExamSelect"),
   loadSelectedDbExam: document.getElementById("loadSelectedDbExam"),
-  loadLatestDbExam: document.getElementById("loadLatestDbExam"),
   saveAnswers: document.getElementById("saveAnswers"),
   examFileInput: document.getElementById("examFileInput"),
   answersFileInput: document.getElementById("answersFileInput"),
@@ -75,7 +74,7 @@ function extractPartialFromPath(rawPath) {
   }
 
   const segments = normalized.split("/").filter(Boolean);
-  const parcial = segments.find((segment) => /^parcial\s+\d+$/i.test(segment.trim()));
+  const parcial = segments.find((segment) => /^parcial[\s-]\d+$/i.test(segment.trim()));
   return parcial ? parcial.trim() : "";
 }
 
@@ -85,7 +84,7 @@ function normalizePartialName(value) {
     return "";
   }
 
-  const match = text.match(/^parcial\s+(\d+)$/i);
+  const match = text.match(/^parcial[\s-](\d+)$/i);
   if (match) {
     return `Parcial ${match[1]}`;
   }
@@ -1346,10 +1345,6 @@ function bindEvents() {
 
   dom.loadSelectedDbExam.addEventListener("click", () => {
     loadCurrentCatalogSelection();
-  });
-
-  dom.loadLatestDbExam.addEventListener("click", () => {
-    loadDefaultExam();
   });
 
   dom.saveAnswers.addEventListener("click", saveAnswersToJson);

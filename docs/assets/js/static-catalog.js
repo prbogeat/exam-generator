@@ -174,7 +174,7 @@
     return {
       examUid: relativePath.join("/"),
       subject: String(relativePath[0] || payload.subjectTitle || "Asignatura"),
-      partial: relativePath.find((segment) => /^parcial\s+\d+$/i.test(String(segment || "").trim())) || "",
+      partial: relativePath.find((segment) => /^parcial[\s-]\d+$/i.test(String(segment || "").trim())) || "",
       examTitle: String(payload.examTitle || "Examen"),
       subtitle: String(payload.subtitle || ""),
       totalQuestions: Number(payload.totalQuestions || questions.length || 0),
