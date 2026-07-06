@@ -1,4 +1,6 @@
 const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
+const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
+const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
 
 const state = {
   exam: null,
@@ -92,16 +94,17 @@ function normalizePartialName(value) {
 }
 
 function normalizeDbExamMeta(meta, index) {
-  const examUid = String(getDbMetaValue(meta, "exam_uid", "examUid", "uid") || "").trim();
+  const examUid = String(getDbMetaValue(meta, "examUid", "exam_uid", "uid", "key") || "").trim();
   const examTitle = String(getDbMetaValue(meta, "exam_title", "examTitle") || "Examen").trim();
   const subjectTitle = String(
     getDbMetaValue(meta, "subject_folder", "subject", "subject_title", "subjectTitle") || "Asignatura"
   ).trim();
-  const sourcePath = String(getDbMetaValue(meta, "source_path", "sourcePath") || "").trim();
+  const sourcePath = String(getDbMetaValue(meta, "source_path", "sourcePath", "file") || "").trim();
   const partialFromMeta = String(getDbMetaValue(meta, "partial", "parcial") || "").trim();
   const partial = normalizePartialName(partialFromMeta || extractPartialFromPath(sourcePath));
   const totalQuestions = Number(getDbMetaValue(meta, "total_questions", "totalQuestions") || 0);
   const updatedAt = String(getDbMetaValue(meta, "updated_at", "updatedAt") || "").trim();
+  const file = String(getDbMetaValue(meta, "file", "url") || "").trim();
 
   return {
     examUid,
@@ -111,6 +114,7 @@ function normalizeDbExamMeta(meta, index) {
     totalQuestions,
     updatedAt,
     index,
+    file,
   };
 }
 
@@ -126,7 +130,7 @@ function populateDbSubjectSelect(subjects, selectedSubject) {
   placeholder.value = "";
   placeholder.textContent = subjects.length
     ? "-- Selecciona una asignatura --"
-    : "-- No hay asignaturas en la BD --";
+    : "-- No hay asignaturas publicadas --";
   dom.dbSubjectSelect.appendChild(placeholder);
 
   subjects.forEach((subject) => {
@@ -167,28 +171,29 @@ function populateDbPartialSelect(partials, selectedPartial) {
 
   partials.forEach((partial) => {
     const option = document.createElement("option");
-    option.value = partial;
-    option.textContent = partial;
+    option.value = partial.value;
+    option.textContent = partial.label;
     dom.dbPartialSelect.appendChild(option);
   });
 
-  if (selectedPartial && partials.includes(selectedPartial)) {
+  if (selectedPartial && partials.some((partial) => partial.value === selectedPartial)) {
     dom.dbPartialSelect.value = selectedPartial;
     return;
   }
 
-  dom.dbPartialSelect.value = partials[0];
+  dom.dbPartialSelect.value = partials[0].value;
 }
 
 function populateDbExamSelect(list, selectedExamUid = "") {
   dom.dbExamSelect.replaceChildren();
 
-  const placeholder = document.createElement("option");
-  placeholder.value = "";
-  placeholder.textContent = list.length
-    ? "-- Selecciona un examen de la BD --"
-    : "-- No hay exámenes disponibles en la BD --";
-  dom.dbExamSelect.appendChild(placeholder);
+  if (!list.length) {
+    const placeholder = document.createElement("option");
+    placeholder.value = "";
+    placeholder.textContent = "-- No hay exámenes publicados disponibles --";
+    dom.dbExamSelect.appendChild(placeholder);
+    return;
+  }
 
   list.forEach((item) => {
     if (!item.examUid) {
@@ -201,9 +206,15 @@ function populateDbExamSelect(list, selectedExamUid = "") {
     dom.dbExamSelect.appendChild(option);
   });
 
-  if (selectedExamUid && list.some((item) => item.examUid === selectedExamUid)) {
-    dom.dbExamSelect.value = selectedExamUid;
+  if (selectedExamUid) {
+    const selectedIndex = list.findIndex((item) => item.examUid === selectedExamUid);
+    if (selectedIndex >= 0) {
+      dom.dbExamSelect.options[selectedIndex].selected = true;
+      return;
+    }
   }
+
+  dom.dbExamSelect.options[0].selected = true;
 }
 
 function normalizeDbExamList(rawList) {
@@ -228,7 +239,29 @@ function getFilteredExamsForCurrentSelection(catalog) {
     return examsForSubject;
   }
 
+  if (selectedPartial === NO_PARTIAL_FILTER_VALUE) {
+    return examsForSubject.filter((item) => !item.partial);
+  }
+
   return examsForSubject.filter((item) => item.partial === selectedPartial);
+}
+
+function buildPartialFilterOptions(examsForSubject) {
+  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+  const hasNoPartialExams = examsForSubject.some((item) => !item.partial);
+
+  if (!partials.length) {
+    return [];
+  }
+
+  const options = partials.map((partial) => ({ value: partial, label: partial }));
+  if (hasNoPartialExams) {
+    options.unshift({ value: NO_PARTIAL_FILTER_VALUE, label: "Sin parcial" });
+  }
+
+  return options;
 }
 
 function populateDbSelectors(catalog) {
@@ -253,9 +286,7 @@ function populateDbSelectors(catalog) {
     ? catalog.filter((item) => item.subject === selectedSubject)
     : [];
 
-  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
-    a.localeCompare(b, "es")
-  );
+  const partials = buildPartialFilterOptions(examsForSubject);
 
   populateDbPartialSelect(partials, previousPartial);
 
@@ -270,16 +301,22 @@ function onDbSubjectChanged() {
     ? state.dbExamCatalog.filter((item) => item.subject === subject)
     : [];
 
-  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
-    a.localeCompare(b, "es")
-  );
+  const partials = buildPartialFilterOptions(examsForSubject);
 
   populateDbPartialSelect(partials, "");
   populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
+
+  if (dom.dbExamSelect.value) {
+    loadCurrentCatalogSelection();
+  }
 }
 
 function onDbPartialChanged() {
   populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
+
+  if (dom.dbExamSelect.value) {
+    loadCurrentCatalogSelection();
+  }
 }
 
 function isNativeApp() {
@@ -291,39 +328,28 @@ function isNativeApp() {
 }
 
 async function listDbExams() {
-  const runningNative = isNativeApp();
-  const nativeAvailable =
-    window.ExamMobileDb &&
-    window.ExamMobileDb.isAvailable &&
-    window.ExamMobileDb.isAvailable() &&
-    typeof window.ExamMobileDb.listExams === "function";
-
-  if (nativeAvailable) {
-    const nativeExams = await window.ExamMobileDb.listExams();
-    state.dbSource = "native";
-    return Array.isArray(nativeExams) ? nativeExams : [];
-  }
-
-  if (runningNative) {
-    throw new Error("SQLite nativa no disponible en esta ejecución.");
-  }
-
-  const response = await fetch("/api/exams", { cache: "no-store" });
+  const response = await fetch(STATIC_EXAMS_INDEX_FILE, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
 
   const payload = await response.json();
-  if (!payload || !payload.success || !Array.isArray(payload.exams)) {
-    throw new Error("Respuesta inválida de /api/exams");
+  const items = Array.isArray(payload)
+    ? payload
+    : Array.isArray(payload?.items)
+      ? payload.items
+      : null;
+
+  if (!items) {
+    throw new Error("Respuesta inválida de exams-index.json");
   }
 
-  state.dbSource = "api";
-  return payload.exams;
+  state.dbSource = "static";
+  return items;
 }
 
 async function refreshDbExamList() {
-  setDataStatus("Actualizando listado de exámenes en BD...", "neutral");
+  setDataStatus("Actualizando catálogo estático de exámenes...", "neutral");
 
   try {
     const exams = await listDbExams();
@@ -331,65 +357,41 @@ async function refreshDbExamList() {
     populateDbSelectors(state.dbExamCatalog);
 
     if (!state.dbExamCatalog.length) {
-      const sourceLabel = state.dbSource === "native" ? "BD nativa" : "BD API";
-      if (sourceLabel === "BD nativa") {
-        setDataStatus(
-          "No hay exámenes en la BD nativa todavía. Carga uno con 'Cargar último examen BD' o desde JSON para guardarlo en el dispositivo.",
-          "neutral"
-        );
-      } else {
-        setDataStatus(`No hay exámenes disponibles en ${sourceLabel} aún.`, "neutral");
-      }
+      setDataStatus("No hay exámenes publicados todavía en assets/json.", "neutral");
       return;
     }
 
-    setDataStatus(`Listado de BD actualizado (${state.dbExamCatalog.length} examen(es)).`, "neutral");
+    setDataStatus(`Catálogo actualizado (${state.dbExamCatalog.length} examen(es)).`, "neutral");
   } catch (error) {
     state.dbExamCatalog = [];
     populateDbSelectors([]);
     state.dbSource = "none";
-    if (isNativeApp()) {
-      setDataStatus(
-        `No se pudo listar la BD nativa: ${error.message}`,
-        "error"
-      );
-      return;
-    }
-    setDataStatus(`No se pudo listar la BD: ${error.message}`, "error");
+    setDataStatus(`No se pudo cargar el catálogo estático: ${error.message}`, "error");
   }
 }
 
 async function loadExamByUidFromDb(examUid) {
   const uid = String(examUid || "").trim();
   if (!uid) {
-    throw new Error("Selecciona un examen de la BD.");
+    throw new Error("Selecciona un examen publicado.");
   }
 
-  const nativeAvailable =
-    window.ExamMobileDb &&
-    window.ExamMobileDb.isAvailable &&
-    window.ExamMobileDb.isAvailable() &&
-    typeof window.ExamMobileDb.getExamByUid === "function";
-
-  if (nativeAvailable) {
-    const exam = await window.ExamMobileDb.getExamByUid(uid);
-    if (exam) {
-      applyExamData(normalizeExamData(exam), "BD nativa (selección)");
-      return;
-    }
+  const selectedExam = state.dbExamCatalog.find((item) => item.examUid === uid);
+  if (!selectedExam || !selectedExam.file) {
+    throw new Error("No se encontró el JSON del examen seleccionado.");
   }
 
-  const response = await fetch(`/api/exams/${encodeURIComponent(uid)}`, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
-  }
+  await loadExamFromUrl(
+    selectedExam.file,
+    `${selectedExam.subject} · ${selectedExam.examTitle}`,
+    { subjectTitle: selectedExam.subject }
+  );
+}
 
-  const payload = await response.json();
-  if (!payload || !payload.success || !payload.exam) {
-    throw new Error("Respuesta inválida de /api/exams/{uid}");
-  }
-
-  applyExamData(normalizeExamData(payload.exam), "BD local (selección)");
+function loadCurrentCatalogSelection() {
+  loadExamByUidFromDb(dom.dbExamSelect.value).catch((error) => {
+    setDataStatus(`No se pudo cargar el examen publicado: ${error.message}`, "error");
+  });
 }
 
 function formatTime(ms) {
@@ -718,7 +720,7 @@ function updateStaticTexts() {
     document.title = "Examen dinámico";
     dom.pageTitle.textContent = "Examen dinámico";
     dom.pageSubtitle.textContent =
-      "Carga un JSON local o sirve esta carpeta por HTTP para cargar el JSON por defecto.";
+      "Selecciona un examen publicado o carga un JSON local manualmente.";
     dom.noticeBox.textContent =
       "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
@@ -903,7 +905,7 @@ function renderQuestions() {
     const article = document.createElement("article");
     article.className = "question empty-state";
     article.textContent =
-      "No hay examen cargado. Usa la sección de BD o la carga manual desde JSON.";
+      "No hay examen cargado. Usa el catálogo publicado o la carga manual desde JSON.";
     dom.questions.appendChild(article);
     updateProgress();
     return;
@@ -1184,12 +1186,7 @@ function applyExamData(exam, sourceLabel) {
 
   if (window.ExamMobileDb && window.ExamMobileDb.isAvailable && window.ExamMobileDb.isAvailable()) {
     window.ExamMobileDb.saveExam(exam).then((saved) => {
-      if (saved) {
-        refreshDbExamList();
-        return;
-      }
-
-      if (isNativeApp()) {
+      if (!saved && isNativeApp()) {
         setDataStatus(
           "No se pudo guardar el examen en la BD nativa del dispositivo.",
           "error"
@@ -1227,7 +1224,7 @@ function applyRealizedAnswers(realized, sourceLabel) {
   }
 }
 
-async function loadExamFromUrl(url, label) {
+async function loadExamFromUrl(url, label, overrides = {}) {
   setDataStatus(`Cargando ${label}...`, "neutral");
 
   try {
@@ -1237,7 +1234,13 @@ async function loadExamFromUrl(url, label) {
     }
 
     const data = await response.json();
-    applyExamData(normalizeExamData(data), label);
+    applyExamData(
+      {
+        ...normalizeExamData(data),
+        ...overrides,
+      },
+      label,
+    );
   } catch (error) {
     if (!state.exam) {
       updateStaticTexts();
@@ -1255,35 +1258,12 @@ async function loadExamFromUrl(url, label) {
 }
 
 async function loadDefaultExam() {
-  if (window.ExamMobileDb && window.ExamMobileDb.getLatestExam) {
-    try {
-      const nativeExam = await window.ExamMobileDb.getLatestExam();
-      if (nativeExam) {
-        applyExamData(normalizeExamData(nativeExam), "base local nativa");
-        return;
-      }
-    } catch (_error) {
-      // Si falla la lectura nativa, se intenta API/JSON.
+  if (state.dbExamCatalog.length) {
+    const selectedExamUid = dom.dbExamSelect.value || state.dbExamCatalog[0].examUid;
+    if (selectedExamUid) {
+      await loadExamByUidFromDb(selectedExamUid);
+      return;
     }
-  }
-
-  const dbLabel = "base local (SQLite API)";
-
-  try {
-    const response = await fetch("/api/exams/latest", { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const payload = await response.json();
-    if (!payload || !payload.success || !payload.exam) {
-      throw new Error("Respuesta inválida de /api/exams/latest");
-    }
-
-    applyExamData(normalizeExamData(payload.exam), dbLabel);
-    return;
-  } catch (_error) {
-    // Si no hay backend/API disponible (GitHub Pages, file://, etc), se mantiene el flujo clásico.
   }
 
   await loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
@@ -1362,11 +1342,10 @@ function bindEvents() {
 
   dom.dbSubjectSelect.addEventListener("change", onDbSubjectChanged);
   dom.dbPartialSelect.addEventListener("change", onDbPartialChanged);
+  dom.dbExamSelect.addEventListener("change", loadCurrentCatalogSelection);
 
   dom.loadSelectedDbExam.addEventListener("click", () => {
-    loadExamByUidFromDb(dom.dbExamSelect.value).catch((error) => {
-      setDataStatus(`No se pudo cargar examen de BD: ${error.message}`, "error");
-    });
+    loadCurrentCatalogSelection();
   });
 
   dom.loadLatestDbExam.addEventListener("click", () => {
@@ -1390,14 +1369,14 @@ function bindEvents() {
   });
 }
 
-function initializeApp() {
+async function initializeApp() {
   initFloatingViewer();
   bindEvents();
   updateStaticTexts();
   updateDataStatus();
   renderQuestions();
-  refreshDbExamList();
-  loadDefaultExam();
+  await refreshDbExamList();
+  await loadDefaultExam();
 }
 
 function registerServiceWorker() {
@@ -1415,5 +1394,5 @@ function registerServiceWorker() {
   });
 }
 
-initializeApp();
+void initializeApp();
 registerServiceWorker();

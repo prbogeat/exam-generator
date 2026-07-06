@@ -16,6 +16,7 @@ from typing import Any, Dict, List
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, build_path, get_preset
 from exam_db import get_connection, upsert_exam
+from static_exam_catalog import sync_static_exam_catalog
 
 # PRESETS
 # Configuraciones predefinidas según la asignatura o tipo de examen. Si se define una PRESET, se ignoran los valores individuales de CONFIG.
@@ -285,6 +286,12 @@ def main() -> None:
         template = build_realized_template(converted_exam)
         save_json(template_path, template)
         print(f"Plantilla de examen realizado generada en: {template_path}")
+
+    static_catalog = sync_static_exam_catalog()
+    print(
+        "Catálogo estático actualizado en: "
+        f"{static_catalog['indexPath']} ({static_catalog['count']} examen(es))"
+    )
 
 
 if __name__ == "__main__":

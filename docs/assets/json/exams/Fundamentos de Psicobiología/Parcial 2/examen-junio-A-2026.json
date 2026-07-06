@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Junio 2026 - A",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas del examen de Junio 2026 - A de Fundamentos de Psicobiología de la UNED",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "Las principales células productoras de hormonas gonadales son las de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Leydig."
+        },
+        {
+          "key": "B",
+          "text": "La zona periventricular del hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "El área preóptica medial."
+        },
+        {
+          "key": "D",
+          "text": "Sertoly."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En el tejido que rodea los tubos seminíferos se localizan las principales células productoras de hormonas, las células intersticiales o células de Leydig [1]."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "En relación con el SNA, señale la respuesta INCORRECTA:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las fibras postganglionares simpáticas liberan principalmente noradrenalina."
+        },
+        {
+          "key": "B",
+          "text": "Las neuronas preganglionares simpáticas liberan acetilcolina."
+        },
+        {
+          "key": "C",
+          "text": "La acetilcolina que se libera por parte de las neuronas preganglionares simpáticas se une a receptores nicotínicos de las neuronas postganglionares."
+        },
+        {
+          "key": "D",
+          "text": "Las neuronas preganglionares parasimpáticas liberan noradrenalina."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Es incorrecto porque todas las neuronas preganglionares, tanto simpáticas como parasimpáticas, liberan universalmente acetilcolina [2]."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "Un microorganismo consigue refugiarse dentro de las células del huésped evadiendo los anticuerpos circulantes. ¿Qué componente del sistema inmune específico es ESENCIAL para detectarlo y destruirlo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los linfocitos T, que reconocen fragmentos del antígeno exhibidos en la superficie de las células infectadas mediante proteínas CMH."
+        },
+        {
+          "key": "B",
+          "text": "Los macrófagos, que fagocitan las células infectadas sin necesidad de reconocimiento específico."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos B y los anticuerpos IgM de alta afinidad."
+        },
+        {
+          "key": "D",
+          "text": "El sistema del complemento, que produce orificios en la pared celular del microorganismo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los patógenos intracelulares quedan ocultos a los anticuerpos [3]. Para ser detectados, las células exponen fragmentos unidos a proteínas CMH, lo cual activa a los linfocitos T para destruirlas [3]."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "En el contexto de la filogenia del sistema nervioso, especialmente en peces y otros vertebrados con sistemas visuales más primitivos, ¿qué estructura actúa como un importante centro de iniciación del comportamiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo geniculado lateral del tálamo."
+        },
+        {
+          "key": "B",
+          "text": "El colículo superior."
+        },
+        {
+          "key": "C",
+          "text": "La corteza visual primaria."
+        },
+        {
+          "key": "D",
+          "text": "La epífisis."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En peces y anfibios, el techo óptico (homólogo al colículo superior) es un potente centro integrador de la visión y disparador de secuencias de huida y orientación [4, 5]."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción la unión a receptores intracelulares?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona liberadora de corticotropina."
+        },
+        {
+          "key": "B",
+          "text": "La hormona de crecimiento."
+        },
+        {
+          "key": "C",
+          "text": "La prolactina."
+        },
+        {
+          "key": "D",
+          "text": "La aldosterona."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La aldosterona es una hormona esteroide liposoluble, por lo que puede atravesar la membrana celular y unirse a receptores en el citoplasma y núcleo [6, 7]."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Un paciente presenta una lesión selectiva en el timo desde el nacimiento. ¿Qué consecuencia DIRECTA cabría esperar sobre la respuesta inmune?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Incapacidad para producir células NK al ser estas un derivado del timo."
+        },
+        {
+          "key": "B",
+          "text": "Disminución severa de la respuesta mediada por anticuerpos por déficit de linfocitos B."
+        },
+        {
+          "key": "C",
+          "text": "Déficit en la diferenciación y maduración de los linfocitos T, con afectación de la respuesta mediada por células."
+        },
+        {
+          "key": "D",
+          "text": "Ausencia de neutrófilos circulantes por fallo en la hematopoyesis del timo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El timo es el órgano linfoide primario responsable exclusivo del reclutamiento y maduración de los linfocitos T, afectando críticamente a la inmunidad celular [8, 9]."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Según la hipótesis de la compuerta del núcleo reticular del tálamo, cuando disminuye la actividad inhibitoria del núcleo reticular sobre los núcleos talámicos de relevo, ¿qué ocurre con la transmisión de información hacia la corteza cerebral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se bloquea la transmisión de señales talamocorticales."
+        },
+        {
+          "key": "B",
+          "text": "Disminuye la excitabilidad cortical."
+        },
+        {
+          "key": "C",
+          "text": "Aumenta la transmisión de información desde el tálamo hacia la corteza."
+        },
+        {
+          "key": "D",
+          "text": "Se interrumpe la comunicación entre tálamo y tronco del encéfalo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo reticular ejerce un freno inhibidor; si este disminuye, la 'compuerta' se abre y aumenta masivamente la transmisión de información desde los núcleos de relevo hacia la corteza cerebral [10, 11]."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En casos de agnosia olfativa, los pacientes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No pueden percibir olores porque sus umbrales de detección están alterados."
+        },
+        {
+          "key": "B",
+          "text": "Sufren únicamente cambios en la intensidad de los estímulos, sin afectar al reconocimiento."
+        },
+        {
+          "key": "C",
+          "text": "Perciben los olores normalmente, pero no pueden identificarlos correctamente."
+        },
+        {
+          "key": "D",
+          "text": "Solo muestran alteraciones en la memoria de olores, no en la percepción inmediata."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En las agnosias, la percepción del estímulo a nivel periférico es normal, pero debido a daños corticales asociativos el paciente es incapaz de identificar e integrar cognitivamente esa información [12, 13]."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones sobre la diferenciación neuronal es correcta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La diferenciación morfológica básica de una neurona está programada antes de que alcance su destino, mientras que su arborización depende del entorno."
+        },
+        {
+          "key": "B",
+          "text": "Tanto la diferenciación morfológica básica como la arborización están completamente programadas antes de que la neurona alcance su destino."
+        },
+        {
+          "key": "C",
+          "text": "Tanto la diferenciación morfológica básica como la arborización dependen del entorno y de las interacciones entre neuronas."
+        },
+        {
+          "key": "D",
+          "text": "La diferenciación morfológica básica depende del entorno y de las interacciones entre neuronas, mientras que su arborización está programada antes de que alcance su destino."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La diferenciación morfológica básica de una neurona está predeterminada genéticamente antes de llegar a su destino, pero su completa arborización dendrítica depende del entorno [14, 15]."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "La somatostatina es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una hormona pancreática."
+        },
+        {
+          "key": "B",
+          "text": "La hormona inhibidora de la liberación de prolactina."
+        },
+        {
+          "key": "C",
+          "text": "Sintetizada en las células intestinales."
+        },
+        {
+          "key": "D",
+          "text": "Lo indicado en las opciones A y C es correcto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La somatostatina es producida por las células delta de los islotes de Langerhans del páncreas, por el hipotálamo y también por algunas células intestinales [16, 17]."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "En el sistema nervioso central, un tracto se define como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una agrupación de axones que se originan en una sola estructura y se dirigen todos al mismo destino."
+        },
+        {
+          "key": "B",
+          "text": "Una agrupación de axones que se originan en varias estructuras y se dirigen a varios destinos."
+        },
+        {
+          "key": "C",
+          "text": "Un grupo de somas neuronales con límites definidos."
+        },
+        {
+          "key": "D",
+          "text": "Un conjunto de fibras que cruzan la línea media."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El término tracto indica una vía nerviosa formada de manera específica por una agrupación de axones que se originan en una sola estructura y finalizan todos en el mismo destino [18, 19]."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe correctamente la organización jerárquica y funcional de la corteza auditiva?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El paracinturón auditivo proyecta directamente a la corteza auditiva primaria y no recibe información talámica."
+        },
+        {
+          "key": "B",
+          "text": "El cinturón auditivo constituye la principal entrada directa desde el núcleo geniculado medial, sin participación de la corteza auditiva primaria."
+        },
+        {
+          "key": "C",
+          "text": "La corteza auditiva primaria se localiza en el paracinturón y recibe aferencias principalmente de áreas corticales asociativas."
+        },
+        {
+          "key": "D",
+          "text": "La corteza auditiva primaria en la circunvolución de Heschl recibe aferencias del núcleo geniculado medial."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La corteza auditiva primaria, localizada en la circunvolución de Heschl, constituye la principal entrada cortical al recibir aferencias directas del núcleo geniculado medial del tálamo [20, 21]."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "De los ganglios basales podemos decir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No se ha demostrado su participación en la expresión motora de las emociones."
+        },
+        {
+          "key": "B",
+          "text": "La sustancia negra no forma parte de ellos."
+        },
+        {
+          "key": "C",
+          "text": "Sus dos componentes son el núcleo caudado y la sustancia gris periacueductal."
+        },
+        {
+          "key": "D",
+          "text": "Intervienen fundamentalmente en la planificación y la fase de inicio de los movimientos en ausencia de estímulos externos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los ganglios basales junto a las áreas premotoras son críticos en la selección, planificación y fase de inicio de movimientos voluntarios autogenerados, en ausencia de estímulos externos explícitos [22]."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "¿De qué depende principalmente la modalidad sensorial?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Del tipo de energía estimular que activa al receptor."
+        },
+        {
+          "key": "B",
+          "text": "De la zona del sistema nervioso central a la que llegan los impulsos nerviosos."
+        },
+        {
+          "key": "C",
+          "text": "Del número de receptores activados simultáneamente."
+        },
+        {
+          "key": "D",
+          "text": "De las características físicas del estímulo como la frecuencia, amplitud o intensidad."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según la ley de líneas marcadas, todas las señales se traducen en idénticos potenciales de acción; lo que define si percibimos luz o sonido es la zona cortical concreta a la que se proyectan esas vías [12, 23]."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "¿Qué cambio experimentó el cerebelo con el paso del medio acuático al terrestre en los primeros anfibios?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La aparición del neocerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Un aumento del paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "La aparición de las células de Purkinje."
+        },
+        {
+          "key": "D",
+          "text": "Una reducción del cerebelo, quedando limitado al arquicerebelo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Al dejar el agua, perdieron el sistema de la línea lateral encargado del equilibrio acuático, lo que produjo una severa reducción del cerebelo limitándolo al arquicerebelo primitivo [24, 25]."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Las neuronas hipotalámicas que liberan sus hormonas en el sistema porta hipotalámico hipofisario se encuentran en los núcleos del hipotálamo de la:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Zona lateral."
+        },
+        {
+          "key": "B",
+          "text": "Zona medial."
+        },
+        {
+          "key": "C",
+          "text": "Neurohipófisis."
+        },
+        {
+          "key": "D",
+          "text": "Zona periventricular."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las neuronas parvocelulares responsables de secretar factores de liberación al sistema porta se concentran preferentemente en los núcleos que forman parte de la zona periventricular del hipotálamo [26, 27]."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Qué estructura dirige el crecimiento de los axones durante el desarrollo del sistema nervioso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Axones mielinizados."
+        },
+        {
+          "key": "B",
+          "text": "Vesículas sinápticas."
+        },
+        {
+          "key": "C",
+          "text": "Núcleo neuronal."
+        },
+        {
+          "key": "D",
+          "text": "Cono de crecimiento."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El crecimiento hacia las estructuras de destino es dirigido por el cono de crecimiento, una prolongación móvil en el extremo del axón que detecta señales neurotrópicas en el entorno [26, 28]."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Las interneuronas propioespinales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solo conectan neuronas dentro del mismo segmento medular."
+        },
+        {
+          "key": "B",
+          "text": "Tienen axones largos que intercomunican segmentos medulares."
+        },
+        {
+          "key": "C",
+          "text": "Proyectan directamente al tálamo."
+        },
+        {
+          "key": "D",
+          "text": "Se localizan exclusivamente en el asta dorsal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las interneuronas propioespinales envían axones que se bifurcan y viajan de manera ascendente y descendente intercomunicando distintos segmentos medulares para coordinar la postura [29, 30]."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "En la imagen del Órgano de Corti, las letras A, B, C y D se corresponden, respectivamente, con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Células ciliadas externas, membrana basilar, células ciliadas internas y membrana tectorial."
+        },
+        {
+          "key": "B",
+          "text": "Células ciliadas internas, membrana tectorial, células ciliadas externas y membrana basilar."
+        },
+        {
+          "key": "C",
+          "text": "Membrana tectorial, células ciliadas internas, membrana basilar y células ciliadas externas."
+        },
+        {
+          "key": "D",
+          "text": "Células de soporte, membrana basilar, células ciliadas externas y membrana tectorial."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En un diagrama anatómico transversal de la cóclea, encontramos las células ciliadas internas en una única fila interior, la membrana tectorial cubriéndolas por arriba, las células ciliadas externas dispuestas en 3 hileras, y todas ellas descansando abajo sobre la membrana basilar [31, 32]."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones sobre el origen de las neuronas de la neocorteza es correcta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las zonas proliferativas del neuroepitelio cortical generan la mayoría de las interneuronas inhibitorias de la neocorteza."
+        },
+        {
+          "key": "B",
+          "text": "Las zonas proliferativas del neuroepitelio cortical generan la mayoría de las interneuronas excitatorias de la neocorteza."
+        },
+        {
+          "key": "C",
+          "text": "El resto de las afirmaciones son incorrectas."
+        },
+        {
+          "key": "D",
+          "text": "Todas las neuronas de la neocorteza se originan en regiones extracorticales."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Ninguna de las opciones anteriores es correcta (por tanto, la C). El neuroepitelio cortical no genera de forma mayoritaria interneuronas, sino que engendra a las células de proyección excitatorias (piramidales). Las interneuronas inhibitorias proceden de zonas extracorticales (eminencias ganglionares) [33, 34]."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Durante el desarrollo embrionario temprano, una fase crítica consiste en la correcta fusión del tubo neural. ¿Qué consecuencias puede tener un fallo en este proceso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Malformaciones del sistema nervioso central y de estructuras asociadas, como espina bífida o anencefalia."
+        },
+        {
+          "key": "B",
+          "text": "Falta de formación de la placenta y alteraciones en el intercambio de nutrientes entre madre y embrión."
+        },
+        {
+          "key": "C",
+          "text": "Alteraciones en la diferenciación del mesodermo que dan lugar a defectos musculares generalizados."
+        },
+        {
+          "key": "D",
+          "text": "Desarrollo incompleto del sistema nervioso periférico debido a una alteración en la migración de la cresta neural."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Si falla el cierre del neuroporo rostral, se produce anencefalia; si falla el caudal, espina bífida. Son severas malformaciones directas del defecto en la fusión del tubo neural [35, 36]."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "¿Qué hito evolutivo es más reciente en relación con el SN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las células piramidales."
+        },
+        {
+          "key": "B",
+          "text": "Los ganglios."
+        },
+        {
+          "key": "C",
+          "text": "Los axones gigantes."
+        },
+        {
+          "key": "D",
+          "text": "Las interneuronas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Ganglios e interneuronas existen desde invertebrados básicos. Las células piramidales constituyen la arquitectura típica de la isocorteza, apareciendo como la adquisición más reciente vinculada a mamíferos y reptiles [37, 38]."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas tiene como mecanismo de acción principal la producción de AMP cíclico?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El cortisol."
+        },
+        {
+          "key": "B",
+          "text": "La hormona liberadora de la tirotropina."
+        },
+        {
+          "key": "C",
+          "text": "La testosterona."
+        },
+        {
+          "key": "D",
+          "text": "La aldosterona."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La TRH es una hormona hidrosoluble (peptídica) que no puede atravesar la membrana celular y depende de un segundo mensajero como el AMPc, mientras que cortisol, aldosterona y testosterona son esteroides [39]."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "El 'reflejo inflamatorio' mediado por el nervio vago implica una secuencia específica. ¿Cuál es el orden correcto?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fibras aferentes vagales informan al SNC de cambios internos -> SNC activa la vía colinérgica antiinflamatoria (fibras eferentes vagales) -> liberación de ACh -> efectos antiinflamatorios."
+        },
+        {
+          "key": "B",
+          "text": "SNC detecta el patógeno -> activa fibras aferentes vagales -> libera noradrenalina en órganos linfoides."
+        },
+        {
+          "key": "C",
+          "text": "Inflamación periférica -> fibras eferentes vagales -> SNC -> fibras aferentes vagales -> inhibición inmune."
+        },
+        {
+          "key": "D",
+          "text": "Células inmunitarias liberan ACh -> estimulan el nervio vago -> SNC suprime el eje HHA."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El nervio vago usa sus vías aferentes para detectar citoquinas e informar al cerebro; el SNC entonces lanza un reflejo rápido por vías eferentes que liberan Acetilcolina (ACh) en órganos para desactivar macrófagos y frenar la inflamación [40, 41]."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "En comparación con los primates folívoros, los primates frugívoros suelen presentar un mayor cociente de encefalización. ¿Cuál de las siguientes explicaciones es más coherente con este hecho?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El cociente de encefalización depende exclusivamente del metabolismo."
+        },
+        {
+          "key": "B",
+          "text": "La obtención de fruta implica mayores demandas cognitivas."
+        },
+        {
+          "key": "C",
+          "text": "Los primates frugívoros presentan un mayor tamaño corporal medio."
+        },
+        {
+          "key": "D",
+          "text": "La dieta frugívora proporciona mayor aporte energético."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Localizar, evaluar y memorizar la maduración de las frutas dispersas temporal y geográficamente exigió una enorme expansión cognitiva respecto a la simple recolección de hojas [42, 43]."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Un investigador analiza la organización funcional del cerebelo y observa que la zona lateral de la corteza cerebelosa mantiene una estrecha interrelación con la corteza cerebral a través de los núcleos pontinos y del tálamo... ¿A qué unidad funcional del cerebelo corresponde esta región?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Espinocerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Vestibulocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Cerebrocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Arquicerebelo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La zona más lateral del cerebelo (neocerebelo) se interconecta exhaustivamente con las cortezas motoras cerebrales, conformando la unidad funcional llamada cerebrocerebelo [44]."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "Señale la asociación INCORRECTA entre la vía mencionada y su función principal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tracto corticoespinal lateral: movimiento fraccionado e independiente de los dedos, manipulación de objetos."
+        },
+        {
+          "key": "B",
+          "text": "Vías mediales del tronco del encéfalo: control de la postura y la locomoción."
+        },
+        {
+          "key": "C",
+          "text": "Fibras corticorrubrales y rubroespinales: movimientos independientes de los hombros y sobre todo del codo y de la mano, pero no de los dedos."
+        },
+        {
+          "key": "D",
+          "text": "Tracto corticoespinal ventral: movimiento independiente de los dedos y control antigravitatorio."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Es la incorrecta: el tracto corticoespinal ventral interviene inervando músculos axiales y del tronco, careciendo de capacidad motriz fina para mover independientemente los dedos [45]."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Cuál es una característica de las neuronas magnocelulares en comparación con las parvocelulares?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tienen un origen filogenético más reciente que las parvocelulares."
+        },
+        {
+          "key": "B",
+          "text": "Responden únicamente a estímulos de color."
+        },
+        {
+          "key": "C",
+          "text": "Proyectan a zonas de la corteza cerebral ligeramente distintas de las zonas a las que proyectan las parvocelulares y koniocelulares."
+        },
+        {
+          "key": "D",
+          "text": "Mantienen sus respuestas a la luz durante más tiempo y participan en el procesamiento del color."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las células magnocelulares del NGL (que procesan movimientos e iluminación de bajo contraste) proyectan a subláminas corticales distintas a las de las vías del color o forma de las parvocelulares [43, 46]."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Robert Ader acuñó el término 'Psiconeuroinmunología' en 1980. ¿Qué observación empírica fue clave para desechar el modelo clásico del sistema inmune como autónomo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El hallazgo de que sujetos expuestos a situaciones estresantes presentaban mayor susceptibilidad a infecciones."
+        },
+        {
+          "key": "B",
+          "text": "La identificación de receptores para citocinas en neuronas y células gliales."
+        },
+        {
+          "key": "C",
+          "text": "La comprobación de que los linfocitos producen péptidos opioides endógenos."
+        },
+        {
+          "key": "D",
+          "text": "El descubrimiento de fibras simpáticas noradrenérgicas en los órganos linfoides."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El descubrimiento de que existían axones simpáticos inervando físicamente el bazo y el timo, proporcionó la prueba morfológica irrebatible de que el cerebro gobernaba los órganos inmunitarios [47]."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "La liberación de las secreciones glandulares está mediada entre otros por el siguiente mecanismo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aumento de cloro intracelular."
+        },
+        {
+          "key": "B",
+          "text": "Fusión de la membrana mitocondrial con la membrana plasmática."
+        },
+        {
+          "key": "C",
+          "text": "Disminución del contenido intracelular de sodio."
+        },
+        {
+          "key": "D",
+          "text": "Elevación de calcio intracelular."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La despolarización abre canales dependientes de voltaje permitiendo el ingreso rápido de iones Calcio (Ca²⁺), el cual fuerza a las vesículas a exocitar su producto hormonal [48, 49]."
+    }
+  ]
+}

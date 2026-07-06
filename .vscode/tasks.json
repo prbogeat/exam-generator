@@ -2,9 +2,24 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Generar Examen (PowerShell)",
+			"label": "Levantar servidor HTTP",
 			"type": "shell",
-			"command": "/usr/local/bin/python3",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"-m",
+				"http.server",
+				"8001",
+				"--directory",
+				"docs"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Generar examen (Python)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
 			"args": [
 				"src/generar_examen.py"
 			],
@@ -12,59 +27,53 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Servidor Local (Python)",
+			"label": "Corregir examen (Python)",
 			"type": "shell",
-			"command": "/usr/local/bin/python3",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"src/corregir_examen.py"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Normalizar metadatos (Python)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"src/normalize_out_exam_metadata.py"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Regenerar catálogo estático (Python)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"src/static_exam_catalog.py"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Normalizar y publicar catálogo (Python)",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Normalizar metadatos (Python)",
+				"Regenerar catálogo estático (Python)"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Servidor de Generación (Python)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
 			"args": [
 				"src/server.py"
 			],
 			"isBackground": true,
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Servidor Local (PostgreSQL)",
-			"type": "shell",
-			"command": "/bin/zsh",
-			"args": [
-				"-lc",
-				"source .venv-pg/bin/activate && EXAM_DB_URL='postgresql://pablorosasbogeat@localhost:5432/examenes_local' /usr/local/bin/python3 src/server.py"
-			],
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Detener Servidor Local (8001)",
-			"type": "shell",
-			"command": "/bin/zsh",
-			"args": [
-				"-lc",
-				"lsof -ti tcp:8001 | xargs kill -9 2>/dev/null || true"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Cliente BD Web (pgweb)",
-			"type": "shell",
-			"command": "/bin/zsh",
-			"args": [
-				"-lc",
-				"pgweb --host localhost --port 5432 --db examenes_local --user pablorosasbogeat --bind 127.0.0.1 --listen 8081 --skip-open"
-			],
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Detener Cliente BD Web (8081)",
-			"type": "shell",
-			"command": "/bin/zsh",
-			"args": [
-				"-lc",
-				"lsof -ti tcp:8081 | xargs kill -9 2>/dev/null || true"
-			],
 			"group": "build",
 			"problemMatcher": []
 		}

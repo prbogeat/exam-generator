@@ -19,6 +19,7 @@ os.chdir(_PROJECT_ROOT)
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT
 from exam_db import get_connection, upsert_exam
+from static_exam_catalog import sync_static_exam_catalog
 
 
 def load_json(path: Path) -> Any:
@@ -295,6 +296,7 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
 
             template_path = derive_template_path(output_path)
             save_json(template_path, template)
+            sync_static_exam_catalog()
         else:
             # Si no se guarda en disco, usar solo el nombre del fichero
             output_path = Path(output_file_name)

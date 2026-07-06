@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Septiembre de 2024 Tipo A",
+  "subtitle": "30 Tipo Test - Examen Septiembre de 2024 Tipo A",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En un estudio sobre memoria espacial hecho con roedores de laboratorio, empleando cría selectiva... se vio que la media de la población original fue de 60 en el número de aciertos... Se seleccionó una subpoblación como individuos reproductores, la cual tenía una media de aciertos de 75. Y, a su vez, los descendientes de esa subpoblación tuvieron un valor medio de aciertos de 66. ¿Cuál será la heredabilidad del rasgo memoria espacial en esa población de roedores de laboratorio?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,4;"
+        },
+        {
+          "key": "B",
+          "text": "0,6;"
+        },
+        {
+          "key": "C",
+          "text": "0,5;"
+        },
+        {
+          "key": "D",
+          "text": "0,25."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Aplicando la fórmula de la heredabilidad en programas de cría selectiva (h² = R / S). La respuesta de selección (R) es la diferencia entre la media de los descendientes y la población original (66 - 60 = 6). El diferencial de selección (S) es la diferencia entre la media de los reproductores y la original (75 - 60 = 15). Dividiendo h² = 6 / 15 obtenemos 0,4."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "En una especie de ratones, el pelaje negro (B) es dominante sobre el pelaje blanco (b). Si dos ratones heterocigotos para el color del pelaje se cruzan, ¿cuál es la probabilidad de que tengan descendencia con pelaje blanco?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "25%;"
+        },
+        {
+          "key": "B",
+          "text": "50%;"
+        },
+        {
+          "key": "C",
+          "text": "75%;"
+        },
+        {
+          "key": "D",
+          "text": "100%."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El cruce de dos parentales heterocigotos (Bb x Bb) en un caso de dominancia completa obedece a las leyes mendelianas produciendo una segregación genotípica de 1/4 BB, 1/2 Bb y 1/4 bb. Por tanto, la probabilidad de mostrar el fenotipo recesivo (pelaje blanco, genotipo bb) es del 25%."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "La regulación de la expresión génica a largo plazo se relaciona con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los genes reguladores;"
+        },
+        {
+          "key": "B",
+          "text": "la condensación del ADN;"
+        },
+        {
+          "key": "C",
+          "text": "los correpresores;"
+        },
+        {
+          "key": "D",
+          "text": "el ARN de transferencia."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La regulación de la expresión génica a largo plazo es esencial en el desarrollo y diferenciación celular, y se rige fuertemente por modificaciones epigenéticas como la metilación que provocan una densa condensación del ADN, bloqueando a largo plazo la maquinaria transcripcional."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "En la corteza cerebral, la cisura central (de Rolando) separa los lóbulos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "parietal y temporal;"
+        },
+        {
+          "key": "B",
+          "text": "frontal y parietal;"
+        },
+        {
+          "key": "C",
+          "text": "temporal y occipital;"
+        },
+        {
+          "key": "D",
+          "text": "occipital y frontal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cisura central, comúnmente conocida como surco de Rolando, es la inconfundible hendidura anatómica vertical que divide a los hemisferios separando el lóbulo frontal (en su parte anterior) del lóbulo parietal (en su parte posterior)."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "¿Cuál es el síndrome que resulta de una deleción en el brazo largo del cromosoma 15?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "síndrome de Down;"
+        },
+        {
+          "key": "B",
+          "text": "síndrome de Turner;"
+        },
+        {
+          "key": "C",
+          "text": "síndrome de Prader-Willi;"
+        },
+        {
+          "key": "D",
+          "text": "síndrome de Klinefelter."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El síndrome de Prader-Willi es un trastorno genético provocado característicamente por una mutación de deleción (pérdida de material genético) localizada en el brazo largo del cromosoma 15 paterno, y es uno de los ejemplos más clásicos de impronta genómica."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Las características del complejo adaptativo de los individuos dependen de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "factores filogenéticos;"
+        },
+        {
+          "key": "B",
+          "text": "factores ontogenéticos;"
+        },
+        {
+          "key": "C",
+          "text": "factores epigenéticos;"
+        },
+        {
+          "key": "D",
+          "text": "todos los anteriores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el marco de la Psicobiología, el complejo adaptativo de cualquier organismo (su sistema nervioso y endocrino, anatomía y conducta) es siempre el resultado intrincado de su historia evolutiva (factores filogenéticos), su desarrollo individual (factores ontogenéticos) y la constante modulación ambiental sobre sus genes (factores epigenéticos)."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Los estorninos, al suministrar comida a sus crías, aplican una estrategia optimizadora que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se basa principalmente en las tácticas aprendidas de otros individuos de su especie;"
+        },
+        {
+          "key": "B",
+          "text": "implica ajustar la cantidad de comida recolectada según la distancia para encontrarla;"
+        },
+        {
+          "key": "C",
+          "text": "busca minimizar la disparidad entre los costos y los beneficios asociados;"
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "De acuerdo con el Teorema de los Rendimientos Decrecientes del modelo de forrajeo óptimo, los estorninos miden el esfuerzo y maximizan la tasa de aporte calórico ajustando la cantidad o carga de larvas que atrapan en el pico en estricta proporción a la distancia y el tiempo invertido en el viaje desde el nido."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "¿Qué mecanismo de especiación aparece como consecuencia de cambios paulatinos en una población a lo largo del tiempo y que suponen una gran transformación de tal manera que los individuos no pueden considerarse como pertenecientes a la misma población original?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "anagénesis;"
+        },
+        {
+          "key": "B",
+          "text": "cladogénesis;"
+        },
+        {
+          "key": "C",
+          "text": "alopátrico;"
+        },
+        {
+          "key": "D",
+          "text": "dependiente de frecuencia."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La anagénesis o evolución filética es el proceso macroevolutivo por el cual una única línea ancestral acumula tantas transformaciones genéticas y morfológicas graduales a lo largo del tiempo que se acaba convirtiendo en una especie enteramente distinta, sin que haya ramificación o coexistencia con la original."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cuál de los siguientes nervios craneales controla los músculos del ojo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el óptico;"
+        },
+        {
+          "key": "B",
+          "text": "el trigémino;"
+        },
+        {
+          "key": "C",
+          "text": "el troclear;"
+        },
+        {
+          "key": "D",
+          "text": "facial."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "De la lista, el nervio troclear o patético (IV par craneal) es puramente motor y se encarga exclusivamente de inervar uno de los músculos extrínsecos del globo ocular (el músculo oblicuo superior). (Nota: el nervio óptico procesa la visión sensorial, no el movimiento)."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Los genes estructurales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no son codificantes;"
+        },
+        {
+          "key": "B",
+          "text": "codifican proteínas;"
+        },
+        {
+          "key": "C",
+          "text": "no se transcriben a ARN;"
+        },
+        {
+          "key": "D",
+          "text": "están en los intrones."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los genes estructurales son las secuencias precisas de ADN que contienen la información biológica indispensable para transcribirse y ser traducidas operativamente a polipéptidos (es decir, codifican proteínas), a diferencia de los genes reguladores que modulan dicho proceso."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "¿Con qué se ha asociado el polimorfismo en el receptor D4 de dopamina en humanos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "búsqueda de situaciones placenteras;"
+        },
+        {
+          "key": "B",
+          "text": "propensión al consumo de sustancias de abuso;"
+        },
+        {
+          "key": "C",
+          "text": "trastorno de déficit de atención con hiperactividad (TDAH);"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en todas las opciones es correcto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El genotipo que alberga la variante o alelo 'largo' para el receptor D4 de la dopamina se asocia a individuos buscadores de sensaciones y, clínicamente, presenta una robusta correlación poblacional con la predisposición a adicciones de abuso y con la aparición del Trastorno por Déficit de Atención con Hiperactividad (TDAH)."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Muy probablemente, las bombas electrogénicas de sodio-potasio de sus neuronas estén activas mientras usted realiza este examen. Ello supone un consumo aproximado de la molécula energética adenosín trifosfato (ATP), de la cantidad total de la que disponemos en el encéfalo, de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "casi el cien por cien;"
+        },
+        {
+          "key": "B",
+          "text": "la mitad;"
+        },
+        {
+          "key": "C",
+          "text": "una cuarta parte;"
+        },
+        {
+          "key": "D",
+          "text": "casi tres cuartas partes."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Para recuperar incesantemente el equilibrio contra sus gradientes y mantener el potencial de reposo de toda la vasta red neuronal, el trabajo electrogénico activo de las bombas Na+/K+ llega a consumir aproximadamente el 50% (la mitad) de toda la enorme energía metabólica del encéfalo."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "El caso de Phineas Gage se considera un ejemplo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "aproximación correlacional;"
+        },
+        {
+          "key": "B",
+          "text": "intervención somática;"
+        },
+        {
+          "key": "C",
+          "text": "intervención conductual;"
+        },
+        {
+          "key": "D",
+          "text": "ninguna de las anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Al tratarse de un grave accidente humano fortuito donde una barra de hierro lesionó su corteza prefrontal, el investigador no pudo manipular intencionadamente la variable biológica. Simplemente se observaron e infirieron las covariaciones entre el daño orgánico previo y los profundos cambios conductuales posteriores (aproximación correlacional o contrastación observacional)."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "En aquellos momentos en los que la membrana neuronal esté en reposo (inactiva) podemos decir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no existe diferencia de potencial entre el interior y el exterior celular;"
+        },
+        {
+          "key": "B",
+          "text": "es más permeable al Na+;"
+        },
+        {
+          "key": "C",
+          "text": "presenta poca permeabilidad al K+;"
+        },
+        {
+          "key": "D",
+          "text": "las tres opciones anteriores son falsas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas son falsas: en reposo sí existe una fuerte diferencia de potencial (alrededor de -70mV), la membrana es sumamente resistente e impermeable a la entrada de Na+, pero posee una altísima permeabilidad constante de paso libre para la salida de iones de K+ por sus canales de fuga."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "En el ámbito de la Genética cuantitativa sabemos que la dosis génica es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el número de veces que aparece un alelo de un gen en un genotipo;"
+        },
+        {
+          "key": "B",
+          "text": "el número de genes letales que aparece en los estudios de cría selectiva;"
+        },
+        {
+          "key": "C",
+          "text": "el número de genes mutados asociados a un genotipo;"
+        },
+        {
+          "key": "D",
+          "text": "el número de fenotipos diferentes de un determinado genotipo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Se define como dosis génica a la cantidad de copias o número de veces que un alelo aditivo específico está presente en el genotipo de un sujeto, lo que sumará unidades de valor de forma matemática para determinar el alcance de su fenotipo final."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Puede decirse al comparar el potencial de reposo con el potencial de acción, que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en ambos casos se produce una despolarización que alcanza el umbral de excitación;"
+        },
+        {
+          "key": "B",
+          "text": "en el primer caso la neurona está despolarizada y en el segundo, hiperpolarizada;"
+        },
+        {
+          "key": "C",
+          "text": "se asemejan en que ambos siguen la ley del todo o nada;"
+        },
+        {
+          "key": "D",
+          "text": "el primero se debe fundamentalmente a la mayor permeabilidad de la membrana neuronal a los iones potasio, mientras que el segundo se origina por un aumento de la permeabilidad a los iones sodio."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El potencial de reposo sostenido se explica por los canales de fuga que otorgan una altísima permeabilidad pasiva exclusiva al potasio (K+). Por el contrario, la explosiva irrupción despolarizante del potencial de acción se gatilla por la apertura en masa de canales de voltaje que elevan la permeabilidad al sodio (Na+)."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Cuál de las siguientes estructuras NO forma parte del tronco del encéfalo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el diencéfalo;"
+        },
+        {
+          "key": "B",
+          "text": "el mesencéfalo;"
+        },
+        {
+          "key": "C",
+          "text": "el bulbo raquídeo;"
+        },
+        {
+          "key": "D",
+          "text": "el puente."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Anatómicamente, el tronco del encéfalo agrupa tres divisiones principales: el mesencéfalo, el puente (o protuberancia) y el bulbo raquídeo. El diencéfalo pertenece y se estructura jerárquicamente en un nivel superior, formando parte del prosencéfalo o encéfalo anterior."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "En relación con los polimorfismos de un solo nucleótido: A) la teoría seleccionista mantiene que aportan una ventaja reproductiva; B) la teoría neutralista mantiene que aportan una ventaja reproductiva; C) la teoría seleccionista mantiene que son una muestra de evolución molecular ajena a la selección natural; D) la teoría neutralista afirma que pueden contribuir a la eficacia biológica.",
+      "options": [
+        {
+          "key": "A",
+          "text": "la teoría seleccionista mantiene que aportan una ventaja reproductiva;"
+        },
+        {
+          "key": "B",
+          "text": "la teoría neutralista mantiene que aportan una ventaja reproductiva;"
+        },
+        {
+          "key": "C",
+          "text": "la teoría seleccionista mantiene que son una muestra de evolución molecular ajena a la selección natural;"
+        },
+        {
+          "key": "D",
+          "text": "la teoría neutralista afirma que pueden contribuir a la eficacia biológica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Frente a los que sostienen que los SNP son neutrales e irrelevantes en la evolución, la escuela y teoría seleccionista mantiene el postulado de que estos polimorfismos sí confieren en su determinado hábitat una sutil ventaja o adaptabilidad (eficacia biológica) que favorece su permanencia seleccionada en el acervo poblacional."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Según las investigaciones más modernas, la heredabilidad del cociente de inteligencia (CI) evaluada a partir de estudios de gemelos monocigóticos criados por separado es de alrededor de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1;"
+        },
+        {
+          "key": "B",
+          "text": "0,75;"
+        },
+        {
+          "key": "C",
+          "text": "0,15;"
+        },
+        {
+          "key": "D",
+          "text": "0,05."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El estudio de gemelos idénticos (MZ) separados al nacer anula estadísticamente el componente del ambiente familiar compartido. Sus altísimos índices de correlación en el CI proporcionan de forma directa la estimación empírica de la heredabilidad del rasgo de la inteligencia general, que arroja un valor muy prominente en torno a 0,75."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Supongamos una población en la que existen dos tipos de individuos en función de la estrategia de interacción social que despliegan: los halcones y las palomas. Si V=2 (el beneficio de ganar una contienda) y C=20 (el coste que sufre un halcón cuando pierde una contienda); en el contexto del Juego del Conflicto con Halcones y Palomas, ¿qué porcentaje de halcones cabe predecir que habrá en esa población?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "10%;"
+        },
+        {
+          "key": "B",
+          "text": "20%;"
+        },
+        {
+          "key": "C",
+          "text": "50%;"
+        },
+        {
+          "key": "D",
+          "text": "100%."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Dado que el daño es superior al premio (C > V), la Estrategia Evolutivamente Estable originará una población mixta. Aplicando la proporción de equilibrio de halcones (p = V / C), dividimos 2 / 20 = 0,1. Multiplicado por 100, se estabilizará en un 10% de halcones."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Tras la propagación de un potencial de acción la señal eléctrica que llega a los botones terminales sinápticos neuronales es de un valor aproximado de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "+35 mV;"
+        },
+        {
+          "key": "B",
+          "text": "+15 mV;"
+        },
+        {
+          "key": "C",
+          "text": "+ 50 mV;"
+        },
+        {
+          "key": "D",
+          "text": "+ 70 mV."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El potencial de acción no pierde energía en la distancia, no es decreciente. Es un suceso biológico autorregenerable del todo o nada; por consiguiente, el fulminante pico de despolarización eléctrica invertida que aterriza en el extremo terminal axónico ostentará el mismo valor característico en torno a +50 mV."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "Un ejemplo de superioridad del heterocigoto es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la amplia variabilidad existente en el complejo mayor de histocompatibilidad;"
+        },
+        {
+          "key": "B",
+          "text": "la selección natural dependiente de frecuencia;"
+        },
+        {
+          "key": "C",
+          "text": "la anemia falciforme o drepanocítica;"
+        },
+        {
+          "key": "D",
+          "text": "el efecto fundador."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La anemia falciforme expone el caso perfecto de sobredominancia (superioridad del heterocigoto). Mientras los genotipos homocigotos enfermos fenecen gravemente de anemia y los sanos son masacrados por la epidemia de la malaria, los portadores heterocigotos disfrutan de un estado óptimo de resistencia biológica contra el parásito sin desarrollar la anemia letal."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "¿En qué sentido tiene lugar el transporte axónico rápido?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "desde el soma hasta el terminal axónico;"
+        },
+        {
+          "key": "B",
+          "text": "desde el terminal axónico hasta el soma;"
+        },
+        {
+          "key": "C",
+          "text": "desde las mitocondrias hasta las vesículas de neurotransmisores;"
+        },
+        {
+          "key": "D",
+          "text": "las respuestas A y B son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El transporte intracelular rápido canalizado sobre la estructura tubular del citoesqueleto se efectúa en doble vía: es de sentido anterógrado (del soma al terminal) aportando vesículas para la neurotransmisión y orgánulos, y sentido retrógrado (del terminal al soma) reciclando y devolviendo sustancias de desecho."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "¿Por qué decimos que el modo de alimentación de los alces es acorde con la teoría de la optimización?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "porque comen sólo plantas acuáticas;"
+        },
+        {
+          "key": "B",
+          "text": "porque se alimentan en el agua el tiempo mínimo necesario para cubrir sus necesidades de sodio;"
+        },
+        {
+          "key": "C",
+          "text": "porque se alimentan en tierra el máximo tiempo posible;"
+        },
+        {
+          "key": "D",
+          "text": "los alces no siguen la teoría de la optimización en su forma de alimentación."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los alces encarnan las premisas del forrajeo óptimo con restricciones nutricionales. Aunque comer vegetación terrestre es abrumadoramente más calórico y seguro, precisan sumergirse para proveerse de sodio. Optimizan de forma admirable este balance invirtiendo en la charca única y rígidamente el tiempo mínimo necesario para solventar su carencia de mineral antes de volver."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Una pauta de acción fija es autoinhibida porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se induce por un estímulo desencadenador innato;"
+        },
+        {
+          "key": "B",
+          "text": "una vez iniciada la secuencia de reflejos llega a su fin, independientemente de las circunstancias;"
+        },
+        {
+          "key": "C",
+          "text": "es dependiente de la experiencia;"
+        },
+        {
+          "key": "D",
+          "text": "si se despliega una vez es más difícil que se produzca una segunda vez."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Como cualidad inherente del sistema motivacional que gatilla una Pauta de Acción Fija (PAF), se describe la autoinhibición: es decir, exhibir o agotar la descarga consumatoria del repertorio conductual produce un acusado tiempo de latencia donde la respuesta es temporalmente insensible y difícil de volverse a desencadenar."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "¿Qué partes del sistema ventricular comunica el acueducto de Silvio?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los ventrículos laterales entre ellos;"
+        },
+        {
+          "key": "B",
+          "text": "cada uno de los ventrículos laterales con la porción anterior del tercer ventrículo;"
+        },
+        {
+          "key": "C",
+          "text": "el tercer y el cuarto ventrículo;"
+        },
+        {
+          "key": "D",
+          "text": "el cuarto ventrículo y el espacio subaracnoideo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El acueducto cerebral o acueducto de Silvio es un estrecho canal cefalorraquídeo mediano que atraviesa horizontalmente el tegmento del mesencéfalo para establecer un nexo de comunicación descendente exclusivo entre el tercer ventrículo y el cuarto ventrículo."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "Cuando tras una duplicación un gen homólogo adquiere una nueva función, se habla de genes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ortólogos;"
+        },
+        {
+          "key": "B",
+          "text": "parálogos;"
+        },
+        {
+          "key": "C",
+          "text": "dihomólogos;"
+        },
+        {
+          "key": "D",
+          "text": "heterólogos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los genes homólogos se ramifican en dos conceptos genéticos. Si coexisten copias por separación de linaje ancestral se llaman ortólogos. Pero si dentro de un mismo organismo y especie ha existido una duplicación interna del gen y la copia adicional acumula mutaciones y adopta novedosas funciones especializadas, se denominan parálogos."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "Para el tratamiento del trastorno bipolar, el empleo de litio suele ser uno de los de primera elección. Un sistema de segundos mensajeros que parece participar en los efectos terapéuticos de dicho tratamiento con litio es el de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "guanosín monofosfato cíclico (GMP);"
+        },
+        {
+          "key": "B",
+          "text": "adenosín monofosfato cíclico (AMPc);"
+        },
+        {
+          "key": "C",
+          "text": "ácido araquidónico;"
+        },
+        {
+          "key": "D",
+          "text": "fosfatidil inositol."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La administración paliativa y estabilizadora de sales de litio asienta su mecanismo de acción psicofarmacológico intracelular mitigando e inhibiendo de forma muy concreta los sistemas enzimáticos y las cascadas secundarias unidas al metabolismo de los fosfoinosítidos o fosfatidil inositol."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Para calcular la heredabilidad que explica el éxito de la cría selectiva ha de tenerse en cuenta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la varianza genética aditiva;"
+        },
+        {
+          "key": "B",
+          "text": "la heredabilidad en sentido amplio;"
+        },
+        {
+          "key": "C",
+          "text": "la varianza atribuible a la epistasia;"
+        },
+        {
+          "key": "D",
+          "text": "la varianza debida al efecto por dominancia."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El avance o la respuesta fenotípica (éxito) que se consigue artificialmente seleccionando animales en los programas de cría selectiva es estadísticamente predecible usando la heredabilidad en 'sentido estricto', cuyo cálculo se fundamenta de forma aislada y única en los valores directos que emanan de la varianza genética aditiva de la población."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Cuál es una característica principal de la impronta genómica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se produce por alteraciones cromosómicas;"
+        },
+        {
+          "key": "B",
+          "text": "su herencia sigue patrones mendelianos;"
+        },
+        {
+          "key": "C",
+          "text": "la expresión diferencial de genes dependiendo si provienen del padre o la madre;"
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores son ciertas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La impronta o sellado genómico es el flagrante fenómeno biológico epigenético que provoca que un mismo gen sea o no expresado de forma desigual (activado o inhibido por metilación) dependiendo drásticamente de si el embrión lo heredó empaquetado del cromosoma del óvulo materno o del espermatozoide paterno."
+    }
+  ]
+}

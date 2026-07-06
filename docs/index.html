@@ -23,20 +23,28 @@
     </div>
   </div>
 </nav>
+<script src="assets/js/runtime-access.js"></script>
 <script>
-  const h = window.location.hostname.toLowerCase();
-  const isGitHubPages = h === "github.io" || h.endsWith(".github.io");
-  if (!isGitHubPages) {
+  (async function toggleGeneratorLinks() {
+    if (!window.AppRuntimeAccess) {
+      return;
+    }
+
+    const canUseGenerators = await window.AppRuntimeAccess.canUseGenerators();
+    if (!canUseGenerators) {
+      return;
+    }
+
     document.getElementById("generatorLink").style.display = "";
     document.getElementById("notebookLink").style.display = "";
-  }
+  })();
 </script>
 
 <header>
   <div class="wrap top">
     <div>
       <h1 id="pageTitle">Examen dinámico</h1>
-      <p class="subtitle" id="pageSubtitle">Carga un JSON local o sirve esta carpeta por HTTP para cargar el JSON por defecto.</p>
+      <p class="subtitle" id="pageSubtitle">Selecciona un examen publicado o carga un JSON local manualmente.</p>
     </div>
     <div class="actions">
       <div class="timer" id="timerTop">00:00:00</div>
@@ -53,9 +61,9 @@
   <section class="data-tools">
     <div class="data-status" id="dataStatus">Fuente de datos: pendiente.</div>
     <details class="data-block" open>
-      <summary>Exámenes desde BD</summary>
+      <summary>Exámenes publicados</summary>
       <div class="actions">
-        <button id="refreshDbExams">Actualizar listado BD</button>
+        <button id="refreshDbExams">Actualizar catálogo</button>
         <select id="dbSubjectSelect">
           <option value="">-- Selecciona una asignatura --</option>
         </select>
@@ -63,10 +71,10 @@
           <option value="">-- Selecciona un parcial --</option>
         </select>
         <select id="dbExamSelect">
-          <option value="">-- Selecciona un examen de la BD --</option>
+          <option value="">-- Selecciona un examen publicado --</option>
         </select>
         <button id="loadSelectedDbExam">Cargar examen seleccionado</button>
-        <button id="loadLatestDbExam">Cargar último examen BD</button>
+        <button id="loadLatestDbExam">Cargar examen inicial</button>
       </div>
     </details>
     <details class="data-block">

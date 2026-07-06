@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Examen Generado",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Examen generado desde task de VS Code",
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "sourceId": 8,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales.",
+      "id": 1,
+      "used": true
+    },
+    {
+      "sourceId": 84,
+      "text": "Las lampreas (ciclóstomos), peces sin mandíbulas que aún existen, son filogenéticamente más antiguos que el Homo sapiens. Por tanto:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evolutivamente hablando, comparadas con nosotros, sus sistemas son más ineficientes."
+        },
+        {
+          "key": "B",
+          "text": "La adaptación a su entorno es más precaria que la de los mamíferos modernos al suyo."
+        },
+        {
+          "key": "C",
+          "text": "El diseño de su sistema nervioso a nivel de organismo es tan adecuado, o más, que el nuestro para su nicho ecológico."
+        },
+        {
+          "key": "D",
+          "text": "Las opciones A y B son correctas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La antigüedad filogenética no es sinónimo de inferioridad. Si una especie coexiste en la actualidad es porque las soluciones evolutivas de su plan corporal siguen siendo altamente eficaces para perpetuarse y superar los retos de su entorno.",
+      "id": 2,
+      "used": true
+    },
+    {
+      "sourceId": 33,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana.",
+      "id": 3,
+      "used": true
+    },
+    {
+      "sourceId": 38,
+      "text": "El tono de un sonido se relaciona con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la frecuencia de onda que lo forma."
+        },
+        {
+          "key": "B",
+          "text": "la amplitud de la onda que lo genera."
+        },
+        {
+          "key": "C",
+          "text": "el conjunto de ondas que se superponen a la onda fundamental."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El tono de un sonido (más grave o más agudo) está físicamente determinado por la frecuencia de la onda sonora en Hercios (Hz). La amplitud determina la intensidad, y la superposición de ondas marca el timbre.",
+      "id": 4,
+      "used": true
+    },
+    {
+      "sourceId": 46,
+      "text": "¿Qué estructura coordina la ejecución precisa del movimiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hipotálamo"
+        },
+        {
+          "key": "B",
+          "text": "Amígdala"
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Tálamo"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo compara el movimiento esperado con el realizado.",
+      "id": 5,
+      "used": true
+    },
+    {
+      "sourceId": 72,
+      "text": "Respecto a la vasopresina, ¿cuál de las siguientes afirmaciones es correcta en relación con el consumo de alcohol?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El consumo de alcohol no influye en la producción de vasopresina."
+        },
+        {
+          "key": "B",
+          "text": "El consumo de alcohol estimula la liberación de vasopresina, lo que reduce la excreción de orina."
+        },
+        {
+          "key": "C",
+          "text": "El consumo de alcohol disminuye la excreción de orina."
+        },
+        {
+          "key": "D",
+          "text": "El consumo de alcohol inhibe la secreción de vasopresina, lo que incrementa la excreción de orina."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El alcohol inhibe la liberación de vasopresina (hormona antidiurética) desde la neurohipófisis. Al perderse el efecto de retención de agua en los riñones, se incrementa notablemente la producción y excreción de orina.",
+      "id": 6,
+      "used": true
+    },
+    {
+      "sourceId": 22,
+      "text": "En casos de emergencia por radiación se recomienda el consumo de yoduro de potasio para evitar que el yodo radioactivo se utilice para sintetizar ciertas hormonas... ¿Qué tipo de hormonas son?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las hormonas tiroideas."
+        },
+        {
+          "key": "B",
+          "text": "Las hormonas adrenales."
+        },
+        {
+          "key": "C",
+          "text": "Las gonadotropinas."
+        },
+        {
+          "key": "D",
+          "text": "Las neurohormonas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El yodo es esencial exclusivamente para la síntesis de las hormonas tiroideas (T3 y T4).",
+      "id": 7,
+      "used": true
+    },
+    {
+      "sourceId": 26,
+      "text": "¿Qué estructura coordina la ejecución precisa del movimiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hipotálamo"
+        },
+        {
+          "key": "B",
+          "text": "Amígdala"
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Tálamo"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo compara el movimiento esperado con el realizado.",
+      "id": 8,
+      "used": true
+    },
+    {
+      "sourceId": 35,
+      "text": "¿Qué células producen anticuerpos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Macrófagos"
+        },
+        {
+          "key": "B",
+          "text": "Linfocitos B"
+        },
+        {
+          "key": "C",
+          "text": "Neutrófilos"
+        },
+        {
+          "key": "D",
+          "text": "NK"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los linfocitos B y sus células plasmáticas producen anticuerpos.",
+      "id": 9,
+      "used": true
+    },
+    {
+      "sourceId": 53,
+      "text": "¿Cómo se denomina al proceso que realizan los receptores sensoriales para transformar las diferentes modalidades energéticas en actividad eléctrica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sensibilización sensorial."
+        },
+        {
+          "key": "B",
+          "text": "transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "potencial transformador."
+        },
+        {
+          "key": "D",
+          "text": "líneas marcadas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Se llama transducción sensorial a la capacidad que tienen los receptores para captar energía ambiental (física o química) y convertirla de forma comprensible para el SNC en un lenguaje de código eléctrico.",
+      "id": 10,
+      "used": true
+    },
+    {
+      "sourceId": 63,
+      "text": "La determinación del neuroectodermo ocurre específicamente durante el proceso embrionario conocido como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación del tubo neural."
+        },
+        {
+          "key": "B",
+          "text": "Formación y diferenciación de los somitas."
+        },
+        {
+          "key": "C",
+          "text": "Inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "Migración de las células de la cresta neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neuroectodermo (tejido precursor del sistema nervioso) queda determinado durante la inducción neural, cuando señales procedentes de la notocorda inducen la diferenciación de una parte del ectodermo que está encima.",
+      "id": 11,
+      "used": true
+    },
+    {
+      "sourceId": 68,
+      "text": "Los campos receptivos de determinadas neuronas sensoriales visuales (como las bipolares y ganglionares) están organizados de una manera antagónica centro-periferia (on/off). Esto se consigue gracias a la acción conjunta de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neuronas excitatorias e interneuronas excitatorias."
+        },
+        {
+          "key": "B",
+          "text": "Neuronas excitatorias e interneuronas inhibitorias."
+        },
+        {
+          "key": "C",
+          "text": "Neuronas excitatorias exclusivamente."
+        },
+        {
+          "key": "D",
+          "text": "Interneuronas inhibitorias en ausencia de neuronas excitatorias."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Esta modulación se logra combinando la señal directa de los fotorreceptores centrales (vía excitatoria) con la señal de los fotorreceptores periféricos canalizada a través de células horizontales, las cuales actúan como interneuronas inhibitorias.",
+      "id": 12,
+      "used": true
+    },
+    {
+      "sourceId": 37,
+      "text": "¿Qué receptor cutáneo detecta tacto fino?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corpúsculo de Meissner"
+        },
+        {
+          "key": "B",
+          "text": "Huso muscular"
+        },
+        {
+          "key": "C",
+          "text": "Órgano tendinoso"
+        },
+        {
+          "key": "D",
+          "text": "Bastón"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los corpúsculos de Meissner participan en tacto discriminativo.",
+      "id": 13,
+      "used": true
+    },
+    {
+      "sourceId": 14,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos.",
+      "id": 14,
+      "used": true
+    },
+    {
+      "sourceId": 40,
+      "text": "A la selección que favorece la inversión en muchos descendientes y pocos cuidados se le llama:",
+      "options": [
+        {
+          "key": "A",
+          "text": "selección r."
+        },
+        {
+          "key": "B",
+          "text": "selección k."
+        },
+        {
+          "key": "C",
+          "text": "selección estabilizadora."
+        },
+        {
+          "key": "D",
+          "text": "selección direccional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La estrategia de selección r se basa en una alta tasa reproductiva (muchos descendientes) y muy poco cuidado parental, apostando por la supervivencia estadística en lugar de por una alta inversión individual en las crías.",
+      "id": 15,
+      "used": true
+    },
+    {
+      "sourceId": 98,
+      "text": "¿Qué neurotransmisor utilizan las fibras postganglionares simpáticas, fundamentalmente?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina."
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina."
+        },
+        {
+          "key": "C",
+          "text": "Dopamina."
+        },
+        {
+          "key": "D",
+          "text": "Serotonina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las neuronas postganglionares del sistema nervioso simpático segregan noradrenalina sobre sus órganos diana para desencadenar respuestas de excitación, con la única excepción de las glándulas sudoríparas, donde usan acetilcolina.",
+      "id": 16,
+      "used": true
+    },
+    {
+      "sourceId": 119,
+      "text": "En relación con el fenómeno de la adaptación sensorial sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se explica por la fisiología de los receptores sensoriales."
+        },
+        {
+          "key": "B",
+          "text": "es lo mismo que la habituación."
+        },
+        {
+          "key": "C",
+          "text": "se produce de la misma manera en todos los receptores sensoriales."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La adaptación sensorial refleja una reducción fisiológica en la respuesta de la membrana del propio receptor periférico ante un estímulo constante, diferenciándose de la habituación, que es un proceso central de supresión de la atención en el encéfalo.",
+      "id": 17,
+      "used": true
+    },
+    {
+      "sourceId": 24,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos.",
+      "id": 18,
+      "used": true
+    },
+    {
+      "sourceId": 48,
+      "text": "Los trastornos de adicción a drogas de abuso:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no afectan al sistema inmune."
+        },
+        {
+          "key": "B",
+          "text": "afectan exclusivamente al SN."
+        },
+        {
+          "key": "C",
+          "text": "pueden implicar a las citocinas, pero nunca cursan con un componente inflamatorio."
+        },
+        {
+          "key": "D",
+          "text": "pueden presentarse con elevaciones de marcadores inflamatorios."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las drogas de abuso afectan de manera combinada al SN y al sistema inmune, provocando respuestas neuroinmunitarias que frecuentemente cursan con neuroinflamación y la elevación evidente de varios marcadores pro-inflamatorios.",
+      "id": 19,
+      "used": true
+    },
+    {
+      "sourceId": 21,
+      "text": "¿Qué división funcional del cerebelo se encarga de enviar señales correctoras al tronco del encéfalo para modificar la postura y reestablecer el equilibrio y cuya lesión produce inestabilidad...?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El vestibulocerebelo."
+        },
+        {
+          "key": "B",
+          "text": "El espinocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "El cerebrocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "El vermis cerebelar."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El vestibulocerebelo modula la postura y restablece el equilibrio; las lesiones en esta área causan inestabilidad al mantenerse de pie o al moverse.",
+      "id": 20,
+      "used": true
+    },
+    {
+      "sourceId": 45,
+      "text": "En relación con la remodelación sináptica podemos afirmar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es un proceso que precede al de muerte neuronal."
+        },
+        {
+          "key": "B",
+          "text": "se produce fundamentalmente en el periodo prenatal."
+        },
+        {
+          "key": "C",
+          "text": "no depende de la actividad sináptica."
+        },
+        {
+          "key": "D",
+          "text": "los periodos concretos de remodelación son propios de cada región."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El gran reajuste y poda de sinapsis no ocurre a la vez en todo el cerebro; tiene lugar de manera escalonada tras el nacimiento y su cronología varía notablemente marcando los distintos 'periodos críticos' particulares de cada región encefálica.",
+      "id": 21,
+      "used": true
+    },
+    {
+      "sourceId": 67,
+      "text": "¿Qué receptor cutáneo detecta tacto fino?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corpúsculo de Meissner"
+        },
+        {
+          "key": "B",
+          "text": "Huso muscular"
+        },
+        {
+          "key": "C",
+          "text": "Órgano tendinoso"
+        },
+        {
+          "key": "D",
+          "text": "Bastón"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los corpúsculos de Meissner participan en tacto discriminativo.",
+      "id": 22,
+      "used": true
+    },
+    {
+      "sourceId": 37,
+      "text": "En el caso de la inmunidad celular, NO son células presentadoras de antígenos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "los linfocitos B."
+        },
+        {
+          "key": "D",
+          "text": "las células dendríticas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Aunque los neutrófilos fagocitan agentes patógenos, carecen de las especializaciones para actuar como células presentadoras de antígenos a los linfocitos T, rol que sí cumplen los macrófagos, las células dendríticas y los linfocitos B.",
+      "id": 23,
+      "used": true
+    },
+    {
+      "sourceId": 84,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos.",
+      "id": 24,
+      "used": true
+    },
+    {
+      "sourceId": 100,
+      "text": "Respecto a la vasopresina, ¿cuál de las siguientes afirmaciones es correcta en relación con el consumo de alcohol?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El consumo de alcohol no influye en la producción de vasopresina."
+        },
+        {
+          "key": "B",
+          "text": "El consumo de alcohol estimula la liberación de vasopresina, lo que reduce la excreción de orina."
+        },
+        {
+          "key": "C",
+          "text": "El consumo de alcohol disminuye la excreción de orina."
+        },
+        {
+          "key": "D",
+          "text": "El consumo de alcohol inhibe la producción de vasopresina, lo que incrementa la excreción de orina."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El alcohol inhibe potentemente la liberación de la hormona antidiurética (vasopresina). Al no haber vasopresina reteniendo agua en los riñones, se incrementa masivamente la producción y excreción de orina.",
+      "id": 25,
+      "used": true
+    },
+    {
+      "sourceId": 42,
+      "text": "¿Dónde se localizan principalmente los cuerpos neuronales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustancia gris"
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca"
+        },
+        {
+          "key": "C",
+          "text": "Meninges"
+        },
+        {
+          "key": "D",
+          "text": "Ventrículos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sustancia gris contiene somas neuronales y sinapsis.",
+      "id": 26,
+      "used": true
+    },
+    {
+      "sourceId": 105,
+      "text": "¿Cuál será el grupo sanguíneo de una persona en cuyo plasma porta anticuerpos contra el antígeno A y no contra el antígeno B?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Grupo A."
+        },
+        {
+          "key": "B",
+          "text": "Grupo B."
+        },
+        {
+          "key": "C",
+          "text": "Grupo AB."
+        },
+        {
+          "key": "D",
+          "text": "Grupo 0."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Un individuo del grupo sanguíneo B posee antígenos B en sus glóbulos rojos. Su sistema inmunológico reconoce el B como propio, por lo que formará anticuerpos de defensa exclusivamente contra el antígeno extraño, es decir, el A.",
+      "id": 27,
+      "used": true
+    },
+    {
+      "sourceId": 117,
+      "text": "El proceso de encefalización:",
+      "options": [
+        {
+          "key": "A",
+          "text": "parece obedecer a un patrón general de regionalización del sistema nervioso, común a todos los animales con simetría bilateral."
+        },
+        {
+          "key": "B",
+          "text": "está presente desde los patrones de organización de tejido nervioso más primitivos, como en las hidras."
+        },
+        {
+          "key": "C",
+          "text": "no está asociado a la organización ganglionar del tejido nervioso."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fenómeno evolutivo por el que surge el cerebro obedece a un esquema genético común (orquestado por genes homeogénicos u ortólogos) de regionalización presente a lo largo de todos los filos de animales con simetría bilateral.",
+      "id": 28,
+      "used": true
+    },
+    {
+      "sourceId": 87,
+      "text": "¿Cuál de las siguientes afirmaciones sobre los circuitos de los reflejos medulares polisinápticos (como el reflejo de flexión) es correcta?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sólo participan neuronas sensoriales y motoneuronas, sin interneuronas."
+        },
+        {
+          "key": "B",
+          "text": "Involucran mecanismos de inhibición recíproca a través de interneuronas para asegurar la relajación del músculo antagonista."
+        },
+        {
+          "key": "C",
+          "text": "Su función principal es mantener el tono muscular frente a la gravedad."
+        },
+        {
+          "key": "D",
+          "text": "No dependen en absoluto de estímulos sensoriales periféricos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los reflejos polisinápticos, como el de flexión ante el dolor, activan interneuronas que por un lado excitan el músculo agonista para retirar el miembro, y por otro inhiben a las motoneuronas del músculo antagonista para evitar bloqueos.",
+      "id": 29,
+      "used": true
+    },
+    {
+      "sourceId": 88,
+      "text": "¿Cuál de las siguientes afirmaciones es correcta en relación con las alteraciones psiquiátricas y el sistema inmunológico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las psicopatologías no tienen ninguna vinculación biológica con el sistema inmune."
+        },
+        {
+          "key": "B",
+          "text": "Trastornos como la esquizofrenia o la depresión pueden cursar con un componente inflamatorio mediado por citocinas."
+        },
+        {
+          "key": "C",
+          "text": "Solo las drogas de abuso, pero no los factores estresantes naturales, pueden modular las citocinas."
+        },
+        {
+          "key": "D",
+          "text": "Las citocinas no son capaces de atravesar la barrera hematoencefálica bajo ninguna condición."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Gran cantidad de estudios de psiconeuroinmunología han demostrado que trastornos como la depresión o la esquizofrenia están con frecuencia relacionados con un aumento de biomarcadores inflamatorios (citocinas) y procesos neuroinmunitarios alterados.",
+      "id": 30,
+      "used": true
+    }
+  ]
+}
