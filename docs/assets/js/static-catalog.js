@@ -9,10 +9,14 @@
   function sanitizePathSegment(value, fallback = "sin-nombre") {
     const normalized = String(value || "")
       .trim()
-      .replace(/[<>:"/\\|?*\u0000-\u001f]/g, " ")
-      .replace(/\s+/g, " ")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[<>:"/\\|?*\u0000-\u001f]/g, "-")
+      .replace(/[\s\-]+/g, "-")
       .replace(/\.+$/g, "")
-      .trim();
+      .trim()
+      .replace(/^-+|-+$/g, "");
 
     return normalized || fallback;
   }
