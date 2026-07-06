@@ -18,6 +18,11 @@
     return host === "localhost" || host === "127.0.0.1" || host === "::1" || host.endsWith(".local");
   }
 
+  function isGitHubPagesHost() {
+    const host = String(global.location && global.location.hostname ? global.location.hostname : "").toLowerCase();
+    return host.endsWith(".github.io");
+  }
+
   async function hasBackendApi() {
     try {
       const response = await fetch(BACKEND_PROBE_PATH, {
@@ -43,6 +48,10 @@
 
     if (isLocalHost()) {
       return true;
+    }
+
+    if (isGitHubPagesHost()) {
+      return false;
     }
 
     return hasBackendApi();
