@@ -1,0 +1,797 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1",
+  "subtitle": "30 Tipo Test - Examen Tipo",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En relación a la plasticidad neural podemos decir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el aprendizaje constante en las primeras etapas de la vida potencia o da lugar a nuevas conexiones entre neuronas;"
+        },
+        {
+          "key": "B",
+          "text": "los astrocitos están implicados en la plasticidad sináptica que subyace al aprendizaje y la memoria;"
+        },
+        {
+          "key": "C",
+          "text": "un ejemplo evidente son los cambios que pueden producirse en la cantidad de espinas dendríticas;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La plasticidad neural implica cambios estructurales y funcionales del tejido nervioso frente a la experiencia, como variaciones en la cantidad de espinas dendríticas y la formación de nuevas conexiones sinápticas. Asimismo, se ha demostrado que los astrocitos modulan activamente dicha plasticidad a lo largo del aprendizaje."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Sobre el aporte sanguíneo al encéfalo para cubrir sus necesidades metabólicas sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el encéfalo acumula glucosa para su funcionamiento, aunque ésta no llegue a través de la sangre;"
+        },
+        {
+          "key": "B",
+          "text": "los requerimientos energéticos del encéfalo son menores que los de cualquier otro órgano;"
+        },
+        {
+          "key": "C",
+          "text": "la sangre accede al encéfalo por las arterias carótidas internas y las arterias vertebrales;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El encéfalo tiene unos requerimientos energéticos altísimos y prácticamente no almacena reservas de glucosa ni de oxígeno en su tejido. Para asegurar su funcionamiento, el flujo continuo de sangre accede e irriga la cabeza a través de dos sistemas principales: las arterias carótidas internas y las arterias vertebrales."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "En la Figura 1 se representa un esquema de las meninges, ¿qué número señala la piamadre?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1;"
+        },
+        {
+          "key": "B",
+          "text": "2;"
+        },
+        {
+          "key": "C",
+          "text": "3;"
+        },
+        {
+          "key": "D",
+          "text": "4."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En la anatomía de las meninges, la piamadre (indicada con el número 3) es la delgada capa más interna que se encuentra estrechamente adherida a los contornos y surcos del propio tejido cerebral. El 1 corresponde a la duramadre, el 2 a la aracnoides y el 4 al espacio subaracnoideo recorrido por sus trabéculas.",
+      "image": "https://drive.google.com/file/d/1VND5geJHQIk7Kz4q65-DHQkUzcGwcV-G/view?usp=drive_link"
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "NO se origina en el tronco del encéfalo el nervio:",
+      "options": [
+        {
+          "key": "A",
+          "text": "oculomotor;"
+        },
+        {
+          "key": "B",
+          "text": "auditivo;"
+        },
+        {
+          "key": "C",
+          "text": "facial;"
+        },
+        {
+          "key": "D",
+          "text": "olfatorio."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "De los 12 pares de nervios craneales, todos tienen su origen en estructuras del tronco del encéfalo a excepción de los dos primeros: el nervio olfatorio (I par) que accede al telencéfalo, y el nervio óptico (II par) que lo hace al diencéfalo."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "En el esquema de las divisiones del SN representado en la Figura 2, ¿qué números corresponden respectivamente al SN central y al SN somático?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 y 2;"
+        },
+        {
+          "key": "B",
+          "text": "1 y 3;"
+        },
+        {
+          "key": "C",
+          "text": "2 y 4;"
+        },
+        {
+          "key": "D",
+          "text": "2 y 5."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En las divisiones jerárquicas del sistema nervioso, la primera caja superior (1) representa al Sistema Nervioso Central (que abarca encéfalo y médula). La subdivisión inferior que media las interacciones con el entorno exterior es el Sistema Nervioso Somático (3), paralelo a la vía vegetativa que es el SN Autónomo (4).",
+      "image": "https://drive.google.com/file/d/1srv7vPzrBA0PnqydvsKdct5iDp1jXBEv/view?usp=drive_link"
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Las diferencias existentes en los rasgos físicos y psicológicos entre los individuos de una misma especie se explican completamente por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la dotación genética de cada individuo;"
+        },
+        {
+          "key": "B",
+          "text": "el factor filogenético;"
+        },
+        {
+          "key": "C",
+          "text": "los factores epigenéticos;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y C son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La variabilidad particular de los rasgos en un sujeto (las causas lejanas de factor ontogénico) se explica siempre por la interacción inseparable de su dotación genética individual heredada (A) y la acción moduladora del ambiente o factores epigenéticos experimentados durante su desarrollo (C)."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Diversos estudios señalan la capacidad de los compuestos piretroides, utilizados como plaguicidas, para inducir neurotoxicidad... En una investigación llevada a cabo por Burillo-Putze et al... se detectó la presencia de estos compuestos en el 96,1% de la población estudiada, no habiendo estado expuesta a ellos por motivos laborales... ¿Con qué tipo de estrategia de investigación podría comprobarse si estos compuestos han ejercido algún efecto neurotóxico en la población estudiada?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "una intervención conductual, siendo los cambios en la actividad cerebral la VI;"
+        },
+        {
+          "key": "B",
+          "text": "cualquier estrategia experimental sería adecuada;"
+        },
+        {
+          "key": "C",
+          "text": "una intervención somática, en la que la VI es la plaguicida;"
+        },
+        {
+          "key": "D",
+          "text": "una contrastación observacional, que es una estrategia de contrastación empírica."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Dado que los investigadores no introducen la sustancia activamente, sino que miden el estado neurológico de personas ya expuestas a nivel poblacional de manera fortuita por la dieta, se trata de una aproximación correlacional (contrastación observacional), midiendo si existe covariación entre la neurotoxicidad y la concentración del plaguicida en sus cuerpos."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "¿Cuál de los siguientes autores inspiró a Darwin para desarrollar el postulado de que el crecimiento de las poblaciones está limitado por la cantidad de recursos disponibles, lo que establece una lucha por la existencia entre los individuos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hardy y Weinberg;"
+        },
+        {
+          "key": "B",
+          "text": "Lyell;"
+        },
+        {
+          "key": "C",
+          "text": "Malthus;"
+        },
+        {
+          "key": "D",
+          "text": "Lamarck."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Thomas Malthus, con su famoso 'Ensayo sobre el principio de la población', demostró que el ritmo geométrico de crecimiento demográfico superaba al ritmo aritmético de producción de alimentos, influyendo decisivamente en Darwin al evidenciar la competencia ineludible por los escasos recursos (lucha por la existencia)."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "Supongamos que en una población de 40.000 individuos se están investigando las frecuencias de un gen que presenta dos alelos A1 y A2. Sabiendo que la frecuencia génica de A1 es 0,8 y que la población está en equilibrio, ¿cuál de las siguientes opciones es correcta?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "12.800 individuos presentarán el genotipo heterocigoto;"
+        },
+        {
+          "key": "B",
+          "text": "la frecuencia del genotipo A1A1 será 0,64;"
+        },
+        {
+          "key": "C",
+          "text": "la frecuencia del genotipo A2A2 en la siguiente generación será 0,2;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y B son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Estando en equilibrio, si p(A1) = 0,8, entonces q(A2) = 0,2. La frecuencia del homocigoto A1A1 será p² = (0,8)² = 0,64 (B es correcta). La de los heterocigotos será 2pq = 2 * 0,8 * 0,2 = 0,32; al multiplicarlo por los 40.000 individuos obtenemos 12.800 heterocigotos en la población (A también es cierta). Por ende, D es la correcta."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Entre las consecuencias del denominado efecto cuello de botella, producido por un cambio desfavorable en las condiciones ambientales para una especie, está/n que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "puede disminuir la endogamia facilitando la evolución de la especie;"
+        },
+        {
+          "key": "B",
+          "text": "provoca una disminución importante de su variabilidad genética;"
+        },
+        {
+          "key": "C",
+          "text": "puede impedir el cambio evolutivo al mantener inalteradas las frecuencias génicas;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El efecto de cuello de botella sucede cuando la población se reduce drásticamente por un suceso ajeno a la aptitud, conllevando como consecuencia principal una severa pérdida y disminución de su variabilidad genética, y favoreciendo que se disparen las tasas de cruce entre parientes (endogamia)."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "Cuando por efecto de la selección natural en una población va disminuyendo la frecuencia de los individuos de ambos extremos de la distribución fenotípica, el tipo de selección que ha estado actuando es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "estabilizadora;"
+        },
+        {
+          "key": "B",
+          "text": "disruptiva;"
+        },
+        {
+          "key": "C",
+          "text": "direccional;"
+        },
+        {
+          "key": "D",
+          "text": "dependiente de la frecuencia."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La selección natural estabilizadora es la fuerza evolutiva que actúa negativamente en contra de las desviaciones situadas en ambos extremos de la distribución del rasgo, promoviendo la supervivencia exclusiva de los organismos que portan los fenotipos intermedios."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "¿Cuál de las siguientes estrategias de reproducción produce una mayor tasa de dimorfismo sexual?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "poliginia;"
+        },
+        {
+          "key": "B",
+          "text": "promiscuidad;"
+        },
+        {
+          "key": "C",
+          "text": "monogamia;"
+        },
+        {
+          "key": "D",
+          "text": "poliandria."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En las especies que adoptan un sistema de apareamiento de poliginia, los machos compiten intensamente para acaparar a múltiples hembras. Esta alta presión de selección sexual favorece el desarrollo de caracteres llamativos y tamaños corporales muy dispares, dando como resultado un gran dimorfismo sexual respecto a las hembras."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "La estrategia de forrajeo de los alces:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se ajusta a los modelos de optimización;"
+        },
+        {
+          "key": "B",
+          "text": "minimiza la utilidad biológica;"
+        },
+        {
+          "key": "C",
+          "text": "demuestra que el factor más importante es minimizar los costes de obtención de comida;"
+        },
+        {
+          "key": "D",
+          "text": "no cumple el modelo de optimización como la estrategia de forrajeo de los estorninos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El forrajeo de los alces es un ejemplo clásico para constatar la Teoría de la Optimización ecológica; para maximizar su utilidad biológica los alces se ajustan a un modelo racional donde consumen el mínimo de plantas acuáticas imprescindibles para cubrir sus altas necesidades de sodio, a pesar del riesgo que implica alimentarse en el agua."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "En el juego del conflicto de halcones y palomas podemos afirmar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la estrategia Halcón será evolutivamente estable cuando el valor de ganar (V) es mayor que el coste de perder (C);"
+        },
+        {
+          "key": "B",
+          "text": "la estrategia Paloma nunca será evolutivamente estable;"
+        },
+        {
+          "key": "C",
+          "text": "en todas las ocasiones la estrategia evolutivamente estable será una combinación de Halcones y Palomas;"
+        },
+        {
+          "key": "D",
+          "text": "lo dicho en A y B es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La estrategia Halcón es evolutivamente estable pura cuando los beneficios son mayores que los costes asociados a la lucha (V > C). Por el contrario, la estrategia Paloma no es nunca una EEE pura porque una población compuesta únicamente de palomas siempre podrá ser invadida y explotada con éxito por cualquier mutante halcón."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Decimos que una pauta de acción fija es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "autorregulada porque una vez iniciada la secuencia de reflejos llega a su fin, independientemente de las circunstancias;"
+        },
+        {
+          "key": "B",
+          "text": "innata y dependiente de la experiencia del individuo;"
+        },
+        {
+          "key": "C",
+          "text": "compleja porque es provocada por un estímulo desencadenador innato;"
+        },
+        {
+          "key": "D",
+          "text": "autoinhibida porque es exhibida por casi todos los miembros de la especie."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Una pauta de acción fija (PAF) es una conducta estereotipada que posee la cualidad de ser 'consumatoria' o autorregulada: esto implica que una vez es disparada por el estímulo, el animal continuará ejecutando los movimientos secuenciales en el vacío hasta agotarlos y finalizarlos de forma rígida, aunque el estímulo desaparezca o varíen las condiciones ambientales."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Desde el punto de vista de la Sociobiología, las conductas sociales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "son rasgos fenotípicos con base genética que afectan de modo significativo a la aptitud inclusiva;"
+        },
+        {
+          "key": "B",
+          "text": "no están sujetas a la selección natural;"
+        },
+        {
+          "key": "C",
+          "text": "no pueden estudiarse aplicando las leyes de la genética de poblaciones;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La Sociobiología se funda en la idea de que los comportamientos y dinámicas sociales mostradas por los individuos son adaptaciones fenotípicas con fuerte control genético, que han evolucionado mediante presión de la selección natural precisamente por lograr acrecentar el éxito reproductivo y la aptitud inclusiva del sujeto."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "La proporción de la variabilidad de un rasgo fenotípico atribuible a los genes se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "heredabilidad;"
+        },
+        {
+          "key": "B",
+          "text": "respuesta de selección;"
+        },
+        {
+          "key": "C",
+          "text": "varianza fenotípica;"
+        },
+        {
+          "key": "D",
+          "text": "diferencial de selección."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La heredabilidad (H2) es el parámetro estadístico empleado en la genética cuantitativa que mide y delimita con exactitud qué porcentaje de la variación total observada en un rasgo particular dentro de una población (varianza fenotípica) se debe específicamente a la dotación genética de los sujetos (varianza genética)."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "¿Cuál de los siguientes estudios le permitiría averiguar la heredabilidad en sentido estricto de un rasgo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "gemelos dicigóticos;"
+        },
+        {
+          "key": "B",
+          "text": "hermanastros (hermanos por parte de un solo progenitor);"
+        },
+        {
+          "key": "C",
+          "text": "hermanos completos (de padre y madre);"
+        },
+        {
+          "key": "D",
+          "text": "gemelos monocigóticos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Dado que los medios hermanos o hermanastros (que comparten un solo progenitor) reciben estadísticamente apenas un 25% de varianza aditiva y están completamente exentos de solapar componentes genéticos de dominancia (epistasia), su estudio permite a los investigadores aislar específicamente dicha varianza aditiva y cuantificar la heredabilidad en sentido estricto."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "En una granja porcina el peso medio de los lechones a los seis meses fue de 45 Kg. En un programa de cría selectiva se seleccionó para la reproducción una muestra cuyo peso medio a los seis meses fue de 50 Kg, y se obtuvo que la media de los descendientes de esta muestra a los seis meses de edad fue 47 Kg. ¿Cuál es la heredabilidad del rasgo en esta población?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,40;"
+        },
+        {
+          "key": "B",
+          "text": "0,50;"
+        },
+        {
+          "key": "C",
+          "text": "0,25;"
+        },
+        {
+          "key": "D",
+          "text": "0,3."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Empleando la fórmula de la heredabilidad en programas de selección artificial (h2 = R / S): la respuesta a la selección (R) es 47 - 45 = 2. El diferencial de selección aplicado (S) es 50 - 45 = 5. H2 = 2 / 5 = 0,40."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Si la correlación obtenida entre gemelos dicigóticos en un determinado rasgo conductual es de 0,4, ¿cuál podría será la heredabilidad de dicho rasgo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,2;"
+        },
+        {
+          "key": "B",
+          "text": "0,4;"
+        },
+        {
+          "key": "C",
+          "text": "0,8;"
+        },
+        {
+          "key": "D",
+          "text": "1."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Asumiendo los modelos teóricos genéticos donde los gemelos dicigóticos (que comparten solo el 50% de la carga genética) criados juntos no se ven perturbados por el ambiente compartido, la varianza genética es el doble de su coeficiente de correlación. Si rDZ = 0,4, la estimación general de heredabilidad será el doble de dicho valor: 0,4 * 2 = 0,8."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Para que se pueda dar la liberación del neurotransmisor a la hendidura sináptica, es necesario que en el terminal presináptico se produzca la apertura de los canales de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sodio;"
+        },
+        {
+          "key": "B",
+          "text": "aniones orgánicos;"
+        },
+        {
+          "key": "C",
+          "text": "potasio;"
+        },
+        {
+          "key": "D",
+          "text": "calcio."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La llegada de un potencial de acción ocasiona un cambio de voltaje que abre masivamente las compuertas de los canales de Calcio (Ca2+) en el botón terminal de la neurona presináptica; la cascada subsiguiente activada por el ion calcio es el evento crucial que determina que las vesículas puedan exocitar los neurotransmisores."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "El movimiento de iones a través de la membrana neuronal para un determinado ion depende de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los canales iónicos abiertos que posea la membrana;"
+        },
+        {
+          "key": "B",
+          "text": "las proteínas transportadoras de neurotransmisores a nivel presináptico;"
+        },
+        {
+          "key": "C",
+          "text": "los receptores postsinápticos para ese ion;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El traslado físico y eléctrico de una clase concreta de ion se rige primordialmente por la permeabilidad o conductancia que posea la propia membrana en ese instante de tiempo, el cual está regulado por la cantidad y estado de disponibilidad de los poros de las proteínas de canal correspondientes al ion de paso."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "Al final del potencial de acción se da una hiperpolarización que es consecuencia de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la inactivación de los canales de cloro dependientes de voltaje;"
+        },
+        {
+          "key": "B",
+          "text": "el cierre de los canales de calcio;"
+        },
+        {
+          "key": "C",
+          "text": "una mayor acumulación de iones potasio en el exterior de la membrana celular;"
+        },
+        {
+          "key": "D",
+          "text": "la salida de iones proteicos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Al finalizar el período descendente del potencial de acción, el retraso fisiológico y cierre tan paulatino y ralentizado de los canales del ión potasio produce que, temporalmente, continúe fugándose el K+ fuera del citoplasma; provocando una concentración externa momentánea que desciende y acentúa la negatividad de la membrana por debajo del reposo original."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "En relación con la conducción saltadora del potencial de acción sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en los segmentos mielinizados se producen potenciales de acción al igual que en los no mielinizados;"
+        },
+        {
+          "key": "B",
+          "text": "en los nódulos de Ranvier se regenera el potencial de acción;"
+        },
+        {
+          "key": "C",
+          "text": "la propagación del impulso nervioso en los segmentos de mielina se hace de forma activa disminuyendo su magnitud con la distancia;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La recubierta compacta de las células de la glía aísla los axones. En ellos, las señales nerviosas viajan pasivamente y muy rápido por debajo de la vaina, por lo que el potencial de acción solo necesita regenerarse de manera activa y electroquímica cuando la corriente aterriza y asoma sobre las expuestas regiones nodulares de Ranvier."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "En relación con la farmacología de la sinapsis química sabemos que las sustancias psicoactivas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "actúan como agonistas sobre el receptor postsináptico inhibiendo la señalización mediada por ese receptor;"
+        },
+        {
+          "key": "B",
+          "text": "impiden la liberación del neurotransmisor;"
+        },
+        {
+          "key": "C",
+          "text": "impiden la recaptación del neurotransmisor;"
+        },
+        {
+          "key": "D",
+          "text": "B y C son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La psicofarmacología es diversa; las sustancias exógenas influyen por muchas vías distintas sobre las etapas de comunicación. Por un lado, sustancias antagonistas pueden obstaculizar e impedir la salida desde las vesículas (opción B). Por otro lado, fármacos agonistas pueden bloquear en la membrana los sistemas enzimáticos encargados de la recaptación aumentando así la fuerza de la señal sináptica prolongada (opción C)."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "En las últimas décadas numerosas investigaciones han proporcionado nuevos datos sobre la regulación genética de algunas formas de la obesidad. En este sentido, se han obtenido experimentalmente ratones homocigóticos para el alelo recesivo ob (ratones obob), que se caracterizan por ser obesos, ya que no sintetizan una proteína, la leptina (implicada en la saciedad). Igualmente, se han obtenido ratones obesos que son homocigóticos recesivos para otro gen, el que codifica el receptor de leptina (ratones dbdb). Dados estos datos, ¿cuál es la probabilidad de que los descendientes de una pareja de ratones fenotípicamente normales, y heterocigóticos para ambos loci, sean obesos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "4/16;"
+        },
+        {
+          "key": "B",
+          "text": "7/16;"
+        },
+        {
+          "key": "C",
+          "text": "6/16;"
+        },
+        {
+          "key": "D",
+          "text": "5/16."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Este ejemplo expone un caso de epistasia en un cruce mendeliano doblemente heterocigoto (Obob Dbdb x Obob Dbdb). Para que un sujeto tenga un fenotipo de peso normal requiere heredar al menos un alelo dominante en los dos loci simultáneamente (Ob_ Db_), probabilidad que arroja 9/16 en el cuadro de Punnet. Si cualquier gen queda en su estado recesivo o doble homocigosis, desencadenará la aparición del fallo metabólico y la obesidad en los ratones (que supone el bloque de 16/16 - 9/16 = 7/16)."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "Como sabemos, la enzima fenilalanina hidroxilasa es un factor esencial en la aparición de la enfermedad de la fenilcetonuria. En ocasiones, no hay un correcto funcionamiento de esa enzima debido a que se ha producido una mutación puntual que ha hecho que, en una posición dada de la molécula de esa enzima, en lugar del aminoácido:",
+      "options": [
+        {
+          "key": "A",
+          "text": "triptófano se tenga arginina;"
+        },
+        {
+          "key": "B",
+          "text": "fenilalanina se tenga triptófano;"
+        },
+        {
+          "key": "C",
+          "text": "alanina se tenga arginina;"
+        },
+        {
+          "key": "D",
+          "text": "arginina se tenga triptófano."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "De acuerdo con el estudio de esta severa patología metabólica de origen genético, en los pacientes con fenilcetonuria, una de las mutaciones puntuales más estudiadas ha provocado un error de traducción; de forma que la enzima queda gravemente inutilizada porque el aminoácido triptófano se asienta ocupando la posición 408 del polipéptido, lugar donde habitualmente en el sujeto sano se incorpora la arginina."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "A lo largo de las sucesivas etapas del desarrollo de un organismo la regulación de la expresión de sus genes no es la misma, aunque todas sus células tengan la misma dotación genética. Por ello, conocer con precisión los procesos por los que la regulación de la expresión génica se hace adecuadamente es de gran utilidad. A este respecto, el modelo del operón es un ejemplo de que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "que la regulación de la expresión de los genes estructurales nunca depende de la expresión de ningún gen regulador;"
+        },
+        {
+          "key": "B",
+          "text": "que los genes reguladores sólo actúan a largo plazo;"
+        },
+        {
+          "key": "C",
+          "text": "la regulación a corto plazo de la expresión de los genes que codifican enzimas que participan en el metabolismo de nutrientes que se necesitan en un momento dado del ciclo vital celular;"
+        },
+        {
+          "key": "D",
+          "text": "el promotor y el operador son genes reguladores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El modelo pionero del operón (descrito en bacterias) representa el caso modélico biológico y fisiológico para evidenciar cómo el mecanismo de la regulación a corto plazo funciona reaccionando directamente a circunstancias inmediatas, activando temporalmente los genes específicos precisos para la maquinaria metabólica o asimilación de ciertos nutrientes que demanda el ecosistema."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "En contraste con lo que ocurre en las aves, en los mamíferos, el sexo heterogamético es el masculino, mientras que el homogamético es el femenino. Aunque se da esa diferencia entre sexos, se ha comprobado que uno de los dos cromosomas X de las hembras de los mamíferos se inactiva al azar en todas sus células. Este hecho:",
+      "options": [
+        {
+          "key": "A",
+          "text": "explica la existencia de tejidos en mosaico en las hembras;"
+        },
+        {
+          "key": "B",
+          "text": "permite que, a efectos funcionales, la dotación génica de machos y hembras sea la misma;"
+        },
+        {
+          "key": "C",
+          "text": "no se produce de manera completa, ya que un 15% del cromosoma X inactivado escapa a dicha inactivación;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las otras tres opciones es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La inactivación selectiva del corpúsculo de Barr cumple todas estas asombrosas características genéticas: la inactivación aleatoria ocasiona distribuciones fenotípicas en mosaico en la hembra (A); funge como un mecanismo base para contrarrestar dosis y equiparar el material de las féminas ante la hemicigosis masculina (B); y resulta imperfeto porque un pequeño y considerable volumen de los alelos del brazo pseudoautosómico huye y escapa de la paralización génica (C)."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Igual que en los autosomas, en los cromosomas sexuales también se producen alteraciones numéricas y estructurales. Teniendo en cuenta lo que se acaba de señalar, ¿cómo sería fenotípicamente una persona 47 XXX que portase por traslocación el gen SRY?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hombre;"
+        },
+        {
+          "key": "B",
+          "text": "mujer, pero sin la diferenciación de los órganos sexuales propios del sexo femenino;"
+        },
+        {
+          "key": "C",
+          "text": "mujer;"
+        },
+        {
+          "key": "D",
+          "text": "hombre, pero sin la diferenciación de los órganos sexuales propios del sexo masculino."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El gen SRY, localizado ordinariamente en la banda maestra del cromosoma Y, resulta indispensable y completamente decisorio como detonante para activar la cascada de diferenciación biológica de las gónadas iniciales hacia la masculinización (testículos). Así pues, cualquier individuo con variaciones o traslocaciones genéticas aberrantes que herede de un modo u otro un fragmento genético funcional que aloje dicho gen SRY desarrollará indefectiblemente el fenotipo y aspecto corporal de un hombre."
+    }
+  ]
+}

@@ -1,0 +1,796 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Febrero 2023 - Tipo A",
+  "subtitle": "30 Tipo Test - Examen Febrero 2023 - Tipo A",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿A qué tipo de rasgos fenotípicos le son de aplicación las leyes de la transmisión genética descritas por Mendel?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "exclusivamente a los rasgos monogénicos;"
+        },
+        {
+          "key": "B",
+          "text": "tanto a los rasgos cualitativos como cuantitativos;"
+        },
+        {
+          "key": "C",
+          "text": "solo si se trata de rasgos discretos;"
+        },
+        {
+          "key": "D",
+          "text": "únicamente a los rasgos continuos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Aunque la genética mendeliana original se basó en rasgos cualitativos o discretos (monogénicos), la genética cuantitativa ha demostrado de forma fehaciente que los alelos individuales de los múltiples genes (QTLs) que determinan los rasgos cuantitativos (continuos) también se heredan y segregan obedeciendo estrictamente a las mismas leyes básicas de la herencia mendeliana."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Dada una población en equilibrio en la que existe un gen con dos alelos y con una frecuencia del alelo dominante de 0,6, ¿cuál sería la frecuencia del genotipo heterocigoto?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,48;"
+        },
+        {
+          "key": "B",
+          "text": "0,36;"
+        },
+        {
+          "key": "C",
+          "text": "0,16;"
+        },
+        {
+          "key": "D",
+          "text": "0,4."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Basándonos en la Ley del Equilibrio de Hardy-Weinberg: si la frecuencia del alelo dominante (p) es 0,6, la del alelo recesivo (q) será 1 - 0,6 = 0,4. La frecuencia del genotipo heterocigoto se calcula mediante la fórmula 2pq, esto es: 2 * 0,6 * 0,4 = 0,48."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "El potencial de membrana de una neurona en reposo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se debe fundamentalmente al movimiento de iones K+;"
+        },
+        {
+          "key": "B",
+          "text": "es un valor aproximado de +70 mV en la mayoría de las neuronas;"
+        },
+        {
+          "key": "C",
+          "text": "es el resultado de la diferencia de cargas entre el interior de la célula y el exterior;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y C son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El potencial de membrana en reposo es el resultado directo de la diferencia en la distribución de cargas eléctricas entre el citoplasma y el medio extracelular (C), el cual se genera y se mantiene pasivamente en gran medida gracias a la alta permeabilidad selectiva que tiene la membrana para el flujo de iones potasio (K+) a través de sus canales de fuga (A). (La opción B es falsa porque el valor es negativo, alrededor de -70 mV)."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Si observáramos que, en una población estable de halcones y palomas, hay un 40% de halcones y un 60% de palomas, podemos suponer que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "un resultado que encajaría con esta distribución de estrategias sería que, en el caso de atacar, el coste de perder tuviera un valor de 5 y el beneficio de ganar de 2;"
+        },
+        {
+          "key": "B",
+          "text": "un resultado que encajaría con esta distribución de estrategias sería que, en el caso de atacar, el coste de perder tuviera un valor de 2 y el beneficio de ganar de 5;"
+        },
+        {
+          "key": "C",
+          "text": "atacar es una estrategia evolutivamente estable;"
+        },
+        {
+          "key": "D",
+          "text": "atacar no es una estrategia evolutivamente estable."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En el Juego de Halcones y Palomas, la proporción estable de halcones (p) en una población mixta es igual al Beneficio (V) dividido por el Coste (C): p = V/C. Si hay un 40% de halcones, p = 0,4. Sustituyendo los valores de la opción A, obtenemos 2 / 5 = 0,4, lo que encaja perfectamente con la proporción observada."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Durante la regeneración de los axones, juega un papel especialmente relevante el transporte:",
+      "options": [
+        {
+          "key": "A",
+          "text": "rápido retrógrado;"
+        },
+        {
+          "key": "B",
+          "text": "rápido anterógrado;"
+        },
+        {
+          "key": "C",
+          "text": "lento anterógrado;"
+        },
+        {
+          "key": "D",
+          "text": "lento retrógrado."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El transporte axónico lento anterógrado, impulsado a lo largo de los microtúbulos, es el mecanismo celular responsable de arrastrar y aportar los componentes estructurales del citoesqueleto y del axoplasma indispensables para permitir tanto el crecimiento físico normal como la regeneración de un axón dañado."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Con frecuencia, en los estudios de genética cuantitativa se calcula la heredabilidad a partir de la correlación entre hermanos (completos). En estos casos, el valor que se obtenga de esa correlación incluye:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la varianza genética por dominancia;"
+        },
+        {
+          "key": "B",
+          "text": "la varianza genética en sentido amplio;"
+        },
+        {
+          "key": "C",
+          "text": "la varianza genética ambiental;"
+        },
+        {
+          "key": "D",
+          "text": "los efectos del ambiente no compartido."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los hermanos completos no solo comparten estadísticamente el 50% de la varianza genética aditiva, sino que también comparten el 25% de la varianza genética debida al efecto de dominancia intralocus, lo que hace que su correlación arrastre e incluya irremediablemente este componente de dominancia al intentar estimar la heredabilidad."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Un fenómeno claramente demostrado en numerosos experimentos... es el de la sensibilización de la actividad locomotora inducida por la administración de psicoestimulantes, como la cocaína... ¿Qué estrategia de investigación se emplea en este tipo de estudios?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "contrastación observacional;"
+        },
+        {
+          "key": "B",
+          "text": "intervención conductual;"
+        },
+        {
+          "key": "C",
+          "text": "intervención somática;"
+        },
+        {
+          "key": "D",
+          "text": "aproximación correlacional."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Al inyectar sistemáticamente una sustancia química como la cocaína (Variable Independiente biológica) de forma directa en el organismo animal para evaluar cómo reacciona o qué impacto tiene sobre su nivel de actividad locomotora posterior (Variable Dependiente conductual), se está llevando a cabo un experimento clásico de intervención somática."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Sabiendo que dos caracteres dependen, respectivamente, de los genes D y E y que éstos presentan dos alelos cada uno con una relación de dominancia entre ellos en ambos casos (Dd; Ee), ¿qué porcentaje de la descendencia de una pareja cuyos genotipos son DdEe y ddEE, presentará el mismo fenotipo que sus progenitores para estos dos caracteres?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "25%;"
+        },
+        {
+          "key": "B",
+          "text": "50%;"
+        },
+        {
+          "key": "C",
+          "text": "75%;"
+        },
+        {
+          "key": "D",
+          "text": "100%."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los progenitores tienen fenotipo (Dominante D, Dominante E) y fenotipo (Recesivo d, Dominante E). Al cruzar DdEe x ddEE, la descendencia será 50% Dd (fenotipo Dom D) y 50% dd (fenotipo Rec d). En el gen E, toda la descendencia recibirá un alelo E del padre (ddEE), por lo que el 100% tendrá fenotipo Dominante E. La mitad de los hijos (DdEE/DdEe) tendrán fenotipo (Dom D, Dom E), idéntico al del primer progenitor, y la otra mitad (ddEE/ddEe) tendrán fenotipo (Rec d, Dom E), idéntico al del segundo progenitor. Por tanto, el 100% presenta el fenotipo de alguno de los padres."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "Supongamos un rasgo determinado por un gen con dos alelos con una relación de dominancia, en el que el alelo dominante es el causante de un déficit cognitivo. Si el coeficiente de selección para el genotipo homocigoto dominante es de 0,75, ¿cuál sería la eficacia biológica de este genotipo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,75;"
+        },
+        {
+          "key": "B",
+          "text": "0,25;"
+        },
+        {
+          "key": "C",
+          "text": "0,35;"
+        },
+        {
+          "key": "D",
+          "text": "0,025."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La eficacia biológica (w) y el coeficiente de selección (s) son siempre medidas complementarias que reflejan el éxito reproductivo y la presión evolutiva en contra del genotipo, relacionándose mediante la fórmula: w = 1 - s. Si el coeficiente s es 0,75, la eficacia biológica será w = 1 - 0,75 = 0,25."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "En relación con los potenciales postsinápticos excitadores (PEPs), podemos afirmar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dificultan la generación de un potencial de acción;"
+        },
+        {
+          "key": "B",
+          "text": "mantienen constante su magnitud hasta alcanzar el cono axónico;"
+        },
+        {
+          "key": "C",
+          "text": "siguen la ley del todo o nada e inducen siempre la generación de un potencial de acción;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son INCORRECTAS."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas son falsas: los PEPs facilitan (no dificultan) el potencial de acción; no mantienen constante su magnitud, sino que viajan de forma graduada o decreciente (pasiva); y no siguen la ley del todo o nada, que es exclusiva del potencial de acción."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "La lordosis de la rata hembra:",
+      "options": [
+        {
+          "key": "A",
+          "text": "está regulada por el hipocampo y el núcleo supraquiasmático;"
+        },
+        {
+          "key": "B",
+          "text": "es una pauta de acción fija;"
+        },
+        {
+          "key": "C",
+          "text": "es un ejemplo de impronta sexual;"
+        },
+        {
+          "key": "D",
+          "text": "solo se produce cuando el macho estimula sus flancos, la base de la cola y el perineo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La respuesta postural de lordosis en las ratas hembra (el arqueamiento estereotipado de la columna para facilitar la cópula) es el ejemplo paradigmático conductual y biológico de una Pauta de Acción Fija (PAF): innata, estereotipada y desencadenada predeciblemente ante un estímulo táctil."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "De entre las siguientes células, ¿cuáles no se encuentran en el sistema nervioso central?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la microglía;"
+        },
+        {
+          "key": "B",
+          "text": "los astrocitos;"
+        },
+        {
+          "key": "C",
+          "text": "los oligodendrocitos;"
+        },
+        {
+          "key": "D",
+          "text": "las células de Schwann."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las células de Schwann son las únicas de la lista que son exclusivas del Sistema Nervioso Periférico (SNP), donde cumplen la misma función mielinizante que los oligodendrocitos realizan en el Sistema Nervioso Central (SNC)."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En una población europea, se realizaron dos estudios, uno con padres e hijos y otro con gemelos dicigóticos, de los cuales, en ambos casos, se obtuvo una correlación de 0,38. Con esos datos, se puede concluir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no hay influencia del ambiente;"
+        },
+        {
+          "key": "B",
+          "text": "el 76 % de la variabilidad en el rasgo se debe a alelos aditivos;"
+        },
+        {
+          "key": "C",
+          "text": "la heredabilidad es de 0,38 en el primer caso y de 0,76 en el segundo;"
+        },
+        {
+          "key": "D",
+          "text": "con cualquiera de los estudios se ha obtenido la heredabilidad en sentido amplio."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El parentesco genético entre padres e hijos y entre gemelos dicigóticos es estadísticamente del 50% en varianza aditiva. La fórmula para estimar la heredabilidad en sentido estricto aísla la porción aditiva, donde la heredabilidad es el doble de su correlación fenotípica (h2 = 2 * r). Al multiplicar 0,38 * 2 obtenemos 0,76 (el 76% de la varianza es explicada por la herencia aditiva de alelos)."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "¿Qué probabilidad tienen los descendientes de una pareja, en la que ambos presentan en heterocigosis el alelo largo del receptor D4 de dopamina, de mostrar en mayor medida conductas dirigidas a la búsqueda de novedades y sensaciones placenteras?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0%;"
+        },
+        {
+          "key": "B",
+          "text": "25%;"
+        },
+        {
+          "key": "C",
+          "text": "50%;"
+        },
+        {
+          "key": "D",
+          "text": "75%."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El polimorfismo de la variante larga del gen DRD4 se relaciona con ser «buscador de sensaciones», donde portar la mutación (al menos un alelo) se comporta de forma dominante para este rasgo conductual. Al cruzar dos progenitores heterocigotos (Ll x Ll), la probabilidad mendeliana de obtener al menos un alelo largo en los descendientes es del 75% (1/4 LL + 2/4 Ll)."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "¿Por cuál de los siguientes procesos se logra la especiación simpátrica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "poliploidía;"
+        },
+        {
+          "key": "B",
+          "text": "anagénesis;"
+        },
+        {
+          "key": "C",
+          "text": "aislamiento geográfico;"
+        },
+        {
+          "key": "D",
+          "text": "todos los indicado en las opciones anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La especiación simpátrica, que transcurre sin separación geográfica previa, es un mecanismo muy recurrente y natural en el reino vegetal y suele originarse por eventos bruscos de poliploidía (mutaciones que duplican drásticamente la dotación cromosómica completa induciendo un aislamiento reproductor inmediato)."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "La liberación del neurotransmisor en el terminal axónico se produce por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la salida al espacio extracelular de calcio a través de canales de tipo L;"
+        },
+        {
+          "key": "B",
+          "text": "la generación de potenciales postsinápticos excitatorios en el terminal axónico;"
+        },
+        {
+          "key": "C",
+          "text": "la fusión de las vesículas sinápticas con la membrana del terminal;"
+        },
+        {
+          "key": "D",
+          "text": "el cierre de los canales de calcio de la membrana del terminal que produce un aumento de la concentración de calcio intracelular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Cuando el potencial de acción alcanza el botón presináptico, provoca la apertura de canales de calcio y su influjo masivo; esta entrada activa una cascada que permite la movilización y fusión física de las vesículas con la membrana plasmática neuronal liberando su carga química (exocitosis)."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "El altruismo reproductivo se puede explicar por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el hecho de que solo sucede en animales haplodiploides eusociales;"
+        },
+        {
+          "key": "B",
+          "text": "la teoría de la reparación genética;"
+        },
+        {
+          "key": "C",
+          "text": "un aumento en la aptitud inclusiva que favorece la selección por parentesco;"
+        },
+        {
+          "key": "D",
+          "text": "una disminución en la inversión parental al repartirse el trabajo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La paradoja evolutiva del altruismo se resuelve acudiendo a la Selección por Parentesco y a la ley de Hamilton. Renunciar al propio éxito directo es adaptativo y seleccionable siempre que promueva y logre un aumento global de la aptitud inclusiva del sujeto al asegurar indirectamente la propagación de los genes mutuos presentes en sus allegados."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "La Figura X muestra una representación de un corte cerebral de tipo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "frontal;"
+        },
+        {
+          "key": "B",
+          "text": "sagital"
+        },
+        {
+          "key": "C",
+          "text": "horizontal;"
+        },
+        {
+          "key": "D",
+          "text": "coronal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En anatomía, un plano sagital realiza un corte paralelo a la línea media neuraxial o longitudinal anteroposterior, dividiendo la estructura en dos mitades laterales (habitualmente para estudiar las estructuras diencefálicas de la cara interna medial).",
+      "image": "https://drive.google.com/file/d/11TMKJqgM7gG6PFnguBDxio4gA3JE5c7r/view?usp=drive_link"
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Suponga que... se hizo un programa de cría selectiva y se obtuvieron los siguientes resultados: la media de ganancia diaria de peso en la población progenitora fue de 6 gramos; la media de la ganancia de peso en una muestra seleccionada de esa población... fue de 13 gramos; y, finalmente, el valor de la heredabilidad de la obesidad en la población fue de 0,45. Con estos datos, ¿cuál será la respuesta a la selección en la descendencia de la muestra seleccionada para la reproducción?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "5,85 g;"
+        },
+        {
+          "key": "B",
+          "text": "2,7 g;"
+        },
+        {
+          "key": "C",
+          "text": "7 g;"
+        },
+        {
+          "key": "D",
+          "text": "3,15 g."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Despejando la ecuación de selección (h2 = R / S), la respuesta a la selección (R) es R = h2 * S. El diferencial S es la media seleccionada (13) menos la de la población original (6), luego S = 7. Multiplicamos R = 0,45 * 7 = 3,15 gramos."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Sobre las mutaciones puntuales que causan polimorfismos sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "pueden alterar el patrón de lectura de los tripletes, pudiendo ocasionar cambios en el fenotipo;"
+        },
+        {
+          "key": "B",
+          "text": "afectan a varios nucleótidos, que pueden insertarse o suprimirse en la secuencia del ADN;"
+        },
+        {
+          "key": "C",
+          "text": "no guardan relación con las variantes alélicas de genes existentes;"
+        },
+        {
+          "key": "D",
+          "text": "dan origen siempre a nuevos genes."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las mutaciones puntuales en general inciden alterando la base molecular y de traducción del genoma; pueden consistir en inserciones o deleciones que modifican por completo el patrón de lectura de los tripletes de ARN (cambio de marco) alterando profunda y radicalmente la cadena del polipéptido fenotípico final."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es CORRECTA respecto a la dopamina?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hasta el momento se han descrito siete subtipos de receptores para esta catecolamina;"
+        },
+        {
+          "key": "B",
+          "text": "no precisa unirse a receptores específicos de la membrana para ejercer sus efectos;"
+        },
+        {
+          "key": "C",
+          "text": "se sintetiza en los cuerpos neuronales del área tegmental ventral y de la sustancia negra;"
+        },
+        {
+          "key": "D",
+          "text": "el incremento en la producción de este neurotransmisor se relaciona con la enfermedad de Parkinson."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La dopamina es el principal neurotransmisor del sistema de recompensa y del control motor. Sus principales fuentes y reservorios de síntesis a nivel encefálico se localizan topográficamente en los núcleos del área tegmental ventral y la sustancia negra del mesencéfalo."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "De acuerdo con la Teoría del Forrajeo Óptimo, un león debería cazar:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las presas que aporten más calorías en relación con el tiempo dedicado a su caza;"
+        },
+        {
+          "key": "B",
+          "text": "las presas con más calorías por kilogramo de peso;"
+        },
+        {
+          "key": "C",
+          "text": "el mayor número de presas por tiempo dedicado a su caza;"
+        },
+        {
+          "key": "D",
+          "text": "las presas más fáciles de cazar."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El forrajeo óptimo propone modelos racionales donde el objetivo evolutivo de los organismos es maximizar la Tasa de Ganancia de Energía Neta. Esta no sólo evalúa las calorías absolutas obtenidas, sino el balance entre la ganancia energética de la presa en estrecha relación y proporción a los costes temporales de búsqueda, manipulación y consumo de la misma."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "El nervio vago participa, entre otras funciones, en la de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "controlar la deglución;"
+        },
+        {
+          "key": "B",
+          "text": "regular la secreción gástrica;"
+        },
+        {
+          "key": "C",
+          "text": "mediar en el sentido del olfato;"
+        },
+        {
+          "key": "D",
+          "text": "regular el movimiento de las extremidades inferiores (solo en organismos cuadrúpedos)."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El nervio Vago (X par craneal) es el tronco fundamental del sistema nervioso parasimpático y discurre extensamente hasta las cavidades torácica y abdominal, por lo que su campo de actuación involucra funciones autónomas vitales, como la ralentización del ritmo cardíaco y la estimulación de la secreción gástrica o el tránsito intestinal."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "Respecto al pleiotropismo, sabemos que es un fenómeno que se caracteriza porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la expresión de un gen es requisito imprescindible para que se manifieste el efecto de otro gen sobre el fenotipo;"
+        },
+        {
+          "key": "B",
+          "text": "varios genes pueden estar involucrados en un rasgo fenotípico;"
+        },
+        {
+          "key": "C",
+          "text": "un alelo determinado puede ser dominante para un rasgo fenotípico concreto y recesivo para otros rasgos;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones B y C son correctas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El pleiotropismo o pleiotropía es el término que se usa para describir a aquellos genes individuales cuya expresión incide u ocasiona ramificaciones en múltiples rasgos o caracteres fenotípicos no relacionados simultáneamente, pudiendo ocurrir que los alelos del gen sean dominantes para uno de esos fenotipos concretos y recesivos para otro a la vez (como sucede en la hemoglobina de la anemia falciforme)."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Entre otros datos, Darwin asentó su Teoría de la Evolución considerando:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la herencia de los rasgos ventajosos;"
+        },
+        {
+          "key": "B",
+          "text": "la selección natural;"
+        },
+        {
+          "key": "C",
+          "text": "la variabilidad natural que presentan las poblaciones;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las tres opciones anteriores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La formulación seminal de Charles Darwin aglutina intrínsecamente y hace descansar a la evolución sobre tres pilares observables e ineludibles en la naturaleza: la profusa variabilidad individual presente en toda población, la base y transmisión hereditaria biológica de esas variaciones, y la criba y retención del medio actuando vía selección natural."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "¿Cuál/cuales de los siguientes fenómenos intervienen en la inactivación del neurotransmisor tras su interacción con el receptor postsináptico?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las proteínas transportadoras de la membrana presináptica;"
+        },
+        {
+          "key": "B",
+          "text": "los canales iónicos controlados por neurotransmisores;"
+        },
+        {
+          "key": "C",
+          "text": "los receptores presinápticos;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y C son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inactivación fisiológica de la hendidura para garantizar una transmisión breve y nítida se consigue de dos formas: enzimas que degradan el neurotransmisor y moléculas de proteínas transportadoras (recaptación) ubicadas en la membrana presináptica que lo retiran eficazmente reciclándolo hacia el interior del botón."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "Las 4 preguntas de Tinbergen están relacionadas con los siguientes conceptos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ontogenia, reproducción, función y causación;"
+        },
+        {
+          "key": "B",
+          "text": "causación, evolución, ontogenia y función;"
+        },
+        {
+          "key": "C",
+          "text": "reproducción, aptitud, causación y evolución;"
+        },
+        {
+          "key": "D",
+          "text": "evolución, causación, ontogenia y reproducción."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El holandés N. Tinbergen demarcó el estudio de la Etología clásica basándolo ineludiblemente en 4 bloques de aproximación a toda conducta: sus causas inmediatas (causación/mecanismos), su utilidad o adaptación para la supervivencia (función), el devenir diacrónico en la especie a lo largo de su historia (filogenia/evolución), y el propio desarrollo durante el ciclo vital del sujeto (ontogenia)."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "En la parte ventral del bulbo raquídeo hay unas estructuras características que son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las pirámides;"
+        },
+        {
+          "key": "B",
+          "text": "las columnas blancas dorsales;"
+        },
+        {
+          "key": "C",
+          "text": "los pedúnculos cerebelosos;"
+        },
+        {
+          "key": "D",
+          "text": "el óbex y el núcleo delgado."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La macroscopía visible a lo largo de la cara ventral o anterior de la médula oblongada (bulbo raquídeo) destaca ineludiblemente por la presencia y flanqueo de dos prominencias longitudinales denominadas pirámides bulbares, formadas por la intensa bajada de las fibras motoras descendentes."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Los modelos animales... uno de esos modelos es el de Natación forzada... Suponga que la inmovilidad de los animales en ese test se parece a una de las conductas que constituyen un síntoma depresivo... y que la varianza genética de esa conducta en una población... es de 9, mientras que la heredabilidad de esa conducta es de 0,45. ¿Cuál será el valor de la varianza fenotípica total?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "4,05;"
+        },
+        {
+          "key": "B",
+          "text": "8,55;"
+        },
+        {
+          "key": "C",
+          "text": "20,0;"
+        },
+        {
+          "key": "D",
+          "text": "0,05."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cálculo estadístico de la heredabilidad señala que h2 = Vg / Vt. Despejando matemáticamente la Varianza total (Vt), tenemos que Vt = Vg / h2. Así, sustituyendo los datos obtenemos Vt = 9 / 0,45 = 20,0."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Realizando estudios con animales, es posible medir niveles de neurotransmisores... en tiempo real mientras que, por ejemplo, los animales se están autoadministrando drogas... ¿Cuál de las siguientes técnicas emplearía?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "autorradiografía funcional;"
+        },
+        {
+          "key": "B",
+          "text": "microdiálisis;"
+        },
+        {
+          "key": "C",
+          "text": "técnicas inmunocitoquímicas;"
+        },
+        {
+          "key": "D",
+          "text": "microelectrodos para el registro de neuronas individuales."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En investigación in vivo, la única técnica que permite analizar e inferir los niveles de actividad química, midiendo en tiempo real y evaluando al instante la extracción continua del flujo y la liberación local del neurotransmisor en un sujeto despierto que interactúa libremente en su jaula, es la implantación con cánulas de microdiálisis extracelular."
+    }
+  ]
+}

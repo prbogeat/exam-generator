@@ -1,0 +1,796 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Examen Septiembre 2023 Tipo B",
+  "subtitle": "30 Tipo Test - Examen Septiembre 2023 Tipo B",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Quién propuso que la limitación de recursos provoca una lucha por la existencia, en la que los individuos que porten rasgos que permitan afrontar mejor las condiciones adversas del entorno tendrán más probabilidades de sobrevivir y reproducirse?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Malthus;"
+        },
+        {
+          "key": "B",
+          "text": "Darwin;"
+        },
+        {
+          "key": "C",
+          "text": "Mendel;"
+        },
+        {
+          "key": "D",
+          "text": "Lamarck."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Aunque Malthus propuso la idea de la escasez de recursos, fue Charles Darwin quien la integró en su Teoría de la Evolución, señalando que esta limitación induce una lucha por la supervivencia donde la selección natural favorece a los individuos con rasgos adaptativos."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "En la Figura 1 se representa un esquema de las meninges, ¿qué número señala la aracnoides?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1;"
+        },
+        {
+          "key": "B",
+          "text": "2;"
+        },
+        {
+          "key": "C",
+          "text": "3;"
+        },
+        {
+          "key": "D",
+          "text": "4."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En el esquema clásico de las meninges, la aracnoides ocupa la posición intermedia (número 2), situada entre la duramadre más externa (1) y la piamadre que recubre el encéfalo (3).",
+      "image": "https://drive.google.com/file/d/1JYWrBlGA2yir8YHNI7rfaWFMipplpaC_/view?usp=drive_link"
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "Si tenemos una población en equilibrio en la que existe un gen con dos alelos y con una relación de dominancia entre ellos ¿Cuál será la frecuencia del genotipo homocigoto recesivo si la frecuencia del alelo dominante es 0,7?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,49;"
+        },
+        {
+          "key": "B",
+          "text": "0,09;"
+        },
+        {
+          "key": "C",
+          "text": "0,42;"
+        },
+        {
+          "key": "D",
+          "text": "0,3."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En equilibrio de Hardy-Weinberg, si p (dominante) = 0,7, entonces q (recesivo) = 0,3. La frecuencia del genotipo homocigoto recesivo se calcula como q², es decir, 0,3 * 0,3 = 0,09."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Sabemos que los potenciales excitadores postsinápticos (PEPs):",
+      "options": [
+        {
+          "key": "A",
+          "text": "provocan la hiperpolarización de la membrana neuronal;"
+        },
+        {
+          "key": "B",
+          "text": "se generan por el aumento de iones positivos en el interior celular;"
+        },
+        {
+          "key": "C",
+          "text": "son producidos por neurotransmisores cuyos receptores provocan la apertura de canales de Cl-;"
+        },
+        {
+          "key": "D",
+          "text": "inducen en todos los casos la superación del umbral de excitación de la membrana."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los PEPs son corrientes despolarizantes que acercan el potencial de la membrana al umbral de disparo, produciéndose generalmente por la entrada de iones con carga positiva (como el Na+) al interior de la neurona."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Para poder estudiar el efecto de la selección natural sobre un locus con dos alelos en una población podemos recurrir a:",
+      "options": [
+        {
+          "key": "A",
+          "text": "evaluar la eficacia biológica en la siguiente generación;"
+        },
+        {
+          "key": "B",
+          "text": "calcular los coeficientes de selección;"
+        },
+        {
+          "key": "C",
+          "text": "comprobar si se cumple o no la ley del equilibrio de Hardy-Weinberg;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las desviaciones de la ley de Hardy-Weinberg evidencian la acción de la selección natural, cuyo efecto y presión pueden ser medidos estudiando la eficacia biológica de los individuos y los correspondientes coeficientes de selección."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Una amiga le comenta un día lo siguiente: “A mi gato le encanta jugar a perseguir juguetes como si estuviera cazando, pero cuando utilizo un puntero láser es como si se volviera loco, intenta cazar la señal luminosa como si le fuera la vida en ello.” Usted le explica que, para su gato, la señal luminosa del láser es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "un mecanismo desencadenador innato;"
+        },
+        {
+          "key": "B",
+          "text": "un mecanismo de acción fija;"
+        },
+        {
+          "key": "C",
+          "text": "una pauta de acción fija;"
+        },
+        {
+          "key": "D",
+          "text": "un estímulo supernormal."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El movimiento antinatural e hiperestimulante del láser actúa como un estímulo supernormal, que evoca en el animal una respuesta conductual de caza mucho más intensa y compulsiva que los estímulos naturales convencionales."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "En relación con las mutaciones sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "aparecen al azar y la selección natural se encarga de determinar su efecto sobre la eficacia biológica;"
+        },
+        {
+          "key": "B",
+          "text": "su carácter hereditario depende del tipo de célula que las experimente;"
+        },
+        {
+          "key": "C",
+          "text": "tienen un carácter preadaptativo;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las mutaciones ocurren independientemente de la adaptación (carácter preadaptativo), su transmisión depende de si ocurren en células germinales, y es la selección natural la que criba su impacto aleatorio en la supervivencia del sujeto."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Respecto al transporte de sustancias en el interior neuronal sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el flujo axónico lento se produce solo desde los terminales axónicos hacia el soma;"
+        },
+        {
+          "key": "B",
+          "text": "se denomina retrógrado cuando va desde el soma a los terminales presinápticos y puede ser rápido o lento;"
+        },
+        {
+          "key": "C",
+          "text": "se denomina retrógrado cuando va desde los terminales presinápticos al soma y siempre es un flujo rápido;"
+        },
+        {
+          "key": "D",
+          "text": "A y C son ciertas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El transporte axónico que va desde los terminales hacia el cuerpo neuronal o soma se denomina transporte retrógrado, y se caracteriza fisiológicamente por ser siempre un sistema de flujo rápido mediado por microtúbulos."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "En relación con la circulación anterior del encéfalo, sabemos que juega/n un papel fundamental:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las arterias vertebrales;"
+        },
+        {
+          "key": "B",
+          "text": "las arterias cerebrales posteriores;"
+        },
+        {
+          "key": "C",
+          "text": "la arteria basilar;"
+        },
+        {
+          "key": "D",
+          "text": "la arteria carótida interna."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La irrigación sanguínea de la porción rostral y cerebral anterior del encéfalo recae y está gobernada principalmente por el sistema de las arterias carótidas internas, mientras que las arterias vertebrales irrigan el sistema posterior."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones NO es correcta con respecto a la teoría del forrajeo óptimo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la estrategia que utilizan los estorninos a la hora de hacer incursiones fuera del nido para obtener larvas para sus polluelos se ajusta al teorema de los rendimientos decrecientes;"
+        },
+        {
+          "key": "B",
+          "text": "es un modelo de optimización aplicable a estrategias de obtención de todo tipo de recursos;"
+        },
+        {
+          "key": "C",
+          "text": "los alces dedican parte del tiempo a comer plantas acuáticas a pesar de tener menor aporte calórico que las plantas terrestres;"
+        },
+        {
+          "key": "D",
+          "text": "en general, las estrategias óptimas son las que permiten lograr que la diferencia entre coste y beneficio sea máxima"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La teoría del forrajeo óptimo se refiere específicamente a la obtención de alimento/energía, no a 'todo tipo de recursos'. Las demás afirmaciones sí son verdaderas"
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "El Alzheimer temprano (de aparición anterior a los 60 años) está relacionado en algunos casos con una mutación en el gen que codifica la proteína precursora de amiloide (APP). Sabiendo que se trata de herencia autosómica dominante ¿cuál es la probabilidad de que padezca esta enfermedad una persona cuyo padre la padeció, así como sus abuelos paternos (ambos homocigotos), y cuya madre no manifiesta ningún síntoma con más de 75 años?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "25%;"
+        },
+        {
+          "key": "B",
+          "text": "0%;"
+        },
+        {
+          "key": "C",
+          "text": "50%;"
+        },
+        {
+          "key": "D",
+          "text": "100%."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La madre es sana y homocigota recesiva (aa). Los abuelos paternos eran homocigotos dominantes afectados (AA y AA), por lo que el padre es forzosamente homocigoto dominante (AA). Del cruce (AA x aa), el 100% de la descendencia será heterocigota (Aa) y, dada la dominancia del gen de APP mutado, padecerán la enfermedad."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "En lo que se refiere al factor g o de inteligencia general, los estudios de genética cuantitativa sugieren que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la influencia del ambiente compartido sobre el CI es muy alta;"
+        },
+        {
+          "key": "B",
+          "text": "a medida que aumenta la edad, crece la influencia del ambiente;"
+        },
+        {
+          "key": "C",
+          "text": "a medida que aumenta la edad, disminuye el valor de la heredabilidad;"
+        },
+        {
+          "key": "D",
+          "text": "los factores ambientales que dan cuenta de la variabilidad fenotípica no explicada por la variabilidad genética, son peculiares para cada individuo, es decir, no comunes para quienes viven en un mismo entorno."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los estudios demuestran que el ambiente compartido prácticamente pierde su peso en la adultez, por lo que el ambiente que finalmente afecta y modela la varianza fenotípica de la inteligencia es el ambiente específico o no compartido (peculiar para cada individuo)."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "Cuando decimos que el código genético es degenerado significa que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hay tripletes “sinónimos” que codifican el mismo aminoácido;"
+        },
+        {
+          "key": "B",
+          "text": "es un código sin superposición;"
+        },
+        {
+          "key": "C",
+          "text": "está sujeto a mutaciones constantes;"
+        },
+        {
+          "key": "D",
+          "text": "todos los codones codifican aminoácidos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La propiedad del código genético de ser redundante o degenerado implica que la mayor parte de los aminoácidos pueden ser codificados por más de un codón (conocidos como codones o tripletes sinónimos)."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Los microtúbulos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se ocupan del transporte de sustancias entre el soma y los botones terminales del axón;"
+        },
+        {
+          "key": "B",
+          "text": "albergan al ADN nuclear;"
+        },
+        {
+          "key": "C",
+          "text": "son los componentes más abundantes en el citoesqueleto neuronal;"
+        },
+        {
+          "key": "D",
+          "text": "son las proteínas tubulares del ARN."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los microtúbulos actúan como vías intracelulares a través de todo el axón, sirviendo como los rieles estructurales esenciales para transportar orgánulos y vesículas a lo largo de la neurona entre el cuerpo celular (soma) y los terminales."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "En relación con los mecanismos de regulación de la expresión génica, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el modelo del operón, propuesto en 1961 por Jacob y Monod, es un ejemplo de regulación a largo plazo;"
+        },
+        {
+          "key": "B",
+          "text": "la metilación evita la transcripción del gen al impedir la unión de la ARN polimerasa al promotor;"
+        },
+        {
+          "key": "C",
+          "text": "los genes homeobox constituyen un mecanismo de regulación a corto plazo;"
+        },
+        {
+          "key": "D",
+          "text": "a mayor condensación del ADN, mayor tasa de transcripción génica."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La metilación es una modificación epigenética que añade grupos metilo a secuencias de ADN; esto compacta la cromatina e interfiere físicamente, evitando que la enzima ARN polimerasa se acople al promotor y bloqueando así la transcripción."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Señale la respuesta CORRECTA en relación con el estado de reposo de la membrana neuronal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hay una mayor concentración de K+ en el interior celular que en el espacio extracelular;"
+        },
+        {
+          "key": "B",
+          "text": "la concentración de cargas positivas es mayor en el interior celular;"
+        },
+        {
+          "key": "C",
+          "text": "las concentraciones de calcio y Cl- son mayores en el interior que en el exterior celular;"
+        },
+        {
+          "key": "D",
+          "text": "las bombas Na+/K+ están inactivas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El ion potasio (K+) se distribuye de manera muy asimétrica durante el potencial de reposo, hallándose fisiológicamente en concentraciones muy superiores dentro del citoplasma de la neurona en comparación con el medio extracelular."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Qué probabilidad hay de que los descendientes de una pareja padezcan hemofilia si la madre es portadora y la abuela paterna la padeció?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0%;"
+        },
+        {
+          "key": "B",
+          "text": "25%;"
+        },
+        {
+          "key": "C",
+          "text": "50%;"
+        },
+        {
+          "key": "D",
+          "text": "75%."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La hemofilia es recesiva ligada al cromosoma X. La madre es portadora (XhX). El padre debe estar enfermo (XhY) puesto que su madre, la abuela paterna, lo padeció (XhXh) y le heredó forzosamente el alelo. Del cruce XhX por XhY, el 50% de la descendencia (un varón hemofílico y una mujer hemofílica de cada cuatro posibilidades) sufrirá el trastorno."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "En el conflicto entre las estrategias “halcón” y “paloma”, en una población mixta, cuando el coste (C) es mayor que el valor (V):",
+      "options": [
+        {
+          "key": "A",
+          "text": "los individuos que desplieguen las estrategias de tipo “halcón” no pueden prosperar;"
+        },
+        {
+          "key": "B",
+          "text": "los individuos que desplieguen las estrategias de tipo “paloma” no pueden prosperar;"
+        },
+        {
+          "key": "C",
+          "text": "una población con un porcentaje de halcones de C/V*100 sería estable;"
+        },
+        {
+          "key": "D",
+          "text": "una población con un porcentaje de halcones de V/C*100 sería estable."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el Juego Halcón-Paloma, cuando los costes superan los beneficios (C > V), la Estrategia Evolutivamente Estable (EEE) es una población combinada. La proporción estable de halcones 'p' se calcula exactamente como p = V/C. Al multiplicarlo por 100 obtenemos su porcentaje de equilibrio estable."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Sabemos que las mutaciones:",
+      "options": [
+        {
+          "key": "A",
+          "text": "pueden originarse por fallos en la replicación del ADN;"
+        },
+        {
+          "key": "B",
+          "text": "son heredables sólo si se presentan en los gametos;"
+        },
+        {
+          "key": "C",
+          "text": "un ejemplo son las aneuploidías (mutaciones genómicas);"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las mutaciones pueden ocurrir espontáneamente como fallos de copia (A), sólo pueden transmitirse a las crías si afectan a la línea germinal/gametos (B), y alteraciones masivas del número de cromosomas, como las aneuploidías, constituyen la categoría de mutaciones genómicas (C)."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "En un estudio en el que se empleó la Escala de Evaluación de la Psicopatía de Robert Hare (Psychopathy Checklist- Revised) junto con una metodología de neuroimagen (IRM, Imagen volumétrica por Resonancia Magnética), para evaluar la relación entre el volumen de la amígdala y el grado de psicopatía medido por esa Escala en personas agresoras violentas, se encontró que altos niveles de psicopatía se asociaban con un volumen reducido de la amígdala. ¿Qué tipo de estrategia se empleó en ese estudio?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "intervención conductual;"
+        },
+        {
+          "key": "B",
+          "text": "intervención somática;"
+        },
+        {
+          "key": "C",
+          "text": "correlacional;"
+        },
+        {
+          "key": "D",
+          "text": "experimental."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los investigadores no manipularon activa y experimentalmente ni el cerebro (variable somática) ni el entorno (variable conductual). Únicamente midieron y correlacionaron variaciones observadas (volumen de la amígdala y puntuación en la escala), lo que corresponde a una estrategia puramente correlacional."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "El razonamiento fluido es un rasgo poligénico. Supongamos que en esa capacidad cognitiva influyeran 7 genes aditivos con dos alelos cada uno y sabiendo que los alelos A, B, C, D, E, F, G aportan, cada uno, una unidad al rasgo y que los alelos a, b, c, d, e, f, g no aportan nada ¿cuántos fenotipos diferentes presentaría una población descendiente de heterocigotos para todos los alelos? (el número de fenotipos es 2n+1, siendo n el número de loci):",
+      "options": [
+        {
+          "key": "A",
+          "text": "9;"
+        },
+        {
+          "key": "B",
+          "text": "16;"
+        },
+        {
+          "key": "C",
+          "text": "15;"
+        },
+        {
+          "key": "D",
+          "text": "18."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Aplicando la fórmula establecida para loci aditivos en la genética cuantitativa (Número de fenotipos = 2n + 1), siendo 'n' el número de genes o loci involucrados (en este caso n = 7). Por lo tanto, 2(7) + 1 = 14 + 1 = 15 posibles fenotipos distintos."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "En la conducta sexual de las ratas macho, la testosterona tiene un efecto:",
+      "options": [
+        {
+          "key": "A",
+          "text": "activacional;"
+        },
+        {
+          "key": "B",
+          "text": "organizacional;"
+        },
+        {
+          "key": "C",
+          "text": "activacional y organizacional;"
+        },
+        {
+          "key": "D",
+          "text": "ninguno de los citados en las opciones anteriores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La testosterona rige la conducta sexual masculina ejerciendo un doble papel: durante periodos críticos fetales u ontogénicos tempranos masculinizando permanentemente las estructuras (efecto organizacional) y durante la adultez desencadenando y manteniendo activamente los impulsos y las respuestas fisiológicas sexuales (efecto activacional)."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "El estudio de las bases psicobiológicas de las emociones empleando animales de laboratorio ha demostrado la implicación de los núcleos de la amígdala en emociones como el miedo y la ansiedad. Suponga que en una investigación con un antagonista de los receptores opioides se entrenó a los animales en una prueba de miedo condicionado, así como en otra de laberinto elevado (para evaluar la ansiedad). Una vez entrenados, a los animales se les implantaron cánulas en los núcleos basolateral y central de la amígdala. Tras la microinfusión de un antagonista a través de las cánulas, los resultados indicaron que el antagonismo en el núcleo basolateral de la amígdala disminuyó el miedo condicionado... ¿Cuáles son las variables dependientes de esta investigación y en qué disciplina psicobiológica la encuadraría?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "VD: la microinfusión del antagonista y la prueba de miedo condicionado; Psicofisiología;"
+        },
+        {
+          "key": "B",
+          "text": "VD: el miedo condicionado en el entrenamiento y las cánulas implantadas; Neuropsicología;"
+        },
+        {
+          "key": "C",
+          "text": "VD: el miedo condicionado y los efectos ansiolíticos; Psicología Fisiológica;"
+        },
+        {
+          "key": "D",
+          "text": "los efectos ansiolíticos y la prueba del laberinto elevado; Neurociencia cognitiva."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Se trata de un modelo animal donde se altera somáticamente el encéfalo (Variable Independiente: la microinfusión del antagonista) para observar su efecto en la conducta y emociones (Variable Dependiente: niveles de miedo condicionado y ansiedad mostrados). Este control invasivo es propio y paradigmático de la Psicología Fisiológica."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "¿Cuál de los siguientes compuestos se considera un mensajero transcelular y un segundo mensajero?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "óxido nítrico;"
+        },
+        {
+          "key": "B",
+          "text": "dióxido de carbono;"
+        },
+        {
+          "key": "C",
+          "text": "AMPc;"
+        },
+        {
+          "key": "D",
+          "text": "dopamina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El óxido nítrico (NO) es un gas atípico que se difunde libremente por las membranas lipídicas (mensajero transcelular). Dentro de las neuronas, también desempeña la acción fisiológica clave y moduladora de un potente segundo mensajero intracelular."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Los estudios científicos actuales sobre la genética cuantitativa de la inteligencia sugieren que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la heredabilidad disminuye con la edad y siempre en función del número de loci estudiados;"
+        },
+        {
+          "key": "B",
+          "text": "el valor más alto de heredabilidad se obtiene entre los 2 y 4 primeros meses de vida;"
+        },
+        {
+          "key": "C",
+          "text": "la ambientalidad es irrelevante en el estudio de la inteligencia;"
+        },
+        {
+          "key": "D",
+          "text": "la heredabilidad aumenta con la edad."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Aunque pudiera resultar paradójico, múltiples estudios longitudinales coinciden y confirman sólidamente que la magnitud de la heredabilidad del factor de inteligencia general aumenta progresivamente a medida que el individuo madura, llegando a su máximo en la edad adulta."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "La barrera hematoencefálica:",
+      "options": [
+        {
+          "key": "A",
+          "text": "bloquea cualquier tipo de intercambio de sustancias entre el SNC y la sangre;"
+        },
+        {
+          "key": "B",
+          "text": "no está apenas desarrollada en los órganos circunventriculares;"
+        },
+        {
+          "key": "C",
+          "text": "la forma, principalmente, la microglía que tapiza los capilares del SNC;"
+        },
+        {
+          "key": "D",
+          "text": "es únicamente permeable al oxígeno y la glucosa."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La barrera hematoencefálica no es hermética en la totalidad del encéfalo; es laxa y está notablemente adelgazada (esencialmente ausente) en los órganos circunventriculares, permitiendo así que el cerebro monitorice y detecte directamente la concentración de solutos, toxinas u hormonas circulantes en sangre."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿En qué fase del potencial de acción se encuentran inactivos los canales de sodio dependientes de voltaje?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en el período refractario absoluto;"
+        },
+        {
+          "key": "B",
+          "text": "en el período refractario absoluto y en el refractario relativo;"
+        },
+        {
+          "key": "C",
+          "text": "en la fase final de la repolarización de la membrana;"
+        },
+        {
+          "key": "D",
+          "text": "cuando la membrana llega al umbral de excitación."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los canales de sodio (Na+) dependientes de voltaje permanecen en un estado conformacional cerrado de inactivación total durante la fase descendente temprana del potencial de acción, lo que origina fisiológicamente el período refractario absoluto en el que no puede desencadenarse otro impulso."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Quiénes tienen un grado de relación genética mayor?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dos primos hermanos;"
+        },
+        {
+          "key": "B",
+          "text": "dos ratas topo hermanas;"
+        },
+        {
+          "key": "C",
+          "text": "una rata macho y su cría;"
+        },
+        {
+          "key": "D",
+          "text": "dos estorninos de la misma nidada."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las ratas topo desnudas presentan colonias con una endogamia fortísima. Su sistema de apareamiento tan estrecho e inbreeding constante hace que las obreras hermanas compartan una relación genética inusualmente alta (superior al 80%), asemejándose de forma muy notable a las comunidades eusociales."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Los hallazgos actuales, dentro del campo de la genética cuantitativa sobre diferentes rasgos que son de naturaleza psicológica amplia, como es el caso de la orientación sexual o de la religiosidad, sugieren que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no están influidos por factores genéticos;"
+        },
+        {
+          "key": "B",
+          "text": "presentan una heredabilidad media, de entorno al 40%;"
+        },
+        {
+          "key": "C",
+          "text": "tienen una heredabilidad baja, de en torno al 10%;"
+        },
+        {
+          "key": "D",
+          "text": "presentan valores de heredabilidad de alrededor del 90%."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Investigaciones rigurosas en genética de la conducta (apoyadas en cohortes de gemelos) apuntan a que actitudes psicológicas muy genéricas y amplias, como la religiosidad personal, el conservadurismo político o la orientación sexual, arrojan una heredabilidad moderada y sustancial en torno al 40%."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "El inicio del potencial de acción se debe a la apertura de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "canales de sodio dependientes de voltaje;"
+        },
+        {
+          "key": "B",
+          "text": "canales N y P de calcio;"
+        },
+        {
+          "key": "C",
+          "text": "canales de sodio asociados a receptores ionotrópicos;"
+        },
+        {
+          "key": "D",
+          "text": "canales de cloro dependientes de voltaje."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La génesis masiva, ascendente y fulminante del potencial de acción se gatilla exclusivamente cuando el potencial de membrana alcanza el umbral de excitación y acciona fisiológicamente la apertura secuencial de los canales de sodio dependientes de voltaje."
+    }
+  ]
+}

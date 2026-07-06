@@ -1,4 +1,6 @@
 const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
+const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
+const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
 
 const state = {
   exam: null,
@@ -11,6 +13,8 @@ const state = {
   timerStart: null,
   timerInterval: null,
   timerRunning: false,
+  dbSource: "none",
+  dbExamCatalog: [],
 };
 
 const floatingViewer = {
@@ -44,10 +48,351 @@ const dom = {
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
   loadDefaultData: document.getElementById("loadDefaultData"),
+  refreshDbExams: document.getElementById("refreshDbExams"),
+  dbSubjectSelect: document.getElementById("dbSubjectSelect"),
+  dbPartialSelect: document.getElementById("dbPartialSelect"),
+  dbExamSelect: document.getElementById("dbExamSelect"),
+  loadSelectedDbExam: document.getElementById("loadSelectedDbExam"),
+  loadLatestDbExam: document.getElementById("loadLatestDbExam"),
   saveAnswers: document.getElementById("saveAnswers"),
   examFileInput: document.getElementById("examFileInput"),
   answersFileInput: document.getElementById("answersFileInput"),
 };
+
+function getDbMetaValue(meta, ...keys) {
+  for (const key of keys) {
+    if (meta && Object.prototype.hasOwnProperty.call(meta, key) && meta[key] !== undefined && meta[key] !== null) {
+      return meta[key];
+    }
+  }
+  return "";
+}
+
+function extractPartialFromPath(rawPath) {
+  const normalized = String(rawPath || "").replace(/\\/g, "/");
+  if (!normalized) {
+    return "";
+  }
+
+  const segments = normalized.split("/").filter(Boolean);
+  const parcial = segments.find((segment) => /^parcial\s+\d+$/i.test(segment.trim()));
+  return parcial ? parcial.trim() : "";
+}
+
+function normalizePartialName(value) {
+  const text = String(value || "").trim();
+  if (!text) {
+    return "";
+  }
+
+  const match = text.match(/^parcial\s+(\d+)$/i);
+  if (match) {
+    return `Parcial ${match[1]}`;
+  }
+
+  return text;
+}
+
+function normalizeDbExamMeta(meta, index) {
+  const examUid = String(getDbMetaValue(meta, "examUid", "exam_uid", "uid", "key") || "").trim();
+  const examTitle = String(getDbMetaValue(meta, "exam_title", "examTitle") || "Examen").trim();
+  const subjectTitle = String(
+    getDbMetaValue(meta, "subject_folder", "subject", "subject_title", "subjectTitle") || "Asignatura"
+  ).trim();
+  const sourcePath = String(getDbMetaValue(meta, "source_path", "sourcePath", "file") || "").trim();
+  const partialFromMeta = String(getDbMetaValue(meta, "partial", "parcial") || "").trim();
+  const partial = normalizePartialName(partialFromMeta || extractPartialFromPath(sourcePath));
+  const totalQuestions = Number(getDbMetaValue(meta, "total_questions", "totalQuestions") || 0);
+  const updatedAt = String(getDbMetaValue(meta, "updated_at", "updatedAt") || "").trim();
+  const file = String(getDbMetaValue(meta, "file", "url") || "").trim();
+
+  return {
+    examUid,
+    examTitle,
+    subject: subjectTitle,
+    partial,
+    totalQuestions,
+    updatedAt,
+    index,
+    file,
+  };
+}
+
+function buildDbOptionLabel(item) {
+  const total = item.totalQuestions > 0 ? `${item.totalQuestions} preguntas` : "preguntas sin definir";
+  return `${item.examTitle} · ${total}`;
+}
+
+function populateDbSubjectSelect(subjects, selectedSubject) {
+  dom.dbSubjectSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = subjects.length
+    ? "-- Selecciona una asignatura --"
+    : "-- No hay asignaturas publicadas --";
+  dom.dbSubjectSelect.appendChild(placeholder);
+
+  subjects.forEach((subject) => {
+    const option = document.createElement("option");
+    option.value = subject;
+    option.textContent = subject;
+    dom.dbSubjectSelect.appendChild(option);
+  });
+
+  if (selectedSubject && subjects.includes(selectedSubject)) {
+    dom.dbSubjectSelect.value = selectedSubject;
+  }
+}
+
+function hideDbPartialSelect() {
+  dom.dbPartialSelect.classList.add("hidden");
+  dom.dbPartialSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "-- Selecciona un parcial --";
+  dom.dbPartialSelect.appendChild(placeholder);
+}
+
+function populateDbPartialSelect(partials, selectedPartial) {
+  if (!partials.length) {
+    hideDbPartialSelect();
+    return;
+  }
+
+  dom.dbPartialSelect.classList.remove("hidden");
+  dom.dbPartialSelect.replaceChildren();
+
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "-- Selecciona un parcial --";
+  dom.dbPartialSelect.appendChild(placeholder);
+
+  partials.forEach((partial) => {
+    const option = document.createElement("option");
+    option.value = partial.value;
+    option.textContent = partial.label;
+    dom.dbPartialSelect.appendChild(option);
+  });
+
+  if (selectedPartial && partials.some((partial) => partial.value === selectedPartial)) {
+    dom.dbPartialSelect.value = selectedPartial;
+    return;
+  }
+
+  dom.dbPartialSelect.value = partials[0].value;
+}
+
+function populateDbExamSelect(list, selectedExamUid = "") {
+  dom.dbExamSelect.replaceChildren();
+
+  if (!list.length) {
+    const placeholder = document.createElement("option");
+    placeholder.value = "";
+    placeholder.textContent = "-- No hay exámenes publicados disponibles --";
+    dom.dbExamSelect.appendChild(placeholder);
+    return;
+  }
+
+  list.forEach((item) => {
+    if (!item.examUid) {
+      return;
+    }
+
+    const option = document.createElement("option");
+    option.value = item.examUid;
+    option.textContent = buildDbOptionLabel(item);
+    dom.dbExamSelect.appendChild(option);
+  });
+
+  if (selectedExamUid) {
+    const selectedIndex = list.findIndex((item) => item.examUid === selectedExamUid);
+    if (selectedIndex >= 0) {
+      dom.dbExamSelect.options[selectedIndex].selected = true;
+      return;
+    }
+  }
+
+  dom.dbExamSelect.options[0].selected = true;
+}
+
+function normalizeDbExamList(rawList) {
+  return rawList
+    .map((meta, index) => normalizeDbExamMeta(meta, index))
+    .filter((item) => item.examUid);
+}
+
+function getFilteredExamsForCurrentSelection(catalog) {
+  const selectedSubject = dom.dbSubjectSelect.value;
+  if (!selectedSubject) {
+    return [];
+  }
+
+  const examsForSubject = catalog.filter((item) => item.subject === selectedSubject);
+  if (dom.dbPartialSelect.classList.contains("hidden")) {
+    return examsForSubject;
+  }
+
+  const selectedPartial = dom.dbPartialSelect.value;
+  if (!selectedPartial) {
+    return examsForSubject;
+  }
+
+  if (selectedPartial === NO_PARTIAL_FILTER_VALUE) {
+    return examsForSubject.filter((item) => !item.partial);
+  }
+
+  return examsForSubject.filter((item) => item.partial === selectedPartial);
+}
+
+function buildPartialFilterOptions(examsForSubject) {
+  const partials = [...new Set(examsForSubject.map((item) => item.partial).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+  const hasNoPartialExams = examsForSubject.some((item) => !item.partial);
+
+  if (!partials.length) {
+    return [];
+  }
+
+  const options = partials.map((partial) => ({ value: partial, label: partial }));
+  if (hasNoPartialExams) {
+    options.unshift({ value: NO_PARTIAL_FILTER_VALUE, label: "Sin parcial" });
+  }
+
+  return options;
+}
+
+function populateDbSelectors(catalog) {
+  const previousSubject = dom.dbSubjectSelect.value;
+  const previousPartial = dom.dbPartialSelect.value;
+  const previousExam = dom.dbExamSelect.value;
+
+  const subjects = [...new Set(catalog.map((item) => item.subject).filter(Boolean))].sort((a, b) =>
+    a.localeCompare(b, "es")
+  );
+
+  const selectedSubject =
+    previousSubject && subjects.includes(previousSubject)
+      ? previousSubject
+      : subjects.length
+        ? subjects[0]
+        : "";
+
+  populateDbSubjectSelect(subjects, selectedSubject);
+
+  const examsForSubject = selectedSubject
+    ? catalog.filter((item) => item.subject === selectedSubject)
+    : [];
+
+  const partials = buildPartialFilterOptions(examsForSubject);
+
+  populateDbPartialSelect(partials, previousPartial);
+
+  const filteredExams = getFilteredExamsForCurrentSelection(catalog);
+
+  populateDbExamSelect(filteredExams, previousExam);
+}
+
+function onDbSubjectChanged() {
+  const subject = dom.dbSubjectSelect.value;
+  const examsForSubject = subject
+    ? state.dbExamCatalog.filter((item) => item.subject === subject)
+    : [];
+
+  const partials = buildPartialFilterOptions(examsForSubject);
+
+  populateDbPartialSelect(partials, "");
+  populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
+
+  if (dom.dbExamSelect.value) {
+    loadCurrentCatalogSelection();
+  }
+}
+
+function onDbPartialChanged() {
+  populateDbExamSelect(getFilteredExamsForCurrentSelection(state.dbExamCatalog));
+
+  if (dom.dbExamSelect.value) {
+    loadCurrentCatalogSelection();
+  }
+}
+
+function isNativeApp() {
+  return Boolean(
+    window.Capacitor &&
+    typeof window.Capacitor.isNativePlatform === "function" &&
+    window.Capacitor.isNativePlatform()
+  );
+}
+
+async function listDbExams() {
+  const response = await fetch(STATIC_EXAMS_INDEX_FILE, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  const payload = await response.json();
+  const items = Array.isArray(payload)
+    ? payload
+    : Array.isArray(payload?.items)
+      ? payload.items
+      : null;
+
+  if (!items) {
+    throw new Error("Respuesta inválida de exams-index.json");
+  }
+
+  state.dbSource = "static";
+  return items;
+}
+
+async function refreshDbExamList() {
+  setDataStatus("Actualizando catálogo estático de exámenes...", "neutral");
+
+  try {
+    const exams = await listDbExams();
+    state.dbExamCatalog = normalizeDbExamList(exams);
+    populateDbSelectors(state.dbExamCatalog);
+
+    if (!state.dbExamCatalog.length) {
+      setDataStatus("No hay exámenes publicados todavía en assets/json.", "neutral");
+      return;
+    }
+
+    setDataStatus(`Catálogo actualizado (${state.dbExamCatalog.length} examen(es)).`, "neutral");
+  } catch (error) {
+    state.dbExamCatalog = [];
+    populateDbSelectors([]);
+    state.dbSource = "none";
+    setDataStatus(`No se pudo cargar el catálogo estático: ${error.message}`, "error");
+  }
+}
+
+async function loadExamByUidFromDb(examUid) {
+  const uid = String(examUid || "").trim();
+  if (!uid) {
+    throw new Error("Selecciona un examen publicado.");
+  }
+
+  const selectedExam = state.dbExamCatalog.find((item) => item.examUid === uid);
+  if (!selectedExam || !selectedExam.file) {
+    throw new Error("No se encontró el JSON del examen seleccionado.");
+  }
+
+  await loadExamFromUrl(
+    selectedExam.file,
+    `${selectedExam.subject} · ${selectedExam.examTitle}`,
+    { subjectTitle: selectedExam.subject }
+  );
+}
+
+function loadCurrentCatalogSelection() {
+  loadExamByUidFromDb(dom.dbExamSelect.value).catch((error) => {
+    setDataStatus(`No se pudo cargar el examen publicado: ${error.message}`, "error");
+  });
+}
 
 function formatTime(ms) {
   const totalSeconds = Math.floor(ms / 1000);
@@ -375,7 +720,7 @@ function updateStaticTexts() {
     document.title = "Examen dinámico";
     dom.pageTitle.textContent = "Examen dinámico";
     dom.pageSubtitle.textContent =
-      "Carga un JSON local o sirve esta carpeta por HTTP para cargar el JSON por defecto.";
+      "Selecciona un examen publicado o carga un JSON local manualmente.";
     dom.noticeBox.textContent =
       "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
@@ -560,7 +905,7 @@ function renderQuestions() {
     const article = document.createElement("article");
     article.className = "question empty-state";
     article.textContent =
-      "No hay examen cargado. Usa el botón de JSON por defecto o carga un archivo JSON manualmente.";
+      "No hay examen cargado. Usa el catálogo publicado o la carga manual desde JSON.";
     dom.questions.appendChild(article);
     updateProgress();
     return;
@@ -838,6 +1183,26 @@ function applyExamData(exam, sourceLabel) {
   state.exam = exam;
   resetExam(false, true);
   updateStaticTexts();
+
+  if (window.ExamMobileDb && window.ExamMobileDb.isAvailable && window.ExamMobileDb.isAvailable()) {
+    window.ExamMobileDb.saveExam(exam).then((saved) => {
+      if (!saved && isNativeApp()) {
+        setDataStatus(
+          "No se pudo guardar el examen en la BD nativa del dispositivo.",
+          "error"
+        );
+      }
+    }).catch(() => {
+      // Si falla persistencia nativa, la app sigue operativa con estado en memoria.
+      if (isNativeApp()) {
+        setDataStatus(
+          "Error al guardar examen en BD nativa del dispositivo.",
+          "error"
+        );
+      }
+    });
+  }
+
   if (sourceLabel) {
     setDataStatus(
       `Examen cargado: ${sourceLabel}${state.importedAnswers ? ` · Respuestas: ${state.importedAnswersSource}` : ""}`,
@@ -859,7 +1224,7 @@ function applyRealizedAnswers(realized, sourceLabel) {
   }
 }
 
-async function loadExamFromUrl(url, label) {
+async function loadExamFromUrl(url, label, overrides = {}) {
   setDataStatus(`Cargando ${label}...`, "neutral");
 
   try {
@@ -869,7 +1234,13 @@ async function loadExamFromUrl(url, label) {
     }
 
     const data = await response.json();
-    applyExamData(normalizeExamData(data), label);
+    applyExamData(
+      {
+        ...normalizeExamData(data),
+        ...overrides,
+      },
+      label,
+    );
   } catch (error) {
     if (!state.exam) {
       updateStaticTexts();
@@ -884,6 +1255,18 @@ async function loadExamFromUrl(url, label) {
 
     setDataStatus(message, "error");
   }
+}
+
+async function loadDefaultExam() {
+  if (state.dbExamCatalog.length) {
+    const selectedExamUid = dom.dbExamSelect.value || state.dbExamCatalog[0].examUid;
+    if (selectedExamUid) {
+      await loadExamByUidFromDb(selectedExamUid);
+      return;
+    }
+  }
+
+  await loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
 }
 
 async function loadExamFromFile(file) {
@@ -953,6 +1336,22 @@ function bindEvents() {
     loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
   });
 
+  dom.refreshDbExams.addEventListener("click", () => {
+    refreshDbExamList();
+  });
+
+  dom.dbSubjectSelect.addEventListener("change", onDbSubjectChanged);
+  dom.dbPartialSelect.addEventListener("change", onDbPartialChanged);
+  dom.dbExamSelect.addEventListener("change", loadCurrentCatalogSelection);
+
+  dom.loadSelectedDbExam.addEventListener("click", () => {
+    loadCurrentCatalogSelection();
+  });
+
+  dom.loadLatestDbExam.addEventListener("click", () => {
+    loadDefaultExam();
+  });
+
   dom.saveAnswers.addEventListener("click", saveAnswersToJson);
 
   dom.examFileInput.addEventListener("change", (event) => {
@@ -970,13 +1369,30 @@ function bindEvents() {
   });
 }
 
-function initializeApp() {
+async function initializeApp() {
   initFloatingViewer();
   bindEvents();
   updateStaticTexts();
   updateDataStatus();
   renderQuestions();
-  loadExamFromUrl(DEFAULT_DATA_FILE, DEFAULT_DATA_FILE);
+  await refreshDbExamList();
+  await loadDefaultExam();
 }
 
-initializeApp();
+function registerServiceWorker() {
+  const hasSupport = "serviceWorker" in navigator;
+  const isAllowedProtocol = window.location.protocol === "https:" || window.location.hostname === "localhost";
+
+  if (!hasSupport || !isAllowedProtocol) {
+    return;
+  }
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {
+      // Registration can fail in restrictive environments; the app still works online.
+    });
+  });
+}
+
+void initializeApp();
+registerServiceWorker();

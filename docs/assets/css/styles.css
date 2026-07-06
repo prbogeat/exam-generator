@@ -12,6 +12,7 @@
   --warn: #fffbeb;
   --info: #ecfdf5;
   --info-border: #a7f3d0;
+  --safe-top: env(safe-area-inset-top, 0px);
 }
 
 * {
@@ -24,11 +25,12 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
+  padding-top: var(--safe-top);
 }
 
 header {
   position: sticky;
-  top: 0;
+  top: var(--safe-top);
   z-index: 10;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--border);
@@ -189,6 +191,40 @@ button:disabled {
   color: var(--bad);
 }
 
+.data-block {
+  width: 100%;
+  border: 1px solid #86efac;
+  border-radius: 14px;
+  background: #f0fdf4;
+  padding: 8px 10px;
+}
+
+.data-block + .data-block {
+  margin-top: 8px;
+}
+
+.data-block > summary {
+  cursor: pointer;
+  font-weight: 750;
+  color: #14532d;
+  list-style-position: inside;
+}
+
+.data-block .actions {
+  margin-top: 10px;
+}
+
+.data-block select {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font: inherit;
+  min-width: min(520px, 100%);
+  max-width: 100%;
+}
+
 .questions {
   display: grid;
   gap: 14px;
@@ -224,7 +260,7 @@ button:disabled {
 
 .floating-resource-viewer {
   position: fixed;
-  top: 80px;
+  top: calc(80px + var(--safe-top));
   left: 50%;
   transform: translateX(-50%);
   width: min(860px, calc(100vw - 28px));
@@ -311,7 +347,7 @@ button:disabled {
   .floating-resource-viewer {
     width: calc(100vw - 16px);
     height: min(72vh, 560px);
-    top: 68px;
+    top: calc(68px + var(--safe-top));
     left: 8px;
     transform: none;
   }

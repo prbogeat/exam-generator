@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 7",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 387,
+      "used": true,
+      "text": "Cuando se da una situación estresante se libera una hormona que, entre otros efectos, produce inhibición de respuestas inmunitarias. ¿Cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Testosterona."
+        },
+        {
+          "key": "B",
+          "text": "Tiroxina."
+        },
+        {
+          "key": "C",
+          "text": "Cortisol."
+        },
+        {
+          "key": "D",
+          "text": "Inhibina."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cortisol es el glucocorticoide principal del eje hipotálamo-hipófisis-adrenal y ejerce efectos inmunosupresores y antiinflamatorios."
+    },
+    {
+      "id": 2,
+      "sourceId": 310,
+      "used": true,
+      "text": "El reflejo inflamatorio mediado por el nervio vago sigue, de forma simplificada, la secuencia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aferencias vagales informan al SNC → eferencias vagales colinérgicas → liberación de ACh → efecto antiinflamatorio."
+        },
+        {
+          "key": "B",
+          "text": "Corteza visual → retina → timo → colágeno."
+        },
+        {
+          "key": "C",
+          "text": "ACh → cierre del tubo neural → ovulación."
+        },
+        {
+          "key": "D",
+          "text": "Melatonina → lemnisco medial → anticuerpos A."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El nervio vago detecta señales inflamatorias y puede activar una vía colinérgica antiinflamatoria que modula la respuesta inmune."
+    },
+    {
+      "id": 3,
+      "sourceId": 63,
+      "used": true,
+      "text": "La determinación del neuroectodermo ocurre específicamente durante el proceso embrionario conocido como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación del tubo neural."
+        },
+        {
+          "key": "B",
+          "text": "Formación y diferenciación de los somitas."
+        },
+        {
+          "key": "C",
+          "text": "Inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "Migración de las células de la cresta neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neuroectodermo (tejido precursor del sistema nervioso) queda determinado durante la inducción neural, cuando señales procedentes de la notocorda inducen la diferenciación de una parte del ectodermo que está encima."
+    },
+    {
+      "id": 4,
+      "sourceId": 302,
+      "used": true,
+      "text": "La inmunidad innata se caracteriza por ser:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rápida e inespecífica en la fase inicial de defensa."
+        },
+        {
+          "key": "B",
+          "text": "Exclusiva de linfocitos B de memoria."
+        },
+        {
+          "key": "C",
+          "text": "Dependiente de aprendizaje verbal."
+        },
+        {
+          "key": "D",
+          "text": "Solo activa tras vacunación."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inmunidad innata constituye la primera respuesta defensiva general frente a muchos microorganismos."
+    },
+    {
+      "id": 5,
+      "sourceId": 324,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es correcta en relación con el diencéfalo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El subtálamo se encuentra anterior al hipotálamo."
+        },
+        {
+          "key": "B",
+          "text": "El núcleo supraóptico se localiza en la región anterior preóptica del hipotálamo."
+        },
+        {
+          "key": "C",
+          "text": "Los núcleos mamilares se encuentran en la región tuberal del hipotálamo."
+        },
+        {
+          "key": "D",
+          "text": "El núcleo caudado es una estructura del diencéfalo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El núcleo supraóptico se localiza en la región anterior/preóptica del hipotálamo. El subtálamo es posterior al hipotálamo y el núcleo caudado pertenece a los hemisferios cerebrales."
+    },
+    {
+      "id": 6,
+      "sourceId": 393,
+      "used": true,
+      "text": "¿Qué hormona provoca la rotura del folículo y la ovulación en el ciclo menstrual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona luteinizante."
+        },
+        {
+          "key": "B",
+          "text": "La progesterona."
+        },
+        {
+          "key": "C",
+          "text": "La hormona foliculoestimulante."
+        },
+        {
+          "key": "D",
+          "text": "Los estrógenos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El pico preovulatorio de LH desencadena la rotura del folículo y la ovulación."
+    },
+    {
+      "id": 7,
+      "sourceId": 283,
+      "used": true,
+      "text": "La corteza parietal posterior aporta al control motor principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Claves sensoriales y motivacionales para movimientos dirigidos a un blanco."
+        },
+        {
+          "key": "B",
+          "text": "Secreción de vasopresina."
+        },
+        {
+          "key": "C",
+          "text": "Maduración de linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Producción de adrenalina cortical."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Integra información sensorial sobre el cuerpo y el espacio, útil para planificar movimientos de alcance y manipulación."
+    },
+    {
+      "id": 8,
+      "sourceId": 260,
+      "used": true,
+      "text": "Los receptores olfatorios humanos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se localizan en la mucosa olfatoria y pueden regenerarse."
+        },
+        {
+          "key": "B",
+          "text": "Se localizan exclusivamente en el bulbo olfatorio."
+        },
+        {
+          "key": "C",
+          "text": "No presentan adaptación."
+        },
+        {
+          "key": "D",
+          "text": "Son células ciliadas cocleares."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los receptores olfatorios son neuronas bipolares de la mucosa olfatoria, con cilios en la capa mucosa y capacidad de renovación periódica."
+    },
+    {
+      "id": 9,
+      "sourceId": 185,
+      "used": true,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo evoluciona sumando partes: el arquicerebelo es el más antiguo (presente ya en lampreas), le siguió el paleocerebelo en peces nadadores, y finalmente el neocerebelo (hemisferios cerebelosos) surge a partir de los reptiles."
+    },
+    {
+      "id": 10,
+      "sourceId": 117,
+      "used": true,
+      "text": "El proceso de encefalización:",
+      "options": [
+        {
+          "key": "A",
+          "text": "parece obedecer a un patrón general de regionalización del sistema nervioso, común a todos los animales con simetría bilateral."
+        },
+        {
+          "key": "B",
+          "text": "está presente desde los patrones de organización de tejido nervioso más primitivos, como en las hidras."
+        },
+        {
+          "key": "C",
+          "text": "no está asociado a la organización ganglionar del tejido nervioso."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fenómeno evolutivo por el que surge el cerebro obedece a un esquema genético común (orquestado por genes homeogénicos u ortólogos) de regionalización presente a lo largo de todos los filos de animales con simetría bilateral."
+    },
+    {
+      "id": 11,
+      "sourceId": 306,
+      "used": true,
+      "text": "Los linfocitos T reconocen antígenos específicos generalmente cuando:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Son presentados por células presentadoras mediante moléculas CMH."
+        },
+        {
+          "key": "B",
+          "text": "Aparecen libres sin ninguna presentación."
+        },
+        {
+          "key": "C",
+          "text": "Se convierten en eritrocitos."
+        },
+        {
+          "key": "D",
+          "text": "Cruzan el cuerpo calloso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los linfocitos T requieren que fragmentos antigénicos sean presentados en moléculas del complejo mayor de histocompatibilidad."
+    },
+    {
+      "id": 12,
+      "sourceId": 115,
+      "used": true,
+      "text": "¿Qué dos tipos de corteza cerebral de seis capas se encuentran en mamíferos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "isocorteza y neocorteza."
+        },
+        {
+          "key": "B",
+          "text": "arquicorteza y paleocorteza."
+        },
+        {
+          "key": "C",
+          "text": "paleocorteza y neocorteza."
+        },
+        {
+          "key": "D",
+          "text": "mesocorteza y arquicorteza."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La isocorteza y la neocorteza son términos esencialmente sinónimos empleados para referirse al córtex más evolucionado de los mamíferos, el cual se caracteriza universalmente por su estratificación en seis capas celulares."
+    },
+    {
+      "id": 13,
+      "sourceId": 195,
+      "used": true,
+      "text": "Durante el desarrollo embrionario, el rombencéfalo presenta un patrón de segmentación típico de todos los vertebrados que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "está dirigido por genes Hox que se expresan en el mismo orden lineal que ocupan en los cromosomas."
+        },
+        {
+          "key": "B",
+          "text": "está formado por unidades repetidas, denominadas rombómeros."
+        },
+        {
+          "key": "C",
+          "text": "está provocado por señales inductoras procedentes de la placa del techo exclusivamente."
+        },
+        {
+          "key": "D",
+          "text": "A y B son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El encéfalo posterior (rombencéfalo) se segmenta en unidades funcionales idénticas pero separadas llamadas rombómeros, un proceso orquestado metódicamente por la expresión estrictamente secuencial de los genes homeobox (genes Hox)."
+    },
+    {
+      "id": 14,
+      "sourceId": 280,
+      "used": true,
+      "text": "Los trastornos motores asociados al neoestriado pueden aparecer por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pérdida de equilibrio entre señales facilitadoras e inhibidoras del movimiento."
+        },
+        {
+          "key": "B",
+          "text": "Exceso exclusivo de melatonina."
+        },
+        {
+          "key": "C",
+          "text": "Ausencia de receptores cutáneos."
+        },
+        {
+          "key": "D",
+          "text": "Cierre normal de neuroporos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El funcionamiento motor depende del balance entre circuitos directos/facilitadores e indirectos/inhibidores de los ganglios basales."
+    },
+    {
+      "id": 15,
+      "sourceId": 191,
+      "used": true,
+      "text": "La región facilitadora por excelencia de los reflejos espinales antigravitatorios necesarios para el mantenimiento de la postura erguida se localiza en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cerebelo."
+        },
+        {
+          "key": "B",
+          "text": "el bulbo raquídeo."
+        },
+        {
+          "key": "C",
+          "text": "el puente."
+        },
+        {
+          "key": "D",
+          "text": "la médula espinal."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El mantenimiento del tono muscular para estar de pie (antigravitatorio) recae fundamentalmente en el tracto reticuloespinal medial, el cual tiene su centro de origen y mando en la formación reticular pontina (en el puente)."
+    },
+    {
+      "id": 16,
+      "sourceId": 130,
+      "used": true,
+      "text": "¿Dónde se produce la integración de la información del olor y el gusto, para generar la percepción del sabor de un alimento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "En la ínsula."
+        },
+        {
+          "key": "B",
+          "text": "En el opérculo frontal."
+        },
+        {
+          "key": "C",
+          "text": "En la corteza orbitofrontal."
+        },
+        {
+          "key": "D",
+          "text": "En la corteza piriforme."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La corteza orbitofrontal es el área de asociación polimodal que recibe información procedente tanto de las vías olfatorias primarias como de las vías gustativas, integrando ambas para conformar la experiencia única del sabor."
+    },
+    {
+      "id": 17,
+      "sourceId": 294,
+      "used": true,
+      "text": "La zona glomerular de la corteza suprarrenal produce principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aldosterona."
+        },
+        {
+          "key": "B",
+          "text": "Cortisol."
+        },
+        {
+          "key": "C",
+          "text": "Adrenalina."
+        },
+        {
+          "key": "D",
+          "text": "Oxitocina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La aldosterona es un mineralocorticoide que regula equilibrio hidroelectrolítico, especialmente sodio y potasio."
+    },
+    {
+      "id": 18,
+      "sourceId": 139,
+      "used": true,
+      "text": "Durante el desarrollo embrionario temprano, una fase crítica consiste en la correcta fusión del tubo neural. ¿Qué consecuencias puede tener un fallo en este proceso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Falta de formación de la placenta y alteraciones en el intercambio de nutrientes."
+        },
+        {
+          "key": "B",
+          "text": "Desarrollo incompleto del sistema nervioso periférico debido a una alteración en la migración de la cresta neural."
+        },
+        {
+          "key": "C",
+          "text": "Alteraciones en la diferenciación del mesodermo que dan lugar a defectos musculares generalizados."
+        },
+        {
+          "key": "D",
+          "text": "Malformaciones del sistema nervioso central y de estructuras asociadas, como espina bífida o anencefalia."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Si el neuroporo caudal no se cierra correctamente, se produce espina bífida. Si es el neuroporo rostral el que no se cierra, el cerebro no se forma completamente, ocasionando anencefalia."
+    },
+    {
+      "id": 19,
+      "sourceId": 163,
+      "used": true,
+      "text": "¿Cuál es el tipo principal de información periférica que el organismo transmite al encéfalo a través del sistema lemniscal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nociceptiva y de temperatura."
+        },
+        {
+          "key": "B",
+          "text": "Táctil precisa (epicrítica)."
+        },
+        {
+          "key": "C",
+          "text": "Propioceptiva consciente."
+        },
+        {
+          "key": "D",
+          "text": "Lo dicho en las opciones B y C es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El sistema de las columnas dorsales (lemniscal) está anatómicamente especializado en la conducción extremadamente rápida de la información táctil fina, discriminativa y de la propia postura articular consciente."
+    },
+    {
+      "id": 20,
+      "sourceId": 398,
+      "used": true,
+      "text": "Señale la relación INCORRECTA considerando las hormonas de la hipófisis anterior:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Somatotropina: la somatostatina inhibe su liberación."
+        },
+        {
+          "key": "B",
+          "text": "Hormona luteinizante: la dopamina inhibe su liberación."
+        },
+        {
+          "key": "C",
+          "text": "FSH: la GnRH aumenta su liberación."
+        },
+        {
+          "key": "D",
+          "text": "Hormona estimulante del tiroides: se denomina tirotropina (TSH)."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La dopamina inhibe principalmente la prolactina; LH y FSH dependen de la GnRH."
+    },
+    {
+      "id": 21,
+      "sourceId": 373,
+      "used": true,
+      "text": "Complete los huecos: el órgano tendinoso de ____, por su disposición en ____ con las fibras ____, es extremadamente sensible al incremento de tensión muscular producida por la ____ del músculo.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Golgi; paralelo; extrafusales; relajación."
+        },
+        {
+          "key": "B",
+          "text": "Golgi; serie; intrafusales; contracción."
+        },
+        {
+          "key": "C",
+          "text": "Cajal; serie; extrafusales; relajación."
+        },
+        {
+          "key": "D",
+          "text": "Golgi; serie; extrafusales; contracción."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El órgano tendinoso de Golgi está dispuesto en serie con las fibras extrafusales y detecta la tensión generada durante la contracción muscular."
+    },
+    {
+      "id": 22,
+      "sourceId": 31,
+      "used": true,
+      "text": "Los cultivos de tejido neuronal, concretamente de las células piramidales de la corteza cerebral y de las células de Purkinje del cerebelo, permiten conocer los siguientes aspectos sobre la maduración neuronal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "que estas células adquieren sus formas características cuando son cultivadas en un medio artificial aunque su diferenciación dendrítica es menos elaborada."
+        },
+        {
+          "key": "B",
+          "text": "que la diferenciación morfológica básica de una neurona está predeterminada genéticamente antes de que alcance su destino."
+        },
+        {
+          "key": "C",
+          "text": "que el pleno desarrollo de la arborización dendrítica depende del entorno de las neuronas y de las interacciones que se establecen entre ellas."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La diferenciación morfológica básica está preprogramada genéticamente antes de llegar a su destino, pero su completa maduración y complejidad de arborización dependen fuertemente del entorno y de las interacciones celulares, como han demostrado los estudios en cultivos in vitro."
+    },
+    {
+      "id": 23,
+      "sourceId": 15,
+      "used": true,
+      "text": "Señale el concepto que corresponde a la siguiente definición: 'Es en general una respuesta rápida que desempeña un papel fundamental en la fase inicial de la defensa y que se desencadena ante la mayor parte de microorganismos invasores':",
+      "options": [
+        {
+          "key": "A",
+          "text": "inmunidad innata o natural."
+        },
+        {
+          "key": "B",
+          "text": "respuesta inmune específica."
+        },
+        {
+          "key": "C",
+          "text": "homeostasis."
+        },
+        {
+          "key": "D",
+          "text": "inmunidad adquirida."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inmunidad innata, o inespecífica, se caracteriza precisamente por ser la primera línea de acción de respuesta rápida y general ante patógenos."
+    },
+    {
+      "id": 24,
+      "sourceId": 242,
+      "used": true,
+      "text": "En invertebrados, los ganglios nerviosos cumplen sobre todo funciones de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Integración y procesamiento local de información."
+        },
+        {
+          "key": "B",
+          "text": "Síntesis de tiroxina."
+        },
+        {
+          "key": "C",
+          "text": "Producción de células sanguíneas."
+        },
+        {
+          "key": "D",
+          "text": "Formación de mielina central."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los ganglios reúnen somas neuronales y permiten integrar señales y coordinar respuestas en animales con organización más centralizada."
+    },
+    {
+      "id": 25,
+      "sourceId": 347,
+      "used": true,
+      "text": "El coeficiente de encefalización es una medida que compara:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El peso del encéfalo con la longitud del cuerpo del animal."
+        },
+        {
+          "key": "B",
+          "text": "El peso real del encéfalo con el peso esperado para su tamaño corporal."
+        },
+        {
+          "key": "C",
+          "text": "El número de neuronas con el volumen de la corteza cerebral."
+        },
+        {
+          "key": "D",
+          "text": "La superficie cortical con la masa muscular del organismo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El coeficiente de encefalización compara el tamaño cerebral observado con el esperado para un animal de ese tamaño corporal."
+    },
+    {
+      "id": 26,
+      "sourceId": 353,
+      "used": true,
+      "text": "En seres humanos se prolongan hasta la edad adulta patrones de expresión génica que en otros primates solo aparecen en etapas tempranas. Este fenómeno recibe el nombre de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neotenia transcripcional."
+        },
+        {
+          "key": "B",
+          "text": "Hipótesis monofilética transcripcional."
+        },
+        {
+          "key": "C",
+          "text": "Estrategia r."
+        },
+        {
+          "key": "D",
+          "text": "Encefalización transcripcional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La neotenia transcripcional consiste en el mantenimiento prolongado de patrones juveniles de expresión génica."
+    },
+    {
+      "id": 27,
+      "sourceId": 330,
+      "used": true,
+      "text": "Entre las estructuras diencefálicas más importantes que participan en el procesamiento de la información sensorial se encuentra el tálamo. Respecto a su función, conocemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sus núcleos del grupo ventral tienen una función esencial."
+        },
+        {
+          "key": "B",
+          "text": "Toda la información sensorial que llega a la corteza cerebral pasa a través de él."
+        },
+        {
+          "key": "C",
+          "text": "Todos los núcleos talámicos procesan todas las modalidades sensoriales."
+        },
+        {
+          "key": "D",
+          "text": "La información visual recogida por los receptores sensoriales no llega al tálamo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El grupo ventral incluye núcleos de relevo sensorial y motor esenciales. La opción b es falsa porque el olfato accede de forma directa a corteza olfatoria primaria."
+    },
+    {
+      "id": 28,
+      "sourceId": 121,
+      "used": true,
+      "text": "El reflejo de extensión o miotático:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es polisináptico."
+        },
+        {
+          "key": "B",
+          "text": "Es monosináptico."
+        },
+        {
+          "key": "C",
+          "text": "Es independiente de la actividad de los husos musculares."
+        },
+        {
+          "key": "D",
+          "text": "Rechaza el principio de inhibición recíproca."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El reflejo de extensión se clasifica como un reflejo monosináptico porque los axones de las neuronas sensoriales (procedentes del huso) hacen una única sinapsis directa con las motoneuronas alfa del músculo efector."
+    },
+    {
+      "id": 29,
+      "sourceId": 266,
+      "used": true,
+      "text": "La corteza auditiva primaria se localiza principalmente en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La circunvolución de Heschl, en el lóbulo temporal."
+        },
+        {
+          "key": "B",
+          "text": "El lóbulo occipital medial."
+        },
+        {
+          "key": "C",
+          "text": "El asta ventral medular."
+        },
+        {
+          "key": "D",
+          "text": "El núcleo caudado."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A1 se sitúa en la circunvolución de Heschl y recibe aferencias del núcleo geniculado medial del tálamo."
+    },
+    {
+      "id": 30,
+      "sourceId": 390,
+      "used": true,
+      "text": "Señale la asociación INCORRECTA en relación con las hormonas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Glándula pineal - melatonina."
+        },
+        {
+          "key": "B",
+          "text": "Hígado - somatomedinas."
+        },
+        {
+          "key": "C",
+          "text": "Páncreas - somatostatina."
+        },
+        {
+          "key": "D",
+          "text": "Adrenalina - corteza adrenal."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La adrenalina se libera en la médula adrenal, no en la corteza adrenal."
+    }
+  ]
+}

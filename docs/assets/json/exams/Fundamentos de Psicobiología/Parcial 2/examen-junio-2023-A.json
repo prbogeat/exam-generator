@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Junio 2023 - Tipo A",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas del examen de Junio 2023 A - Fundamentos de Psicobiología de la UNED",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En relación con la neocorteza sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "está organizada en tres capas celulares;"
+        },
+        {
+          "key": "B",
+          "text": "entre las funciones de las áreas de asociación se encuentra la de establecer nexos de comunicación entre las áreas sensoriales primarias y la corteza motora;"
+        },
+        {
+          "key": "C",
+          "text": "únicamente en este tipo de corteza podemos encontrar células piramidales;"
+        },
+        {
+          "key": "D",
+          "text": "una de las áreas que la integran es la formación hipocampal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las áreas de asociación de la neocorteza actúan como nexos de integración y comunicación entre las áreas de entrada (sensoriales primarias) y las áreas de salida (motoras) para planificar la respuesta adecuada. (La neocorteza tiene 6 capas, y la formación hipocampal pertenece a la alocorteza)."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Señale el concepto que corresponde a la siguiente definición: “Es en general una respuesta rápida que desempeña un papel fundamental en la fase inicial de la defensa y que se desencadena ante la mayor parte de microorganismos invasores”:",
+      "options": [
+        {
+          "key": "A",
+          "text": "inmunidad innata o natural;"
+        },
+        {
+          "key": "B",
+          "text": "respuesta inmune específica;"
+        },
+        {
+          "key": "C",
+          "text": "homeostasis;"
+        },
+        {
+          "key": "D",
+          "text": "inmunidad adquirida."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inmunidad innata o natural constituye la primera línea inespecífica de defensa del organismo; su respuesta es inmediata y generalista frente a cualquier amenaza antigénica."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es cierta en relación con el sistema endocrino?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "todas las glándulas endocrinas funcionan bajo el control de los distintos ejes hipotalámico-hipofisarios;"
+        },
+        {
+          "key": "B",
+          "text": "la hipófisis sintetiza neurohormonas que regulan su funcionamiento;"
+        },
+        {
+          "key": "C",
+          "text": "su centro principal de coordinación es el hipotálamo;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El hipotálamo es la gran glándula rectora y centro principal de coordinación del sistema endocrino. (No todas las glándulas dependen de la hipófisis, por ejemplo, el páncreas endocrino)."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "En relación con la generación de neuronas de la corteza cerebral durante el desarrollo embrionario, señale la respuesta correcta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el hem cortical del telencéfalo extracortical es una estructura transitoria que está muy poco desarrollada en el embrión humano;"
+        },
+        {
+          "key": "B",
+          "text": "la neocorteza se nutre de una gran población de células que nacen en el neuroepitelio del telencéfalo subcortical;"
+        },
+        {
+          "key": "C",
+          "text": "en el neuroepitelio cortical (telencéfalo dorsal) se origina la totalidad de las neuronas corticales;"
+        },
+        {
+          "key": "D",
+          "text": "las zonas ventricular y subventricular del neuroepitelio cortical originan la mayoría de las interneuronas inhibitorias de la corteza cerebral."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Una inmensa proporción de las células corticales (especialmente las interneuronas inhibitorias) no nacen dorsalmente en el tejido de la propia corteza, sino que se originan ventralmente en el telencéfalo subcortical (eminencias ganglionares) y migran tangencialmente hacia la neocorteza."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "En relación con la red nerviosa difusa de las hidras y los corales sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no existe diferenciación funcional (dendrita, axón) en sus prolongaciones neuronales;"
+        },
+        {
+          "key": "B",
+          "text": "existe polaridad entre los contactos sinápticos;"
+        },
+        {
+          "key": "C",
+          "text": "se organiza en ganglios;"
+        },
+        {
+          "key": "D",
+          "text": "lo dicho en A y B es cierto."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En las redes nerviosas difusas primitivas de los cnidarios (hidras y corales), las neuronas son apolares, es decir, sus prolongaciones no presentan la diferenciación funcional estricta entre dendritas receptivas y axones emisores, permitiendo la propagación bidireccional."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "¿Cuál es el neurotransmisor que liberan las células preganglionares del SNA?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "acetilcolina en las sinapsis de los ganglios simpáticos y noradrenalina en las de los ganglios parasimpáticos;"
+        },
+        {
+          "key": "B",
+          "text": "noradrenalina en las sinapsis de los ganglios simpáticos y acetilcolina en las de los ganglios parasimpáticos;"
+        },
+        {
+          "key": "C",
+          "text": "acetilcolina tanto en los ganglios simpáticos como en los parasimpáticos;"
+        },
+        {
+          "key": "D",
+          "text": "noradrenalina tanto en los ganglios simpáticos como en los parasimpáticos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La primera sinapsis del sistema nervioso autónomo utiliza universalmente la acetilcolina como neurotransmisor para conectar con la neurona postganglionar, tanto en la división simpática como en la parasimpática."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Aunque las distintas modalidades sensoriales sean codificadas con un mismo código, el hecho de que discriminemos adecuadamente esas diferentes modalidades sensoriales puede explicarse porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la modalidad sensorial depende de cuál haya sido la energía estimular;"
+        },
+        {
+          "key": "B",
+          "text": "las vías nerviosas que transmiten información sensorial al SN central llevan esa información a zonas diferentes según la modalidad;"
+        },
+        {
+          "key": "C",
+          "text": "la transducción sensorial produce distintos tipos de impulsos nerviosos según la modalidad sensorial;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las opciones A y C es cierto."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Siguiendo el principio biológico de las líneas marcadas, todas las señales se traducen en idénticos potenciales de acción. Si diferenciamos luz de sonido es puramente porque esas vías específicas viajan y desembocan en zonas corticales anatómicas completamente diferentes."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Entre las estructuras diencefálicas más importantes que participan en el procesamiento de la información sensorial se encuentra el tálamo. Respecto a la función de esta región cerebral en dicho procesamiento, conocemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sus núcleos del grupo ventral tienen una función esencial;"
+        },
+        {
+          "key": "B",
+          "text": "toda la información sensorial que llega a la corteza cerebral pasa a través de él;"
+        },
+        {
+          "key": "C",
+          "text": "todos los núcleos talámicos procesan todas las modalidades sensoriales;"
+        },
+        {
+          "key": "D",
+          "text": "la información visual recogida por los receptores sensoriales no llega al tálamo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los núcleos específicos responsables de hacer de relevo de casi toda la información sensorial y enviarla a la corteza asientan organizadamente dentro del grupo ventral del tálamo y cuerpos geniculados. (El olfato es la única excepción sensorial que sortea el paso talámico)."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es cierta en relación con la prolactina?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "provoca directamente la eyección de la leche;"
+        },
+        {
+          "key": "B",
+          "text": "estimula la producción de leche tras el parto;"
+        },
+        {
+          "key": "C",
+          "text": "sus niveles aumentan mucho tras el parto por la acción estimuladora de la dopamina hipotalámica;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y B son ciertas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La prolactina promueve el tejido mamario y estimula en las glándulas la síntesis y producción de leche. (La salida o eyección mecánica corre a cargo de la oxitocina, y la dopamina ejerce una acción inhibitoria, no estimuladora)."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "En relación con el cociente de encefalización ¿cuál de los siguientes rasgos NO parece estar relacionado con el elevadísimo cociente de encefalización que paulatinamente fueron adquiriendo nuestros ancestros?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la compleja organización social;"
+        },
+        {
+          "key": "B",
+          "text": "el lenguaje;"
+        },
+        {
+          "key": "C",
+          "text": "la postura bípeda;"
+        },
+        {
+          "key": "D",
+          "text": "la estrategia de alimentación y la calidad de la dieta."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La bipedestación o postura erguida apareció tempranamente en la filogenia de los homínidos (como el Australopithecus), mucho antes del vertiginoso salto cerebral. El gran cociente de encefalización posterior (género Homo) fue demandado por el lenguaje, la sociabilidad y el forrajeo selectivo de dietas calóricas."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "Se considera/n sustancia gris:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los tractos;"
+        },
+        {
+          "key": "B",
+          "text": "las comisuras;"
+        },
+        {
+          "key": "C",
+          "text": "el fórnix;"
+        },
+        {
+          "key": "D",
+          "text": "el neoestriado."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El neoestriado es la agrupación celular basal formada por el núcleo caudado y el putamen, por lo que constituye un centro de sustancia gris subcortical. Los tractos, comisuras y el fórnix son haces de sustancia blanca (axones)."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Hasta el momento se sabe que la información transmitida por las citocinas alcanza el SN central a través de tres vías denominadas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "humoral, hepática y cerebral;"
+        },
+        {
+          "key": "B",
+          "text": "neuronal, vagal y encefálica;"
+        },
+        {
+          "key": "C",
+          "text": "vagal, hepática y celular;"
+        },
+        {
+          "key": "D",
+          "text": "neural, humoral y celular."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los estudios en Psiconeuroinmunología revelan que las citocinas del cuerpo se infiltran y alertan al sistema nervioso a través de tres vías bien documentadas: la ruta neural ascendente (por el vago), la ruta humoral (sorteando barreras) y la ruta celular endotelial."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En relación con la médula adrenal sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "produce glucocorticoides;"
+        },
+        {
+          "key": "B",
+          "text": "libera hormonas que atraviesan fácilmente la membrana celular;"
+        },
+        {
+          "key": "C",
+          "text": "su actividad está controlada por el eje hipotalámico-hipofisario-adrenal;"
+        },
+        {
+          "key": "D",
+          "text": "bajo la influencia del SN, responde a situaciones estresantes liberando hormonas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La médula de la glándula suprarrenal no responde al eje endocrino típico, sino que se asemeja a un gran ganglio simpático inervado por fibras motoras que, en emergencias o fuerte estrés, vierte rápidamente adrenalina al torrente sanguíneo."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Las sustancias neurotrópicas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "contribuyen a guiar a los axones a su destino mediante procesos de afinidad química;"
+        },
+        {
+          "key": "B",
+          "text": "se acoplan a receptores específicos de las neuronas y promueven la supervivencia de las mismas;"
+        },
+        {
+          "key": "C",
+          "text": "son liberadas por los axones en crecimiento hasta que éstos alcanzan su zona de destino;"
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El tropismo se refiere a la afinidad o atracción. Las moléculas 'neurotrópicas' flotan en gradientes químicos atrayendo o repeliendo dinámicamente los lamelipodios del axón para guiarlo hacia su objetivo anatómico exacto."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "En relación con la decusación que experimentan algunos tractos motores a nivel del bulbo raquídeo, relacionados con el reflejo de huida, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no ocurre en peces;"
+        },
+        {
+          "key": "B",
+          "text": "no parece tener ningún significado evolutivo;"
+        },
+        {
+          "key": "C",
+          "text": "en anfibios está relacionada con la mejora en la rapidez de respuesta ante amenazas percibidas visualmente;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en A y C es correcto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el reflejo evasivo de los peces la fibra baja directa (no se decusa) provocando que se doble el pez hacia el lado contrario para escapar, pero en animales con extremidades como los anfibios, cruzar el estímulo al lado opuesto (decusación) agiliza dramáticamente que la pata del mismo lado del peligro sea la que de el salto inmediato."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "¿Cuál de las siguientes estructuras es considerada el principal centro receptor de las señales que llegan al cuerpo estriado?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el globo pálido;"
+        },
+        {
+          "key": "B",
+          "text": "la sustancia negra reticulada;"
+        },
+        {
+          "key": "C",
+          "text": "el núcleo basal de Meynert;"
+        },
+        {
+          "key": "D",
+          "text": "el neoestriado."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Dentro de la arquitectura funcional de los ganglios basales, el neoestriado (caudado y putamen combinados) actúa como el filtro o puerto de entrada masivo para las proyecciones que viajan hacia ellos desde todas las partes del neocórtex."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Uno de los retos que tiene el estudio psicobiológico de los sistemas sensoriales es el de conocer con profundidad cómo realizamos la percepción de las características de las diferentes modalidades estimulares. En lo que se refiere a la percepción visual, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ya al nivel de las células ganglionares de la retina hay una especialización de funciones, puesto que algunas son sensibles al contraste y otras al movimiento o al color;"
+        },
+        {
+          "key": "B",
+          "text": "el proceso de análisis de la imagen visual se inicia en la corteza visual primaria (V1) y prosigue en diferentes áreas corticales, en las que se analizan componentes de la imagen visual más específicos;"
+        },
+        {
+          "key": "C",
+          "text": "la vía de proyección que se dirige desde V1 a la corteza parietal posterior es fundamental para la localización de objetos en el espacio y para combinar información que permita ejecutar acciones en relación con los objetos;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las tres opciones anteriores es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Tanto la segregación del canal de forma/color/movimiento desde las células de la retina, como el análisis modular extraestriado, así como la funcionalidad espacial de la corriente dorsal parietal son conceptos anatómicos confirmados."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "De entre los distintos tipos de receptores sensoriales, los olfativos se caracterizan porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no pueden regenerarse;"
+        },
+        {
+          "key": "B",
+          "text": "las moléculas receptoras de las sustancias odoríferas se localizan en el bulbo olfatorio;"
+        },
+        {
+          "key": "C",
+          "text": "experimentan adaptación sensorial;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en todas las opciones anteriores es cierto."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Como cualquier neuroreceptor inmerso en un medio tónico, las terminaciones olfativas rebajan o adaptan su respuesta tras la constante e ininterrumpida exposición a un mismo aroma. (Al contrario que otras, sí se regeneran por ser neuronas especializadas y asientan en la mucosa, no en el bulbo)."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "En relación con los mecanismos de acción de las hormonas peptídicas sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "su acción está mediada por la producción o activación de un segundo mensajero intracelular;"
+        },
+        {
+          "key": "B",
+          "text": "actúan uniéndose de modo específico a receptores intracelulares en el citoplasma de sus células diana;"
+        },
+        {
+          "key": "C",
+          "text": "son hormonas liposolubles;"
+        },
+        {
+          "key": "D",
+          "text": "las opciones A y C son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Al ser hidrosolubles (no lipídicas), las hormonas de estirpe peptídica tienen vetado cruzar el muro de la membrana de la célula; para dictar su orden atracan en un receptor de superficie y fuerzan la generación de AMP cíclico u otro segundo mensajero biológico intracelular."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "La percepción de la forma de los objetos exige un procesamiento muy elaborado y de gran complejidad en el que participan diversas regiones cerebrales del sistema visual. A este respecto, del procesamiento cortical de la forma sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hay neuronas de la región TE que reconocen (responden a) objetos como tales, con independencia de una exposición previa a ellos;"
+        },
+        {
+          "key": "B",
+          "text": "en la corteza visual de asociación parecen existir regiones especializadas en el reconocimiento de objetos específicos;"
+        },
+        {
+          "key": "C",
+          "text": "la agnosia visual es la capacidad que permite el reconocimiento de objetos a través de la vista;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en todas las opciones anteriores es correcto."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El final del canal del 'qué' en el lóbulo temporal exhibe parcelas corticales con una especialización deslumbrante, abocadas a discriminar caras, cuerpos o escenas geográficas. (La agnosia sería la falta de este reconocimiento, y TE depende totalmente del aprendizaje visual o experiencia)."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "¿Qué opción indica una correspondencia adecuada entre estructura y localización?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los colículos inferiores se localizan en el diencéfalo;"
+        },
+        {
+          "key": "B",
+          "text": "las pirámides forman parte del mesencéfalo;"
+        },
+        {
+          "key": "C",
+          "text": "el núcleo rojo se encuentra en el puente;"
+        },
+        {
+          "key": "D",
+          "text": "los núcleos de las columnas blancas dorsales se localizan en el bulbo raquídeo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los núcleos gracilis y cuneatus (cuneiforme), que conforman el ensanchamiento superior de los gruesos cordones nerviosos somatosensitivos posteriores, se alojan exactamente en la cara dorsal del bulbo raquídeo."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "La esquizofrenia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es uno de los ejemplos de psicopatologías en las que no hay implicación del sistema inmune;"
+        },
+        {
+          "key": "B",
+          "text": "podría tener un carácter autoinmune;"
+        },
+        {
+          "key": "C",
+          "text": "nunca implica alteraciones en los niveles de citocinas;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son verdaderas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La moderna evidencia correlaciona la aparición de picos anormales de citocinas proinflamatorias y autoanticuerpos en un alto porcentaje de individuos diagnosticados, avalando que subyace una etiología inmunorreactiva o carácter autoinmune sobre las vías psicóticas."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "En humanos, a la oxitocina se la relaciona con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "algunos comportamientos típicos del espectro autista;"
+        },
+        {
+          "key": "B",
+          "text": "acromegalia y gigantismo;"
+        },
+        {
+          "key": "C",
+          "text": "daño cerebral y discapacidad mental;"
+        },
+        {
+          "key": "D",
+          "text": "las tres opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Famosa neurohormona responsable de promover los estrechos lazos de confianza social o materna. Alteraciones genéticas o fisiológicas en sus vías han sido correlacionadas con la incapacidad de establecer el tono afectivo-vincular de los pacientes autistas."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "Durante el desarrollo del encéfalo humano se produce una gran reorganización de los contactos sinápticos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es independiente de la actividad neural;"
+        },
+        {
+          "key": "B",
+          "text": "se prolonga hasta la pubertad;"
+        },
+        {
+          "key": "C",
+          "text": "es exclusiva de la etapa prenatal;"
+        },
+        {
+          "key": "D",
+          "text": "se produce simultáneamente en los mismos periodos en todas las regiones del encéfalo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El encéfalo humano se remata mucho después del nacimiento. La poda natural masiva y reestructuración guiada fuertemente por la experiencia postnatal abarca intensamente la infancia y culmina en la etapa puberal."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "En relación con la filogenia de la corteza cerebral ¿cuál de las siguientes afirmaciones es verdadera?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el tamaño de las áreas de la neocorteza guarda relación con el grado de importancia que la función desempeñada por tales áreas tiene para cada especie;"
+        },
+        {
+          "key": "B",
+          "text": "la paleocorteza y la arquicorteza están organizadas en 3 capas;"
+        },
+        {
+          "key": "C",
+          "text": "las células piramidales de la neocorteza no son exclusivas de los primates;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas son preceptos correctos. En biología comparada el espacio anatómico neocortical es proporcional a la preeminencia del sentido utilizado, sus células piramidales datan desde la herencia reptiliana-mamífera basal, y la alocorteza es histológicamente siempre tricapa."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones sobre el reflejo de extensión NO es correcta?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los axones involucrados, procedentes del huso muscular, solo establecen sinapsis con las motoneuronas alfa del músculo efector;"
+        },
+        {
+          "key": "B",
+          "text": "los axones involucrados, procedentes del huso muscular, establecen sinapsis con las motoneuronas alfa del músculo efector, pero también con interneuronas inhibitorias que disminuyen la actividad de motoneuronas alfa que inervan los músculos antagonistas;"
+        },
+        {
+          "key": "C",
+          "text": "es un reflejo monosináptico;"
+        },
+        {
+          "key": "D",
+          "text": "es la base del reflejo rotuliano."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La primera afirmación es falsa, puesto que las neuronas del huso no actúan de modo 'único' sobre el músculo dañado (agonista), sino que se ramifican inervando células interneuronas GABAérgicas destinadas a apagar simultáneamente a su músculo contrario (antagonista)."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Puede darse una modulación conductual de la función inmune?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sí, mediante procesos de condicionamiento clásico;"
+        },
+        {
+          "key": "B",
+          "text": "no, en ningún caso;"
+        },
+        {
+          "key": "C",
+          "text": "sí, pero en estos fenómenos no participan procesos de condicionamiento;"
+        },
+        {
+          "key": "D",
+          "text": "sí, aunque hasta el día de hoy nunca se ha podido observar ningún proceso de inmunosupresión condicionada."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Sí es perfectamente posible. La comprobación en laboratorio de que las ratas asocian el agua con sacarina al veneno inmunosupresor (logrando deprimir el sistema inmunitario solo con el sabor) validó la existencia de inmunocondicionamiento clásico."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "La unión de acetilcolina a sus receptores en las fibras musculares provoca la apertura de canales de Na+ y K+, provocando una despolarización de la membrana postsináptica que recibe el nombre de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "potencial postsináptico excitatorio;"
+        },
+        {
+          "key": "B",
+          "text": "potencial postsináptico inhibitorio;"
+        },
+        {
+          "key": "C",
+          "text": "potencial de placa terminal;"
+        },
+        {
+          "key": "D",
+          "text": "potencial de despolarización muscular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El inmenso flujo excitatorio que propaga el neurotransmisor acetilcolina en las depresiones de la musculatura estriada se denomina de forma anatómica y fisiológica potencial de placa terminal o motora."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Entre las estructuras subcorticales de los hemisferios cerebrales se encuentra/n:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el núcleo dentado;"
+        },
+        {
+          "key": "B",
+          "text": "el núcleo basal de Meynert;"
+        },
+        {
+          "key": "C",
+          "text": "los bulbos olfatorios;"
+        },
+        {
+          "key": "D",
+          "text": "los núcleos mamilares."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El núcleo basal de Meynert pertenece por definición a la porción profunda (basal) del telencéfalo o hemisferios cerebrales. (A diferencia de este, los mamilares son núcleos diencefálicos, y el dentado yace en el cerebelo)."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Las tres vesículas encefálicas que se forman tras el cierre del tubo neural a partir de la cuarta semana embrionaria son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "prosencéfalo, mesencéfalo y rombencéfalo;"
+        },
+        {
+          "key": "B",
+          "text": "diencéfalo, mesencéfalo y metencéfalo;"
+        },
+        {
+          "key": "C",
+          "text": "prosencéfalo, metencéfalo y mielencéfalo;"
+        },
+        {
+          "key": "D",
+          "text": "telencéfalo, mielencéfalo y rombencéfalo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El modelo ontogénico temprano arranca configurando anatómicamente un cerebro tripartito primigenio; estas formaciones en la porción cefálica del tubo son denominadas genéricamente encéfalo anterior (prosencéfalo), medio (mesencéfalo) y posterior (rombencéfalo)."
+    }
+  ]
+}

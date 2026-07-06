@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 5",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 74,
+      "used": true,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos."
+    },
+    {
+      "id": 2,
+      "sourceId": 75,
+      "used": true,
+      "text": "¿Qué células producen anticuerpos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Macrófagos"
+        },
+        {
+          "key": "B",
+          "text": "Linfocitos B"
+        },
+        {
+          "key": "C",
+          "text": "Neutrófilos"
+        },
+        {
+          "key": "D",
+          "text": "NK"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los linfocitos B y sus células plasmáticas producen anticuerpos."
+    },
+    {
+      "id": 3,
+      "sourceId": 8,
+      "used": true,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En los reptiles surge la división filogenéticamente más reciente, el neocerebelo, formado por los hemisferios cerebelares y el vermis medio."
+    },
+    {
+      "id": 4,
+      "sourceId": 78,
+      "used": true,
+      "text": "¿Qué hormona es la responsable directa de provocar la rotura del folículo y desencadenar la ovulación en el ciclo menstrual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona luteinizante (LH)."
+        },
+        {
+          "key": "B",
+          "text": "La progesterona."
+        },
+        {
+          "key": "C",
+          "text": "La hormona foliculoestimulante (FSH)."
+        },
+        {
+          "key": "D",
+          "text": "Los estrógenos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La elevada secreción repentina (pico) de la hormona luteinizante (LH) mediada por la adenohipófisis es el evento fisiológico que dispara la rotura folicular y la liberación del óvulo maduro."
+    },
+    {
+      "id": 5,
+      "sourceId": 177,
+      "used": true,
+      "text": "De las siguientes vías motoras extrapiramidales descendentes, ¿cuál interviene facilitando especialmente el movimiento fraccionado e independiente de las articulaciones del codo y la mano, aunque en humanos no de los dedos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El tracto corticoespinal lateral."
+        },
+        {
+          "key": "B",
+          "text": "El tracto vestibuloespinal medial."
+        },
+        {
+          "key": "C",
+          "text": "El tracto rubroespinal (desde el núcleo rojo)."
+        },
+        {
+          "key": "D",
+          "text": "El tracto reticuloespinal."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las vías rubroespinales, cruzando la línea media, se encargan de modular de forma gruesa la agilidad y flexión independiente de los brazos (hombro, codo, mano), pero el control milimétrico de las yemas de los dedos está monopolizado en primates por la vía corticoespinal piramidal."
+    },
+    {
+      "id": 6,
+      "sourceId": 136,
+      "used": true,
+      "text": "¿Cuál es el origen principal de la mayoría de las interneuronas inhibitorias de la corteza cerebral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La placa cortical del telencéfalo dorsal."
+        },
+        {
+          "key": "B",
+          "text": "La zona ventricular del neuroepitelio cortical."
+        },
+        {
+          "key": "C",
+          "text": "El hem cortical del telencéfalo medial."
+        },
+        {
+          "key": "D",
+          "text": "Las eminencias ganglionares del telencéfalo subcortical."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A diferencia de las neuronas de proyección excitatorias que nacen localmente en la zona ventricular, la mayoría de las interneuronas inhibitorias gabaérgicas se originan ventralmente en las eminencias ganglionares y migran de forma tangencial hasta la corteza."
+    },
+    {
+      "id": 7,
+      "sourceId": 83,
+      "used": true,
+      "text": "En relación con el fenómeno de la adaptación sensorial sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se explica por la fisiología propia y periférica de los receptores sensoriales."
+        },
+        {
+          "key": "B",
+          "text": "Es fisiológicamente el mismo fenómeno que la habituación."
+        },
+        {
+          "key": "C",
+          "text": "Se produce de la misma manera en todos los tipos de receptores sensoriales."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La adaptación es la caída de respuesta ante un estímulo continuado (como el tacto de la ropa) y se da en la propia membrana del receptor periférico, mientras que la habituación es un filtro de atención generado a nivel central en el encéfalo."
+    },
+    {
+      "id": 8,
+      "sourceId": 181,
+      "used": true,
+      "text": "¿Qué fenómeno demuestran los experimentos en los que se logra desencadenar una respuesta inmune mediante la presentación de un estímulo previamente neutro, que fue asociado repetidamente a un antígeno?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La inmunosupresión farmacológica."
+        },
+        {
+          "key": "B",
+          "text": "La activación refleja del sistema inmune."
+        },
+        {
+          "key": "C",
+          "text": "El condicionamiento clásico de una respuesta inmunológica."
+        },
+        {
+          "key": "D",
+          "text": "La habituación inmunológica a estímulos repetidos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los pioneros Robert Ader y Nicholas Cohen demostraron que el sistema inmune puede aprender mediante condicionamiento clásico pavloviano (asociando un sabor dulce a un fármaco inmunosupresor, y logrando después que solo el sabor redujera la respuesta inmune)."
+    },
+    {
+      "id": 9,
+      "sourceId": 91,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    },
+    {
+      "id": 10,
+      "sourceId": 105,
+      "used": true,
+      "text": "¿Cuál será el grupo sanguíneo de una persona en cuyo plasma porta anticuerpos contra el antígeno A y no contra el antígeno B?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Grupo A."
+        },
+        {
+          "key": "B",
+          "text": "Grupo B."
+        },
+        {
+          "key": "C",
+          "text": "Grupo AB."
+        },
+        {
+          "key": "D",
+          "text": "Grupo 0."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Un individuo del grupo sanguíneo B posee antígenos B en sus glóbulos rojos. Su sistema inmunológico reconoce el B como propio, por lo que formará anticuerpos de defensa exclusivamente contra el antígeno extraño, es decir, el A."
+    },
+    {
+      "id": 11,
+      "sourceId": 150,
+      "used": true,
+      "text": "En relación con los receptores olfatorios, sabemos que en nuestra especie:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se localizan en la mucosa olfatoria."
+        },
+        {
+          "key": "B",
+          "text": "Proyectan cilios, que son ramificaciones de la única dendrita que poseen, hacia el interior de la capa mucosa."
+        },
+        {
+          "key": "C",
+          "text": "A diferencia de otras neuronas, se regeneran cada 60 días."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las tres opciones caracterizan perfectamente a los receptores olfativos, destacando su naturaleza como verdaderas neuronas bipolares ciliadas situadas en la mucosa que experimentan un excepcional ciclo de regeneración periódica."
+    },
+    {
+      "id": 12,
+      "sourceId": 62,
+      "used": true,
+      "text": "¿Dónde se localizan principalmente los cuerpos neuronales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustancia gris"
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca"
+        },
+        {
+          "key": "C",
+          "text": "Meninges"
+        },
+        {
+          "key": "D",
+          "text": "Ventrículos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sustancia gris contiene somas neuronales y sinapsis."
+    },
+    {
+      "id": 13,
+      "sourceId": 53,
+      "used": true,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana."
+    },
+    {
+      "id": 14,
+      "sourceId": 36,
+      "used": true,
+      "text": "En relación con la codificación de la modalidad sensorial sabemos que depende de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el tipo de energía estimular."
+        },
+        {
+          "key": "B",
+          "text": "el tamaño del campo receptivo."
+        },
+        {
+          "key": "C",
+          "text": "la zona del SNC a la que llegan los impulsos nerviosos."
+        },
+        {
+          "key": "D",
+          "text": "los diferentes tipos de impulsos nerviosos producidos por diferentes estímulos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Debido a la ley de líneas marcadas, todas las modalidades se traducen en impulsos eléctricos idénticos. Lo que permite percibir distintas modalidades (vista, oído, etc.) es que cada vía nerviosa llega y proyecta a una zona cortical específica predeterminada."
+    },
+    {
+      "id": 15,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Qué grupo presenta una red nerviosa difusa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cnidarios"
+        },
+        {
+          "key": "B",
+          "text": "Mamíferos"
+        },
+        {
+          "key": "C",
+          "text": "Aves"
+        },
+        {
+          "key": "D",
+          "text": "Anélidos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los cnidarios poseen una organización nerviosa simple y difusa."
+    },
+    {
+      "id": 16,
+      "sourceId": 93,
+      "used": true,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana."
+    },
+    {
+      "id": 17,
+      "sourceId": 58,
+      "used": true,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales."
+    },
+    {
+      "id": 18,
+      "sourceId": 66,
+      "used": true,
+      "text": "La estrategia de la selección K en biología evolutiva se caracteriza por favorecer:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alta tasa reproductiva y escaso cuidado parental."
+        },
+        {
+          "key": "B",
+          "text": "Baja tasa reproductiva y alta inversión en cuidados parentales."
+        },
+        {
+          "key": "C",
+          "text": "Desarrollo rápido y madurez sexual temprana."
+        },
+        {
+          "key": "D",
+          "text": "Corta esperanza de vida y muchos descendientes."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La selección k favorece cuerpos más grandes, desarrollo ontogénico lento, longevidad y una estrategia de muy pocas crías pero con una gran inversión de recursos y prolongados cuidados parentales."
+    },
+    {
+      "id": 19,
+      "sourceId": 156,
+      "used": true,
+      "text": "Los órganos en los que se originan y se diferencian todas las células inmunitarias del cuerpo se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los ganglios linfáticos."
+        },
+        {
+          "key": "B",
+          "text": "Los órganos linfoides primarios."
+        },
+        {
+          "key": "C",
+          "text": "Las amígdalas."
+        },
+        {
+          "key": "D",
+          "text": "Ciertos tejidos del sistema digestivo y los pulmones."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las células del sistema inmunitario se generan a partir de células madre y alcanzan su madurez basal en los denominados órganos linfoides primarios (esencialmente la médula ósea y el timo)."
+    },
+    {
+      "id": 20,
+      "sourceId": 73,
+      "used": true,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana."
+    },
+    {
+      "id": 21,
+      "sourceId": 13,
+      "used": true,
+      "text": "La hipófisis posterior libera _____ y _____ en los núcleos _____ y paraventricular del hipotálamo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "oxitocina; vasopresina; supraóptico."
+        },
+        {
+          "key": "B",
+          "text": "oxitocina; MSH; circunventricular."
+        },
+        {
+          "key": "C",
+          "text": "CRH; MSH; supraóptico."
+        },
+        {
+          "key": "D",
+          "text": "oxitocina; prolactina; supraóptico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La neurohipófisis secreta vasopresina y oxitocina, que son hormonas que han sido sintetizadas previamente por las células magnocelulares de los núcleos supraóptico y paraventricular del hipotálamo."
+    },
+    {
+      "id": 22,
+      "sourceId": 6,
+      "used": true,
+      "text": "¿Qué estructura coordina la ejecución precisa del movimiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hipotálamo"
+        },
+        {
+          "key": "B",
+          "text": "Amígdala"
+        },
+        {
+          "key": "C",
+          "text": "Cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Tálamo"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El cerebelo compara el movimiento esperado con el realizado."
+    },
+    {
+      "id": 23,
+      "sourceId": 107,
+      "used": true,
+      "text": "¿Cuál de las siguientes asociaciones entre tipo de citocina y célula de origen es correcta?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Linfocinas/neuronas."
+        },
+        {
+          "key": "B",
+          "text": "Interleucinas/astrocitos."
+        },
+        {
+          "key": "C",
+          "text": "Monocinas/macrófagos."
+        },
+        {
+          "key": "D",
+          "text": "Interferón-gamma/células gamma-pancreáticas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las citocinas pueden ser denominadas en base a las células que las secretan; de esta forma, aquellas que son originadas y liberadas por los monocitos o macrófagos reciben la denominación específica de monocinas."
+    },
+    {
+      "id": 24,
+      "sourceId": 86,
+      "used": true,
+      "text": "La hormona segregada por la hipófisis encargada de estimular a la glándula tiroides, conocida por sus siglas TSH, recibe también el nombre de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Somatotropina."
+        },
+        {
+          "key": "B",
+          "text": "Tirotropina."
+        },
+        {
+          "key": "C",
+          "text": "Luteinizante."
+        },
+        {
+          "key": "D",
+          "text": "Oxitocina."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las hormonas trópicas hipofisarias frecuentemente toman el sufijo '-tropina'. La encargada de incidir sobre la glándula tiroides se denomina indistintamente hormona estimulante del tiroides o tirotropina."
+    },
+    {
+      "id": 25,
+      "sourceId": 131,
+      "used": true,
+      "text": "¿Qué es una célula presentadora de antígenos y cuál es su función principal en la respuesta inmunitaria?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una célula del sistema endocrino que activa linfocitos mediante moléculas específicas."
+        },
+        {
+          "key": "B",
+          "text": "Una célula inmunitaria que digiere antígenos y los expone en su superficie para activar linfocitos T."
+        },
+        {
+          "key": "C",
+          "text": "Una célula infecciosa que porta antígenos reconocibles por los linfocitos."
+        },
+        {
+          "key": "D",
+          "text": "Una célula que destruye directamente a los patógenos mediante fagocitosis."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Células como los macrófagos y las células dendríticas fagocitan al patógeno invasor, lo digieren y exponen fragmentos del mismo unidos a proteínas CMH en su membrana para que los linfocitos T puedan reconocerlos y activarse."
+    },
+    {
+      "id": 26,
+      "sourceId": 47,
+      "used": true,
+      "text": "De los núcleos de las columnas blancas dorsales sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se localizan en el puente."
+        },
+        {
+          "key": "B",
+          "text": "reciben señales aferentes somáticas procedentes del tronco y de las extremidades."
+        },
+        {
+          "key": "C",
+          "text": "constituyen las pirámides."
+        },
+        {
+          "key": "D",
+          "text": "sus axones envían información somatosensorial directamente a la corteza cerebral sin experimentar decusación."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los núcleos grácil y cuneado (asociados a las columnas dorsales) están localizados en el bulbo raquídeo y son la estación de relevo de las fibras aferentes somáticas de tacto y propiocepción que ascienden desde el tronco y extremidades."
+    },
+    {
+      "id": 27,
+      "sourceId": 102,
+      "used": true,
+      "text": "Señale la asociación INCORRECTA en relación con las hormonas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Glándula pineal-melatonina."
+        },
+        {
+          "key": "B",
+          "text": "Hígado-somatomedinas."
+        },
+        {
+          "key": "C",
+          "text": "Páncreas-somatostatina."
+        },
+        {
+          "key": "D",
+          "text": "Adrenalina-corteza adrenal."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La asociación incorrecta es adrenalina-corteza adrenal. La adrenalina (junto a la noradrenalina) es producida por la médula suprarrenal, mientras que la corteza adrenal produce glucocorticoides y mineralocorticoides."
+    },
+    {
+      "id": 28,
+      "sourceId": 40,
+      "used": true,
+      "text": "¿Qué grupo presenta una red nerviosa difusa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cnidarios"
+        },
+        {
+          "key": "B",
+          "text": "Mamíferos"
+        },
+        {
+          "key": "C",
+          "text": "Aves"
+        },
+        {
+          "key": "D",
+          "text": "Anélidos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los cnidarios poseen una organización nerviosa simple y difusa."
+    },
+    {
+      "id": 29,
+      "sourceId": 120,
+      "used": true,
+      "text": "¿Cuál o cuáles de los siguientes núcleos del tálamo han sido propuestos como responsables de inhibir la actividad de los núcleos talámicos de relevo, actuando como una compuerta que impide la transmisión de señales hacia la corteza cerebral?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los de relevo del grupo anterior."
+        },
+        {
+          "key": "B",
+          "text": "los del grupo de la línea media."
+        },
+        {
+          "key": "C",
+          "text": "el núcleo reticular."
+        },
+        {
+          "key": "D",
+          "text": "los núcleos intralaminares."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo reticular talámico forma un escudo alrededor de los demás núcleos del tálamo y su función, mediante interneuronas inhibitorias (GABAérgicas), es actuar como una 'compuerta' frenando o bloqueando las señales hacia la corteza."
+    },
+    {
+      "id": 30,
+      "sourceId": 41,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    }
+  ]
+}

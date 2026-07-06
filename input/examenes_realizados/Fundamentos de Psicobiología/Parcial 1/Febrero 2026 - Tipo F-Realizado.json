@@ -1,0 +1,158 @@
+{
+  "subject": "Fundamentos de Psicobiología",
+  "type": "UNED - Febrero 2026",
+  "date": "",
+  "description": "",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Además de los cuatro grandes lóbulos cerebrales visibles en la superficie (frontal, parietal, temporal y occipital), existen otros dos lóbulos que no se observan externamente. ¿Cuáles son?",
+      "marked_option": ""
+    },
+    {
+      "id": 2,
+      "text": "Charles Darwin, en su descubrimiento, propone que los pilares que sustentan la evolución de los organismos son:",
+      "marked_option": ""
+    },
+    {
+      "id": 3,
+      "text": "Supongamos una población en la que existen dos tipos de individuos en función de la estrategia de interacción social que despliegan: los halcones y las palomas. Si V=2 (el beneficio de ganar una contienda) y C=20 (el coste que sufre un halcón cuando pierde una contienda) en el contexto del Juego del Conflicto con Halcones y Palomas, ¿qué porcentaje de halcones cabe predecir que habrá en esa población?:",
+      "marked_option": ""
+    },
+    {
+      "id": 4,
+      "text": "Una neurona en reposo mantiene una diferencia de potencial de aproximadamente -70 mV entre el interior y el exterior celular. Este valor se debe principalmente a:",
+      "marked_option": ""
+    },
+    {
+      "id": 5,
+      "text": "Según la psicología evolucionista, ¿cuál es la característica fundamental del Ambiente de Adaptación Evolutiva (AAE) y por qué es relevante?:",
+      "marked_option": ""
+    },
+    {
+      "id": 6,
+      "text": "En una sinapsis química, la llegada del potencial de acción al terminal presináptico provoca la apertura de canales de:",
+      "marked_option": ""
+    },
+    {
+      "id": 7,
+      "text": "Un rasgo poligénico se caracteriza por",
+      "marked_option": ""
+    },
+    {
+      "id": 8,
+      "text": "La figura muestra la relación entre el peso al nacer y la supervivencia a las primeras semanas de vida. ¿Qué tipo de selección podemos deducir de estos datos?",
+      "marked_option": ""
+    },
+    {
+      "id": 9,
+      "text": "¿En qué se basa el principio de la selección por parentesco?:",
+      "marked_option": ""
+    },
+    {
+      "id": 10,
+      "text": "Patricia es una mujer portadora del alelo del daltonismo casada con Antonio, que no está afectado de esa alteración visual. Ambos quieren tener descendientes y le pide consejo genético sabedores de que usted es estudiante de Psicobiología en la UNED. Entre otras cuestiones, quieren saber qué porcentaje de sus posibles nietos (considerados en conjunto e independientemente de que sean mujeres o varones) pudieran ser portadores o sufrir la alteración visual de Patricia, suponiendo que los futuros cónyuges de sus hijos (bien sean mujeres o sean varones) no fueran portadores ni estuvieran afectados. Usted le dice que ese porcentaje es de un:",
+      "marked_option": ""
+    },
+    {
+      "id": 11,
+      "text": "Las vesículas sinápticas liberan su contenido en el espacio sináptico mediante:",
+      "marked_option": ""
+    },
+    {
+      "id": 12,
+      "text": "Aunque la acetilcolina suele producir una respuesta excitadora en la neurona postsináptica, en algunos casos puede causar un efecto inhibidor. ¿De qué depende que la acción de la acetilcolina sea excitadora o inhibidora?:",
+      "marked_option": ""
+    },
+    {
+      "id": 13,
+      "text": "¿Cuál es el principal desafío para identificar genes asociados a rasgos cuantitativos, especialmente conductuales, mediante estudios genéticos?:",
+      "marked_option": ""
+    },
+    {
+      "id": 14,
+      "text": "¿Qué diferencia fundamental existe entre la propagación del potencial de acción en axones mielinizados y amielínicos?:",
+      "marked_option": ""
+    },
+    {
+      "id": 15,
+      "text": "¿A qué sustancia o sustancias es permeable la barrera hematoencefálica?",
+      "marked_option": ""
+    },
+    {
+      "id": 16,
+      "text": "Una aneuploidía en la que los alelos recesivos del cromosoma X se expresan siempre es el síndrome de:",
+      "marked_option": ""
+    },
+    {
+      "id": 17,
+      "text": "La variabilidad genética no explica por sí sola todas las diferencias observadas en una población. ¿Cuál es el otro gran factor que contribuye a esas diferencias?:",
+      "marked_option": ""
+    },
+    {
+      "id": 18,
+      "text": "Los síndromes de Prader-Willi y Angelman:",
+      "marked_option": ""
+    },
+    {
+      "id": 19,
+      "text": "En relación con los oligodendrocitos, ¿cuál de las siguientes afirmaciones describe correctamente su función principal?",
+      "marked_option": ""
+    },
+    {
+      "id": 20,
+      "text": "El proceso de aprendizaje, que ocurre durante un período sensible temprano y que resulta en el establecimiento de un vínculo de seguimiento y reconocimiento con el primer objeto móvil que percibe una cría, se conoce como:",
+      "marked_option": ""
+    },
+    {
+      "id": 21,
+      "text": "Si la correlación en gemelos monocigóticos criados juntos para un rasgo es 0,8 y en gemelos dicigóticos criados juntos es 0,3, ¿cuál es la heredabilidad en sentido amplio?:",
+      "marked_option": ""
+    },
+    {
+      "id": 22,
+      "text": "De entre las siguientes opciones, ¿qué asociación es correcta entre componente neuronal y función?",
+      "marked_option": ""
+    },
+    {
+      "id": 23,
+      "text": "¿Cuál de los siguientes enunciados describe correctamente la Regla de Hamilton en el comportamiento altruista?:",
+      "marked_option": ""
+    },
+    {
+      "id": 24,
+      "text": "La talasemia es un tipo de anemia bastante común en las zonas mediterráneas. Las personas que tiene esta patología sufren con frecuencia depresión por la carga emocional que supone esta enfermedad que exige un gran autocontrol. Se sabe que hay dos modalidades en esta enfermedad: talasemia mayor y talasemia menor. Las personas con talasemia mayor son homocigotas para un gen recesivo (cuyo genotipo vamos a llamar “tt”), mientras que las tienen talasemia menor son heterocigotas (y decimos que su genotipo es Tt). A su vez, las persona que no padecen esta patología tienen el genotipo TT. Por otro lado, de entre los numerosos genes que regulan la aparición de depresión, se sabe que intervienen los que sintetizan el transportador de la serotonina (que tiene dos alelos, denominados “l” y “s”, siendo este último recesivo y pareciendo que está más implicado en la depresión). Si una persona con talasemia menor y heterocigota para los dos alelos del gen del transportador de la serotonina (Ttls) se casa con otra sin talasemia y homocigota para el alelo “s” (TTss) y tienen descendientes, ¿ cuál sería la probabilidad de que esta pareja tuvieran descendientes sin talasemia y con un menor factor de riesgo de depresión relacionado con el transportador de la serotonina?:",
+      "marked_option": ""
+    },
+    {
+      "id": 25,
+      "text": "Los fenómenos de sobredominancia, también conocidos como superioridad del heterocigoto, son un ejemplo de:",
+      "marked_option": ""
+    },
+    {
+      "id": 26,
+      "text": "Según Robert Plomin, en el estudio de la Genética de la Conducta caben tres enfoques:",
+      "marked_option": ""
+    },
+    {
+      "id": 27,
+      "text": "En un estudio sobre vulnerabilidad a alteraciones del sueño tras consumo de cafeína, se analiza un polimorfismo en un gen involucrado en los ciclos circadianos. En una población de 800 sujetos se estima la frecuencia del alelo A en p = 0,35 y se asume equilibrio de Hardy-Weinberg. ¿Cuántos individuos portarán al menos un alelo A?",
+      "marked_option": ""
+    },
+    {
+      "id": 28,
+      "text": "Una de las mayores aportaciones de Santiago Ramón y Cajal fue su teoría neuronal que sostiene que:",
+      "marked_option": ""
+    },
+    {
+      "id": 29,
+      "text": "A la región del ADN denominada promotor en el modelo del operón se une:",
+      "marked_option": ""
+    },
+    {
+      "id": 30,
+      "text": "En el modelo de optimización del forrajeo aplicado a los estorninos que deben decidir la cantidad de comida a llevar al nido en cada viaje, ¿cuál es el factor clave que determina el tamaño óptimo de la carga (el número de larvas)?:",
+      "marked_option": ""
+    }
+  ]
+}

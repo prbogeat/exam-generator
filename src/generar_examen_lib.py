@@ -18,6 +18,8 @@ _PROJECT_ROOT = _Path(__file__).resolve().parent.parent
 os.chdir(_PROJECT_ROOT)
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT
+from exam_db import get_connection, upsert_exam
+from static_exam_catalog import sync_static_exam_catalog
 
 
 def load_json(path: Path) -> Any:
@@ -90,8 +92,8 @@ def convert_options(question: Dict[str, Any]) -> List[Dict[str, str]]:
 def derive_template_path(output_path: Path) -> Path:
     """Deriva la ruta de la plantilla a partir del path de salida del examen generado.
 
-    Ejemplo: out/examenes/psicobiologia/Parcial 1/examen.json
-             → input/examenes_realizados/psicobiologia/Parcial 1/examen.json
+    Ejemplo: out/examenes/Fundamentos de Psicobiología/Parcial 1/examen.json
+             → input/examenes_realizados/Fundamentos de Psicobiología/Parcial 1/examen.json
     """
     # Obtener la asignatura y carpetas intermedias del path de salida
     parts = output_path.parts
@@ -289,13 +291,20 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             output_path = Path(output_path_str)
             save_json(output_path, converted_exam)
 
+            with get_connection() as conn:
+                upsert_exam(conn, converted_exam, source_path=str(output_path))
+
             template_path = derive_template_path(output_path)
             save_json(template_path, template)
+            sync_static_exam_catalog()
         else:
             # Si no se guarda en disco, usar solo el nombre del fichero
             output_path = Path(output_file_name)
             template_stem = Path(output_file_name).stem or "examen"
             template_path = Path(f"{template_stem}-realizado.json")
+
+            with get_connection() as conn:
+                upsert_exam(conn, converted_exam, source_path=str(output_path))
 
         return {
             "success": True,

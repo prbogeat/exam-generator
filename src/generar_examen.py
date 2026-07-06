@@ -15,6 +15,8 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, build_path, get_preset
+from exam_db import get_connection, upsert_exam
+from static_exam_catalog import sync_static_exam_catalog
 
 # PRESETS
 # Configuraciones predefinidas según la asignatura o tipo de examen. Si se define una PRESET, se ignoran los valores individuales de CONFIG.
@@ -148,8 +150,8 @@ def convert_options(question: Dict[str, Any]) -> List[Dict[str, str]]:
 def derive_template_path(output_path: Path, script_dir: Path) -> Path:
     """Deriva la ruta de la plantilla a partir del path de salida del examen generado.
 
-    Ejemplo: out/examenes/psicobiologia/examen.json
-             → input/examenes_realizados/psicobiologia/examen.json
+    Ejemplo: out/examenes/Fundamentos de Psicobiología/examen.json
+             → input/examenes_realizados/Fundamentos de Psicobiología/examen.json
     """
     subject = output_path.parent.name
     return script_dir / "input" / "examenes_realizados" / subject / output_path.name
@@ -270,6 +272,9 @@ def main() -> None:
 
     save_json(output_path, converted_exam)
 
+    with get_connection() as conn:
+        upsert_exam(conn, converted_exam, source_path=str(output_path))
+
     print(f"Examen generado correctamente en: {output_path}")
     print(f"Preguntas convertidas: {len(converted_exam['questions'])}")
 
@@ -281,6 +286,12 @@ def main() -> None:
         template = build_realized_template(converted_exam)
         save_json(template_path, template)
         print(f"Plantilla de examen realizado generada en: {template_path}")
+
+    static_catalog = sync_static_exam_catalog()
+    print(
+        "Catálogo estático actualizado en: "
+        f"{static_catalog['indexPath']} ({static_catalog['count']} examen(es))"
+    )
 
 
 if __name__ == "__main__":
