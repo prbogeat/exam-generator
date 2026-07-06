@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Parcial 1 - Febrero 2024 - Tipo A",
+  "subtitle": "30 Tipo Test - Examen Febrero 2024 - Tipo A",
+  "notice": "Preguntas del examen de Febrero - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Cuál de las siguientes condiciones haría que NO se cumpliera la Ley del Equilibrio de Hardy-Weinberg?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tamaño de la población lo suficientemente grande como para evitar variación de las frecuencias debidas al muestreo;"
+        },
+        {
+          "key": "B",
+          "text": "no se producen movimientos de inmigración ni de emigración;"
+        },
+        {
+          "key": "C",
+          "text": "no hay mutación de un estado alélico a otro;"
+        },
+        {
+          "key": "D",
+          "text": "existe preferencia por el apareamiento con individuos que sean semejantes o distintos con respecto a los alelos en cuestión."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Una de las condiciones fundamentales para que una población se mantenga en equilibrio de Hardy-Weinberg es que los apareamientos sean aleatorios (panmixia). Si existe preferencia o selección por el apareamiento (apareamiento selectivo), las frecuencias genotípicas se alterarán y no se cumplirá la ley."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "¿Cuál de los siguientes rasgos es característico del síndrome de Prader-Willi?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "desarrollo insuficiente de los ovarios y útero;"
+        },
+        {
+          "key": "B",
+          "text": "obesidad, apetito desmedido y discapacidad mental;"
+        },
+        {
+          "key": "C",
+          "text": "ginecomastia y problemas de conducta;"
+        },
+        {
+          "key": "D",
+          "text": "infertilidad y baja estatura."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El síndrome de Prader-Willi (asociado a la pérdida de expresión de genes paternos en el cromosoma 15 por deleción o disomía uniparental materna) se caracteriza fenotípicamente por una hiperfagia compulsiva (apetito desmedido), obesidad severa y diferentes grados de discapacidad intelectual."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "¿Qué conceptos sustentan, según Darwin, el origen de la diversidad orgánica o, lo que es lo mismo, de la evolución de los organismos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "variabilidad, creacionismo y ley del uso y desuso;"
+        },
+        {
+          "key": "B",
+          "text": "variabilidad, herencia y selección natural;"
+        },
+        {
+          "key": "C",
+          "text": "herencia, ley del uso y desuso y variabilidad;"
+        },
+        {
+          "key": "D",
+          "text": "creacionismo y selección artificial."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Teoría de la Evolución de Charles Darwin se asienta sobre tres pilares fundamentales que ocurren de forma natural en las poblaciones: la inmensa variabilidad existente entre los individuos, la herencia biológica de dichas variaciones y la acción de la selección natural sobre ellas."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿Qué estructura permite la comunicación entre los ventrículos laterales y el tercer ventrículo, permitiendo el paso del líquido cefalorraquídeo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "orificio medio;"
+        },
+        {
+          "key": "B",
+          "text": "orificio lateral;"
+        },
+        {
+          "key": "C",
+          "text": "agujero interventricular de Monro;"
+        },
+        {
+          "key": "D",
+          "text": "acueducto de Silvio."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El líquido cefalorraquídeo, sintetizado mayormente en los ventrículos laterales, transcurre y drena hacia el tercer ventrículo a través del agujero interventricular (también conocido históricamente como agujero de Monro)."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "¿Quién desarrolló el método de tinción que permitió analizar con extraordinaria precisión el tejido nervioso y observó la existencia de prolongaciones cilíndricas (axón) y otras más pequeñas (dendritas) en las neuronas?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Santiago Ramón y Cajal;"
+        },
+        {
+          "key": "B",
+          "text": "Camilo Golgi;"
+        },
+        {
+          "key": "C",
+          "text": "Joaquín Sorolla;"
+        },
+        {
+          "key": "D",
+          "text": "Louis-Antoine Ranvier."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Camilo Golgi fue quien desarrolló la técnica de impregnación argéntica ('la reazione nera' o tinción de Golgi) que, al teñir neuronas aisladas de forma completa con todas sus prolongaciones, posibilitó el estudio preciso del tejido nervioso. Posteriormente, Ramón y Cajal la perfeccionó y la aplicó para sentar su Teoría Neuronal."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Considere el caso de una neurona del tronco del encéfalo que integra la información de cinco señales eléctricas en su cono axónico para poder dar una respuesta. Los valores de esas cinco señales son, respectivamente, + 28 mV; -16 mV; + 16 mV; y -8 mV. ¿Qué respuesta dará la neurona?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "una despolarización;"
+        },
+        {
+          "key": "B",
+          "text": "una hiperpolarización;"
+        },
+        {
+          "key": "C",
+          "text": "mantendrá el potencial de reposo;"
+        },
+        {
+          "key": "D",
+          "text": "un potencial postsináptico inhibidor."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El cono axónico realiza una sumación algebraica de los potenciales locales que le llegan. Al sumar los valores (+28) + (-16) + (+16) + (-8), el resultado neto es de +20 mV. Al ser un valor positivo, el efecto global es una despolarización de la membrana."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Durante la profase I de la meiosis, ¿qué consecuencias tiene normalmente el sobrecruzamiento?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "aparición de mutaciones génicas;"
+        },
+        {
+          "key": "B",
+          "text": "pérdida de alelos en los cromosomas homólogos;"
+        },
+        {
+          "key": "C",
+          "text": "recombinación génica entre cromosomas homólogos;"
+        },
+        {
+          "key": "D",
+          "text": "la duplicación de los genes en los cromosomas homólogos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El sobrecruzamiento o entrecruzamiento ('crossing-over') que ocurre en la profase I meiótica produce un intercambio recíproco de segmentos de ADN entre las cromátidas de los cromosomas homólogos, dando como consecuencia directa la recombinación génica (nuevas combinaciones de alelos)."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "El factor representado por el acervo genético de la especie a la que pertenece en el cual se recogen los logros adaptativos de sus predecesores se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "filogenético;"
+        },
+        {
+          "key": "B",
+          "text": "adaptativo;"
+        },
+        {
+          "key": "C",
+          "text": "ontogenético;"
+        },
+        {
+          "key": "D",
+          "text": "epigenético."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El factor filogenético, que constituye las causas lejanas del comportamiento, abarca la historia evolutiva de la especie y está representado por su acervo genético, donde se han ido atesorando todos los logros adaptativos modelados por la selección natural."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "El término potenciales decrecientes puede aplicarse:",
+      "options": [
+        {
+          "key": "A",
+          "text": "principalmente, a las señales eléctricas que se producen, tras una despolarización, en los segmentos mielinizados que hay entre los nódulos de Ranvier;"
+        },
+        {
+          "key": "B",
+          "text": "principalmente, a los potenciales postsinápticos;"
+        },
+        {
+          "key": "C",
+          "text": "principalmente, a los potenciales que se producen en las regiones contiguas al punto de la membrana en el que se ha producido una despolarización en los axones amielínicos;"
+        },
+        {
+          "key": "D",
+          "text": "a lo dicho en las opciones A y B."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los potenciales decrecientes o graduados (conducción pasiva) se dan tanto en los potenciales locales postsinápticos (PEPs y PIPs) que viajan por las dendritas y el soma, como en las corrientes locales que transcurren velozmente por debajo de la vaina de mielina (entre los nódulos de Ranvier)."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "En relación con el cociente de inteligencia (CI), los últimos estudios parecen señalar que la influencia del ambiente compartido es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "mayor que la de los genes;"
+        },
+        {
+          "key": "B",
+          "text": "igual de importante que la varianza genética aditiva;"
+        },
+        {
+          "key": "C",
+          "text": "igual de importante que la heredabilidad;"
+        },
+        {
+          "key": "D",
+          "text": "nula."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las investigaciones en genética cuantitativa muestran que, a medida que aumenta la edad, la influencia del ambiente compartido sobre la varianza del CI desciende drásticamente hasta hacerse prácticamente nula en la etapa adulta, cobrando mayor relevancia la heredabilidad y el ambiente no compartido."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "En relación con las mutaciones y la evolución, se sabe que las primeras tienen:",
+      "options": [
+        {
+          "key": "A",
+          "text": "un carácter postadaptativo;"
+        },
+        {
+          "key": "B",
+          "text": "un carácter preadaptativo;"
+        },
+        {
+          "key": "C",
+          "text": "un carácter preadaptativo y postadaptativo simultaneos;"
+        },
+        {
+          "key": "D",
+          "text": "apenas relación con la evolución de las especies."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las mutaciones aparecen al azar y exhiben un carácter preadaptativo; esto significa que ocurren independientemente y con anterioridad a que el ambiente pueda ejercer una presión selectiva, de modo que la mutación no surge 'para' adaptarse, sino que ya existía como variante cuando las condiciones exigieron esa adaptación."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "La activación de las bombas de sodio-potasio en las membranas de las neuronas se produce:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ante la presencia de sodio en el interior celular;"
+        },
+        {
+          "key": "B",
+          "text": "porque se ha formado ATP;"
+        },
+        {
+          "key": "C",
+          "text": "ante la presencia de potasio en el interior celular;"
+        },
+        {
+          "key": "D",
+          "text": "porque se ha descompuesto un grupo fosfato (PO4) en el interior celular."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La actividad de la bomba electrogénica de Sodio/Potasio (Na+/K+) depende directamente de las concentraciones iónicas locales, activándose o acelerando su ritmo de bombeo fundamentalmente en respuesta a la acumulación y presencia excesiva del catión Sodio (Na+) en el interior celular."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "La propiedad de las membranas de las neuronas que posibilita que puedan acumular cargas eléctricas de un signo determinado en un lado de las membranas y cargas eléctricas de un signo contrario en el otro, se debe al fenómeno de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la fuerza de difusión;"
+        },
+        {
+          "key": "B",
+          "text": "el gradiente electroquímico;"
+        },
+        {
+          "key": "C",
+          "text": "la capacitancia;"
+        },
+        {
+          "key": "D",
+          "text": "la excitabilidad."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A nivel biofísico, la membrana neuronal actúa como un condensador eléctrico. Su propiedad de almacenar o retener cargas opuestas separadas a ambos lados por una bicapa lipídica aislante se define como capacitancia."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Las fibras que controlan los movimientos de los músculos de las extremidades y el tronco cruzan la línea media en la decusación piramidal. ¿Dónde se encuentra esta decusación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en el diencéfalo;"
+        },
+        {
+          "key": "B",
+          "text": "en el mesencéfalo;"
+        },
+        {
+          "key": "C",
+          "text": "en el puente;"
+        },
+        {
+          "key": "D",
+          "text": "en el bulbo raquídeo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las gruesas proyecciones descendentes del sistema motor que conforman las pirámides cruzan la línea media hacia el lado contralateral del cuerpo originando la denominada decusación piramidal, localizada específicamente en la superficie ventral o inferior del bulbo raquídeo (médula oblongada)."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Si en una determinada molécula de ADN, la adenina representa el 18% de todas las bases nitrogenadas, ¿Qué porcentaje habrá de citosina?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "15%;"
+        },
+        {
+          "key": "B",
+          "text": "30%;"
+        },
+        {
+          "key": "C",
+          "text": "32%;"
+        },
+        {
+          "key": "D",
+          "text": "64%."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Siguiendo las reglas de complementariedad de bases de Chargaff, la Adenina se aparea con Timina (A=T), por lo que habrá 18% de T. Sumadas hacen el 36%. El restante 64% se distribuye a partes iguales entre Guanina y Citosina (G=C). Dividiendo 64% entre 2, se obtiene un 32% de citosina."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Supongamos que un rasgo fenotípico está determinado por dos genes (C y D) con dos alelos aditivos cada uno (C1, C2, D1, D2). Los valores que cada alelo aporta al fenotipo son C1=2, C2=1, D1=3, D2=0. Del cruce de dos progenitores genotípicamente heterocigotos para ambos genes ¿qué porcentaje de descendientes se espera que tengan un valor genotípico de 6?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el 75%;"
+        },
+        {
+          "key": "B",
+          "text": "el 50%;"
+        },
+        {
+          "key": "C",
+          "text": "el 25%;"
+        },
+        {
+          "key": "D",
+          "text": "el 15%."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los parentales son C1C2 D1D2. En el gen C, los valores posibles son: C1C1 (4, prob 1/4), C1C2 (3, prob 1/2), C2C2 (2, prob 1/4). En el gen D: D1D1 (6, prob 1/4), D1D2 (3, prob 1/2), D2D2 (0, prob 1/4). Para sumar exactamente 6 unidades al combinarse, la única vía factible es sumar el 3 del heterocigoto C1C2 con el 3 del heterocigoto D1D2. La probabilidad conjunta de heredar ambos genotipos heterocigotos simultáneamente es 1/2 x 1/2 = 1/4, lo que representa el 25%."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con las pautas de acción fija:",
+      "options": [
+        {
+          "key": "A",
+          "text": "son estereotipadas, autorreguladas y con base genética;"
+        },
+        {
+          "key": "B",
+          "text": "se exhiben por todos los miembros de la especie;"
+        },
+        {
+          "key": "C",
+          "text": "algunas de ellas son consumatorias para satisfacer necesidades o impulsos;"
+        },
+        {
+          "key": "D",
+          "text": "todas son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las pautas de acción fija (PAF) se definen conceptualmente como comportamientos innatos y de enorme arraigo genético, que se presentan de un modo fijo y estereotipado, y que gozan de la propiedad de ser autorreguladas (una vez inician prosiguen hasta su fin sin depender del entorno). Nota: la opción B y C tienen matizaciones, pues algunas PAF solo se exhiben por un sexo en concreto, y en realidad TODAS suelen tener un carácter consumatorio."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "La respuesta de lordosis de la rata hembra es un ejemplo paradigmático de conducta propia de la especie en la que están implicados:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los estrógenos;"
+        },
+        {
+          "key": "B",
+          "text": "el hipotálamo;"
+        },
+        {
+          "key": "C",
+          "text": "el sistema límbico;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La lordosis es una Pauta de Acción Fija inducida somáticamente por estímulos pero dependiente del estado hormonal general (estrógenos) que actúan organizando núcleos críticos del encéfalo implicados en la conducta reproductora, como son las regiones del hipotálamo y áreas conectadas del sistema límbico."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "La disciplina que estudia las bases biológicas del comportamiento social y es resultado de la confluencia de la Genética de Poblaciones, la Ecología y la Etología es la:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sociobiología;"
+        },
+        {
+          "key": "B",
+          "text": "Psicología evolucionista;"
+        },
+        {
+          "key": "C",
+          "text": "Neuroetología;"
+        },
+        {
+          "key": "D",
+          "text": "Neuropsicología social."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La Sociobiología es el estudio sistemático de la base biológica y evolutiva que sustenta todos los comportamientos sociales. Se originó apoyándose sobre los cimientos y confluencia teórica de la genética poblacional, el análisis del entorno (Ecología) y el estudio comparado de la conducta animal (Etología)."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "En un programa de cría selectiva se pretende mejorar la capacidad de aprendizaje de una población perros de la raza labrador retriever, la puntuación media en las pruebas de aprendizaje en la población progenitora fue de 86 y la puntuación media en la muestra seleccionada para la reproducción fue de 101. Sabiendo que la heredabilidad de este rasgo en esta población es de 0,60 ¿cuál sería la respuesta de selección esperada en la siguiente generación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "9;"
+        },
+        {
+          "key": "B",
+          "text": "10;"
+        },
+        {
+          "key": "C",
+          "text": "0,4;"
+        },
+        {
+          "key": "D",
+          "text": "6."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Aplicando la ecuación h2 = R / S. El diferencial de selección (S) se halla restando a la media de los seleccionados la media general (101 - 86 = 15). Como conocemos la heredabilidad (h2 = 0,60), la Respuesta de selección (R) será 0,60 * 15 = 9 puntos."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "En relación con la heredabilidad sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "puede calcularse a partir de las correlaciones fenotípicas entre individuos cuyo parentesco genético es conocido;"
+        },
+        {
+          "key": "B",
+          "text": "es la proporción de variabilidad observada en un rasgo fenotípico atribuible a diferencias genéticas;"
+        },
+        {
+          "key": "C",
+          "text": "puede calcularse evaluando el efecto de la cría selectiva entre dos generaciones;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La heredabilidad evalúa qué porción de la varianza total observable se debe a la varianza genética de la muestra (B), pudiendo estimarse estadísticamente cotejando las correlaciones entre parientes como gemelos o hermanos (A), y demostrándose empíricamente por la respuesta al someter al grupo a programas de cría selectiva (C)."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "En el estudio de las causas próximas de la conducta, los estados motivacionales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "representan cambios duraderos e irreversibles en el estado interno de un organismo;"
+        },
+        {
+          "key": "B",
+          "text": "explican la uniformidad en la respuesta de un organismo ante diferentes estímulos;"
+        },
+        {
+          "key": "C",
+          "text": "alteran la probabilidad de determinados tipos de conducta porque modifican la capacidad sensorial y perceptiva del individuo;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son falsas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los estados motivacionales o impulsos internos (como el hambre o el celo) modulan de manera reversible los umbrales de reacción del animal, alterando de forma inminente su capacidad para percibir o mostrarse atraído sensorialmente hacia estímulos que sacien dicha carencia."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "El melanismo industrial es un ejemplo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "selección sexual:"
+        },
+        {
+          "key": "B",
+          "text": "selección natural disruptiva;"
+        },
+        {
+          "key": "C",
+          "text": "selección natural estabilizadora;"
+        },
+        {
+          "key": "D",
+          "text": "selección natural direccional."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El melanismo industrial (como el famoso caso de la mariposa del abedul) es el modelo paradigmático de selección natural direccional, donde el oscurecimiento del hábitat desplaza paulatinamente el éxito poblacional favoreciendo a uno de los extremos del fenotipo de la especie (el alelo melánico) para mimetizarse."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "Durante los períodos refractarios absoluto y relativo, los canales de potasio:",
+      "options": [
+        {
+          "key": "A",
+          "text": "permanecen abiertos en el absoluto, pero cerrados en el relativo;"
+        },
+        {
+          "key": "B",
+          "text": "permanecen cerrados en el absoluto, pero abiertos en el relativo;"
+        },
+        {
+          "key": "C",
+          "text": "permanecen abiertos en ambos periodos;"
+        },
+        {
+          "key": "D",
+          "text": "permanecen cerrados en ambos periodos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Durante el periodo refractario absoluto (que incluye toda la despolarización y la fase descendente temprana) y el refractario relativo (fase de hiperpolarización), las compuertas de los canales de Potasio (K+) dependientes de voltaje se encuentran en estado abierto para repolarizar la membrana y tardan bastante tiempo en volver a cerrarse."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Dentro del ámbito de la conducta humana, ¿con cuál de los siguientes conceptos se relaciona la “Tragedia de los Comunes”?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la Teoría de la Reina Roja;"
+        },
+        {
+          "key": "B",
+          "text": "un modelo de optimización;"
+        },
+        {
+          "key": "C",
+          "text": "el Dilema del Prisionero;"
+        },
+        {
+          "key": "D",
+          "text": "esfuerzo parental."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La 'Tragedia de los Comunes' es una paradoja o marco social que se estudia estrechamente ligado al modelo teórico de la Teoría de Juegos conocido como 'el Dilema del Prisionero', exponiendo las tensiones y el conflicto subyacente entre el beneficio particular del individuo egoísta frente al colapso de los intereses colectivos y la cooperación comunitaria."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Cada nervio espinal está unido a la médula por dos raíces. ¿Qué axones transcurren por las raíces dorsales?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los de las neuronas que controlan la actividad de los músculos esqueléticos;"
+        },
+        {
+          "key": "B",
+          "text": "axones que llevan información de entrada desde los receptores sensoriales de músculos, piel y vísceras;"
+        },
+        {
+          "key": "C",
+          "text": "los axones de la división simpática del sistema nervioso autónomo;"
+        },
+        {
+          "key": "D",
+          "text": "los axones de la división parasimpática del sistema nervioso autónomo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Anatómicamente, las raíces dorsales o posteriores conectadas a la médula espinal son vías estrictamente aferentes y sensoriales. Por ellas transcurren los axones que penetran en el SNC trayendo la información aferente periférica captada por los receptores táctiles, musculares y viscerales."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Qué proporción genotípica se espera en la descendencia de un cruce entre dos individuos heterocigotos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1:1;"
+        },
+        {
+          "key": "B",
+          "text": "2:1;"
+        },
+        {
+          "key": "C",
+          "text": "3:1;"
+        },
+        {
+          "key": "D",
+          "text": "1:2:1."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En la genética mendeliana clásica, el cruce monohíbrido entre dos sujetos con genotipo heterocigoto (Aa x Aa) arroja en la generación filial una segregación probabilística genotípica de 1/4 homocigotos dominantes (AA), 2/4 heterocigotos (Aa) y 1/4 homocigotos recesivos (aa), lo que constituye la proporción de 1:2:1."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Qué efecto se observa en ratones knockout carentes del receptor de serotonina 5-HT1B?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "mayor sociabilidad;"
+        },
+        {
+          "key": "B",
+          "text": "menor tendencia a la lucha;"
+        },
+        {
+          "key": "C",
+          "text": "mayor agresividad;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en A y B es correcto."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En investigaciones sobre los mecanismos genéticos de la agresividad, se descubrió experimentalmente que la obtención de cepas de ratones transgénicos (knockout) a los que se les inactiva concretamente el gen que codifica para el receptor 5-HT1B de la serotonina desarrollan como efecto un fenotipo comportamental de hostilidad y mayor agresividad o impulsividad frente a intrusos."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "¿Cuál de los siguientes tipos celulares NO se puede encontrar en el SNC?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las neuronas;"
+        },
+        {
+          "key": "B",
+          "text": "los astrocitos;"
+        },
+        {
+          "key": "C",
+          "text": "los oligodendrocitos;"
+        },
+        {
+          "key": "D",
+          "text": "las células de Schwan."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las células de Schwann (o neurolemocitos) son el tipo de neuroglía formadora de la vaina de mielina exclusiva del Sistema Nervioso Periférico (SNP). En el Sistema Nervioso Central (SNC), esta misma tarea de aislamiento axónico la desempeñan análogamente los oligodendrocitos."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Cuál de los siguientes conceptos NO está estrechamente relacionado con la existencia de un periodo crítico?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la impronta filial;"
+        },
+        {
+          "key": "B",
+          "text": "la impronta sexual;"
+        },
+        {
+          "key": "C",
+          "text": "el efecto activacional de las hormonas en relación con la conducta sexual;"
+        },
+        {
+          "key": "D",
+          "text": "el efecto organizacional de las hormonas en relación con la conducta sexual."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los efectos activacionales de las hormonas esteroideas son temporales, se producen en la etapa adulta y actúan de modo transitorio modificando la conducta sexual. Por el contrario, los efectos organizacionales de las hormonas o los procesos de impronta filial y sexual dependen de manera estricta e irreversible de ventanas temporales tempranas de gran plasticidad conocidas como 'periodos críticos'."
+    }
+  ]
+}

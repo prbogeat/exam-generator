@@ -2,11 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>NotebookLM local → Generador JSON</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/exam-shared.css" />
   <link rel="stylesheet" href="assets/css/notebooklm.css" />
+  <script src="assets/js/runtime-access.js"></script>
+  <script>
+    (async function guardNotebooklmPage() {
+      if (!window.AppRuntimeAccess) {
+        return;
+      }
+
+      const canUseGenerators = await window.AppRuntimeAccess.canUseGenerators();
+      if (!canUseGenerators) {
+        window.location.replace("index.html");
+      }
+    })();
+  </script>
 </head>
 <body>
 <nav class="admin-nav">
@@ -97,6 +110,11 @@
       </div>
 
       <div class="config-span-2">
+        <label class="field-label" for="outputFileName">Nombre del fichero JSON</label>
+        <input id="outputFileName" type="text" placeholder="Ej: septiembre-2026-tipo-a.json" />
+      </div>
+
+      <div class="config-span-2">
         <label class="field-label" for="subtitle">Subtítulo</label>
         <input id="subtitle" type="text" placeholder="Ej: 30 Tipo Test" />
       </div>
@@ -134,6 +152,15 @@
         </select>
       </div>
 
+      <div class="config-span-2 publication-row">
+        <label class="field-label">Publicación en catálogo estático</label>
+        <div class="actions-row publication-actions">
+          <button id="pickCatalogFolderBtn" type="button">Elegir docs/assets/json</button>
+          <button id="clearCatalogFolderBtn" type="button">Quitar carpeta</button>
+        </div>
+        <small id="catalogOutputHint" class="hint">Sin carpeta de catálogo elegida. Selecciona localmente docs/assets/json para publicar y regenerar el índice.</small>
+      </div>
+
       <div class="config-span-2 actions-row config-actions">
         <button id="generateBtn" class="primary">Generar examen</button>
         <button id="resetBtn">Limpiar</button>
@@ -166,6 +193,7 @@
   </section>
 </main>
 
+<script src="assets/js/static-catalog.js"></script>
 <script src="assets/js/notebooklm.js"></script>
 </body>
 </html>

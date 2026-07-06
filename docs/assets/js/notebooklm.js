@@ -4,6 +4,7 @@ const dom = {
   sourceText: document.getElementById("sourceText"),
   subjectTitle: document.getElementById("subjectTitle"),
   examTitle: document.getElementById("examTitle"),
+  outputFileName: document.getElementById("outputFileName"),
   subtitle: document.getElementById("subtitle"),
   notice: document.getElementById("notice"),
   questionCount: document.getElementById("questionCount"),
@@ -11,6 +12,9 @@ const dom = {
   wrongAnswersPerDiscountedCorrect: document.getElementById("wrongAnswersPerDiscountedCorrect"),
   timeLimitMinutes: document.getElementById("timeLimitMinutes"),
   randomSelection: document.getElementById("randomSelection"),
+  pickCatalogFolderBtn: document.getElementById("pickCatalogFolderBtn"),
+  clearCatalogFolderBtn: document.getElementById("clearCatalogFolderBtn"),
+  catalogOutputHint: document.getElementById("catalogOutputHint"),
   generateBtn: document.getElementById("generateBtn"),
   resetBtn: document.getElementById("resetBtn"),
   copyJsonBtn: document.getElementById("copyJsonBtn"),
@@ -25,6 +29,8 @@ const state = {
   generatedJson: null,
   history: [],
   presets: {},
+  selectedPreset: null,
+  catalogRootHandle: null,
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -36,6 +42,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 function bindEvents() {
   dom.presetSelector.addEventListener("change", handlePresetChange);
   dom.sourceFileInput.addEventListener("change", handleSourceFile);
+  dom.pickCatalogFolderBtn.addEventListener("click", pickCatalogOutputFolder);
+  dom.clearCatalogFolderBtn.addEventListener("click", clearCatalogOutputFolder);
   dom.generateBtn.addEventListener("click", generateQuestionBank);
   dom.resetBtn.addEventListener("click", resetForm);
   dom.copyJsonBtn.addEventListener("click", copyGeneratedJson);
@@ -70,11 +78,19 @@ function populatePresetSelector() {
 function handlePresetChange(event) {
   const preset = state.presets[event.target.value];
   if (!preset) {
+    state.selectedPreset = null;
     return;
   }
 
+  state.selectedPreset = preset;
+
   dom.subjectTitle.value = preset.subjectTitle || "";
   dom.examTitle.value = preset.examTitle || "";
+  dom.outputFileName.value = window.StaticExamCatalog
+    ? window.StaticExamCatalog.normalizeOutputFileName(
+        preset.output_path_parts?.[preset.output_path_parts.length - 1] || preset.examTitle || "examen.json"
+      )
+    : "examen.json";
   dom.subtitle.value = preset.subtitle || "";
   dom.notice.value = preset.notice || "";
   dom.questionCount.value = preset.numberOfQuestions || preset.questionCount || "30";
@@ -89,6 +105,7 @@ function handlePresetChange(event) {
 function seedDefaults() {
   dom.subjectTitle.value = "Fundamentos de Psicobiología";
   dom.examTitle.value = "Banco desde NotebookLM";
+  dom.outputFileName.value = "banco-desde-notebooklm.json";
   dom.subtitle.value = "Banco de preguntas";
   dom.notice.value = "Generado a partir de la salida estructurada de NotebookLM.";
   dom.questionCount.value = "30";
@@ -98,7 +115,37 @@ function seedDefaults() {
   dom.randomSelection.value = "no";
   dom.presetSelector.value = "";
   updateSourcePlaceholder();
+  syncCatalogOutputHint();
   renderConversation();
+}
+
+function syncCatalogOutputHint() {
+  dom.catalogOutputHint.textContent = window.StaticExamCatalog
+    ? window.StaticExamCatalog.buildCatalogHint(state.catalogRootHandle)
+    : "Sin carpeta de catálogo elegida.";
+}
+
+async function pickCatalogOutputFolder() {
+  if (!window.StaticExamCatalog || !window.StaticExamCatalog.supportsDirectoryPicker()) {
+    setStatus("Este navegador no permite elegir carpetas locales. No se puede publicar el catálogo estático desde aquí.", "neutral");
+    return;
+  }
+
+  try {
+    state.catalogRootHandle = await window.showDirectoryPicker({ mode: "readwrite" });
+    syncCatalogOutputHint();
+    setStatus(`Carpeta de catálogo seleccionada: ${state.catalogRootHandle.name}`, "success");
+  } catch (error) {
+    if (error && error.name !== "AbortError") {
+      setStatus(`No se pudo elegir la carpeta del catálogo: ${error.message}`, "error");
+    }
+  }
+}
+
+function clearCatalogOutputFolder() {
+  state.catalogRootHandle = null;
+  syncCatalogOutputHint();
+  setStatus("Se quitó la carpeta de catálogo. Ya no se publicarán exámenes automáticamente.", "neutral");
 }
 
 async function handleSourceFile(event) {
@@ -122,8 +169,10 @@ function resetForm() {
   dom.presetSelector.value = "";
   dom.sourceFileInput.value = "";
   dom.sourceText.value = "";
+  dom.outputFileName.value = "banco-desde-notebooklm.json";
   state.generatedJson = null;
   state.history = [];
+  state.selectedPreset = null;
   dom.jsonPreview.textContent = "Esperando generación...";
   dom.copyJsonBtn.disabled = true;
   dom.downloadJsonBtn.disabled = true;
@@ -170,6 +219,9 @@ function buildConfig() {
   return {
     subjectTitle: dom.subjectTitle.value.trim(),
     examTitle: dom.examTitle.value.trim(),
+    outputFileName: window.StaticExamCatalog
+      ? window.StaticExamCatalog.normalizeOutputFileName(dom.outputFileName.value, dom.examTitle.value || "examen.json")
+      : (dom.outputFileName.value || "examen.json").trim(),
     subtitle: dom.subtitle.value.trim(),
     notice: dom.notice.value.trim(),
     questionCount: normalizeInt(dom.questionCount.value, 30),
@@ -180,7 +232,7 @@ function buildConfig() {
   };
 }
 
-function generateQuestionBank() {
+async function generateQuestionBank() {
   const config = buildConfig();
   const sourceText = dom.sourceText.value.trim();
 
@@ -202,16 +254,33 @@ function generateQuestionBank() {
 
   const selectedQuestions = selectQuestions(parsed.questions, config.questionCount, config.randomSelection);
   const examJson = buildExamJson(selectedQuestions, config);
+  const reportBlocks = [`${selectedQuestions.length} preguntas convertidas al formato final del examen.`];
 
   state.generatedJson = examJson;
   state.history.push({ role: "user", content: sourceText.slice(0, 1200) });
   state.history.push({ role: "assistant", content: `${selectedQuestions.length} preguntas convertidas al formato final del examen.` });
   renderConversation();
 
-  dom.jsonPreview.textContent = JSON.stringify(examJson, null, 2);
+  if (state.catalogRootHandle && window.StaticExamCatalog) {
+    try {
+      const published = await window.StaticExamCatalog.publishExamToCatalog(state.catalogRootHandle, examJson, {
+        preset: state.selectedPreset,
+        subjectTitle: config.subjectTitle,
+        examTitle: config.examTitle,
+        outputFileName: config.outputFileName,
+      });
+      state.generatedJson = published.normalizedExam;
+      reportBlocks.push(`Publicado en catálogo: ${published.relativePath}`);
+      reportBlocks.push(`Índice actualizado: ${published.count} examen(es)`);
+    } catch (error) {
+      reportBlocks.push(`Aviso: no se pudo publicar en el catálogo estático: ${error.message}`);
+    }
+  }
+
+  dom.jsonPreview.textContent = JSON.stringify(state.generatedJson, null, 2);
   dom.copyJsonBtn.disabled = false;
   dom.downloadJsonBtn.disabled = false;
-  setStatus(`Examen generado correctamente: ${selectedQuestions.length} preguntas.`, "success");
+  setStatus(`Examen generado correctamente.\n\n${reportBlocks.join("\n")}`, "success");
 }
 
 function parseNotebookOutput(text) {
@@ -550,7 +619,7 @@ function downloadGeneratedJson() {
     return;
   }
 
-  const fileName = `${(dom.examTitle.value || "banco-preguntas").trim().replace(/\s+/g, "-").toLowerCase()}.json`;
+  const fileName = buildConfig().outputFileName;
   const blob = new Blob([JSON.stringify(state.generatedJson, null, 2)], { type: "application/json;charset=utf-8" });
   const url = URL.createObjectURL(blob);
 

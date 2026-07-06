@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 4",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Qué tipo de célula inmunitaria reconoce antígenos específicos, pero solo con la ayuda de células presentadoras de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Los linfocitos B."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La inmunidad mediada por células está a cargo de los linfocitos T, los cuales solo se activan y reconocen a los antígenos invasores si éstos son exhibidos previamente en la superficie de células presentadoras de antígenos."
+    },
+    {
+      "id": 2,
+      "sourceId": 42,
+      "used": true,
+      "text": "¿Dónde se localizan principalmente los cuerpos neuronales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustancia gris"
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca"
+        },
+        {
+          "key": "C",
+          "text": "Meninges"
+        },
+        {
+          "key": "D",
+          "text": "Ventrículos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sustancia gris contiene somas neuronales y sinapsis."
+    },
+    {
+      "id": 3,
+      "sourceId": 74,
+      "used": true,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos."
+    },
+    {
+      "id": 4,
+      "sourceId": 19,
+      "used": true,
+      "text": "¿Qué neurotransmisor liberan las neuronas preganglionares simpáticas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina"
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina"
+        },
+        {
+          "key": "C",
+          "text": "Dopamina"
+        },
+        {
+          "key": "D",
+          "text": "GABA"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las neuronas preganglionares del SNA son colinérgicas."
+    },
+    {
+      "id": 5,
+      "sourceId": 20,
+      "used": true,
+      "text": "Los receptores cutáneos que actúan como nociceptores son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los corpúsculos de Ruffini."
+        },
+        {
+          "key": "B",
+          "text": "los corpúsculos de Meissner."
+        },
+        {
+          "key": "C",
+          "text": "las terminaciones nerviosas libres."
+        },
+        {
+          "key": "D",
+          "text": "los discos de Merkel."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los nociceptores, que detectan señales de dolor, están formados por terminaciones nerviosas libres no encapsuladas."
+    },
+    {
+      "id": 6,
+      "sourceId": 72,
+      "used": true,
+      "text": "¿Dónde se localizan principalmente los cuerpos neuronales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustancia gris"
+        },
+        {
+          "key": "B",
+          "text": "Sustancia blanca"
+        },
+        {
+          "key": "C",
+          "text": "Meninges"
+        },
+        {
+          "key": "D",
+          "text": "Ventrículos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sustancia gris contiene somas neuronales y sinapsis."
+    },
+    {
+      "id": 7,
+      "sourceId": 21,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    },
+    {
+      "id": 8,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos."
+    },
+    {
+      "id": 9,
+      "sourceId": 42,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas se sintetizan en la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hormona antidiurética."
+        },
+        {
+          "key": "B",
+          "text": "las somatomedinas."
+        },
+        {
+          "key": "C",
+          "text": "la melatonina."
+        },
+        {
+          "key": "D",
+          "text": "la noradrenalina."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La glándula pineal o epífisis es una pequeña estructura endocrina en el diencéfalo responsable de segregar la hormona melatonina en periodos de oscuridad, contribuyendo a la regulación de los ritmos circadianos."
+    },
+    {
+      "id": 10,
+      "sourceId": 171,
+      "used": true,
+      "text": "En la psicobiología del sistema olfatorio humano, cuando se presentan casos de agnosia olfativa grave, los pacientes:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sufren alteraciones de umbral por daño en la mucosa y no perciben nada."
+        },
+        {
+          "key": "B",
+          "text": "Muestran daño en las vías simpáticas nasales."
+        },
+        {
+          "key": "C",
+          "text": "Perciben los olores a nivel de sensación periférica, pero debido a un daño cortical superior no pueden identificarlos o designar qué huelen."
+        },
+        {
+          "key": "D",
+          "text": "Pierden solo el recuerdo a largo plazo pero conservan la capacidad de clasificar el olor de inmediato."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La agnosia es un defecto del procesamiento de asociación, no primario. El receptor huele perfectamente y la señal llega al cerebro, pero el paciente es incapaz de integrar cognitivamente esa información para dotarla de significado."
+    },
+    {
+      "id": 11,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Qué neurotransmisor liberan las neuronas preganglionares simpáticas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Noradrenalina"
+        },
+        {
+          "key": "B",
+          "text": "Acetilcolina"
+        },
+        {
+          "key": "C",
+          "text": "Dopamina"
+        },
+        {
+          "key": "D",
+          "text": "GABA"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las neuronas preganglionares del SNA son colinérgicas."
+    },
+    {
+      "id": 12,
+      "sourceId": 79,
+      "used": true,
+      "text": "En lo referente al origen y la evolución, el proceso de encefalización:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Parece obedecer a un patrón general de regionalización del sistema nervioso común a todos los animales con simetría bilateral."
+        },
+        {
+          "key": "B",
+          "text": "Está presente desde los patrones de organización de tejido nervioso más primitivos, como las redes difusas."
+        },
+        {
+          "key": "C",
+          "text": "No está asociado en absoluto a la organización ganglionar del tejido nervioso."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La encefalización tiene sus raíces homólogas y genéticas (mediadas por genes Hox) en un plan arquitectónico compartido por casi todos los filos animales que presentan una simetría bilateral."
+    },
+    {
+      "id": 13,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales."
+    },
+    {
+      "id": 14,
+      "sourceId": 24,
+      "used": true,
+      "text": "¿Qué hormona secreta la glándula pineal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melatonina"
+        },
+        {
+          "key": "B",
+          "text": "Cortisol"
+        },
+        {
+          "key": "C",
+          "text": "Tiroxina"
+        },
+        {
+          "key": "D",
+          "text": "Prolactina"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La melatonina regula ritmos circadianos."
+    },
+    {
+      "id": 15,
+      "sourceId": 48,
+      "used": true,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales."
+    },
+    {
+      "id": 16,
+      "sourceId": 44,
+      "used": true,
+      "text": "De las áreas corticales implicadas en el control motor, la que tiene como función principal seleccionar la estrategia más adecuada para ejecutar el movimiento en función de la experiencia y tomar la decisión de iniciar el movimiento es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la corteza parietal posterior."
+        },
+        {
+          "key": "B",
+          "text": "la corteza prefrontal dorsolateral."
+        },
+        {
+          "key": "C",
+          "text": "la corteza premotora."
+        },
+        {
+          "key": "D",
+          "text": "el área motora suplementaria."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La corteza prefrontal dorsolateral representa el nivel de mayor jerarquía cognitiva motora; evalúa y planifica utilizando experiencias pasadas para decidir cuándo, cómo y si es apropiado iniciar un movimiento voluntario."
+    },
+    {
+      "id": 17,
+      "sourceId": 140,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe correctamente la organización jerárquica y funcional de la corteza auditiva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El paracinturón auditivo proyecta directamente a la corteza auditiva primaria y no recibe información talámica."
+        },
+        {
+          "key": "B",
+          "text": "El cinturón auditivo constituye la principal entrada directa desde el núcleo geniculado medial."
+        },
+        {
+          "key": "C",
+          "text": "La corteza auditiva primaria en la circunvolución de Heschl recibe aferencias del núcleo geniculado medial."
+        },
+        {
+          "key": "D",
+          "text": "La corteza auditiva primaria se localiza en el paracinturón."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El procesamiento cortical auditivo inicial comienza cuando las proyecciones del núcleo geniculado medial del tálamo alcanzan y hacen sinapsis directa sobre la corteza auditiva primaria, ubicada en las circunvoluciones transversas de Heschl."
+    },
+    {
+      "id": 18,
+      "sourceId": 7,
+      "used": true,
+      "text": "¿Qué receptor cutáneo detecta tacto fino?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corpúsculo de Meissner"
+        },
+        {
+          "key": "B",
+          "text": "Huso muscular"
+        },
+        {
+          "key": "C",
+          "text": "Órgano tendinoso"
+        },
+        {
+          "key": "D",
+          "text": "Bastón"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los corpúsculos de Meissner participan en tacto discriminativo."
+    },
+    {
+      "id": 19,
+      "sourceId": 53,
+      "used": true,
+      "text": "¿Qué ion es el principal responsable de la fase ascendente del potencial de acción?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloro"
+        },
+        {
+          "key": "B",
+          "text": "Calcio"
+        },
+        {
+          "key": "C",
+          "text": "Sodio"
+        },
+        {
+          "key": "D",
+          "text": "Potasio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La entrada masiva de sodio despolariza la membrana."
+    },
+    {
+      "id": 20,
+      "sourceId": 91,
+      "used": true,
+      "text": "¿Qué estructura origina la mayor parte del sistema nervioso periférico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Placa basal"
+        },
+        {
+          "key": "B",
+          "text": "Cresta neural"
+        },
+        {
+          "key": "C",
+          "text": "Notocorda"
+        },
+        {
+          "key": "D",
+          "text": "Mesodermo"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La cresta neural origina ganglios sensitivos, autónomos y células de Schwann."
+    },
+    {
+      "id": 21,
+      "sourceId": 166,
+      "used": true,
+      "text": "Un microorganismo consigue refugiarse dentro de las células del huésped evadiendo los anticuerpos. ¿Qué componente del sistema inmune específico es ESENCIAL para detectarlo y destruirlo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los linfocitos T, que reconocen fragmentos del antígeno exhibidos por las proteínas CMH."
+        },
+        {
+          "key": "B",
+          "text": "Los macrófagos inespecíficos, que fagocitan sin necesidad de ningún reconocimiento."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos B y los anticuerpos solubles de alta afinidad."
+        },
+        {
+          "key": "D",
+          "text": "El sistema plasmático del complemento."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los virus y bacterias intracelulares se esconden de los anticuerpos (que patrullan líquidos libres). Para eliminarlos, se requiere la inmunidad celular: los linfocitos T revisan si las proteínas del CMH asomadas en la membrana celular muestran trozos del patógeno escondido para así ordenar la muerte de esa célula."
+    },
+    {
+      "id": 22,
+      "sourceId": 137,
+      "used": true,
+      "text": "La hipótesis más plausible para explicar el elevado cociente de encefalización de ballenas y delfines se halla en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La ecolocalización."
+        },
+        {
+          "key": "B",
+          "text": "La organización social."
+        },
+        {
+          "key": "C",
+          "text": "El lenguaje."
+        },
+        {
+          "key": "D",
+          "text": "Un ecosistema tridimensional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La adaptación al medio acuático implicó la sustitución de claves visuales y olfativas por señales acústicas de alta frecuencia para navegar y cazar (ecolocalización), lo cual provocó una enorme expansión de las áreas auditivas y un gran aumento de su cociente de encefalización."
+    },
+    {
+      "id": 23,
+      "sourceId": 201,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas, cuyos niveles aumentan gradualmente en las mujeres durante la pubertad, promueve la aparición de los caracteres sexuales secundarios?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hormona luteinizante."
+        },
+        {
+          "key": "B",
+          "text": "la progesterona."
+        },
+        {
+          "key": "C",
+          "text": "la hormona foliculoestimulante."
+        },
+        {
+          "key": "D",
+          "text": "los estrógenos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La secreción abundante de estrógenos (como el estradiol) desde los ovarios es el interruptor hormonal biológico que desencadena todos los cambios morfológicos que conocemos como fenotipo femenino secundario en la pubertad."
+    },
+    {
+      "id": 24,
+      "sourceId": 58,
+      "used": true,
+      "text": "¿Qué hormona se produce principalmente en la zona glomerular de la corteza suprarrenal y está involucrada en la regulación de la concentración de iones en sangre?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cortisol."
+        },
+        {
+          "key": "B",
+          "text": "la corticosterona."
+        },
+        {
+          "key": "C",
+          "text": "la aldosterona."
+        },
+        {
+          "key": "D",
+          "text": "la testosterona."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La zona externa de la corteza suprarrenal (glomerular) secreta mineralocorticoides, de los cuales el más importante es la aldosterona, la cual retiene iones de sodio y favorece la excreción del potasio en los riñones."
+    },
+    {
+      "id": 25,
+      "sourceId": 88,
+      "used": true,
+      "text": "¿Cuántas capas posee la neocorteza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La neocorteza presenta seis capas principales."
+    },
+    {
+      "id": 26,
+      "sourceId": 81,
+      "used": true,
+      "text": "Una premisa fundamental de la psiconeuroinmunología es la de considerar que las interacciones entre el sistema endocrino, el sistema inmune, el nervioso y la conducta se realizan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bidireccionalmente, influyéndose mutuamente."
+        },
+        {
+          "key": "B",
+          "text": "Siguiendo siempre una cadena rígida: sistema nervioso -> sistema endocrino -> sistema inmune -> conducta."
+        },
+        {
+          "key": "C",
+          "text": "Siguiendo la cadena: sistema endocrino -> sistema nervioso -> sistema inmune -> conducta."
+        },
+        {
+          "key": "D",
+          "text": "Unidireccionalmente, del SN al sistema inmunitario exclusivamente."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El postulado base de esta área de estudio es la bidireccionalidad: el cerebro influye en la inmunidad a través de vías neuroendocrinas y las citocinas inmunitarias viajan hacia el cerebro modificando la neuroquímica y la conducta."
+    },
+    {
+      "id": 27,
+      "sourceId": 80,
+      "used": true,
+      "text": "La unión de acetilcolina a sus receptores en las fibras musculares provoca la apertura de canales iónicos que generan una despolarización local. ¿Qué nombre recibe esta despolarización?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Potencial postsináptico excitatorio."
+        },
+        {
+          "key": "B",
+          "text": "Potencial postsináptico inhibitorio."
+        },
+        {
+          "key": "C",
+          "text": "Potencial de placa terminal."
+        },
+        {
+          "key": "D",
+          "text": "Potencial de despolarización muscular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En la sinapsis de la unión neuromuscular, la despolarización inicial generada por la entrada de iones tras la unión de la ACh a sus receptores no se llama PEP, sino que recibe el nombre de potencial de placa terminal."
+    },
+    {
+      "id": 28,
+      "sourceId": 63,
+      "used": true,
+      "text": "La determinación del neuroectodermo ocurre específicamente durante el proceso embrionario conocido como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Segmentación del tubo neural."
+        },
+        {
+          "key": "B",
+          "text": "Formación y diferenciación de los somitas."
+        },
+        {
+          "key": "C",
+          "text": "Inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "Migración de las células de la cresta neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neuroectodermo (tejido precursor del sistema nervioso) queda determinado durante la inducción neural, cuando señales procedentes de la notocorda inducen la diferenciación de una parte del ectodermo que está encima."
+    },
+    {
+      "id": 29,
+      "sourceId": 203,
+      "used": true,
+      "text": "¿Cómo se denomina al proceso biológico que realizan los receptores sensoriales para transformar las diferentes modalidades energéticas ambientales en actividad eléctrica?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sensibilización sensorial."
+        },
+        {
+          "key": "B",
+          "text": "transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "potencial transformador."
+        },
+        {
+          "key": "D",
+          "text": "líneas marcadas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Se denomina transducción al proceso fisiológico único en el que un receptor es capaz de captar energía (luz, calor, presión mecánica) y traducirla a cambios en el potencial de su membrana."
+    },
+    {
+      "id": 30,
+      "sourceId": 70,
+      "used": true,
+      "text": "¿Qué grupo presenta una red nerviosa difusa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cnidarios"
+        },
+        {
+          "key": "B",
+          "text": "Mamíferos"
+        },
+        {
+          "key": "C",
+          "text": "Aves"
+        },
+        {
+          "key": "D",
+          "text": "Anélidos"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los cnidarios poseen una organización nerviosa simple y difusa."
+    }
+  ]
+}

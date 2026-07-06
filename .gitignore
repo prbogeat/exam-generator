@@ -1,7 +1,10 @@
 .venv/*
 .vscode/*
+!.vscode/tasks.json
 .DS_Store
 __pycache__/
 *.pyc
 *.pyo
 .env
+out/db/
+.venv-pg/

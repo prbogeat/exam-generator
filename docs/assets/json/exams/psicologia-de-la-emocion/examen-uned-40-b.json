@@ -1,0 +1,735 @@
+{
+  "subjectTitle": "Psicología de la Emoción",
+  "examTitle": "UNED - 40 Tipo B",
+  "subtitle": "40 Tipo B",
+  "totalQuestions": 40,
+  "notice": "Preguntas elegidas por copilot",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 2.0,
+    "formulaTip": "[(A - E / 2) / 40] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 177,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, una de las funciones que cumple el córtex orbitofrontal en la respuesta emocional es controlar la activación del sistema nervioso autónomo asociada a acontecimientos de valor afectivo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 177: El córtex orbitofrontal integra la cognición y la emoción, ejerciendo un control inhibitorio y regulador sobre los centros autonómicos subcorticales."
+    },
+    {
+      "id": 2,
+      "sourceId": 120,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el antecedente necesario que pone en marcha de forma inmediata el proceso emocional es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La conceptualización lingüística abstracta del entorno social."
+        },
+        {
+          "key": "B",
+          "text": "La percepción de un cambio en las condiciones estimulares tanto externas como internas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 120: Cualquier alteración o modificación estimular detectada por el organismo actúa como detonante primario del procesamiento emocional."
+    },
+    {
+      "id": 3,
+      "sourceId": 154,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, indique la estrategia de investigación utilizada por Smith y Lazarus (1993) para validar las dimensiones de valoración emocional:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Medir la intensidad de excitación residual de una situación previa en la situación presente."
+        },
+        {
+          "key": "B",
+          "text": "Demanda de respuestas imaginadas ante narraciones de situaciones emocionales."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 154: Smith y Lazarus emplearon viñetas o escenarios hipotéticos narrados para evaluar cómo las distintas configuraciones de appraisal determinan las respuestas emocionales."
+    },
+    {
+      "id": 4,
+      "sourceId": 75,
+      "used": true,
+      "text": "Considerando las directrices del manual de la asignatura, las emociones son procesos que se activan cada vez que nuestro aparato psíquico detecta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Algún cambio significativo para los intereses y bienestar del individuo."
+        },
+        {
+          "key": "B",
+          "text": "Algún cambio físico puramente mecánico e irrelevante en el entorno externo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 75: El proceso emocional se gatilla ante la detección de estímulos evaluados como relevantes para las metas, adaptación o bienestar del sujeto."
+    },
+    {
+      "id": 5,
+      "sourceId": 205,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, en el modelo de inteligencia emocional de Mayer y Salovey, las habilidades vinculadas con la regulación de la emoción facilitan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La interpretación de silogismos lógicos complejos."
+        },
+        {
+          "key": "B",
+          "text": "La apertura controlada a los sentimientos tanto placenteros como desagradables."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 205: La regulación emocional en este modelo implica modular las emociones propias y ajenas, promoviendo el crecimiento a través de la aceptación adaptativa del afecto."
+    },
+    {
+      "id": 6,
+      "sourceId": 24,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, el concepto de activación general inespecífica o arousal surgió históricamente a partir de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los estudios de Cannon sobre la respuesta de emergencia simpática ante el peligro."
+        },
+        {
+          "key": "B",
+          "text": "La formulación periférica estricta de William James."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 24: Walter Cannon identificó la movilización energética masiva y uniforme del sistema nervioso simpático, sentando las bases conceptuales del arousal."
+    },
+    {
+      "id": 7,
+      "sourceId": 202,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, la significación relevante de un estímulo concreto evoca en los individuos un estado de activación que les permite adaptarse a las necesidades de su entorno:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 202: La relevancia activa recursos atencionales y somáticos esenciales para preparar respuestas conductuales adaptativas efectivas."
+    },
+    {
+      "id": 8,
+      "sourceId": 152,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, el estado de ansiedad es la tendencia a reaccionar de forma ansiosa con independencia de la situación:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 152: El estado de ansiedad es una reacción transitoria y situacional, mientras que la tendencia estable e independiente de la situación es el rasgo de ansiedad."
+    },
+    {
+      "id": 9,
+      "sourceId": 25,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, en el modelo de inteligencia emocional de Mayer y Salovey, las habilidades vinculadas con la regulación de la emoción facilitan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La interpretación de silogismos lógicos complejos."
+        },
+        {
+          "key": "B",
+          "text": "La apertura controlada a los sentimientos tanto placenteros como desagradables."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 25: La regulación emocional en este modelo implica modular las emociones propias y ajenas, promoviendo el crecimiento a través de la aceptación adaptativa del afecto."
+    },
+    {
+      "id": 10,
+      "sourceId": 224,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, en el contexto de las teorías de la activación, ¿qué supone la existencia de una única dimensión de activación general del organismo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Existen patrones específicos de activación vinculados a cada emoción."
+        },
+        {
+          "key": "B",
+          "text": "El grado de activación está relacionado únicamente con la disposición del organismo para la acción."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 224: Las teorías unidimensionales de la activación postulan un continuo inespecífico de energía corporal (arousal) que prepara globalmente al organismo para actuar."
+    },
+    {
+      "id": 11,
+      "sourceId": 212,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, el estado de ansiedad es la tendencia a reaccionar de forma ansiosa con independencia de la situación:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 212: El estado de ansiedad es una reacción transitoria y situacional, mientras que la tendencia estable e independiente de la situación es el rasgo de ansiedad."
+    },
+    {
+      "id": 12,
+      "sourceId": 114,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el concepto de activación general inespecífica o arousal surgió históricamente a partir de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los estudios de Cannon sobre la respuesta de emergencia simpática ante el peligro."
+        },
+        {
+          "key": "B",
+          "text": "La formulación periférica estricta de William James."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 114: Walter Cannon identificó la movilización energética masiva y uniforme del sistema nervioso simpático, sentando las bases conceptuales del arousal."
+    },
+    {
+      "id": 13,
+      "sourceId": 213,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, en el modelo de investigación en emociones de Arne Öhman es destacable que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Diferencia entre mecanismos automáticos y controlados vinculados a la emoción."
+        },
+        {
+          "key": "B",
+          "text": "Trabaja con el paradigma del condicionamiento instrumental skinneriano."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 213: Öhman defiende un modelo donde coexisten un procesamiento inconsciente/automático rápido (vía subcortical) y un procesamiento controlado/consciente cortical."
+    },
+    {
+      "id": 14,
+      "sourceId": 117,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, una de las funciones que cumple el córtex orbitofrontal en la respuesta emocional es controlar la activación del sistema nervioso autónomo asociada a acontecimientos de valor afectivo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 117: El córtex orbitofrontal integra la cognición y la emoción, ejerciendo un control inhibitorio y regulador sobre los centros autonómicos subcorticales."
+    },
+    {
+      "id": 15,
+      "sourceId": 19,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, el afecto no es accesible conscientemente de forma directa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 19: El afecto tiene como característica intrínseca su accesibilidad consciente elemental en términos de valencia hedónica."
+    },
+    {
+      "id": 16,
+      "sourceId": 206,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, la consistencia metodológica de los estudios transculturales sobre expresión facial requiere que los juicios de reconocimiento sean realizados por personas ingenuas no contaminadas por teorías previas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 206: Para garantizar validez ecológica y probar la universalidad, se prefiere emplear observadores ingenuos ajenos a la psicología experimental."
+    },
+    {
+      "id": 17,
+      "sourceId": 208,
+      "used": true,
+      "text": "En relación con las funciones adaptativas de los componentes emocionales, la ley de la menor carga y el mayor beneficio formula que existe una tendencia a evaluar las situaciones desde la postura que minimice la carga emocional negativa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 208: Es un sesgo hedónicamente adaptativo que busca preservar el equilibrio emocional del yo reduciendo la asimilación del estrés."
+    },
+    {
+      "id": 18,
+      "sourceId": 113,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, en el modelo de chequeos secuenciales para la diferenciación de emociones de Scherer, la participación del subsistema de acción:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Está relacionado exclusivamente con la regulación de la memoria icónica."
+        },
+        {
+          "key": "B",
+          "text": "Tiene la finalidad de preparar y dirigir las diferentes conductas o tendencias de acción."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 113: El subsistema de acción canaliza motivacionalmente la energía corporal transformándola en tendencias específicas de aproximación, evitación o ataque."
+    },
+    {
+      "id": 19,
+      "sourceId": 122,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el estado de ansiedad es la tendencia a reaccionar de forma ansiosa con independencia de la situación:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 122: El estado de ansiedad es una reacción transitoria y situacional, mientras que la tendencia estable e independiente de la situación es el rasgo de ansiedad."
+    },
+    {
+      "id": 20,
+      "sourceId": 58,
+      "used": true,
+      "text": "Considerando las directrices del manual de la asignatura, la ley de la menor carga y el mayor beneficio formula que existe una tendencia a evaluar las situaciones desde la postura que minimice la carga emocional negativa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 58: Es un sesgo hedónicamente adaptativo que busca preservar el equilibrio emocional del yo reduciendo la asimilación del estrés."
+    },
+    {
+      "id": 21,
+      "sourceId": 65,
+      "used": true,
+      "text": "Considerando las directrices del manual de la asignatura, un aspecto que comparten las teorías que abordan la interpretación cognitiva y el arousal fisiológico es que la cualidad emocional depende de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La valoración del estado de activación y del contexto en que tiene lugar la activación."
+        },
+        {
+          "key": "B",
+          "text": "La valoración de los elementos biológicos fijos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 65: En la tradición cognitiva y bifactorial, la cualidad de la emoción emerge de etiquetar cognitivamente una activación inespecífica considerando el contexto."
+    },
+    {
+      "id": 22,
+      "sourceId": 121,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, respecto a la ansiedad, atendiendo a la teoría del procesamiento eficaz, la movilización de recursos compensatorios cognitivos y conductuales facilita:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El procesamiento de la información amenazante del entorno."
+        },
+        {
+          "key": "B",
+          "text": "Que el procesamiento de la información concurrente neutra no se deteriore."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 121: La teoría del procesamiento eficaz postula que los recursos compensatorios mitigan el impacto de la ansiedad sobre el rendimiento, evitando que las tareas concurrentes neutras sufran un deterioro grave."
+    },
+    {
+      "id": 23,
+      "sourceId": 161,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, charles Darwin (1872) en las emociones, junto a la función de ayuda a la supervivencia, también enfatiza el papel de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Señalización y comunicación de las expresiones emocionales."
+        },
+        {
+          "key": "B",
+          "text": "Construcción socio-cultural e institucional del afecto."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 161: Darwin destacó el valor adaptativo de las expresiones como señales comunicativas rápidas inter e intraespecies."
+    },
+    {
+      "id": 24,
+      "sourceId": 30,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, el antecedente necesario que pone en marcha de forma inmediata el proceso emocional es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La conceptualización lingüística abstracta del entorno social."
+        },
+        {
+          "key": "B",
+          "text": "La percepción de un cambio en las condiciones estimulares tanto externas como internas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 30: Cualquier alteración o modificación estimular detectada por el organismo actúa como detonante primario del procesamiento emocional."
+    },
+    {
+      "id": 25,
+      "sourceId": 128,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, la amígdala interviene en el establecimiento de asociaciones dotadas de contenido afectivo que pueden activar una respuesta emocional. Este hecho explica que una persona pueda:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reaccionar afectivamente a un estímulo sin que pueda explicar por qué."
+        },
+        {
+          "key": "B",
+          "text": "Recordar y explicar qué situación precisa le provocó una respuesta emocional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 128: La amígdala gestiona la memoria implícita o emocional, permitiendo respuestas condicionadas automáticas directas sin mediación de la memoria declarativa hipocampal."
+    },
+    {
+      "id": 26,
+      "sourceId": 104,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, en el contexto de las teorías de la activación, ¿qué supone la existencia de una única dimensión de activación general del organismo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Existen patrones específicos de activación vinculados a cada emoción."
+        },
+        {
+          "key": "B",
+          "text": "El grado de activación está relacionado únicamente con la disposición del organismo para la acción."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 104: Las teorías unidimensionales de la activación postulan un continuo inespecífico de energía corporal (arousal) que prepara globalmente al organismo para actuar."
+    },
+    {
+      "id": 27,
+      "sourceId": 127,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, la activación fisiológica determina la cualidad emocional. Este postulado es compartido por la teoría bifactorial de la emoción y la teoría de la evaluación-discrepancia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 127: Ambas teorías sostienen que la activación fisiológica es general e indiferenciada; es la cognición o la evaluación la que determina la cualidad."
+    },
+    {
+      "id": 28,
+      "sourceId": 71,
+      "used": true,
+      "text": "Considerando las directrices del manual de la asignatura, charles Darwin (1872) en las emociones, junto a la función de ayuda a la supervivencia, también enfatiza el papel de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Señalización y comunicación de las expresiones emocionales."
+        },
+        {
+          "key": "B",
+          "text": "Construcción socio-cultural e institucional del afecto."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 71: Darwin destacó el valor adaptativo de las expresiones como señales comunicativas rápidas inter e intraespecies."
+    },
+    {
+      "id": 29,
+      "sourceId": 109,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el afecto no es accesible conscientemente de forma directa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 109: El afecto tiene como característica intrínseca su accesibilidad consciente elemental en términos de valencia hedónica."
+    },
+    {
+      "id": 30,
+      "sourceId": 28,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, la ley de la menor carga y el mayor beneficio formula que existe una tendencia a evaluar las situaciones desde la postura que minimice la carga emocional negativa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 28: Es un sesgo hedónicamente adaptativo que busca preservar el equilibrio emocional del yo reduciendo la asimilación del estrés."
+    },
+    {
+      "id": 31,
+      "sourceId": 169,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, el afecto no es accesible conscientemente de forma directa:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 169: El afecto tiene como característica intrínseca su accesibilidad consciente elemental en términos de valencia hedónica."
+    },
+    {
+      "id": 32,
+      "sourceId": 107,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, la hipótesis de la vía rápida del procesamiento emocional de LeDoux defiende:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La estricta dependencia de los procesos emocionales respecto a los corticales complejos."
+        },
+        {
+          "key": "B",
+          "text": "La independencia adaptativa del procesamiento emocional subcortical respecto al análisis cognitivo cortical."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 107: La ruta tálamo-amígdala permite respuestas defensivas inmediatas ante amenazas antes de que la corteza analice conscientemente el estímulo."
+    },
+    {
+      "id": 33,
+      "sourceId": 6,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, el eje de control permite diferenciar las emociones:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Por la intensidad de los cambios fisiológicos."
+        },
+        {
+          "key": "B",
+          "text": "En función de quién ejerce el dominio, la persona o la situación desencadenante."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 6: El control evalúa el grado en que el individuo siente que puede dominar o verse dominado por las consecuencias del evento desencadenante."
+    },
+    {
+      "id": 34,
+      "sourceId": 130,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el que la emoción determine la aparición de una conducta, la dirija hacia determinada meta y haga que se ejecute con un cierto grado de intensidad, corresponde con la función:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Motivacional."
+        },
+        {
+          "key": "B",
+          "text": "Social."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 130: La dirección, activación e intensidad conductual orientada a metas define de forma precisa la función motivacional de las emociones."
+    },
+    {
+      "id": 35,
+      "sourceId": 166,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, un objetivo de los estudios transculturales sobre expresión y reconocimiento facial de emociones es recoger datos en individuos pertenecientes a diversas etnias y culturas aisladas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 166: El estudio de culturas aisladas permite testar la hipótesis de la universalidad filogenética propuesta por Darwin y continuada por Ekman."
+    },
+    {
+      "id": 36,
+      "sourceId": 111,
+      "used": true,
+      "text": "Atendiendo a los modelos experimentales del procesamiento afectivo, el priming afectivo se ha interpretado como un proceso involuntario que avala la tesis de que el procesamiento emocional temprano puede ser automático:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 111: El estímulo prime emocional, incluso presentado subliminalmente, facilita o interfiere la respuesta al estímulo posterior, demostrando automaticidad."
+    },
+    {
+      "id": 37,
+      "sourceId": 70,
+      "used": true,
+      "text": "Considerando las directrices del manual de la asignatura, el que la emoción determine la aparición de una conducta, la dirija hacia determinada meta y haga que se ejecute con un cierto grado de intensidad, corresponde con la función:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Motivacional."
+        },
+        {
+          "key": "B",
+          "text": "Social."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 70: La dirección, activación e intensidad conductual orientada a metas define de forma precisa la función motivacional de las emociones."
+    },
+    {
+      "id": 38,
+      "sourceId": 167,
+      "used": true,
+      "text": "Dentro del análisis dimensional y categórico de los estados afectivos, la hipótesis de la vía rápida del procesamiento emocional de LeDoux defiende:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La estricta dependencia de los procesos emocionales respecto a los corticales complejos."
+        },
+        {
+          "key": "B",
+          "text": "La independencia adaptativa del procesamiento emocional subcortical respecto al análisis cognitivo cortical."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Justificación del ítem 167: La ruta tálamo-amígdala permite respuestas defensivas inmediatas ante amenazas antes de que la corteza analice conscientemente el estímulo."
+    },
+    {
+      "id": 39,
+      "sourceId": 26,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, la consistencia metodológica de los estudios transculturales sobre expresión facial requiere que los juicios de reconocimiento sean realizados por personas ingenuas no contaminadas por teorías previas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Verdadero."
+        },
+        {
+          "key": "B",
+          "text": "Falso."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 26: Para garantizar validez ecológica y probar la universalidad, se prefiere emplear observadores ingenuos ajenos a la psicología experimental."
+    },
+    {
+      "id": 40,
+      "sourceId": 20,
+      "used": true,
+      "text": "En el marco conceptual de la psicología de la emoción, la teoría de la atribución emocional de Bernard Weiner sugiere que las expectativas de éxito y fracaso generan emociones distintas en función de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La atribución de causalidad interna o externa, estable o inestable y controlable."
+        },
+        {
+          "key": "B",
+          "text": "La intensidad del arousal simpático medido periféricamente."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Justificación del ítem 20: Para Weiner, la cognición pos-atencional sobre por qué ocurrió un éxito o fracaso determina la emoción específica resultante."
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Septiembre 2024",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas del examen de Septiembre 2024 - Fundamentos de Psicobiología de la UNED",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "La liberación de la hormona _____, está regulada por la hormona _____, cuya liberación depende de la hormona _____:",
+      "options": [
+        {
+          "key": "A",
+          "text": "CRH / ACTH / Cortisol."
+        },
+        {
+          "key": "B",
+          "text": "Cortisol / ACTH / CRH."
+        },
+        {
+          "key": "C",
+          "text": "ACTH / Cortisol / CRH."
+        },
+        {
+          "key": "D",
+          "text": "ACTH / CRH / Cortisol."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La jerarquía descendente del eje HHA opera liberando CRH desde el hipotálamo, que estimula la ACTH de la hipófisis, lo que a su vez obliga a la glándula suprarrenal a producir el Cortisol final."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "¿Cómo se denomina al proceso que realizan los receptores sensoriales para transformar las diferentes modalidades energéticas en actividad eléctrica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "sensibilización sensorial."
+        },
+        {
+          "key": "B",
+          "text": "transducción sensorial."
+        },
+        {
+          "key": "C",
+          "text": "potencial transformador."
+        },
+        {
+          "key": "D",
+          "text": "líneas marcadas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El mecanismo fisiológico por el que los órganos receptores periféricos traducen la energía mecánica, lumínica o térmica en impulsos del sistema nervioso se conoce como proceso de transducción sensorial."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "¿Cuál de las siguientes funciones NO está controlada por los ganglios basales?",
+      "options": [
+        {
+          "key": "A",
+          "text": "el aprendizaje de nuevas tareas motoras."
+        },
+        {
+          "key": "B",
+          "text": "control de tono muscular."
+        },
+        {
+          "key": "C",
+          "text": "la regulación del estado motivacional del organismo."
+        },
+        {
+          "key": "D",
+          "text": "ejecución automática de tareas motoras ya aprendidas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los ganglios basales son responsables de la fluidez del movimiento automático, planificaciones y la motivación motriz; pero la manutención del tono muscular antigravitatorio primario recae sobre el tracto reticuloespinal y reflejos medulares."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿Cuál es el otro nombre con el que se conoce a la vasopresina?",
+      "options": [
+        {
+          "key": "A",
+          "text": "aldosterona."
+        },
+        {
+          "key": "B",
+          "text": "endotelina."
+        },
+        {
+          "key": "C",
+          "text": "hormona antidiurética."
+        },
+        {
+          "key": "D",
+          "text": "adrenalina."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El papel principal de la vasopresina es forzar la reabsorción o conservación de líquidos en los riñones evitando que se orine en exceso, recibiendo clínicamente la nomenclatura funcional de Hormona Antidiurética o ADH."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "¿De cuál de las tres capas del disco embrionario deriva directamente el SN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mesodermo."
+        },
+        {
+          "key": "B",
+          "text": "ectodermo."
+        },
+        {
+          "key": "C",
+          "text": "endodermo."
+        },
+        {
+          "key": "D",
+          "text": "de las tres capas anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La organogénesis temprana parte del epiblasto del cual, la capa más superficial de células orientadas dorsalmente (el ectodermo), es la única lámina que se diferenciará directamente en tejido neural y epidermis."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "¿Qué hormona provoca la rotura del folículo y la ovulación en el ciclo menstrual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hormona luteinizante."
+        },
+        {
+          "key": "B",
+          "text": "la progesterona."
+        },
+        {
+          "key": "C",
+          "text": "la hormona foliculoestimulante."
+        },
+        {
+          "key": "D",
+          "text": "los estrógenos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El pico plasmático abrupto a mitad del ciclo de la hormona LH (Luteinizante) procedente de la adenohipófisis causa la rotura biológica de las paredes del folículo ovárico y la consiguiente liberación del óvulo."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "El origen evolutivo de las neuronas sigue estando envuelto en dudas, sin embargo, parece haber consenso en que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "procederían de células neuroepiteliales sensibles a estímulos."
+        },
+        {
+          "key": "B",
+          "text": "aparecen por primera vez en artrópodos."
+        },
+        {
+          "key": "C",
+          "text": "aparecen por primera vez en poríferos."
+        },
+        {
+          "key": "D",
+          "text": "ninguna de las opciones anteriores es correcta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Biogenéticamente, las primeras células con función de excitabilidad habrían surgido a través de la modificación natural de las poblaciones de células que tapizaban o cubrían los epitelios primitivos confiriéndoles excitabilidad."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En lo que se refiere a los linfocitos B, su diferenciación a células plasmáticas y de memoria está mediada, entre otros factores, por la activación de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ciertos tipos de linfocitos T."
+        },
+        {
+          "key": "B",
+          "text": "células presentadoras de antígenos."
+        },
+        {
+          "key": "C",
+          "text": "células de memoria de los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "el complejo mayor de histocompatibilidad."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La maduración óptima y multiplicación masiva de un Linfocito B no ocurre de manera autónoma, sino que precisa del acoplamiento y de las potentes citocinas estimuladoras aportadas por los linfocitos T colaboradores."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "En relación con la ontogenia del SNC, sabemos que la Teoría Neurotrófica se fundamenta en que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "nace un excesivo número de neuronas que compiten entre sí para establecer contacto con las células diana."
+        },
+        {
+          "key": "B",
+          "text": "sobreviven las neuronas que tienen más acceso al factor trófico que liberan las células diana en cantidades limitadas."
+        },
+        {
+          "key": "C",
+          "text": "el factor trófico liberado por las células diana promueve la supervivencia de las células que establecen sinapsis sobre ellas."
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las tres anteriores es correcto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La doctora Levi-Montalcini constató que las células competían a vida o muerte compitiendo por un neurotrófico esencial muy escaso provisto localmente por la diana inervada, abarcando las 3 premisas anteriores."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "En seres humanos se da un proceso por el que se prolongan hasta la edad adulta patrones de expresión génica que en otros primates solo se dan en etapas más tempranas del desarrollo. Este fenómeno recibe el nombre de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "neotenia transcripcional."
+        },
+        {
+          "key": "B",
+          "text": "hipótesis monofilética transcripcional."
+        },
+        {
+          "key": "C",
+          "text": "estrategia r."
+        },
+        {
+          "key": "D",
+          "text": "encefalización transcripcional."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El mantenimiento de la maleabilidad y la alta actividad en sinaptogénesis frontal típica de la niñez en nuestra adultez (un rasgo evolutivo juvenil conservado) se define neurogenéticamente como neotenia transcripcional."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "La mayoría de las neuronas de la corteza visual primaria de mamíferos reciben más aferencias procedentes de un ojo que de otro. A esta propiedad se la denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dominancia ocular."
+        },
+        {
+          "key": "B",
+          "text": "modulación de disparidad."
+        },
+        {
+          "key": "C",
+          "text": "modulación cortical."
+        },
+        {
+          "key": "D",
+          "text": "radiación óptica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En el cortex estriado (área V1) el relieve o disparidad es inexistente inicialmente; cada grupo celular agrupa aferencias asimétricas creando bandas paralelas alternas que prefieren un solo ojo, organizadas en columnas de dominancia ocular."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Los órganos en los que se originan y se diferencian todas las células inmunitarias son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los ganglios linfáticos."
+        },
+        {
+          "key": "B",
+          "text": "los linfoides primarios."
+        },
+        {
+          "key": "C",
+          "text": "las amígdalas."
+        },
+        {
+          "key": "D",
+          "text": "ciertos tejidos del sistema digestivo y los pulmones."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los órganos responsables únicos de originar en primera instancia todas las líneas de defensa y hacerlas madurar o entrenar se engloban como órganos linfoides primarios (Médula ósea y Timo)."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "Señale la respuesta correcta respecto al hipocampo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "presenta un tipo de células denominadas 'de lugar' que permiten recordar mapas espaciales del entorno."
+        },
+        {
+          "key": "B",
+          "text": "está organizado en seis capas pobladas por varios tipos de células entre las que predominan las piramidales."
+        },
+        {
+          "key": "C",
+          "text": "presenta un grupo de células denominadas 'de retícula', responsables de la memoria olfatoria."
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La navegación y los mapas cognitivos interiores residen profundamente en las regiones alocorticales de la formación hipocampal, dotada con neuronas topográficas o 'células de lugar'."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Sobre la segmentación del tubo neural que se produce en el desarrollo del SN, sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en las vesículas anteriores se delimitan los rombómeros."
+        },
+        {
+          "key": "B",
+          "text": "la segmentación de los rombómeros está dirigida por la expresión de los genes homeobox."
+        },
+        {
+          "key": "C",
+          "text": "en el rombencéfalo se delimitan los neurómeros."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La vesiculización cerebral se marca nítidamente gracias a los límites impuestos por los genes de tipo Hox; las divisiones anteriores presentan neurómeros pasajeros mientras que el rombencéfalo expone potentes rombómeros metaméricos."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "¿Cuál es la causa de que puedan aparecer, aunque parezca contradictorio, graves trastornos motores asociados a los circuitos facilitadores e inhibidores que recibe el neoestriado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hiperactividad de los circuitos facilitadores por encima de los inhibidores."
+        },
+        {
+          "key": "B",
+          "text": "la hiperactividad de los circuitos inhibidores en el neoestriado."
+        },
+        {
+          "key": "C",
+          "text": "la pérdida de equilibrio entre las señales facilitadoras e inhibidoras del movimiento."
+        },
+        {
+          "key": "D",
+          "text": "ninguno de los anteriores."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los ganglios basales operan estabilizando un balance entre dos grandes ramales (vía directa e indirecta). La corrupción en esta balanza genera hipercinesias o parkinsonismo derivado puramente de esa pérdida de equilibrio mutuo."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Una de las características de la respuesta inmune específica es la de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tener memoria inmunológica."
+        },
+        {
+          "key": "B",
+          "text": "la alta eficacia del sistema de complemento plasmático para defenderse de todo tipo de microorganismos invasores."
+        },
+        {
+          "key": "C",
+          "text": "activar a las células asesinas para destruir a todo tipo de células que estén infectadas y no sean reconocidas como células propias."
+        },
+        {
+          "key": "D",
+          "text": "que los macrófagos se transformen en neutrófilos para una mayor eficacia en áreas dañadas con inflamación."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Frente a las oleadas innatas inespecíficas que carecen de recuerdo, la inmunidad específica mediada por linfocitos T y B se caracteriza definitoriamente por atesorar inmunidad adaptativa y memoria prolongada frente a la cepa invasora."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Si elimináramos las poblaciones diana a las que llegan los axones en desarrollo, afectaríamos directamente a la:",
+      "options": [
+        {
+          "key": "A",
+          "text": "supervivencia neuronal."
+        },
+        {
+          "key": "B",
+          "text": "proliferación neuronal."
+        },
+        {
+          "key": "C",
+          "text": "migración neuronal."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los neuroblastos completan sus ciclos de mitosis y migración instintivamente, pero su consolidación final y superviviencia dependen críticamente de acoplarse con la célula receptora que le cede neurotrofinas (diana)."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Se ha descrito que las citocinas se liberan desde:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la barrera hematoencefálica."
+        },
+        {
+          "key": "B",
+          "text": "los oligodendrocitos."
+        },
+        {
+          "key": "C",
+          "text": "la microglía."
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en las opciones A y C es correcto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A nivel neural profundo, no solo el propio componente macrófago endógeno (microglía) sintetiza activamente estas moléculas informadoras, sino que el mismo parénquima y membrana aislante de la barrera hematoencefálica es capaz de liberarlas en el líquido cerebral."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Los núcleos talámicos de relevo motores:",
+      "options": [
+        {
+          "key": "A",
+          "text": "conectan diversas estructuras del sistema límbico."
+        },
+        {
+          "key": "B",
+          "text": "procesan señales procedentes del cerebelo y de los ganglios basales."
+        },
+        {
+          "key": "C",
+          "text": "transmiten señales del cerebelo a áreas sensoriales de la corteza."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Antes de que las instrucciones subcorticales del cerebelo y el estriado puedan alcanzar la corteza cerebral, deben filtrar obligatoriamente su salida a través de los centros de procesamiento talámicos motores ventrolaterales."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "La corteza del cerebelo presenta ....... capas horizontales en las que se localizan tres tipos de neuronas. La más interna es la capa ....... que está poblada por dos tipos de interneuronas: células ...... y células ......:",
+      "options": [
+        {
+          "key": "A",
+          "text": "tres; granular; granulares; de Golgi."
+        },
+        {
+          "key": "B",
+          "text": "seis; granular; piramidales; de Purkinje."
+        },
+        {
+          "key": "C",
+          "text": "tres; molecular; granulares; de Golgi."
+        },
+        {
+          "key": "D",
+          "text": "seis; granular; granulares; de Purkinje."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Anatómicamente posee una isocorteza reducida a sólo tres capas. La más profunda en contacto con la sustancia blanca (la capa granular) aglutina inmensas poblaciones de los pequeños granos cerebelosos e interneuronas accesorias de Golgi."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "En relación con la somestesia, sabemos que la corteza somatosensorial:",
+      "options": [
+        {
+          "key": "A",
+          "text": "presenta organización somatotópica."
+        },
+        {
+          "key": "B",
+          "text": "está formada por diferentes áreas situadas en la región anterior del lóbulo parietal."
+        },
+        {
+          "key": "C",
+          "text": "presenta organización columnar."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El córtex primario del tacto (giro poscentral parietal) no solamente ostenta una ordenación milimétrica por columnas, sino que toda su superficie conforma un mapa proporcionado del cuerpo humano (el homúnculo sensitivo)."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "En relación con la intensidad percibida de un estímulo sensorial sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "puede depender de la interacción entre campos receptivos próximos."
+        },
+        {
+          "key": "B",
+          "text": "es siempre directamente proporcional a la intensidad del estímulo."
+        },
+        {
+          "key": "C",
+          "text": "se relaciona con el fenómeno de inhibición lateral."
+        },
+        {
+          "key": "D",
+          "text": "A y C son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A nivel cortical la magnitud perceptiva rara vez resulta en un espejo fidedigno (directamente proporcional); ésta se agudiza y perfila mediante los contrastes ejercidos por la interacción antagonista y la inhibición que se realizan neuronas vecinas."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "En el bulbo raquídeo, el tracto de gran dimensión que se ve en el tegmento y transmite información al diencéfalo-tálamo se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "fascículo cuneado."
+        },
+        {
+          "key": "B",
+          "text": "lemnisco medial."
+        },
+        {
+          "key": "C",
+          "text": "pirámide."
+        },
+        {
+          "key": "D",
+          "text": "lemnisco lateral."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El relevo principal del tacto espinal ocurre en la base bulbar, originando una gran decusación ascendente blanca llamada la cinta de Reil o lemnisco medial que no finaliza su trayecto hasta enervar al tálamo contralateral."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "¿Qué hormona se produce principalmente en la zona glomerular de la corteza suprarrenal y está involucrada en la regulación de la concentración de iones en sangre?",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cortisol."
+        },
+        {
+          "key": "B",
+          "text": "la corticosterona."
+        },
+        {
+          "key": "C",
+          "text": "la aldosterona."
+        },
+        {
+          "key": "D",
+          "text": "la testosterona."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La capa más periférica exterior de la corteza suprarrenal es la responsable de segregar hormonas esteroideas clasificadas como mineralocorticoides (como la aldosterona), cuya diana funcional es la regulación estricta del sodio renal."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "¿Qué función cumplen los ganglios nerviosos en los invertebrados?",
+      "options": [
+        {
+          "key": "A",
+          "text": "controlar la temperatura corporal."
+        },
+        {
+          "key": "B",
+          "text": "integrar y procesar información."
+        },
+        {
+          "key": "C",
+          "text": "regular funciones internas."
+        },
+        {
+          "key": "D",
+          "text": "B y C son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Dado que el invertebrado no consolida una gran macro-estructura cerrada espinal, sus engrosamientos ganglionares actúan de relés eficientes para orquestar la integración sináptica y manejar simultáneamente las operaciones viscerales de su segmento."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "¿Cuál es la función principal del tracto corticoespinal ventral en el sistema nervioso central?",
+      "options": [
+        {
+          "key": "A",
+          "text": "control de la visión y la percepción auditiva."
+        },
+        {
+          "key": "B",
+          "text": "regulación del sistema respiratorio y cardiovascular."
+        },
+        {
+          "key": "C",
+          "text": "controlar los movimientos del cuello, del tronco y los músculos proximales."
+        },
+        {
+          "key": "D",
+          "text": "coordinación del equilibrio y la coordinación motora."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La porción del tracto corticoespinal que no decusa por el puente lateral (el tracto ventral) conserva inervación directa descendente para los músculos centrales axiales que regulan la firmeza gruesa del tronco y el cuello."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Cuál de las siguientes hormonas es liberada por la neurohipófisis?",
+      "options": [
+        {
+          "key": "A",
+          "text": "la hormona del crecimiento."
+        },
+        {
+          "key": "B",
+          "text": "la corticotropina."
+        },
+        {
+          "key": "C",
+          "text": "la hormona luteinizante."
+        },
+        {
+          "key": "D",
+          "text": "la oxitocina."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Existen solo dos moléculas puramente dependientes del depósito del lóbulo de la neurohipófisis y de los terminales nerviosos talámicos que vierten en él: la oxitocina y la vasopresina."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Cuál de las siguientes estructuras está presente en algunos de los invertebrados, pero no en los vertebrados?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ganglios encefálicos."
+        },
+        {
+          "key": "B",
+          "text": "corteza cerebral."
+        },
+        {
+          "key": "C",
+          "text": "cerebelo."
+        },
+        {
+          "key": "D",
+          "text": "bulbo raquídeo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Un vertebrado conforma un encéfalo macizo tubular. Sin embargo, las organizaciones avanzadas de invertebrados como cefalópodos y artrópodos consolidan únicamente la fusión en la zona de la cabeza de varios nudos funcionales llamados genéricamente 'ganglios encefálicos'."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "¿A través de qué estructura la corteza motora controla los músculos de la cabeza que intervienen en movimientos voluntarios, como los de comer, tragar, hablar o sonreír?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tracto solitario."
+        },
+        {
+          "key": "B",
+          "text": "Nervio vago."
+        },
+        {
+          "key": "C",
+          "text": "Tracto corticobulbar."
+        },
+        {
+          "key": "D",
+          "text": "Nervio facial."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A diferencia de las órdenes dirigidas a las extremidades que cursan al canal raquídeo espinal, los impulsos motores con destino facial descienden directos a enervar los núcleos motores del tronco encefálico a través del denominado tracto corticobulbar."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Cuál es el tipo principal de información que transmite el sistema lemniscal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "nociceptiva y de temperatura."
+        },
+        {
+          "key": "B",
+          "text": "táctil precisa."
+        },
+        {
+          "key": "C",
+          "text": "propioceptiva."
+        },
+        {
+          "key": "D",
+          "text": "lo dicho en B y C es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El gran haz posterior de vías blancas medulares lemniscales asciende con extrema rapidez llevando prioritariamente información táctil fina, discriminatoria, así como el sentido interno articular-postural o propiocepción consciente."
+    }
+  ]
+}

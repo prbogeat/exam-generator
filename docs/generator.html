@@ -2,11 +2,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Generador de Exámenes</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/exam-shared.css">
   <link rel="stylesheet" href="assets/css/generator.css">
+  <script src="assets/js/runtime-access.js"></script>
+  <script>
+    (async function guardGeneratorPage() {
+      if (!window.AppRuntimeAccess) {
+        return;
+      }
+
+      const canUseGenerators = await window.AppRuntimeAccess.canUseGenerators();
+      if (!canUseGenerators) {
+        window.location.replace("index.html");
+      }
+    })();
+  </script>
 </head>
 <body>
   <nav class="admin-nav">
@@ -123,6 +136,15 @@
           </div>
           <small id="localOutputHint" class="field-help">Sin carpeta local elegida; el archivo se descargará al finalizar.</small>
         </div>
+
+        <div class="form-row form-row-wide publication-row">
+          <label>Publicación en catálogo estático</label>
+          <div class="output-path-row">
+            <button type="button" id="pickCatalogFolderBtn" class="secondary-action-btn">Elegir docs/assets/json</button>
+            <button type="button" id="clearCatalogFolderBtn" class="secondary-action-btn">Quitar carpeta</button>
+          </div>
+          <small id="catalogOutputHint" class="field-help">Sin carpeta de catálogo elegida. Selecciona localmente docs/assets/json para publicar y regenerar el índice.</small>
+        </div>
       </div>
     </div>
 
@@ -138,7 +160,8 @@
     </div>
   </main>
 
-  <script src="data/presets.json"></script>
+  <script src="assets/js/mobile-sqlite.js"></script>
+  <script src="assets/js/static-catalog.js"></script>
   <script src="assets/js/generator.js"></script>
 </body>
 </html>

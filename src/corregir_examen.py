@@ -4,7 +4,7 @@ Corrige un examen realizado comparandolo con un examen generado en formato out.
 Uso:
   python corregir_examen.py \
     --exam-input input/examenes_realizados/mi_examen_realizado.json \
-    --correction-file out/psicobiologia/examen-junio-2026-realizado.json
+        --correction-file out/examenes/Fundamentos de Psicobiología/examen-junio-2026-realizado.json
 
 Tambien puedes ejecutar sin parametros y usar los valores por defecto
 definidos en la seccion CONFIG.
@@ -30,9 +30,9 @@ from exam_presets import GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, GENERAL_REP
 # ============================
 PRESET = "psicobiologia"  # None = usar defaults manuales.
 
-DEFAULT_EXAM_INPUT_MANUAL = "input/examenes_realizados/psicobiologia/Parcial 2/Examen-Junio-2026-E-Realizado.json"  # Ejemplo: "input/examenes_realizados/psicobiologia/mi_examen_realizado.json"
-DEFAULT_CORRECTION_FILE_MANUAL = "out/examenes/psicobiologia/Parcial 2/examen-hecho-correcion/Examen-Junio-2026-E-Realizado.json"
-DEFAULT_OUTPUT_DIR_MANUAL = "out/informes/psicobiologia"
+DEFAULT_EXAM_INPUT_MANUAL = "input/examenes_realizados/Fundamentos de Psicobiología/Parcial 2/Examen-Junio-2026-E-Realizado.json"  # Ejemplo: "input/examenes_realizados/Fundamentos de Psicobiología/mi_examen_realizado.json"
+DEFAULT_CORRECTION_FILE_MANUAL = "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-hecho-correcion/Examen-Junio-2026-E-Realizado.json"
+DEFAULT_OUTPUT_DIR_MANUAL = "out/informes/Fundamentos de Psicobiología"
 DEFAULT_OUTPUT_PREFIX = "informe"
 
 PRESET_CONFIG = get_preset(PRESET)

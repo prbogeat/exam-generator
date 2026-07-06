@@ -10,6 +10,9 @@ GENERAL_OUTPUT_ROOT = Path("out/examenes")
 GENERAL_REALIZED_ROOT = Path("input/examenes_realizados")
 GENERAL_REPORT_ROOT = Path("out/informes")
 
+SUBJECT_FOLDER_PSICOBIOLOGIA = "Fundamentos de Psicobiología"
+SUBJECT_FOLDER_EMOCION = "Psicología de la Emoción"
+
 PRESETS: Dict[str, Dict[str, Any]] = {
     "psicobiologia-parcial-2": {
         "subjectTitle": "Fundamentos de Psicobiología",
@@ -22,9 +25,9 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "numberOfQuestions": 30,
         "randomSelection": False,
         "input_path_parts": ["psicobiologia", "Parcial 2", "Examen preset.json"],
-        "output_path_parts": ["psicobiologia", "Parcial 2", "Examen preset.json"],
-        "template_path_parts": ["psicobiologia", "Parcial 2", "Examen preset-realizado.json"],
-        "report_dir_parts": ["psicobiologia", "Parcial 2"],
+        "output_path_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 2", "Examen preset.json"],
+        "template_path_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 2", "Examen preset-realizado.json"],
+        "report_dir_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 2"],
     },
     "psicobiologia-parcial-1": {
         "subjectTitle": "Fundamentos de Psicobiología",
@@ -37,24 +40,24 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "numberOfQuestions": 30,
         "randomSelection": False,
         "input_path_parts": ["psicobiologia", "Parcial 1", "Febrero 2026 - Tipo F.json"],
-        "output_path_parts": ["psicobiologia", "Parcial 1", "Febrero 2026 - Tipo F.json"],
-        "template_path_parts": ["psicobiologia", "Parcial 1", "Febrero 2026 - Tipo F-Realizado.json"],
-        "report_dir_parts": ["psicobiologia", "Parcial 1"],
+        "output_path_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 1", "Febrero 2026 - Tipo F.json"],
+        "template_path_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 1", "Febrero 2026 - Tipo F-Realizado.json"],
+        "report_dir_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 1"],
     },
     "emocion": {
-        "subjectTitle": "Emoción",
+        "subjectTitle": "Psicología de la Emoción",
         "examTitle": "UNED - Junio 2026",
         "subtitle": "40 Tipo Test",
-        "notice": "Examen de Emoción",
+        "notice": "Examen de Psicología de la Emoción",
         "maxScore": 10.0,
         "wrongAnswersPerDiscountedCorrect": 1.0,
         "timeLimitMinutes": 90,
         "numberOfQuestions": 40,
         "randomSelection": False,
         "input_path_parts": ["emocion", "preguntas_psicologia_emocion_uned.json"],
-        "output_path_parts": ["emocion", "examen-emocion.json"],
-        "template_path_parts": ["emocion", "examen-emocion-realizado.json"],
-        "report_dir_parts": ["emocion"],
+        "output_path_parts": [SUBJECT_FOLDER_EMOCION, "examen-emocion.json"],
+        "template_path_parts": [SUBJECT_FOLDER_EMOCION, "examen-emocion-realizado.json"],
+        "report_dir_parts": [SUBJECT_FOLDER_EMOCION],
     },
 }
 

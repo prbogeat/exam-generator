@@ -18,6 +18,9 @@ const dom = {
   pickOutputFolderBtn: document.getElementById("pickOutputFolderBtn"),
   clearOutputFolderBtn: document.getElementById("clearOutputFolderBtn"),
   localOutputHint: document.getElementById("localOutputHint"),
+  pickCatalogFolderBtn: document.getElementById("pickCatalogFolderBtn"),
+  clearCatalogFolderBtn: document.getElementById("clearCatalogFolderBtn"),
+  catalogOutputHint: document.getElementById("catalogOutputHint"),
   generateBtn: document.getElementById("generateBtn"),
   resetBtn: document.getElementById("resetBtn"),
   statusBox: document.getElementById("statusBox"),
@@ -30,6 +33,7 @@ const state = {
   selectedFileName: "",
   outputFileName: "examen.json",
   localOutputFolderHandle: null,
+  catalogRootHandle: null,
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -44,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     populatePresetSelector();
     bindEvents();
     syncLocalOutputHint();
+    syncCatalogOutputHint();
   } catch (error) {
     setStatus(`Error cargando presets: ${error.message}`, "error");
   }
@@ -85,7 +90,13 @@ function syncLocalOutputHint() {
 }
 
 function supportsDirectoryPicker() {
-  return typeof window.showDirectoryPicker === "function";
+  return Boolean(window.StaticExamCatalog && window.StaticExamCatalog.supportsDirectoryPicker());
+}
+
+function syncCatalogOutputHint() {
+  dom.catalogOutputHint.textContent = window.StaticExamCatalog
+    ? window.StaticExamCatalog.buildCatalogHint(state.catalogRootHandle)
+    : "Sin carpeta de catálogo elegida.";
 }
 
 async function pickLocalOutputFolder() {
@@ -106,10 +117,33 @@ async function pickLocalOutputFolder() {
   }
 }
 
+async function pickCatalogOutputFolder() {
+  if (!supportsDirectoryPicker()) {
+    setStatus("Este navegador no permite elegir carpetas locales. No se puede publicar el catálogo estático desde aquí.", "neutral");
+    return;
+  }
+
+  try {
+    state.catalogRootHandle = await window.showDirectoryPicker({ mode: "readwrite" });
+    syncCatalogOutputHint();
+    setStatus(`Carpeta de catálogo seleccionada: ${state.catalogRootHandle.name}`, "success");
+  } catch (error) {
+    if (error && error.name !== "AbortError") {
+      setStatus(`No se pudo elegir la carpeta del catálogo: ${error.message}`, "error");
+    }
+  }
+}
+
 function clearLocalOutputFolder() {
   state.localOutputFolderHandle = null;
   syncLocalOutputHint();
   setStatus("Se quitó la carpeta local. La salida se descargará automáticamente.", "neutral");
+}
+
+function clearCatalogOutputFolder() {
+  state.catalogRootHandle = null;
+  syncCatalogOutputHint();
+  setStatus("Se quitó la carpeta de catálogo. Ya no se publicarán exámenes automáticamente.", "neutral");
 }
 
 async function writeTextFileToDirectory(directoryHandle, fileName, content) {
@@ -224,6 +258,8 @@ function bindEvents() {
 
   dom.pickOutputFolderBtn.addEventListener("click", pickLocalOutputFolder);
   dom.clearOutputFolderBtn.addEventListener("click", clearLocalOutputFolder);
+  dom.pickCatalogFolderBtn.addEventListener("click", pickCatalogOutputFolder);
+  dom.clearCatalogFolderBtn.addEventListener("click", clearCatalogOutputFolder);
 
   dom.inputFile.addEventListener("change", (e) => {
     const file = e.target.files?.[0];
@@ -255,6 +291,7 @@ function resetForm() {
   state.localOutputFolderHandle = null;
   dom.outputFileName.value = state.outputFileName;
   syncLocalOutputHint();
+  syncCatalogOutputHint();
   dom.inputPathHint.textContent = "Ruta esperada: -";
   state.selectedPreset = null;
   state.selectedFile = null;
@@ -334,6 +371,30 @@ async function handleGeneratedExam(result, config) {
   const templateFileName = result.templatePath ? normalizeFileName(result.templatePath.split("/").pop()) : `${examFileName.replace(/\.json$/i, "")}-realizado.json`;
   const examJson = result.examJson || null;
   const templateJson = result.templateJson || null;
+  const reportBlocks = [];
+  const warnings = [];
+
+  if (examJson && window.ExamMobileDb && window.ExamMobileDb.isAvailable && window.ExamMobileDb.isAvailable()) {
+    window.ExamMobileDb.saveExam(examJson).catch(() => {
+      // La persistencia nativa es complementaria; no bloquea la descarga/guardado local.
+    });
+  }
+
+  if (examJson && state.catalogRootHandle && window.StaticExamCatalog) {
+    try {
+      const published = await window.StaticExamCatalog.publishExamToCatalog(state.catalogRootHandle, examJson, {
+        preset: state.selectedPreset,
+        subjectTitle: config.subjectTitle,
+        examTitle: config.examTitle,
+        outputFileName: examFileName,
+      });
+      reportBlocks.push(
+        `Publicado en catálogo: ${published.relativePath}\nÍndice actualizado: ${published.count} examen(es)`
+      );
+    } catch (error) {
+      warnings.push(`No se pudo publicar en el catálogo estático: ${error.message}`);
+    }
+  }
 
   if (state.localOutputFolderHandle) {
     try {
@@ -354,25 +415,36 @@ async function handleGeneratedExam(result, config) {
           JSON.stringify(templateJson, null, 2),
         );
       }
-
-      setStatus(
-        `✅ Examen generado correctamente\n\nGuardado localmente en: ${state.localOutputFolderHandle.name}/${examFileName}${templateJson ? `\nPlantilla guardada como: ${templateFileName}` : ""}\n\n${result.message}`,
-        "success",
+      reportBlocks.push(
+        `Guardado localmente en: ${state.localOutputFolderHandle.name}/${examFileName}${templateJson ? `\nPlantilla guardada como: ${templateFileName}` : ""}`
       );
-      return;
     } catch (error) {
-      setStatus(`No se pudo guardar en la carpeta local: ${error.message}. Se descargará el archivo.`, "error");
+      warnings.push(`No se pudo guardar en la carpeta local: ${error.message}. Se descargará el archivo.`);
     }
   }
 
   if (examJson) {
-    triggerJsonDownload(examFileName, examJson);
-    if (templateJson) {
-      triggerJsonDownload(templateFileName, templateJson);
+    const hasLocalSave = reportBlocks.some((block) => block.startsWith("Guardado localmente en:"));
+    if (!hasLocalSave) {
+      triggerJsonDownload(examFileName, examJson);
+      if (templateJson) {
+        triggerJsonDownload(templateFileName, templateJson);
+      }
+      reportBlocks.push(
+        `Descargado como: ${examFileName}${templateJson ? ` y ${templateFileName}` : ""}`
+      );
     }
+
     setStatus(
-      `✅ Examen generado correctamente\n\nDescargado como: ${examFileName}${templateJson ? ` y ${templateFileName}` : ""}\n\n${result.message}`,
-      "success",
+      [
+        "✅ Examen generado correctamente",
+        ...reportBlocks,
+        warnings.length ? `Avisos:\n- ${warnings.join("\n- ")}` : "",
+        result.message,
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
+      warnings.length ? "neutral" : "success",
     );
     return;
   }
