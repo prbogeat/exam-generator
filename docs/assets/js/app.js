@@ -47,6 +47,7 @@ const dom = {
   toggleErrors: document.getElementById("toggleErrors"),
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
+  backToWelcome: document.getElementById("backToWelcome"),
   loadDefaultData: document.getElementById("loadDefaultData"),
   refreshDbExams: document.getElementById("refreshDbExams"),
   dbSubjectSelect: document.getElementById("dbSubjectSelect"),
@@ -1322,6 +1323,11 @@ function bindEvents() {
   dom.gradeBottom.addEventListener("click", gradeExam);
   dom.resetTop.addEventListener("click", () => resetExam(true, true, true));
   dom.resetBottom.addEventListener("click", () => resetExam(true, true, true));
+  if (dom.backToWelcome) {
+    dom.backToWelcome.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
 
   dom.toggleErrors.addEventListener("click", () => {
     state.onlyErrors = !state.onlyErrors;
@@ -1371,6 +1377,78 @@ async function initializeApp() {
   updateDataStatus();
   renderQuestions();
   await refreshDbExamList();
+
+  // Try to load exam from welcome page
+  const selectedExamFile = sessionStorage.getItem("selectedExamFile");
+  const loadedExamJSON = sessionStorage.getItem("loadedExamJSON");
+
+  if (loadedExamJSON) {
+    try {
+      const data = JSON.parse(loadedExamJSON);
+      const examTitle = sessionStorage.getItem("loadedExamTitle") || "Examen cargado";
+      applyExamData(normalizeExamData(data), examTitle);
+      sessionStorage.removeItem("loadedExamJSON");
+      sessionStorage.removeItem("loadedExamTitle");
+      return;
+    } catch (error) {
+      console.error("Error loading exam from session storage:", error);
+      sessionStorage.removeItem("loadedExamJSON");
+    }
+  }
+
+  if (selectedExamFile || sessionStorage.getItem("selectedExamUid")) {
+    try {
+      const selectedExamUid = sessionStorage.getItem("selectedExamUid") || "";
+      const storedSubject = sessionStorage.getItem("selectedExamSubject") || "";
+      const examTitle = sessionStorage.getItem("selectedExamTitle") || selectedExamFile;
+      
+      // Find and select the exam in the catalog
+      const examItem = selectedExamUid
+        ? state.dbExamCatalog.find((item) => item.examUid === selectedExamUid)
+        : state.dbExamCatalog.find((item) => item.file === selectedExamFile);
+      if (examItem) {
+        const subject = examItem.subject || storedSubject;
+        // Populate and select subject
+        const subjects = [...new Set(state.dbExamCatalog.map((item) => item.subject).filter(Boolean))].sort((a, b) =>
+          a.localeCompare(b, "es")
+        );
+        populateDbSubjectSelect(subjects, subject);
+        
+        // Handle partials if needed
+        const examsForSubject = state.dbExamCatalog.filter((item) => item.subject === subject);
+        const partials = buildPartialFilterOptions(examsForSubject);
+        const selectedPartial = examItem.partial || "";
+        populateDbPartialSelect(partials, selectedPartial);
+        
+        // Populate and select exam
+        const filteredExams = subject ? 
+          (selectedPartial ? 
+            examsForSubject.filter((item) => item.partial === selectedPartial) :
+            examsForSubject) :
+          [];
+        populateDbExamSelect(filteredExams, examItem.examUid);
+        
+        await loadExamByUidFromDb(examItem.examUid);
+      } else {
+        if (selectedExamFile) {
+          await loadExamFromUrl(selectedExamFile, examTitle);
+        } else {
+          throw new Error("No se encontró el examen seleccionado en el catálogo.");
+        }
+      }
+      
+      sessionStorage.removeItem("selectedExamFile");
+      sessionStorage.removeItem("selectedExamTitle");
+      sessionStorage.removeItem("selectedExamSubject");
+      sessionStorage.removeItem("selectedExamUid");
+      return;
+    } catch (error) {
+      console.error("Error loading exam from session storage:", error);
+      sessionStorage.removeItem("selectedExamFile");
+      sessionStorage.removeItem("selectedExamUid");
+    }
+  }
+
   await loadDefaultExam();
 }
 

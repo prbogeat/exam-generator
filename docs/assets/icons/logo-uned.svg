@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0f5a47" opacity="0.1"/>
+  
+  <!-- Main shield shape (UNED style) -->
+  <path d="M 100 20 L 170 50 L 170 100 Q 170 140 100 175 Q 30 140 30 100 L 30 50 Z" 
+        fill="#0f5a47" stroke="#0f5a47" stroke-width="2"/>
+  
+  <!-- White accent band -->
+  <rect x="35" y="65" width="130" height="8" fill="white" rx="2"/>
+  
+  <!-- Text: UNED -->
+  <text x="100" y="120" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" 
+        text-anchor="middle" fill="white">UNED</text>
+  
+  <!-- Small accent line at bottom -->
+  <line x1="60" y1="135" x2="140" y2="135" stroke="white" stroke-width="2" opacity="0.6"/>
+</svg>

@@ -32,9 +32,10 @@ header {
   position: sticky;
   top: var(--safe-top);
   z-index: 10;
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #ffffff 0%, #f7fcfa 100%);
+  border-bottom: 2px solid var(--border);
   backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
 }
 
 .wrap {
@@ -86,6 +87,18 @@ button.primary {
   background: var(--dark);
   color: #ffffff;
   border-color: var(--dark);
+}
+
+button.secondary-nav {
+  background: #fafbfc;
+  color: var(--dark);
+  border: 1px solid #cbd5e1;
+}
+
+button.secondary-nav:hover {
+  background: #f0f5f3;
+  border-color: var(--dark);
+  color: var(--dark);
 }
 
 button:hover,
@@ -496,20 +509,45 @@ input[type="checkbox"] {
 
 /* ── UNED nav (index.html) ────────────────────────────────── */
 .uned-nav {
-  background: #16352d;
-  border-bottom: 3px solid #1a7431;
+  background: linear-gradient(135deg, #0f5a47 0%, #1a7a63 100%);
+  border-bottom: 2px solid #06b6d4;
   padding: 0;
+  box-shadow: 0 4px 12px rgba(15, 90, 71, 0.15);
 }
 
 .uned-nav .wrap {
-  padding-top: 0.85rem;
-  padding-bottom: 0.85rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.nav-logo {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px;
+  min-height: 32px;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  flex: 0 0 auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.uned-nav-home {
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.uned-nav-home:hover .uned-nav-brand {
+  text-decoration: underline;
 }
 
 .uned-nav-brand {
   color: #ffffff;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
+  letter-spacing: -0.5px;
 }
 
 .uned-nav-admin-link {
@@ -517,10 +555,12 @@ input[type="checkbox"] {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
+  transition: all 0.2s;
 }
 
 .uned-nav-admin-link:hover {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 /* ── Admin nav (generator.html + notebooklm.html) ─────────── */

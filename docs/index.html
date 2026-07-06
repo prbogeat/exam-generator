@@ -5,101 +5,321 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#0f5a47" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Exámenes" />
-  <title>Examen dinámico</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="UNED Exam Assistant" />
+  <title>UNED - Exam Assistant - Bienvenido</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    :root {
+      --primary: #0f5a47;
+      --primary-light: #1a7a63;
+      --primary-dark: #0a3d32;
+      --accent: #06b6d4;
+      --bg: #f7fcfa;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --safe-top: env(safe-area-inset-top, 0px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: var(--text);
+      line-height: 1.6;
+      padding-top: var(--safe-top);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .welcome-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .welcome-header {
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .logo-wrapper {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo-wrapper img {
+      max-width: 95%;
+      max-height: 95%;
+      object-fit: contain;
+    }
+
+    .welcome-header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -1px;
+    }
+
+    .welcome-header p {
+      margin: 0;
+      font-size: 18px;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+
+    .welcome-form {
+      background: white;
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.3);
+      width: 100%;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 15px;
+      background-color: white;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .form-group select:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(15, 90, 71, 0.1);
+    }
+
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(15, 90, 71, 0.15);
+      background-color: #fafbfc;
+    }
+
+    .form-group select:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background-color: #f5f7fa;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .buttons-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 480px) {
+      .buttons-group {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    button {
+      padding: 14px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    button.primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      grid-column: 1 / -1;
+    }
+
+    button.primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(15, 90, 71, 0.3);
+    }
+
+    button.primary:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    button.secondary {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    button.secondary:hover:not(:disabled) {
+      background: #f0f5f3;
+      border-color: var(--primary);
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .loading {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: currentColor;
+      border-radius: 50%;
+      animation: pulse 1.5s ease-in-out infinite;
+      margin-left: 6px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+    }
+
+    .status-message {
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .status-message.error {
+      display: block;
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fca5a5;
+    }
+
+    .status-message.loading {
+      display: block;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .welcome-header h1 {
+        font-size: 32px;
+      }
+
+      .welcome-header p {
+        font-size: 15px;
+      }
+
+      .welcome-form {
+        padding: 24px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-<nav class="uned-nav">
-  <div class="wrap" style="display: flex; justify-content: space-between; align-items: center;">
-    <span class="uned-nav-brand">Examen Dinámico</span>
-    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-end;">
-      <a id="generatorLink" href="generator.html" class="uned-nav-admin-link" style="display: none;">→ Ir a Generador</a>
-      <a id="notebookLink" href="notebooklm.html" class="uned-nav-admin-link" style="display: none;">→ NotebookLM local</a>
-    </div>
-  </div>
-</nav>
-<script src="assets/js/runtime-access.js?v=20260706b"></script>
-<script>
-  (async function toggleGeneratorLinks() {
-    if (!window.AppRuntimeAccess) {
-      return;
-    }
-
-    const canUseGenerators = await window.AppRuntimeAccess.canUseGenerators();
-    if (!canUseGenerators) {
-      return;
-    }
-
-    document.getElementById("generatorLink").style.display = "";
-    document.getElementById("notebookLink").style.display = "";
-  })();
-</script>
-
-<header>
-  <div class="wrap top">
-    <div>
-      <h1 id="pageTitle">Examen dinámico</h1>
-      <p class="subtitle" id="pageSubtitle">Selecciona un examen publicado o carga un JSON local manualmente.</p>
-    </div>
-    <div class="actions">
-      <div class="timer" id="timerTop">00:00:00</div>
-      <button id="startTimer" disabled>Iniciar contador</button>
-      <button class="primary" id="gradeTop" disabled>Corregir examen</button>
-      <button id="toggleErrors" class="hidden">Ver solo fallos/en blanco</button>
-      <button id="resetTop" disabled>Reiniciar</button>
-    </div>
-  </div>
-</header>
-
-<main class="wrap">
-  <div class="notice" id="noticeBox">La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON.</div>
-  <section class="data-tools">
-    <div class="data-status" id="dataStatus">Fuente de datos: pendiente.</div>
-    <details class="data-block" open>
-      <summary>Exámenes publicados</summary>
-      <div class="actions">
-        <button id="refreshDbExams" style="display:none">Actualizar catálogo</button>
-        <select id="dbSubjectSelect">
-          <option value="">-- Selecciona una asignatura --</option>
-        </select>
-        <select id="dbPartialSelect" class="hidden">
-          <option value="">-- Selecciona un parcial --</option>
-        </select>
-        <select id="dbExamSelect">
-          <option value="">-- Selecciona un examen publicado --</option>
-        </select>
-        <button id="loadSelectedDbExam" style="display:none">Cargar examen seleccionado</button>
+  <div class="welcome-container">
+    <div class="welcome-header">
+      <div class="logo-wrapper">
+        <img src="assets/img/uned-seeklogo.png" alt="UNED Logo" />
       </div>
-    </details>
-    <details class="data-block">
-      <summary>Carga manual desde JSON</summary>
-      <div class="actions">
-        <button id="loadDefaultData">Cargar JSON por defecto</button>
-        <button id="saveAnswers" disabled>Guardar respuestas JSON</button>
-        <label class="file-trigger" for="examFileInput">Cargar examen JSON<input id="examFileInput" type="file" accept=".json,application/json" /></label>
-        <label class="file-trigger" for="answersFileInput">Cargar respuestas / realizado<input id="answersFileInput" type="file" accept=".json,application/json" /></label>
+      <h1>UNED - Exam Assistant</h1>
+      <p>Selecciona una asignatura y comienza a practicar</p>
+    </div>
+
+    <div class="welcome-form">
+      <div class="status-message" id="statusMessage"></div>
+
+      <div class="form-group">
+        <label for="subjectSelect">Selecciona una asignatura</label>
+        <select id="subjectSelect" required>
+          <option value="">Cargando asignaturas...</option>
+        </select>
       </div>
-    </details>
-  </section>
-  <section class="summary">
-    <div class="card"><strong>Progreso</strong><div class="bar"><div id="progressBar"></div></div><div class="small" id="progressText">Respondidas: 0/0 · En blanco: 0</div></div>
-    <div class="card"><div class="small">Tiempo</div><div class="big" id="timeBox">00:00:00</div></div>
-    <div class="card"><div class="small">Aciertos</div><div class="big" id="correctBox">—</div></div>
-    <div class="card"><div class="small">Nota</div><div class="big" id="gradeBox">—</div></div>
-  </section>
-  <section class="result" id="resultBox"></section>
-  <section class="questions" id="questions"></section>
-  <div class="footer-actions">
-    <button class="primary" id="gradeBottom" disabled>Corregir examen</button>
-    <button id="resetBottom" disabled>Reiniciar</button>
+
+      <div class="form-group hidden" id="partialGroup">
+        <label for="partialSelect">Selecciona un parcial (opcional)</label>
+        <select id="partialSelect">
+          <option value="">Todos los exámenes</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="examSelect">Selecciona un examen</label>
+        <select id="examSelect" required disabled>
+          <option value="">Selecciona una asignatura primero</option>
+        </select>
+      </div>
+
+      <div class="buttons-group">
+        <button class="primary" id="startBtn" disabled>
+          Comenzar examen
+        </button>
+        <button class="secondary hidden" id="loadFileBtn">
+          Cargar archivo JSON
+        </button>
+      </div>
+      <input type="file" id="fileInput" accept=".json,application/json" style="display: none;">
+    </div>
   </div>
-</main>
-<script src="assets/js/mobile-sqlite.js"></script>
-<script src="assets/js/app.js"></script>
+
+  <div class="footer">
+    <p>© UNED - Universidad Nacional de Educación a Distancia</p>
+  </div>
+
+  <script src="assets/js/app-welcome.js?v=20260706"></script>
 </body>
 </html>

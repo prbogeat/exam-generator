@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f5a47" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="UNED - Exam Assistant" />
+  <title>UNED - Exam Assistant</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<nav class="uned-nav">
+  <div class="wrap" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+    <a href="index.html" class="uned-nav-home" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+      <img src="assets/img/uned-seeklogo.png" alt="UNED Logo" class="nav-logo" style="width:32px;height:32px;max-width:32px;max-height:32px;object-fit:contain;display:block;" />
+      <span class="uned-nav-brand">UNED - Exam Assistant</span>
+    </a>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-end;">
+      <a id="generatorLink" href="generator.html" class="uned-nav-admin-link" style="display: none;">Ir a Generador</a>
+      <a id="notebookLink" href="notebooklm.html" class="uned-nav-admin-link" style="display: none;">NotebookLM local</a>
+    </div>
+  </div>
+</nav>
+<script src="assets/js/runtime-access.js?v=20260706b"></script>
+<script>
+  (async function toggleGeneratorLinks() {
+    if (!window.AppRuntimeAccess) {
+      return;
+    }
+
+    const canUseGenerators = await window.AppRuntimeAccess.canUseGenerators();
+    if (!canUseGenerators) {
+      return;
+    }
+
+    document.getElementById("generatorLink").style.display = "";
+    document.getElementById("notebookLink").style.display = "";
+  })();
+</script>
+
+<header>
+  <div class="wrap top">
+    <div>
+      <h1 id="pageTitle">UNED - Exam Assistant</h1>
+      <p class="subtitle" id="pageSubtitle">Selecciona un examen publicado o carga un JSON local manualmente.</p>
+    </div>
+    <div class="actions">
+      <button id="backToWelcome" class="secondary-nav" title="Elegir otro examen">Atras</button>
+      <div class="timer" id="timerTop">00:00:00</div>
+      <button id="startTimer" disabled>Iniciar contador</button>
+      <button class="primary" id="gradeTop" disabled>Corregir examen</button>
+      <button id="toggleErrors" class="hidden">Ver solo fallos/en blanco</button>
+      <button id="resetTop" disabled>Reiniciar</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="notice" id="noticeBox">La pagina genera la cabecera, preguntas, progreso y calculo de nota a partir del JSON.</div>
+  <section class="data-tools">
+    <div class="data-status" id="dataStatus">Fuente de datos: pendiente.</div>
+    <details class="data-block" open>
+      <summary>Examenes publicados</summary>
+      <div class="actions">
+        <button id="refreshDbExams" style="display:none">Actualizar catalogo</button>
+        <select id="dbSubjectSelect">
+          <option value="">-- Selecciona una asignatura --</option>
+        </select>
+        <select id="dbPartialSelect" class="hidden">
+          <option value="">-- Selecciona un parcial --</option>
+        </select>
+        <select id="dbExamSelect">
+          <option value="">-- Selecciona un examen publicado --</option>
+        </select>
+        <button id="loadSelectedDbExam" style="display:none">Cargar examen seleccionado</button>
+      </div>
+    </details>
+    <details class="data-block">
+      <summary>Carga manual desde JSON</summary>
+      <div class="actions">
+        <button id="loadDefaultData">Cargar JSON por defecto</button>
+        <button id="saveAnswers" disabled>Guardar respuestas JSON</button>
+        <label class="file-trigger" for="examFileInput">Cargar examen JSON<input id="examFileInput" type="file" accept=".json,application/json" /></label>
+        <label class="file-trigger" for="answersFileInput">Cargar respuestas / realizado<input id="answersFileInput" type="file" accept=".json,application/json" /></label>
+      </div>
+    </details>
+  </section>
+  <section class="summary">
+    <div class="card"><strong>Progreso</strong><div class="bar"><div id="progressBar"></div></div><div class="small" id="progressText">Respondidas: 0/0 - En blanco: 0</div></div>
+    <div class="card"><div class="small">Tiempo</div><div class="big" id="timeBox">00:00:00</div></div>
+    <div class="card"><div class="small">Aciertos</div><div class="big" id="correctBox">-</div></div>
+    <div class="card"><div class="small">Nota</div><div class="big" id="gradeBox">-</div></div>
+  </section>
+  <section class="result" id="resultBox"></section>
+  <section class="questions" id="questions"></section>
+  <div class="footer-actions">
+    <button class="primary" id="gradeBottom" disabled>Corregir examen</button>
+    <button id="resetBottom" disabled>Reiniciar</button>
+  </div>
+</main>
+<script src="assets/js/mobile-sqlite.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+
