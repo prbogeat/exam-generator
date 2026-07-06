@@ -335,7 +335,7 @@ async function listDbExams() {
   const payload = await response.json();
   const items = Array.isArray(payload)
     ? payload
-    : Array.isArray(payload?.items)
+    : payload && Array.isArray(payload.items)
       ? payload.items
       : null;
 
@@ -1238,7 +1238,7 @@ async function loadExamFromUrl(url, label, overrides = {}) {
         ...normalizeExamData(data),
         ...overrides,
       },
-      label,
+      label
     );
   } catch (error) {
     if (!state.exam) {

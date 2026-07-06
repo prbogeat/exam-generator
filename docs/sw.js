@@ -1,4 +1,4 @@
-const CACHE_NAME = "exam-app-v3";
+const CACHE_NAME = "exam-app-v4";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -13,6 +13,7 @@ const APP_SHELL = [
   "./assets/css/notebooklm.css",
   "./assets/css/exam-shared.css",
   "./assets/js/app.js",
+  "./assets/js/runtime-access.js",
   "./assets/js/mobile-sqlite.js",
   "./assets/js/generator.js",
   "./assets/js/notebooklm.js",
@@ -80,7 +81,7 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         })
-        .catch(() => caches.match("./offline.html"));
+        .catch(() => Response.error());
     })
   );
 });
