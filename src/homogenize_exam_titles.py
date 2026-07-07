@@ -99,9 +99,9 @@ def generate_title(item: dict) -> str:
         tipo = match_40.group(1).upper()
         # Caso especial: 40-a es "al azar"
         if tipo == 'A':
-            return f"{subject} - 40 al azar"
+            return f"{subject} - al azar"
         partial_str = f" ({partial})" if partial else ""
-        return f"{subject} - 40 Tipo {tipo}{partial_str}"
+        return f"{subject} - Tipo {tipo}{partial_str}"
     
     # Caso: examen-uned-1, examen-uned-2, etc. (sin fecha)
     # Estos no tienen información de fecha en el nombre, usamos el número como referencia
