@@ -521,12 +521,10 @@ input[type="checkbox"] {
 }
 
 .nav-logo {
-  width: 32px !important;
-  height: 32px !important;
-  min-width: 32px;
-  min-height: 32px;
-  max-width: 32px !important;
-  max-height: 32px !important;
+  height: 40px;
+  width: auto;
+  max-height: 40px;
+  max-width: 160px;
   flex: 0 0 auto;
   object-fit: contain;
   display: block;
