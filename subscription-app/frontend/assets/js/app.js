@@ -23,8 +23,10 @@ const dom = {
   refreshCatalogBtn: document.getElementById("refreshCatalogBtn"),
   refreshHistoryBtn: document.getElementById("refreshHistoryBtn"),
   catalogStatus: document.getElementById("catalogStatus"),
-  viewerTitle: document.getElementById("viewerTitle"),
-  viewerMeta: document.getElementById("viewerMeta"),
+  examModal: document.getElementById("examModal"),
+  modalExamTitle: document.getElementById("modalExamTitle"),
+  modalExamMeta: document.getElementById("modalExamMeta"),
+  closeExamBtn: document.getElementById("closeExamBtn"),
   examFrame: document.getElementById("examFrame"),
   historyList: document.getElementById("historyList"),
 };
@@ -164,10 +166,13 @@ async function openSelectedExam() {
   sessionStorage.setItem("selectedExamTitle", selected.examTitle);
   sessionStorage.setItem("selectedExamSubject", selected.subject);
   sessionStorage.setItem(SELECTED_EXAM_KEY, selected.examUid);
-  dom.viewerTitle.textContent = selected.examTitle;
-  dom.viewerMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""}`;
+  
+  dom.modalExamTitle.textContent = selected.examTitle;
+  dom.modalExamMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""}`;
   dom.examFrame.src = `${window.location.origin}/docs/exam.html?source=subscription&examUid=${encodeURIComponent(selected.examUid)}`;
   dom.saveProgressBtn.disabled = false;
+  
+  dom.examModal.showModal();
 }
 
 async function saveProgress() {
@@ -230,6 +235,10 @@ function bindEvents() {
   });
   dom.openExamBtn.addEventListener("click", openSelectedExam);
   dom.saveProgressBtn.addEventListener("click", saveProgress);
+  dom.closeExamBtn.addEventListener("click", () => {
+    dom.examModal.close();
+    dom.examFrame.src = "about:blank";
+  });
 }
 
 async function initialize() {

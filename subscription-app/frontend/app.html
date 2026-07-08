@@ -21,33 +21,48 @@
   </header>
 
   <main class="dashboard">
-    <section class="card profile-card">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Cuenta</p>
-          <h2>Perfil del estudiante</h2>
+    <aside class="sidebar">
+      <section class="card profile-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Cuenta</p>
+            <h2>Perfil del estudiante</h2>
+          </div>
         </div>
-      </div>
-      <form id="profileForm" class="stack-form">
-        <label>
-          <span>Nombre</span>
-          <input id="profileName" type="text" required />
-        </label>
-        <label>
-          <span>Email</span>
-          <input id="profileEmail" type="email" disabled />
-        </label>
-        <label>
-          <span>Plan</span>
-          <select id="profilePlan">
-            <option value="free">Free</option>
-            <option value="pro">Pro</option>
-            <option value="premium">Premium</option>
-          </select>
-        </label>
-        <button type="submit" class="primary">Guardar perfil</button>
-      </form>
-    </section>
+        <form id="profileForm" class="stack-form">
+          <label>
+            <span>Nombre</span>
+            <input id="profileName" type="text" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="profileEmail" type="email" disabled />
+          </label>
+          <label>
+            <span>Plan</span>
+            <select id="profilePlan">
+              <option value="free">Free</option>
+              <option value="pro">Pro</option>
+              <option value="premium">Premium</option>
+            </select>
+          </label>
+          <button type="submit" class="primary">Guardar perfil</button>
+        </form>
+      </section>
+
+      <section class="card history-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Historial</p>
+            <h2>Actividad guardada</h2>
+          </div>
+          <button id="refreshHistoryBtn" class="secondary">Recargar</button>
+        </div>
+        <div id="historyList" class="history-list">
+          <p class="empty-state">Todavía no hay actividad guardada.</p>
+        </div>
+      </section>
+    </aside>
 
     <section class="card catalog-card">
       <div class="section-head">
@@ -68,32 +83,22 @@
       </div>
       <p id="catalogStatus" class="inline-status"></p>
     </section>
-
-    <section class="card viewer-card">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Examen</p>
-          <h2 id="viewerTitle">Selecciona un examen</h2>
-        </div>
-        <button id="saveProgressBtn" class="secondary" disabled>Guardar progreso</button>
-      </div>
-      <p id="viewerMeta" class="viewer-meta">Inicia sesión para cargar el catálogo privado.</p>
-      <iframe id="examFrame" title="Exam viewer" class="exam-frame" src="about:blank"></iframe>
-    </section>
-
-    <section class="card history-card">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Historial</p>
-          <h2>Actividad guardada</h2>
-        </div>
-        <button id="refreshHistoryBtn" class="secondary">Recargar</button>
-      </div>
-      <div id="historyList" class="history-list">
-        <p class="empty-state">Todavía no hay actividad guardada.</p>
-      </div>
-    </section>
   </main>
+
+  <!-- Exam viewer modal -->
+  <dialog id="examModal" class="exam-modal">
+    <div class="modal-header">
+      <div>
+        <h2 id="modalExamTitle">Examen</h2>
+        <p id="modalExamMeta" class="modal-meta"></p>
+      </div>
+      <div class="modal-actions">
+        <button id="saveProgressBtn" class="secondary" disabled>Guardar progreso</button>
+        <button id="closeExamBtn" class="secondary">Cerrar</button>
+      </div>
+    </div>
+    <iframe id="examFrame" title="Exam viewer" class="exam-frame" src="about:blank"></iframe>
+  </dialog>
 
   <script src="assets/js/app.js"></script>
 </body>
