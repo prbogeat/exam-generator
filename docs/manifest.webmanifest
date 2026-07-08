@@ -1,7 +1,7 @@
 {
-  "name": "UNED - Exam Assistant",
-  "short_name": "UNED Exams",
-  "description": "Visor y corrector de exámenes tipo test de la UNED.",
+  "name": "Exam Assistant",
+  "short_name": "Exam Assistant",
+  "description": "Visor y corrector de exámenes tipo test para estudiantes.",
   "lang": "es",
   "start_url": "./index.html",
   "scope": "./",
