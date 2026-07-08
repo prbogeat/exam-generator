@@ -292,10 +292,14 @@ select {
 
 /* Modal dialog */
 .exam-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 90vw;
   height: 90vh;
   max-width: 1400px;
-  max-height: 1000px;
+  max-height: 900px;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   display: flex;
@@ -303,11 +307,14 @@ select {
   padding: 0;
   background: white;
   box-shadow: var(--shadow);
+  z-index: 9999;
+  overflow: hidden;
 }
 
 .exam-modal::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
+  z-index: 9998;
 }
 
 .modal-header {
@@ -318,6 +325,8 @@ select {
   padding: 20px 24px;
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.98);
+  flex-shrink: 0;
+  min-height: 0;
 }
 
 .modal-header h2 {
@@ -343,9 +352,12 @@ select {
 
 .exam-modal .exam-frame {
   flex: 1;
-  min-height: auto;
+  min-height: 0;
+  width: 100%;
   border: 0;
   border-radius: 0;
+  display: block;
+  overflow: hidden;
 }
 
 .history-list {

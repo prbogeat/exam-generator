@@ -159,20 +159,27 @@ async function openSelectedExam() {
     return;
   }
 
-  await api(`/exams/${encodeURIComponent(examUid)}`);
-  state.currentExam = selected;
-  sessionStorage.setItem("selectedExamUid", selected.examUid);
-  sessionStorage.setItem("selectedExamFile", `/docs/${selected.file}`);
-  sessionStorage.setItem("selectedExamTitle", selected.examTitle);
-  sessionStorage.setItem("selectedExamSubject", selected.subject);
-  sessionStorage.setItem(SELECTED_EXAM_KEY, selected.examUid);
-  
-  dom.modalExamTitle.textContent = selected.examTitle;
-  dom.modalExamMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""}`;
-  dom.examFrame.src = `${window.location.origin}/docs/exam.html?source=subscription&examUid=${encodeURIComponent(selected.examUid)}`;
-  dom.saveProgressBtn.disabled = false;
-  
-  dom.examModal.showModal();
+  try {
+    await api(`/exams/${encodeURIComponent(examUid)}`);
+    state.currentExam = selected;
+    sessionStorage.setItem("selectedExamUid", selected.examUid);
+    sessionStorage.setItem("selectedExamFile", `/docs/${selected.file}`);
+    sessionStorage.setItem("selectedExamTitle", selected.examTitle);
+    sessionStorage.setItem("selectedExamSubject", selected.subject);
+    sessionStorage.setItem(SELECTED_EXAM_KEY, selected.examUid);
+    
+    dom.modalExamTitle.textContent = selected.examTitle;
+    dom.modalExamMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""}`;
+    dom.examFrame.src = `${window.location.origin}/docs/exam.html?source=subscription&examUid=${encodeURIComponent(selected.examUid)}`;
+    dom.saveProgressBtn.disabled = false;
+    
+    if (dom.examModal && typeof dom.examModal.showModal === "function") {
+      dom.examModal.showModal();
+    }
+  } catch (error) {
+    console.error("Error opening exam:", error);
+    setCatalogStatus(`Error al abrir examen: ${error.message}`);
+  }
 }
 
 async function saveProgress() {
@@ -180,20 +187,24 @@ async function saveProgress() {
     return;
   }
 
-  const payload = {
-    exam_uid: state.currentExam.examUid,
-    exam_title: state.currentExam.examTitle,
-    subject: state.currentExam.subject,
-    answers: {},
-    score: null,
-  };
+  try {
+    const payload = {
+      exam_uid: state.currentExam.examUid,
+      exam_title: state.currentExam.examTitle,
+      subject: state.currentExam.subject,
+      answers: {},
+      score: null,
+    };
 
-  await api("/account/progress", {
-    method: "POST",
-    body: JSON.stringify(payload),
-  });
-  await loadHistory();
-  dom.viewerMeta.textContent = `${dom.viewerMeta.textContent} · progreso guardado`;
+    await api("/account/progress", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    });
+    await loadHistory();
+    dom.modalExamMeta.textContent = `${dom.modalExamMeta.textContent} · progreso guardado`;
+  } catch (error) {
+    console.error("Error al guardar progreso:", error);
+  }
 }
 
 async function saveProfile(event) {
@@ -224,6 +235,28 @@ async function logout() {
   window.location.href = "index.html";
 }
 
+function closeExamModal() {
+  if (!dom.examModal) return;
+  
+  try {
+    if (typeof dom.examModal.close === "function") {
+      dom.examModal.close();
+    }
+    // Limpia el iframe de forma segura
+    setTimeout(() => {
+      if (dom.examFrame) {
+        dom.examFrame.src = "about:blank";
+      }
+    }, 100);
+    
+    // Reset state
+    state.currentExam = null;
+    dom.saveProgressBtn.disabled = true;
+  } catch (error) {
+    console.error("Error closing exam modal:", error);
+  }
+}
+
 function bindEvents() {
   dom.logoutBtn.addEventListener("click", logout);
   dom.profileForm.addEventListener("submit", saveProfile);
@@ -235,10 +268,25 @@ function bindEvents() {
   });
   dom.openExamBtn.addEventListener("click", openSelectedExam);
   dom.saveProgressBtn.addEventListener("click", saveProgress);
-  dom.closeExamBtn.addEventListener("click", () => {
-    dom.examModal.close();
-    dom.examFrame.src = "about:blank";
-  });
+  
+  // Close button handler
+  if (dom.closeExamBtn) {
+    dom.closeExamBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      closeExamModal();
+    });
+  }
+  
+  // Escape key handler
+  if (dom.examModal) {
+    dom.examModal.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeExamModal();
+      }
+    });
+  }
 }
 
 async function initialize() {

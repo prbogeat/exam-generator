@@ -488,9 +488,24 @@ function initFloatingViewer() {
   body.appendChild(frame);
   root.appendChild(header);
   root.appendChild(body);
-  document.body.appendChild(root);
+  
+  // Crear un contenedor overlay si no existe
+  let overlay = document.getElementById("floating-overlays");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "floating-overlays";
+    overlay.style.cssText = "position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 1200;";
+    document.body.appendChild(overlay);
+  }
+  
+  overlay.appendChild(root);
+  root.style.pointerEvents = "auto";
 
-  close.addEventListener("click", closeFloatingViewer);
+  close.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    closeFloatingViewer();
+  });
 
   const drag = {
     pointerId: null,

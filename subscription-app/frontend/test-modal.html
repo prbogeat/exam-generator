@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal Test - Exam Assistant</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      padding: 40px 20px;
+    }
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+    .test-section h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="test-section">
+      <h2>Test Modal</h2>
+      <p>Haz clic en el botón para abrir el modal. Deberías poder cerrar con el botón Cerrar o presionando Escape.</p>
+      <button id="openBtn" class="primary">Abrir Modal de Test</button>
+    </div>
+
+    <div class="test-section">
+      <h2>Contenido Principal</h2>
+      <p>Este es el contenido de la página principal. Debe permanecer visible detrás del modal (oscurecido).</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Si al cerrar el modal ves esta sección, significa que el modal se cerró correctamente.</p>
+    </div>
+  </main>
+
+  <!-- Test modal -->
+  <dialog id="testModal" class="exam-modal">
+    <div class="modal-header">
+      <div>
+        <h2>Modal de Prueba</h2>
+        <p class="modal-meta">Este es un modal de prueba simple</p>
+      </div>
+      <div class="modal-actions">
+        <button id="closeBtn" class="secondary">Cerrar</button>
+      </div>
+    </div>
+    <div style="flex: 1; overflow: auto; padding: 20px; background: #f5f5f5;">
+      <h3>Contenido del Modal</h3>
+      <p>Este es un modal de prueba para verificar que funciona correctamente.</p>
+      <p>Prueba las siguientes acciones:</p>
+      <ul>
+        <li>Haz clic en "Cerrar" para cerrar el modal</li>
+        <li>Presiona Escape para cerrar el modal</li>
+        <li>Verifica que la página principal está visible detrás (oscurecida)</li>
+        <li>Verifica que el modal se centra correctamente</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <script>
+    const modal = document.getElementById("testModal");
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    function closeModal() {
+      if (modal && typeof modal.close === "function") {
+        modal.close();
+        console.log("Modal cerrado correctamente");
+      } else {
+        console.error("No se puede cerrar el modal");
+      }
+    }
+
+    openBtn.addEventListener("click", () => {
+      if (modal && typeof modal.showModal === "function") {
+        modal.showModal();
+        console.log("Modal abierto");
+      } else {
+        console.error("No se puede abrir el modal");
+      }
+    });
+
+    closeBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      console.log("Botón cerrar clickeado");
+      closeModal();
+    });
+
+    modal.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        console.log("Escape presionado");
+        closeModal();
+      }
+    });
+
+    modal.addEventListener("close", () => {
+      console.log("Evento close del modal se disparó");
+    });
+  </script>
+</body>
+</html>
