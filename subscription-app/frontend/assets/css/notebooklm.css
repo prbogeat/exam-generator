@@ -1,0 +1,232 @@
+/* Reglas especificas de NotebookLM. La base visual comun vive en exam-shared.css */
+
+.hero-copy {
+  max-width: none;
+}
+
+.notebook-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+  min-width: 0;
+}
+
+.panel-wide {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.15rem;
+  align-items: start;
+}
+
+.config-grid > * {
+  min-width: 0;
+}
+
+.config-span-2 {
+  grid-column: 1 / -1;
+}
+
+.config-toggle-row {
+  margin-top: 0.25rem;
+}
+
+.toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 700;
+  min-width: 0;
+}
+
+.config-actions {
+  margin-top: 0.25rem;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.source-text {
+  min-height: 320px;
+  margin-top: 0.75rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f4fbf7 100%);
+}
+
+.json-tip {
+  margin-top: 0.85rem;
+  border: 1px solid #b7e4d7;
+  border-radius: 14px;
+  background: #f2fbf7;
+  overflow: hidden;
+}
+
+.json-tip summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #0f766e;
+  padding: 0.75rem 0.9rem;
+  list-style: none;
+}
+
+.json-tip summary::-webkit-details-marker {
+  display: none;
+}
+
+.json-tip summary::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 0.55rem;
+  transition: transform 0.2s ease;
+}
+
+.json-tip[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.json-tip-code {
+  margin: 0;
+  border-top: 1px solid #d6f0e7;
+  background: #0f1f1b;
+  color: #d8f3e8;
+  padding: 0.9rem;
+  font-size: 0.85rem;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.actions-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.file-trigger-dark {
+  background: #f4fbf7;
+}
+
+.result-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 1rem;
+  align-items: start;
+  min-width: 0;
+}
+
+.result-layout > div {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.json-preview,
+.conversation {
+  border: 1px solid #d1d5db;
+  border-radius: 18px;
+  background: #10211c;
+  color: #ddf6ea;
+  padding: 1rem;
+  min-height: 320px;
+  max-height: 620px;
+  overflow: auto;
+  min-width: 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.conversation {
+  background: #ffffff;
+  color: #111827;
+}
+
+.conversation-empty {
+  color: #6b7280;
+}
+
+.message {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 0.85rem 0.95rem;
+  margin-bottom: 0.85rem;
+  background: #f4fbf7;
+}
+
+.message.user {
+  border-left: 4px solid #0f766e;
+}
+
+.message.assistant {
+  border-left: 4px solid #15803d;
+}
+
+.message-meta {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+  margin-bottom: 0.45rem;
+}
+
+.message-content {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 960px) {
+  .notebook-grid,
+  .result-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .config-span-2 {
+    grid-column: auto;
+  }
+
+  .json-preview,
+  .conversation {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .json-tip-code {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .config-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .config-span-2 {
+    grid-column: span 3;
+  }
+
+  .config-toggle-row,
+  .config-actions {
+    grid-column: 1 / -1;
+  }
+}

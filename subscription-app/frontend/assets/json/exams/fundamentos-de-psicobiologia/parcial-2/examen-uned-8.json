@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - 30 Tipo Test - 8",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas seleccionadas al azar",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 204,
+      "used": true,
+      "text": "¿De cuál de las tres capas del disco embrionario deriva directamente el sistema nervioso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mesodermo."
+        },
+        {
+          "key": "B",
+          "text": "ectodermo."
+        },
+        {
+          "key": "C",
+          "text": "endodermo."
+        },
+        {
+          "key": "D",
+          "text": "de las tres capas anteriores."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Durante la etapa de gastrulación, el epiblasto forma 3 capas. Todo el sistema nervioso, así como la piel (epidermis), se formará única y exclusivamente a partir de la capa más superficial, conocida como ectodermo."
+    },
+    {
+      "id": 2,
+      "sourceId": 238,
+      "used": true,
+      "text": "Según la teoría neurotrófica, sobreviven preferentemente las neuronas que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acceden a cantidades suficientes de factores tróficos liberados por sus células diana."
+        },
+        {
+          "key": "B",
+          "text": "Nunca establecen sinapsis."
+        },
+        {
+          "key": "C",
+          "text": "No compiten con otras neuronas."
+        },
+        {
+          "key": "D",
+          "text": "Se originan exclusivamente en la cresta neural."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las poblaciones diana liberan factores en cantidad limitada; las neuronas que contactan con ellas y reciben suficiente soporte sobreviven."
+    },
+    {
+      "id": 3,
+      "sourceId": 255,
+      "used": true,
+      "text": "Un hito evolutivo relativamente reciente dentro del sistema nervioso es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La aparición de células piramidales corticales."
+        },
+        {
+          "key": "B",
+          "text": "La red nerviosa difusa."
+        },
+        {
+          "key": "C",
+          "text": "Los primeros axones gigantes."
+        },
+        {
+          "key": "D",
+          "text": "La simple excitabilidad celular."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las células piramidales son características de la corteza cerebral de vertebrados, especialmente relevantes en la expansión cortical de mamíferos."
+    },
+    {
+      "id": 4,
+      "sourceId": 222,
+      "used": true,
+      "text": "La neocorteza humana se caracteriza por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tener tres capas y carecer de células piramidales."
+        },
+        {
+          "key": "B",
+          "text": "Estar organizada en seis capas y contener abundantes células piramidales."
+        },
+        {
+          "key": "C",
+          "text": "Ser exclusiva del sistema olfatorio."
+        },
+        {
+          "key": "D",
+          "text": "No recibir proyecciones talámicas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La neocorteza posee seis capas y sus neuronas de proyección características son las células piramidales."
+    },
+    {
+      "id": 5,
+      "sourceId": 281,
+      "used": true,
+      "text": "El vestibulocerebelo envía señales correctoras para:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Restablecer equilibrio y ajustar postura."
+        },
+        {
+          "key": "B",
+          "text": "Producir anticuerpos."
+        },
+        {
+          "key": "C",
+          "text": "Sintetizar progesterona."
+        },
+        {
+          "key": "D",
+          "text": "Reconocer antígenos CMH."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Sus conexiones con núcleos vestibulares y vías descendentes ayudan a mantener equilibrio y estabilidad postural."
+    },
+    {
+      "id": 6,
+      "sourceId": 275,
+      "used": true,
+      "text": "Las neuronas preganglionares del SNA liberan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acetilcolina tanto en la división simpática como en la parasimpática."
+        },
+        {
+          "key": "B",
+          "text": "Noradrenalina exclusivamente."
+        },
+        {
+          "key": "C",
+          "text": "Dopamina en ganglios parasimpáticos y serotonina en simpáticos."
+        },
+        {
+          "key": "D",
+          "text": "Cortisol."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las neuronas preganglionares simpáticas y parasimpáticas son colinérgicas y actúan sobre receptores nicotínicos ganglionares."
+    },
+    {
+      "id": 7,
+      "sourceId": 328,
+      "used": true,
+      "text": "De entre las estructuras subcorticales de los hemisferios cerebrales se encuentra/n:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El núcleo dentado."
+        },
+        {
+          "key": "B",
+          "text": "El núcleo basal de Meynert."
+        },
+        {
+          "key": "C",
+          "text": "Los bulbos olfatorios."
+        },
+        {
+          "key": "D",
+          "text": "Los núcleos mamilares."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El núcleo basal de Meynert forma parte de los núcleos basales del encéfalo anterior, dentro de las estructuras subcorticales de los hemisferios cerebrales."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En los reptiles surge la división filogenéticamente más reciente, el neocerebelo, formado por los hemisferios cerebelares y el vermis medio."
+    },
+    {
+      "id": 9,
+      "sourceId": 31,
+      "used": true,
+      "text": "Los cultivos de tejido neuronal, concretamente de las células piramidales de la corteza cerebral y de las células de Purkinje del cerebelo, permiten conocer los siguientes aspectos sobre la maduración neuronal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "que estas células adquieren sus formas características cuando son cultivadas en un medio artificial aunque su diferenciación dendrítica es menos elaborada."
+        },
+        {
+          "key": "B",
+          "text": "que la diferenciación morfológica básica de una neurona está predeterminada genéticamente antes de que alcance su destino."
+        },
+        {
+          "key": "C",
+          "text": "que el pleno desarrollo de la arborización dendrítica depende del entorno de las neuronas y de las interacciones que se establecen entre ellas."
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La diferenciación morfológica básica está preprogramada genéticamente antes de llegar a su destino, pero su completa maduración y complejidad de arborización dependen fuertemente del entorno y de las interacciones celulares, como han demostrado los estudios en cultivos in vitro."
+    },
+    {
+      "id": 10,
+      "sourceId": 6,
+      "used": true,
+      "text": "En la 4ª/5ª semana de gestación, sabemos que las células de la cresta neural agrupadas junto a los somitas formarán:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los ganglios espinales."
+        },
+        {
+          "key": "B",
+          "text": "los rombómeros."
+        },
+        {
+          "key": "C",
+          "text": "los neurómeros."
+        },
+        {
+          "key": "D",
+          "text": "la zona subventricular."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las células de la cresta neural que migran por la vía ventromedial forman agrupaciones junto a los somitas a lo largo del tubo neural, que posteriormente originarán los ganglios espinales."
+    },
+    {
+      "id": 11,
+      "sourceId": 126,
+      "used": true,
+      "text": "Las vías colinérgicas del sistema de activación ascendente de la formación reticular:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nunca proyectan directamente a la corteza cerebral, pasan siempre por el tálamo."
+        },
+        {
+          "key": "B",
+          "text": "Proyectan al hipotálamo, pero no al tálamo."
+        },
+        {
+          "key": "C",
+          "text": "Mantienen tono de consciencia, pero sin modular la actividad cortical."
+        },
+        {
+          "key": "D",
+          "text": "Tienen una vía, que es más masiva, que proyecta a los núcleos de proyección difusa del tálamo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El sistema reticular activador colinérgico envía dos vías principales al encéfalo anterior; la más masiva de ellas proyecta hacia los núcleos intralaminares y reticular del tálamo para producir la desincronización cortical."
+    },
+    {
+      "id": 12,
+      "sourceId": 153,
+      "used": true,
+      "text": "¿Cuál es el otro nombre con el que se conoce a la vasopresina?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aldosterona."
+        },
+        {
+          "key": "B",
+          "text": "Endotelina."
+        },
+        {
+          "key": "C",
+          "text": "Hormona antidiurética."
+        },
+        {
+          "key": "D",
+          "text": "Adrenalina."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La vasopresina, secretada por la neurohipófisis, tiene como función principal promover la retención de agua en los riñones reduciendo la excreción de orina, motivo por el cual recibe también el nombre clínico de hormona antidiurética (ADH)."
+    },
+    {
+      "id": 13,
+      "sourceId": 310,
+      "used": true,
+      "text": "El reflejo inflamatorio mediado por el nervio vago sigue, de forma simplificada, la secuencia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aferencias vagales informan al SNC → eferencias vagales colinérgicas → liberación de ACh → efecto antiinflamatorio."
+        },
+        {
+          "key": "B",
+          "text": "Corteza visual → retina → timo → colágeno."
+        },
+        {
+          "key": "C",
+          "text": "ACh → cierre del tubo neural → ovulación."
+        },
+        {
+          "key": "D",
+          "text": "Melatonina → lemnisco medial → anticuerpos A."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El nervio vago detecta señales inflamatorias y puede activar una vía colinérgica antiinflamatoria que modula la respuesta inmune."
+    },
+    {
+      "id": 14,
+      "sourceId": 5,
+      "used": true,
+      "text": "En relación con la ontogenia del SNC, sabemos que el neuroectodermo queda determinado durante el proceso de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "gastrulación."
+        },
+        {
+          "key": "B",
+          "text": "regionalización de la placa neural."
+        },
+        {
+          "key": "C",
+          "text": "inducción neural."
+        },
+        {
+          "key": "D",
+          "text": "segmentación del tubo neural."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La neurulación comienza con la inducción neural del ectodermo, un proceso que marca el territorio neural y determina el tejido del que se originará el SN."
+    },
+    {
+      "id": 15,
+      "sourceId": 241,
+      "used": true,
+      "text": "La red nerviosa difusa de cnidarios permite principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Respuestas rápidas ante estímulos ambientales."
+        },
+        {
+          "key": "B",
+          "text": "Lenguaje simbólico."
+        },
+        {
+          "key": "C",
+          "text": "Corteza prefrontal de seis capas."
+        },
+        {
+          "key": "D",
+          "text": "Control hormonal hipofisario."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Una red nerviosa difusa posibilita respuestas simples y rápidas a estímulos mecánicos o químicos sin un encéfalo centralizado."
+    },
+    {
+      "id": 16,
+      "sourceId": 34,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con la organización jerárquica de los sistemas motores:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las órdenes motoras fluyen de los niveles inferiores a los superiores."
+        },
+        {
+          "key": "B",
+          "text": "existe una autonomía total en todos los niveles del sistema motor."
+        },
+        {
+          "key": "C",
+          "text": "las órdenes motoras fluyen desde los niveles superiores a los inferiores."
+        },
+        {
+          "key": "D",
+          "text": "no hay una gradación de funciones entre los distintos componentes del sistema motor."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El sistema motor sigue un modelo de organización jerárquica estricta (en serie) donde las órdenes de mayor nivel planificadas en la corteza cerebral descienden progresivamente a los niveles inferiores del tronco y la médula espinal."
+    },
+    {
+      "id": 17,
+      "sourceId": 66,
+      "used": true,
+      "text": "La estrategia de la selección K en biología evolutiva se caracteriza por favorecer:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alta tasa reproductiva y escaso cuidado parental."
+        },
+        {
+          "key": "B",
+          "text": "Baja tasa reproductiva y alta inversión en cuidados parentales."
+        },
+        {
+          "key": "C",
+          "text": "Desarrollo rápido y madurez sexual temprana."
+        },
+        {
+          "key": "D",
+          "text": "Corta esperanza de vida y muchos descendientes."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La selección k favorece cuerpos más grandes, desarrollo ontogénico lento, longevidad y una estrategia de muy pocas crías pero con una gran inversión de recursos y prolongados cuidados parentales."
+    },
+    {
+      "id": 18,
+      "sourceId": 399,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con las hormonas tiroideas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La T3 proviene de la tiroglobulina mientras que la T4 proviene de la tirotropina."
+        },
+        {
+          "key": "B",
+          "text": "El yodo necesario para la síntesis de hormonas tiroideas proviene de la dieta."
+        },
+        {
+          "key": "C",
+          "text": "Su liberación depende de la TSH liberada por la neurohipófisis."
+        },
+        {
+          "key": "D",
+          "text": "Su liberación no influye sobre la hormona de crecimiento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El yodo procede de la dieta y es esencial para sintetizar T3 y T4; la TSH procede de la adenohipófisis."
+    },
+    {
+      "id": 19,
+      "sourceId": 268,
+      "used": true,
+      "text": "La vía dorsal visual que proyecta hacia corteza parietal posterior se asocia principalmente con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Localización espacial y guía de acciones."
+        },
+        {
+          "key": "B",
+          "text": "Síntesis de tiroxina."
+        },
+        {
+          "key": "C",
+          "text": "Reconocimiento exclusivo de olores."
+        },
+        {
+          "key": "D",
+          "text": "Respuesta inmune humoral."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La corriente dorsal procesa información espacial y visuomotora, útil para localizar objetos y orientar movimientos hacia ellos."
+    },
+    {
+      "id": 20,
+      "sourceId": 141,
+      "used": true,
+      "text": "Las principales células productoras de hormonas gonadales en los testículos son las de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La zona periventricular del hipotálamo."
+        },
+        {
+          "key": "B",
+          "text": "Sertoli."
+        },
+        {
+          "key": "C",
+          "text": "Leydig."
+        },
+        {
+          "key": "D",
+          "text": "El área preóptica medial."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las células de Leydig, estimuladas por la hormona luteinizante (LH), son las responsables de sintetizar y secretar los andrógenos testiculares, de los cuales la testosterona es la más importante."
+    },
+    {
+      "id": 21,
+      "sourceId": 313,
+      "used": true,
+      "text": "La microglía del SNC se caracteriza por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Capacidad fagocítica y función como célula presentadora de antígenos."
+        },
+        {
+          "key": "B",
+          "text": "Ser una neurona piramidal excitatoria."
+        },
+        {
+          "key": "C",
+          "text": "Liberar melatonina en la pineal."
+        },
+        {
+          "key": "D",
+          "text": "Formar la membrana timpánica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La microglía es la principal célula inmunitaria residente del SNC, con funciones de vigilancia, fagocitosis y presentación antigénica."
+    },
+    {
+      "id": 22,
+      "sourceId": 65,
+      "used": true,
+      "text": "El coeficiente de encefalización (CE) es una medida que compara:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El peso del encéfalo con la longitud del cuerpo del animal."
+        },
+        {
+          "key": "B",
+          "text": "El peso real del encéfalo con el peso esperado para su tamaño corporal."
+        },
+        {
+          "key": "C",
+          "text": "El número de neuronas con el volumen de la corteza cerebral."
+        },
+        {
+          "key": "D",
+          "text": "La superficie cortical con la masa muscular del organismo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El cociente de encefalización desarrollado por Harry Jerison es una métrica que compara el peso medio real del encéfalo de una especie con el peso encefálico teórico que le correspondería tener en función de su peso corporal total."
+    },
+    {
+      "id": 23,
+      "sourceId": 136,
+      "used": true,
+      "text": "¿Cuál es el origen principal de la mayoría de las interneuronas inhibitorias de la corteza cerebral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La placa cortical del telencéfalo dorsal."
+        },
+        {
+          "key": "B",
+          "text": "La zona ventricular del neuroepitelio cortical."
+        },
+        {
+          "key": "C",
+          "text": "El hem cortical del telencéfalo medial."
+        },
+        {
+          "key": "D",
+          "text": "Las eminencias ganglionares del telencéfalo subcortical."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A diferencia de las neuronas de proyección excitatorias que nacen localmente en la zona ventricular, la mayoría de las interneuronas inhibitorias gabaérgicas se originan ventralmente en las eminencias ganglionares y migran de forma tangencial hasta la corteza."
+    },
+    {
+      "id": 24,
+      "sourceId": 183,
+      "used": true,
+      "text": "Las sustancias que favorecen el crecimiento de las prolongaciones celulares durante el desarrollo embrionario y guían a los axones a su destino se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "proteínas morfogenéticas óseas."
+        },
+        {
+          "key": "B",
+          "text": "sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "sustancias neurotrópicas."
+        },
+        {
+          "key": "D",
+          "text": "moléculas de adhesión celular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "No hay que confundirlas: las sustancias neurotróPicas (con 'p') son las que tienen capacidad directriz (afinidad química) para guiar la ruta del crecimiento del axón, mientras que las neurotróFicas (con 'f', como el FCN) se encargan de promover la supervivencia celular."
+    },
+    {
+      "id": 25,
+      "sourceId": 338,
+      "used": true,
+      "text": "Las sustancias que favorecen el crecimiento de las prolongaciones celulares durante el desarrollo embrionario se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Proteínas morfogenéticas óseas."
+        },
+        {
+          "key": "B",
+          "text": "Sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "Moléculas neurotrópicas."
+        },
+        {
+          "key": "D",
+          "text": "Moléculas de adhesión celular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las moléculas neurotrópicas orientan y favorecen el crecimiento de las prolongaciones axónicas; las neurotróficas se relacionan más con la supervivencia neuronal."
+    },
+    {
+      "id": 26,
+      "sourceId": 113,
+      "used": true,
+      "text": "Señale la asociación INCORRECTA durante la regionalización del tubo neural:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Señales ventralizantes-inducen la formación de la placa del suelo."
+        },
+        {
+          "key": "B",
+          "text": "Señales ventralizantes-diferenciación de la cresta neural."
+        },
+        {
+          "key": "C",
+          "text": "Señales dorsalizantes-inducen la formación de la placa del techo."
+        },
+        {
+          "key": "D",
+          "text": "Señales inductoras de la placa del suelo-diferenciación de células de la médula espinal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Las señales que inducen la formación y diferenciación de la cresta neural son estrictamente señales dorsalizantes que provienen del ectodermo dorsal, y nunca ventralizantes."
+    },
+    {
+      "id": 27,
+      "sourceId": 337,
+      "used": true,
+      "text": "Durante la ontogenia del SN, ¿qué tipo de moléculas realizan el reconocimiento de la glía radial y proporcionan la adhesividad para que se desplacen por sus prolongaciones las neuronas migratorias del tubo neural?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las moléculas de la matriz extracelular."
+        },
+        {
+          "key": "B",
+          "text": "Las sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "Las moléculas de adhesión celular neurona-glía (MAC-Ng)."
+        },
+        {
+          "key": "D",
+          "text": "Las sustancias neurotrópicas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las moléculas de adhesión celular neurona-glía permiten que las neuronas migratorias reconozcan la glía radial y se adhieran a ella durante la migración."
+    },
+    {
+      "id": 28,
+      "sourceId": 14,
+      "used": true,
+      "text": "¿A través de qué tipo de receptores actúan las hormonas hidrosolubles, como las hormonas peptídicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A través de receptores ubicados en la superficie externa de la membrana de la célula diana."
+        },
+        {
+          "key": "B",
+          "text": "A través de receptores situados en la cara interna de la membrana de la célula diana."
+        },
+        {
+          "key": "C",
+          "text": "A través de receptores intracelulares que forman un complejo con la hormona."
+        },
+        {
+          "key": "D",
+          "text": "A través de receptores localizados en el núcleo, con los que forman un complejo que se une al ADN."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las hormonas peptídicas, al ser hidrosolubles, no cruzan la membrana celular y deben unirse a receptores ubicados en la superficie externa de la membrana de la célula diana."
+    },
+    {
+      "id": 29,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Qué tipo de célula inmunitaria reconoce antígenos específicos, pero solo con la ayuda de células presentadoras de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Los linfocitos B."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La inmunidad mediada por células está a cargo de los linfocitos T, los cuales solo se activan y reconocen a los antígenos invasores si éstos son exhibidos previamente en la superficie de células presentadoras de antígenos."
+    },
+    {
+      "id": 30,
+      "sourceId": 24,
+      "used": true,
+      "text": "La unidad responsable de evitar que la contracción muscular sea demasiado fuerte es/son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los husos musculares."
+        },
+        {
+          "key": "B",
+          "text": "los órganos tendinosos de Golgi."
+        },
+        {
+          "key": "C",
+          "text": "las fibras musculares extrafusales."
+        },
+        {
+          "key": "D",
+          "text": "la unidad motora."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los órganos tendinosos de Golgi actúan como un mecanismo de seguridad inhibiendo las contracciones musculares excesivas para prevenir daños en el tendón y el músculo."
+    }
+  ]
+}

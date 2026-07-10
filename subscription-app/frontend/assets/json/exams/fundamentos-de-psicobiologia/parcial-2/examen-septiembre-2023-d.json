@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Septiembre 2023 - Tipo D",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas del examen de Septiembre 2023 - Fundamentos de Psicobiología de la UNED",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En relación con las estructuras del SN central que presentan corteza sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la corteza de los hemisferios cerebrales está formada exclusivamente por neocorteza;"
+        },
+        {
+          "key": "B",
+          "text": "tanto la corteza cerebral como la corteza del cerebelo están organizadas en seis capas celulares;"
+        },
+        {
+          "key": "C",
+          "text": "la alocorteza está involucrada en el sistema olfatorio y el sistema límbico;"
+        },
+        {
+          "key": "D",
+          "text": "todas sus áreas se clasifican en sensoriales y motoras."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La alocorteza (formada por paleocorteza y arquicorteza) es la corteza filogenéticamente más antigua, consta de 3 capas y es un componente esencial del sistema olfatorio y del sistema límbico (relacionado con emociones y memoria)."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Las células del sistema inmune:",
+      "options": [
+        {
+          "key": "A",
+          "text": "pueden liberar péptidos;"
+        },
+        {
+          "key": "B",
+          "text": "no pueden liberar hormonas;"
+        },
+        {
+          "key": "C",
+          "text": "pueden liberar péptidos, pero no neurotransmisores;"
+        },
+        {
+          "key": "D",
+          "text": "liberan péptidos y neurotransmisores, pero no hormonas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los leucocitos son capaces de sintetizar y liberar no solo péptidos (como las citocinas), sino también neurotransmisores e incluso hormonas peptídicas (como la ACTH y endorfinas), actuando como auténticos emisores de señales neuroendocrinas."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "En humanos, ciertas discapacidades intelectuales se relacionan directamente con déficits de los niveles de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "prolactina;"
+        },
+        {
+          "key": "B",
+          "text": "aldosterona;"
+        },
+        {
+          "key": "C",
+          "text": "tiroxina y triyodotironina;"
+        },
+        {
+          "key": "D",
+          "text": "cortisol."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las hormonas tiroideas (T3 y T4) son absolutamente críticas para el desarrollo y maduración del sistema nervioso durante la etapa perinatal. Su déficit agudo provoca un grave trastorno del desarrollo físico y mental históricamente conocido como cretinismo."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "De las áreas corticales implicadas en el control motor, la que tiene como función principal seleccionar la estrategia más adecuada para ejecutar el movimiento en función de la experiencia y tomar la decisión de iniciar el movimiento es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la corteza parietal posterior;"
+        },
+        {
+          "key": "B",
+          "text": "la corteza prefrontal dorsolateral;"
+        },
+        {
+          "key": "C",
+          "text": "la corteza premotora;"
+        },
+        {
+          "key": "D",
+          "text": "el área motora suplementaria."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El nivel más alto de la jerarquía motora recae sobre la corteza prefrontal dorsolateral, encargada de evaluar la situación, aportar la motivación, recuperar estrategias de la memoria y tomar la decisión consciente de iniciar el movimiento."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "En relación con la remodelación sináptica podemos afirmar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es un proceso que precede al de muerte neuronal;"
+        },
+        {
+          "key": "B",
+          "text": "se produce fundamentalmente en el periodo prenatal;"
+        },
+        {
+          "key": "C",
+          "text": "no depende de la actividad sináptica;"
+        },
+        {
+          "key": "D",
+          "text": "los periodos concretos de remodelación son propios de cada región."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La poda y remodelación de las sinapsis (que ocurre después de la muerte neuronal y masivamente a nivel postnatal guiada por la experiencia) sucede en ventanas de tiempo o periodos críticos que varían cronológicamente para cada área concreta del SNC."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "En relación con la síntesis y liberación de vasopresina sabemos que puede estar influida por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el consumo de alcohol;"
+        },
+        {
+          "key": "B",
+          "text": "señales de los órganos circunventriculares relacionadas con cambios en los fluidos corporales;"
+        },
+        {
+          "key": "C",
+          "text": "cambios en el volumen sanguíneo;"
+        },
+        {
+          "key": "D",
+          "text": "las tres opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La vasopresina (ADH) obedece a los osmorreceptores circunventriculares y a los barorreceptores que miden el volumen de sangre. Además, su síntesis y secreción se ven fuertemente inhibidas por el consumo de alcohol (efecto diurético)."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "En relación con la filogenia del SN, la hipótesis polifilética sostiene que las neuronas aparecieron por primera vez en los:",
+      "options": [
+        {
+          "key": "A",
+          "text": "poríferos;"
+        },
+        {
+          "key": "B",
+          "text": "cnidarios y ctenóforos;"
+        },
+        {
+          "key": "C",
+          "text": "placozoos;"
+        },
+        {
+          "key": "D",
+          "text": "poríferos y artrópodos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La genómica moderna y las profundas diferencias funcionales obligan a pensar (según la hipótesis polifilética) que la maquinaria neuronal original emergió de forma paralela e independiente en al menos dos ramas ancestrales: ctenóforos y cnidarios."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Se ha observado que cuando se mantiene en el tiempo la estimulación sobre los receptores sensoriales, se produce una reducción de la respuesta de los mismos. A este fenómeno se le denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbral de respuesta;"
+        },
+        {
+          "key": "B",
+          "text": "habituación sensorial;"
+        },
+        {
+          "key": "C",
+          "text": "adaptación sensorial;"
+        },
+        {
+          "key": "D",
+          "text": "código poblacional."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La adaptación sensorial es la propiedad fisiológica periférica por la cual un receptor disminuye progresivamente su frecuencia de potenciales de acción a pesar de que el estímulo físico externo mantenga una intensidad y presencia constante."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "Desde la perspectiva de la Psiconeuroinmunología, el biofeedback es una aproximación terapéutica en Psicología que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no reviste utilidad;"
+        },
+        {
+          "key": "B",
+          "text": "puede ser útil, pero nunca podría usarse en trastornos inflamatorios;"
+        },
+        {
+          "key": "C",
+          "text": "podría involucrar a la vía antiinflamatoria vagal;"
+        },
+        {
+          "key": "D",
+          "text": "nunca podría basarse en la influencia del SN sobre el inmune."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El biofeedback permite al sujeto ganar cierto control consciente sobre constantes autónomas; en el contexto inmune, puede usarse para activar las ramas colinérgicas parasimpáticas (como el reflejo antiinflamatorio vagal) atenuando problemas inflamatorios crónicos."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "En relación con la hipófisis sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las células secretoras de la adenohipófisis liberan hormonas trópicas;"
+        },
+        {
+          "key": "B",
+          "text": "la adenohipófisis está regulada por hormonas hipotalámicas;"
+        },
+        {
+          "key": "C",
+          "text": "la neurohipófisis almacena y libera hormonas sintetizadas en el hipotálamo;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas las aseveraciones son fisiológicamente correctas. La adenohipófisis fabrica hormonas trópicas al recibir liberación portal desde el hipotálamo, mientras que la neurohipófisis carece de producción propia y solo vierte la oxitocina y vasopresina formadas previamente en los núcleos paraventricular y supraóptico."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "De los núcleos de las columnas blancas dorsales sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se localizan en el puente;"
+        },
+        {
+          "key": "B",
+          "text": "reciben señales aferentes somáticas procedentes del tronco y de las extremidades;"
+        },
+        {
+          "key": "C",
+          "text": "constituyen las pirámides;"
+        },
+        {
+          "key": "D",
+          "text": "sus axones envían información somatosensorial directamente a la corteza cerebral sin experimentar decusación."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los núcleos de las columnas dorsales (cuneado y grácil) se alojan en el bulbo raquídeo y son el primer gran relevo al que convergen las vías epicríticas ipsilaterales ascendentes que transportan el tacto del tronco y los miembros."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Los trastornos de adicción a drogas de abuso:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no afectan al sistema inmune;"
+        },
+        {
+          "key": "B",
+          "text": "afectan exclusivamente al SN;"
+        },
+        {
+          "key": "C",
+          "text": "pueden implicar a las citocinas, pero nunca cursan con un componente inflamatorio;"
+        },
+        {
+          "key": "D",
+          "text": "pueden presentarse con elevaciones de marcadores inflamatorios."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La psiconeuroinmunología ha documentado cómo las drogas de abuso activan severamente a las células gliales generando respuestas neuroinflamatorias con elevación de citocinas (marcadores inflamatorios) que agravan el circuito de la adicción."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En relación con la hormona GnRH sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es una hormonas trópica liberada por la adenohipófisis;"
+        },
+        {
+          "key": "B",
+          "text": "es producida y segregada por el hipotálamo;"
+        },
+        {
+          "key": "C",
+          "text": "su secreción está bajo el control directo de la somatostatina;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La GnRH (hormona liberadora de gonadotropinas) es fabricada en el área preóptica del hipotálamo y viaja a través del sistema porta para dar la orden a la adenohipófisis de que libere FSH y LH."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Cuando fotones de luz atraviesan las distintas capas de la retina hasta llegar a los bastones y conos, las respuestas de esas células fotorreceptoras se llevan a cabo con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "potenciales graduados (potenciales de receptor) inhibitorios;"
+        },
+        {
+          "key": "B",
+          "text": "potenciales de acción;"
+        },
+        {
+          "key": "C",
+          "text": "potenciales graduados (potenciales de receptor) excitatorios;"
+        },
+        {
+          "key": "D",
+          "text": "la participación del epitelio pigmentado, que es rico en melanina."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Como excepción en el mundo sensorial, la absorción de luz por parte de los pigmentos del fotorreceptor desencadena el cierre de canales iónicos, lo que se traduce de forma peculiar en un potencial de receptor inhibitorio (hiperpolarización)."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con la migración celular en el neuroepitelio cortical:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la glucoproteína relina facilita la migración de las neuronas de proyección hasta la placa cortical en el período temprano;"
+        },
+        {
+          "key": "B",
+          "text": "cuando avanza la neurogénesis, las neuronas de proyección tienen una forma multipolar y la manera en que migran se denomina aleatoria;"
+        },
+        {
+          "key": "C",
+          "text": "en algunos momentos utilizan mecanismos de migración a través de células de la glía radial;"
+        },
+        {
+          "key": "D",
+          "text": "las tres anteriores son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Durante su éxodo hacia la corteza, la célula de proyección hace uso de la translocación somática, se vuelve multipolar vagando por la zona intermedia, trepa ulteriormente por la glía radial, y depende del semáforo químico de la relina para finalizar su camino."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "De las unidades funcionales del cerebelo, la principal responsable de enviar señales correctoras al tronco del encéfalo para modificar la postura y restablecer el equilibrio sería:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el espinocerebelo;"
+        },
+        {
+          "key": "B",
+          "text": "el vestibulocerebelo;"
+        },
+        {
+          "key": "C",
+          "text": "el cerebrocerebelo;"
+        },
+        {
+          "key": "D",
+          "text": "los núcleos cerebelosos profundos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El lóbulo floculonodular (que funcionalmente compone el vestibulocerebelo) se nutre puramente de información vestibular para orquestar correcciones instantáneas dirigidas a evitar la caída y mantener la verticalidad."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "En relación con la encefalización sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "surge en los invertebrados;"
+        },
+        {
+          "key": "B",
+          "text": "aparece por primera vez en vertebrados;"
+        },
+        {
+          "key": "C",
+          "text": "es el resultado de procesos evolutivos donde se ha favorecido la centralización del control de los ganglios metaméricos;"
+        },
+        {
+          "key": "D",
+          "text": "lo indicado en A y C es cierto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El proceso de empaquetamiento masivo de neuronas en la parte frontal de un organismo no es exclusivo nuestro; la encefalización arranca en invertebrados (como pulpos e insectos) producto de fusionar masivamente sus ganglios delanteros para regir los sentidos de la cabeza."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "En los husos musculares podemos encontrar:",
+      "options": [
+        {
+          "key": "A",
+          "text": "botones terminales de motoneuronas gamma;"
+        },
+        {
+          "key": "B",
+          "text": "fibras de colágeno trenzadas;"
+        },
+        {
+          "key": "C",
+          "text": "corpúsculos de Ruffini;"
+        },
+        {
+          "key": "D",
+          "text": "interneuronas inhibitorias."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El huso muscular está compuesto por diminutas fibras intrafusales cuya contracción autónoma en los extremos obedece exclusivamente a las terminaciones sinápticas provenientes de las motoneuronas tipo gamma medulares."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Son numerosos los factores y variables que nuestro SN debe analizar para que puedan procesarse las diferentes dimensiones que hay en un estímulo sonoro y posibilitar la percepción de la música. De acuerdo con lo que se acaba de decir, en lo que se refiere a la percepción musical sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "todos los aspectos de la percepción musical dependen de la corteza frontal inferior;"
+        },
+        {
+          "key": "B",
+          "text": "el componente emocional de la música parece procesarse en regiones cerebrales distintas a las que se procesa la melodía y el ritmo;"
+        },
+        {
+          "key": "C",
+          "text": "el cerebelo y los ganglios basales son los encargados de la percepción de la armonía;"
+        },
+        {
+          "key": "D",
+          "text": "la amusia es la capacidad que nos permite apreciar los ritmos musicales complejos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El análisis acústico-formal se decodifica en las redes temporales derechas (amusia indica patología de falta de apreciación). Sin embargo, el goce afectivo y el escalofrío emocional que induce la música reclutan ejes del sistema de recompensa y paralelos muy distintos al córtex acústico puro."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "¿Cuál de las siguientes estructuras encefálicas ha sufrido más e importantes cambios evolutivos en mamíferos?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la neocorteza;"
+        },
+        {
+          "key": "B",
+          "text": "los ganglios basales;"
+        },
+        {
+          "key": "C",
+          "text": "la amígdala;"
+        },
+        {
+          "key": "D",
+          "text": "el cerebelo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A diferencia de las partes basales que compartimos estrechamente con reptiles y anfibios, la neocorteza (con sus 6 estratos) explotó desmesuradamente con el advenimiento de los mamíferos superiores dominando anatómica y cognitivamente el cráneo."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "¿Cuál es el término correcto para referirse a las vías que interconectan estructuras de ambos lados de los hemisferios cerebrales?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "comisuras;"
+        },
+        {
+          "key": "B",
+          "text": "tractos;"
+        },
+        {
+          "key": "C",
+          "text": "fascículos;"
+        },
+        {
+          "key": "D",
+          "text": "cualquiera de las opciones anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Cualquier haz o paquete grueso de sustancia blanca que cruza perpendicularmente la cisura longitudinal para comunicar un hemisferio con el simétrico contrario recibe la denominación neuroanatómica de comisura (ej. cuerpo calloso)."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "En las células inmunitarias:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hay receptores para neurotransmisores como la dopamina;"
+        },
+        {
+          "key": "B",
+          "text": "no se han observado receptores de serotonina, pero sí de dopamina;"
+        },
+        {
+          "key": "C",
+          "text": "hay presencia de neuropéptidos, pero no de receptores de dopamina;"
+        },
+        {
+          "key": "D",
+          "text": "no existen receptores de neurotransmisores que les permitan modular la función de esas células."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Para asegurar una comunicación bidireccional perfecta, en la membrana de los leucocitos se han secuenciado multitud de receptores biológicamente activos para neurotransmisores clásicos del SNC, tales como la dopamina o la noradrenalina."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "En relación con el patrón dorso-ventral del tubo neural podemos afirmar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en la médula espinal las señales inductoras ventralizantes inducen la formación de la placa del techo;"
+        },
+        {
+          "key": "B",
+          "text": "las señales dorsalizantes proceden del endodermo dorsal;"
+        },
+        {
+          "key": "C",
+          "text": "la placa del suelo y la placa del techo funcionan como organizadores secundarios para regular la identidad dorso-ventral;"
+        },
+        {
+          "key": "D",
+          "text": "las tres opciones anteriores son verdaderas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Una vez establecidas, la placa del techo en el extremo dorsal y la placa del suelo en el ventral continúan emitiendo morfógenos difusibles actuando así de balizas orgánicas secundarias para modelar la separación funcional dorso-ventral de la futura médula."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "En relación con la progesterona sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "su liberación aumenta en la fase luteínica del ciclo menstrual;"
+        },
+        {
+          "key": "B",
+          "text": "prepara el endometrio para la implantación del óvulo fecundado;"
+        },
+        {
+          "key": "C",
+          "text": "es también liberada por la placenta;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Tras la ovulación, el cuerpo lúteo aumenta exponencialmente la producción de progesterona para asegurar el revestimiento uterino y, si sobreviene el embarazo, la placenta se hace cargo progresivamente de su secreción."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Diferentes estudios contrastados en la literatura científica sobre el procesamiento cortical en el sistema visual indican que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las neuronas que responden de forma preferente a las señales procedentes de un ojo se distribuyen al azar en la corteza visual primaria;"
+        },
+        {
+          "key": "B",
+          "text": "la propiedad de finalización del campo receptivo hace referencia a que las células complejas de la corteza visual primaria responden de forma intensa ante movimientos de cualquier estímulo luminoso en una dirección determinada;"
+        },
+        {
+          "key": "C",
+          "text": "el movimiento no es un factor esencial para la percepción de nuestro medio ambiente;"
+        },
+        {
+          "key": "D",
+          "text": "las células complejas tienen campos receptivos más grandes que los de las células simples, están organizadas jerárquicamente y, aunque son las más abundantes de la corteza visual primaria, también se localizan en otras áreas de la corteza visual."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En V1 existe una estricta jerarquía donde las células complejas predominan integrando a las simples. Las opciones A, B y C son descripciones anatómicamente engañosas, siendo la expansión del campo receptivo de las complejas y su distribución por V1 y extraestriadas el único hecho totalmente cierto en este caso."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Aunque cada uno de los tractos que forman las vías mediales troncoencefálicas realiza su propia contribución al mantenimiento de la postura, se considera que la región facilitadora por excelencia de los reflejos espinales antigravitatorios para el mantenimiento de la postura erguida se encuentra en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el puente;"
+        },
+        {
+          "key": "B",
+          "text": "el bulbo raquídeo;"
+        },
+        {
+          "key": "C",
+          "text": "el núcleo rojo;"
+        },
+        {
+          "key": "D",
+          "text": "la médula espinal."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El grueso de la fuerza tensora de nuestra musculatura extensora para no desmoronarnos ante la gravedad está garantizado fundamentalmente por las proyecciones descendentes del tracto reticuloespinal pontino originado en el puente."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "La participación del gen FOXP2 en el aumento del cociente de encefalización (CE) humano parece estar relacionada con su implicación en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la interacción social entre congéneres, ya que compartimos con los demás primates la secuencia de aminoácidos de la proteína reguladora que codifica dicho gen FOXP2;"
+        },
+        {
+          "key": "B",
+          "text": "el desarrollo de estrategias alimenticias capaces de mantener un cerebro que exige un gasto energético muy grande en relación con su tamaño;"
+        },
+        {
+          "key": "C",
+          "text": "la evolución del lenguaje;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los profundos análisis genéticos homínidos dictaminan que las dos mutaciones sufridas por el gen regulador FOXP2 jugaron un rol insustituible para adquirir las precisas redes motoras-articulatorias de las que depende nuestro lenguaje moderno."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "Uno de los ejemplos de procesamiento en paralelo de la información sensorial es el que se lleva a cabo en el sistema somatosensorial. A este respecto, sabemos que el sistema lemniscal se encarga fundamentalmente de la transmisión relacionada con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la información más precisa del tacto;"
+        },
+        {
+          "key": "B",
+          "text": "el dolor;"
+        },
+        {
+          "key": "C",
+          "text": "la percepción del frío;"
+        },
+        {
+          "key": "D",
+          "text": "la percepción del calor."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Mientras el dolor o la temperatura discurren por el lado anterolateral, la vía posterior o sistema de la columna dorsal-lemnisco medial (de alta mielinización y enorme calibre) monopoliza todo el tráfico referente al tacto fino, la vibración y la propiocepción milimétrica."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Señale la respuesta correcta respecto a la plasticidad en el cerebro adulto:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sigue produciéndose sinaptogénesis, aunque a niveles bajos;"
+        },
+        {
+          "key": "B",
+          "text": "en procesos de aprendizaje y memoria ocurre reorganización sináptica y la fuerza de las sinapsis cambia con el uso;"
+        },
+        {
+          "key": "C",
+          "text": "se mantiene durante toda la vida y permite la adaptación a un entorno cambiante;"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La madurez frena la masiva poda juvenil, pero en absoluto erradica la plasticidad. Durante toda la edad adulta continúan formándose espinas, reubicándose sinapsis por aprendizaje e incluso forjándose neurogénesis local, posibilitando adaptarnos."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "¿Qué número se corresponde correctamente con el componente señalado en la Figura 1?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "8: motoneurona somática;"
+        },
+        {
+          "key": "B",
+          "text": "7: canal central del sistema ventricular;"
+        },
+        {
+          "key": "C",
+          "text": "2: asta ventral;"
+        },
+        {
+          "key": "D",
+          "text": "5: asta dorsal."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En cualquier esquema anatómico de sección medular, el pequeño orificio número 7 emplazado en el centro absoluto de la comisura gris corresponde unívocamente al conducto ependimario o canal central del sistema ventricular."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Assistant Pro</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <section class="hero-panel">
+      <div class="brand-row">
+        <img src="assets/img/Logo exam assistant.png" alt="Exam Assistant Logo" class="brand-logo" />
+        <div>
+          <p class="eyebrow">Subscription Preview</p>
+          <h1>Exam Assistant Pro</h1>
+        </div>
+      </div>
+      <p class="hero-copy">
+        Plataforma de preparación de exámenes con acceso privado, progreso guardado, historial por usuario y gestión de favoritos.
+      </p>
+      <div class="feature-grid">
+        <article>
+          <strong>Acceso privado</strong>
+          <span>Registro, login y sesión personalizada. No pierdas tu progreso y mantén tus datos seguros.</span>
+        </article>
+        <article>
+          <strong>Zona de estudiante</strong>
+          <span>Genera tu plan de estudios, con tus exámenes favoritos. También puedes guardar el progreso de tus exámenes y continuar más tarde.</span>
+        </article>
+      </div>
+      <div class="hero-actions">
+        <button id="showRegister" class="primary">Crear cuenta</button>
+        <button id="showLogin" class="secondary">Iniciar sesión</button>
+      </div>
+      <p class="small-note">Exam Assistant Pro - Todos los derechos registrados</p>
+    </section>
+
+    <section class="auth-panel active">
+      <div class="tabs">
+        <button class="tab active" data-tab="register">Registro</button>
+        <button class="tab" data-tab="login">Login</button>
+      </div>
+
+      <form id="registerForm" class="card form-card active">
+        <h2>Crea una cuenta</h2>
+        <label>
+          <span>Nombre</span>
+          <input type="text" name="name" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="tu@email.com" required />
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" name="password" placeholder="Mínimo 8 caracteres" required />
+        </label>
+        <button type="submit" class="primary wide">Registrarme</button>
+      </form>
+
+      <form id="loginForm" class="card form-card hidden">
+        <h2>Accede a tu cuenta</h2>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="tu@email.com" required />
+        </label>
+        <label>
+          <span>Contraseña</span>
+          <input type="password" name="password" placeholder="Tu contraseña" required />
+        </label>
+        <button type="submit" class="primary wide">Entrar</button>
+      </form>
+
+      <div id="authMessage" class="message"></div>
+    </section>
+  </div>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Assistant Pro - Private App</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/app-private.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-row compact">
+      <img src="assets/img/Logo exam assistant.png" alt="Exam Assistant Logo" class="brand-logo small" />
+      <div>
+        <p class="eyebrow">Private Access</p>
+        <h1>Exam Assistant Pro</h1>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="logoutBtn" class="secondary">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <aside class="sidebar">
+      <section class="card profile-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Cuenta</p>
+            <h2>Perfil del estudiante</h2>
+          </div>
+        </div>
+        <form id="profileForm" class="stack-form">
+          <label>
+            <span>Nombre</span>
+            <input id="profileName" type="text" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="profileEmail" type="email" disabled />
+          </label>
+          <label>
+            <span>Plan</span>
+            <select id="profilePlan">
+              <option value="free">Free</option>
+              <option value="pro">Pro</option>
+              <option value="premium">Premium</option>
+            </select>
+          </label>
+          <button type="submit" class="primary">Guardar perfil</button>
+        </form>
+      </section>
+
+      <section class="card history-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Historial</p>
+            <h2>Actividad guardada</h2>
+          </div>
+          <button id="refreshHistoryBtn" class="secondary">Recargar</button>
+        </div>
+        <div id="historyList" class="history-list">
+          <p class="empty-state">Todavía no hay actividad guardada.</p>
+        </div>
+      </section>
+
+      <section class="card favorites-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Favoritos</p>
+            <h2>Exámenes marcados</h2>
+          </div>
+          <button id="refreshFavoritesBtn" class="secondary">Recargar</button>
+        </div>
+        <div id="favoritesList" class="history-list">
+          <p class="empty-state">Todavía no hay favoritos.</p>
+        </div>
+      </section>
+    </aside>
+
+    <section class="card catalog-card">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Catálogo</p>
+          <h2>Exámenes disponibles</h2>
+        </div>
+        <button id="refreshCatalogBtn" class="secondary">Actualizar</button>
+      </div>
+      <div class="catalog-toolbar">
+        <select id="subjectSelect">
+          <option value="">Todas las asignaturas</option>
+        </select>
+        <select id="partialSelect">
+          <option value="">Todos los parciales</option>
+        </select>
+        <select id="examSelect">
+          <option value="">Selecciona un examen</option>
+        </select>
+        <button id="openExamBtn" class="primary">Abrir examen</button>
+        <button id="toggleFavoriteBtn" class="secondary" type="button">Añadir favorito</button>
+      </div>
+      <p id="catalogStatus" class="inline-status"></p>
+    </section>
+  </main>
+
+  <!-- Exam viewer modal -->
+  <div id="examModal" class="exam-modal" aria-hidden="true">
+    <div id="examModalBackdrop" class="exam-modal-backdrop"></div>
+    <section class="exam-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalExamTitle">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalExamTitle">Examen</h2>
+          <p id="modalExamMeta" class="modal-meta"></p>
+        </div>
+        <div class="modal-actions">
+          <button id="saveProgressBtn" class="secondary" disabled>Guardar progreso</button>
+          <button id="closeExamBtn" class="secondary" type="button">Cerrar</button>
+        </div>
+      </div>
+      <iframe id="examFrame" title="Exam viewer" class="exam-frame" src="about:blank"></iframe>
+    </section>
+  </div>
+
+  <script src="assets/js/subscription-dashboard.js"></script>
+</body>
+</html>
