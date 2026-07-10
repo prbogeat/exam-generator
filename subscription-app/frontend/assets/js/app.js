@@ -1523,7 +1523,10 @@ function registerServiceWorker() {
   }
 
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {
+    const basePath = window.location.pathname.replace(/[^/]*$/, "");
+    const swUrl = `${basePath}sw.js`;
+
+    navigator.serviceWorker.register(swUrl, { scope: basePath }).catch(() => {
       // Registration can fail in restrictive environments; the app still works online.
     });
   });

@@ -45,7 +45,7 @@ const dom = {
 
 function setMessage(message, type = "") {
   dom.authMessage.textContent = message;
-  dom.authMessage.className = `message ${type}`.trim();
+  dom.authMessage.className = `message ${type} ${message ? "show" : ""}`.trim();
 }
 
 function setActiveTab(tab) {
@@ -83,7 +83,14 @@ async function request(path, options = {}) {
 
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const error = new Error(payload.detail || payload.error || `HTTP ${response.status}`);
+    let message;
+    if (Array.isArray(payload.detail)) {
+      // Pydantic 422 validation errors
+      message = payload.detail.map((e) => e.msg).join(", ");
+    } else {
+      message = payload.detail || payload.error || `HTTP ${response.status}`;
+    }
+    const error = new Error(message);
     error.status = response.status;
     throw error;
   }
@@ -146,7 +153,13 @@ function bindEvents() {
       try {
         await submitAuth("/auth/login", dom.loginForm);
       } catch (error) {
-        setMessage(error.message, "error");
+        if (error.status === 401) {
+          setMessage("Email o contraseña incorrectos.", "error");
+        } else if (error.status === 422) {
+          setMessage("La contraseña debe tener al menos 8 caracteres.", "error");
+        } else {
+          setMessage(error.message, "error");
+        }
       }
     });
   }

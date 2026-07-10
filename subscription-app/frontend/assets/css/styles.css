@@ -653,31 +653,37 @@ input[type="checkbox"] {
 
 .tabs {
   display: flex;
-  gap: 4px;
-  margin-bottom: 24px;
-  border-bottom: 2px solid var(--border);
+  gap: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
 
 .tab {
-  border: none;
-  background: none;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: var(--bg);
   color: var(--muted);
-  padding: 12px 16px;
-  margin-bottom: -2px;
-  border-bottom: 2px solid transparent;
+  padding: 9px 20px;
+  margin-bottom: -1px;
+  border-radius: 8px 8px 0 0;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
-  transition: all 0.2s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .tab:hover {
   color: var(--text);
+  border-color: var(--border);
+  background: #edf2f7;
 }
 
 .tab.active {
   color: var(--dark);
-  border-bottom-color: var(--dark);
+  background: var(--card);
+  border-color: var(--border);
+  border-bottom-color: var(--card);
 }
 
 .form-card {
@@ -746,7 +752,8 @@ button.wide {
 .message {
   padding: 12px 16px;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 0;
   font-size: 14px;
   display: none;
 }
