@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: exam-generator-subscription
+    runtime: python
+    plan: free
+    buildCommand: pip install -r subscription-app/backend/requirements.txt
+    startCommand: uvicorn subscription-app.backend.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: EXAM_ASSISTANT_SECRET
+        generateValue: true
