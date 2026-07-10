@@ -44,6 +44,8 @@ const state = {
   currentPartialFilter: "",
 };
 
+let lastFocusedElement = null;
+
 const dom = {
   logoutBtn: document.getElementById("logoutBtn"),
   profileForm: document.getElementById("profileForm"),
@@ -86,9 +88,15 @@ function openExamModal() {
     return;
   }
 
+  lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
   dom.examModal.classList.add("visible");
   dom.examModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+
+  if (dom.closeExamBtn) {
+    dom.closeExamBtn.focus();
+  }
 }
 
 async function api(path, options = {}) {
@@ -529,13 +537,30 @@ async function saveProgress() {
   try {
     const snapshot = dom.examFrame && dom.examFrame.contentWindow && dom.examFrame.contentWindow.ExamAppBridge
       ? dom.examFrame.contentWindow.ExamAppBridge.getSnapshot()
-      : { answers: {}, score: null };
+      : { answers: {}, score: null, submitted: false };
+
+    let normalizedScore = null;
+    const numericScore = Number(snapshot && snapshot.score);
+    if (Number.isFinite(numericScore)) {
+      normalizedScore = numericScore;
+    }
+
+    if (normalizedScore === null && snapshot && snapshot.submitted && dom.examFrame && dom.examFrame.contentWindow) {
+      const gradeNode = dom.examFrame.contentWindow.document.getElementById("gradeBox");
+      const gradeText = gradeNode ? String(gradeNode.textContent || "").trim() : "";
+      const fallback = Number(gradeText.replace(",", "."));
+      if (Number.isFinite(fallback)) {
+        normalizedScore = fallback;
+      }
+    }
+
     const payload = {
       exam_uid: state.currentExam.examUid,
       exam_title: state.currentExam.examTitle,
       subject: state.currentExam.subject,
-      answers: snapshot.answers || {},
-      score: snapshot.score,
+      answers: (snapshot && snapshot.answers) || {},
+      score: normalizedScore,
+      completed_at: snapshot && snapshot.submitted ? new Date().toISOString() : null,
     };
 
     await api("/account/progress", {
@@ -579,8 +604,13 @@ async function logout() {
 
 function closeExamModal() {
   if (!dom.examModal) return;
-  
+
   try {
+    const activeEl = document.activeElement;
+    if (activeEl instanceof HTMLElement && dom.examModal.contains(activeEl)) {
+      activeEl.blur();
+    }
+
     if (dom.examFrame) {
       dom.examFrame.src = "about:blank";
     }
@@ -591,6 +621,13 @@ function closeExamModal() {
 
     state.currentExam = null;
     if (dom.saveProgressBtn) dom.saveProgressBtn.disabled = true;
+
+    if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+      lastFocusedElement.focus();
+    } else if (dom.openExamBtn) {
+      dom.openExamBtn.focus();
+    }
+    lastFocusedElement = null;
   } catch (error) {
     console.error("Error closing exam modal:", error);
   }

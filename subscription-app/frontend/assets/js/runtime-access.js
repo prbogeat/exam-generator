@@ -1,5 +1,5 @@
 (function initRuntimeAccess(global) {
-  const BACKEND_PROBE_PATH = "/api/exams";
+  const BACKEND_PROBE_PATH = "/api/health";
 
   function hasCapacitor() {
     return Boolean(global.Capacitor && typeof global.Capacitor.isNativePlatform === "function");
