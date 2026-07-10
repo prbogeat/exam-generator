@@ -16,9 +16,30 @@ from pathlib import Path as _Path
 # Asegurar que el CWD sea la raíz del proyecto para que los paths relativos funcionen
 _PROJECT_ROOT = _Path(__file__).resolve().parent.parent
 os.chdir(_PROJECT_ROOT)
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT
-from exam_db import get_connection, upsert_exam
+
+try:
+    from exam_db import get_connection, upsert_exam
+except ModuleNotFoundError:
+    try:
+        from old_code_db.exam_db import get_connection, upsert_exam
+    except ModuleNotFoundError:
+        class _NoopConnection:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, tb):
+                return False
+
+        def get_connection(*_args, **_kwargs):
+            return _NoopConnection()
+
+        def upsert_exam(*_args, **_kwargs):
+            return None
+
 from static_exam_catalog import sync_static_exam_catalog
 
 
