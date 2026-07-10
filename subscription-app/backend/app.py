@@ -67,6 +67,14 @@ class SaveProgressRequest(BaseModel):
     completed_at: Optional[str] = None
 
 
+class FavoriteExamRequest(BaseModel):
+    exam_uid: str = Field(min_length=1, max_length=300)
+    exam_title: str = Field(min_length=1, max_length=300)
+    subject: str = Field(min_length=1, max_length=300)
+    partial: Optional[str] = Field(default=None, max_length=120)
+    file: Optional[str] = Field(default=None, max_length=500)
+
+
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
@@ -120,6 +128,20 @@ def init_db() -> None:
                 created_at TEXT NOT NULL,
                 updated_at TEXT NOT NULL,
                 FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+            );
+
+            CREATE TABLE IF NOT EXISTS favorite_exams (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                exam_uid TEXT NOT NULL,
+                exam_title TEXT NOT NULL,
+                subject TEXT NOT NULL,
+                partial TEXT,
+                file TEXT,
+                created_at TEXT NOT NULL,
+                updated_at TEXT NOT NULL,
+                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+                UNIQUE(user_id, exam_uid)
             );
             """
         )
@@ -226,6 +248,15 @@ def load_exam_by_uid(exam_uid: str) -> Dict[str, Any]:
     raise HTTPException(status_code=404, detail="Exam not found")
 
 
+def get_catalog_item(exam_uid: str) -> Optional[Dict[str, Any]]:
+    catalog = load_catalog()
+    items = catalog.get("items", []) if isinstance(catalog, dict) else []
+    for item in items:
+        if item.get("examUid") == exam_uid:
+            return item
+    return None
+
+
 @app.get("/")
 def root() -> RedirectResponse:
     return RedirectResponse(url="/subscription/index.html")
@@ -322,6 +353,12 @@ def get_exam(exam_uid: str, authorization: Optional[str] = Header(default=None))
     return {"exam": load_exam_by_uid(exam_uid)}
 
 
+@app.get("/api/exam")
+def get_exam_by_query(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    get_current_user(authorization)
+    return {"exam": load_exam_by_uid(exam_uid)}
+
+
 @app.get("/api/account/progress")
 def get_progress(authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
     user = get_current_user(authorization)
@@ -348,6 +385,46 @@ def get_progress(authorization: Optional[str] = Header(default=None)) -> Dict[st
             for row in rows
         ]
     }
+
+
+@app.get("/api/account/progress/{exam_uid:path}")
+def get_progress_detail(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    user = get_current_user(authorization)
+    with get_connection() as conn:
+        row = conn.execute(
+            """
+            SELECT exam_uid, exam_title, subject, answers_json, score, completed_at, updated_at
+            FROM exam_attempts
+            WHERE user_id = ? AND exam_uid = ?
+            ORDER BY updated_at DESC
+            LIMIT 1
+            """,
+            (user["id"], exam_uid),
+        ).fetchone()
+
+    if not row:
+        raise HTTPException(status_code=404, detail="Saved progress not found")
+
+    catalog_item = get_catalog_item(exam_uid) or {}
+    answers = json.loads(row["answers_json"] or "{}")
+    return {
+        "item": {
+            "examUid": row["exam_uid"],
+            "examTitle": row["exam_title"],
+            "subject": row["subject"],
+            "partial": catalog_item.get("partial") or None,
+            "file": catalog_item.get("file") or None,
+            "answers": answers,
+            "score": row["score"],
+            "completedAt": row["completed_at"],
+            "updatedAt": row["updated_at"],
+        }
+    }
+
+
+@app.get("/api/account/progress-detail")
+def get_progress_detail_by_query(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    return get_progress_detail(exam_uid, authorization)
 
 
 @app.post("/api/account/progress")
@@ -402,6 +479,119 @@ def save_progress(payload: SaveProgressRequest, authorization: Optional[str] = H
         conn.commit()
 
     return {"success": True}
+
+
+@app.delete("/api/account/progress/{exam_uid:path}")
+def delete_progress(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    user = get_current_user(authorization)
+    with get_connection() as conn:
+        conn.execute(
+            "DELETE FROM exam_attempts WHERE user_id = ? AND exam_uid = ?",
+            (user["id"], exam_uid),
+        )
+        conn.commit()
+    return {"success": True}
+
+
+@app.delete("/api/account/progress")
+def delete_progress_by_query(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    return delete_progress(exam_uid, authorization)
+
+
+@app.get("/api/account/favorites")
+def get_favorites(authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    user = get_current_user(authorization)
+    with get_connection() as conn:
+        rows = conn.execute(
+            """
+            SELECT exam_uid, exam_title, subject, partial, file, created_at, updated_at
+            FROM favorite_exams
+            WHERE user_id = ?
+            ORDER BY subject COLLATE NOCASE ASC, partial COLLATE NOCASE ASC, exam_title COLLATE NOCASE ASC
+            """,
+            (user["id"],),
+        ).fetchall()
+
+    return {
+        "items": [
+            {
+                "examUid": row["exam_uid"],
+                "examTitle": row["exam_title"],
+                "subject": row["subject"],
+                "partial": row["partial"],
+                "file": row["file"],
+                "createdAt": row["created_at"],
+                "updatedAt": row["updated_at"],
+            }
+            for row in rows
+        ]
+    }
+
+
+@app.post("/api/account/favorites")
+def save_favorite(payload: FavoriteExamRequest, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    user = get_current_user(authorization)
+    now = utc_now().isoformat()
+
+    with get_connection() as conn:
+        existing = conn.execute(
+            "SELECT id FROM favorite_exams WHERE user_id = ? AND exam_uid = ?",
+            (user["id"], payload.exam_uid),
+        ).fetchone()
+
+        if existing:
+            conn.execute(
+                """
+                UPDATE favorite_exams
+                SET exam_title = ?, subject = ?, partial = ?, file = ?, updated_at = ?
+                WHERE id = ?
+                """,
+                (
+                    payload.exam_title,
+                    payload.subject,
+                    payload.partial,
+                    payload.file,
+                    now,
+                    existing["id"],
+                ),
+            )
+        else:
+            conn.execute(
+                """
+                INSERT INTO favorite_exams (user_id, exam_uid, exam_title, subject, partial, file, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    user["id"],
+                    payload.exam_uid,
+                    payload.exam_title,
+                    payload.subject,
+                    payload.partial,
+                    payload.file,
+                    now,
+                    now,
+                ),
+            )
+        conn.commit()
+
+    return {"success": True}
+
+
+@app.delete("/api/account/favorites/{exam_uid:path}")
+def delete_favorite(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    user = get_current_user(authorization)
+    with get_connection() as conn:
+        conn.execute(
+            "DELETE FROM favorite_exams WHERE user_id = ? AND exam_uid = ?",
+            (user["id"], exam_uid),
+        )
+        conn.commit()
+    return {"success": True}
+
+
+@app.delete("/api/account/favorite")
+def delete_favorite_by_query(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    return delete_favorite(exam_uid, authorization)
 
 
 app.mount("/subscription", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="subscription")

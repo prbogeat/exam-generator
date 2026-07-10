@@ -1,0 +1,795 @@
+{
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Junio 2025 - A",
+  "subtitle": "30 Tipo Test",
+  "totalQuestions": 30,
+  "notice": "Preguntas del examen de Junio 2025 - A de Fundamentos de Psicobiología de la UNED",
+  "scoring": {
+    "maxScore": 10.0,
+    "wrongAnswersPerDiscountedCorrect": 3.0,
+    "formulaTip": "[(A - E / 3) / 30] x 10",
+    "timeLimitMinutes": 90
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Qué fenómeno demuestran los experimentos en los que se logra desencadenar una respuesta inmune mediante la presentación de un estímulo previamente neutro, que fue asociado repetidamente a un antígeno?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La inmunosupresión farmacológica."
+        },
+        {
+          "key": "B",
+          "text": "La activación refleja del sistema inmune."
+        },
+        {
+          "key": "C",
+          "text": "El condicionamiento clásico de una respuesta inmunológica."
+        },
+        {
+          "key": "D",
+          "text": "La habituación inmunológica a estímulos repetidos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Ader y Cohen demostraron que las respuestas del sistema inmune pueden ser moduladas por un proceso de aprendizaje asociativo denominado condicionamiento clásico o pavloviano."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Uno de los aspectos más notorios de la corteza somatosensorial es su organización columnar. Esta organización se caracteriza por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "procesar en una misma columna estímulos captados en una misma zona de la piel y un mismo tipo de receptor."
+        },
+        {
+          "key": "B",
+          "text": "integrar aspectos de la estimulación táctil captados en lugares diferentes de la piel."
+        },
+        {
+          "key": "C",
+          "text": "implicar a varios tipos de receptores sensoriales en una misma columna."
+        },
+        {
+          "key": "D",
+          "text": "no existir, curiosamente, en los gatos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En la corteza somatosensorial, cada columna cortical procesa de manera segregada la información procedente de un mismo tipo de receptor y de una misma región topográfica de la piel."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "Las sustancias que favorecen el crecimiento de las prolongaciones celulares durante el desarrollo embrionario se denominan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "proteínas morfogenéticas óseas."
+        },
+        {
+          "key": "B",
+          "text": "sustancias neurotróficas."
+        },
+        {
+          "key": "C",
+          "text": "moléculas neurotrópicas."
+        },
+        {
+          "key": "D",
+          "text": "moléculas de adhesión celular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Las sustancias con capacidad directriz o de afinidad química que guían la ruta de crecimiento de los axones hacia su destino se denominan sustancias neurotrópicas."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "La corteza adrenal libera:",
+      "options": [
+        {
+          "key": "A",
+          "text": "glucocorticoides y mineralocorticoides."
+        },
+        {
+          "key": "B",
+          "text": "estrógenos."
+        },
+        {
+          "key": "C",
+          "text": "testosterona."
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La corteza de la glándula suprarrenal (adrenal) es la encargada de segregar hormonas esteroideas específicas, fundamentalmente glucocorticoides (como el cortisol) y mineralocorticoides (como la aldosterona)."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con las hormonas tiroideas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La hormona T3 proviene de la tiroglobulina mientras que la T4 proviene de la tirotropina."
+        },
+        {
+          "key": "B",
+          "text": "El yodo necesario para la síntesis de hormonas tiroideas proviene de la dieta."
+        },
+        {
+          "key": "C",
+          "text": "La liberación de hormonas tiroideas depende de la hormona estimulante del tiroides liberada por la neurohipófisis."
+        },
+        {
+          "key": "D",
+          "text": "La liberación de hormonas tiroideas no influye sobre la liberación de la hormona de crecimiento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La glándula tiroides requiere captar yodo obligatoriamente a través de la dieta como sustrato fundamental para poder sintetizar sus hormonas (T3 y T4)."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "¿Qué órgano se considera linfoide primario?",
+      "options": [
+        {
+          "key": "A",
+          "text": "el timo."
+        },
+        {
+          "key": "B",
+          "text": "el bazo."
+        },
+        {
+          "key": "C",
+          "text": "la médula espinal."
+        },
+        {
+          "key": "D",
+          "text": "todos los anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los órganos linfoides primarios son aquellos donde se originan y diferencian las células inmunitarias; los principales son la médula ósea y el timo."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "Sale del hipocampo formando un gran arco bajo el cuerpo calloso y luego desciende para proyectar al encéfalo anterior y al hipotálamo, ¿a qué vía corresponde la definición anterior?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a la comisura anterior."
+        },
+        {
+          "key": "B",
+          "text": "al fórnix."
+        },
+        {
+          "key": "C",
+          "text": "a la cisura del Silvio."
+        },
+        {
+          "key": "D",
+          "text": "al cuarto ventrículo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El fórnix es el principal haz de fibras de proyección de la formación hipocampal; sale formando un arco bajo el cuerpo calloso y llega hasta los núcleos mamilares del hipotálamo y la región septal."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "En la figura de cortes transversales de la médula, ¿qué números identifican al tracto rubroespinal y al fascículo cuneado, respectivamente?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1, 4."
+        },
+        {
+          "key": "B",
+          "text": "4, 5."
+        },
+        {
+          "key": "C",
+          "text": "1, 2."
+        },
+        {
+          "key": "D",
+          "text": "6, 5."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El fascículo cuneado asciende por el cordón blanco posterior (dorsal), mientras que el tracto rubroespinal desciende por la vía motora lateral de la sustancia blanca medular."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "¿Cuál o cuáles de los siguientes núcleos del tálamo han sido propuestos como responsables de inhibir la actividad de los núcleos talámicos de relevo, actuando como una compuerta que impide la transmisión de señales hacia la corteza cerebral?",
+      "options": [
+        {
+          "key": "A",
+          "text": "los de relevo del grupo anterior."
+        },
+        {
+          "key": "B",
+          "text": "los del grupo de la línea media."
+        },
+        {
+          "key": "C",
+          "text": "el núcleo reticular."
+        },
+        {
+          "key": "D",
+          "text": "los núcleos intralaminares."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El núcleo reticular talámico ejerce una función inhibitoria sobre los demás núcleos del tálamo, actuando como una compuerta que frena las señales hacia la corteza."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Señale la respuesta correcta en relación con la gastrulación:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Provoca la formación de las tres capas embrionarias a partir del hipoblasto."
+        },
+        {
+          "key": "B",
+          "text": "Se inicia cuando se forma una invaginación en la parte dorsal del disco embrionario."
+        },
+        {
+          "key": "C",
+          "text": "Las células del epiblasto se movilizan al interior del disco dirigiéndose en primer lugar al polo posterior."
+        },
+        {
+          "key": "D",
+          "text": "Todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La gastrulación comienza con la formación de una invaginación celular (línea y nódulo primitivo) en la superficie dorsal del epiblasto del disco embrionario."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "Durante la segmentación del tubo neural, las vesículas anteriores se dividen en neurómeros que desaparecerán en el desarrollo posterior EXCEPTO en el:",
+      "options": [
+        {
+          "key": "A",
+          "text": "rombencéfalo."
+        },
+        {
+          "key": "B",
+          "text": "telencéfalo."
+        },
+        {
+          "key": "C",
+          "text": "mesencéfalo."
+        },
+        {
+          "key": "D",
+          "text": "diencéfalo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El mesencéfalo es la única de las vesículas encefálicas tempranas que no experimenta una subdivisión posterior y permanece como una estructura única."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Uno de los síntomas de infección por SARS-Cov-2 es la percepción de olores que no eran reales (fantosmias). Este síndrome, sin embargo, también puede producirse por lesiones en la corteza cerebral, más concretamente en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A1."
+        },
+        {
+          "key": "B",
+          "text": "TMS."
+        },
+        {
+          "key": "C",
+          "text": "el área fusiforme."
+        },
+        {
+          "key": "D",
+          "text": "la corteza orbitofrontal."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La corteza orbitofrontal es el área de asociación que integra e interpreta la información olfatoria superior; sus alteraciones derivan en anomalías perceptivas olfativas complejas."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En reptiles surge la división filogenéticamente más reciente del cerebelo, ¿cuál es?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Arquicerebelo."
+        },
+        {
+          "key": "B",
+          "text": "Paleocerebelo."
+        },
+        {
+          "key": "C",
+          "text": "Neocerebelo."
+        },
+        {
+          "key": "D",
+          "text": "Lóbulo floculonodular."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El neocerebelo, conformado por los hemisferios cerebelares laterales, es la porción más reciente del cerebelo y surge evolutivamente a partir de los reptiles."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Alguno de los siguientes núcleos del tronco del encéfalo presenta neuronas que sintetizan serotonina, ¿a qué núcleo/s nos referimos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "núcleos del rafe."
+        },
+        {
+          "key": "B",
+          "text": "núcleo rojo."
+        },
+        {
+          "key": "C",
+          "text": "núcleos mamilares."
+        },
+        {
+          "key": "D",
+          "text": "ninguno de los anteriores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los núcleos del rafe, enclavados a lo largo de la línea media de la formación reticular del tronco encefálico, son la fuente primaria de las proyecciones serotoninérgicas."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "La hipótesis polifilética del sistema nervioso sugiere que las neuronas surgieron:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en un único momento en un ancestro común."
+        },
+        {
+          "key": "B",
+          "text": "independientemente en ctenóforos y cnidarios."
+        },
+        {
+          "key": "C",
+          "text": "solo en vertebrados."
+        },
+        {
+          "key": "D",
+          "text": "por simbiosis con bacterias."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La teoría polifilética postula que la neurona surgió en más de una ocasión de forma independiente en la filogenia, concretamente de forma paralela en la rama de los ctenóforos y en la de los cnidarios."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "En un organismo, la ausencia de un sistema nervioso central y periférico es evidencia de que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dicho organismo no puede recibir, asimilar ni interpretar estímulos externos."
+        },
+        {
+          "key": "B",
+          "text": "Dicho organismo no puede comparar un estímulo externo con otro de forma cualitativa y/o temporal."
+        },
+        {
+          "key": "C",
+          "text": "Dicho organismo no puede diferenciar entre estímulos beneficiosos y perjudiciales."
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son incorrectas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Incluso organismos unicelulares sin SN (como algunas bacterias) pueden detectar toxinas o alimento y reaccionar; sin embargo, no poseen circuitos de memoria ni pueden integrar y comparar estímulos temporal o cualitativamente para adaptar respuestas de alto nivel."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Con respecto a la organización tonotópica en el procesamiento auditivo sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "se da solo en la cóclea."
+        },
+        {
+          "key": "B",
+          "text": "es indispensable para el procesamiento de la intensidad del estímulo."
+        },
+        {
+          "key": "C",
+          "text": "no tiene en cuenta el origen de las fibras auditivas."
+        },
+        {
+          "key": "D",
+          "text": "se mantiene hasta la corteza cerebral."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La ordenación espacial sistemática de las frecuencias acústicas (tonotopía) que comienza en la membrana basilar de la cóclea se mantiene fielmente a lo largo de toda la vía auditiva hasta llegar a la corteza auditiva primaria."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "¿Qué células muestran los patrones de respuesta centro ON y centro OFF en la imagen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "células ganglionares de centro ON y centro OFF."
+        },
+        {
+          "key": "B",
+          "text": "células bipolares de centro ON y centro OFF."
+        },
+        {
+          "key": "C",
+          "text": "células complejas en ambos casos."
+        },
+        {
+          "key": "D",
+          "text": "complejas con selectividad en la dirección en A y ganglionares sin selectividad a la dirección en B."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los clásicos patrones antagónicos con un círculo excitatorio e inhibición periférica (centro ON) o viceversa (centro OFF), detectables mediante potenciales de acción frente a la luz, son la firma de los campos receptivos de las células ganglionares de la retina."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones describe correctamente un aspecto clave de la neurogénesis en el neuroepitelio cortical durante el desarrollo embrionario?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Las células madre del neuroepitelio cortical se dividen y diferencian en glía radial."
+        },
+        {
+          "key": "B",
+          "text": "La neurogénesis en el neuroepitelio cortical ocurre principalmente en dos zonas proliferativas, la zona ventricular y la zona subventricular."
+        },
+        {
+          "key": "C",
+          "text": "La zona subventricular proliferativa se genera antes que la zona ventricular."
+        },
+        {
+          "key": "D",
+          "text": "A y B son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Tanto A como B son ciertas: la glía radial deriva de las células neuroepiteliales madre tempranas, y la inmensa mayoría de la neurogénesis cortical se localiza estructuralmente dividida en la zona ventricular y la subventricular."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Las lampreas, peces sin mandíbulas que aún existen en la actualidad, son filogenéticamente más antiguos que el Homo sapiens, por tanto:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evolutivamente hablando, comparado con el Homo sapiens, las lampreas son más ineficientes."
+        },
+        {
+          "key": "B",
+          "text": "La adaptación de las lampreas a su entorno es más inadecuada en comparación que la del Homo sapiens al suyo."
+        },
+        {
+          "key": "C",
+          "text": "El diseño al nivel organismo de las lampreas es tan adecuado, o más, que el del Homo sapiens."
+        },
+        {
+          "key": "D",
+          "text": "A y B son correctos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La supervivencia a lo largo de eones implica que su diseño biológico es extremadamente exitoso y adaptado a su nicho ecológico, sin que exista una jerarquía de 'ineficiencia' frente a vertebrados más modernos."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "En la figura aparece representado un reflejo. En función de lo que se representa, podemos decir que se trata:",
+      "options": [
+        {
+          "key": "A",
+          "text": "de un reflejo eminentemente polisináptico."
+        },
+        {
+          "key": "B",
+          "text": "del reflejo de extensión."
+        },
+        {
+          "key": "C",
+          "text": "de un reflejo basado en el principio de inhibición recíproca."
+        },
+        {
+          "key": "D",
+          "text": "B y C son ciertas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El diagrama típico que ilustra la vía monosináptica aferente sobre el agonista y, simultáneamente, la inervación de una interneurona inhibitoria para relajar el antagonista, representa el reflejo miotático de extensión y su principio de inhibición recíproca conjunta."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "Complete los huecos en la siguiente frase: “El órgano tendinoso de _____, por su disposición en _____ con las fibras _____, es extremadamente sensible al incremento de tensión muscular producida por la _____ del músculo”.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Golgi, paralelo, extrafusales, relajación."
+        },
+        {
+          "key": "B",
+          "text": "Golgi, serie, intrafusales, contracción."
+        },
+        {
+          "key": "C",
+          "text": "Cajal, serie, extrafusales, relajación."
+        },
+        {
+          "key": "D",
+          "text": "Golgi, serie, extrafusales, contracción."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El órgano tendinoso de Golgi se sitúa en serie con las fibras de fuerza musculares (extrafusales), por lo que se deforma y sensa con enorme precisión la tensión que éstas generan al contraerse el músculo."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "En la superficie de las células inmunitarias se han descubierto receptores para las siguientes hormonas:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Corticosteroides."
+        },
+        {
+          "key": "B",
+          "text": "Esteroides sexuales."
+        },
+        {
+          "key": "C",
+          "text": "Hormonas tiroideas."
+        },
+        {
+          "key": "D",
+          "text": "Todas las anteriores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el marco de la Psiconeuroinmunología se ha comprobado que las células linfoides poseen receptores para acatar señales directas de múltiples familias hormonales, incluyendo tiroideas, sexuales y glucocorticoides."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "En relación con el control motor, ¿qué área cortical aporta las claves sensoriales y motivacionales en los movimientos dirigidos a un blanco?",
+      "options": [
+        {
+          "key": "A",
+          "text": "el área motora suplementaria."
+        },
+        {
+          "key": "B",
+          "text": "la corteza premotora."
+        },
+        {
+          "key": "C",
+          "text": "la corteza parietal posterior."
+        },
+        {
+          "key": "D",
+          "text": "la corteza prefrontal dorsolateral."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La corteza de asociación parietal posterior es multimodal y aporta al sistema motor la ubicación espacial y el mapa corporal necesarios para guiar físicamente nuestros movimientos hacia un objetivo exterior."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "La hipófisis posterior libera ______ y ______ en los núcleos ______ y paraventricular del hipotálamo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "oxitocina; vasopresina; supraóptico."
+        },
+        {
+          "key": "B",
+          "text": "oxitocina; MSH; circunventricular."
+        },
+        {
+          "key": "C",
+          "text": "CRH; MSH; supraóptico."
+        },
+        {
+          "key": "D",
+          "text": "todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La neurohipófisis es la vía de salida anatómica de la oxitocina y la vasopresina, neurohormonas que son fabricadas más arriba por las neuronas magnocelulares de los núcleos supraóptico y paraventricular del hipotálamo."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "En relación con la liberación de prolactina, ¿qué papel tiene la dopamina?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La dopamina aumenta la liberación de prolactina."
+        },
+        {
+          "key": "B",
+          "text": "La dopamina inhibe la liberación de prolactina."
+        },
+        {
+          "key": "C",
+          "text": "La dopamina no tiene efectos sobre la liberación de prolactina."
+        },
+        {
+          "key": "D",
+          "text": "Los agonistas dopaminérgicos producen galactorrea en hombre."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La dopamina ejerce una inhibición tónica constante desde el hipotálamo sobre la hipófisis; al frenar esta hormona, los niveles de prolactina en sangre descienden."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿A través de qué tipo de receptores actúan las hormonas hidrosolubles, como las hormonas peptídicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "receptores ubicados en la superficie externa de la membrana de la célula diana."
+        },
+        {
+          "key": "B",
+          "text": "receptores situados en la cara interna de la membrana de la célula diana."
+        },
+        {
+          "key": "C",
+          "text": "receptores intracelulares que forman un complejo con la hormona y se transportan al núcleo."
+        },
+        {
+          "key": "D",
+          "text": "receptores localizados en el núcleo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Al no poder disolverse en la bicapa lipídica de las células, las hormonas hidrosolubles deben acoplarse forzosamente a receptores que asoman en la superficie externa de la membrana plasmática."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "¿Qué tipo de célula inmunitaria reconoce antígenos específicos, pero solo con la ayuda de células presentadoras de antígenos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los macrófagos."
+        },
+        {
+          "key": "B",
+          "text": "Los neutrófilos."
+        },
+        {
+          "key": "C",
+          "text": "Los linfocitos T."
+        },
+        {
+          "key": "D",
+          "text": "Los linfocitos B."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A diferencia de los linfocitos B que detectan el patógeno libre, los linfocitos T son ciegos al antígeno suelto; necesitan obligatoriamente que un macrófago se lo digiera y presente acoplado a moléculas del CMH."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "En la unión neuromuscular, el neurotransmisor y los receptores principalmente implicados son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "acetilcolina y receptores nicotínicos."
+        },
+        {
+          "key": "B",
+          "text": "acetilcolina y receptores muscarínicos."
+        },
+        {
+          "key": "C",
+          "text": "noradrenalina y receptores alfa adrenérgicos."
+        },
+        {
+          "key": "D",
+          "text": "noradrenalina y receptores nicotínicos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La sinapsis que gobierna la contracción de la musculatura esquelética (la placa motora) utiliza exclusivamente acetilcolina como neurotransmisor, actuando sobre canales iónicos de tipo nicotínico."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "La región facilitadora por excelencia de los reflejos espinales antigravitatorios necesarios para el mantenimiento de la postura erguida se localiza en:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el cerebelo."
+        },
+        {
+          "key": "B",
+          "text": "el bulbo raquídeo."
+        },
+        {
+          "key": "C",
+          "text": "el puente."
+        },
+        {
+          "key": "D",
+          "text": "la médula espinal."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La estimulación que permite a nuestros músculos extensores luchar contra la gravedad para mantenernos en pie proviene fundamentalmente de la formación reticular pontina (en el puente del tronco del encéfalo)."
+    }
+  ]
+}

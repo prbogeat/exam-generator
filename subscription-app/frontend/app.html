@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exam Assistant Pro - Private App</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/app-private.css" />
 </head>
 <body>
   <header class="app-header">
     <div class="brand-row compact">
-      <img src="/docs/assets/img/Logo%20exam%20assistant.png" alt="Exam Assistant Logo" class="brand-logo small" />
+      <img src="assets/img/Logo exam assistant.png" alt="Exam Assistant Logo" class="brand-logo small" />
       <div>
         <p class="eyebrow">Private Access</p>
         <h1>Exam Assistant Pro</h1>
@@ -62,6 +63,19 @@
           <p class="empty-state">Todavía no hay actividad guardada.</p>
         </div>
       </section>
+
+      <section class="card favorites-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Favoritos</p>
+            <h2>Exámenes marcados</h2>
+          </div>
+          <button id="refreshFavoritesBtn" class="secondary">Recargar</button>
+        </div>
+        <div id="favoritesList" class="history-list">
+          <p class="empty-state">Todavía no hay favoritos.</p>
+        </div>
+      </section>
     </aside>
 
     <section class="card catalog-card">
@@ -76,30 +90,37 @@
         <select id="subjectSelect">
           <option value="">Todas las asignaturas</option>
         </select>
+        <select id="partialSelect">
+          <option value="">Todos los parciales</option>
+        </select>
         <select id="examSelect">
           <option value="">Selecciona un examen</option>
         </select>
         <button id="openExamBtn" class="primary">Abrir examen</button>
+        <button id="toggleFavoriteBtn" class="secondary" type="button">Añadir favorito</button>
       </div>
       <p id="catalogStatus" class="inline-status"></p>
     </section>
   </main>
 
   <!-- Exam viewer modal -->
-  <dialog id="examModal" class="exam-modal">
-    <div class="modal-header">
-      <div>
-        <h2 id="modalExamTitle">Examen</h2>
-        <p id="modalExamMeta" class="modal-meta"></p>
+  <div id="examModal" class="exam-modal" aria-hidden="true">
+    <div id="examModalBackdrop" class="exam-modal-backdrop"></div>
+    <section class="exam-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalExamTitle">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalExamTitle">Examen</h2>
+          <p id="modalExamMeta" class="modal-meta"></p>
+        </div>
+        <div class="modal-actions">
+          <button id="saveProgressBtn" class="secondary" disabled>Guardar progreso</button>
+          <button id="closeExamBtn" class="secondary" type="button">Cerrar</button>
+        </div>
       </div>
-      <div class="modal-actions">
-        <button id="saveProgressBtn" class="secondary" disabled>Guardar progreso</button>
-        <button id="closeExamBtn" class="secondary">Cerrar</button>
-      </div>
-    </div>
-    <iframe id="examFrame" title="Exam viewer" class="exam-frame" src="about:blank"></iframe>
-  </dialog>
+      <iframe id="examFrame" title="Exam viewer" class="exam-frame" src="about:blank"></iframe>
+    </section>
+  </div>
 
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/subscription-dashboard.js"></script>
 </body>
 </html>

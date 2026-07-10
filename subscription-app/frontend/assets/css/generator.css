@@ -1,0 +1,141 @@
+/* Reglas especificas del generador clasico. La base visual comun vive en exam-shared.css */
+
+.generator-main {
+  padding-top: 0.4rem;
+  padding-bottom: 2rem;
+}
+
+.generator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.parameters-panel {
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+.panel-title {
+  margin-bottom: 0.4rem;
+}
+
+.panel-helper {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.legacy-field {
+  margin-bottom: 1.5rem;
+}
+
+.legacy-input,
+.legacy-input-file {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.legacy-note {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legacy-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.params-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.form-row-wide {
+  grid-column: 1 / -1;
+}
+
+.output-path-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.secondary-action-btn {
+  margin-top: 0;
+}
+
+.generator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.25rem;
+}
+
+#resetBtn {
+  padding: 0.8rem 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .generator-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .generator-panel {
+    padding: 1.1rem;
+  }
+
+  .output-path-row {
+    flex-direction: column;
+  }
+
+  .params-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .form-row {
+    margin-bottom: 0.85rem;
+  }
+
+  .output-path-row button,
+  .generator-actions button {
+    width: 100%;
+  }
+
+  .generator-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .generator-main {
+    padding: 0.25rem 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .config-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .config-span-2 {
+    grid-column: span 3;
+  }
+
+  .config-toggle-row,
+  .config-actions {
+    grid-column: 1 / -1;
+  }
+}

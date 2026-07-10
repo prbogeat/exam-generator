@@ -1,6 +1,11 @@
 const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
 const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
 const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
+const SEARCH_PARAMS = new URLSearchParams(window.location.search);
+const IS_SUBSCRIPTION_VIEW =
+  SEARCH_PARAMS.get("source") === "subscription" ||
+  sessionStorage.getItem("selectedExamUid") !== null ||
+  sessionStorage.getItem("selectedExamFile") !== null;
 
 const state = {
   exam: null,
@@ -32,6 +37,7 @@ const dom = {
   pageTitle: document.getElementById("pageTitle"),
   pageSubtitle: document.getElementById("pageSubtitle"),
   noticeBox: document.getElementById("noticeBox"),
+  dataTools: document.querySelector(".data-tools"),
   dataStatus: document.getElementById("dataStatus"),
   questions: document.getElementById("questions"),
   resultBox: document.getElementById("resultBox"),
@@ -734,10 +740,12 @@ function updateStaticTexts() {
   if (!state.exam) {
     document.title = "Examen dinámico";
     dom.pageTitle.textContent = "Examen dinámico";
-    dom.pageSubtitle.textContent =
-      "Selecciona un examen publicado o carga un JSON local manualmente.";
-    dom.noticeBox.textContent =
-      "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
+    dom.pageSubtitle.textContent = IS_SUBSCRIPTION_VIEW
+      ? "Examen cargado desde tu suscripción privada."
+      : "Selecciona un examen publicado o carga un JSON local manualmente.";
+    dom.noticeBox.textContent = IS_SUBSCRIPTION_VIEW
+      ? "Vista de examen en modo suscripción privada."
+      : "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
   }
 
@@ -753,6 +761,14 @@ function updateStaticTexts() {
   dom.noticeBox.textContent = `${
     state.exam.notice || "Examen generado dinámicamente desde JSON."
   }${formulaTip}`;
+}
+
+function applyEmbeddedSubscriptionView() {
+  if (!IS_SUBSCRIPTION_VIEW || !dom.dataTools) {
+    return;
+  }
+
+  dom.dataTools.style.display = "none";
 }
 
 function computeGrade(correct, wrong) {
@@ -796,6 +812,16 @@ function getStats() {
   const rawGrade = computeGrade(correct, wrong);
 
   return { answered, correct, wrong, blank, rawGrade };
+}
+
+function getExamSnapshot() {
+  const stats = getStats();
+  return {
+    answers: { ...state.answers },
+    submitted: state.submitted,
+    elapsedMs: state.elapsedMs,
+    score: state.submitted ? Math.max(0, stats.rawGrade) : null,
+  };
 }
 
 function updateProgress() {
@@ -1386,6 +1412,7 @@ function bindEvents() {
 }
 
 async function initializeApp() {
+  applyEmbeddedSubscriptionView();
   initFloatingViewer();
   bindEvents();
   updateStaticTexts();
@@ -1396,6 +1423,22 @@ async function initializeApp() {
   // Try to load exam from welcome page
   const selectedExamFile = sessionStorage.getItem("selectedExamFile");
   const loadedExamJSON = sessionStorage.getItem("loadedExamJSON");
+  const subscriptionSavedAnswers = sessionStorage.getItem("subscriptionSavedAnswers");
+  const subscriptionSavedAnswersLabel =
+    sessionStorage.getItem("subscriptionSavedAnswersLabel") || "actividad guardada";
+
+  if (subscriptionSavedAnswers) {
+    try {
+      const data = JSON.parse(subscriptionSavedAnswers);
+      applyRealizedAnswers(normalizeRealizedExamData(data), subscriptionSavedAnswersLabel);
+      sessionStorage.removeItem("subscriptionSavedAnswers");
+      sessionStorage.removeItem("subscriptionSavedAnswersLabel");
+    } catch (error) {
+      console.error("Error loading saved subscription answers:", error);
+      sessionStorage.removeItem("subscriptionSavedAnswers");
+      sessionStorage.removeItem("subscriptionSavedAnswersLabel");
+    }
+  }
 
   if (loadedExamJSON) {
     try {
@@ -1466,6 +1509,10 @@ async function initializeApp() {
 
   await loadDefaultExam();
 }
+
+window.ExamAppBridge = {
+  getSnapshot: getExamSnapshot,
+};
 
 function registerServiceWorker() {
   const hasSupport = "serviceWorker" in navigator;
