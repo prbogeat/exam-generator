@@ -1252,6 +1252,13 @@ function applyExamData(exam, sourceLabel) {
   } else {
     updateDataStatus();
   }
+
+  // Restore graded state when resuming a previously corrected saved exam
+  const autoSubmit = sessionStorage.getItem("subscriptionAutoSubmit");
+  if (autoSubmit === "true") {
+    sessionStorage.removeItem("subscriptionAutoSubmit");
+    gradeExam();
+  }
 }
 
 function applyRealizedAnswers(realized, sourceLabel) {

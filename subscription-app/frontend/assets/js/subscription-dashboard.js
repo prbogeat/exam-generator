@@ -301,8 +301,20 @@ async function loadHistory() {
     removeButton.type = "button";
     removeButton.className = "secondary history-remove";
     removeButton.textContent = "Quitar";
-    removeButton.addEventListener("click", () => {
-      removeProgress(item.examUid);
+    removeButton.addEventListener("click", async () => {
+      removeButton.disabled = true;
+      removeButton.textContent = "Quitando...";
+      try {
+        await removeProgress(item.examUid);
+        node.remove();
+      } catch (err) {
+        removeButton.disabled = false;
+        removeButton.textContent = "Quitar";
+        const errMsg = document.createElement("span");
+        errMsg.className = "history-remove-error";
+        errMsg.textContent = `Error: ${err.message}`;
+        node.appendChild(errMsg);
+      }
     });
 
     node.appendChild(openButton);
@@ -419,6 +431,12 @@ async function loadSavedProgress(examUid) {
         `actividad guardada · ${formatDateTimeEs(item.updatedAt || item.completedAt)}`
       );
     }
+    // If the exam was previously graded (has a score), restore the corrected state
+    if (item.score != null) {
+      sessionStorage.setItem("subscriptionAutoSubmit", "true");
+    } else {
+      sessionStorage.removeItem("subscriptionAutoSubmit");
+    }
     await openExamByCatalogItem(item.examUid);
   } catch (error) {
     setCatalogStatus(`No se pudo recuperar progreso: ${error.message}`);
@@ -476,19 +494,12 @@ async function removeProgress(examUid) {
     return;
   }
 
-  try {
-    await api(`/account/progress?exam_uid=${encodeURIComponent(examUid)}`, {
-      method: "DELETE",
-    });
+  await api(`/account/progress?exam_uid=${encodeURIComponent(examUid)}`, {
+    method: "DELETE",
+  });
 
-    if (state.currentExam && state.currentExam.examUid === examUid) {
-      closeExamModal();
-    }
-
-    await loadHistory();
-    setCatalogStatus("Examen en progreso eliminado.");
-  } catch (error) {
-    setCatalogStatus(`No se pudo eliminar el progreso: ${error.message}`);
+  if (state.currentExam && state.currentExam.examUid === examUid) {
+    closeExamModal();
   }
 }
 
@@ -540,9 +551,11 @@ async function saveProgress() {
       : { answers: {}, score: null, submitted: false };
 
     let normalizedScore = null;
-    const numericScore = Number(snapshot && snapshot.score);
-    if (Number.isFinite(numericScore)) {
-      normalizedScore = numericScore;
+    if (snapshot && snapshot.score != null) {
+      const numericScore = Number(snapshot.score);
+      if (Number.isFinite(numericScore)) {
+        normalizedScore = numericScore;
+      }
     }
 
     if (normalizedScore === null && snapshot && snapshot.submitted && dom.examFrame && dom.examFrame.contentWindow) {
