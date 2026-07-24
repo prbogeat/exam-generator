@@ -11,6 +11,14 @@ OUT_EXAMS_ROOT = PROJECT_ROOT / "out" / "examenes"
 STATIC_JSON_ROOT = PROJECT_ROOT / "docs" / "assets" / "json"
 STATIC_EXAMS_ROOT = STATIC_JSON_ROOT / "exams"
 STATIC_INDEX_PATH = STATIC_JSON_ROOT / "exams-index.json"
+PLAN_ORDER = {"free": 0, "pro": 1, "premium": 2}
+
+
+def normalize_access_level(value: Any) -> str:
+    plan = str(value or "free").strip().lower()
+    if plan not in PLAN_ORDER:
+        return "free"
+    return plan
 
 
 def load_json(path: Path) -> Any:
@@ -81,6 +89,7 @@ def normalize_exam_payload(relative_path: Path, payload: Dict[str, Any]) -> Dict
 
     normalized["subjectTitle"] = str(relative_path.parts[0]) if relative_path.parts else str(payload.get("subjectTitle") or "Asignatura")
     normalized["totalQuestions"] = len(questions)
+    normalized["accessLevel"] = normalize_access_level(payload.get("accessLevel"))
 
     if scoring:
         normalized["scoring"] = {
@@ -100,6 +109,7 @@ def build_catalog_entry(relative_path: Path, payload: Dict[str, Any]) -> Dict[st
         "partial": extract_partial(relative_path),
         "examTitle": str(payload.get("examTitle") or relative_path.stem),
         "subtitle": str(payload.get("subtitle") or ""),
+        "accessLevel": normalize_access_level(payload.get("accessLevel")),
         "totalQuestions": int(payload.get("totalQuestions") or len(questions)),
         "file": build_public_url(relative_path),
         "sourcePath": (Path("out") / "examenes" / relative_path).as_posix(),

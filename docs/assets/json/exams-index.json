@@ -131,7 +131,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-1.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-1.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-1.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-10.json",
@@ -141,7 +142,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-10.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-10.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-10.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-2.json",
@@ -151,7 +153,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-2.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-2.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-2.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-3.json",
@@ -161,7 +164,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-3.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-3.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-3.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-4.json",
@@ -171,7 +175,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-4.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-4.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-4.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-5.json",
@@ -181,7 +186,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-5.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-5.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-5.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-6.json",
@@ -191,7 +197,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-6.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-6.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-6.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-7.json",
@@ -201,7 +208,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-7.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-7.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-7.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-8.json",
@@ -211,7 +219,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-8.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-8.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-8.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-9.json",
@@ -221,7 +230,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-9.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-9.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-9.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-generado.json",
@@ -231,7 +241,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-generado.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-generado.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-generado.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2023-a.json",
@@ -241,7 +252,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2023-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2023-A.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2023-A.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2024.json",
@@ -251,7 +263,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2024.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2024.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2024.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2025.json",
@@ -261,7 +274,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2025.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2025.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2025.json",
@@ -271,7 +285,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2025.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2025.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-e-2025.json",
@@ -281,7 +296,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-e-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-E-2025.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-E-2025.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2026.json",
@@ -291,7 +307,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2026.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2026.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-b-2026.json",
@@ -301,7 +318,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-b-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-B-2026.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-B-2026.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2026.json",
@@ -311,7 +329,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2026.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2026.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2026-c.json",
@@ -321,7 +340,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2026-c.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2026-C.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2026-C.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/septiembre-2025-tipo-d.json",
@@ -331,7 +351,8 @@
       "subtitle": "30 Tipo Test - Examen Septiembre 2025 - Tipo D",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2025-tipo-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2025 - Tipo D.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2025 - Tipo D.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/septiembre-2024-tipo-d.json",
@@ -341,7 +362,8 @@
       "subtitle": "30 Tipo Test - Septiembre de 2024 Tipo D",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2024-tipo-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2024 - Tipo D.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2024 - Tipo D.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2023-d.json",
@@ -351,7 +373,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2023-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2023-D.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2023-D.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2024.json",
@@ -361,7 +384,8 @@
       "subtitle": "30 Tipo Test",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2024.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2024.json"
+      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2024.json",
+      "accessLevel": "premium"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-test.json",
