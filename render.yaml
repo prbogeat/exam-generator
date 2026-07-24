@@ -7,11 +7,9 @@ services:
     startCommand: uvicorn subscription-app.backend.app:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /api/health
     autoDeploy: true
-    disk:
-      name: exam-db
-      mountPath: /app/subscription-app/backend/data
-      sizeGB: 1
     envVars:
+      - key: DATABASE_URL
+        sync: false
       - key: EXAM_ASSISTANT_SECRET
         generateValue: true
       - key: SUBSCRIPTION_ADMIN_EMAIL

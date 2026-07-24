@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import hmac
+import importlib
 import json
 import os
 import re
@@ -21,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent.parent
 DATA_DIR = BASE_DIR / "data"
 DB_PATH = DATA_DIR / "subscription_app.db"
+DATABASE_URL_RAW = os.getenv("DATABASE_URL", "").strip()
 EXAMS_INDEX_PATH = PROJECT_ROOT / "docs" / "assets" / "json" / "exams-index.json"
 EXAMS_ROOT = PROJECT_ROOT / "docs" / "assets" / "json"
 SESSION_TTL_DAYS = 30
@@ -32,6 +34,34 @@ ADMIN_NAME = os.getenv("SUBSCRIPTION_ADMIN_NAME", "Administrador")
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 PLAN_ORDER = {"free": 0, "pro": 1, "premium": 2}
 VALID_PLANS = tuple(PLAN_ORDER.keys())
+
+
+def normalize_database_url(value: str) -> str:
+    if not value:
+        return ""
+    normalized = value.strip()
+    if normalized.startswith("postgres://"):
+        normalized = "postgresql://" + normalized[len("postgres://") :]
+    if "sslmode=" not in normalized:
+        separator = "&" if "?" in normalized else "?"
+        normalized = f"{normalized}{separator}sslmode=require"
+    return normalized
+
+
+DATABASE_URL = normalize_database_url(DATABASE_URL_RAW)
+USE_POSTGRES = DATABASE_URL.startswith("postgresql://")
+
+psycopg2: Any = None
+RealDictCursor: Any = None
+
+if USE_POSTGRES:
+    try:
+        psycopg2 = importlib.import_module("psycopg2")
+        psycopg2_extras = importlib.import_module("psycopg2.extras")
+        RealDictCursor = psycopg2_extras.RealDictCursor
+    except ImportError as exc:
+        raise RuntimeError("DATABASE_URL is set but psycopg2 is not installed") from exc
+
 
 if os.getenv("RENDER") and ADMIN_PASSWORD == "Admin123456":
     raise RuntimeError("Set SUBSCRIPTION_ADMIN_PASSWORD in production")
@@ -118,68 +148,169 @@ def can_access_plan(user_plan: str, required_plan: str) -> bool:
     return user_rank >= required_rank
 
 
-def get_connection() -> sqlite3.Connection:
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
+def adapt_query(query: str) -> str:
+    if not USE_POSTGRES:
+        return query
+    return query.replace("?", "%s")
+
+
+class DBConnection:
+    def __init__(self, conn: Any, use_postgres: bool) -> None:
+        self._conn = conn
+        self._use_postgres = use_postgres
+
+    def __enter__(self) -> "DBConnection":
+        return self
+
+    def __exit__(self, exc_type: Any, exc: Any, tb: Any) -> None:
+        if exc and self._use_postgres:
+            self._conn.rollback()
+        self._conn.close()
+
+    def execute(self, query: str, params: tuple[Any, ...] = ()) -> Any:
+        if self._use_postgres:
+            cursor = self._conn.cursor(cursor_factory=RealDictCursor)
+            cursor.execute(adapt_query(query), params)
+            return cursor
+        return self._conn.execute(query, params)
+
+    def executescript(self, script: str) -> None:
+        if self._use_postgres:
+            for statement in [part.strip() for part in script.split(";") if part.strip()]:
+                self.execute(statement)
+            return
+        self._conn.executescript(script)
+
+    def commit(self) -> None:
+        self._conn.commit()
+
+
+def get_connection() -> DBConnection:
+    if USE_POSTGRES:
+        conn = psycopg2.connect(DATABASE_URL)
+        conn.autocommit = False
+        return DBConnection(conn, True)
+
+    sqlite_conn = sqlite3.connect(DB_PATH)
+    sqlite_conn.row_factory = sqlite3.Row
+    return DBConnection(sqlite_conn, False)
 
 
 def init_db() -> None:
     with get_connection() as conn:
-        conn.executescript(
-            """
-            CREATE TABLE IF NOT EXISTS users (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                email TEXT NOT NULL UNIQUE,
-                name TEXT NOT NULL,
-                password_hash TEXT NOT NULL,
-                password_salt TEXT NOT NULL,
-                plan TEXT NOT NULL DEFAULT 'free',
-                role TEXT NOT NULL DEFAULT 'user',
-                created_at TEXT NOT NULL,
-                updated_at TEXT NOT NULL
-            );
+        if USE_POSTGRES:
+            conn.executescript(
+                """
+                CREATE TABLE IF NOT EXISTS users (
+                    id BIGSERIAL PRIMARY KEY,
+                    email TEXT NOT NULL UNIQUE,
+                    name TEXT NOT NULL,
+                    password_hash TEXT NOT NULL,
+                    password_salt TEXT NOT NULL,
+                    plan TEXT NOT NULL DEFAULT 'free',
+                    role TEXT NOT NULL DEFAULT 'user',
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                );
 
-            CREATE TABLE IF NOT EXISTS sessions (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                user_id INTEGER NOT NULL,
-                token_hash TEXT NOT NULL UNIQUE,
-                created_at TEXT NOT NULL,
-                expires_at TEXT NOT NULL,
-                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
-            );
+                CREATE TABLE IF NOT EXISTS sessions (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+                    token_hash TEXT NOT NULL UNIQUE,
+                    created_at TEXT NOT NULL,
+                    expires_at TEXT NOT NULL
+                );
 
-            CREATE TABLE IF NOT EXISTS exam_attempts (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                user_id INTEGER NOT NULL,
-                exam_uid TEXT NOT NULL,
-                exam_title TEXT NOT NULL,
-                subject TEXT NOT NULL,
-                answers_json TEXT NOT NULL,
-                score REAL,
-                completed_at TEXT NOT NULL,
-                created_at TEXT NOT NULL,
-                updated_at TEXT NOT NULL,
-                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
-            );
+                CREATE TABLE IF NOT EXISTS exam_attempts (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+                    exam_uid TEXT NOT NULL,
+                    exam_title TEXT NOT NULL,
+                    subject TEXT NOT NULL,
+                    answers_json TEXT NOT NULL,
+                    score DOUBLE PRECISION,
+                    completed_at TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                );
 
-            CREATE TABLE IF NOT EXISTS favorite_exams (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                user_id INTEGER NOT NULL,
-                exam_uid TEXT NOT NULL,
-                exam_title TEXT NOT NULL,
-                subject TEXT NOT NULL,
-                partial TEXT,
-                file TEXT,
-                created_at TEXT NOT NULL,
-                updated_at TEXT NOT NULL,
-                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
-                UNIQUE(user_id, exam_uid)
-            );
-            """
-        )
+                CREATE TABLE IF NOT EXISTS favorite_exams (
+                    id BIGSERIAL PRIMARY KEY,
+                    user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+                    exam_uid TEXT NOT NULL,
+                    exam_title TEXT NOT NULL,
+                    subject TEXT NOT NULL,
+                    partial TEXT,
+                    file TEXT,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL,
+                    UNIQUE(user_id, exam_uid)
+                );
+                """
+            )
+            rows = conn.execute(
+                """
+                SELECT column_name
+                FROM information_schema.columns
+                WHERE table_schema = 'public' AND table_name = 'users'
+                """
+            ).fetchall()
+            user_columns = {row["column_name"] for row in rows}
+        else:
+            conn.executescript(
+                """
+                CREATE TABLE IF NOT EXISTS users (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    email TEXT NOT NULL UNIQUE,
+                    name TEXT NOT NULL,
+                    password_hash TEXT NOT NULL,
+                    password_salt TEXT NOT NULL,
+                    plan TEXT NOT NULL DEFAULT 'free',
+                    role TEXT NOT NULL DEFAULT 'user',
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                );
 
-        user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
+                CREATE TABLE IF NOT EXISTS sessions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    token_hash TEXT NOT NULL UNIQUE,
+                    created_at TEXT NOT NULL,
+                    expires_at TEXT NOT NULL,
+                    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+                );
+
+                CREATE TABLE IF NOT EXISTS exam_attempts (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    exam_uid TEXT NOT NULL,
+                    exam_title TEXT NOT NULL,
+                    subject TEXT NOT NULL,
+                    answers_json TEXT NOT NULL,
+                    score REAL,
+                    completed_at TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL,
+                    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+                );
+
+                CREATE TABLE IF NOT EXISTS favorite_exams (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    exam_uid TEXT NOT NULL,
+                    exam_title TEXT NOT NULL,
+                    subject TEXT NOT NULL,
+                    partial TEXT,
+                    file TEXT,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL,
+                    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+                    UNIQUE(user_id, exam_uid)
+                );
+                """
+            )
+            user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
+
         if "role" not in user_columns:
             conn.execute("ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'user'")
 
@@ -188,7 +319,7 @@ def init_db() -> None:
         conn.commit()
 
 
-def bootstrap_admin_user(conn: sqlite3.Connection) -> None:
+def bootstrap_admin_user(conn: DBConnection) -> None:
     admin_email = normalize_email(ADMIN_EMAIL)
     now = utc_now().isoformat()
     admin = conn.execute("SELECT id FROM users WHERE email = ?", (admin_email,)).fetchone()
@@ -232,7 +363,7 @@ def hash_token(token: str) -> str:
     return hashlib.sha256(f"{APP_SECRET}:{token}".encode("utf-8")).hexdigest()
 
 
-def issue_session(conn: sqlite3.Connection, user_id: int) -> str:
+def issue_session(conn: DBConnection, user_id: int) -> str:
     token = secrets.token_urlsafe(32)
     now = utc_now()
     expires = now + timedelta(days=SESSION_TTL_DAYS)
@@ -253,7 +384,7 @@ def get_token_value(authorization: Optional[str]) -> str:
     return authorization[len(prefix):].strip()
 
 
-def get_current_user(authorization: Optional[str]) -> sqlite3.Row:
+def get_current_user(authorization: Optional[str]) -> Dict[str, Any]:
     token = get_token_value(authorization)
     token_digest = hash_token(token)
     now_iso = utc_now().isoformat()
@@ -276,7 +407,7 @@ def get_current_user(authorization: Optional[str]) -> sqlite3.Row:
     return row
 
 
-def serialize_user(row: sqlite3.Row) -> Dict[str, Any]:
+def serialize_user(row: Dict[str, Any]) -> Dict[str, Any]:
     return {
         "id": row["id"],
         "email": row["email"],
@@ -288,7 +419,7 @@ def serialize_user(row: sqlite3.Row) -> Dict[str, Any]:
     }
 
 
-def require_admin(authorization: Optional[str]) -> sqlite3.Row:
+def require_admin(authorization: Optional[str]) -> Dict[str, Any]:
     user = get_current_user(authorization)
     if user["role"] != "admin":
         raise HTTPException(status_code=403, detail="Admin access required")
@@ -335,7 +466,7 @@ def get_catalog_item(exam_uid: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def require_exam_access(user: sqlite3.Row, exam_uid: str) -> Dict[str, Any]:
+def require_exam_access(user: Dict[str, Any], exam_uid: str) -> Dict[str, Any]:
     catalog_item = get_catalog_item(exam_uid)
     if not catalog_item:
         raise HTTPException(status_code=404, detail="Exam not found")
@@ -360,6 +491,43 @@ def on_startup() -> None:
     init_db()
 
 
+def insert_user_and_return_id(
+    conn: DBConnection,
+    *,
+    email: str,
+    name: str,
+    password_hash: str,
+    password_salt: str,
+    plan: str,
+    role: str,
+    now_iso: str,
+) -> int:
+    if USE_POSTGRES:
+        row = conn.execute(
+            """
+            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            RETURNING id
+            """,
+            (email, name, password_hash, password_salt, plan, role, now_iso, now_iso),
+        ).fetchone()
+        if not row:
+            raise HTTPException(status_code=500, detail="Failed to create user")
+        return int(row["id"])
+
+    cursor = conn.execute(
+        """
+        INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (email, name, password_hash, password_salt, plan, role, now_iso, now_iso),
+    )
+    user_id = cursor.lastrowid
+    if user_id is None:
+        raise HTTPException(status_code=500, detail="Failed to create user")
+    return int(user_id)
+
+
 @app.get("/api/health")
 def health() -> Dict[str, str]:
     return {"status": "ok"}
@@ -376,17 +544,17 @@ def register(payload: RegisterRequest) -> Dict[str, Any]:
         if existing:
             raise HTTPException(status_code=409, detail="Email already registered")
 
-        cursor = conn.execute(
-            """
-            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
-            VALUES (?, ?, ?, ?, 'free', 'user', ?, ?)
-            """,
-            (email, payload.name.strip(), password_hash, password_salt, now, now),
+        user_id = insert_user_and_return_id(
+            conn,
+            email=email,
+            name=payload.name.strip(),
+            password_hash=password_hash,
+            password_salt=password_salt,
+            plan="free",
+            role="user",
+            now_iso=now,
         )
         conn.commit()
-        user_id = cursor.lastrowid
-        if user_id is None:
-            raise HTTPException(status_code=500, detail="Failed to create user")
         token = issue_session(conn, int(user_id))
         user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
 
@@ -489,16 +657,17 @@ def admin_create_user(payload: AdminCreateUserRequest, authorization: Optional[s
         if existing:
             raise HTTPException(status_code=409, detail="Email already registered")
 
-        cursor = conn.execute(
-            """
-            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, 'user', ?, ?)
-            """,
-            (email, payload.name.strip(), password_hash, password_salt, normalize_plan(payload.plan), now, now),
+        user_id = insert_user_and_return_id(
+            conn,
+            email=email,
+            name=payload.name.strip(),
+            password_hash=password_hash,
+            password_salt=password_salt,
+            plan=normalize_plan(payload.plan),
+            role="user",
+            now_iso=now,
         )
         conn.commit()
-
-        user_id = cursor.lastrowid
         user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
 
     return {"user": serialize_user(user)}
@@ -694,13 +863,18 @@ def delete_progress_by_query(exam_uid: str, authorization: Optional[str] = Heade
 @app.get("/api/account/favorites")
 def get_favorites(authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
     user = get_current_user(authorization)
+    order_clause = (
+        "ORDER BY LOWER(subject) ASC, LOWER(COALESCE(partial, '')) ASC, LOWER(exam_title) ASC"
+        if USE_POSTGRES
+        else "ORDER BY subject COLLATE NOCASE ASC, partial COLLATE NOCASE ASC, exam_title COLLATE NOCASE ASC"
+    )
     with get_connection() as conn:
         rows = conn.execute(
-            """
+            f"""
             SELECT exam_uid, exam_title, subject, partial, file, created_at, updated_at
             FROM favorite_exams
             WHERE user_id = ?
-            ORDER BY subject COLLATE NOCASE ASC, partial COLLATE NOCASE ASC, exam_title COLLATE NOCASE ASC
+            {order_clause}
             """,
             (user["id"],),
         ).fetchall()
