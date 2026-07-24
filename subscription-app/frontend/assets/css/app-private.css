@@ -128,6 +128,39 @@ button.secondary:hover {
   min-height: 220px;
 }
 
+.dashboard-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.dashboard-tab {
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: #15493f;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dashboard-tab.active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.dashboard-panel[hidden] {
+  display: none !important;
+}
+
+.dashboard-panel.active {
+  display: block;
+}
+
 .catalog-toolbar {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -198,6 +231,40 @@ button.secondary:hover {
 
 .history-remove {
   justify-self: end;
+  color: var(--danger);
+}
+
+.admin-card {
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.admin-user-item {
+  gap: 10px;
+}
+
+.admin-user-email {
+  font-weight: 700;
+  color: var(--text-strong);
+}
+
+.admin-user-editor {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 130px auto auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.admin-user-editor input,
+.admin-user-editor select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.admin-delete-btn {
   color: var(--danger);
 }
 
@@ -303,5 +370,9 @@ button.secondary:hover {
   .exam-modal-panel {
     height: 92vh;
     border-radius: 12px;
+  }
+
+  .admin-user-editor {
+    grid-template-columns: 1fr;
   }
 }

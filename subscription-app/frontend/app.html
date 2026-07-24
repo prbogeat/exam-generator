@@ -41,11 +41,7 @@
           </label>
           <label>
             <span>Plan</span>
-            <select id="profilePlan">
-              <option value="free">Free</option>
-              <option value="pro">Pro</option>
-              <option value="premium">Premium</option>
-            </select>
+            <input id="profilePlan" type="text" disabled />
           </label>
           <button type="submit" class="primary">Guardar perfil</button>
         </form>
@@ -79,27 +75,73 @@
     </aside>
 
     <section class="card catalog-card">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Catálogo</p>
-          <h2>Exámenes disponibles</h2>
+      <div id="adminTabs" class="dashboard-tabs" hidden>
+        <button type="button" class="dashboard-tab active" data-panel="catalog">Catálogo de exámenes</button>
+        <button type="button" class="dashboard-tab" data-panel="admin">Administración</button>
+      </div>
+
+      <section id="catalogPanel" class="dashboard-panel active">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Catálogo</p>
+            <h2>Exámenes disponibles</h2>
+          </div>
+          <button id="refreshCatalogBtn" class="secondary">Actualizar</button>
         </div>
-        <button id="refreshCatalogBtn" class="secondary">Actualizar</button>
-      </div>
-      <div class="catalog-toolbar">
-        <select id="subjectSelect">
-          <option value="">Todas las asignaturas</option>
-        </select>
-        <select id="partialSelect">
-          <option value="">Todos los parciales</option>
-        </select>
-        <select id="examSelect">
-          <option value="">Selecciona un examen</option>
-        </select>
-        <button id="openExamBtn" class="primary">Abrir examen</button>
-        <button id="toggleFavoriteBtn" class="secondary" type="button">Añadir favorito</button>
-      </div>
-      <p id="catalogStatus" class="inline-status"></p>
+        <div class="catalog-toolbar">
+          <select id="subjectSelect">
+            <option value="">Todas las asignaturas</option>
+          </select>
+          <select id="partialSelect">
+            <option value="">Todos los parciales</option>
+          </select>
+          <select id="examSelect">
+            <option value="">Selecciona un examen</option>
+          </select>
+          <button id="openExamBtn" class="primary">Abrir examen</button>
+          <button id="toggleFavoriteBtn" class="secondary" type="button">Añadir favorito</button>
+        </div>
+        <p id="catalogStatus" class="inline-status"></p>
+      </section>
+
+      <section id="adminPanel" class="dashboard-panel admin-card" hidden>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Administración</p>
+            <h2>Gestión de usuarios</h2>
+          </div>
+          <button id="refreshAdminUsersBtn" class="secondary" type="button">Recargar</button>
+        </div>
+
+        <form id="adminCreateUserForm" class="stack-form">
+          <label>
+            <span>Nombre</span>
+            <input id="adminNewUserName" name="name" type="text" minlength="2" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="adminNewUserEmail" name="email" type="email" required />
+          </label>
+          <label>
+            <span>Contraseña</span>
+            <input id="adminNewUserPassword" name="password" type="password" minlength="8" required />
+          </label>
+          <label>
+            <span>Suscripción</span>
+            <select id="adminNewUserPlan" name="plan">
+              <option value="free">Free</option>
+              <option value="pro">Pro</option>
+              <option value="premium">Premium</option>
+            </select>
+          </label>
+          <button type="submit" class="primary">Dar de alta usuario</button>
+        </form>
+
+        <p id="adminUsersStatus" class="inline-status"></p>
+        <div id="adminUsersList" class="history-list">
+          <p class="empty-state">Cargando usuarios...</p>
+        </div>
+      </section>
     </section>
   </main>
 
