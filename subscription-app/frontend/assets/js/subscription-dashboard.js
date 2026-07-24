@@ -4,13 +4,15 @@ function getAPIBase() {
   const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(url.hostname);
   const localBackendBase = `${url.protocol}//${url.hostname}:8010/api`;
 
+  // On remote (non-localhost) always derive the API base from the current origin.
+  // Never use a stored value on remote: it may point to localhost from a previous
+  // local dev session and would cause all requests to fail with network errors.
+  if (!isLocalHost) {
+    return `${window.location.origin}/api`;
+  }
+
   const stored = localStorage.getItem("ea_api_base");
   if (stored) {
-    // Avoid using stale local values that point to the static frontend server.
-    if (!isLocalHost) {
-      return stored;
-    }
-
     try {
       const storedUrl = new URL(stored);
       if (["localhost", "127.0.0.1", "::1"].includes(storedUrl.hostname) && storedUrl.port === "8010") {
@@ -19,11 +21,9 @@ function getAPIBase() {
     } catch (_error) {
       // Ignore malformed storage values and keep auto-detection.
     }
-
-    return localBackendBase;
   }
 
-  if (isLocalHost && url.port !== "8010") {
+  if (url.port !== "8010") {
     return localBackendBase;
   }
 
@@ -123,6 +123,7 @@ async function api(path, options = {}) {
     if (response.status === 401) {
       localStorage.removeItem(TOKEN_KEY);
       window.location.href = "index.html";
+      return {};
     }
     throw new Error(payload.detail || payload.error || `HTTP ${response.status}`);
   }
@@ -827,6 +828,9 @@ async function logout() {
   sessionStorage.removeItem("selectedExamTitle");
   sessionStorage.removeItem("selectedExamSubject");
   sessionStorage.removeItem(SELECTED_EXAM_KEY);
+  sessionStorage.removeItem("subscriptionSavedAnswers");
+  sessionStorage.removeItem("subscriptionSavedAnswersLabel");
+  sessionStorage.removeItem("subscriptionAutoSubmit");
   window.location.href = "index.html";
 }
 
@@ -930,13 +934,21 @@ async function initialize() {
   ensureSession();
   bindEvents();
   setCenterPanel("catalog");
-  await loadUser();
+  try {
+    await loadUser();
+  } catch (error) {
+    // If the token was already removed (401 → redirect in progress) do nothing.
+    if (!localStorage.getItem(TOKEN_KEY)) {
+      return;
+    }
+    // Network or server error: show a recoverable error and offer logout.
+    setCatalogStatus(`No se pudo conectar con el servidor: ${error.message}. Intenta recargar o cerrar sesión.`);
+    return;
+  }
   if (userIsAdmin()) {
     await loadAdminUsers();
   }
-  await loadCatalog();
-  await loadHistory();
-  await loadFavorites();
+  await Promise.allSettled([loadCatalog(), loadHistory(), loadFavorites()]);
 }
 
 // Esperar a que el DOM esté completamente listo
