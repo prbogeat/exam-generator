@@ -26,7 +26,15 @@ EXAMS_ROOT = PROJECT_ROOT / "docs" / "assets" / "json"
 SESSION_TTL_DAYS = 30
 PASSWORD_ITERATIONS = 120_000
 APP_SECRET = os.getenv("EXAM_ASSISTANT_SECRET", "change-me-in-production")
+ADMIN_EMAIL = os.getenv("SUBSCRIPTION_ADMIN_EMAIL", "admin@exam-assistant.local")
+ADMIN_PASSWORD = os.getenv("SUBSCRIPTION_ADMIN_PASSWORD", "Admin123456")
+ADMIN_NAME = os.getenv("SUBSCRIPTION_ADMIN_NAME", "Administrador")
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+PLAN_ORDER = {"free": 0, "pro": 1, "premium": 2}
+VALID_PLANS = tuple(PLAN_ORDER.keys())
+
+if os.getenv("RENDER") and ADMIN_PASSWORD == "Admin123456":
+    raise RuntimeError("Set SUBSCRIPTION_ADMIN_PASSWORD in production")
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -54,6 +62,17 @@ class LoginRequest(BaseModel):
 
 
 class UpdateProfileRequest(BaseModel):
+    name: str = Field(min_length=2, max_length=120)
+
+
+class AdminCreateUserRequest(BaseModel):
+    name: str = Field(min_length=2, max_length=120)
+    email: str = Field(min_length=5, max_length=200)
+    password: str = Field(min_length=8, max_length=200)
+    plan: str = Field(default="free", pattern="^(free|pro|premium)$")
+
+
+class AdminUpdateUserRequest(BaseModel):
     name: str = Field(min_length=2, max_length=120)
     plan: str = Field(default="free", pattern="^(free|pro|premium)$")
 
@@ -86,6 +105,19 @@ def normalize_email(value: str) -> str:
     return email
 
 
+def normalize_plan(value: str) -> str:
+    plan = str(value or "free").strip().lower()
+    if plan not in PLAN_ORDER:
+        return "free"
+    return plan
+
+
+def can_access_plan(user_plan: str, required_plan: str) -> bool:
+    user_rank = PLAN_ORDER.get(normalize_plan(user_plan), 0)
+    required_rank = PLAN_ORDER.get(normalize_plan(required_plan), 0)
+    return user_rank >= required_rank
+
+
 def get_connection() -> sqlite3.Connection:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -103,6 +135,7 @@ def init_db() -> None:
                 password_hash TEXT NOT NULL,
                 password_salt TEXT NOT NULL,
                 plan TEXT NOT NULL DEFAULT 'free',
+                role TEXT NOT NULL DEFAULT 'user',
                 created_at TEXT NOT NULL,
                 updated_at TEXT NOT NULL
             );
@@ -145,6 +178,35 @@ def init_db() -> None:
             );
             """
         )
+
+        user_columns = {row[1] for row in conn.execute("PRAGMA table_info(users)").fetchall()}
+        if "role" not in user_columns:
+            conn.execute("ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'user'")
+
+        # Ensure there is exactly one bootstrap admin account for management tasks.
+        bootstrap_admin_user(conn)
+        conn.commit()
+
+
+def bootstrap_admin_user(conn: sqlite3.Connection) -> None:
+    admin_email = normalize_email(ADMIN_EMAIL)
+    now = utc_now().isoformat()
+    admin = conn.execute("SELECT id FROM users WHERE email = ?", (admin_email,)).fetchone()
+    if admin:
+        conn.execute(
+            "UPDATE users SET role = 'admin', plan = 'premium', updated_at = ? WHERE id = ?",
+            (now, admin["id"]),
+        )
+        return
+
+    password_hash, password_salt = make_password(ADMIN_PASSWORD)
+    conn.execute(
+        """
+        INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+        VALUES (?, ?, ?, ?, 'premium', 'admin', ?, ?)
+        """,
+        (admin_email, ADMIN_NAME.strip(), password_hash, password_salt, now, now),
+    )
 
 
 def hash_password(password: str, salt: str) -> str:
@@ -220,9 +282,25 @@ def serialize_user(row: sqlite3.Row) -> Dict[str, Any]:
         "email": row["email"],
         "name": row["name"],
         "plan": row["plan"],
+        "role": row["role"],
         "createdAt": row["created_at"],
         "updatedAt": row["updated_at"],
     }
+
+
+def require_admin(authorization: Optional[str]) -> sqlite3.Row:
+    user = get_current_user(authorization)
+    if user["role"] != "admin":
+        raise HTTPException(status_code=403, detail="Admin access required")
+    return user
+
+
+def get_exam_required_plan(catalog_item: Dict[str, Any]) -> str:
+    return normalize_plan(catalog_item.get("accessLevel") or "free")
+
+
+def filter_catalog_by_plan(items: list[Dict[str, Any]], user_plan: str) -> list[Dict[str, Any]]:
+    return [item for item in items if can_access_plan(user_plan, get_exam_required_plan(item))]
 
 
 def load_catalog() -> Dict[str, Any]:
@@ -257,6 +335,21 @@ def get_catalog_item(exam_uid: str) -> Optional[Dict[str, Any]]:
     return None
 
 
+def require_exam_access(user: sqlite3.Row, exam_uid: str) -> Dict[str, Any]:
+    catalog_item = get_catalog_item(exam_uid)
+    if not catalog_item:
+        raise HTTPException(status_code=404, detail="Exam not found")
+
+    required_plan = get_exam_required_plan(catalog_item)
+    if not can_access_plan(user["plan"], required_plan):
+        raise HTTPException(
+            status_code=403,
+            detail=f"Exam requires {required_plan} plan",
+        )
+
+    return catalog_item
+
+
 @app.get("/")
 def root() -> RedirectResponse:
     return RedirectResponse(url="/subscription/index.html")
@@ -285,8 +378,8 @@ def register(payload: RegisterRequest) -> Dict[str, Any]:
 
         cursor = conn.execute(
             """
-            INSERT INTO users (email, name, password_hash, password_salt, plan, created_at, updated_at)
-            VALUES (?, ?, ?, ?, 'free', ?, ?)
+            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+            VALUES (?, ?, ?, ?, 'free', 'user', ?, ?)
             """,
             (email, payload.name.strip(), password_hash, password_salt, now, now),
         )
@@ -333,8 +426,8 @@ def update_profile(payload: UpdateProfileRequest, authorization: Optional[str] =
     now = utc_now().isoformat()
     with get_connection() as conn:
         conn.execute(
-            "UPDATE users SET name = ?, plan = ?, updated_at = ? WHERE id = ?",
-            (payload.name.strip(), payload.plan, now, user["id"]),
+            "UPDATE users SET name = ?, updated_at = ? WHERE id = ?",
+            (payload.name.strip(), now, user["id"]),
         )
         conn.commit()
         updated = conn.execute("SELECT * FROM users WHERE id = ?", (user["id"],)).fetchone()
@@ -343,20 +436,120 @@ def update_profile(payload: UpdateProfileRequest, authorization: Optional[str] =
 
 @app.get("/api/catalog")
 def catalog(authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
-    get_current_user(authorization)
-    return load_catalog()
+    user = get_current_user(authorization)
+    catalog_payload = load_catalog()
+    items = catalog_payload.get("items", []) if isinstance(catalog_payload, dict) else []
+    visible_items = filter_catalog_by_plan(items, user["plan"])
+    return {
+        **catalog_payload,
+        "count": len(visible_items),
+        "items": visible_items,
+        "defaultExamUid": visible_items[0]["examUid"] if visible_items else None,
+    }
 
 
 @app.get("/api/exams/{exam_uid:path}")
 def get_exam(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
-    get_current_user(authorization)
+    user = get_current_user(authorization)
+    require_exam_access(user, exam_uid)
     return {"exam": load_exam_by_uid(exam_uid)}
 
 
 @app.get("/api/exam")
 def get_exam_by_query(exam_uid: str, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
-    get_current_user(authorization)
+    user = get_current_user(authorization)
+    require_exam_access(user, exam_uid)
     return {"exam": load_exam_by_uid(exam_uid)}
+
+
+@app.get("/api/admin/users")
+def admin_list_users(authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    require_admin(authorization)
+    with get_connection() as conn:
+        rows = conn.execute(
+            """
+            SELECT id, email, name, plan, role, created_at, updated_at
+            FROM users
+            ORDER BY role DESC, created_at ASC
+            """
+        ).fetchall()
+
+    return {"items": [serialize_user(row) for row in rows]}
+
+
+@app.post("/api/admin/users")
+def admin_create_user(payload: AdminCreateUserRequest, authorization: Optional[str] = Header(default=None)) -> Dict[str, Any]:
+    require_admin(authorization)
+    now = utc_now().isoformat()
+    email = normalize_email(payload.email)
+    password_hash, password_salt = make_password(payload.password)
+
+    with get_connection() as conn:
+        existing = conn.execute("SELECT id FROM users WHERE email = ?", (email,)).fetchone()
+        if existing:
+            raise HTTPException(status_code=409, detail="Email already registered")
+
+        cursor = conn.execute(
+            """
+            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, 'user', ?, ?)
+            """,
+            (email, payload.name.strip(), password_hash, password_salt, normalize_plan(payload.plan), now, now),
+        )
+        conn.commit()
+
+        user_id = cursor.lastrowid
+        user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+
+    return {"user": serialize_user(user)}
+
+
+@app.put("/api/admin/users/{user_id}")
+def admin_update_user(
+    user_id: int,
+    payload: AdminUpdateUserRequest,
+    authorization: Optional[str] = Header(default=None),
+) -> Dict[str, Any]:
+    admin = require_admin(authorization)
+    now = utc_now().isoformat()
+
+    with get_connection() as conn:
+        user = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+        if not user:
+            raise HTTPException(status_code=404, detail="User not found")
+
+        next_plan = normalize_plan(payload.plan)
+        if user["role"] == "admin" and int(admin["id"]) == int(user_id):
+            next_plan = "premium"
+
+        conn.execute(
+            "UPDATE users SET name = ?, plan = ?, updated_at = ? WHERE id = ?",
+            (payload.name.strip(), next_plan, now, user_id),
+        )
+        conn.commit()
+        updated = conn.execute("SELECT * FROM users WHERE id = ?", (user_id,)).fetchone()
+
+    return {"user": serialize_user(updated)}
+
+
+@app.delete("/api/admin/users/{user_id}")
+def admin_delete_user(user_id: int, authorization: Optional[str] = Header(default=None)) -> Dict[str, bool]:
+    admin = require_admin(authorization)
+    if int(admin["id"]) == int(user_id):
+        raise HTTPException(status_code=400, detail="Admin user cannot delete itself")
+
+    with get_connection() as conn:
+        row = conn.execute("SELECT id, role FROM users WHERE id = ?", (user_id,)).fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail="User not found")
+
+        if row["role"] == "admin":
+            raise HTTPException(status_code=400, detail="Cannot delete admin user")
+
+        conn.execute("DELETE FROM users WHERE id = ?", (user_id,))
+        conn.commit()
+
+    return {"success": True}
 
 
 @app.get("/api/account/progress")

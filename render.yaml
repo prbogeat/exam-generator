@@ -10,3 +10,9 @@ services:
     envVars:
       - key: EXAM_ASSISTANT_SECRET
         generateValue: true
+      - key: SUBSCRIPTION_ADMIN_EMAIL
+        value: admin@example.com
+      - key: SUBSCRIPTION_ADMIN_NAME
+        value: Admin Principal
+      - key: SUBSCRIPTION_ADMIN_PASSWORD
+        generateValue: true
