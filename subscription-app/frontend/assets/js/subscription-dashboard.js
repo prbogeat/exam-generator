@@ -39,6 +39,7 @@ const state = {
   user: null,
   catalog: [],
   favorites: [],
+  adminUsers: [],
   currentExam: null,
   currentSubjectFilter: "",
   currentPartialFilter: "",
@@ -70,6 +71,14 @@ const dom = {
   examFrame: document.getElementById("examFrame"),
   historyList: document.getElementById("historyList"),
   favoritesList: document.getElementById("favoritesList"),
+  adminTabs: document.getElementById("adminTabs"),
+  adminTabButtons: Array.from(document.querySelectorAll(".dashboard-tab")),
+  catalogPanel: document.getElementById("catalogPanel"),
+  adminPanel: document.getElementById("adminPanel"),
+  adminCreateUserForm: document.getElementById("adminCreateUserForm"),
+  adminUsersStatus: document.getElementById("adminUsersStatus"),
+  adminUsersList: document.getElementById("adminUsersList"),
+  refreshAdminUsersBtn: document.getElementById("refreshAdminUsersBtn"),
 };
 
 // Log missing elements for debugging
@@ -126,6 +135,35 @@ function uniqueSubjects(items) {
 
 function uniquePartials(items) {
   return [...new Set(items.map((item) => item.partial).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function formatPlanLabel(plan) {
+  const value = String(plan || "free").toLowerCase();
+  if (value === "premium") return "Premium";
+  if (value === "pro") return "Pro";
+  return "Free";
+}
+
+function userIsAdmin() {
+  return state.user && state.user.role === "admin";
+}
+
+function setCenterPanel(panelName) {
+  if (dom.catalogPanel) {
+    const showCatalog = panelName === "catalog";
+    dom.catalogPanel.hidden = !showCatalog;
+    dom.catalogPanel.classList.toggle("active", showCatalog);
+  }
+
+  if (dom.adminPanel) {
+    const showAdmin = panelName === "admin";
+    dom.adminPanel.hidden = !showAdmin;
+    dom.adminPanel.classList.toggle("active", showAdmin);
+  }
+
+  dom.adminTabButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.panel === panelName);
+  });
 }
 
 function setCatalogStatus(message) {
@@ -220,7 +258,7 @@ function populateExams() {
   items.forEach((item) => {
     const option = document.createElement("option");
     option.value = item.examUid;
-    option.textContent = `${item.examTitle} · ${item.totalQuestions || 0} preguntas`;
+    option.textContent = `${item.examTitle} · ${item.totalQuestions || 0} preguntas · ${formatPlanLabel(item.accessLevel)}`;
     dom.examSelect.appendChild(option);
   });
 
@@ -248,7 +286,23 @@ function applyUser(user) {
   state.user = user;
   if (dom.profileName) dom.profileName.value = user.name || "";
   if (dom.profileEmail) dom.profileEmail.value = user.email || "";
-  if (dom.profilePlan) dom.profilePlan.value = user.plan || "free";
+  if (dom.profilePlan) dom.profilePlan.value = formatPlanLabel(user.plan);
+
+  if (userIsAdmin()) {
+    if (dom.adminTabs) {
+      dom.adminTabs.hidden = false;
+    }
+    setCenterPanel("catalog");
+  } else {
+    if (dom.adminTabs) {
+      dom.adminTabs.hidden = true;
+    }
+    state.adminUsers = [];
+    if (dom.adminUsersList) {
+      dom.adminUsersList.innerHTML = '<p class="empty-state">Solo el admin puede gestionar usuarios.</p>';
+    }
+    setCenterPanel("catalog");
+  }
 }
 
 async function loadUser() {
@@ -591,13 +645,174 @@ async function saveProfile(event) {
   event.preventDefault();
   const payload = {
     name: dom.profileName.value.trim(),
-    plan: dom.profilePlan.value,
   };
   const result = await api("/account/profile", {
     method: "PUT",
     body: JSON.stringify(payload),
   });
   applyUser(result.user);
+}
+
+function setAdminUsersStatus(message) {
+  if (dom.adminUsersStatus) {
+    dom.adminUsersStatus.textContent = message;
+  }
+}
+
+function renderAdminUsers() {
+  if (!dom.adminUsersList) {
+    return;
+  }
+
+  dom.adminUsersList.innerHTML = "";
+
+  if (!state.adminUsers.length) {
+    dom.adminUsersList.innerHTML = '<p class="empty-state">No hay usuarios registrados.</p>';
+    return;
+  }
+
+  state.adminUsers.forEach((user) => {
+    const card = document.createElement("article");
+    card.className = "history-item admin-user-item";
+
+    const email = document.createElement("div");
+    email.className = "admin-user-email";
+    email.textContent = `${user.email}${user.role === "admin" ? " · Admin" : ""}`;
+
+    const editor = document.createElement("div");
+    editor.className = "admin-user-editor";
+
+    const nameInput = document.createElement("input");
+    nameInput.type = "text";
+    nameInput.value = user.name || "";
+    nameInput.minLength = 2;
+    nameInput.disabled = user.role === "admin";
+
+    const planSelect = document.createElement("select");
+    ["free", "pro", "premium"].forEach((plan) => {
+      const option = document.createElement("option");
+      option.value = plan;
+      option.textContent = formatPlanLabel(plan);
+      if (user.plan === plan) {
+        option.selected = true;
+      }
+      planSelect.appendChild(option);
+    });
+    planSelect.disabled = user.role === "admin";
+
+    const saveButton = document.createElement("button");
+    saveButton.type = "button";
+    saveButton.className = "secondary";
+    saveButton.textContent = "Guardar";
+    saveButton.disabled = user.role === "admin";
+
+    const deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.className = "secondary admin-delete-btn";
+    deleteButton.textContent = "Borrar";
+    deleteButton.disabled = user.role === "admin";
+
+    saveButton.addEventListener("click", async () => {
+      const payload = {
+        name: nameInput.value.trim(),
+        plan: planSelect.value,
+      };
+
+      if (!payload.name || payload.name.length < 2) {
+        setAdminUsersStatus("El nombre debe tener al menos 2 caracteres.");
+        return;
+      }
+
+      saveButton.disabled = true;
+      saveButton.textContent = "Guardando...";
+      try {
+        await api(`/admin/users/${user.id}`, {
+          method: "PUT",
+          body: JSON.stringify(payload),
+        });
+        setAdminUsersStatus("Usuario actualizado.");
+        await loadAdminUsers();
+      } catch (error) {
+        setAdminUsersStatus(`No se pudo actualizar: ${error.message}`);
+      } finally {
+        saveButton.disabled = false;
+        saveButton.textContent = "Guardar";
+      }
+    });
+
+    deleteButton.addEventListener("click", async () => {
+      const confirmed = window.confirm(`¿Seguro que quieres borrar a ${user.email}?`);
+      if (!confirmed) {
+        return;
+      }
+
+      deleteButton.disabled = true;
+      deleteButton.textContent = "Borrando...";
+      try {
+        await api(`/admin/users/${user.id}`, { method: "DELETE" });
+        setAdminUsersStatus("Usuario eliminado.");
+        await loadAdminUsers();
+      } catch (error) {
+        setAdminUsersStatus(`No se pudo borrar: ${error.message}`);
+      } finally {
+        deleteButton.disabled = false;
+        deleteButton.textContent = "Borrar";
+      }
+    });
+
+    editor.appendChild(nameInput);
+    editor.appendChild(planSelect);
+    editor.appendChild(saveButton);
+    editor.appendChild(deleteButton);
+
+    card.appendChild(email);
+    card.appendChild(editor);
+    dom.adminUsersList.appendChild(card);
+  });
+}
+
+async function loadAdminUsers() {
+  if (!userIsAdmin()) {
+    return;
+  }
+
+  setAdminUsersStatus("Cargando usuarios...");
+  const payload = await api("/admin/users");
+  state.adminUsers = Array.isArray(payload.items) ? payload.items : [];
+  renderAdminUsers();
+  setAdminUsersStatus(`${state.adminUsers.length} usuario(s) cargado(s).`);
+}
+
+async function createAdminUser(event) {
+  event.preventDefault();
+  if (!userIsAdmin() || !dom.adminCreateUserForm) {
+    return;
+  }
+
+  const formData = new FormData(dom.adminCreateUserForm);
+  const payload = {
+    name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
+    password: String(formData.get("password") || ""),
+    plan: String(formData.get("plan") || "free"),
+  };
+
+  setAdminUsersStatus("Creando usuario...");
+  try {
+    await api("/admin/users", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    });
+    dom.adminCreateUserForm.reset();
+    const planSelect = dom.adminCreateUserForm.querySelector("select[name='plan']");
+    if (planSelect) {
+      planSelect.value = "free";
+    }
+    setAdminUsersStatus("Usuario creado correctamente.");
+    await loadAdminUsers();
+  } catch (error) {
+    setAdminUsersStatus(`No se pudo crear: ${error.message}`);
+  }
 }
 
 async function logout() {
@@ -679,6 +894,17 @@ function bindEvents() {
   if (dom.openExamBtn) dom.openExamBtn.addEventListener("click", openSelectedExam);
   if (dom.toggleFavoriteBtn) dom.toggleFavoriteBtn.addEventListener("click", toggleFavorite);
   if (dom.saveProgressBtn) dom.saveProgressBtn.addEventListener("click", saveProgress);
+  if (dom.adminCreateUserForm) dom.adminCreateUserForm.addEventListener("submit", createAdminUser);
+  if (dom.refreshAdminUsersBtn) dom.refreshAdminUsersBtn.addEventListener("click", loadAdminUsers);
+  dom.adminTabButtons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const panelName = button.dataset.panel === "admin" ? "admin" : "catalog";
+      setCenterPanel(panelName);
+      if (panelName === "admin" && userIsAdmin()) {
+        await loadAdminUsers();
+      }
+    });
+  });
   
   // Close button handler
   if (dom.closeExamBtn) {
@@ -703,7 +929,11 @@ function bindEvents() {
 async function initialize() {
   ensureSession();
   bindEvents();
+  setCenterPanel("catalog");
   await loadUser();
+  if (userIsAdmin()) {
+    await loadAdminUsers();
+  }
   await loadCatalog();
   await loadHistory();
   await loadFavorites();

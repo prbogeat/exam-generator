@@ -791,5 +791,6 @@
       "correctOption": "D",
       "explanation": "La despolarización abre canales dependientes de voltaje permitiendo el ingreso rápido de iones Calcio (Ca²⁺), el cual fuerza a las vesículas a exocitar su producto hormonal [48, 49]."
     }
-  ]
+  ],
+  "accessLevel": "premium"
 }

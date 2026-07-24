@@ -791,5 +791,6 @@
       "correctOption": "C",
       "explanation": "Los linfocitos T (inmunidad celular) son incapaces de 'ver' antígenos que flotan libres. Dependen estrictamente de que células como los macrófagos los fagociten primero y se los 'presenten' en la membrana unidos a las proteínas CMH."
     }
-  ]
+  ],
+  "accessLevel": "premium"
 }
