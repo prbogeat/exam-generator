@@ -4,13 +4,15 @@ function getAPIBase() {
   const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(url.hostname);
   const localBackendBase = `${url.protocol}//${url.hostname}:8010/api`;
 
+  // On remote (non-localhost) always derive the API base from the current origin.
+  // Never use a stored value on remote: it may point to localhost from a previous
+  // local dev session and would cause all requests to fail with network errors.
+  if (!isLocalHost) {
+    return `${window.location.origin}/api`;
+  }
+
   const stored = localStorage.getItem("ea_api_base");
   if (stored) {
-    // Avoid using stale local values that point to the static frontend server.
-    if (!isLocalHost) {
-      return stored;
-    }
-
     try {
       const storedUrl = new URL(stored);
       if (["localhost", "127.0.0.1", "::1"].includes(storedUrl.hostname) && storedUrl.port === "8010") {
@@ -19,11 +21,9 @@ function getAPIBase() {
     } catch (_error) {
       // Ignore malformed storage values and keep auto-detection.
     }
-
-    return localBackendBase;
   }
 
-  if (isLocalHost && url.port !== "8010") {
+  if (url.port !== "8010") {
     return localBackendBase;
   }
 
