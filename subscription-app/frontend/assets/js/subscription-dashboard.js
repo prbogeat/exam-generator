@@ -73,6 +73,8 @@ const dom = {
   favoritesList: document.getElementById("favoritesList"),
   adminTabs: document.getElementById("adminTabs"),
   adminTabButtons: Array.from(document.querySelectorAll(".dashboard-tab")),
+  catalogTabBtn: document.getElementById("catalogTabBtn"),
+  adminTabBtn: document.getElementById("adminTabBtn"),
   catalogPanel: document.getElementById("catalogPanel"),
   adminPanel: document.getElementById("adminPanel"),
   adminCreateUserForm: document.getElementById("adminCreateUserForm"),
@@ -150,21 +152,32 @@ function userIsAdmin() {
 }
 
 function setCenterPanel(panelName) {
+  const resolvedPanelName = panelName === "admin" && !userIsAdmin() ? "catalog" : panelName;
+
   if (dom.catalogPanel) {
-    const showCatalog = panelName === "catalog";
+    const showCatalog = resolvedPanelName === "catalog";
     dom.catalogPanel.hidden = !showCatalog;
     dom.catalogPanel.classList.toggle("active", showCatalog);
   }
 
   if (dom.adminPanel) {
-    const showAdmin = panelName === "admin";
+    const showAdmin = resolvedPanelName === "admin" && userIsAdmin();
     dom.adminPanel.hidden = !showAdmin;
     dom.adminPanel.classList.toggle("active", showAdmin);
   }
 
   dom.adminTabButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.panel === panelName);
+    const isActive = button.dataset.panel === resolvedPanelName;
+    button.classList.toggle("active", isActive);
+    if (button.dataset.panel === "admin") {
+      button.hidden = !userIsAdmin();
+      button.setAttribute("aria-hidden", (!userIsAdmin()).toString());
+    }
   });
+
+  if (dom.adminTabs) {
+    dom.adminTabs.classList.toggle("single-tab", !userIsAdmin());
+  }
 }
 
 function setCatalogStatus(message) {
@@ -290,14 +303,8 @@ function applyUser(user) {
   if (dom.profilePlan) dom.profilePlan.value = formatPlanLabel(user.plan);
 
   if (userIsAdmin()) {
-    if (dom.adminTabs) {
-      dom.adminTabs.hidden = false;
-    }
     setCenterPanel("catalog");
   } else {
-    if (dom.adminTabs) {
-      dom.adminTabs.hidden = true;
-    }
     state.adminUsers = [];
     if (dom.adminUsersList) {
       dom.adminUsersList.innerHTML = '<p class="empty-state">Solo el admin puede gestionar usuarios.</p>';
@@ -903,6 +910,10 @@ function bindEvents() {
   dom.adminTabButtons.forEach((button) => {
     button.addEventListener("click", async () => {
       const panelName = button.dataset.panel === "admin" ? "admin" : "catalog";
+      if (panelName === "admin" && !userIsAdmin()) {
+        setCenterPanel("catalog");
+        return;
+      }
       setCenterPanel(panelName);
       if (panelName === "admin" && userIsAdmin()) {
         await loadAdminUsers();

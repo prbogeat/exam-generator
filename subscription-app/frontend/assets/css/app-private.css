@@ -136,6 +136,10 @@ button.secondary:hover {
   border-bottom: 1px solid var(--line);
 }
 
+.dashboard-tabs.single-tab {
+  justify-content: flex-start;
+}
+
 .dashboard-tab {
   border: 1px solid var(--line);
   background: var(--surface-2);
