@@ -76,6 +76,60 @@
 			"isBackground": true,
 			"group": "build",
 			"problemMatcher": []
+		},
+		{
+			"label": "Subscription: Frontend (Puerto 8011)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"-m",
+				"http.server",
+				"8011",
+				"--directory",
+				"subscription-app/frontend"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"group": "subscription"
+			}
+		},
+		{
+			"label": "Subscription: Backend (Puerto 8010)",
+			"type": "shell",
+			"command": "C:/Program Files/Python39-33/python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"app:app",
+				"--reload",
+				"--port",
+				"8010"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/subscription-app/backend"
+			},
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated",
+				"group": "subscription"
+			}
+		},
+		{
+			"label": "Subscription: Levantar Front + Back",
+			"dependsOrder": "parallel",
+			"dependsOn": [
+				"Subscription: Frontend (Puerto 8011)",
+				"Subscription: Backend (Puerto 8010)"
+			],
+			"group": "build",
+			"problemMatcher": []
 		}
 	]
 }

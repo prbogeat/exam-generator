@@ -170,8 +170,9 @@ function setCenterPanel(panelName) {
     const isActive = button.dataset.panel === resolvedPanelName;
     button.classList.toggle("active", isActive);
     if (button.dataset.panel === "admin") {
-      button.hidden = !userIsAdmin();
-      button.setAttribute("aria-hidden", (!userIsAdmin()).toString());
+      const shouldHideAdminButton = !userIsAdmin();
+      button.hidden = shouldHideAdminButton;
+      button.setAttribute("aria-hidden", shouldHideAdminButton.toString());
     }
   });
 
@@ -301,6 +302,12 @@ function applyUser(user) {
   if (dom.profileName) dom.profileName.value = user.name || "";
   if (dom.profileEmail) dom.profileEmail.value = user.email || "";
   if (dom.profilePlan) dom.profilePlan.value = formatPlanLabel(user.plan);
+
+  if (dom.adminTabBtn) {
+    const shouldHideAdminButton = !userIsAdmin();
+    dom.adminTabBtn.hidden = shouldHideAdminButton;
+    dom.adminTabBtn.setAttribute("aria-hidden", shouldHideAdminButton.toString());
+  }
 
   if (userIsAdmin()) {
     setCenterPanel("catalog");
