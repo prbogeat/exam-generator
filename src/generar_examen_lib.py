@@ -20,6 +20,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT
+from exam_presets import DEFAULT_COURSE_TITLE, DEFAULT_DEGREE_TITLE
 
 try:
     from exam_db import get_connection, upsert_exam
@@ -165,6 +166,8 @@ def convert_exam(
     source_questions: List[Dict[str, Any]],
     number_of_questions: int,
     random_selection: bool,
+    degree_title: str,
+    course_title: str,
     subject_title: str,
     exam_title: str,
     subtitle: str,
@@ -240,6 +243,8 @@ def convert_exam(
     )
 
     return {
+        "degreeTitle": degree_title,
+        "courseTitle": course_title,
         "subjectTitle": subject_title,
         "examTitle": exam_title,
         "subtitle": subtitle,
@@ -276,6 +281,8 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
         source_questions = get_source_questions(source_data)
 
         # Extraer configuración
+        degree_title = str(config.get("degreeTitle", DEFAULT_DEGREE_TITLE)).strip() or DEFAULT_DEGREE_TITLE
+        course_title = str(config.get("courseTitle", DEFAULT_COURSE_TITLE)).strip() or DEFAULT_COURSE_TITLE
         subject_title = str(config.get("subjectTitle", "Asignatura")).strip()
         exam_title = str(config.get("examTitle", "Examen")).strip()
         subtitle = str(config.get("subtitle", "")).strip()
@@ -295,6 +302,8 @@ def generate_exam_from_config(input_json_content: str, config: Dict[str, Any]) -
             source_questions=source_questions,
             number_of_questions=number_of_questions if number_of_questions > 0 else len(source_questions),
             random_selection=random_selection,
+            degree_title=degree_title,
+            course_title=course_title,
             subject_title=subject_title,
             exam_title=exam_title,
             subtitle=subtitle,

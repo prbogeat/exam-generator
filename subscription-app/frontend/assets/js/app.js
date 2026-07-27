@@ -1,6 +1,8 @@
 const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
 const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
 const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
+const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
+const DEFAULT_COURSE_TITLE = "1º";
 const SEARCH_PARAMS = new URLSearchParams(window.location.search);
 const IS_SUBSCRIPTION_VIEW =
   SEARCH_PARAMS.get("source") === "subscription" ||
@@ -34,6 +36,7 @@ const floatingViewer = {
 };
 
 const dom = {
+  pageHierarchy: document.getElementById("pageHierarchy"),
   pageTitle: document.getElementById("pageTitle"),
   pageSubtitle: document.getElementById("pageSubtitle"),
   noticeBox: document.getElementById("noticeBox"),
@@ -102,6 +105,12 @@ function normalizePartialName(value) {
 function normalizeDbExamMeta(meta, index) {
   const examUid = String(getDbMetaValue(meta, "examUid", "exam_uid", "uid", "key") || "").trim();
   const examTitle = String(getDbMetaValue(meta, "exam_title", "examTitle") || "Examen").trim();
+  const degreeTitle = String(
+    getDbMetaValue(meta, "degreeTitle", "degree_title", "degree", "grado") || DEFAULT_DEGREE_TITLE
+  ).trim();
+  const courseTitle = String(
+    getDbMetaValue(meta, "courseTitle", "course_title", "course", "curso") || DEFAULT_COURSE_TITLE
+  ).trim();
   const subjectTitle = String(
     getDbMetaValue(meta, "subject_folder", "subject", "subject_title", "subjectTitle") || "Asignatura"
   ).trim();
@@ -115,6 +124,8 @@ function normalizeDbExamMeta(meta, index) {
   return {
     examUid,
     examTitle,
+    degreeTitle,
+    courseTitle,
     subject: subjectTitle,
     partial,
     totalQuestions,
@@ -390,7 +401,11 @@ async function loadExamByUidFromDb(examUid) {
   await loadExamFromUrl(
     selectedExam.file,
     `${selectedExam.subject} · ${selectedExam.examTitle}`,
-    { subjectTitle: selectedExam.subject }
+    {
+      degreeTitle: selectedExam.degreeTitle,
+      courseTitle: selectedExam.courseTitle,
+      subjectTitle: selectedExam.subject,
+    }
   );
 }
 
@@ -739,6 +754,10 @@ function saveAnswersToJson() {
 function updateStaticTexts() {
   if (!state.exam) {
     document.title = "Examen dinámico";
+    if (dom.pageHierarchy) {
+      dom.pageHierarchy.textContent = "";
+      dom.pageHierarchy.classList.add("hidden");
+    }
     dom.pageTitle.textContent = "Examen dinámico";
     dom.pageSubtitle.textContent = IS_SUBSCRIPTION_VIEW
       ? "Examen cargado desde tu suscripción privada."
@@ -749,10 +768,21 @@ function updateStaticTexts() {
     return;
   }
 
-  document.title = `${state.exam.subjectTitle} · ${state.exam.examTitle}`;
-  dom.pageTitle.textContent = `${state.exam.subjectTitle} · ${state.exam.examTitle}`;
-  dom.pageSubtitle.textContent =
-    state.exam.subtitle || `${getTotalQuestions()} preguntas · explicación tras corregir`;
+  const degreeTitle = String(state.exam.degreeTitle || DEFAULT_DEGREE_TITLE).trim();
+  const courseTitle = String(state.exam.courseTitle || DEFAULT_COURSE_TITLE).trim();
+  const hierarchyParts = [degreeTitle, courseTitle].filter(Boolean);
+
+  document.title = `${hierarchyParts.join(" · ")} · ${state.exam.subjectTitle} · ${state.exam.examTitle}`;
+
+  if (dom.pageHierarchy && hierarchyParts.length) {
+    dom.pageHierarchy.textContent = hierarchyParts.join(" · ");
+    dom.pageHierarchy.classList.remove("hidden");
+  }
+
+  dom.pageTitle.textContent = state.exam.subjectTitle;
+  dom.pageSubtitle.textContent = state.exam.subtitle
+    ? `${state.exam.examTitle} · ${state.exam.subtitle}`
+    : `${state.exam.examTitle} · ${getTotalQuestions()} preguntas · explicación tras corregir`;
 
   const formulaTip = state.exam.scoring.formulaTip
     ? ` Cálculo: ${state.exam.scoring.formulaTip}.`
@@ -1167,8 +1197,10 @@ function normalizeExamData(data) {
   });
 
   return {
-    subjectTitle: String(data.subjectTitle || "Asignatura"),
-    examTitle: String(data.examTitle || "Examen"),
+    degreeTitle: String(data.degreeTitle || data.degree || DEFAULT_DEGREE_TITLE),
+    courseTitle: String(data.courseTitle || data.course || DEFAULT_COURSE_TITLE),
+    subjectTitle: String(data.subjectTitle || data.subject || "Asignatura"),
+    examTitle: String(data.examTitle || data.exam || "Examen"),
     subtitle: String(data.subtitle || ""),
     notice: String(data.notice || ""),
     scoring: {
@@ -1465,6 +1497,8 @@ async function initializeApp() {
     try {
       const selectedExamUid = sessionStorage.getItem("selectedExamUid") || "";
       const storedSubject = sessionStorage.getItem("selectedExamSubject") || "";
+      const storedDegree = sessionStorage.getItem("selectedExamDegree") || "";
+      const storedCourse = sessionStorage.getItem("selectedExamCourse") || "";
       const examTitle = sessionStorage.getItem("selectedExamTitle") || selectedExamFile;
       
       // Find and select the exam in the catalog
@@ -1496,7 +1530,12 @@ async function initializeApp() {
         await loadExamByUidFromDb(examItem.examUid);
       } else {
         if (selectedExamFile) {
-          await loadExamFromUrl(selectedExamFile, examTitle);
+          await loadExamFromUrl(selectedExamFile, examTitle, {
+            degreeTitle: storedDegree,
+            courseTitle: storedCourse,
+            subjectTitle: storedSubject,
+            examTitle,
+          });
         } else {
           throw new Error("No se encontró el examen seleccionado en el catálogo.");
         }
@@ -1505,6 +1544,8 @@ async function initializeApp() {
       sessionStorage.removeItem("selectedExamFile");
       sessionStorage.removeItem("selectedExamTitle");
       sessionStorage.removeItem("selectedExamSubject");
+      sessionStorage.removeItem("selectedExamDegree");
+      sessionStorage.removeItem("selectedExamCourse");
       sessionStorage.removeItem("selectedExamUid");
       return;
     } catch (error) {

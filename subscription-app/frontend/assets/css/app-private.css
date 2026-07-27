@@ -175,6 +175,16 @@ button.secondary:hover {
   justify-content: center;
 }
 
+.selected-exam-hierarchy {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f6fbf9;
+  color: #18453d;
+  font-weight: 700;
+}
+
 .inline-status {
   margin: 12px 0 0;
   color: var(--text-muted);

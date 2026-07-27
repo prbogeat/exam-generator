@@ -10,11 +10,16 @@ GENERAL_OUTPUT_ROOT = Path("out/examenes")
 GENERAL_REALIZED_ROOT = Path("input/examenes_realizados")
 GENERAL_REPORT_ROOT = Path("out/informes")
 
+DEFAULT_DEGREE_TITLE = "Grado en Psicología"
+DEFAULT_COURSE_TITLE = "1º"
+
 SUBJECT_FOLDER_PSICOBIOLOGIA = "Fundamentos de Psicobiología"
 SUBJECT_FOLDER_EMOCION = "Psicología de la Emoción"
 
 PRESETS: Dict[str, Dict[str, Any]] = {
     "psicobiologia-parcial-2": {
+        "degreeTitle": DEFAULT_DEGREE_TITLE,
+        "courseTitle": DEFAULT_COURSE_TITLE,
         "subjectTitle": "Fundamentos de Psicobiología",
         "examTitle": "UNED - Junio 2026",
         "subtitle": "30 Tipo Test - Examen Tipo",
@@ -30,6 +35,8 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "report_dir_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 2"],
     },
     "psicobiologia-parcial-1": {
+        "degreeTitle": DEFAULT_DEGREE_TITLE,
+        "courseTitle": DEFAULT_COURSE_TITLE,
         "subjectTitle": "Fundamentos de Psicobiología",
         "examTitle": "UNED - Febrero 2026",
         "subtitle": "30 Tipo Test - Examen Tipo F",
@@ -45,6 +52,8 @@ PRESETS: Dict[str, Dict[str, Any]] = {
         "report_dir_parts": [SUBJECT_FOLDER_PSICOBIOLOGIA, "Parcial 1"],
     },
     "emocion": {
+        "degreeTitle": DEFAULT_DEGREE_TITLE,
+        "courseTitle": DEFAULT_COURSE_TITLE,
         "subjectTitle": "Psicología de la Emoción",
         "examTitle": "UNED - Junio 2026",
         "subtitle": "40 Tipo Test",

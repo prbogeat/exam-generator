@@ -89,6 +89,12 @@
           <button id="refreshCatalogBtn" class="secondary">Actualizar</button>
         </div>
         <div class="catalog-toolbar">
+          <select id="degreeSelect">
+            <option value="">Todos los grados</option>
+          </select>
+          <select id="courseSelect">
+            <option value="">Todos los cursos</option>
+          </select>
           <select id="subjectSelect">
             <option value="">Todas las asignaturas</option>
           </select>
@@ -99,6 +105,7 @@
             <option value="">Selecciona un examen</option>
           </select>
           <button id="openExamBtn" class="primary">Abrir examen</button>
+          <button id="clearFiltersBtn" class="secondary" type="button">Limpiar filtros</button>
           <button id="toggleFavoriteBtn" class="secondary" type="button">Añadir favorito</button>
         </div>
         <p id="catalogStatus" class="inline-status"></p>

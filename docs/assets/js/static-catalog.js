@@ -1,6 +1,8 @@
 (function () {
   const INDEX_FILE_NAME = "exams-index.json";
   const EXAMS_DIR_NAME = "exams";
+  const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
+  const DEFAULT_COURSE_TITLE = "1º";
 
   function supportsDirectoryPicker() {
     return typeof window.showDirectoryPicker === "function";
@@ -35,10 +37,43 @@
     return match ? `Parcial ${match[1]}` : "";
   }
 
-  function buildRelativePath(options) {
+  function looksLikeCourseSegment(value) {
+    return /^\d+\s*(?:º|°|o)?$/i.test(String(value || "").trim());
+  }
+
+  function resolveHierarchy(options, examJson) {
+    const degreeTitle = String(
+      options?.degreeTitle || options?.preset?.degreeTitle || examJson?.degreeTitle || DEFAULT_DEGREE_TITLE,
+    ).trim() || DEFAULT_DEGREE_TITLE;
+    const courseTitle = String(
+      options?.courseTitle || options?.preset?.courseTitle || examJson?.courseTitle || DEFAULT_COURSE_TITLE,
+    ).trim() || DEFAULT_COURSE_TITLE;
+    const subjectTitle = String(options?.subjectTitle || examJson?.subjectTitle || "Asignatura").trim() || "Asignatura";
+    return { degreeTitle, courseTitle, subjectTitle };
+  }
+
+  function extractHierarchyFromRelativePath(relativePath, payload) {
+    const parts = relativePath.map((part) => String(part || "").trim()).filter(Boolean);
+    if (parts.length >= 3 && looksLikeCourseSegment(parts[1])) {
+      return {
+        degreeTitle: String(payload?.degreeTitle || parts[0] || DEFAULT_DEGREE_TITLE),
+        courseTitle: String(payload?.courseTitle || parts[1] || DEFAULT_COURSE_TITLE),
+        subjectTitle: String(payload?.subjectTitle || parts[2] || "Asignatura"),
+      };
+    }
+
+    return {
+      degreeTitle: String(payload?.degreeTitle || DEFAULT_DEGREE_TITLE),
+      courseTitle: String(payload?.courseTitle || DEFAULT_COURSE_TITLE),
+      subjectTitle: String(payload?.subjectTitle || parts[0] || "Asignatura"),
+    };
+  }
+
+  function buildRelativePath(options, examJson) {
     const presetParts = Array.isArray(options?.preset?.output_path_parts)
       ? options.preset.output_path_parts.filter(Boolean).map((part) => String(part))
       : [];
+    const hierarchy = resolveHierarchy(options, examJson);
     const outputFileName = normalizeOutputFileName(
       options?.outputFileName,
       presetParts[presetParts.length - 1] || options?.examTitle || "examen.json",
@@ -49,10 +84,19 @@
         .slice(0, -1)
         .map((part) => sanitizePathSegment(part))
         .filter(Boolean);
-      return [...dirParts, outputFileName];
+      return [
+        sanitizePathSegment(hierarchy.degreeTitle),
+        sanitizePathSegment(hierarchy.courseTitle),
+        ...dirParts,
+        outputFileName,
+      ];
     }
 
-    const pathParts = [sanitizePathSegment(options?.subjectTitle, "Asignatura")];
+    const pathParts = [
+      sanitizePathSegment(hierarchy.degreeTitle, "grado"),
+      sanitizePathSegment(hierarchy.courseTitle, "curso"),
+      sanitizePathSegment(hierarchy.subjectTitle, "asignatura"),
+    ];
     const partial = extractPartialSegment(options?.examTitle);
     if (partial) {
       pathParts.push(partial);
@@ -74,11 +118,13 @@
     return `[(A) / ${questionCount}] x ${maxScore}`;
   }
 
-  function normalizeExamForPublication(examJson, relativePath) {
+  function normalizeExamForPublication(examJson, hierarchy) {
     const questions = Array.isArray(examJson?.questions) ? examJson.questions : [];
     const normalized = {
       ...examJson,
-      subjectTitle: relativePath[0] || String(examJson?.subjectTitle || "Asignatura"),
+      degreeTitle: hierarchy.degreeTitle,
+      courseTitle: hierarchy.courseTitle,
+      subjectTitle: hierarchy.subjectTitle,
       totalQuestions: questions.length,
     };
 
@@ -170,10 +216,13 @@
   }
 
   function buildCatalogEntry(relativePath, payload) {
+    const hierarchy = extractHierarchyFromRelativePath(relativePath, payload);
     const questions = Array.isArray(payload.questions) ? payload.questions : [];
     return {
       examUid: relativePath.join("/"),
-      subject: String(relativePath[0] || payload.subjectTitle || "Asignatura"),
+      degree: hierarchy.degreeTitle,
+      course: hierarchy.courseTitle,
+      subject: hierarchy.subjectTitle,
       partial: relativePath.find((segment) => /^parcial[\s-]\d+$/i.test(String(segment || "").trim())) || "",
       examTitle: String(payload.examTitle || "Examen"),
       subtitle: String(payload.subtitle || ""),
@@ -184,9 +233,9 @@
   }
 
   function sortCatalogEntries(left, right) {
-    return [left.subject, left.partial, left.examTitle, left.examUid]
+    return [left.degree, left.course, left.subject, left.partial, left.examTitle, left.examUid]
       .join("\u0000")
-      .localeCompare([right.subject, right.partial, right.examTitle, right.examUid].join("\u0000"), "es");
+      .localeCompare([right.degree, right.course, right.subject, right.partial, right.examTitle, right.examUid].join("\u0000"), "es");
   }
 
   async function rebuildCatalogIndex(catalogRootHandle) {
@@ -224,8 +273,9 @@
       throw new Error("Falta la carpeta local del catálogo.");
     }
 
-    const relativePath = buildRelativePath(options);
-    const normalizedExam = normalizeExamForPublication(examJson, relativePath);
+    const hierarchy = resolveHierarchy(options, examJson);
+    const relativePath = buildRelativePath(options, examJson);
+    const normalizedExam = normalizeExamForPublication(examJson, hierarchy);
     await writeExamFile(catalogRootHandle, relativePath, normalizedExam);
     const indexPayload = await rebuildCatalogIndex(catalogRootHandle);
 

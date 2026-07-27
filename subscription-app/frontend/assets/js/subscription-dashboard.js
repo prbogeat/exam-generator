@@ -33,6 +33,8 @@ function getAPIBase() {
 const API_BASE = getAPIBase();
 const TOKEN_KEY = "ea_subscription_token";
 const SELECTED_EXAM_KEY = "ea_selected_exam_uid";
+const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
+const DEFAULT_COURSE_TITLE = "1º";
 
 const state = {
   token: localStorage.getItem(TOKEN_KEY) || "",
@@ -41,6 +43,8 @@ const state = {
   favorites: [],
   adminUsers: [],
   currentExam: null,
+  currentDegreeFilter: "",
+  currentCourseFilter: "",
   currentSubjectFilter: "",
   currentPartialFilter: "",
 };
@@ -53,10 +57,13 @@ const dom = {
   profileName: document.getElementById("profileName"),
   profileEmail: document.getElementById("profileEmail"),
   profilePlan: document.getElementById("profilePlan"),
+  degreeSelect: document.getElementById("degreeSelect"),
+  courseSelect: document.getElementById("courseSelect"),
   subjectSelect: document.getElementById("subjectSelect"),
   partialSelect: document.getElementById("partialSelect"),
   examSelect: document.getElementById("examSelect"),
   openExamBtn: document.getElementById("openExamBtn"),
+  clearFiltersBtn: document.getElementById("clearFiltersBtn"),
   toggleFavoriteBtn: document.getElementById("toggleFavoriteBtn"),
   saveProgressBtn: document.getElementById("saveProgressBtn"),
   refreshCatalogBtn: document.getElementById("refreshCatalogBtn"),
@@ -134,6 +141,26 @@ async function api(path, options = {}) {
 
 function uniqueSubjects(items) {
   return [...new Set(items.map((item) => item.subject).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function normalizeCatalogItem(item) {
+  const degreeTitle = String(item.degreeTitle || item.degree || DEFAULT_DEGREE_TITLE).trim();
+  const courseTitle = String(item.courseTitle || item.course || DEFAULT_COURSE_TITLE).trim();
+  return {
+    ...item,
+    degreeTitle,
+    courseTitle,
+  };
+}
+
+function getExamHierarchyText(item) {
+  if (!item) {
+    return "";
+  }
+
+  const degreeTitle = String(item.degreeTitle || "").trim();
+  const courseTitle = String(item.courseTitle || "").trim();
+  return [degreeTitle, courseTitle].filter(Boolean).join(" · ");
 }
 
 function uniquePartials(items) {
@@ -222,9 +249,76 @@ function formatScoreEs(value) {
   });
 }
 
+function getUniqueDegrees() {
+  return [...new Set(state.catalog.map((item) => item.degreeTitle || item.degree || "").filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function getCoursesForDegree(degree) {
+  if (!degree) {
+    return [];
+  }
+  return [...new Set(state.catalog.filter((item) => (item.degreeTitle || item.degree) === degree).map((item) => item.courseTitle || item.course || "").filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function getSubjectsForHierarchy(degree, course) {
+  if (!degree || !course) {
+    return [];
+  }
+  return [...new Set(state.catalog.filter((item) => (item.degreeTitle || item.degree) === degree && (item.courseTitle || item.course) === course).map((item) => item.subject || "").filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function populateDegrees() {
+  if (!dom.degreeSelect) return;
+  const degrees = getUniqueDegrees();
+  dom.degreeSelect.innerHTML = '<option value="">Todos los grados</option>';
+  degrees.forEach((degree) => {
+    const option = document.createElement("option");
+    option.value = degree;
+    option.textContent = degree;
+    dom.degreeSelect.appendChild(option);
+  });
+  dom.degreeSelect.value = state.currentDegreeFilter;
+}
+
+function clearFilters() {
+  state.currentDegreeFilter = "";
+  state.currentCourseFilter = "";
+  state.currentSubjectFilter = "";
+  state.currentPartialFilter = "";
+  populateDegrees();
+  populateCourses();
+  populateSubjects();
+  populatePartials();
+  populateExams();
+}
+
+function populateCourses() {
+  if (!dom.courseSelect) return;
+  const degree = state.currentDegreeFilter;
+  const courses = getCoursesForDegree(degree);
+  dom.courseSelect.innerHTML = '<option value="">Todos los cursos</option>';
+  if (courses.length === 0) {
+    dom.courseSelect.disabled = true;
+    state.currentCourseFilter = "";
+  } else {
+    courses.forEach((course) => {
+      const option = document.createElement("option");
+      option.value = course;
+      option.textContent = course;
+      dom.courseSelect.appendChild(option);
+    });
+    dom.courseSelect.disabled = false;
+  }
+  dom.courseSelect.value = state.currentCourseFilter;
+}
+
 function populateSubjects() {
   if (!dom.subjectSelect) return;
-  const subjects = uniqueSubjects(state.catalog);
+  const degree = state.currentDegreeFilter;
+  const course = state.currentCourseFilter;
+  const allItems = state.catalog;
+  const items = degree && course ? getSubjectsForHierarchy(degree, course) : degree ? state.catalog.filter((item) => (item.degreeTitle || item.degree) === degree).map((item) => item.subject || "") : course ? state.catalog.filter((item) => (item.courseTitle || item.course) === course).map((item) => item.subject || "") : allItems.map((item) => item.subject || "");
+  const subjects = [...new Set(items.filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
   dom.subjectSelect.innerHTML = '<option value="">Todas las asignaturas</option>';
   subjects.forEach((subject) => {
     const option = document.createElement("option");
@@ -260,9 +354,13 @@ function populatePartials() {
 
 function filteredCatalog() {
   return state.catalog.filter((item) => {
+    const degree = item.degreeTitle || item.degree || "";
+    const course = item.courseTitle || item.course || "";
+    const degreeOk = !state.currentDegreeFilter || degree === state.currentDegreeFilter;
+    const courseOk = !state.currentCourseFilter || course === state.currentCourseFilter;
     const subjectOk = !state.currentSubjectFilter || item.subject === state.currentSubjectFilter;
     const partialOk = !state.currentPartialFilter || item.partial === state.currentPartialFilter;
-    return subjectOk && partialOk;
+    return degreeOk && courseOk && subjectOk && partialOk;
   });
 }
 
@@ -273,7 +371,9 @@ function populateExams() {
   items.forEach((item) => {
     const option = document.createElement("option");
     option.value = item.examUid;
-    option.textContent = `${item.examTitle} · ${item.totalQuestions || 0} preguntas · ${formatPlanLabel(item.accessLevel)}`;
+    const hierarchy = getExamHierarchyText(item);
+    const hierarchyPrefix = hierarchy ? `${hierarchy} · ` : "";
+    option.textContent = `${hierarchyPrefix}${item.examTitle} · ${item.totalQuestions || 0} preguntas · ${formatPlanLabel(item.accessLevel)}`;
     dom.examSelect.appendChild(option);
   });
 
@@ -329,7 +429,9 @@ async function loadCatalog() {
   setCatalogStatus("Cargando catálogo privado...");
   const payload = await api("/catalog");
   const items = Array.isArray(payload.items) ? payload.items : [];
-  state.catalog = items;
+  state.catalog = items.map(normalizeCatalogItem);
+  populateDegrees();
+  populateCourses();
   populateSubjects();
   populatePartials();
   populateExams();
@@ -360,6 +462,13 @@ async function loadHistory() {
     const subject = document.createElement("div");
     subject.textContent = item.subject;
 
+    const catalogMatch = state.catalog.find((entry) => entry.examUid === item.examUid);
+    const hierarchy = getExamHierarchyText(catalogMatch);
+    const hierarchyNode = hierarchy ? document.createElement("div") : null;
+    if (hierarchyNode) {
+      hierarchyNode.textContent = hierarchy;
+    }
+
     const score = document.createElement("div");
     score.textContent = `Puntuación: ${formatScoreEs(item.score)}`;
 
@@ -388,6 +497,9 @@ async function loadHistory() {
 
     node.appendChild(openButton);
     node.appendChild(subject);
+    if (hierarchyNode) {
+      node.appendChild(hierarchyNode);
+    }
     node.appendChild(score);
     node.appendChild(updated);
     node.appendChild(removeButton);
@@ -440,6 +552,13 @@ function renderFavorites() {
         openExamByCatalogItem(item.examUid);
       });
 
+      const catalogMatch = state.catalog.find((entry) => entry.examUid === item.examUid);
+      const hierarchy = getExamHierarchyText(catalogMatch);
+      const hierarchyNode = hierarchy ? document.createElement("div") : null;
+      if (hierarchyNode) {
+        hierarchyNode.textContent = hierarchy;
+      }
+
       const removeButton = document.createElement("button");
       removeButton.type = "button";
       removeButton.className = "secondary favorite-remove";
@@ -449,6 +568,9 @@ function renderFavorites() {
       });
 
       row.appendChild(openButton);
+      if (hierarchyNode) {
+        row.appendChild(hierarchyNode);
+      }
       row.appendChild(removeButton);
       section.appendChild(row);
     });
@@ -592,10 +714,13 @@ async function openSelectedExam() {
     sessionStorage.setItem("selectedExamFile", selected.file);
     sessionStorage.setItem("selectedExamTitle", selected.examTitle);
     sessionStorage.setItem("selectedExamSubject", selected.subject);
+    sessionStorage.setItem("selectedExamDegree", selected.degreeTitle || "");
+    sessionStorage.setItem("selectedExamCourse", selected.courseTitle || "");
     sessionStorage.setItem(SELECTED_EXAM_KEY, selected.examUid);
-    
-    dom.modalExamTitle.textContent = selected.examTitle;
-    dom.modalExamMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""}`;
+
+    const hierarchy = getExamHierarchyText(selected);
+    dom.modalExamTitle.textContent = hierarchy || selected.examTitle;
+    dom.modalExamMeta.textContent = `${selected.subject}${selected.partial ? ` · ${selected.partial}` : ""} · ${selected.examTitle}`;
     const examPageUrl = new URL("exam.html", window.location.href);
     examPageUrl.searchParams.set("source", "subscription");
     examPageUrl.searchParams.set("examUid", selected.examUid);
@@ -841,6 +966,8 @@ async function logout() {
   sessionStorage.removeItem("selectedExamFile");
   sessionStorage.removeItem("selectedExamTitle");
   sessionStorage.removeItem("selectedExamSubject");
+  sessionStorage.removeItem("selectedExamDegree");
+  sessionStorage.removeItem("selectedExamCourse");
   sessionStorage.removeItem(SELECTED_EXAM_KEY);
   sessionStorage.removeItem("subscriptionSavedAnswers");
   sessionStorage.removeItem("subscriptionSavedAnswersLabel");
@@ -898,6 +1025,25 @@ function bindEvents() {
   if (dom.refreshCatalogBtn) dom.refreshCatalogBtn.addEventListener("click", loadCatalog);
   if (dom.refreshHistoryBtn) dom.refreshHistoryBtn.addEventListener("click", loadHistory);
   if (dom.refreshFavoritesBtn) dom.refreshFavoritesBtn.addEventListener("click", loadFavorites);
+  if (dom.clearFiltersBtn) dom.clearFiltersBtn.addEventListener("click", clearFilters);
+  if (dom.degreeSelect) dom.degreeSelect.addEventListener("change", () => {
+    state.currentDegreeFilter = dom.degreeSelect.value;
+    state.currentCourseFilter = "";
+    state.currentSubjectFilter = "";
+    state.currentPartialFilter = "";
+    populateCourses();
+    populateSubjects();
+    populatePartials();
+    populateExams();
+  });
+  if (dom.courseSelect) dom.courseSelect.addEventListener("change", () => {
+    state.currentCourseFilter = dom.courseSelect.value;
+    state.currentSubjectFilter = "";
+    state.currentPartialFilter = "";
+    populateSubjects();
+    populatePartials();
+    populateExams();
+  });
   if (dom.subjectSelect) dom.subjectSelect.addEventListener("change", () => {
     state.currentSubjectFilter = dom.subjectSelect.value;
     state.currentPartialFilter = "";
@@ -908,7 +1054,9 @@ function bindEvents() {
     state.currentPartialFilter = dom.partialSelect.value;
     populateExams();
   });
-  if (dom.examSelect) dom.examSelect.addEventListener("change", updateFavoriteButton);
+  if (dom.examSelect) dom.examSelect.addEventListener("change", () => {
+    updateFavoriteButton();
+  });
   if (dom.openExamBtn) dom.openExamBtn.addEventListener("click", openSelectedExam);
   if (dom.toggleFavoriteBtn) dom.toggleFavoriteBtn.addEventListener("click", toggleFavorite);
   if (dom.saveProgressBtn) dom.saveProgressBtn.addEventListener("click", saveProgress);

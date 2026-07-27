@@ -2,6 +2,8 @@ const dom = {
   presetSelector: document.getElementById("presetSelector"),
   sourceFileInput: document.getElementById("sourceFileInput"),
   sourceText: document.getElementById("sourceText"),
+  degreeTitle: document.getElementById("degreeTitle"),
+  courseTitle: document.getElementById("courseTitle"),
   subjectTitle: document.getElementById("subjectTitle"),
   examTitle: document.getElementById("examTitle"),
   outputFileName: document.getElementById("outputFileName"),
@@ -60,7 +62,7 @@ async function loadPresets() {
     state.presets = await response.json();
     populatePresetSelector();
   } catch (error) {
-    setStatus(`No se pudieron cargar los presets: ${error.message}`, "error");
+    const response = await fetch("data/presets.json", { cache: "no-store" });
   }
 }
 
@@ -71,6 +73,15 @@ function populatePresetSelector() {
     const option = document.createElement("option");
     option.value = key;
     option.textContent = `${preset.subjectTitle} - ${preset.examTitle}`;
+function getPresetHierarchyValue(preset, keys, fallback) {
+  for (const key of keys) {
+    const value = preset?.[key];
+    if (typeof value === "string" && value.trim()) {
+      return value.trim();
+    }
+  }
+  return fallback;
+}
     dom.presetSelector.appendChild(option);
   });
 }
@@ -81,9 +92,19 @@ function handlePresetChange(event) {
     state.selectedPreset = null;
     return;
   }
+  dom.degreeTitle.value = getPresetHierarchyValue(
+    preset,
+    ["degreeTitle", "degree", "gradoTitle", "grado"],
+    "Grado en Psicología"
+  );
+  dom.courseTitle.value = getPresetHierarchyValue(
+    preset,
+    ["courseTitle", "course", "cursoTitle", "curso"],
+    "1º"
+  );
 
-  state.selectedPreset = preset;
-
+  dom.degreeTitle.value = preset.degreeTitle || "Grado en Psicología";
+  dom.courseTitle.value = preset.courseTitle || "1º";
   dom.subjectTitle.value = preset.subjectTitle || "";
   dom.examTitle.value = preset.examTitle || "";
   dom.outputFileName.value = window.StaticExamCatalog
@@ -103,6 +124,8 @@ function handlePresetChange(event) {
 }
 
 function seedDefaults() {
+  dom.degreeTitle.value = "Grado en Psicología";
+  dom.courseTitle.value = "1º";
   dom.subjectTitle.value = "Fundamentos de Psicobiología";
   dom.examTitle.value = "Banco desde NotebookLM";
   dom.outputFileName.value = "banco-desde-notebooklm.json";
@@ -217,6 +240,8 @@ function normalizeFloat(value, fallback) {
 
 function buildConfig() {
   return {
+    degreeTitle: dom.degreeTitle.value.trim(),
+    courseTitle: dom.courseTitle.value.trim(),
     subjectTitle: dom.subjectTitle.value.trim(),
     examTitle: dom.examTitle.value.trim(),
     outputFileName: window.StaticExamCatalog
@@ -242,7 +267,12 @@ async function generateQuestionBank() {
   }
 
   if (!config.subjectTitle || !config.examTitle) {
-    setStatus("Completa el título de asignatura y el título del examen.", "error");
+    setStatus("Completa grado, curso, título de asignatura y título del examen.", "error");
+    return;
+  }
+
+  if (!config.degreeTitle || !config.courseTitle) {
+    setStatus("Completa el grado y el curso para mantener la jerarquía del catálogo.", "error");
     return;
   }
 
@@ -265,6 +295,8 @@ async function generateQuestionBank() {
     try {
       const published = await window.StaticExamCatalog.publishExamToCatalog(state.catalogRootHandle, examJson, {
         preset: state.selectedPreset,
+        degreeTitle: config.degreeTitle,
+        courseTitle: config.courseTitle,
         subjectTitle: config.subjectTitle,
         examTitle: config.examTitle,
         outputFileName: config.outputFileName,
@@ -509,6 +541,8 @@ function selectQuestions(questions, questionCount, randomSelection) {
 function buildExamJson(questions, config) {
   const questionCount = questions.length;
   return {
+    degreeTitle: config.degreeTitle,
+    courseTitle: config.courseTitle,
     subjectTitle: config.subjectTitle,
     examTitle: config.examTitle,
     subtitle: config.subtitle,

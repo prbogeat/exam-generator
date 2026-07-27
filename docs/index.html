@@ -157,15 +157,15 @@
     }
 
     .buttons-group {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
       gap: 12px;
       margin-top: 28px;
+      align-items: center;
     }
 
     @media (max-width: 480px) {
       .buttons-group {
-        grid-template-columns: 1fr;
+        flex-direction: column;
       }
     }
 
@@ -183,7 +183,8 @@
     button.primary {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
       color: white;
-      grid-column: 1 / -1;
+      flex: 1;
+      min-width: 160px;
     }
 
     button.primary:hover:not(:disabled) {
@@ -201,9 +202,24 @@
       border: 1px solid var(--border);
     }
 
+
     button.secondary:hover:not(:disabled) {
       background: #f0f5f3;
       border-color: var(--primary);
+    }
+
+    button.tertiary {
+      background: transparent;
+      color: var(--muted);
+      border-color: var(--border);
+      font-weight: 600;
+      opacity: 0.75;
+    }
+
+    button.tertiary:hover:not(:disabled) {
+      opacity: 1;
+      color: var(--text);
+      border-color: var(--muted);
     }
 
     button:disabled {
@@ -277,16 +293,30 @@
         <img src="assets/img/Logo%20exam%20assistant.png" alt="Exam Assistant Logo" />
       </div>
       <h1>Exam Assistant</h1>
-      <p>Selecciona una asignatura y comienza a practicar</p>
+      <p>Selecciona grado, curso y asignatura para comenzar a practicar</p>
     </div>
 
     <div class="welcome-form">
       <div class="status-message" id="statusMessage"></div>
 
       <div class="form-group">
+        <label for="degreeSelect">Selecciona un grado</label>
+        <select id="degreeSelect" required>
+          <option value="">Cargando grados...</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="courseGroup">
+        <label for="courseSelect">Selecciona un curso</label>
+        <select id="courseSelect" required disabled>
+          <option value="">Selecciona un grado primero</option>
+        </select>
+      </div>
+
+      <div class="form-group">
         <label for="subjectSelect">Selecciona una asignatura</label>
-        <select id="subjectSelect" required>
-          <option value="">Cargando asignaturas...</option>
+        <select id="subjectSelect" required disabled>
+          <option value="">Selecciona un curso primero</option>
         </select>
       </div>
 
@@ -305,6 +335,9 @@
       </div>
 
       <div class="buttons-group">
+        <button class="tertiary" id="clearFiltersBtn" type="button">
+          Limpiar filtros
+        </button>
         <button class="primary" id="startBtn" disabled>
           Comenzar examen
         </button>
@@ -320,6 +353,6 @@
     <p>© Exam Assistant</p>
   </div>
 
-  <script src="assets/js/app-welcome.js?v=20260706"></script>
+  <script src="assets/js/app-welcome.js?v=20260727"></script>
 </body>
 </html>

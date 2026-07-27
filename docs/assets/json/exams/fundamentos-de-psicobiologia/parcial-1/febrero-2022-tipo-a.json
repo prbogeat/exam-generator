@@ -792,5 +792,8 @@
       "correctOption": "A",
       "explanation": "La fenilcetonuria (PKU) sigue un patrón mendeliano autosómico recesivo (aa). La mujer padece la enfermedad (genotipo 'aa'). El hombre es sano, pero como su madre estaba afectada (aa), él heredó forzosamente un alelo recesivo siendo portador heterocigoto (Aa). Al cruzar (aa) con (Aa), las proporciones genotípicas predecibles arrojan un 50% de probabilidad (1/2) de que cualquier descendiente sufra este déficit metabólico."
     }
-  ]
+  ],
+  "degreeTitle": "Grado en Psicología",
+  "courseTitle": "1º",
+  "accessLevel": "free"
 }

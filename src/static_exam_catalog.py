@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
@@ -12,6 +13,36 @@ STATIC_JSON_ROOT = PROJECT_ROOT / "docs" / "assets" / "json"
 STATIC_EXAMS_ROOT = STATIC_JSON_ROOT / "exams"
 STATIC_INDEX_PATH = STATIC_JSON_ROOT / "exams-index.json"
 PLAN_ORDER = {"free": 0, "pro": 1, "premium": 2}
+DEFAULT_DEGREE_TITLE = "Grado en Psicología"
+DEFAULT_COURSE_TITLE = "1º"
+
+
+def looks_like_course(value: Any) -> bool:
+    text = str(value or "").strip()
+    if not text:
+        return False
+    return bool(re.match(r"^\d+\s*(?:º|°|o)?$", text))
+
+
+def resolve_hierarchy(relative_path: Path, payload: Dict[str, Any]) -> Dict[str, str]:
+    parts = [str(part).strip() for part in relative_path.parts if str(part).strip()]
+
+    degree_title = str(payload.get("degreeTitle") or payload.get("degree") or "").strip()
+    course_title = str(payload.get("courseTitle") or payload.get("course") or "").strip()
+    subject_title = str(payload.get("subjectTitle") or "").strip()
+
+    if len(parts) >= 3 and looks_like_course(parts[1]):
+        degree_title = degree_title or parts[0]
+        course_title = course_title or parts[1]
+        subject_title = subject_title or parts[2]
+    else:
+        subject_title = subject_title or (parts[0] if parts else "Asignatura")
+
+    return {
+        "degreeTitle": degree_title or DEFAULT_DEGREE_TITLE,
+        "courseTitle": course_title or DEFAULT_COURSE_TITLE,
+        "subjectTitle": subject_title or "Asignatura",
+    }
 
 
 def normalize_access_level(value: Any) -> str:
@@ -35,8 +66,9 @@ def save_json(path: Path, data: Dict[str, Any]) -> None:
 def extract_partial(relative_path: Path) -> str:
     for part in relative_path.parts:
         text = str(part).strip()
-        if text.lower().startswith("parcial "):
-            return text
+        match = re.match(r"^parcial[\s-]+(\d+)$", text, flags=re.IGNORECASE)
+        if match:
+            return f"Parcial {match.group(1)}"
     return ""
 
 
@@ -82,12 +114,15 @@ def is_public_exam(relative_path: Path, payload: Any) -> bool:
 
 def normalize_exam_payload(relative_path: Path, payload: Dict[str, Any]) -> Dict[str, Any]:
     normalized = dict(payload)
+    hierarchy = resolve_hierarchy(relative_path, payload)
     questions = payload.get("questions") if isinstance(payload.get("questions"), list) else []
     scoring = payload.get("scoring") if isinstance(payload.get("scoring"), dict) else {}
     max_score = float(scoring.get("maxScore", 10) or 10)
     penalty = float(scoring.get("wrongAnswersPerDiscountedCorrect", 0) or 0)
 
-    normalized["subjectTitle"] = str(relative_path.parts[0]) if relative_path.parts else str(payload.get("subjectTitle") or "Asignatura")
+    normalized["degreeTitle"] = hierarchy["degreeTitle"]
+    normalized["courseTitle"] = hierarchy["courseTitle"]
+    normalized["subjectTitle"] = hierarchy["subjectTitle"]
     normalized["totalQuestions"] = len(questions)
     normalized["accessLevel"] = normalize_access_level(payload.get("accessLevel"))
 
@@ -101,11 +136,14 @@ def normalize_exam_payload(relative_path: Path, payload: Dict[str, Any]) -> Dict
 
 
 def build_catalog_entry(relative_path: Path, payload: Dict[str, Any]) -> Dict[str, Any]:
+    hierarchy = resolve_hierarchy(relative_path, payload)
     questions = payload.get("questions") or []
     exam_uid = relative_path.as_posix()
     return {
         "examUid": exam_uid,
-        "subject": str(relative_path.parts[0]),
+        "degree": hierarchy["degreeTitle"],
+        "course": hierarchy["courseTitle"],
+        "subject": hierarchy["subjectTitle"],
         "partial": extract_partial(relative_path),
         "examTitle": str(payload.get("examTitle") or relative_path.stem),
         "subtitle": str(payload.get("subtitle") or ""),
@@ -141,12 +179,16 @@ def sync_static_exam_catalog() -> Dict[str, Any]:
         entry = build_catalog_entry_with_source(relative_path, normalized_payload, Path("docs") / "assets" / "json" / "exams")
         entry_by_uid[entry["examUid"]] = entry
 
-    # 2) Añade/actualiza con lo que venga de out/examenes sin borrar el resto.
+    # 2) Actualiza con out/examenes solo los exámenes ya presentes en docs/assets/json/exams.
+    # Esto evita incorporar altas nuevas no publicadas explícitamente.
     if OUT_EXAMS_ROOT.exists():
         for source_path in sorted(OUT_EXAMS_ROOT.rglob("*.json")):
             relative_path = source_path.relative_to(OUT_EXAMS_ROOT)
             payload = load_json(source_path)
             if not is_public_exam(relative_path, payload):
+                continue
+
+            if relative_path.as_posix() not in entry_by_uid:
                 continue
 
             normalized_payload = normalize_exam_payload(relative_path, payload)
@@ -160,7 +202,16 @@ def sync_static_exam_catalog() -> Dict[str, Any]:
 
     entries: List[Dict[str, Any]] = list(entry_by_uid.values())
 
-    entries.sort(key=lambda item: (item["subject"], item["partial"], item["examTitle"], item["examUid"]))
+    entries.sort(
+        key=lambda item: (
+            item.get("degree", ""),
+            item.get("course", ""),
+            item.get("subject", ""),
+            item.get("partial", ""),
+            item.get("examTitle", ""),
+            item.get("examUid", ""),
+        )
+    )
 
     index_payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),

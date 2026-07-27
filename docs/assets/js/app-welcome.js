@@ -1,19 +1,27 @@
 const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
 const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
+const DEFAULT_DEGREE = "Grado en Psicología";
+const DEFAULT_COURSE = "1º";
 
 const state = {
   catalog: [],
+  selectedDegree: "",
+  selectedCourse: "",
   selectedSubject: "",
   selectedPartial: "",
   selectedExamUid: "",
 };
 
 const dom = {
+  degreeSelect: document.getElementById("degreeSelect"),
+  courseSelect: document.getElementById("courseSelect"),
   subjectSelect: document.getElementById("subjectSelect"),
   partialSelect: document.getElementById("partialSelect"),
+  courseGroup: document.getElementById("courseGroup"),
   partialGroup: document.getElementById("partialGroup"),
   examSelect: document.getElementById("examSelect"),
   startBtn: document.getElementById("startBtn"),
+  clearFiltersBtn: document.getElementById("clearFiltersBtn"),
   loadFileBtn: document.getElementById("loadFileBtn"),
   fileInput: document.getElementById("fileInput"),
   statusMessage: document.getElementById("statusMessage"),
@@ -29,15 +37,25 @@ function clearStatus() {
 }
 
 function updateManualLoadVisibility() {
-  const hasSubjects = dom.subjectSelect.options.length > 1;
+  const hasDegrees = dom.degreeSelect.options.length > 1;
   const hasExamOptions = dom.examSelect.options.length > 1;
-  const shouldShowManualLoad = !hasSubjects && !hasExamOptions;
+  const shouldShowManualLoad = !hasDegrees && !hasExamOptions;
 
   dom.loadFileBtn.classList.toggle("hidden", !shouldShowManualLoad);
 }
 
 function showError(message) {
   setStatus(message, "error");
+}
+
+function normalizeCatalogItem(item) {
+  return {
+    ...item,
+    degree: String(item?.degree || DEFAULT_DEGREE),
+    course: String(item?.course || DEFAULT_COURSE),
+    subject: String(item?.subject || item?.subjectTitle || "Asignatura"),
+    partial: String(item?.partial || ""),
+  };
 }
 
 async function loadCatalog() {
@@ -61,13 +79,15 @@ async function loadCatalog() {
       throw new Error("No hay exámenes disponibles");
     }
 
-    state.catalog = items;
-    populateSubjects();
+    state.catalog = items.map(normalizeCatalogItem);
+    populateDegrees();
     dom.loadFileBtn.classList.add("hidden");
     updateManualLoadVisibility();
     clearStatus();
   } catch (error) {
     showError(`Error al cargar catálogo: ${error.message}`);
+    dom.degreeSelect.innerHTML = '<option value="">Error al cargar grados</option>';
+    dom.courseSelect.innerHTML = '<option value="">Error al cargar cursos</option>';
     dom.subjectSelect.innerHTML = '<option value="">Error al cargar asignaturas</option>';
     dom.examSelect.innerHTML = '<option value="">Error al cargar exámenes</option>';
     dom.examSelect.disabled = true;
@@ -76,14 +96,71 @@ async function loadCatalog() {
   }
 }
 
-function getUniqueSubjects() {
-  const subjects = [...new Set(state.catalog.map((item) => item.subject).filter(Boolean))];
-  return subjects.sort((a, b) => a.localeCompare(b, "es"));
+function getUniqueDegrees() {
+  return [...new Set(state.catalog.map((item) => item.degree).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
 }
 
-function populateSubjects() {
-  const subjects = getUniqueSubjects();
+function getCoursesForDegree(degree) {
+  if (!degree) {
+    return [];
+  }
+  return [...new Set(state.catalog.filter((item) => item.degree === degree).map((item) => item.course).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function getSubjectsForHierarchy(degree, course) {
+  if (!degree || !course) {
+    return [];
+  }
+  return [...new Set(state.catalog.filter((item) => item.degree === degree && item.course === course).map((item) => item.subject).filter(Boolean))].sort((a, b) => a.localeCompare(b, "es"));
+}
+
+function populateDegrees() {
+  const degrees = getUniqueDegrees();
+  dom.degreeSelect.innerHTML = '<option value="">-- Selecciona un grado --</option>';
+
+  degrees.forEach((degree) => {
+    const option = document.createElement("option");
+    option.value = degree;
+    option.textContent = degree;
+    dom.degreeSelect.appendChild(option);
+  });
+
+  dom.degreeSelect.disabled = false;
+  dom.courseSelect.disabled = true;
+  dom.subjectSelect.disabled = true;
+}
+
+function populateCourses(degree) {
+  const courses = getCoursesForDegree(degree);
+  dom.courseSelect.innerHTML = '<option value="">-- Selecciona un curso --</option>';
+
+  if (!courses.length) {
+    dom.courseSelect.disabled = true;
+    state.selectedCourse = "";
+    return;
+  }
+
+  courses.forEach((course) => {
+    const option = document.createElement("option");
+    option.value = course;
+    option.textContent = course;
+    dom.courseSelect.appendChild(option);
+  });
+
+  dom.courseSelect.disabled = false;
+  dom.courseSelect.value = "";
+  state.selectedCourse = "";
+}
+
+function populateSubjects(degree, course) {
+  const subjects = getSubjectsForHierarchy(degree, course);
   dom.subjectSelect.innerHTML = '<option value="">-- Selecciona una asignatura --</option>';
+
+  if (!subjects.length) {
+    dom.subjectSelect.disabled = true;
+    state.selectedSubject = "";
+    return;
+  }
 
   subjects.forEach((subject) => {
     const option = document.createElement("option");
@@ -95,12 +172,34 @@ function populateSubjects() {
   dom.subjectSelect.disabled = false;
 }
 
-function getExamsForSubject(subject) {
-  return state.catalog.filter((item) => item.subject === subject);
+function getExamsForSelection(degree, course, subject, partial) {
+  let exams = state.catalog;
+
+  if (degree) {
+    exams = exams.filter((item) => item.degree === degree);
+  }
+
+  if (course) {
+    exams = exams.filter((item) => item.course === course);
+  }
+
+  if (subject) {
+    exams = exams.filter((item) => item.subject === subject);
+  }
+
+  if (partial) {
+    if (partial === NO_PARTIAL_FILTER_VALUE) {
+      exams = exams.filter((item) => !item.partial);
+    } else {
+      exams = exams.filter((item) => item.partial === partial);
+    }
+  }
+
+  return exams;
 }
 
-function getPartialsForSubject(subject) {
-  const exams = getExamsForSubject(subject);
+function getPartialsForSelection(degree, course, subject) {
+  const exams = getExamsForSelection(degree, course, subject, "");
   const partials = [...new Set(exams.map((item) => item.partial).filter(Boolean))];
   const hasNoPartial = exams.some((item) => !item.partial);
 
@@ -116,8 +215,8 @@ function getPartialsForSubject(subject) {
   return result;
 }
 
-function populatePartials(subject) {
-  const partials = getPartialsForSubject(subject);
+function populatePartials(degree, course, subject) {
+  const partials = getPartialsForSelection(degree, course, subject);
 
   if (!partials.length) {
     dom.partialGroup.classList.add("hidden");
@@ -139,27 +238,13 @@ function populatePartials(subject) {
   state.selectedPartial = "";
 }
 
-function getExamsForSelection(subject, partial) {
-  let exams = getExamsForSubject(subject);
-
-  if (partial) {
-    if (partial === NO_PARTIAL_FILTER_VALUE) {
-      exams = exams.filter((item) => !item.partial);
-    } else {
-      exams = exams.filter((item) => item.partial === partial);
-    }
-  }
-
-  return exams;
-}
-
 function buildExamLabel(item) {
   const questions = item.totalQuestions > 0 ? `${item.totalQuestions} preguntas` : "preguntas";
   return `${item.examTitle} · ${questions}`;
 }
 
-function populateExams(subject, partial) {
-  const exams = getExamsForSelection(subject, partial);
+function populateExams(degree, course, subject, partial) {
+  const exams = getExamsForSelection(degree, course, subject, partial);
   dom.examSelect.innerHTML = "";
 
   if (!exams.length) {
@@ -190,28 +275,69 @@ function populateExams(subject, partial) {
   dom.startBtn.disabled = true;
 }
 
+function onDegreeChanged() {
+  const degree = dom.degreeSelect.value;
+  state.selectedDegree = degree;
+
+  state.selectedCourse = "";
+  state.selectedSubject = "";
+  state.selectedPartial = "";
+
+  if (!degree) {
+    populateCourses("");
+    populateSubjects("", "");
+    populatePartials("", "", "");
+    populateExams("", "", "", "");
+    return;
+  }
+
+  populateCourses(degree);
+  populateSubjects("", "");
+  populatePartials("", "", "");
+  populateExams(degree, "", "", "");
+}
+
+function onCourseChanged() {
+  const course = dom.courseSelect.value;
+  state.selectedCourse = course;
+
+  state.selectedSubject = "";
+  state.selectedPartial = "";
+
+  if (!state.selectedDegree || !course) {
+    populateSubjects("", "");
+    populatePartials("", "", "");
+    populateExams(state.selectedDegree, "", "", "");
+    return;
+  }
+
+  populateSubjects(state.selectedDegree, course);
+  populatePartials("", "", "");
+  populateExams(state.selectedDegree, course, "", "");
+}
+
 function onSubjectChanged() {
   const subject = dom.subjectSelect.value;
   state.selectedSubject = subject;
 
-  if (!subject) {
-    populatePartials("");
-    populateExams("", "");
+  if (!state.selectedDegree || !state.selectedCourse || !subject) {
+    populatePartials("", "", "");
+    populateExams(state.selectedDegree, state.selectedCourse, "", "");
     return;
   }
 
-  populatePartials(subject);
-  populateExams(subject, "");
+  populatePartials(state.selectedDegree, state.selectedCourse, subject);
+  populateExams(state.selectedDegree, state.selectedCourse, subject, "");
 }
 
 function onPartialChanged() {
-  if (!state.selectedSubject) {
+  if (!state.selectedDegree || !state.selectedCourse || !state.selectedSubject) {
     return;
   }
 
   const partial = dom.partialSelect.value;
   state.selectedPartial = partial;
-  populateExams(state.selectedSubject, partial);
+  populateExams(state.selectedDegree, state.selectedCourse, state.selectedSubject, partial);
 }
 
 function onExamChanged() {
@@ -240,6 +366,8 @@ async function startExam() {
     sessionStorage.setItem("selectedExamUid", exam.examUid);
     sessionStorage.setItem("selectedExamFile", exam.file);
     sessionStorage.setItem("selectedExamTitle", exam.examTitle);
+    sessionStorage.setItem("selectedExamDegree", exam.degree || "");
+    sessionStorage.setItem("selectedExamCourse", exam.course || "");
     sessionStorage.setItem("selectedExamSubject", exam.subject);
 
     // Navigate to the main exam page
@@ -268,11 +396,42 @@ function handleFileLoad(file) {
   reader.readAsText(file);
 }
 
+function clearFilters() {
+  state.selectedDegree = "";
+  state.selectedCourse = "";
+  state.selectedSubject = "";
+  state.selectedPartial = "";
+  state.selectedExamUid = "";
+
+  // Restore exactly the same initial UI state users see after loading catalog.
+  populateDegrees();
+
+  dom.degreeSelect.value = "";
+
+  dom.courseSelect.innerHTML = '<option value="">Selecciona un grado primero</option>';
+  dom.courseSelect.disabled = true;
+
+  dom.subjectSelect.innerHTML = '<option value="">Selecciona un curso primero</option>';
+  dom.subjectSelect.disabled = true;
+
+  dom.partialGroup.classList.add("hidden");
+  dom.partialSelect.innerHTML = '<option value="">Todos los exámenes</option>';
+
+  dom.examSelect.innerHTML = '<option value="">Selecciona una asignatura primero</option>';
+  dom.examSelect.disabled = true;
+
+  dom.startBtn.disabled = true;
+  clearStatus();
+}
+
 // Event listeners
+dom.degreeSelect.addEventListener("change", onDegreeChanged);
+dom.courseSelect.addEventListener("change", onCourseChanged);
 dom.subjectSelect.addEventListener("change", onSubjectChanged);
 dom.partialSelect.addEventListener("change", onPartialChanged);
 dom.examSelect.addEventListener("change", onExamChanged);
 dom.startBtn.addEventListener("click", startExam);
+dom.clearFiltersBtn.addEventListener("click", clearFilters);
 dom.loadFileBtn.addEventListener("click", () => dom.fileInput.click());
 dom.fileInput.addEventListener("change", (e) => {
   if (e.target.files.length > 0) {

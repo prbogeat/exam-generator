@@ -52,6 +52,15 @@ header {
   flex-wrap: wrap;
 }
 
+.page-hierarchy {
+  margin: 0 0 4px;
+  font-size: clamp(1.55rem, 2.8vw, 2.1rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #0b5d57;
+  line-height: 1.1;
+}
+
 h1 {
   margin: 0;
   font-size: 24px;
@@ -101,6 +110,20 @@ button.secondary-nav:hover {
   color: var(--dark);
 }
 
+button.tertiary {
+  background: transparent;
+  color: var(--muted);
+  border-color: var(--border);
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+button.tertiary:hover {
+  opacity: 1;
+  color: var(--text);
+  border-color: var(--muted);
+}
+
 button:hover,
 .file-trigger:hover {
   filter: brightness(0.97);
@@ -114,6 +137,13 @@ button:disabled {
 .actions {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buttons-group {
+  display: flex;
+  gap: 12px;
   flex-wrap: wrap;
   align-items: center;
 }

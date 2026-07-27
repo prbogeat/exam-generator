@@ -43,7 +43,13 @@ def resolve_source_file(item: Dict[str, Any]) -> Path | None:
     return None
 
 
-def item_matches(item: Dict[str, Any], subject: str, partial: str, exam_uid_contains: str) -> bool:
+def item_matches(item: Dict[str, Any], degree: str, course: str, subject: str, partial: str, exam_uid_contains: str) -> bool:
+    if degree and str(item.get("degree") or "") != degree:
+        return False
+
+    if course and str(item.get("course") or "") != course:
+        return False
+
     if subject and str(item.get("subject") or "") != subject:
         return False
 
@@ -91,6 +97,8 @@ def main() -> None:
         description="Bulk assign accessLevel to exams in index and JSON payloads without creating duplicate paths."
     )
     parser.add_argument("--level", required=True, choices=sorted(VALID_LEVELS), help="Target access level")
+    parser.add_argument("--degree", default="", help="Exact degree name to filter")
+    parser.add_argument("--course", default="", help="Exact course name to filter")
     parser.add_argument("--subject", default="", help="Exact subject name to filter")
     parser.add_argument("--partial", default="", help="Exact partial name to filter")
     parser.add_argument("--exam-uid-contains", default="", help="Case-insensitive substring in examUid")
@@ -117,7 +125,7 @@ def main() -> None:
         if not isinstance(item, dict):
             continue
 
-        if not item_matches(item, args.subject, args.partial, args.exam_uid_contains):
+        if not item_matches(item, args.degree, args.course, args.subject, args.partial, args.exam_uid_contains):
             continue
 
         matched += 1

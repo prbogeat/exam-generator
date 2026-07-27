@@ -1,511 +1,631 @@
 {
-  "generatedAt": "2026-07-07T13:29:32.209402+00:00",
+  "generatedAt": "2026-07-27T06:49:49.821247+00:00",
   "count": 48,
   "defaultExamUid": "fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-a.json",
   "items": [
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Enero 2026 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Enero 2026 - Tipo A (Parcial 1)",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Enero 2026 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-b.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Enero 2026 - Tipo B (Parcial 1)",
+      "examTitle": "UNED - Enero 2026 - Tipo B (Parcial 1)",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-b.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Enero 2026 - Tipo B.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-b.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-c.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Enero 2026 - Tipo C (Parcial 1)",
+      "examTitle": "UNED - Enero 2026 - Tipo C (Parcial 1)",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-c.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Enero 2026 - Tipo C.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2026-tipo-c.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/febrero-2026-tipo-f.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Febrero 2026 - Tipo F (Parcial 1)",
+      "examTitle": "UNED - Febrero 2026",
       "subtitle": "30 Tipo Test - Examen Tipo F",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2026-tipo-f.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Febrero 2026 - Tipo F.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2026-tipo-f.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/septiembre-2022-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2022 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1",
       "subtitle": "30 Tipo Test - Examen Tipo",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2022-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Septiembre 2022 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2022-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/enero-2025-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Enero 2025 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Enero 2025 Tipo A",
       "subtitle": "30 Tipo Test - Examen Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2025-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Enero 2025 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/enero-2025-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/septiembre-2023-tipo-b.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2023 - Tipo B (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Examen Septiembre 2023 Tipo B",
       "subtitle": "30 Tipo Test - Examen Septiembre 2023 Tipo B",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2023-tipo-b.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Septiembre 2023 - Tipo B.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2023-tipo-b.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/febrero-2022-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Febrero 2022 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Febrero 2022 - Tipo A",
       "subtitle": "30 Tipo Test - Examen Febrero 2022 Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2022-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Febrero 2022 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2022-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/febrero-2023-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Febrero 2023 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Febrero 2023 - Tipo A",
       "subtitle": "30 Tipo Test - Examen Febrero 2023 - Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2023-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Febrero 2023 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2023-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/febrero-2024-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Febrero 2024 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Febrero 2024 - Tipo A",
       "subtitle": "30 Tipo Test - Examen Febrero 2024 - Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2024-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Febrero 2024 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/febrero-2024-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/septiembre-2024-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2024 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Septiembre de 2024 Tipo A",
       "subtitle": "30 Tipo Test - Examen Septiembre de 2024 Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2024-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Septiembre 2024 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2024-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-1/septiembre-2025-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 1",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2025 - Tipo A (Parcial 1)",
+      "examTitle": "UNED - Parcial 1 - Septiembre de 2025 Tipo A",
       "subtitle": "30 Tipo Test - Examen Septiembre de 2025 Tipo A",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2025-tipo-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 1/Septiembre 2025 - Tipo A.json"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-1/septiembre-2025-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-1.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 1 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 1",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-1.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-1.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-1.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-10.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 10 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 10",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-10.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-10.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-10.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-2.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 2 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 2",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-2.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-2.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-2.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-3.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 3 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 3",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-3.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-3.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-3.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-4.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 4 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 4",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-4.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-4.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-4.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-5.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 5 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 5",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-5.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-5.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-5.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-6.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 6 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 6",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-6.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-6.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-6.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-7.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 7 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 7",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-7.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-7.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-7.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-8.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 8 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 8",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-8.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-8.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-8.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-uned-9.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen UNED 9 (Parcial 2)",
+      "examTitle": "UNED - 30 Tipo Test - 9",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-9.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-uned-9.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-uned-9.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-generado.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Examen Generado (Parcial 2)",
+      "examTitle": "UNED - Examen Generado",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-generado.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-generado.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-generado.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2023-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2023 - Tipo A (Parcial 2)",
+      "examTitle": "UNED - Junio 2023 - Tipo A",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2023-a.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2023-A.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2023-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2024.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2024 (Parcial 2)",
+      "examTitle": "UNED - Junio 2024",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2024.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2024.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2024.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2025.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2025 - Tipo A (Parcial 2)",
+      "examTitle": "UNED - Junio 2025 - A",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2025.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2025.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2025.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2025 - Tipo C (Parcial 2)",
+      "examTitle": "UNED - Junio 2025 - C",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2025.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2025.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-e-2025.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2025 - Tipo E (Parcial 2)",
+      "examTitle": "UNED - Junio 2025 - E",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-e-2025.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-E-2025.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-e-2025.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2026.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2026 - Tipo A (Parcial 2)",
+      "examTitle": "UNED - Junio 2026 - A",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-A-2026.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-a-2026.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-b-2026.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2026 - Tipo B (Parcial 2)",
+      "examTitle": "UNED - Junio 2026 - B",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-b-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-B-2026.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-b-2026.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2026.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2026 - Tipo C (Parcial 2)",
+      "examTitle": "UNED - Junio 2026 - C",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2026.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-C-2026.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-c-2026.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-junio-2026-c.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Junio 2026 - Tipo C (Parcial 2)",
+      "examTitle": "UNED - Junio 2026 - Tipo C",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2026-c.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-junio-2026-C.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-junio-2026-c.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/septiembre-2025-tipo-d.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2025 - Tipo D (Parcial 2)",
+      "examTitle": "UNED - Parcial 1 - Septiembre 2025 - Tipo D",
       "subtitle": "30 Tipo Test - Examen Septiembre 2025 - Tipo D",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2025-tipo-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2025 - Tipo D.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2025-tipo-d.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/septiembre-2024-tipo-d.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2024 - Tipo D (Parcial 2)",
+      "examTitle": "UNED - Parcial 1 - Septiembre de 2024 Tipo D",
       "subtitle": "30 Tipo Test - Septiembre de 2024 Tipo D",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2024-tipo-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/Septiembre 2024 - Tipo D.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/septiembre-2024-tipo-d.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2023-d.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2023 - Tipo D (Parcial 2)",
+      "examTitle": "UNED - Septiembre 2023 - Tipo D",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2023-d.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2023-D.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2023-d.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2024.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Fundamentos de Psicobiología",
       "partial": "Parcial 2",
-      "examTitle": "Fundamentos de Psicobiología - Septiembre 2024 (Parcial 2)",
+      "examTitle": "UNED - Septiembre 2024",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "premium",
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2024.json",
-      "sourcePath": "out/examenes/Fundamentos de Psicobiología/Parcial 2/examen-septiembre-2024.json",
-      "accessLevel": "premium"
+      "sourcePath": "docs/assets/json/exams/fundamentos-de-psicobiologia/parcial-2/examen-septiembre-2024.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-test.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción",
+      "examTitle": "UNED - 30 Tipo Test",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-test.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-test.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-test.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción",
+      "examTitle": "UNED - 30 Tipo Test",
       "subtitle": "30 Tipo Test",
+      "accessLevel": "free",
       "totalQuestions": 30,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-b.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo B",
+      "examTitle": "UNED - 40 Tipo B",
       "subtitle": "40 Tipo B",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-b.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-B.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-b.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-c.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo C",
+      "examTitle": "UNED - 40 Tipo C",
       "subtitle": "40 Tipo C",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-c.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-C.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-c.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-d.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo D",
+      "examTitle": "UNED - 40 Tipo D",
       "subtitle": "40 Tipo D",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-d.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-D.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-d.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-e.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo E",
+      "examTitle": "UNED - 40 Tipo E",
       "subtitle": "40 Tipo E",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-e.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-E.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-e.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-f.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo F",
+      "examTitle": "UNED - 40 Tipo F",
       "subtitle": "40 Tipo F",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-f.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-F.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-f.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-g.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo G",
+      "examTitle": "UNED - 40 Tipo G",
       "subtitle": "40 Tipo G",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-g.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-G.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-g.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-h.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo H",
+      "examTitle": "UNED - 40 Tipo H",
       "subtitle": "40 Tipo H",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-h.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-H.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-h.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-i.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Tipo I",
+      "examTitle": "UNED - 40 Tipo I",
       "subtitle": "40 Tipo I",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-i.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-I.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-i.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-40-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - al azar",
+      "examTitle": "UNED - 40 al azar",
       "subtitle": "40 al azar",
+      "accessLevel": "free",
       "totalQuestions": 40,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-40-a.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-40-A.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-40-a.json"
     },
     {
       "examUid": "psicologia-de-la-emocion/examen-uned-generado.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
       "subject": "Psicología de la Emoción",
       "partial": "",
-      "examTitle": "Psicología de la Emoción - Banco completo",
+      "examTitle": "UNED · Banco completo",
       "subtitle": "250 preguntas · generación automática",
+      "accessLevel": "free",
       "totalQuestions": 250,
       "file": "assets/json/exams/psicologia-de-la-emocion/examen-uned-generado.json",
-      "sourcePath": "out/examenes/Psicología de la Emoción/examen-uned-generado.json"
+      "sourcePath": "docs/assets/json/exams/psicologia-de-la-emocion/examen-uned-generado.json"
     }
   ]
 }

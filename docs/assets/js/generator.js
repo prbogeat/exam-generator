@@ -5,6 +5,8 @@ const dom = {
   presetSelector: document.getElementById("presetSelector"),
   inputFile: document.getElementById("inputFile"),
   inputPathHint: document.getElementById("inputPathHint"),
+  degreeTitle: document.getElementById("degreeTitle"),
+  courseTitle: document.getElementById("courseTitle"),
   subjectTitle: document.getElementById("subjectTitle"),
   examTitle: document.getElementById("examTitle"),
   subtitle: document.getElementById("subtitle"),
@@ -45,6 +47,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const presets = await response.json();
     Object.assign(PRESETS_DATA, presets);
+    dom.degreeTitle.value = "Grado en Psicología";
+    dom.courseTitle.value = "1º";
     populatePresetSelector();
     bindEvents();
     syncLocalOutputHint();
@@ -178,6 +182,8 @@ function loadPreset(presetKey) {
 
   state.selectedPreset = preset;
 
+  dom.degreeTitle.value = preset.degreeTitle || "Grado en Psicología";
+  dom.courseTitle.value = preset.courseTitle || "1º";
   dom.subjectTitle.value = preset.subjectTitle || "";
   dom.examTitle.value = preset.examTitle || "";
   dom.subtitle.value = preset.subtitle || "";
@@ -208,6 +214,8 @@ function getCurrentConfig() {
   return {
     inputFile: state.selectedFile,
     inputFileName: state.selectedFileName,
+    degreeTitle: dom.degreeTitle.value.trim(),
+    courseTitle: dom.courseTitle.value.trim(),
     subjectTitle: dom.subjectTitle.value.trim(),
     examTitle: dom.examTitle.value.trim(),
     subtitle: dom.subtitle.value.trim(),
@@ -230,6 +238,14 @@ function validateConfig(config) {
 
   if (!config.subjectTitle) {
     errors.push("El título de la asignatura es requerido");
+  }
+
+  if (!config.degreeTitle) {
+    errors.push("El grado es requerido");
+  }
+
+  if (!config.courseTitle) {
+    errors.push("El curso es requerido");
   }
 
   if (!config.examTitle) {
@@ -278,6 +294,8 @@ function bindEvents() {
 function resetForm() {
   dom.presetSelector.value = "";
   dom.inputFile.value = "";
+  dom.degreeTitle.value = "Grado en Psicología";
+  dom.courseTitle.value = "1º";
   dom.subjectTitle.value = "";
   dom.examTitle.value = "";
   dom.subtitle.value = "";
@@ -329,6 +347,8 @@ async function generateExam() {
           inputJson: inputJson,
           config: {
             subjectTitle: config.subjectTitle,
+            degreeTitle: config.degreeTitle,
+            courseTitle: config.courseTitle,
             examTitle: config.examTitle,
             subtitle: config.subtitle,
             notice: config.notice,
@@ -384,6 +404,8 @@ async function handleGeneratedExam(result, config) {
     try {
       const published = await window.StaticExamCatalog.publishExamToCatalog(state.catalogRootHandle, examJson, {
         preset: state.selectedPreset,
+        degreeTitle: config.degreeTitle,
+        courseTitle: config.courseTitle,
         subjectTitle: config.subjectTitle,
         examTitle: config.examTitle,
         outputFileName: examFileName,

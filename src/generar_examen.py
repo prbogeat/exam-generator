@@ -14,7 +14,15 @@ import random
 from pathlib import Path
 from typing import Any, Dict, List
 
-from exam_presets import GENERAL_INPUT_ROOT, GENERAL_OUTPUT_ROOT, GENERAL_REALIZED_ROOT, build_path, get_preset
+from exam_presets import (
+    DEFAULT_COURSE_TITLE as PRESET_DEFAULT_COURSE_TITLE,
+    DEFAULT_DEGREE_TITLE as PRESET_DEFAULT_DEGREE_TITLE,
+    GENERAL_INPUT_ROOT,
+    GENERAL_OUTPUT_ROOT,
+    GENERAL_REALIZED_ROOT,
+    build_path,
+    get_preset,
+)
 from static_exam_catalog import sync_static_exam_catalog
 
 # PRESETS
@@ -26,6 +34,8 @@ PRESET = "psicobiologia-parcial-1"  # None = usar CONFIG manual.
 DEFAULT_INPUT_JSON = "input/banco_de_preguntas/default/Preguntas-default.json"
 DEFAULT_OUTPUT_JSON = "out/examenes/default/Examen-default.json"
 
+DEFAULT_DEGREE_TITLE = PRESET_DEFAULT_DEGREE_TITLE
+DEFAULT_COURSE_TITLE = PRESET_DEFAULT_COURSE_TITLE
 DEFAULT_SUBJECT_TITLE = "Asignatura sin definir"
 DEFAULT_EXAM_TITLE = "Examen UNED"
 DEFAULT_SUBTITLE = "Tipo Test - Examen"
@@ -50,6 +60,8 @@ PRESET_CONFIG = get_preset(PRESET)
 if PRESET_CONFIG:
     INPUT_JSON = str(build_path(GENERAL_INPUT_ROOT, PRESET_CONFIG.get("input_path_parts")))
     OUTPUT_JSON = str(build_path(GENERAL_OUTPUT_ROOT, PRESET_CONFIG.get("output_path_parts")))
+    DEGREE_TITLE = str(PRESET_CONFIG.get("degreeTitle", DEFAULT_DEGREE_TITLE))
+    COURSE_TITLE = str(PRESET_CONFIG.get("courseTitle", DEFAULT_COURSE_TITLE))
     SUBJECT_TITLE = str(PRESET_CONFIG.get("subjectTitle", DEFAULT_SUBJECT_TITLE))
     EXAM_TITLE = str(PRESET_CONFIG.get("examTitle", DEFAULT_EXAM_TITLE))
     SUBTITLE = str(PRESET_CONFIG.get("subtitle", DEFAULT_SUBTITLE))
@@ -66,6 +78,8 @@ if PRESET_CONFIG:
 else:
     INPUT_JSON = DEFAULT_INPUT_JSON
     OUTPUT_JSON = DEFAULT_OUTPUT_JSON
+    DEGREE_TITLE = DEFAULT_DEGREE_TITLE
+    COURSE_TITLE = DEFAULT_COURSE_TITLE
     SUBJECT_TITLE = DEFAULT_SUBJECT_TITLE
     EXAM_TITLE = DEFAULT_EXAM_TITLE
     SUBTITLE = DEFAULT_SUBTITLE
@@ -246,6 +260,8 @@ def convert_exam(source_root: Any) -> Dict[str, Any]:
     )
 
     return {
+        "degreeTitle": DEGREE_TITLE,
+        "courseTitle": COURSE_TITLE,
         "subjectTitle": SUBJECT_TITLE,
         "examTitle": EXAM_TITLE,
         "subtitle": SUBTITLE,

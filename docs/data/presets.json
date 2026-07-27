@@ -1,5 +1,7 @@
 {
   "psicobiologia-parcial-2": {
+    "degreeTitle": "Grado en Psicología",
+    "courseTitle": "1º",
     "subjectTitle": "Fundamentos de Psicobiología",
     "examTitle": "UNED - Parcial 2",
     "subtitle": "30 Tipo Test - Examen Tipo",
@@ -13,6 +15,8 @@
     "output_path_parts": ["Fundamentos de Psicobiología", "Parcial 2", "Examen preset.json"]
   },
   "psicobiologia-parcial-1": {
+    "degreeTitle": "Grado en Psicología",
+    "courseTitle": "1º",
     "subjectTitle": "Fundamentos de Psicobiología",
     "examTitle": "UNED - Parcial 1",
     "subtitle": "30 Tipo Test - Examen Tipo",
@@ -26,6 +30,8 @@
     "output_path_parts": ["Fundamentos de Psicobiología", "Parcial 1", "Examen preset.json"]
   },
   "emocion": {
+    "degreeTitle": "Grado en Psicología",
+    "courseTitle": "1º",
     "subjectTitle": "Psicología de la Emoción",
     "examTitle": "UNED - Junio",
     "subtitle": "40 Tipo Test",
