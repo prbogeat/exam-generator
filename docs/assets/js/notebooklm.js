@@ -62,17 +62,21 @@ async function loadPresets() {
     state.presets = await response.json();
     populatePresetSelector();
   } catch (error) {
-    const response = await fetch("data/presets.json", { cache: "no-store" });
+    try {
+      const response = await fetch("data/presets.json", { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error("No se pudo cargar presets.json");
+      }
+      state.presets = await response.json();
+      populatePresetSelector();
+    } catch (fallbackError) {
+      state.presets = {};
+      populatePresetSelector();
+      setStatus(`No se pudieron cargar los presets: ${fallbackError.message}`, "error");
+    }
   }
 }
 
-function populatePresetSelector() {
-  dom.presetSelector.innerHTML = '<option value="">-- Seleccionar preset --</option>';
-
-  Object.entries(state.presets).forEach(([key, preset]) => {
-    const option = document.createElement("option");
-    option.value = key;
-    option.textContent = `${preset.subjectTitle} - ${preset.examTitle}`;
 function getPresetHierarchyValue(preset, keys, fallback) {
   for (const key of keys) {
     const value = preset?.[key];
@@ -82,16 +86,27 @@ function getPresetHierarchyValue(preset, keys, fallback) {
   }
   return fallback;
 }
+
+function populatePresetSelector() {
+  dom.presetSelector.innerHTML = '<option value="">-- Seleccionar preset --</option>';
+
+  Object.entries(state.presets).forEach(([key, preset]) => {
+    const option = document.createElement("option");
+    option.value = key;
+    option.textContent = `${preset.subjectTitle} - ${preset.examTitle}`;
     dom.presetSelector.appendChild(option);
   });
 }
 
 function handlePresetChange(event) {
-  const preset = state.presets[event.target.value];
+  const presetKey = event.target.value;
+  const preset = state.presets[presetKey];
   if (!preset) {
     state.selectedPreset = null;
     return;
   }
+  state.selectedPreset = presetKey;
+
   dom.degreeTitle.value = getPresetHierarchyValue(
     preset,
     ["degreeTitle", "degree", "gradoTitle", "grado"],
@@ -102,9 +117,6 @@ function handlePresetChange(event) {
     ["courseTitle", "course", "cursoTitle", "curso"],
     "1º"
   );
-
-  dom.degreeTitle.value = preset.degreeTitle || "Grado en Psicología";
-  dom.courseTitle.value = preset.courseTitle || "1º";
   dom.subjectTitle.value = preset.subjectTitle || "";
   dom.examTitle.value = preset.examTitle || "";
   dom.outputFileName.value = window.StaticExamCatalog
