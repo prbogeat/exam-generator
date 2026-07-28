@@ -1,5 +1,35 @@
-const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
+function getAPIBase() {
+  const url = new URL(window.location.href);
+  const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(url.hostname);
+  const localBackendBase = `${url.protocol}//${url.hostname}:8010/api`;
+
+  if (!isLocalHost) {
+    return `${window.location.origin}/api`;
+  }
+
+  const stored = localStorage.getItem("ea_api_base");
+  if (stored) {
+    try {
+      const storedUrl = new URL(stored);
+      if (["localhost", "127.0.0.1", "::1"].includes(storedUrl.hostname) && storedUrl.port === "8010") {
+        return stored;
+      }
+    } catch (_error) {
+      // Ignore malformed storage values and keep auto-detection.
+    }
+  }
+
+  if (url.port !== "8010") {
+    return localBackendBase;
+  }
+
+  return `${window.location.origin}/api`;
+}
+
+const API_BASE = getAPIBase();
+const STATIC_EXAMS_INDEX_FILE = `${API_BASE}/catalog`;
 const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
+const SUBSCRIPTION_TOKEN_KEY = "ea_subscription_token";
 
 const state = {
   catalog: [],
@@ -40,11 +70,19 @@ function showError(message) {
   setStatus(message, "error");
 }
 
+function buildSubscriptionHeaders() {
+  const token = localStorage.getItem(SUBSCRIPTION_TOKEN_KEY);
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
 async function loadCatalog() {
   try {
     setStatus("Cargando catálogo de exámenes...");
     updateManualLoadVisibility();
-    const response = await fetch(STATIC_EXAMS_INDEX_FILE, { cache: "no-store" });
+    const response = await fetch(STATIC_EXAMS_INDEX_FILE, {
+      cache: "no-store",
+      headers: buildSubscriptionHeaders(),
+    });
     
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
@@ -238,12 +276,12 @@ async function startExam() {
     
     // Store the exam info in sessionStorage for the main page
     sessionStorage.setItem("selectedExamUid", exam.examUid);
-    sessionStorage.setItem("selectedExamFile", exam.file);
+    sessionStorage.setItem("selectedExamFile", `/api/exam?exam_uid=${encodeURIComponent(exam.examUid)}`);
     sessionStorage.setItem("selectedExamTitle", exam.examTitle);
     sessionStorage.setItem("selectedExamSubject", exam.subject);
 
     // Navigate to the main exam page
-    window.location.href = "exam.html";
+    window.location.href = "exam.html?view=focused";
   } catch (error) {
     showError(`Error: ${error.message}`);
   }
@@ -260,7 +298,7 @@ function handleFileLoad(file) {
       sessionStorage.setItem("loadedExamJSON", content);
       sessionStorage.setItem("loadedExamTitle", exam.metadata?.title || "Examen cargado");
       
-      window.location.href = "exam.html";
+      window.location.href = "exam.html?view=focused";
     } catch (error) {
       showError(`Error al procesar archivo: ${error.message}`);
     }

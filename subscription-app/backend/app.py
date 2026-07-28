@@ -12,6 +12,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Optional
 
+from dotenv import load_dotenv
 from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
@@ -20,6 +21,11 @@ from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent.parent
+
+# Load local .env files as fallback only; hosted env vars keep precedence.
+load_dotenv(PROJECT_ROOT / ".env", override=False)
+load_dotenv(BASE_DIR / ".env", override=False)
+
 DATA_DIR = BASE_DIR / "data"
 DB_PATH = DATA_DIR / "subscription_app.db"
 DATABASE_URL_RAW = os.getenv("DATABASE_URL", "").strip()
@@ -323,20 +329,41 @@ def bootstrap_admin_user(conn: DBConnection) -> None:
     admin_email = normalize_email(ADMIN_EMAIL)
     now = utc_now().isoformat()
     admin = conn.execute("SELECT id FROM users WHERE email = ?", (admin_email,)).fetchone()
+    admin_name = ADMIN_NAME.strip()
+    password_hash, password_salt = make_password(ADMIN_PASSWORD)
+
     if admin:
         conn.execute(
-            "UPDATE users SET role = 'admin', plan = 'premium', updated_at = ? WHERE id = ?",
-            (now, admin["id"]),
+            """
+            UPDATE users
+            SET name = ?,
+                password_hash = ?,
+                password_salt = ?,
+                role = 'admin',
+                plan = 'premium',
+                updated_at = ?
+            WHERE id = ?
+            """,
+            (admin_name, password_hash, password_salt, now, admin["id"]),
         )
-        return
 
-    password_hash, password_salt = make_password(ADMIN_PASSWORD)
+    else:
+        conn.execute(
+            """
+            INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
+            VALUES (?, ?, ?, ?, 'premium', 'admin', ?, ?)
+            """,
+            (admin_email, admin_name, password_hash, password_salt, now, now),
+        )
+
     conn.execute(
         """
-        INSERT INTO users (email, name, password_hash, password_salt, plan, role, created_at, updated_at)
-        VALUES (?, ?, ?, ?, 'premium', 'admin', ?, ?)
+        UPDATE users
+        SET role = 'user',
+            updated_at = ?
+        WHERE role = 'admin' AND email <> ?
         """,
-        (admin_email, ADMIN_NAME.strip(), password_hash, password_salt, now, now),
+        (now, admin_email),
     )
 
 
@@ -434,9 +461,73 @@ def filter_catalog_by_plan(items: list[Dict[str, Any]], user_plan: str) -> list[
     return [item for item in items if can_access_plan(user_plan, get_exam_required_plan(item))]
 
 
+def build_catalog_hierarchy(items: list[Dict[str, Any]]) -> Dict[str, Any]:
+    degree_map: dict[str, dict[str, Any]] = {}
+
+    for item in items:
+        degree_name = str(item.get("degree") or item.get("degreeTitle") or "Grado en Psicología").strip() or "Grado en Psicología"
+        course_name = str(item.get("course") or item.get("courseTitle") or "1º").strip() or "1º"
+        subject_name = str(item.get("subject") or item.get("subjectTitle") or "Asignatura").strip() or "Asignatura"
+        partial_name = str(item.get("partial") or "").strip()
+        exam_uid = str(item.get("examUid") or "").strip()
+
+        degree_node = degree_map.setdefault(degree_name, {"degree": degree_name, "count": 0, "courses": {}})
+        degree_node["count"] += 1
+
+        course_node = degree_node["courses"].setdefault(course_name, {"course": course_name, "count": 0, "subjects": {}})
+        course_node["count"] += 1
+
+        subject_node = course_node["subjects"].setdefault(
+            subject_name,
+            {"subject": subject_name, "count": 0, "partials": set(), "examUids": []},
+        )
+        subject_node["count"] += 1
+        subject_node["examUids"].append(exam_uid)
+        if partial_name:
+            subject_node["partials"].add(partial_name)
+
+    degrees: list[Dict[str, Any]] = []
+    for degree_name in sorted(degree_map, key=str.lower):
+        degree_node = degree_map[degree_name]
+        courses: list[Dict[str, Any]] = []
+
+        for course_name in sorted(degree_node["courses"], key=str.lower):
+            course_node = degree_node["courses"][course_name]
+            subjects: list[Dict[str, Any]] = []
+
+            for subject_name in sorted(course_node["subjects"], key=str.lower):
+                subject_node = course_node["subjects"][subject_name]
+                subjects.append(
+                    {
+                        "subject": subject_node["subject"],
+                        "count": subject_node["count"],
+                        "partials": sorted(subject_node["partials"]),
+                        "examUids": subject_node["examUids"],
+                    }
+                )
+
+            courses.append(
+                {
+                    "course": course_node["course"],
+                    "count": course_node["count"],
+                    "subjects": subjects,
+                }
+            )
+
+        degrees.append(
+            {
+                "degree": degree_node["degree"],
+                "count": degree_node["count"],
+                "courses": courses,
+            }
+        )
+
+    return {"degrees": degrees}
+
+
 def load_catalog() -> Dict[str, Any]:
     if not EXAMS_INDEX_PATH.exists():
-        return {"generatedAt": None, "count": 0, "defaultExamUid": None, "items": []}
+        return {"generatedAt": None, "count": 0, "defaultExamUid": None, "items": [], "hierarchy": {"degrees": []}}
     with EXAMS_INDEX_PATH.open("r", encoding="utf-8") as fh:
         return json.load(fh)
 
@@ -613,6 +704,7 @@ def catalog(authorization: Optional[str] = Header(default=None)) -> Dict[str, An
         "count": len(visible_items),
         "items": visible_items,
         "defaultExamUid": visible_items[0]["examUid"] if visible_items else None,
+        "hierarchy": build_catalog_hierarchy(visible_items),
     }
 
 

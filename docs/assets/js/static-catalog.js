@@ -238,6 +238,62 @@
       .localeCompare([right.degree, right.course, right.subject, right.partial, right.examTitle, right.examUid].join("\u0000"), "es");
   }
 
+  function buildCatalogHierarchy(items) {
+    const degreeMap = new Map();
+
+    items.forEach((item) => {
+      const degree = String(item.degree || DEFAULT_DEGREE_TITLE).trim() || DEFAULT_DEGREE_TITLE;
+      const course = String(item.course || DEFAULT_COURSE_TITLE).trim() || DEFAULT_COURSE_TITLE;
+      const subject = String(item.subject || item.subjectTitle || "Asignatura").trim() || "Asignatura";
+      const partial = String(item.partial || "").trim();
+
+      if (!degreeMap.has(degree)) {
+        degreeMap.set(degree, { degree, count: 0, courses: new Map() });
+      }
+      const degreeNode = degreeMap.get(degree);
+      degreeNode.count += 1;
+
+      if (!degreeNode.courses.has(course)) {
+        degreeNode.courses.set(course, { course, count: 0, subjects: new Map() });
+      }
+      const courseNode = degreeNode.courses.get(course);
+      courseNode.count += 1;
+
+      if (!courseNode.subjects.has(subject)) {
+        courseNode.subjects.set(subject, { subject, count: 0, partials: new Set(), examUids: [] });
+      }
+      const subjectNode = courseNode.subjects.get(subject);
+      subjectNode.count += 1;
+      subjectNode.examUids.push(item.examUid);
+      if (partial) {
+        subjectNode.partials.add(partial);
+      }
+    });
+
+    const degrees = [...degreeMap.values()]
+      .sort((left, right) => left.degree.localeCompare(right.degree, "es"))
+      .map((degreeNode) => ({
+        degree: degreeNode.degree,
+        count: degreeNode.count,
+        courses: [...degreeNode.courses.values()]
+          .sort((left, right) => left.course.localeCompare(right.course, "es"))
+          .map((courseNode) => ({
+            course: courseNode.course,
+            count: courseNode.count,
+            subjects: [...courseNode.subjects.values()]
+              .sort((left, right) => left.subject.localeCompare(right.subject, "es"))
+              .map((subjectNode) => ({
+                subject: subjectNode.subject,
+                count: subjectNode.count,
+                partials: [...subjectNode.partials].sort((left, right) => left.localeCompare(right, "es")),
+                examUids: subjectNode.examUids,
+              })),
+          })),
+      }));
+
+    return { degrees };
+  }
+
   async function rebuildCatalogIndex(catalogRootHandle) {
     const examsRootHandle = await getExamsRootHandle(catalogRootHandle);
     const jsonFiles = await collectJsonFiles(examsRootHandle);
@@ -262,6 +318,7 @@
       count: items.length,
       defaultExamUid: items[0]?.examUid || "",
       items,
+      hierarchy: buildCatalogHierarchy(items),
     };
 
     await writeJsonFile(catalogRootHandle, INDEX_FILE_NAME, indexPayload);

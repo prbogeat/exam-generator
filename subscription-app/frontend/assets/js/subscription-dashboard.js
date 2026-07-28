@@ -285,11 +285,13 @@ function clearFilters() {
   state.currentCourseFilter = "";
   state.currentSubjectFilter = "";
   state.currentPartialFilter = "";
+  sessionStorage.removeItem(SELECTED_EXAM_KEY);
   populateDegrees();
   populateCourses();
   populateSubjects();
   populatePartials();
   populateExams();
+  resetExamModalState();
 }
 
 function populateCourses() {
@@ -711,11 +713,11 @@ async function openSelectedExam() {
     await api(`/exam?exam_uid=${encodeURIComponent(examUid)}`);
     state.currentExam = selected;
     sessionStorage.setItem("selectedExamUid", selected.examUid);
-    sessionStorage.setItem("selectedExamFile", selected.file);
+    sessionStorage.setItem("selectedExamFile", `/api/exam?exam_uid=${encodeURIComponent(selected.examUid)}`);
     sessionStorage.setItem("selectedExamTitle", selected.examTitle);
     sessionStorage.setItem("selectedExamSubject", selected.subject);
-    sessionStorage.setItem("selectedExamDegree", selected.degreeTitle || "");
-    sessionStorage.setItem("selectedExamCourse", selected.courseTitle || "");
+    sessionStorage.setItem("selectedExamDegree", selected.degreeTitle || selected.degree || "");
+    sessionStorage.setItem("selectedExamCourse", selected.courseTitle || selected.course || "");
     sessionStorage.setItem(SELECTED_EXAM_KEY, selected.examUid);
 
     const hierarchy = getExamHierarchyText(selected);

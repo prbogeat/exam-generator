@@ -4,10 +4,15 @@ const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
 const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
 const DEFAULT_COURSE_TITLE = "1º";
 const SEARCH_PARAMS = new URLSearchParams(window.location.search);
-const IS_SUBSCRIPTION_VIEW =
-  SEARCH_PARAMS.get("source") === "subscription" ||
+const IS_SUBSCRIPTION_SOURCE = SEARCH_PARAMS.get("source") === "subscription";
+const HAS_PENDING_SESSION_EXAM =
   sessionStorage.getItem("selectedExamUid") !== null ||
-  sessionStorage.getItem("selectedExamFile") !== null;
+  sessionStorage.getItem("selectedExamFile") !== null ||
+  sessionStorage.getItem("loadedExamJSON") !== null;
+const IS_FOCUSED_EXAM_VIEW =
+  IS_SUBSCRIPTION_SOURCE ||
+  SEARCH_PARAMS.get("view") === "focused" ||
+  HAS_PENDING_SESSION_EXAM;
 
 const state = {
   exam: null,
@@ -759,10 +764,10 @@ function updateStaticTexts() {
       dom.pageHierarchy.classList.add("hidden");
     }
     dom.pageTitle.textContent = "Examen dinámico";
-    dom.pageSubtitle.textContent = IS_SUBSCRIPTION_VIEW
+    dom.pageSubtitle.textContent = IS_SUBSCRIPTION_SOURCE
       ? "Examen cargado desde tu suscripción privada."
       : "Selecciona un examen publicado o carga un JSON local manualmente.";
-    dom.noticeBox.textContent = IS_SUBSCRIPTION_VIEW
+    dom.noticeBox.textContent = IS_SUBSCRIPTION_SOURCE
       ? "Vista de examen en modo suscripción privada."
       : "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
@@ -794,7 +799,7 @@ function updateStaticTexts() {
 }
 
 function applyEmbeddedSubscriptionView() {
-  if (!IS_SUBSCRIPTION_VIEW || !dom.dataTools) {
+  if (!IS_FOCUSED_EXAM_VIEW || !dom.dataTools) {
     return;
   }
 

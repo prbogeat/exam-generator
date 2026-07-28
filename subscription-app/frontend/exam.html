@@ -15,7 +15,7 @@
   <script>
     (function markSubscriptionExamView() {
       const params = new URLSearchParams(window.location.search);
-      if (params.get("source") === "subscription") {
+      if (params.get("source") === "subscription" || params.get("view") === "focused") {
         document.documentElement.classList.add("subscription-embedded-view");
       }
     })();

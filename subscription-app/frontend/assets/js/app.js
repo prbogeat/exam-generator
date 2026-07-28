@@ -1,13 +1,61 @@
+function getAPIBase() {
+  const url = new URL(window.location.href);
+  const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(url.hostname);
+  const localBackendBase = `${url.protocol}//${url.hostname}:8010/api`;
+
+  if (!isLocalHost) {
+    return `${window.location.origin}/api`;
+  }
+
+  const stored = localStorage.getItem("ea_api_base");
+  if (stored) {
+    try {
+      const storedUrl = new URL(stored);
+      if (["localhost", "127.0.0.1", "::1"].includes(storedUrl.hostname) && storedUrl.port === "8010") {
+        return stored;
+      }
+    } catch (_error) {
+      // Ignore malformed storage values and keep auto-detection.
+    }
+  }
+
+  if (url.port !== "8010") {
+    return localBackendBase;
+  }
+
+  return `${window.location.origin}/api`;
+}
+
+function resolveApiUrl(path) {
+  const rawPath = String(path || "").trim();
+  if (!rawPath || /^https?:\/\//i.test(rawPath)) {
+    return rawPath;
+  }
+
+  if (rawPath.startsWith("/api/")) {
+    return `${API_BASE}${rawPath.slice(4)}`;
+  }
+
+  return rawPath;
+}
+
+const API_BASE = getAPIBase();
 const DEFAULT_DATA_FILE = "data/examen-plantilla.json";
-const STATIC_EXAMS_INDEX_FILE = "assets/json/exams-index.json";
+const STATIC_EXAMS_INDEX_FILE = `${API_BASE}/catalog`;
 const NO_PARTIAL_FILTER_VALUE = "__no_partial__";
 const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
 const DEFAULT_COURSE_TITLE = "1º";
+const SUBSCRIPTION_TOKEN_KEY = "ea_subscription_token";
 const SEARCH_PARAMS = new URLSearchParams(window.location.search);
-const IS_SUBSCRIPTION_VIEW =
-  SEARCH_PARAMS.get("source") === "subscription" ||
+const IS_SUBSCRIPTION_SOURCE = SEARCH_PARAMS.get("source") === "subscription";
+const HAS_PENDING_SESSION_EXAM =
   sessionStorage.getItem("selectedExamUid") !== null ||
-  sessionStorage.getItem("selectedExamFile") !== null;
+  sessionStorage.getItem("selectedExamFile") !== null ||
+  sessionStorage.getItem("loadedExamJSON") !== null;
+const IS_FOCUSED_EXAM_VIEW =
+  IS_SUBSCRIPTION_SOURCE ||
+  SEARCH_PARAMS.get("view") === "focused" ||
+  HAS_PENDING_SESSION_EXAM;
 
 const state = {
   exam: null,
@@ -344,8 +392,16 @@ function isNativeApp() {
   );
 }
 
+function buildSubscriptionHeaders() {
+  const token = localStorage.getItem(SUBSCRIPTION_TOKEN_KEY);
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
 async function listDbExams() {
-  const response = await fetch(STATIC_EXAMS_INDEX_FILE, { cache: "no-store" });
+  const response = await fetch(STATIC_EXAMS_INDEX_FILE, {
+    cache: "no-store",
+    headers: buildSubscriptionHeaders(),
+  });
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
@@ -394,12 +450,12 @@ async function loadExamByUidFromDb(examUid) {
   }
 
   const selectedExam = state.dbExamCatalog.find((item) => item.examUid === uid);
-  if (!selectedExam || !selectedExam.file) {
-    throw new Error("No se encontró el JSON del examen seleccionado.");
+  if (!selectedExam) {
+    throw new Error("No se encontró el examen seleccionado.");
   }
 
   await loadExamFromUrl(
-    selectedExam.file,
+    `/api/exam?exam_uid=${encodeURIComponent(uid)}`,
     `${selectedExam.subject} · ${selectedExam.examTitle}`,
     {
       degreeTitle: selectedExam.degreeTitle,
@@ -759,10 +815,10 @@ function updateStaticTexts() {
       dom.pageHierarchy.classList.add("hidden");
     }
     dom.pageTitle.textContent = "Examen dinámico";
-    dom.pageSubtitle.textContent = IS_SUBSCRIPTION_VIEW
+    dom.pageSubtitle.textContent = IS_SUBSCRIPTION_SOURCE
       ? "Examen cargado desde tu suscripción privada."
       : "Selecciona un examen publicado o carga un JSON local manualmente.";
-    dom.noticeBox.textContent = IS_SUBSCRIPTION_VIEW
+    dom.noticeBox.textContent = IS_SUBSCRIPTION_SOURCE
       ? "Vista de examen en modo suscripción privada."
       : "La página genera la cabecera, preguntas, progreso y cálculo de nota a partir del JSON. También puede precargar respuestas desde un examen realizado.";
     return;
@@ -794,7 +850,7 @@ function updateStaticTexts() {
 }
 
 function applyEmbeddedSubscriptionView() {
-  if (!IS_SUBSCRIPTION_VIEW || !dom.dataTools) {
+  if (!IS_FOCUSED_EXAM_VIEW || !dom.dataTools) {
     return;
   }
 
@@ -1308,15 +1364,19 @@ async function loadExamFromUrl(url, label, overrides = {}) {
   setDataStatus(`Cargando ${label}...`, "neutral");
 
   try {
-    const response = await fetch(url, { cache: "no-store" });
+    const response = await fetch(resolveApiUrl(url), {
+      cache: "no-store",
+      headers: buildSubscriptionHeaders(),
+    });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
 
     const data = await response.json();
+    const examPayload = data && typeof data === "object" && data.exam && typeof data.exam === "object" ? data.exam : data;
     applyExamData(
       {
-        ...normalizeExamData(data),
+        ...normalizeExamData(examPayload),
         ...overrides,
       },
       label
