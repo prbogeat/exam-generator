@@ -405,13 +405,24 @@ function applyUser(user) {
   if (dom.profileEmail) dom.profileEmail.value = user.email || "";
   if (dom.profilePlan) dom.profilePlan.value = formatPlanLabel(user.plan);
 
+  // Force update of admin button visibility based on current user role
+  const isAdmin = userIsAdmin();
+  const shouldHideAdminButton = !isAdmin;
+  
   if (dom.adminTabBtn) {
-    const shouldHideAdminButton = !userIsAdmin();
     dom.adminTabBtn.hidden = shouldHideAdminButton;
     dom.adminTabBtn.setAttribute("aria-hidden", shouldHideAdminButton.toString());
   }
+  
+  // Update all admin tab buttons in the array as well
+  dom.adminTabButtons.forEach((button) => {
+    if (button.dataset.panel === "admin") {
+      button.hidden = shouldHideAdminButton;
+      button.setAttribute("aria-hidden", shouldHideAdminButton.toString());
+    }
+  });
 
-  if (userIsAdmin()) {
+  if (isAdmin) {
     setCenterPanel("catalog");
   } else {
     state.adminUsers = [];
