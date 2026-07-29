@@ -74,6 +74,7 @@ function setActiveTab(tab) {
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE}${path}`, {
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
       ...(options.headers || {}),

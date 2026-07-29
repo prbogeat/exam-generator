@@ -77,6 +77,18 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 FRONTEND_DIR = BASE_DIR.parent / "frontend"
 
 app = FastAPI(title="Exam Assistant Subscription API")
+
+# Add no-cache headers to auth and admin endpoints to prevent stale responses
+@app.middleware("http")
+async def add_no_cache_headers(request, call_next):
+    response = await call_next(request)
+    path = request.url.path
+    if path.startswith("/api/auth/") or path.startswith("/api/admin/") or path.startswith("/api/account/"):
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+    return response
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
