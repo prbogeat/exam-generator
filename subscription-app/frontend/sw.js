@@ -1,4 +1,4 @@
-const CACHE_NAME = "exam-assistant-subscription-v2";
+const CACHE_NAME = "exam-assistant-subscription-v3";
 const APP_SHELL = [
   "./",
   "./index.html",

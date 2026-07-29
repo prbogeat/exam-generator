@@ -402,7 +402,7 @@ function updateFavoriteButton() {
 
 function applyUser(user) {
   state.user = user;
-  console.log("🔐 applyUser called:", { role: user.role, isAdmin: user.role === "admin" });
+  console.log("🔐 applyUser:", { name: user.name, email: user.email, role: user.role, isAdmin: user.role === "admin" });
   
   if (dom.profileName) dom.profileName.value = user.name || "";
   if (dom.profileEmail) dom.profileEmail.value = user.email || "";
@@ -412,22 +412,20 @@ function applyUser(user) {
   const isAdmin = userIsAdmin();
   const shouldHideAdminButton = !isAdmin;
   
-  console.log("👁️  Updating admin button visibility:", { isAdmin, shouldHideAdminButton, adminTabBtn: !!dom.adminTabBtn });
-  
   if (dom.adminTabBtn) {
     dom.adminTabBtn.hidden = shouldHideAdminButton;
     dom.adminTabBtn.setAttribute("aria-hidden", shouldHideAdminButton.toString());
-    console.log("✅ adminTabBtn.hidden =", dom.adminTabBtn.hidden);
   }
   
   // Update all admin tab buttons in the array as well
-  dom.adminTabButtons.forEach((button, idx) => {
+  dom.adminTabButtons.forEach((button) => {
     if (button.dataset.panel === "admin") {
       button.hidden = shouldHideAdminButton;
       button.setAttribute("aria-hidden", shouldHideAdminButton.toString());
-      console.log(`✅ adminTabButtons[${idx}].hidden =`, button.hidden);
     }
   });
+
+  console.log("✅ Admin button hidden:", shouldHideAdminButton);
 
   if (isAdmin) {
     setCenterPanel("catalog");
