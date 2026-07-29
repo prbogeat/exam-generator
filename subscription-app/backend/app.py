@@ -29,6 +29,8 @@ load_dotenv(BASE_DIR / ".env", override=False)
 DATA_DIR = BASE_DIR / "data"
 DB_PATH = DATA_DIR / "subscription_app.db"
 DATABASE_URL_RAW = os.getenv("DATABASE_URL", "").strip()
+# For Supabase with RLS enabled, use service_role URL to bypass RLS restrictions
+DATABASE_URL_SERVICE_ROLE_RAW = os.getenv("DATABASE_URL_SERVICE_ROLE", "").strip()
 EXAMS_INDEX_PATH = PROJECT_ROOT / "docs" / "assets" / "json" / "exams-index.json"
 EXAMS_ROOT = PROJECT_ROOT / "docs" / "assets" / "json"
 SESSION_TTL_DAYS = 30
@@ -55,6 +57,9 @@ def normalize_database_url(value: str) -> str:
 
 
 DATABASE_URL = normalize_database_url(DATABASE_URL_RAW)
+# Prefer service_role URL if available (for Supabase RLS bypass); fallback to regular URL
+if DATABASE_URL_SERVICE_ROLE_RAW:
+    DATABASE_URL = normalize_database_url(DATABASE_URL_SERVICE_ROLE_RAW)
 USE_POSTGRES = DATABASE_URL.startswith("postgresql://")
 
 psycopg2: Any = None
@@ -169,8 +174,11 @@ class DBConnection:
         return self
 
     def __exit__(self, exc_type: Any, exc: Any, tb: Any) -> None:
-        if exc and self._use_postgres:
-            self._conn.rollback()
+        if exc:
+            if self._use_postgres:
+                self._conn.rollback()
+        else:
+            self._conn.commit()
         self._conn.close()
 
     def execute(self, query: str, params: tuple[Any, ...] = ()) -> Any:
