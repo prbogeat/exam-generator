@@ -402,8 +402,6 @@ function updateFavoriteButton() {
 
 function applyUser(user) {
   state.user = user;
-  console.log("🔐 applyUser:", { name: user.name, email: user.email, role: user.role, isAdmin: user.role === "admin" });
-  
   if (dom.profileName) dom.profileName.value = user.name || "";
   if (dom.profileEmail) dom.profileEmail.value = user.email || "";
   if (dom.profilePlan) dom.profilePlan.value = formatPlanLabel(user.plan);
@@ -424,8 +422,6 @@ function applyUser(user) {
       button.setAttribute("aria-hidden", shouldHideAdminButton.toString());
     }
   });
-
-  console.log("✅ Admin button hidden:", shouldHideAdminButton);
 
   if (isAdmin) {
     setCenterPanel("catalog");
