@@ -151,6 +151,10 @@ button.secondary:hover {
   cursor: pointer;
 }
 
+.dashboard-tab[hidden] {
+  display: none !important;
+}
+
 .dashboard-tab.active {
   border-color: var(--accent);
   background: var(--accent);
