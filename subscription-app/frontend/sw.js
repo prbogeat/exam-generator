@@ -1,4 +1,4 @@
-const CACHE_NAME = "exam-assistant-subscription-v1";
+const CACHE_NAME = "exam-assistant-subscription-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -45,6 +45,12 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) {
+    return;
+  }
+
+  // Never cache API calls: they contain session-specific data tied to the
+  // Authorization token and must always go to the network.
+  if (url.pathname.startsWith("/api/")) {
     return;
   }
 
