@@ -1,4 +1,28 @@
 {
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Levantar servidor HTTP local",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "-m",
+        "http.server",
+        "8001",
+        "--directory",
+        "docs"
+      ],
+      "isBackground": true,
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+{
 	"version": "2.0.0",
 	"tasks": [
 		{
