@@ -370,8 +370,8 @@ async function startExam() {
     sessionStorage.setItem("selectedExamCourse", exam.course || "");
     sessionStorage.setItem("selectedExamSubject", exam.subject);
 
-    // Navigate to the main exam page
-    window.location.href = "exam.html?view=focused";
+    // Public and local exam flows use the full exam page.
+    window.location.href = "exam.html";
   } catch (error) {
     showError(`Error: ${error.message}`);
   }
@@ -388,7 +388,7 @@ function handleFileLoad(file) {
       sessionStorage.setItem("loadedExamJSON", content);
       sessionStorage.setItem("loadedExamTitle", exam.metadata?.title || "Examen cargado");
       
-      window.location.href = "exam.html?view=focused";
+      window.location.href = "exam.html";
     } catch (error) {
       showError(`Error al procesar archivo: ${error.message}`);
     }

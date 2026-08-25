@@ -5,14 +5,7 @@ const DEFAULT_DEGREE_TITLE = "Grado en Psicología";
 const DEFAULT_COURSE_TITLE = "1º";
 const SEARCH_PARAMS = new URLSearchParams(window.location.search);
 const IS_SUBSCRIPTION_SOURCE = SEARCH_PARAMS.get("source") === "subscription";
-const HAS_PENDING_SESSION_EXAM =
-  sessionStorage.getItem("selectedExamUid") !== null ||
-  sessionStorage.getItem("selectedExamFile") !== null ||
-  sessionStorage.getItem("loadedExamJSON") !== null;
-const IS_FOCUSED_EXAM_VIEW =
-  IS_SUBSCRIPTION_SOURCE ||
-  SEARCH_PARAMS.get("view") === "focused" ||
-  HAS_PENDING_SESSION_EXAM;
+const IS_FOCUSED_EXAM_VIEW = IS_SUBSCRIPTION_SOURCE;
 
 const state = {
   exam: null,
