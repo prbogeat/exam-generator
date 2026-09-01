@@ -4,7 +4,7 @@
     {
       "label": "Levantar servidor HTTP local",
       "type": "shell",
-      "command": "python3",
+      "command": "python",
       "args": [
         "-m",
         "http.server",
@@ -19,141 +19,121 @@
         "panel": "shared"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Generar examen (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "src/generar_examen.py"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Corregir examen (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "src/corregir_examen.py"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Normalizar metadatos (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "src/normalize_out_exam_metadata.py"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Regenerar catálogo estático (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "src/static_exam_catalog.py"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Normalizar y publicar catálogo (Python)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Normalizar metadatos (Python)",
+        "Regenerar catálogo estático (Python)"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Servidor de Generación (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "src/server.py"
+      ],
+      "isBackground": true,
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Subscription: Frontend (Puerto 8011)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "http.server",
+        "8011",
+        "--directory",
+        "subscription-app/frontend"
+      ],
+      "isBackground": true,
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "subscription"
+      }
+    },
+    {
+      "label": "Subscription: Backend (Puerto 8010)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "uvicorn",
+        "app:app",
+        "--reload",
+        "--port",
+        "8010"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/subscription-app/backend"
+      },
+      "isBackground": true,
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "subscription"
+      }
+    },
+    {
+      "label": "Subscription: Levantar Front + Back",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Subscription: Frontend (Puerto 8011)",
+        "Subscription: Backend (Puerto 8010)"
+      ],
+      "group": "build",
+      "problemMatcher": []
     }
   ]
-}
-{
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "Levantar servidor HTTP",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"-m",
-				"http.server",
-				"8001",
-				"--directory",
-				"docs"
-			],
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Generar examen (Python)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"src/generar_examen.py"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Corregir examen (Python)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"src/corregir_examen.py"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Normalizar metadatos (Python)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"src/normalize_out_exam_metadata.py"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Regenerar catálogo estático (Python)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"src/static_exam_catalog.py"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Normalizar y publicar catálogo (Python)",
-			"dependsOrder": "sequence",
-			"dependsOn": [
-				"Normalizar metadatos (Python)",
-				"Regenerar catálogo estático (Python)"
-			],
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Servidor de Generación (Python)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"src/server.py"
-			],
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": []
-		},
-		{
-			"label": "Subscription: Frontend (Puerto 8011)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"-m",
-				"http.server",
-				"8011",
-				"--directory",
-				"subscription-app/frontend"
-			],
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": [],
-			"presentation": {
-				"reveal": "always",
-				"panel": "dedicated",
-				"group": "subscription"
-			}
-		},
-		{
-			"label": "Subscription: Backend (Puerto 8010)",
-			"type": "shell",
-			"command": "C:/Program Files/Python39-33/python.exe",
-			"args": [
-				"-m",
-				"uvicorn",
-				"app:app",
-				"--reload",
-				"--port",
-				"8010"
-			],
-			"options": {
-				"cwd": "${workspaceFolder}/subscription-app/backend"
-			},
-			"isBackground": true,
-			"group": "build",
-			"problemMatcher": [],
-			"presentation": {
-				"reveal": "always",
-				"panel": "dedicated",
-				"group": "subscription"
-			}
-		},
-		{
-			"label": "Subscription: Levantar Front + Back",
-			"dependsOrder": "parallel",
-			"dependsOn": [
-				"Subscription: Frontend (Puerto 8011)",
-				"Subscription: Backend (Puerto 8010)"
-			],
-			"group": "build",
-			"problemMatcher": []
-		}
-	]
 }

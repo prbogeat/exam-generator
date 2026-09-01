@@ -1,0 +1,798 @@
+{
+  "degreeTitle": "Grado en Psicología",
+  "courseTitle": "1º",
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Febrero 2019 (Parcial 1)",
+  "subtitle": "Febrero de 2019-2020 - Examen Tipo A",
+  "notice": "Preguntas del examen de Febrero de 2019-2020 - Tipo A - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Cuál de las siguientes disciplinas se relaciona directamente con el estudio de las causas lejanas del comportamiento?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Psicología evolucionista"
+        },
+        {
+          "key": "B",
+          "text": "Ecología del Comportamiento"
+        },
+        {
+          "key": "C",
+          "text": "Sociobiología"
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones son correctas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las causas lejanas o filogenéticas del comportamiento, centradas en la historia evolutiva y el valor adaptativo de la conducta, son el objeto de estudio compartido de la Sociobiología, la Ecología del Comportamiento y la Psicología Evolucionista."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Sabiendo que dos caracteres dependen, respectivamente, de los genes A y B que presentan dos alelos cada uno con una relación de dominancia entre ellos (Aa; Bb), ¿qué porcentaje de la descendencia de una pareja cuyos genotipos son, respectivamente, AaBb y AABB presentarán el mismo fenotipo que sus progenitores para esos caracteres?",
+      "options": [
+        {
+          "key": "A",
+          "text": "25%"
+        },
+        {
+          "key": "B",
+          "text": "50%"
+        },
+        {
+          "key": "C",
+          "text": "75%"
+        },
+        {
+          "key": "D",
+          "text": "100%"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Ambos progenitores presentan el fenotipo dominante para ambos caracteres [A, B]. Al cruzarse AaBb x AABB, para el gen A (Aa x AA) el 100% de la descendencia recibe al menos un alelo A, y para el gen B (Bb x BB) el 100% recibe al menos un alelo B. Por lo tanto, el 100% de los hijos tendrá fenotipo [A, B], idéntico al de sus progenitores."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "El hecho de que mediante cría selectiva Tolman y Tryon lograran que, al cabo de algunas generaciones, la capacidad de resolver laberintos de las cepas seleccionadas fuera muy diferente en función del criterio de selección elegido (ratas rápidas en resolver el problema del laberinto contra ratas lentas en resolverlo), pero que esos efectos de la selección sólo se manifestaran cuando el ambiente de crianza era 'normal' (investigaciones de Cooper y Zubek, 1958) permite asegurar que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La capacidad de aprendizaje está influida por los genes"
+        },
+        {
+          "key": "B",
+          "text": "El aprendizaje está totalmente determinado por la herencia genética"
+        },
+        {
+          "key": "C",
+          "text": "Un ambiente empobrecido hace que las diferencias genéticas sean el factor más importante para explicar las diferencias en la rapidez del aprendizaje"
+        },
+        {
+          "key": "D",
+          "text": "Un ambiente enriquecido hace que las diferencias genéticas tengan mayor influencia en el rasgo"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Demuestra que la conducta y el aprendizaje poseen base genética heredable, pero no están predeterminados de forma rígida, sino que su expresión fenotípica está modulada por la interacción con el ambiente."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Sobre la variabilidad genética existente en las poblaciones sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No es uno de los pilares en los que se sustenta la evolución de las especies"
+        },
+        {
+          "key": "B",
+          "text": "Las mutaciones no alteran las frecuencias alélicas ni genotípicas"
+        },
+        {
+          "key": "C",
+          "text": "Se pone de manifiesto con la misma frecuencia en todos los loci"
+        },
+        {
+          "key": "D",
+          "text": "La aparición de un nuevo alelo puede deberse a una mutación de un solo nucleótido (puntual) que da lugar a un polimorfismo de nucleótido simple"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las mutaciones puntuales en una única base nitrogenada generan variantes alélicas que dan origen a los polimorfismos de nucleótido simple (SNP), fuente fundamental de variabilidad genética."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "El Teorema de los Rendimientos Decrecientes aplicado a la cópula de las moscas del estiércol predice que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "El tiempo que el macho invierte en copular con la hembra disminuye conforme aumenta la distancia recorrida para encontrarla"
+        },
+        {
+          "key": "B",
+          "text": "El tiempo que el macho invierte en copular con la hembra aumenta conforme aumenta la distancia recorrida para encontrarla"
+        },
+        {
+          "key": "C",
+          "text": "No existe ninguna relación entre la distancia recorrida y el tiempo de cópula"
+        },
+        {
+          "key": "D",
+          "text": "El tiempo de la cópula aumenta conforme aumenta el tiempo de búsqueda hasta valores intermedios del mismo y luego desciende bruscamente"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Según el Teorema del Valor Marginal, a mayor coste o tiempo invertido en la búsqueda/desplazamiento para localizar un parche (o pareja), mayor ha de ser el tiempo de permanencia o inversión en la cópula para optimizar la eficacia biológica."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "En el Dilema del Prisionero, la estrategia evolutivamente estable para cada jugador es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Que un reo confiese y otro no"
+        },
+        {
+          "key": "B",
+          "text": "Que ambos reos confiesen"
+        },
+        {
+          "key": "C",
+          "text": "Que ninguno de los dos confiese"
+        },
+        {
+          "key": "D",
+          "text": "No existe ninguna opción que maximice la cuenta de resultados"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "En un juego no repetido del dilema del prisionero, confesar (traicionar) es la mejor respuesta frente a cualquier acción del oponente, constituyendo la Estrategia Evolutivamente Estable (EEE) y equilibrio de Nash."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "¿Cuál de las siguientes células gliales suministra nutrientes a las neuronas y participa en el mantenimiento de la barrera hematoencefálica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Oligodendrocitos"
+        },
+        {
+          "key": "B",
+          "text": "Células de Schwann"
+        },
+        {
+          "key": "C",
+          "text": "Astrocitos"
+        },
+        {
+          "key": "D",
+          "text": "Células endoteliales"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Los astrocitos rodean los capilares cerebrales mediante sus pies terminales, contribuyen a la integridad de la barrera hematoencefálica y aportan soporte metabólico (lactato/glucosa) a las neuronas."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Un potencial postsináptico excitador:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Facilita la generación de un potencial de acción"
+        },
+        {
+          "key": "B",
+          "text": "Mantiene constante su magnitud hasta alcanzar el cono axónico"
+        },
+        {
+          "key": "C",
+          "text": "Lleva por sí solo a que se desencadene siempre un potencial de acción"
+        },
+        {
+          "key": "D",
+          "text": "Dificulta la generación de un potencial de acción"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Un PEP es una despolarización local y graduada que acerca el potencial de membrana al umbral de descarga, facilitando que en el cono axónico se desencadene un potencial de acción."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "Sobre el diencéfalo sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Se organiza alrededor del cuarto ventrículo"
+        },
+        {
+          "key": "B",
+          "text": "Forma parte del tronco del encéfalo"
+        },
+        {
+          "key": "C",
+          "text": "El tálamo constituye la zona más dorsal"
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El tálamo se sitúa en la parte dorsal del diencéfalo (por encima del hipotálamo y subtálamo). El diencéfalo rodea al tercer ventrículo y no forma parte del tronco cerebral."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "La Figura 1 es una ilustración de un tipo de regulación de la expresión génica:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A largo plazo"
+        },
+        {
+          "key": "B",
+          "text": "Que precisa la presencia de un inductor, una molécula cuya unión a una proteína reguladora permite que ésta se acople a la secuencia reguladora del ADN y active la expresión del gen estructural"
+        },
+        {
+          "key": "C",
+          "text": "En la que la unión de un correpresor a una proteína reguladora permite que ésta se acople a una secuencia reguladora específica del ADN e impida la expresión génica"
+        },
+        {
+          "key": "D",
+          "text": "Cuyo ejemplo es el modelo del operón"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La figura esquematiza el mecanismo de represión por correpresor: el metabolito actúa uniéndose al represor inactivo para permitir su fijación al operador y bloquear la transcripción de los genes estructurales."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "En 2004, van Honk et al. comprobaron que, en mujeres, la inyección de una dosis de testosterona hace que asuman más riesgos en un juego de cartas. ¿Qué tipo de estrategia se ha seguido en esta investigación?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Intervención conductual"
+        },
+        {
+          "key": "B",
+          "text": "Intervención somática"
+        },
+        {
+          "key": "C",
+          "text": "Aproximación correlacional"
+        },
+        {
+          "key": "D",
+          "text": "Observacional"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La variable independiente manipulada es biológica/corporal (administración de una hormona) y se evalúa su efecto sobre una variable dependiente conductual (asunción de riesgos), lo que define a la intervención somática."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Si se parte del supuesto de que la secuencia de nucleótidos UAC UAG AGC GUA corresponde a los anticodones de los ARNt que transportan los cuatro primeros aminoácidos (Met, Ile, Ser, His) de un polipéptido determinado, ¿cuál de las siguientes secuencias corresponde al ADN que codifica esta secuencia de aminoácidos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "TACTAGAGCGTA"
+        },
+        {
+          "key": "B",
+          "text": "AUGAUCUCGCAU"
+        },
+        {
+          "key": "C",
+          "text": "UACUAGAGCGUA"
+        },
+        {
+          "key": "D",
+          "text": "Ninguna de las anteriores"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los anticodones son complementarios del ARNm. A su vez, la hebra molde de ADN es complementaria del ARNm. Por tanto, la secuencia de la hebra molde de ADN tiene exactamente las mismas bases que los anticodones, sustituyendo el Uracilo (U) por Timina (T): TACTAGAGCGTA."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "Supongamos que el color de la piel humana está determinado por tres genes (ABC) con dos alelos cada uno, A1, A2, B1, B2, C1 y C2, donde los marcados con 1 no aportan color y los marcados con 2 aportan color. ¿Qué probabilidad tiene una pareja heterocigótica para los tres genes de tener un hijo fenotípicamente negro (cuyo genotipo sea A2A2B2B2C2C2)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El 95%"
+        },
+        {
+          "key": "B",
+          "text": "El 50%"
+        },
+        {
+          "key": "C",
+          "text": "El 24%"
+        },
+        {
+          "key": "D",
+          "text": "El 1,56%"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Para cada gen independiente (Aa x Aa), la probabilidad de homocigoto pleno (A2A2, B2B2 o C2C2) es de 1/4. Al ser tres loci independientes: P = (1/4) * (1/4) * (1/4) = 1/64 = 0,015625, lo que equivale exactamente al 1,56%."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Respecto a la eficacia biológica sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es a lo que Darwin hacía referencia cuando describió como los más aptos a los individuos cuya descendencia representa el mayor porcentaje de la población en la siguiente generación"
+        },
+        {
+          "key": "B",
+          "text": "Será menor cuanto mayor sea el coeficiente de selección"
+        },
+        {
+          "key": "C",
+          "text": "Los cambios que en ella se producen ponen de manifiesto la acción de la selección natural"
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La eficacia biológica relativa (w) se relaciona inversamente con el coeficiente de selección (w = 1 - s), refleja la aptitud darwiniana y sus variaciones expresan la acción de la selección natural."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "¿Qué dos teorías se han propuesto para explicar la superioridad de la reproducción sexual frente a la asexual?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La Teoría de la Reparación Genética y la Teoría de la Reina Roja"
+        },
+        {
+          "key": "B",
+          "text": "El Dilema del Prisionero y la Teoría de Juegos"
+        },
+        {
+          "key": "C",
+          "text": "La Teoría de los Halcones y la Teoría de las Palomas"
+        },
+        {
+          "key": "D",
+          "text": "La Teoría de la Reparación Genética y el Dilema del Prisionero"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Las dos hipótesis evolutivas principales para contrarrestar el doble coste del sexo son la Teoría de la Reparación Genética (purga de mutaciones deletéreas) y la Teoría de la Reina Roja (carrera armamentística contra patógenos y parásitos)."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Indique en qué plano se han seccionado los hemisferios cerebrales que aparecen en la Figura 2 y cuál es la estructura señalada con la flecha 2:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coronal, puente"
+        },
+        {
+          "key": "B",
+          "text": "Horizontal, tronco del encéfalo"
+        },
+        {
+          "key": "C",
+          "text": "Coronal, cerebelo"
+        },
+        {
+          "key": "D",
+          "text": "Frontal, bulbo raquídeo"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Se trata de un plano coronal o frontal del encéfalo, donde en su parte inferior la flecha señala la protuberancia o puente de Varolio."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "El concepto de la Psicología Evolucionista que permite entender que persistan en el momento actual conductas aparentemente poco adaptativas es el de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Teoría de Juegos"
+        },
+        {
+          "key": "B",
+          "text": "Modelos de Optimización"
+        },
+        {
+          "key": "C",
+          "text": "Promiscuidad"
+        },
+        {
+          "key": "D",
+          "text": "Ambiente de Adaptación Evolutiva"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El Ambiente de Adaptación Evolutiva (AAE) explica que nuestros módulos psicológicos fueron seleccionados para resolver problemas del contexto del Pleistoceno, existiendo a veces desajustes con el entorno moderno."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Sobre la plasticidad neural sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un ejemplo evidente son los cambios que pueden producirse en la cantidad de espinas dendríticas"
+        },
+        {
+          "key": "B",
+          "text": "Los astrocitos están implicados en la plasticidad sináptica que subyace al aprendizaje y la memoria"
+        },
+        {
+          "key": "C",
+          "text": "El aprendizaje constante en las primeras etapas de la vida potencia o da lugar a nuevas conexiones entre neuronas"
+        },
+        {
+          "key": "D",
+          "text": "Todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La plasticidad neuronal incluye modificaciones en espinas dendríticas, sinaptogénesis activa por aprendizaje y la regulación glial/astrocitaria de la transmisión y remodelado sináptico."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Cuando la membrana neuronal está en reposo, si comparamos las cargas eléctricas que se distribuyen a ambos lados de la misma con las que se almacenan en una pequeña pila de cualquier instrumento, solemos decir que el interior celular se comporta como un cátodo porque:",
+      "options": [
+        {
+          "key": "A",
+          "text": "En ese lado de la membrana hay mayor abundancia de cationes"
+        },
+        {
+          "key": "B",
+          "text": "Los cationes son atraídos hacia ese lado de la membrana"
+        },
+        {
+          "key": "C",
+          "text": "Los aniones son atraídos hacia ese lado de la membrana"
+        },
+        {
+          "key": "D",
+          "text": "En ese lado de la membrana hay menor abundancia de aniones"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El cátodo es el polo cargado negativamente en una celda electroquímica, hacia el cual se desplazan y son atraídos electrostáticamente los cationes (iones positivos)."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "¿Cuál de las siguientes afirmaciones es FALSA?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La epistasia no interviene en el valor de la heredabilidad obtenida a partir de la correlación entre gemelos"
+        },
+        {
+          "key": "B",
+          "text": "La herencia intermedia es un ejemplo de herencia cuantitativa"
+        },
+        {
+          "key": "C",
+          "text": "La herencia de los alelos aditivos cumple las leyes de Mendel"
+        },
+        {
+          "key": "D",
+          "text": "Muchos rasgos psicológicos, v.g. la inteligencia, tienen una base genética cuantitativa"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La afirmación A es falsa porque los gemelos monocigóticos comparten todas las combinaciones epistásicas (interacción interloci), por lo que la varianza por epistasia sí contribuye a su correlación fenotípica."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "El gen que codifica el transportador de serotonina (SERT) presenta dos alelos (largo-l- y corto-s) en nuestra especie y se ha relacionado fundamentalmente con:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Trastornos de ansiedad/estrés y neuroticismo"
+        },
+        {
+          "key": "B",
+          "text": "Problemas lingüísticos y de articulación del habla"
+        },
+        {
+          "key": "C",
+          "text": "El trastorno de déficit de atención con hiperactividad (TDAH)"
+        },
+        {
+          "key": "D",
+          "text": "Las tres anteriores son ciertas"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El alelo corto (s) del gen 5-HTTLPR reduce la expresión del transportador de serotonina y se asocia con mayor vulnerabilidad emocional, ansiedad, neuroticismo y depresión ante acontecimientos vitales estresantes."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "En una población de 1000 personas existe un gen con dos alelos (dominante y recesivo). De éstas, 500 personas muestran el genotipo homocigoto dominante y 200 el genotipo homocigoto recesivo. ¿Cuál es la frecuencia del alelo dominante en esta población?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,35"
+        },
+        {
+          "key": "B",
+          "text": "0,65"
+        },
+        {
+          "key": "C",
+          "text": "0,7"
+        },
+        {
+          "key": "D",
+          "text": "0,9"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "De 1000 personas, 500 son A1A1 (frecuencia D = 0,50) y 200 son A2A2 (frecuencia R = 0,20). Los 300 restantes son heterocigotos A1A2 (frecuencia H = 0,30). La frecuencia del alelo dominante p = D + H/2 = 0,50 + 0,30/2 = 0,65."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "Desde la Psicología Evolucionista se pueden explicar algunos fenómenos psicológicos bien documentados como el de los autistas superdotados. Esto es posible gracias a un aparato teórico propio de esta disciplina conocido como:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ambiente de Adaptación Evolutiva"
+        },
+        {
+          "key": "B",
+          "text": "Optimización"
+        },
+        {
+          "key": "C",
+          "text": "Altruismo"
+        },
+        {
+          "key": "D",
+          "text": "Teoría Modular de la Mente"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La concepción modular de la mente postula que existen módulos cognitivos independientes y especializados; el mal funcionamiento de unos módulos no impide el rendimiento sobresaliente de otros aislados."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "Mientras usted realiza este examen, las bombas electrogénicas de sodio-potasio de sus neuronas están activas, lo que supone un consumo de la molécula energética adenosín trifosfato (ATP). ¿Qué porcentaje aproximado de consumo de ATP representa respecto a la cantidad total de la que disponemos en el encéfalo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Una cuarta parte"
+        },
+        {
+          "key": "B",
+          "text": "La mitad"
+        },
+        {
+          "key": "C",
+          "text": "Casi tres cuartas partes"
+        },
+        {
+          "key": "D",
+          "text": "Casi el cien por cien"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Dentro del encéfalo, el mantenimiento y restablecimiento de los gradientes iónicos por acción de la bomba de Na+/K+-ATPasa consume aproximadamente el 70% (casi tres cuartas partes) de todo el ATP cerebral."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "La especiación alopátrica:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ocurre siempre sin separación física entre las poblaciones"
+        },
+        {
+          "key": "B",
+          "text": "Es más habitual en plantas que en animales"
+        },
+        {
+          "key": "C",
+          "text": "Para que tenga lugar, deben establecerse mecanismos de aislamiento reproductivo que pueden ser tanto precigóticos como postcigóticos"
+        },
+        {
+          "key": "D",
+          "text": "Se produce siempre por poliploidía"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Tras la divergencia inicial provocada por la barrera geográfica, la formación definitiva de nuevas especies requiere la aparición de mecanismos intrínsecos de aislamiento reproductivo (precigóticos o postcigóticos)."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Los datos observados en humanos y los obtenidos mediante ingeniería genética muestran que para la diferenciación completa del fenotipo sexual masculino:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es esencial la actividad funcional de los genes SRY y SOX9"
+        },
+        {
+          "key": "B",
+          "text": "Intervienen factores epigenéticos hormonales"
+        },
+        {
+          "key": "C",
+          "text": "Intervienen sólo genes ubicados en el cromosoma Y"
+        },
+        {
+          "key": "D",
+          "text": "A y B son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Se requiere la cascada genética iniciada por SRY y SOX9 (autosómico) y la posterior acción hormonal organizadora (testosterona y hormona antimülleriana) que actúa epigenéticamente sobre los tejidos diana."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "La fórmula de Falconer H2 = 2 (rMZJ - rDZJ) permite:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Un mejor cálculo de la heredabilidad en sentido estricto"
+        },
+        {
+          "key": "B",
+          "text": "Un mejor cálculo de la heredabilidad en sentido amplio"
+        },
+        {
+          "key": "C",
+          "text": "Excluir el peso del ambiente no compartido a la hora de calcular la heredabilidad"
+        },
+        {
+          "key": "D",
+          "text": "Lo dicho en A y C es cierto"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La fórmula de Falconer estima la heredabilidad en sentido amplio (H2), cancelando la varianza ambiental compartida mediante la duplicación de la diferencia entre las correlaciones de gemelos MZ y DZ criados juntos."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "La señal eléctrica que llega a los botones terminales sinápticos neuronales a consecuencia de la propagación de un potencial de acción es de un valor de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "+35mV"
+        },
+        {
+          "key": "B",
+          "text": "+15mV"
+        },
+        {
+          "key": "C",
+          "text": "+50mV"
+        },
+        {
+          "key": "D",
+          "text": "+70mV"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Al propagarse sin decremento hasta los botones terminales axónicos, el potencial de acción alcanza el pico de inversión de potencial correspondiente a aproximadamente +50 mV."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "De entre los siguientes neurotransmisores, uno de los que generan principalmente potenciales postsinápticos excitadores es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La glicina"
+        },
+        {
+          "key": "B",
+          "text": "El GABA"
+        },
+        {
+          "key": "C",
+          "text": "El aspartato"
+        },
+        {
+          "key": "D",
+          "text": "La morfina"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El aspartato, al igual que el glutamato, es uno de los principales aminoácidos neurotransmisores excitadores del SNC; el GABA y la glicina son los principales inhibidores."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Teniendo en cuenta dónde se origina el nervio trigémino (V) y las áreas que inerva, indique qué número de la Figura 3 se corresponde con él:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "5"
+        },
+        {
+          "key": "D",
+          "text": "7"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El par craneal V (trigémino) emerge de la cara anterolateral de la protuberancia (puente) y emite tres ramas principales (oftálmica, maxilar y mandibular) que inervan la sensibilidad facial y masticatoria, reflejada en el número 2 de la figura."
+    }
+  ],
+  "accessLevel": "free"
+}

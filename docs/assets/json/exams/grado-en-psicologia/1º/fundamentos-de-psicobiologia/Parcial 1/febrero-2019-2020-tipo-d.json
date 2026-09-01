@@ -1,0 +1,801 @@
+{
+  "degreeTitle": "Grado en Psicología",
+  "courseTitle": "1º",
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Febrero 2019-2020 - Tipo D - Parcial 1",
+  "subtitle": "30 Tipo Test - Examen Tipo",
+  "notice": "Preguntas del examen de Febrero 2019-2020 - Tipo D - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "¿Quién acuñó el término Psicobiología y fundó la revista Psychobiology?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "William James"
+        },
+        {
+          "key": "B",
+          "text": "Knight Dunlap"
+        },
+        {
+          "key": "C",
+          "text": "Martin E.P. Seligman"
+        },
+        {
+          "key": "D",
+          "text": "Santiago Ramón y Cajal"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Knight Dunlap acuñó el término Psicobiología al publicar en 1917 'An Outline of Psychobiology' y fundar la revista científica del mismo nombre."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Cuando se quiere obtener la heredabilidad en sentido estricto para un rasgo humano hay que utilizar la correlación entre:",
+      "options": [
+        {
+          "key": "A",
+          "text": "padres e hijos"
+        },
+        {
+          "key": "B",
+          "text": "gemelos monocigóticos criados por separado"
+        },
+        {
+          "key": "C",
+          "text": "gemelos dicigóticos criados juntos"
+        },
+        {
+          "key": "D",
+          "text": "cualquiera de las tres opciones anteriores nos permite obtener el valor de la heredabilidad en sentido estricto"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La heredabilidad en sentido estricto (h²) estima la varianza genética aditiva sobre la varianza fenotípica total. En humanos se evalúa mediante la regresión o correlación entre parientes de primer grado como padres e hijos (h² ≈ 2r)."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "En la Figura 1 se representa una ley o regla conocida en la Ecología del Comportamiento, ¿de cuál se trata?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Regla de la Reina Roja"
+        },
+        {
+          "key": "B",
+          "text": "Regla de la Reparación Genética"
+        },
+        {
+          "key": "C",
+          "text": "Ley de los Rendimientos Decrecientes"
+        },
+        {
+          "key": "D",
+          "text": "Regla o Ley de Bateman"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La gráfica ilustra el principio o Ley de Bateman: el éxito reproductor de los machos aumenta linealmente con el número de parejas sexuales, mientras que en las hembras se estabiliza por la limitación de óvulos e inversión parental.",
+      "image": "https://drive.google.com/file/d/1ybFxmzD13KcKjJ_Wac4KtZ2t0EKauXYL/view?usp=drive_link"
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Respecto al SN autónomo sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "forma parte del SN somático"
+        },
+        {
+          "key": "B",
+          "text": "cuenta exclusivamente con fibras aferentes"
+        },
+        {
+          "key": "C",
+          "text": "está implicado en el control de la musculatura lisa, del músculo cardíaco y de diferentes glándulas"
+        },
+        {
+          "key": "D",
+          "text": "sus fibras son los únicos componentes de los nervios craneales"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El sistema nervioso autónomo o vegetativo es la división visceral encargada del control involuntario de la musculatura lisa (visceral y vascular), del músculo cardíaco y de las glándulas exocrinas y endocrinas."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "Supongamos que un hombre que padece una enfermedad hereditaria y una mujer que no la padece, y cuyos padres tampoco la padecieron, tienen un hijo y una hija que la padecen. ¿Cuál es el tipo de transmisión de esta enfermedad y cuál sería el genotipo más probable de los abuelos maternos de la mujer?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "ligada al sexo; XX, XaY"
+        },
+        {
+          "key": "B",
+          "text": "autosómica dominante; Aa, AA"
+        },
+        {
+          "key": "C",
+          "text": "ligada al sexo; XaXa, XaY"
+        },
+        {
+          "key": "D",
+          "text": "autosómica recesiva; aa, aa"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Al transmitirse ligada al cromosoma X recesiva, la hija enferma (XaXa) hereda el alelo mutado del padre (XaY) y obligatoriamente otro de la madre sana portadora (XAXa). Dado que los padres de la mujer no padecían la alteración, el abuelo era sano (XAY) y la abuela era portadora heterocigota (XAXa)."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "El hecho de que el valor de la heredabilidad de la inteligencia aumente en paralelo con el estatus social (nivel de vida, recursos económicos, oportunidades educativas, etc.) es una prueba irrefutable de que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los factores genéticos influyen muy poco en los rasgos psicológicos humanos"
+        },
+        {
+          "key": "B",
+          "text": "el valor de la heredabilidad de un rasgo es específico de la población en la que se obtiene"
+        },
+        {
+          "key": "C",
+          "text": "la manifestación de las potencialidades genéticas puede depender del ambiente"
+        },
+        {
+          "key": "D",
+          "text": "lo dicho en B y C es cierto"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La heredabilidad no es un valor biológico invariable: es propia de una población concreta en un momento dado (B) y, en entornos socioeconómicos favorables donde el ambiente se enriquece y homogeniza, la varianza genética se manifiesta en mayor proporción (C)."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "La impronta genética del gen IGF2 corrobora el hecho de que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la monogamia exclusiva es biológicamente estable"
+        },
+        {
+          "key": "B",
+          "text": "la monogamia exclusiva no es biológicamente estable"
+        },
+        {
+          "key": "C",
+          "text": "el padre invierte una gran cantidad de recursos durante el embarazo"
+        },
+        {
+          "key": "D",
+          "text": "la madre debe de invertir todos sus recursos en el embarazo actual por la incertidumbre del éxito de los futuros"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La impronta genómica del gen IGF2 (expresado solo desde el alelo paterno para extraer máximos recursos metabólicos maternos) refleja el conflicto genómico sexual derivado de que las hembras pueden concebir camadas futuras con otros machos, lo que prueba que la monogamia exclusiva no fue la norma evolutiva."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Sobre el aporte sanguíneo al encéfalo para cubrir sus necesidades metabólicas sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el encéfalo acumula glucosa para su funcionamiento aunque ésta no llegue a través de la sangre"
+        },
+        {
+          "key": "B",
+          "text": "los requerimientos energéticos del encéfalo son menores que los de cualquier otro órgano"
+        },
+        {
+          "key": "C",
+          "text": "la sangre accede al encéfalo por los mismos lugares que el líquido cefalorraquídeo"
+        },
+        {
+          "key": "D",
+          "text": "los sistemas de aporte sanguíneo al encéfalo están unidos formando el círculo o polígono de Willis"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La circulación anterior (sistema carotídeo interno) y la circulación posterior (sistema vertebrobasilar) se anastomosan en la base cerebral formando el círculo arterial o polígono de Willis."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "En la Figura 2 se muestran numeradas, pero desordenadas y mezcladas, varias fases del proceso de división celular por mitosis y meiosis en una célula 2n=4. ¿Qué número corresponde al proceso o fase indicado a continuación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "3: formación de gametos tras la anafase II y telofase II meiótica"
+        },
+        {
+          "key": "B",
+          "text": "4: profase I meiótica"
+        },
+        {
+          "key": "C",
+          "text": "2: anafase y telofase mitótica"
+        },
+        {
+          "key": "D",
+          "text": "1: metafase II meiótica"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El esquema número 3 muestra las cuatro células haploides hijas resultantes (n=2 cromátidas simples) al completarse la meiosis II (gametogénesis).",
+      "image": "https://drive.google.com/file/d/1bwHynVxtzUMElUO-BJmVag4L5quLzwhw/view?usp=drive_link"
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "El hecho de que haya un elevado porcentaje de coincidencia en padecer la esquizofrenia entre gemelos monocigóticos y también, aunque en menor medida, entre gemelos dicigóticos:",
+      "options": [
+        {
+          "key": "A",
+          "text": "apunta a que el ambiente no es un factor que tenga que ver con el desarrollo de la esquizofrenia"
+        },
+        {
+          "key": "B",
+          "text": "indica que es altamente probable que haya genes implicados"
+        },
+        {
+          "key": "C",
+          "text": "permite afirmar que se trata de una enfermedad genética mendeliana"
+        },
+        {
+          "key": "D",
+          "text": "permite excluir la influencia de la varianza por dominancia y por epistasia en el valor de la heredabilidad"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Una tasa de concordancia sensiblemente superior entre gemelos monocigóticos (100% de genoma compartido) frente a dicigóticos (50%) es la evidencia clásica de una base e influencia genética sustancial en el rasgo."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "El troquelado sexual:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es un mecanismo de aislamiento reproductivo"
+        },
+        {
+          "key": "B",
+          "text": "es causa de la impronta filial"
+        },
+        {
+          "key": "C",
+          "text": "se establece en el momento en el que va a ejercer su efecto"
+        },
+        {
+          "key": "D",
+          "text": "tiene como estímulo originador de la impronta el mismo que va a ser objeto de la respuesta sexual"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La impronta o troquelado sexual fija en el período sensible temprano las características de la futura pareja coespecífica, actuando en la etapa adulta como un mecanismo etológico precigótico de aislamiento reproductor."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Cuando el catión potasio, durante el estado de reposo de la membrana neuronal, se mueve hacia el exterior celular, que tiene mayor cantidad de cargas positivas que el interior, lo hace fundamentalmente en virtud de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la presión electrostática"
+        },
+        {
+          "key": "B",
+          "text": "la fuerza de difusión"
+        },
+        {
+          "key": "C",
+          "text": "la excitabilidad celular"
+        },
+        {
+          "key": "D",
+          "text": "cualquiera de las opciones anteriores porque todas son ciertas"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El potasio (K⁺) se encuentra unas 30 veces más concentrado en el interior que en el exterior. Por ello, la fuerza de difusión química empuja al K⁺ hacia afuera, superando el gradiente eléctrico negativo interior."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "Si la adenina representa el 23% de las bases nitrogenadas en una molécula determinada de ADN, ¿en qué porcentaje estará presente la guanina?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "27%"
+        },
+        {
+          "key": "B",
+          "text": "23%"
+        },
+        {
+          "key": "C",
+          "text": "77%"
+        },
+        {
+          "key": "D",
+          "text": "46%"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Por la regla de Chargaff: A = T = 23% (suman 46%). El 54% restante corresponde por igual a Guanina y Citosina (G + C = 54%), por lo que G = 54% / 2 = 27%."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "Cuando la selección natural reduce la eficacia biológica de los genotipos heterocigotos y homocigotos recesivos, se denomina:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sobredominancia o superioridad del heterocigoto"
+        },
+        {
+          "key": "B",
+          "text": "subdominancia o selección contra el heterocigoto"
+        },
+        {
+          "key": "C",
+          "text": "selección codominante"
+        },
+        {
+          "key": "D",
+          "text": "selección positiva"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "En la selección codominante o aditiva, el alelo desfavorable reduce la eficacia biológica no solo en los homocigotos recesivos, sino también parcialmente en los heterocigotos."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Los experimentos de John García sobre aversión condicionada pusieron de manifiesto:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la existencia del instinto"
+        },
+        {
+          "key": "B",
+          "text": "la existencia de formas de aprendizaje biológicamente preparadas"
+        },
+        {
+          "key": "C",
+          "text": "la inexistencia de las llamadas pautas de acción fija"
+        },
+        {
+          "key": "D",
+          "text": "que el aprendizaje animal solo puede abordarse desde una estrategia conductista"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El efecto García probó la existencia de aprendizajes biológicamente preparados (facilidad para asociar sabores con malestar gástrico incluso con horas de demora), refutando la hipótesis conductista de la equipotencialidad."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "Actualmente es posible, mediante procedimientos optogenéticos, hacer inactivas temporalmente determinadas estructuras encefálicas que regulan conductas concretas (p. ej., para reducir comportamientos desadaptativos). Uno de los mecanismos neurofisiológicos de esa inactivación es, probablemente, hacer que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la carga eléctrica neta del interior celular sea más negativa"
+        },
+        {
+          "key": "B",
+          "text": "el potencial umbral tienda hacia la positividad"
+        },
+        {
+          "key": "C",
+          "text": "disminuya el período refractario absoluto"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La inhibición optogenética hiperpolariza la membrana neuronal (haciendo el interior celular más negativo, p. ej. permitiendo la entrada de Cl⁻ mediante halorrodopsina), alejando el potencial del umbral de disparo."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Si la selección natural está actuando en contra de los individuos que padecen una enfermedad disminuyendo su eficacia biológica en un 70%, ¿cuál es el coeficiente de selección (s) de los individuos que padecen esta enfermedad?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,3"
+        },
+        {
+          "key": "B",
+          "text": "0,7"
+        },
+        {
+          "key": "C",
+          "text": "0,49"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El coeficiente de selección (s) expresa la reducción proporcional de la eficacia biológica: si la eficacia biológica se reduce en un 70%, s = 0,7 (la eficacia biológica relativa remanente sería w = 1 - 0,7 = 0,3)."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Los estudios genéticos están logrando, a pesar de su dificultad, descubrir los efectos que tienen genes concretos sobre la conducta humana. ¿Cuál de los siguientes genes se ha relacionado con alteraciones importantes de las capacidades lingüísticas y articulación del lenguaje?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "un gen estructural cuyo locus está en el cromosoma 12"
+        },
+        {
+          "key": "B",
+          "text": "el gen FOXP2"
+        },
+        {
+          "key": "C",
+          "text": "el gen SRY"
+        },
+        {
+          "key": "D",
+          "text": "un gen recesivo ligado al cromosoma Y"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El gen FOXP2 (ubicado en el cromosoma 7) codifica un factor de transcripción regulador crítico para el desarrollo de los circuitos motores del habla y el procesamiento del lenguaje."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Sobre las características estructurales y funcionales de las neuronas sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el citoesqueleto es un componente fundamental de la membrana neuronal"
+        },
+        {
+          "key": "B",
+          "text": "la disposición y amplitud del árbol dendrítico puede modificarse por diversos factores constituyendo un ejemplo de plasticidad neural"
+        },
+        {
+          "key": "C",
+          "text": "la mayoría de las neuronas cuentan con varios troncos axónicos que se ramifican"
+        },
+        {
+          "key": "D",
+          "text": "en el botón terminal del axón se produce siempre la síntesis de proteínas específicas para la comunicación neuronal"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El árbol dendrítico y la densidad de espinas dendríticas son estructuras dinámicas que se remodelan ante el aprendizaje, la experiencia o la privación sensorial, reflejando plasticidad neural."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Al analizar la evolución de las especies hemos de tener en cuenta que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "las semejanzas entre organismos por herencia compartida de un antepasado común se denominan homologías"
+        },
+        {
+          "key": "B",
+          "text": "los parecidos entre organismos debidos a similitud funcional, pero no causados por herencia compartida de un ancestro común, se denominan analogías"
+        },
+        {
+          "key": "C",
+          "text": "el conjunto de procesos que conducen a cambios adaptativos que solucionan de una forma similar e independiente problemas semejantes se conoce como evolución convergente"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas las afirmaciones son correctas: homologías proceden de un ancestro común, analogías responden a presiones funcionales y la convergencia explica el surgimiento independiente de adaptaciones similares."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Durante la propagación de un potencial de acción a lo largo del axón, la refractariedad de la zona de la membrana neuronal donde se ha producido dicho potencial, en parte, es consecuencia de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "que los canales del ion sodio se hayan cerrado"
+        },
+        {
+          "key": "B",
+          "text": "un menor tiempo de apertura de los canales del ion potasio"
+        },
+        {
+          "key": "C",
+          "text": "un aumento de la conductancia a los iones de potasio"
+        },
+        {
+          "key": "D",
+          "text": "que los canales del ion potasio se hayan cerrado"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El período refractario relativo coincide con la fase de hiperpolarización tardía, debida al incremento persistente de la conductancia al K⁺ a través de sus canales dependientes de voltaje aún abiertos."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "El síndrome de X Frágil es un ejemplo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "polimorfismo de un solo nucleótido"
+        },
+        {
+          "key": "B",
+          "text": "transmisión ligada al sexo"
+        },
+        {
+          "key": "C",
+          "text": "que una sola mutación en un gen que se expresa en el tejido cerebral puede producir discapacidad mental y alteraciones de comportamiento"
+        },
+        {
+          "key": "D",
+          "text": "B y C son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El síndrome del cromosoma X frágil es un trastorno ligado al cromosoma X originado por una mutación por expansión de tripletes (CGG) en el gen FMR1, el cual altera el desarrollo cerebral y genera discapacidad intelectual."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "¿Qué números de la Figura 3 señalan el eje rostro-caudal del encéfalo anterior?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1-2"
+        },
+        {
+          "key": "B",
+          "text": "3-4"
+        },
+        {
+          "key": "C",
+          "text": "5-6"
+        },
+        {
+          "key": "D",
+          "text": "7-8"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Debido a la flexura cefálica en el encéfalo anterior humano, el eje rostro-caudal se orienta en el plano horizontal desde la parte anterior (rostral/frente) hasta la posterior (caudal/occipucio), marcado por los números 1-2.",
+      "image": "https://drive.google.com/file/d/1fmfkIMZEhYHyZ3zRUCcyrynl3AgLMM9Y/view?usp=drive_link"
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "La despolarización de la membrana del terminal presináptico de una sinapsis química desencadena:",
+      "options": [
+        {
+          "key": "A",
+          "text": "cierre de los canales presinápticos del ion potasio"
+        },
+        {
+          "key": "B",
+          "text": "la apertura de los canales presinápticos del ion calcio dependientes de voltaje y la liberación del neurotransmisor"
+        },
+        {
+          "key": "C",
+          "text": "siempre la despolarización inmediata de la membrana postsináptica"
+        },
+        {
+          "key": "D",
+          "text": "las tres anteriores son ciertas"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La llegada del potencial de acción al botón terminal abre los canales de Ca²⁺ dependientes de voltaje, provocando el influjo de calcio que estimula la fusión vesicular y la exocitosis del neurotransmisor."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Sobre la extinción de las especies se sabe que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "entre los factores que contribuyen a ella, la disminución de la variabilidad genética es el más importante"
+        },
+        {
+          "key": "B",
+          "text": "se produce siempre por aislamiento geográfico"
+        },
+        {
+          "key": "C",
+          "text": "el que se produzca radiación adaptativa como consecuencia de la ocupación de diferentes nichos ecológicos aumenta considerablemente la probabilidad de que se produzca"
+        },
+        {
+          "key": "D",
+          "text": "sólo el 1% de las especies han desaparecido"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La pérdida de variabilidad genética merma la capacidad de respuesta y plasticidad adaptativa de la población frente a contingencias o patógenos, siendo el factor intrínseco más determinante de la extinción."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "La altura de la planta del guisante (Pisum sativum) con la que investigó Mendel y gracias a la cual descubrió las leyes de la genética que llevan su nombre:",
+      "options": [
+        {
+          "key": "A",
+          "text": "es un rasgo mendeliano"
+        },
+        {
+          "key": "B",
+          "text": "es un rasgo cualitativo"
+        },
+        {
+          "key": "C",
+          "text": "es un rasgo cuantitativo"
+        },
+        {
+          "key": "D",
+          "text": "lo dicho en A y B es cierto"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Mendel seleccionó intencionadamente caracteres discretos o cualitativos (tallo alto vs. enano, sin fenotipos intermedios continuos), los cuales siguen un patrón de herencia monogénico mendeliano clásico [2]."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "La médula espinal:",
+      "options": [
+        {
+          "key": "A",
+          "text": "forma parte del tronco del encéfalo"
+        },
+        {
+          "key": "B",
+          "text": "está parcelada en 31 segmentos medulares delimitados por la inserción de cada par de nervios espinales"
+        },
+        {
+          "key": "C",
+          "text": "forma parte del SN periférico"
+        },
+        {
+          "key": "D",
+          "text": "no tiene estructura bilateral simétrica debido a los ensanchamientos que muestra en los niveles en los que se insertan los nervios que inervan los brazos y las piernas"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La médula espinal presenta una organización segmentada constituida por 31 segmentos medulares (8 cervicales, 12 torácicos, 5 lumbares, 5 sacros y 1 coccígeo), cada uno delimitado por la emergencia de un par de nervios raquídeos o espinales [2, 3]."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "En la Figura 4 se representa, a la izquierda, la predicción del Teorema de los rendimientos decrecientes en relación al forrajeo de los estorninos y, a la derecha, la conducta real de estas aves. Usando sus conocimientos de Ecología del Comportamiento, ¿puede afirmarse que el forrajeo se adapta a lo predicho por este modelo de optimización?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no, en ningún caso"
+        },
+        {
+          "key": "B",
+          "text": "solo en las distancias cortas"
+        },
+        {
+          "key": "C",
+          "text": "solo en las distancias largas"
+        },
+        {
+          "key": "D",
+          "text": "sí, efectivamente"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los experimentos de Kacelnik confirmaron que los estorninos ajustan el tamaño de la carga de larvas transportadas al nido en función del tiempo de viaje, adaptándose con gran precisión a la curva de optimización pronosticada por el teorema de los rendimientos decrecientes [2].",
+      "image": "https://drive.google.com/file/d/1xskNOoJKyI8MAaK3kwR0hZfORtDitFL3/view?usp=drive_link"
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Uno de los neurotransmisores que, principalmente, genera potenciales postsinápticos inhibidores es:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la noradrenalina"
+        },
+        {
+          "key": "B",
+          "text": "el glutamato"
+        },
+        {
+          "key": "C",
+          "text": "la glicina"
+        },
+        {
+          "key": "D",
+          "text": "la adrenalina"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La glicina (junto con el GABA) es uno de los principales neurotransmisores inhibidores del sistema nervioso central; al unirse a sus receptores ionotrópicos produce la apertura de canales de Cl⁻ e hiperpolarización postsináptica (PIP) [2, 4]."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "En 2008, Walum et al. realizaron un estudio con 552 parejas de gemelos y sus respectivos cónyuges o parejas. Todos los sujetos fueron evaluados respecto a varios índices de calidad de la relación conyugal y las características genéticas del gen del receptor de vasopresina. Los resultados indicaron que en los varones hay una asociación estadísticamente significativa entre el polimorfismo existente en el gen del receptor de la vasopresina y la calidad de la relación conyugal. Concretamente, encontraron que los portadores de uno de los alelos de este gen (el 334) tenían más problemas matrimoniales que los hombres sin este alelo. ¿Qué tipo de estrategia se ha seguido en esta investigación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "intervención conductual"
+        },
+        {
+          "key": "B",
+          "text": "intervención somática"
+        },
+        {
+          "key": "C",
+          "text": "aproximación correlacional"
+        },
+        {
+          "key": "D",
+          "text": "todas son correctas"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Se trata de una aproximación correlacional (contrastación observacional) porque los investigadores no manipulan experimentalmente ni la variable biológica (polimorfismo del alelo 334 del receptor de vasopresina) ni la variable psicológica/conductual (calidad conyugal), sino que evalúan la relación o covariación estadística natural entre ambas."
+    }
+  ]
+}

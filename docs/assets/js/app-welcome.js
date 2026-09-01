@@ -48,13 +48,19 @@ function showError(message) {
   setStatus(message, "error");
 }
 
+function normalizePartialName(value) {
+  const text = String(value || "").trim();
+  const match = text.match(/^parcial[\s-]+(\d+)$/i);
+  return match ? `Parcial ${match[1]}` : text;
+}
+
 function normalizeCatalogItem(item) {
   return {
     ...item,
     degree: String(item?.degree || DEFAULT_DEGREE),
     course: String(item?.course || DEFAULT_COURSE),
     subject: String(item?.subject || item?.subjectTitle || "Asignatura"),
-    partial: String(item?.partial || ""),
+    partial: normalizePartialName(item?.partial),
   };
 }
 

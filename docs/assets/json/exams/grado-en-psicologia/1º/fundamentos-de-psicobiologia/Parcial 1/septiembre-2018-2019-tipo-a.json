@@ -1,0 +1,797 @@
+{
+  "degreeTitle": "Grado en Psicología",
+  "courseTitle": "1º",
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Septiembre 2018-2019 - Tipo A - Parcial 1",
+  "subtitle": "Septiembre 2018-2019 - Examen Tipo A",
+  "notice": "Preguntas del examen de Septiembre 2018-2019 - Tipo A - Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "Para Darwin, los pilares de la evolución de los organismos son:",
+      "options": [
+        {
+          "key": "A",
+          "text": "variabilidad, herencia y adaptación activa del organismo al medio cambiante"
+        },
+        {
+          "key": "B",
+          "text": "variabilidad, azar y selección"
+        },
+        {
+          "key": "C",
+          "text": "variabilidad, herencia y selección natural"
+        },
+        {
+          "key": "D",
+          "text": "inmutabilidad de los caracteres, herencia y adaptación pasiva del organismo al medio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La teoría evolutiva darwiniana se asienta sobre tres postulados fundamentales: la variabilidad fenotípica intraespecífica, la herencia de dicha variación entre generaciones y la selección natural operada por el medio ambiente."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Los estudios de genética de la inteligencia:",
+      "options": [
+        {
+          "key": "A",
+          "text": "parten del supuesto de que es un rasgo fenotípico de carácter cuantitativo"
+        },
+        {
+          "key": "B",
+          "text": "ponen de manifiesto que la heredabilidad del CI, evaluada a partir de estudios de gemelos monocigóticos criados por separado, es de alrededor de 0.75"
+        },
+        {
+          "key": "C",
+          "text": "indican que los factores ambientales que explican la variabilidad que no explica la variabilidad genética, son peculiares para cada individuo, es decir, no comunes para quienes viven en un mismo entorno"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Todas las afirmaciones son correctas: el CI se analiza como un rasgo continuo cuantitativo, su heredabilidad se sitúa en torno a 0,70-0,75 en adultos y la fracción ambiental más relevante es la del ambiente no compartido (específico)."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "¿Qué concepto fundamental para el nacimiento de la Psicobiología y la Psicología científica se puso de manifiesto en la obra 'La expresión de las emociones en el hombre y los animales', publicada por Darwin en 1872?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "existen diferencias cualitativas entre las capacidades mentales del hombre y las de otros animales"
+        },
+        {
+          "key": "B",
+          "text": "el comportamiento humano, como cualquier otro carácter biológico, está sujeto a la acción de la selección natural"
+        },
+        {
+          "key": "C",
+          "text": "la singularidad de las emociones humanas impide abordar su estudio utilizando modelos animales"
+        },
+        {
+          "key": "D",
+          "text": "el comportamiento humano se rige por unas leyes generales que son aplicables sin variación a todas las especies"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Darwin integró la conducta y los procesos emocionales humanos como rasgos biológicos adaptativos moldeados por la selección natural a lo largo de la filogenia, sentando la base de la psicobiología comparada."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "¿Cuál de los siguientes síndromes está asociado a una deleción?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Williams"
+        },
+        {
+          "key": "B",
+          "text": "Down"
+        },
+        {
+          "key": "C",
+          "text": "Klinefelter"
+        },
+        {
+          "key": "D",
+          "text": "XYY (supermacho)"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El síndrome de Williams está causado por una microdeleción submicroscópica en la región 7q11.23 del cromosoma 7. Down (trisomía 21), Klinefelter (47,XXY) y el síndrome XYY son aneuploidías numéricas."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "La liberación del neurotransmisor a la hendidura sináptica depende directamente de la apertura de los canales de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "sodio"
+        },
+        {
+          "key": "B",
+          "text": "calcio"
+        },
+        {
+          "key": "C",
+          "text": "potasio"
+        },
+        {
+          "key": "D",
+          "text": "cloro"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La despolarización de la membrana presináptica activa los canales de Ca²⁺ dependientes de voltaje. La entrada de iones calcio es el desencadenante directo de la exocitosis de las vesículas sinápticas."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "Los polimorfismos equilibrados se mantienen por:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la acción de la selección natural"
+        },
+        {
+          "key": "B",
+          "text": "el azar"
+        },
+        {
+          "key": "C",
+          "text": "causas ajenas a su frecuencia"
+        },
+        {
+          "key": "D",
+          "text": "la microevolución"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La selección natural equilibra y preserva de forma activa la coexistencia de múltiples variantes alélicas en la población mediante mecanismos adaptativos como la sobredominancia (ventaja heterocigota) o la selección dependiente de la frecuencia."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "¿Desde el punto de vista de la Sociobiología, cuál de las siguientes conductas es más difícil de explicar?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "el que en 1650, tras la guerra de los 30 años en Alemania, aprobado en el Concilio de Nuremberg, se permitiera la poliginia (no se permitía a los varones entrar en órdenes religiosas, se consentía a los clérigos casarse y a los laicos tomar una segunda esposa)"
+        },
+        {
+          "key": "B",
+          "text": "la utilización de esclavos eunucos para vigilar a las mujeres en los harenes de los sultanes turcos"
+        },
+        {
+          "key": "C",
+          "text": "la monogamia humana"
+        },
+        {
+          "key": "D",
+          "text": "el comportamiento de la madrastra de los cuentos, la de Blancanieves, la de Cenicienta, la de Pulgarcito,..."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Dado el moderado dimorfismo sexual de la especie humana y la asimetría de la inversión parental inicial entre sexos, la monogamia estricta sin poliginia encubierta plantea mayores enigmas teóricos evolutivos frente a conductas que optimizan directamente la aptitud reproductiva o reflejan conflicto de parentesco."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "Clay et al. (2016) realizaron una investigación con bonobos para explorar si respondían al incumplimiento de expectativas sociales en interacciones naturales, centrándose en el comportamiento vocal de las víctimas tras agresiones socialmente esperadas e inesperadas. ¿Qué estrategia de contrastación se utilizó en esta investigación?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Observación"
+        },
+        {
+          "key": "B",
+          "text": "Intervención conductual"
+        },
+        {
+          "key": "C",
+          "text": "aproximación correlacional"
+        },
+        {
+          "key": "D",
+          "text": "A y C son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Al no manipular experimentalmente las variables independientes en el medio natural, se registra la conducta espontánea (observación) y se evalúan covariaciones entre las variables contextuales y las acústicas (aproximación correlacional)."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "El movimiento de iones a través de la membrana neuronal para un determinado ion depende de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "los canales iónicos abiertos que posea la membrana"
+        },
+        {
+          "key": "B",
+          "text": "el gradiente electroquímico"
+        },
+        {
+          "key": "C",
+          "text": "la fuerza de difusión"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El flujo iónico viene determinado conjuntamente por la permeabilidad de la membrana (número y tipo de canales iónicos abiertos) y por las fuerzas que impulsan el ion (fuerza de difusión química y presión electrostática, que integran el gradiente electroquímico)."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "Entre otras estructuras encefálicas, las ramas de las arterias vertebrales y basilar irrigan:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la porción lateral del lóbulo parietal"
+        },
+        {
+          "key": "B",
+          "text": "el quiasma óptico"
+        },
+        {
+          "key": "C",
+          "text": "la parte rostral del diencéfalo"
+        },
+        {
+          "key": "D",
+          "text": "el cerebelo"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El sistema vertebrobasilar o circulación posterior irriga la médula espinal superior, el tronco encefálico y el cerebelo (mediante las arterias cerebelosas PICA, AICA y cerebelosa superior)."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "La eficacia biológica y el coeficiente de selección:",
+      "options": [
+        {
+          "key": "A",
+          "text": "están relacionados exponencialmente"
+        },
+        {
+          "key": "B",
+          "text": "son conceptos sin relación entre ellos"
+        },
+        {
+          "key": "C",
+          "text": "no se ven afectados por factores ambientales"
+        },
+        {
+          "key": "D",
+          "text": "están relacionados inversamente"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La eficacia biológica relativa (w) y el coeficiente de selección (s) son complementarios e inversos: w = 1 - s. A mayor presión de selección en contra (s), menor es la eficacia biológica (w)."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "Una de las preguntas de Tinbergen que habría que responder para dar una explicación biológica completa de la conducta plantea cuáles son los mecanismos objetivos que la explican, nos estamos refiriendo a su:",
+      "options": [
+        {
+          "key": "A",
+          "text": "función"
+        },
+        {
+          "key": "B",
+          "text": "causación"
+        },
+        {
+          "key": "C",
+          "text": "evolución"
+        },
+        {
+          "key": "D",
+          "text": "ontogenia"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La causación o control inmediato aborda los mecanismos fisiológicos, neurales, hormonales y ambientales inmediatos que desencadenan y regulan la conducta."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "El proceso conocido como traducción que tiene lugar en las células eucarióticas, ocurre:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en el núcleo celular"
+        },
+        {
+          "key": "B",
+          "text": "en la membrana celular"
+        },
+        {
+          "key": "C",
+          "text": "en el citoplasma"
+        },
+        {
+          "key": "D",
+          "text": "tanto en el núcleo celular como en el citoplasma"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La transcripción del ADN a ARNm tiene lugar en el núcleo, pero la traducción a cadenas polipeptídicas ocurre en el citoplasma, mediada por los ribosomas y el ARNt."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "La hiperpolarización que ocurre al final del potencial de acción es consecuencia de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la inactivación de los canales de sodio dependientes de voltaje"
+        },
+        {
+          "key": "B",
+          "text": "una mayor acumulación de iones potasio en el exterior de la membrana celular"
+        },
+        {
+          "key": "C",
+          "text": "el cierre de los canales de sodio"
+        },
+        {
+          "key": "D",
+          "text": "la salida de iones sodio"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La hiperpolarización tardía (postpotencial hiperpolarizante) es consecuencia de la persistencia de canales de K⁺ abiertos y la acumulación transitoria de iones potasio en la cara externa de la membrana neuronal."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "Las principales venas y arterias cerebrales superficiales discurren por el espacio:",
+      "options": [
+        {
+          "key": "A",
+          "text": "epidural"
+        },
+        {
+          "key": "B",
+          "text": "subaracnoideo"
+        },
+        {
+          "key": "C",
+          "text": "que hay entre la duramadre y la aracnoides"
+        },
+        {
+          "key": "D",
+          "text": "que hay entre la duramadre y el hueso"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los grandes vasos vasculares cerebrales transcurren dentro del espacio subaracnoideo, inmersos en el líquido cefalorraquídeo entre la aracnoides y la piamadre."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "La esterilidad del híbrido es un tipo de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "aislamiento estacional"
+        },
+        {
+          "key": "B",
+          "text": "aislamiento etológico"
+        },
+        {
+          "key": "C",
+          "text": "mecanismo de aislamiento postcigótico"
+        },
+        {
+          "key": "D",
+          "text": "mecanismo de aislamiento precigótico"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La inviabilidad del híbrido, la esterilidad del híbrido y la degradación del híbrido son mecanismos de aislamiento reproductivo postcigóticos que actúan tras la fecundación."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "Desde la Psicología Evolucionista, las fobias a las arañas y serpientes que exhibe la especie humana en la actualidad:",
+      "options": [
+        {
+          "key": "A",
+          "text": "no parecen tener ningún valor adaptativo en este momento"
+        },
+        {
+          "key": "B",
+          "text": "fueron conductas adaptativas en su contexto original, el ambiente de adaptación evolutiva"
+        },
+        {
+          "key": "C",
+          "text": "se deben a que el cambio que ha experimentado el ecosistema hasta llegar al actual no ha ido acompañado de un cambio en el programa genético responsable de esas conductas"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La Psicología Evolucionista postula que los módulos cognitivos fueron moldeados en el Ambiente de Adaptación Evolutiva (Pleistoceno); las fobias biológicamente preparadas resultan desadaptativas en las urbes modernas porque el ritmo cultural ha superado al de la evolución biológica."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "La recombinación de alelos propia de la meiosis tiene lugar:",
+      "options": [
+        {
+          "key": "A",
+          "text": "durante la mitosis"
+        },
+        {
+          "key": "B",
+          "text": "durante la meiosis I"
+        },
+        {
+          "key": "C",
+          "text": "durante la meiosis II"
+        },
+        {
+          "key": "D",
+          "text": "en cualquier momento del proceso meiótico"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "El entrecruzamiento (sobrecruzamiento o crossing-over) y la recombinación genética entre cromátidas homólogas no hermanas se produce exclusivamente durante la profase I de la meiosis I (etapa de paquiteno)."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "En relación con la conducción saltatoria del potencial de acción sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "en los nódulos de Ranvier se regenera el potencial de acción"
+        },
+        {
+          "key": "B",
+          "text": "en los segmentos mielinizados se producen potenciales decrecientes"
+        },
+        {
+          "key": "C",
+          "text": "la propagación del impulso nervioso en los segmentos de mielina se hace se forma pasiva disminuyendo su magnitud con la distancia"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Bajo la vaina de mielina el potencial viaja pasivamente por conducción electrotónica (con decremento) de forma muy rápida, regenerándose de forma activa 'todo o nada' en cada nódulo de Ranvier desmielinizado."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "El nervio vago participa, entre otras funciones, en la de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "mediar en el sentido del gusto"
+        },
+        {
+          "key": "B",
+          "text": "controlar la masticación"
+        },
+        {
+          "key": "C",
+          "text": "controlar la deglución"
+        },
+        {
+          "key": "D",
+          "text": "proporcionar toda la información sensorial de la boca"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El nervio vago (par craneal X) proporciona inervación motora a los músculos faríngeos y laríngeos implicados en la deglución y la fonación, además de su amplia inervación parasimpática visceral."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Un rasgo fenotípico determinado por varios genes, cada uno con dos o más alelos, suele ser un rasgo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "cualitativo"
+        },
+        {
+          "key": "B",
+          "text": "cuantitativo"
+        },
+        {
+          "key": "C",
+          "text": "monogénico"
+        },
+        {
+          "key": "D",
+          "text": "discreto"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Los rasgos multigénicos o poligénicos presentan variación fenotípica continua y medible en una escala numérica, lo que define a los caracteres cuantitativos."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "La teoría de juegos aplicada a la toma de decisiones en interacciones sociales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "presupone que los individuos son egoístas racionales y que, según la información de que disponen, adoptarán la estrategia que les sea más útil para lograr su objetivo"
+        },
+        {
+          "key": "B",
+          "text": "tiene limitaciones, pues no permite establecer cuál es la decisión óptima con la que comparar la observada en la realidad"
+        },
+        {
+          "key": "C",
+          "text": "plantea que una estrategia evolutivamente estable puede ser fácilmente modificada por otras estrategias alternativas"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son correctas"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La teoría de juegos asume actores que buscan maximizar su pago/eficacia biológica (egoísmo racional) en función de las decisiones probables de sus oponentes en interacciones estratégicas."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "El síndrome de feminización testicular es debido a:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la falta de expresión del gen SOX9"
+        },
+        {
+          "key": "B",
+          "text": "la ausencia del cromosoma Y en el genoma"
+        },
+        {
+          "key": "C",
+          "text": "una mutación en el gen que codifica el receptor de andrógenos"
+        },
+        {
+          "key": "D",
+          "text": "la duplicación del gen XIST"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El síndrome de insensibilidad a los andrógenos (feminización testicular) ocurre en individuos genéticamente 46,XY debido a mutaciones en el gen del receptor androgénico (AR) en el cromosoma X, impidiendo la respuesta a la testosterona."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "En relación con la farmacología de la sinapsis química sabemos que hay sustancias psicoactivas que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "actúan como antagonistas sobre el receptor postsináptico inhibiendo la acción del neurotransmisor"
+        },
+        {
+          "key": "B",
+          "text": "impiden la liberación del neurotransmisor"
+        },
+        {
+          "key": "C",
+          "text": "impiden la recaptación del neurotransmisor"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones son correctas"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las drogas y psicofármacos pueden actuar a nivel presináptico (bloqueando la síntesis, liberación o recaptación) o postsináptico (bloqueando o activando receptores)."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "Un lóbulo que no es visible en la superficie de los hemisferios cerebrales es el:",
+      "options": [
+        {
+          "key": "A",
+          "text": "de la ínsula"
+        },
+        {
+          "key": "B",
+          "text": "parietal"
+        },
+        {
+          "key": "C",
+          "text": "temporal"
+        },
+        {
+          "key": "D",
+          "text": "prefrontal"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El lóbulo de la ínsula se encuentra oculto en el fondo de la cisura de Silvio (lateral), cubierto por los opérculos frontal, parietal y temporal."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "Si la correlación obtenida entre padres e hijos en un determinado rasgo conductual es de 0.30, ¿cuál podría ser el valor aproximado de la heredabilidad de dicho rasgo?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.15"
+        },
+        {
+          "key": "B",
+          "text": "0.30"
+        },
+        {
+          "key": "C",
+          "text": "0.60"
+        },
+        {
+          "key": "D",
+          "text": "0.90"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Entre familiares de primer grado (como padres e hijos), que comparten el 50% de los genes aditivos (coeficiente r = 0,5), la heredabilidad en sentido estricto se estima como h² ≈ 2r = 2 × 0,30 = 0,60."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Cuál de los siguientes fenómenos NO está relacionado con el conflicto padres/hijos desde la perspectiva de la Ecología del Comportamiento?:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la impresión genómica"
+        },
+        {
+          "key": "B",
+          "text": "el aborto espontáneo"
+        },
+        {
+          "key": "C",
+          "text": "la impronta filial"
+        },
+        {
+          "key": "D",
+          "text": "el infanticidio"
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La impronta filial es un proceso etológico de aprendizaje temprano para el apego y seguimiento de la figura materna. En cambio, la impresión genómica, el aborto espontáneo y el infanticidio son ejemplos clásicos de manifestación o resolución de conflictos en la asignación de recursos reproductivos parentales."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "La impronta o impresión genómica es un fenómeno que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "explica la inactivación de uno de los dos cromosomas X de las hembras"
+        },
+        {
+          "key": "B",
+          "text": "constituye un ejemplo de herencia epigenética"
+        },
+        {
+          "key": "C",
+          "text": "sólo se da en hembras"
+        },
+        {
+          "key": "D",
+          "text": "explica la baja estatura de los sujetos con síndrome de Turner"
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La impronta genómica es un mecanismo epigenético mediante el cual un gen se expresa o silencia selectivamente (habitualmente por metilación) en función de si proviene del gameto paterno o materno."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Habitualmente, los factores de crecimiento nervioso que son captados por las neuronas presinápticas durante el desarrollo del SN son conducidos a través del axón mediante transporte:",
+      "options": [
+        {
+          "key": "A",
+          "text": "retrógrado"
+        },
+        {
+          "key": "B",
+          "text": "axónico lento"
+        },
+        {
+          "key": "C",
+          "text": "anterógrado"
+        },
+        {
+          "key": "D",
+          "text": "llevado a cabo por proteínas transportadoras especializadas de las membranas neuronales"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los factores neurotróficos (como el NGF) son captados en los terminales axónicos mediante endocitosis y transportados retrógradamente por dineínas a lo largo de los microtúbulos hacia el soma celular."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Si en un estudio de familias sobre un determinado rasgo psicológico se obtiene la misma correlación entre hermanos adoptivos criados juntos que entre gemelos dicigóticos criados juntos, podemos concluir que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "la variabilidad es de origen ambiental"
+        },
+        {
+          "key": "B",
+          "text": "la variabilidad del rasgo es de origen genético"
+        },
+        {
+          "key": "C",
+          "text": "la heredabilidad del rasgo es muy alta"
+        },
+        {
+          "key": "D",
+          "text": "todas las opciones anteriores son ciertas"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Los gemelos dicigóticos comparten el 50% de sus genes, mientras que los hermanos adoptivos no comparten dotación genética (0%). Si ambos presentan la misma similitud fenotípica al compartir entorno de crianza, la varianza observada es enteramente explicada por el ambiente compartido."
+    }
+  ]
+}

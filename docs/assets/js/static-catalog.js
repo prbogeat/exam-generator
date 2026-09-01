@@ -37,6 +37,12 @@
     return match ? `Parcial ${match[1]}` : "";
   }
 
+  function normalizePartialLabel(value) {
+    const text = String(value || "").trim();
+    const match = text.match(/^parcial[\s-]+(\d+)$/i);
+    return match ? `Parcial ${match[1]}` : text;
+  }
+
   function looksLikeCourseSegment(value) {
     return /^\d+\s*(?:º|°|o)?$/i.test(String(value || "").trim());
   }
@@ -218,12 +224,14 @@
   function buildCatalogEntry(relativePath, payload) {
     const hierarchy = extractHierarchyFromRelativePath(relativePath, payload);
     const questions = Array.isArray(payload.questions) ? payload.questions : [];
+    const partialSegment =
+      relativePath.find((segment) => /^parcial[\s-]\d+$/i.test(String(segment || "").trim())) || "";
     return {
       examUid: relativePath.join("/"),
       degree: hierarchy.degreeTitle,
       course: hierarchy.courseTitle,
       subject: hierarchy.subjectTitle,
-      partial: relativePath.find((segment) => /^parcial[\s-]\d+$/i.test(String(segment || "").trim())) || "",
+      partial: normalizePartialLabel(partialSegment),
       examTitle: String(payload.examTitle || "Examen"),
       subtitle: String(payload.subtitle || ""),
       totalQuestions: Number(payload.totalQuestions || questions.length || 0),
