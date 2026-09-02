@@ -51,6 +51,7 @@ const dom = {
   startTimer: document.getElementById("startTimer"),
   gradeTop: document.getElementById("gradeTop"),
   gradeBottom: document.getElementById("gradeBottom"),
+  exportPdfBottom: document.getElementById("exportPdfBottom"),
   toggleErrors: document.getElementById("toggleErrors"),
   resetTop: document.getElementById("resetTop"),
   resetBottom: document.getElementById("resetBottom"),
@@ -694,6 +695,7 @@ function setControlsState() {
   dom.startTimer.disabled = !hasExam || state.submitted;
   dom.gradeTop.disabled = !hasExam || state.submitted;
   dom.gradeBottom.disabled = !hasExam || state.submitted;
+  dom.exportPdfBottom.disabled = !hasExam || !state.submitted;
   dom.resetTop.disabled = !hasExam;
   dom.resetBottom.disabled = !hasExam;
   dom.saveAnswers.disabled = !hasExam;
@@ -1392,6 +1394,9 @@ function bindEvents() {
   dom.startTimer.addEventListener("click", startTimer);
   dom.gradeTop.addEventListener("click", gradeExam);
   dom.gradeBottom.addEventListener("click", gradeExam);
+  dom.exportPdfBottom.addEventListener("click", () => {
+    exportExamToPDF(state.exam, state.answers, state.submitted, state.elapsedMs);
+  });
   dom.resetTop.addEventListener("click", () => resetExam(true, true, true));
   dom.resetBottom.addEventListener("click", () => resetExam(true, true, true));
   if (dom.backToWelcome) {

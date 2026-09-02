@@ -11,7 +11,10 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/exam-shared.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Librería para exportar a PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script>
     (function markSubscriptionExamView() {
       const params = new URLSearchParams(window.location.search);
@@ -113,10 +116,12 @@
   <section class="questions" id="questions"></section>
   <div class="footer-actions">
     <button class="primary" id="gradeBottom" disabled>Corregir examen</button>
+    <button id="exportPdfBottom" disabled>Exportar PDF</button>
     <button id="resetBottom" disabled>Reiniciar</button>
   </div>
 </main>
 <script src="assets/js/mobile-sqlite.js"></script>
+<script src="assets/js/pdf-export.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
