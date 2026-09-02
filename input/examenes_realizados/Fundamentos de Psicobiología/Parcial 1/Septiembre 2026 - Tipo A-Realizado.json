@@ -1,0 +1,158 @@
+{
+  "subject": "Fundamentos de Psicobiología",
+  "type": "UNED - Septiembre 2026 - Tipo A - Parcial 1",
+  "date": "2026-09-02",
+  "description": "30 Tipo Test - Septiembre 2026 - Tipo A - Parcial 1",
+  "questions": [
+    {
+      "id": 1,
+      "text": "En relación con las meninges que protegen el sistema nervioso central, ¿cuál de las siguientes afirmaciones es correcta?",
+      "marked_option": "C"
+    },
+    {
+      "id": 2,
+      "text": "Uno de los siguientes trastornos NO está causado por un defecto en un solo alelo:",
+      "marked_option": ""
+    },
+    {
+      "id": 3,
+      "text": "En el paradigma E-O-R en el que se enmarca la Psicobiología:",
+      "marked_option": "A"
+    },
+    {
+      "id": 4,
+      "text": "Los potenciales postsinápticos excitadores (PEPs) son cambios eléctricos que se generan en la membrana de la neurona postsináptica cuando un neurotransmisor estimula sus receptores. Estos potenciales acercan la neurona al umbral necesario para generar un potencial de acción. En este contexto, los PEPs producen principalmente:",
+      "marked_option": "D"
+    },
+    {
+      "id": 5,
+      "text": "¿Cuál de las siguientes características NO corresponde a una pauta de acción fija según la etología clásica?",
+      "marked_option": "D"
+    },
+    {
+      "id": 6,
+      "text": "En relación con las células gliales del sistema nervioso, señala la opción correcta:",
+      "marked_option": "A"
+    },
+    {
+      "id": 7,
+      "text": "¿Cuál es la principal diferencia entre la Etología y el Conductismo, a pesar de compartir el mismo postulado básico?",
+      "marked_option": ""
+    },
+    {
+      "id": 8,
+      "text": "¿Cuál es la diferencia entre valor genético, valor aditivo y dosis génica?",
+      "marked_option": "D"
+    },
+    {
+      "id": 9,
+      "text": "En la Figura se representa una neurona con múltiples árboles dendríticos y un único axón largo que emerge del soma celular:",
+      "marked_option": "C"
+    },
+    {
+      "id": 10,
+      "text": "La hemofilia es una patología recesiva ligada al cromosoma X. Maribel es heterocigota para esta afección y su marido no es hemofílico. ¿Cuál es la probabilidad de que tengan un descendiente afectado por hemofilia?",
+      "marked_option": "D"
+    },
+    {
+      "id": 11,
+      "text": "En una población, un locus polimórfico presenta los siguientes coeficientes de selección: s(AA) = 0,2; s(Aa) = 0; s(aa) = 0,2. ¿Qué tipo de selección natural está actuando?",
+      "marked_option": "D"
+    },
+    {
+      "id": 12,
+      "text": "¿Cuál de los siguientes nervios craneales se origina en el bulbo raquídeo?",
+      "marked_option": ""
+    },
+    {
+      "id": 13,
+      "text": "En un estudio sobre ratones realizado en el Departamento de Psicobiología de la UNED, se analiza la concentración de corticosterona por la noche. Dos líneas homocigóticas puras muestran una varianza fenotípica de 75 ng/ml cada una. La generación F1 obtenida al cruzarlas también tiene una varianza de 75 ng/ml. Al cruzar ratones F1 entre sí, la generación F2 presenta una varianza total de 200 ng/ml. ¿Cuál es el valor de la heredabilidad para la concentración de corticosterona en estas ratas?",
+      "marked_option": "C"
+    },
+    {
+      "id": 14,
+      "text": "El sistema nervioso autónomo desempeña un papel esencial en el mantenimiento de la homeostasis del organismo. ¿Cuál de las siguientes afirmaciones describe con mayor precisión su función principal?",
+      "marked_option": "C"
+    },
+    {
+      "id": 15,
+      "text": "¿De qué manera los neurotransmisores pueden provocar variaciones en el potencial de membrana de la neurona postsináptica?",
+      "marked_option": "D"
+    },
+    {
+      "id": 16,
+      "text": "El fenómeno responsable de que un gameto quede con dos copias del mismo cromosoma, mientras que otro no contenga ninguna copia mula, recibe el nombre de:",
+      "marked_option": ""
+    },
+    {
+      "id": 17,
+      "text": "¿Por qué podemos afirmar que la monogamia genética anula la Ley de Bateman?",
+      "marked_option": "B"
+    },
+    {
+      "id": 18,
+      "text": "Los receptores metabotrópicos actúan fundamentalmente mediante:",
+      "marked_option": "A"
+    },
+    {
+      "id": 19,
+      "text": "Es conocido desde hace tiempo que hay tres alelos de la apolipoproteína E que están relacionados con la aparición de la enfermedad de Alzheimer de inicio tardío (denominados e2, e3 y e4). De ellos, el e4 es el que parece inducir un mayor riesgo de aparición de esa patología. A su vez, el alelo e3 parece tener un efecto neutro sobre la enfermedad, y el alelo e2 es el que parece tener un cierto efecto protector. Suponga que una mujer con genotipo e2e3 y un varón con genotipo e4e3 desean tener hijos. ¿Cuál de los genotipos de su descendencia representa un mayor factor de riesgo?",
+      "marked_option": "A"
+    },
+    {
+      "id": 20,
+      "text": "Un gráfico de herencia de 'altura' en la generación F2 muestra barras discretas separadas: plantas altas representan aproximadamente el 75% y las enanas el 25%. De acuerdo con sus conocimientos, ¿qué indica este gráfico?",
+      "marked_option": "C"
+    },
+    {
+      "id": 21,
+      "text": "Si en una población todos los individuos comparten el mismo genotipo, cualquier diferencia fenotípica observada entre ellos se debe a:",
+      "marked_option": "C"
+    },
+    {
+      "id": 22,
+      "text": "Rellene los huecos en la frase. Aunque el código genético sea ( ), algunos ( ) se emplean con más frecuencia que otros para codificar un mismo ( ). Este fenómeno se conoce como ( ).",
+      "marked_option": "A"
+    },
+    {
+      "id": 23,
+      "text": "En una población de 500.000 personas se diagnostican 2 casos clínicos de la enfermedad recesiva Tay-Sachs (homocigotos recesivos) y se identifican 1.996 portadores sanos (heterocigotos). ¿Cuál es la frecuencia del alelo patológico (q) y si se encuentra la población en equilibrio de Hardy-Weinberg?",
+      "marked_option": "C"
+    },
+    {
+      "id": 24,
+      "text": "¿Qué ion desempeña el papel fundamental en promover la unión de las vesículas sinápticas a las zonas densas de la membrana presináptica, conduciendo a la exocitosis del neurotransmisor?",
+      "marked_option": "D"
+    },
+    {
+      "id": 25,
+      "text": "¿Cuál es la principal ventaja de la reproducción sexual a nivel evolutivo frente a las mutaciones deletéreas?",
+      "marked_option": "B"
+    },
+    {
+      "id": 26,
+      "text": "En relación con la regulación de la expresión génica sabemos que:",
+      "marked_option": ""
+    },
+    {
+      "id": 27,
+      "text": "¿Qué establece la Ley o Regla de Hamilton como condición necesaria para que el altruismo evoluione y se mantenga en una población?",
+      "marked_option": "C"
+    },
+    {
+      "id": 28,
+      "text": "Para la Psicobiología, la conducta y los procesos mentales:",
+      "marked_option": "B"
+    },
+    {
+      "id": 29,
+      "text": "Durante el período refractario relativo, la neurona:",
+      "marked_option": "D"
+    },
+    {
+      "id": 30,
+      "text": "Suponga que en un experimento se realiza un cultivo de bacterias en una placa de Petri obteniendo distintas colonias distribuidas por la superficie. Usando la técnica de la placa replicada se obtiene una copia de esa placa con sus colonias. Dado el carácter preadaptativo de las mutaciones, ¿qué ocurriría si expusiéramos ambas placas a un antibiótico como la estreptomicina?",
+      "marked_option": ""
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "degreeTitle": "Grado en Psicología",
+  "courseTitle": "1º",
+  "subjectTitle": "Fundamentos de Psicobiología",
+  "examTitle": "UNED - Septiembre 2026 - Tipo A - Parcial 1",
+  "subtitle": "30 Tipo Test - Septiembre 2026 - Tipo A - Parcial 1",
+  "notice": "Preguntas del examen de Septiembre 2026 - Tipo A - Parcial 1- Fundamentos de Psicobiología de la UNED - Parcial 1",
+  "totalQuestions": 30,
+  "scoring": {
+    "maxScore": 10,
+    "wrongAnswersPerDiscountedCorrect": 3,
+    "timeLimitMinutes": 90,
+    "formulaTip": "[(A - E / 3) / 30] x 10"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "sourceId": 1,
+      "used": true,
+      "text": "En relación con las meninges que protegen el sistema nervioso central, ¿cuál de las siguientes afirmaciones es correcta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La piamadre está íntimamente unida al encéfalo y la médula espinal, penetrando en los surcos y delimitando un espacio perivascular que contiene líquido cefalorraquídeo."
+        },
+        {
+          "key": "B",
+          "text": "La duramadre se adhiere directamente al encéfalo y forma el espacio subaracnoideo."
+        },
+        {
+          "key": "C",
+          "text": "La aracnoides está separada de la duramadre por el espacio epidural y sus trabéculas se extienden hasta la piamadre."
+        },
+        {
+          "key": "D",
+          "text": "El espacio subaracnoideo se localiza entre la duramadre y la aracnoides y contiene tejido conectivo y vasos linfáticos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La piamadre es la meninge más interna, muy delgada y firmemente adherida al contorno del tejido nervioso central, acompañando a los vasos sanguíneos y delimitando espacios con líquido cefalorraquídeo (LCR)."
+    },
+    {
+      "id": 2,
+      "sourceId": 2,
+      "used": true,
+      "text": "Uno de los siguientes trastornos NO está causado por un defecto en un solo alelo:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La fenilcetonuria."
+        },
+        {
+          "key": "B",
+          "text": "La obesidad debida a mutaciones en el gen que codifica la leptina."
+        },
+        {
+          "key": "C",
+          "text": "La hemofilia."
+        },
+        {
+          "key": "D",
+          "text": "El síndrome del X frágil."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La fenilcetonuria es un trastorno de tipo autosómico recesivo, lo que significa que requiere el defecto de ambos alelos del gen PAH (uno de cada progenitor) para manifestarse clínicamente."
+    },
+    {
+      "id": 3,
+      "sourceId": 3,
+      "used": true,
+      "text": "En el paradigma E-O-R en el que se enmarca la Psicobiología:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los factores filogenéticos estarían dentro del elemento 'O'."
+        },
+        {
+          "key": "B",
+          "text": "El ambiente externo es independiente de la conducta."
+        },
+        {
+          "key": "C",
+          "text": "El elemento 'R' no interacciona con el 'O'."
+        },
+        {
+          "key": "D",
+          "text": "Los factores filogenéticos no ejercen su influencia a través de los factores genéticos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "En el paradigma E-O-R (Estímulo-Organismo-Respuesta), los factores filogenéticos (la evolución de la especie) configuran la dotación genética del Organismo ('O'), determinando cómo procesa la estimulación externa."
+    },
+    {
+      "id": 4,
+      "sourceId": 4,
+      "used": true,
+      "text": "Los potenciales postsinápticos excitadores (PEPs) son cambios eléctricos que se generan en la membrana de la neurona postsináptica cuando un neurotransmisor estimula sus receptores. Estos potenciales acercan la neurona al umbral necesario para generar un potencial de acción. En este contexto, los PEPs producen principalmente:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hiperpolarización."
+        },
+        {
+          "key": "B",
+          "text": "Período refractario."
+        },
+        {
+          "key": "C",
+          "text": "Reversión de potencial."
+        },
+        {
+          "key": "D",
+          "text": "Despolarización."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los PEPs son despolarizaciones graduadas de la membrana postsináptica que acercan el potencial de membrana al umbral de disparo del potencial de acción."
+    },
+    {
+      "id": 5,
+      "sourceId": 5,
+      "used": true,
+      "text": "¿Cuál de las siguientes características NO corresponde a una pauta de acción fija según la etología clásica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es una conducta auto-inhibida, haciéndose más difícil provocarla una segunda vez inmediatamente."
+        },
+        {
+          "key": "B",
+          "text": "Es una conducta independiente de la experiencia y posee una base genética."
+        },
+        {
+          "key": "C",
+          "text": "Es una secuencia ordenada de reflejos que requieren un estímulo desencadenador muy específico."
+        },
+        {
+          "key": "D",
+          "text": "Es una conducta flexible y adaptable a las circunstancias que cambian durante su ejecución."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Las pautas de acción fija son rígidas, estereotipadas y, una vez iniciadas, se ejecutan hasta el final de forma invariable, por lo que no son adaptables o flexibles en tiempo real durante su transcurso."
+    },
+    {
+      "id": 6,
+      "sourceId": 6,
+      "used": true,
+      "text": "En relación con las células gliales del sistema nervioso, señala la opción correcta:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los oligodendrocitos y las células de Schwann tienen funciones similares de mielinización, pero en el sistema nervioso central y periférico respectivamente."
+        },
+        {
+          "key": "B",
+          "text": "La microglía y las células de Schwann pertenecen al sistema nervioso central."
+        },
+        {
+          "key": "C",
+          "text": "Los astrocitos y la microglía se encuentran exclusivamente en el sistema nervioso periférico."
+        },
+        {
+          "key": "D",
+          "text": "Los astrocitos y los oligodendrocitos pertenecen al sistema nervioso periférico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Ambos tipos de células forman vainas de mielina alrededor de los axones neuronales para acelerar la conducción, pero los oligodendrocitos operan en el SNC y las células de Schwann en el SNP."
+    },
+    {
+      "id": 7,
+      "sourceId": 7,
+      "used": true,
+      "text": "¿Cuál es la principal diferencia entre la Etología y el Conductismo, a pesar de compartir el mismo postulado básico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La Etología solo se interesa por las causas últimas de la conducta (función y evolución), mientras que el conductismo se centra en las causas próximas."
+        },
+        {
+          "key": "B",
+          "text": "El conductismo rechaza la validez del método experimental."
+        },
+        {
+          "key": "C",
+          "text": "La Etología exige que la experimentación recree las condiciones esperables en la naturaleza, enfocándose en la conducta espontánea en el entorno natural, a diferencia del conductismo."
+        },
+        {
+          "key": "D",
+          "text": "No existen diferencias significativas entre ambas disciplinas a nivel experimental."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La Etología da prioridad a la validez ecológica, estudiando el comportamiento espontáneo en el hábitat natural o en laboratorios que reproduzcan fielmente las condiciones del entorno del animal."
+    },
+    {
+      "id": 8,
+      "sourceId": 8,
+      "used": true,
+      "text": "¿Cuál es la diferencia entre valor genético, valor aditivo y dosis génica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "El valor genético es la parte no heredable; el valor aditivo es la dosis; la dosis génica es la varianza."
+        },
+        {
+          "key": "B",
+          "text": "El valor aditivo es el fenotipo observado; la dosis génica es la suma de dominancia."
+        },
+        {
+          "key": "C",
+          "text": "No existen diferencias conceptuales significativas entre ellos en genética de poblaciones."
+        },
+        {
+          "key": "D",
+          "text": "El valor genético es la contribución total de los genes al fenotipo; El valor aditivo es la parte heredable del valor genético atribuible a los alelos aditivos; La dosis génica es el número de alelos aditivos presentes."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El valor genético engloba todo el efecto genotípico; el aditivo es la parte transmitible de padres a hijos (sin efectos de dominancia/epistasia); la dosis génica representa simplemente el recuento físico de alelos aditivos (0, 1 o 2) en el genotipo."
+    },
+    {
+      "id": 9,
+      "sourceId": 9,
+      "used": true,
+      "text": "En la Figura se representa una neurona con múltiples árboles dendríticos y un único axón largo que emerge del soma celular:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Unipolar."
+        },
+        {
+          "key": "B",
+          "text": "Bipolar."
+        },
+        {
+          "key": "C",
+          "text": "Multipolar."
+        },
+        {
+          "key": "D",
+          "text": "Pseudounipolar."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La neurona descrita presenta múltiples dendritas emergiendo directamente del soma celular y un único axón largo, lo cual corresponde característicamente a una neurona multipolar."
+    },
+    {
+      "id": 10,
+      "sourceId": 10,
+      "used": true,
+      "text": "La hemofilia es una patología recesiva ligada al cromosoma X. Maribel es heterocigota para esta afección y su marido no es hemofílico. ¿Cuál es la probabilidad de que tengan un descendiente afectado por hemofilia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,50"
+        },
+        {
+          "key": "B",
+          "text": "0,125"
+        },
+        {
+          "key": "C",
+          "text": "0,75"
+        },
+        {
+          "key": "D",
+          "text": "0,25"
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Madre portadora (XHXh) x Padre sano (XHY). La descendencia posible es: XHXH (hija sana), XHXh (hija portadora), XHY (hijo sano) y XhY (hijo enfermo). El riesgo total sobre todos los hijos es de 1 de 4 (25%, es decir, 0,25)."
+    },
+    {
+      "id": 11,
+      "sourceId": 11,
+      "used": true,
+      "text": "En una población, un locus polimórfico presenta los siguientes coeficientes de selección: s(AA) = 0,2; s(Aa) = 0; s(aa) = 0,2. ¿Qué tipo de selección natural está actuando?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Selección direccional."
+        },
+        {
+          "key": "B",
+          "text": "Selección estabilizadora clásica."
+        },
+        {
+          "key": "C",
+          "text": "Selección disruptiva."
+        },
+        {
+          "key": "D",
+          "text": "Sobredominancia."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Dado que los homocigotos (AA y aa) sufren selección en contra (s = 0,2) y el heterocigoto (Aa) presenta la máxima eficacia biológica (s = 0, por tanto w = 1), estamos ante un caso de superioridad del heterocigoto o sobredominancia."
+    },
+    {
+      "id": 12,
+      "sourceId": 12,
+      "used": true,
+      "text": "¿Cuál de los siguientes nervios craneales se origina en el bulbo raquídeo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nervio trigémino (V)."
+        },
+        {
+          "key": "B",
+          "text": "Nervio facial (VII)."
+        },
+        {
+          "key": "C",
+          "text": "Nervio glosofaríngeo (IX) únicamente."
+        },
+        {
+          "key": "D",
+          "text": "Nervio vago (X)."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "El nervio vago (par craneal X) tiene su origen real y núcleos motores/sensoriales localizados en el bulbo raquídeo del tronco encefálico."
+    },
+    {
+      "id": 13,
+      "sourceId": 13,
+      "used": true,
+      "text": "En un estudio sobre ratones realizado en el Departamento de Psicobiología de la UNED, se analiza la concentración de corticosterona por la noche. Dos líneas homocigóticas puras muestran una varianza fenotípica de 75 ng/ml cada una. La generación F1 obtenida al cruzarlas también tiene una varianza de 75 ng/ml. Al cruzar ratones F1 entre sí, la generación F2 presenta una varianza total de 200 ng/ml. ¿Cuál es el valor de la heredabilidad para la concentración de corticosterona en estas ratas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,625."
+        },
+        {
+          "key": "B",
+          "text": "2,666."
+        },
+        {
+          "key": "C",
+          "text": "0,375."
+        },
+        {
+          "key": "D",
+          "text": "0,75."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La varianza de la F1 (75) representa la varianza ambiental (Va) al ser individuos isogénicos. La F2 muestra la varianza fenotípica total (Vt = 200). La varianza genética (Vg) es Vt - Va = 200 - 75 = 125. La heredabilidad en sentido amplio es H2 = Vg / Vt = 125 / 200 = 0,625."
+    },
+    {
+      "id": 14,
+      "sourceId": 14,
+      "used": true,
+      "text": "El sistema nervioso autónomo desempeña un papel esencial en el mantenimiento de la homeostasis del organismo. ¿Cuál de las siguientes afirmaciones describe con mayor precisión su función principal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Controla exclusivamente la musculatura esquelética mediante impulsos procedentes del encéfalo y la médula espinal."
+        },
+        {
+          "key": "B",
+          "text": "Transmite información sensorial procedente del medio externo hacia las áreas corticales de procesamiento consciente."
+        },
+        {
+          "key": "C",
+          "text": "Regula de manera automática e involuntaria la actividad de los órganos internos, vasos sanguíneos y glándulas, ajustando el equilibrio fisiológico según las necesidades del organismo."
+        },
+        {
+          "key": "D",
+          "text": "Coordina los movimientos voluntarios y las respuestas motoras conscientes frente al entorno externo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "El SNA o vegetativo se encarga de regular las funciones viscerales e internas del organismo de forma inconsciente e involuntaria para mantener el medio interno dentro de parámetros óptimos (homeostasis)."
+    },
+    {
+      "id": 15,
+      "sourceId": 15,
+      "used": true,
+      "text": "¿De qué manera los neurotransmisores pueden provocar variaciones en el potencial de membrana de la neurona postsináptica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Actuando sobre receptores ionotrópicos, que controlan directamente la apertura de canales iónicos."
+        },
+        {
+          "key": "B",
+          "text": "Interactuando con receptores metabotrópicos, que desencadenan respuestas más lentas mediante segundos mensajeros."
+        },
+        {
+          "key": "C",
+          "text": "Produciendo efectos excitadores o inhibidores sobre la membrana celular."
+        },
+        {
+          "key": "D",
+          "text": "Todas las anteriores son correctas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los neurotransmisores ejercen sus efectos uniendo receptores tanto acoplados a canales (ionotrópicos, rápidos) como a proteínas G (metabotrópicos, lentos), alterando el potencial según los iones movilizados."
+    },
+    {
+      "id": 16,
+      "sourceId": 16,
+      "used": true,
+      "text": "El fenómeno responsable de que un gameto quede con dos copias del mismo cromosoma, mientras que otro no contenga ninguna copia mula, recibe el nombre de:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No disyunción meiótica."
+        },
+        {
+          "key": "B",
+          "text": "Translocación robertsoniana."
+        },
+        {
+          "key": "C",
+          "text": "Deleción."
+        },
+        {
+          "key": "D",
+          "text": "Impronta genómica."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "La no disyunción meiótica es el fallo en la separación de cromosomas homólogos (en la Meiosis I) o de cromátidas hermanas (en la Meiosis II), lo que genera gametos con exceso (n+1) o defecto (n-1) de cromosomas."
+    },
+    {
+      "id": 17,
+      "sourceId": 17,
+      "used": true,
+      "text": "¿Por qué podemos afirmar que la monogamia genética anula la Ley de Bateman?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Porque la Ley de Bateman solo se aplica a especies con reproducción asexual."
+        },
+        {
+          "key": "B",
+          "text": "Porque en la monogamia genética, la aptitud biológica de los machos ya no dependería de aparearse con múltiples hembras."
+        },
+        {
+          "key": "C",
+          "text": "Porque en la monogamia, la variabilidad en el grado de aptitud sería la misma para el macho y la hembra."
+        },
+        {
+          "key": "D",
+          "text": "Porque en el caso de algunas aves se demuestra que la monogamia aporta ventajas en términos de aptitud."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Ley de Bateman postula que el éxito reproductivo masculino está fuertemente correlacionado con el número de cópulas. En una monogamia genética estricta, cada macho se aparea con una sola hembra, limitando su éxito al potencial de esa única pareja e igualando su varianza reproductiva con la de las hembras."
+    },
+    {
+      "id": 18,
+      "sourceId": 18,
+      "used": true,
+      "text": "Los receptores metabotrópicos actúan fundamentalmente mediante:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Proteínas G y segundos mensajeros, responsables de iniciar una cadena de reacciones intracelulares que modulan la actividad de la célula."
+        },
+        {
+          "key": "B",
+          "text": "Canales de Na+ y K+, que permiten el paso directo de iones tras la unión del neurotransmisor."
+        },
+        {
+          "key": "C",
+          "text": "Fosforilación directa del canal, proceso que puede ser consecuencia de la activación, pero no la vía inicial."
+        },
+        {
+          "key": "D",
+          "text": "Potenciales locales, que representan variaciones del voltaje de membrana, aunque no explican el mecanismo primario de acción de estos receptores."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A diferencia de los ionotrópicos, los receptores metabotrópicos no son canales iónicos en sí mismos, sino que están acoplados a proteínas G encargadas de activar cascadas bioquímicas e intracelulares secundarias."
+    },
+    {
+      "id": 19,
+      "sourceId": 19,
+      "used": true,
+      "text": "Es conocido desde hace tiempo que hay tres alelos de la apolipoproteína E que están relacionados con la aparición de la enfermedad de Alzheimer de inicio tardío (denominados e2, e3 y e4). De ellos, el e4 es el que parece inducir un mayor riesgo de aparición de esa patología. A su vez, el alelo e3 parece tener un efecto neutro sobre la enfermedad, y el alelo e2 es el que parece tener un cierto efecto protector. Suponga que una mujer con genotipo e2e3 y un varón con genotipo e4e3 desean tener hijos. ¿Cuál de los genotipos de su descendencia representa un mayor factor de riesgo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "e3e4."
+        },
+        {
+          "key": "B",
+          "text": "e2e4."
+        },
+        {
+          "key": "C",
+          "text": "e3e3."
+        },
+        {
+          "key": "D",
+          "text": "e2e3."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Del cruce de e2e3 x e4e3 se obtienen las combinaciones: e2e4, e2e3, e3e4, y e3e3. Dado que e4 es el alelo de alto riesgo, e2 es protector y e3 es neutro, el genotipo e3e4 (alelo de riesgo sin alelo protector que lo compense) es el de mayor riesgo relativo en la descendencia."
+    },
+    {
+      "id": 20,
+      "sourceId": 20,
+      "used": true,
+      "text": "Un gráfico de herencia de 'altura' en la generación F2 muestra barras discretas separadas: plantas altas representan aproximadamente el 75% y las enanas el 25%. De acuerdo con sus conocimientos, ¿qué indica este gráfico?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es un rasgo poligénico con variación continua."
+        },
+        {
+          "key": "B",
+          "text": "Es un rasgo cuantitativo influido por muchos alelos aditivos."
+        },
+        {
+          "key": "C",
+          "text": "La altura es un rasgo determinado exclusivamente por la influencia ambiental."
+        },
+        {
+          "key": "D",
+          "text": "Es un rasgo monogénico, ya que en F2 se observa una proporción aproximada de 3 plantas altas por cada 1 planta enana."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La separación nítida de los fenotipos en proporción 3:1 (75% dominantes altos y 25% recesivos enanos) en la generación F2 es la prueba clásica de una herencia monogénica bajo dominancia completa mendeliana."
+    },
+    {
+      "id": 21,
+      "sourceId": 21,
+      "used": true,
+      "text": "Si en una población todos los individuos comparten el mismo genotipo, cualquier diferencia fenotípica observada entre ellos se debe a:",
+      "options": [
+        {
+          "key": "A",
+          "text": "La variabilidad de alelos aditivos."
+        },
+        {
+          "key": "B",
+          "text": "La varianza genotípica total."
+        },
+        {
+          "key": "C",
+          "text": "La influencia del ambiente."
+        },
+        {
+          "key": "D",
+          "text": "La tasa de mutación espontánea acumulada."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Cuando la varianza genética es nula (todos los genotipos son idénticos), la heredabilidad es 0, y toda diferencia en el fenotipo observado (Vf) responde exclusivamente a variaciones en la varianza ambiental (Va)."
+    },
+    {
+      "id": 22,
+      "sourceId": 22,
+      "used": true,
+      "text": "Rellene los huecos en la frase. Aunque el código genético sea ( ), algunos ( ) se emplean con más frecuencia que otros para codificar un mismo ( ). Este fenómeno se conoce como ( ).",
+      "options": [
+        {
+          "key": "A",
+          "text": "Degenerado / codones sinónimos / aminoácido / sesgo de codón."
+        },
+        {
+          "key": "B",
+          "text": "Universal / exones / polipéptido / splicing alternativo."
+        },
+        {
+          "key": "C",
+          "text": "No solapado / intrones / gen / mutación de marco de lectura."
+        },
+        {
+          "key": "D",
+          "text": "Degenerado / intrones / aminoácido / empalme."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "El código genético es degenerado porque múltiples tripletes de bases (codones sinónimos) codifican para un mismo aminoácido. Sin embargo, existe una frecuencia desigual de uso para ciertos codones, llamada sesgo de codón."
+    },
+    {
+      "id": 23,
+      "sourceId": 23,
+      "used": true,
+      "text": "En una población de 500.000 personas se diagnostican 2 casos clínicos de la enfermedad recesiva Tay-Sachs (homocigotos recesivos) y se identifican 1.996 portadores sanos (heterocigotos). ¿Cuál es la frecuencia del alelo patológico (q) y si se encuentra la población en equilibrio de Hardy-Weinberg?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,02; no."
+        },
+        {
+          "key": "B",
+          "text": "0,01; sí."
+        },
+        {
+          "key": "C",
+          "text": "0,002; sí."
+        },
+        {
+          "key": "D",
+          "text": "0,004; no."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Frecuencia de homocigotos recesivos q^2 = 2 / 500.000 = 0,000004. Por tanto, q = sqrt(0,000004) = 0,002. En equilibrio, la frecuencia de heterocigotos (2pq) es 2 * (1 - 0,002) * 0,002 = 0,003992. Portadores esperados: 0,003992 * 500.000 = 1.996, lo que coincide de forma exacta con lo observado."
+    },
+    {
+      "id": 24,
+      "sourceId": 24,
+      "used": true,
+      "text": "¿Qué ion desempeña el papel fundamental en promover la unión de las vesículas sinápticas a las zonas densas de la membrana presináptica, conduciendo a la exocitosis del neurotransmisor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Na+."
+        },
+        {
+          "key": "B",
+          "text": "K+."
+        },
+        {
+          "key": "C",
+          "text": "Cl-."
+        },
+        {
+          "key": "D",
+          "text": "Ca2+."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "La entrada de calcio (Ca2+) en el botón terminal tras la apertura de sus canales dependientes de voltaje es el desencadenante químico para la movilización y fusión de las vesículas presinápticas con la membrana celular."
+    },
+    {
+      "id": 25,
+      "sourceId": 25,
+      "used": true,
+      "text": "¿Cuál es la principal ventaja de la reproducción sexual a nivel evolutivo frente a las mutaciones deletéreas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "La reproducción sexual evita por completo la aparición de nuevas mutaciones espontáneas."
+        },
+        {
+          "key": "B",
+          "text": "La separación de los cromosomas homólogos durante la meiosis reduce al 50% la probabilidad de que un alelo defectuoso sea transmitido en la fecundación."
+        },
+        {
+          "key": "C",
+          "text": "Los clones de especies sexuales son genéticamente más adaptables ante las presiones."
+        },
+        {
+          "key": "D",
+          "text": "Las especies sexuales nunca son portadoras de mutaciones negativas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Al segregarse los homólogos en la meiosis para formar gametos haploides, la probabilidad de heredar un alelo recesivo deletéreo se diluye, permitiendo mantener la variabilidad genética viable en la población."
+    },
+    {
+      "id": 26,
+      "sourceId": 26,
+      "used": true,
+      "text": "En relación con la regulación de la expresión génica sabemos que:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Los genes reguladores codifican la secuencia de los correpresores."
+        },
+        {
+          "key": "B",
+          "text": "Los factores de transcripción impiden la expresión de los genes estructurales."
+        },
+        {
+          "key": "C",
+          "text": "El ARN de interferencia impide la acción de los correpresores."
+        },
+        {
+          "key": "D",
+          "text": "Los inductores actúan a través de su unión con las proteínas reguladoras."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Los inductores se unen a los represores (que son proteínas reguladoras) para provocar un cambio de conformación que causa su liberación del operador, permitiendo que la ARN polimerasa inicie la transcripción."
+    },
+    {
+      "id": 27,
+      "sourceId": 27,
+      "used": true,
+      "text": "¿Qué establece la Ley o Regla de Hamilton como condición necesaria para que el altruismo evoluione y se mantenga en una población?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Que el coste reproductivo (C) del altruista debe ser mayor que el beneficio reproductivo (B) del receptor."
+        },
+        {
+          "key": "B",
+          "text": "Que el grado de parentesco (r) entre el altruista y el receptor debe ser igual a la unidad (1) para cualquier acto altruista."
+        },
+        {
+          "key": "C",
+          "text": "Que el producto del beneficio reproductivo (B) que obtiene el receptor por el grado de parentesco (r) debe ser mayor o igual que el coste reproductivo (C) del altruista (Br ≥ C)."
+        },
+        {
+          "key": "D",
+          "text": "Que el altruismo reproductivo solo es frecuente en la naturaleza cuando se da entre padres e hijos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "La regla de Hamilton establece que el altruismo se ve favorecido cuando la relación de parentesco multiplicada por el beneficio para el receptor supera el coste biológico para el altruista (rB > C, o Br >= C)."
+    },
+    {
+      "id": 28,
+      "sourceId": 28,
+      "used": true,
+      "text": "Para la Psicobiología, la conducta y los procesos mentales:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Son una propiedad emergente del sistema nervioso que se pueden explicar sin necesidad de acudir a explicaciones basadas en el organismo."
+        },
+        {
+          "key": "B",
+          "text": "Son, como el resto de las características de los seres vivos, modelados por la selección natural."
+        },
+        {
+          "key": "C",
+          "text": "Forman lo que se denomina un complejo desadaptativo."
+        },
+        {
+          "key": "D",
+          "text": "Son independientes de los estímulos que rodean a los organismos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "La Psicobiología concibe el comportamiento y los procesos cognitivos humanos como rasgos fenotípicos sujetos a las leyes de la evolución y moldeados de forma adaptativa por selección natural."
+    },
+    {
+      "id": 29,
+      "sourceId": 29,
+      "used": true,
+      "text": "Durante el período refractario relativo, la neurona:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No puede generar ningún potencial de acción, sin importar la intensidad del estímulo."
+        },
+        {
+          "key": "B",
+          "text": "Tiene los canales de sodio totalmente inactivos."
+        },
+        {
+          "key": "C",
+          "text": "Se encuentra en reposo completo, con un potencial de reposo estable en -70 mV."
+        },
+        {
+          "key": "D",
+          "text": "Puede generar un nuevo potencial de acción, pero requiere una despolarización de mayor intensidad."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "En el período refractario relativo, la célula está hiperpolarizada (más negativa) por la salida sostenida de K+, por lo que requiere una estimulación/despolarización significativamente mayor para llegar al umbral de disparo."
+    },
+    {
+      "id": 30,
+      "sourceId": 30,
+      "used": true,
+      "text": "Suponga que en un experimento se realiza un cultivo de bacterias en una placa de Petri obteniendo distintas colonias distribuidas por la superficie. Usando la técnica de la placa replicada se obtiene una copia de esa placa con sus colonias. Dado el carácter preadaptativo de las mutaciones, ¿qué ocurriría si expusiéramos ambas placas a un antibiótico como la estreptomicina?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solo observaríamos colonias supervivientes en la placa original."
+        },
+        {
+          "key": "B",
+          "text": "Solo observaríamos colonias supervivientes en la placa replicada."
+        },
+        {
+          "key": "C",
+          "text": "Observaríamos colonias supervivientes en ambas placas en las mismas posiciones."
+        },
+        {
+          "key": "D",
+          "text": "Observaríamos colonias supervivientes en ambas placas en distintas posiciones."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Como las mutaciones protectoras son preadaptativas (ocurren por azar antes del contacto con el antibiótico), las colonias que resisten la estreptomicina en la placa replicada se localizan en las posiciones homólogas calcadas de la placa madre."
+    }
+  ]
+}

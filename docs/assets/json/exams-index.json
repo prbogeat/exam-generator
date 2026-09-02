@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-01T10:44:03.495Z",
-  "count": 47,
+  "generatedAt": "2026-09-02T09:58:46.115Z",
+  "count": 48,
   "defaultExamUid": "fundamentos-de-psicobiologia/Parcial 1/uned-enero-2025-tipo-a-parcial-1.json",
   "items": [
     {
@@ -182,6 +182,18 @@
       "totalQuestions": 30,
       "file": "assets/json/exams/fundamentos-de-psicobiologia/Parcial%201/uned-septiembre-2025-tipo-a-parcial-1.json",
       "sourcePath": "out/examenes/fundamentos-de-psicobiologia/Parcial 1/uned-septiembre-2025-tipo-a-parcial-1.json"
+    },
+    {
+      "examUid": "grado-en-psicologia/1º/fundamentos-de-psicobiologia/Parcial 1/septiembre-2026-parcial-1-tipo-a.json",
+      "degree": "Grado en Psicología",
+      "course": "1º",
+      "subject": "Fundamentos de Psicobiología",
+      "partial": "Parcial 1",
+      "examTitle": "UNED - Septiembre 2026 - Tipo A - Parcial 1",
+      "subtitle": "30 Tipo Test - Septiembre 2026 - Tipo A - Parcial 1",
+      "totalQuestions": 30,
+      "file": "assets/json/exams/grado-en-psicologia/1%C2%BA/fundamentos-de-psicobiologia/Parcial%201/septiembre-2026-parcial-1-tipo-a.json",
+      "sourcePath": "out/examenes/grado-en-psicologia/1º/fundamentos-de-psicobiologia/Parcial 1/septiembre-2026-parcial-1-tipo-a.json"
     },
     {
       "examUid": "fundamentos-de-psicobiologia/Parcial 2/uned-junio-200X-numero-01-parcial-2.json",
@@ -572,15 +584,15 @@
     "degrees": [
       {
         "degree": "Grado en Psicología",
-        "count": 47,
+        "count": 48,
         "courses": [
           {
             "course": "1º",
-            "count": 47,
+            "count": 48,
             "subjects": [
               {
                 "subject": "Fundamentos de Psicobiología",
-                "count": 37,
+                "count": 38,
                 "partials": [
                   "Parcial 1",
                   "Parcial 2"
@@ -601,6 +613,7 @@
                   "fundamentos-de-psicobiologia/Parcial 1/uned-septiembre-2023-tipo-b-parcial-1.json",
                   "fundamentos-de-psicobiologia/Parcial 1/uned-septiembre-2024-tipo-a-parcial-1.json",
                   "fundamentos-de-psicobiologia/Parcial 1/uned-septiembre-2025-tipo-a-parcial-1.json",
+                  "grado-en-psicologia/1º/fundamentos-de-psicobiologia/Parcial 1/septiembre-2026-parcial-1-tipo-a.json",
                   "fundamentos-de-psicobiologia/Parcial 2/uned-junio-200X-numero-01-parcial-2.json",
                   "fundamentos-de-psicobiologia/Parcial 2/uned-junio-200X-numero-10-parcial-2.json",
                   "fundamentos-de-psicobiologia/Parcial 2/uned-junio-200X-numero-02-parcial-2.json",
