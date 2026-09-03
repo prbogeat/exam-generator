@@ -695,7 +695,7 @@ function setControlsState() {
   dom.startTimer.disabled = !hasExam || state.submitted;
   dom.gradeTop.disabled = !hasExam || state.submitted;
   dom.gradeBottom.disabled = !hasExam || state.submitted;
-  dom.exportPdfBottom.disabled = !hasExam || !state.submitted;
+  dom.exportPdfBottom.disabled = !hasExam;
   dom.resetTop.disabled = !hasExam;
   dom.resetBottom.disabled = !hasExam;
   dom.saveAnswers.disabled = !hasExam;
@@ -1143,6 +1143,7 @@ function gradeExam() {
   dom.gradeBottom.classList.add("hidden");
   dom.startTimer.disabled = true;
 
+  setControlsState();
   renderQuestions();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -1394,8 +1395,28 @@ function bindEvents() {
   dom.startTimer.addEventListener("click", startTimer);
   dom.gradeTop.addEventListener("click", gradeExam);
   dom.gradeBottom.addEventListener("click", gradeExam);
-  dom.exportPdfBottom.addEventListener("click", () => {
-    exportExamToPDF(state.exam, state.answers, state.submitted, state.elapsedMs);
+  dom.exportPdfBottom.addEventListener("click", async () => {
+    if (!state.exam) {
+      return;
+    }
+
+    // Ensure exported PDF always includes correction and final stats.
+    if (!state.submitted) {
+      gradeExam();
+    }
+
+    const previousOnlyErrors = state.onlyErrors;
+    state.onlyErrors = false;
+    dom.toggleErrors.textContent = "Ver solo fallos/en blanco";
+    renderQuestions();
+
+    await exportExamToPDF(state.exam, state.answers, state.submitted, state.elapsedMs);
+
+    state.onlyErrors = previousOnlyErrors;
+    dom.toggleErrors.textContent = state.onlyErrors
+      ? "Ver todas"
+      : "Ver solo fallos/en blanco";
+    renderQuestions();
   });
   dom.resetTop.addEventListener("click", () => resetExam(true, true, true));
   dom.resetBottom.addEventListener("click", () => resetExam(true, true, true));

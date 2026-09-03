@@ -422,6 +422,24 @@ button:disabled {
   background: #ffffff;
 }
 
+.option input[type="checkbox"] {
+  width: auto;
+  min-width: 18px;
+  flex: 0 0 auto;
+  margin: 3px 0 0;
+  transform: scale(1.15);
+}
+
+.option > span {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: block;
+}
+
+.option > span strong {
+  display: inline;
+}
+
 .option:hover {
   background: #f4fbf7;
 }
@@ -439,11 +457,6 @@ button:disabled {
 .option.wrong {
   border-color: #fb7185;
   background: var(--badbg);
-}
-
-input[type="checkbox"] {
-  margin-top: 4px;
-  transform: scale(1.15);
 }
 
 .feedback {
